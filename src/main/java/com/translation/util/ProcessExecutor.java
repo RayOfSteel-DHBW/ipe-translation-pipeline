@@ -7,7 +7,8 @@ import java.io.InputStreamReader;
 public class ProcessExecutor {
 
     public String executeCommand(String command) throws IOException, InterruptedException {
-        Process process = Runtime.getRuntime().exec(command);
+        ProcessBuilder processBuilder = new ProcessBuilder(command.split(" "));
+        Process process = processBuilder.start();
         StringBuilder output = new StringBuilder();
 
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
