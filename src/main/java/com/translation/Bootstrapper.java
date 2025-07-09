@@ -2,10 +2,12 @@ package com.translation;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
+import com.translation.config.Configuration;
+import com.translation.config.ConfigurationModule;
 import com.translation.di.ApplicationModule;
 import com.translation.pipeline.Pipeline;
 import com.translation.pipeline.PipelineStepBase;
-import com.translation.pipeline.steps.DecompileStep;
+import com.translation.steps.DecompileStep;
 import com.translation.services.DownloadService;
 
 import java.io.File;
@@ -18,6 +20,7 @@ public class Bootstrapper {
 
     private Injector injector;
     private DownloadService downloadService;
+    private Configuration configuration;
 
     public void run(String[] args) {
         logger.info("Bootstrapper starting IPE Translation Pipeline");
@@ -41,18 +44,19 @@ public class Bootstrapper {
     private void setupDependencyInjection() {
         logger.info("Setting up dependency injection...");
         
-        this.injector = Guice.createInjector(new ApplicationModule());
+        this.injector = Guice.createInjector(new ApplicationModule(), new ConfigurationModule());
         this.downloadService = injector.getInstance(DownloadService.class);
+        this.configuration = injector.getInstance(Configuration.class);
         
         logger.info("Dependency injection setup complete");
+        logger.info("IPE executable path: " + configuration.getIpeExecutablePath());
     }
     
     private void createDirectories() {
         logger.info("Creating working directories...");
         
         String[] directories = {
-            Constants.INPUT_DIR, Constants.WORKING_DIR, Constants.OUTPUT_DIR,
-            Constants.STEP_01_INPUT, Constants.STEP_01_OUTPUT
+            Constants.INPUT_DIR, Constants.WORK_DIR, Constants.OUTPUT_DIR
         };
         
         for (String dir : directories) {
@@ -70,9 +74,14 @@ public class Bootstrapper {
     private void downloadIpeFiles() throws Exception {
         logger.info("Step 0: Downloading IPE files...");
         
-        downloadService.downloadToDirectory(Constants.STEP_01_INPUT);
+        File step0Dir = new File(Constants.WORK_DIR + "/step-0");
+        if (!step0Dir.exists()) {
+            step0Dir.mkdirs();
+        }
         
-        logger.info("Download completed. Files saved to: " + Constants.STEP_01_INPUT);
+        downloadService.downloadToDirectory(step0Dir.getAbsolutePath());
+        
+        logger.info("Download completed. Files saved to: " + step0Dir.getAbsolutePath());
     }
     
     private Pipeline createPipeline() {
@@ -80,11 +89,7 @@ public class Bootstrapper {
         
         ArrayList<PipelineStepBase> steps = new ArrayList<>();
         
-        DecompileStep decompileStep = new DecompileStep(
-            1, 
-            new File(Constants.STEP_01_INPUT), 
-            new File(Constants.STEP_01_OUTPUT)
-        );
+        DecompileStep decompileStep = injector.getInstance(DecompileStep.class);
         steps.add(decompileStep);
         
         logger.info("Pipeline created with " + steps.size() + " steps");

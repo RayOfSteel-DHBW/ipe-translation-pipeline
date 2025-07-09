@@ -1,0 +1,18 @@
+{
+  "ipe_dir": "C:/Program Files (x86)/IPE/bin",
+  "ipe_executable": "ipeextract.exe",
+  "pipeline": {
+    "working_directory": ".work",
+    "clean_on_start": false
+  },
+  "translation": {
+    "source_language": "en",
+    "target_language": "de",
+    "service": "automated"
+  },
+  "download": {
+    "base_url": "https://example.com",
+    "timeout_seconds": 30,
+    "max_retries": 3
+  }
+}

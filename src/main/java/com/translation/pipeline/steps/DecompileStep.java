@@ -1,5 +1,7 @@
 package com.translation.pipeline.steps;
 
+import com.google.inject.Inject;
+import com.translation.config.Configuration;
 import com.translation.pipeline.PipelineStepBase;
 import com.translation.util.IpeWrapper;
 
@@ -10,11 +12,19 @@ public class DecompileStep extends PipelineStepBase {
     private final File inputDirectory;
     private final File outputDirectory;
 
-    public DecompileStep(int order, File inputDirectory, File outputDirectory) {
+    @Inject
+    public DecompileStep(IpeWrapper ipeWrapper, Configuration configuration) {
+        super(1, "IPE Decompilation"); // Default order and name
+        this.ipeWrapper = ipeWrapper;
+        this.inputDirectory = null; // Will be set later
+        this.outputDirectory = null; // Will be set later
+    }
+
+    public DecompileStep(int order, File inputDirectory, File outputDirectory, IpeWrapper ipeWrapper) {
         super(order, "IPE Decompilation");
         this.inputDirectory = inputDirectory;
         this.outputDirectory = outputDirectory;
-        this.ipeWrapper = new IpeWrapper();
+        this.ipeWrapper = ipeWrapper;
     }
 
     @Override

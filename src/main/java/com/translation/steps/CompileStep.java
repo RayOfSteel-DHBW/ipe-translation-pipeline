@@ -1,5 +1,7 @@
 package com.translation.steps;
 
+import com.google.inject.Inject;
+import com.translation.config.Configuration;
 import com.translation.pipeline.PipelineStepBase;
 import com.translation.util.IpeWrapper;
 
@@ -8,11 +10,19 @@ public class CompileStep extends PipelineStepBase {
     private final String xmlFilePath;
     private final String outputFilePath;
 
-    public CompileStep(int order, String xmlFilePath, String outputFilePath) {
+    @Inject
+    public CompileStep(IpeWrapper ipeWrapper, Configuration configuration) {
+        super(4, "IPE Compilation"); // Default order and name
+        this.ipeWrapper = ipeWrapper;
+        this.xmlFilePath = null; // Will be set later
+        this.outputFilePath = null; // Will be set later
+    }
+
+    public CompileStep(int order, String xmlFilePath, String outputFilePath, IpeWrapper ipeWrapper) {
         super(order, "IPE Compilation");
         this.xmlFilePath = xmlFilePath;
         this.outputFilePath = outputFilePath;
-        this.ipeWrapper = new IpeWrapper();
+        this.ipeWrapper = ipeWrapper;
     }
 
     @Override
