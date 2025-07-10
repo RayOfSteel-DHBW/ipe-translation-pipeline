@@ -14,7 +14,6 @@ import com.translation.steps.TextRestorationStep;
 import com.translation.steps.TranslationStep;
 import com.translation.services.DownloadService;
 import com.translation.services.TranslationService;
-import com.translation.util.IpeWrapper;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -108,8 +107,7 @@ public class Bootstrapper {
         TextRestorationStep restorationStep = new TextRestorationStep(4);
         steps.add(restorationStep);
         
-        IpeWrapper ipeWrapper = new IpeWrapper(configuration);
-        CompileStep compileStep = new CompileStep(5, ipeWrapper);
+        CompileStep compileStep = injector.getInstance(CompileStep.class);
         steps.add(compileStep);
         
         logger.info("Pipeline created with " + steps.size() + " steps");

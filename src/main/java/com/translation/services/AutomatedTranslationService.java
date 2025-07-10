@@ -17,6 +17,8 @@ import java.util.logging.Logger;
 public class AutomatedTranslationService implements TranslationService {
     private static final Logger logger = Logger.getLogger(AutomatedTranslationService.class.getName());
     private static final int REQUEST_DELAY_MS = 10000;
+    private static final int INITIAL_RETRY_DELAY_MS = 5000; 
+    private static final int RETRY_DELAY_INCREMENT_MS = 5000;
     
     private final String apiKey;
     private final String targetLanguage;
@@ -78,8 +80,28 @@ public class AutomatedTranslationService implements TranslationService {
             .post(body)
             .build();
         
-        try (Response response = httpClient.newCall(httpRequest).execute()) {
-            if (!response.isSuccessful()) {
+        int retryCount = 0;
+        while (true) {
+            try (Response response = httpClient.newCall(httpRequest).execute()) {
+                if (response.isSuccessful()) {
+                    String responseBody = response.body() != null ? response.body().string() : "";
+                    return parseTranslationResponse(responseBody);
+                }
+                
+                if (response.code() == 429) {
+                    retryCount++;
+                    int delayMs = INITIAL_RETRY_DELAY_MS + (retryCount - 1) * RETRY_DELAY_INCREMENT_MS;
+                    logger.warning("Received 429 (Too Many Requests) - Retry " + retryCount + " after " + delayMs + "ms");
+                    
+                    try {
+                        Thread.sleep(delayMs);
+                    } catch (InterruptedException e) {
+                        Thread.currentThread().interrupt();
+                        throw new Exception("Translation interrupted during retry", e);
+                    }
+                    continue;
+                }
+                
                 String responseBody = response.body() != null ? response.body().string() : "";
                 logger.severe("DeepL API request failed with status: " + response.code());
                 logger.severe("Response body: " + responseBody);
@@ -87,9 +109,6 @@ public class AutomatedTranslationService implements TranslationService {
                 logger.severe("API key length: " + apiKey.length());
                 throw new Exception("DeepL API request failed with status: " + response.code() + " - " + responseBody);
             }
-            
-            String responseBody = response.body() != null ? response.body().string() : "";
-            return parseTranslationResponse(responseBody);
         }
     }
     
