@@ -23,7 +23,6 @@ public class ConfigurationLoader {
             
             Configuration config = objectMapper.readValue(inputStream, Configuration.class);
             
-            // Validate required settings
             validateConfiguration(config);
             
             return config;
@@ -35,8 +34,8 @@ public class ConfigurationLoader {
             throw new IOException("Configuration error: 'ipe_dir' is required and cannot be empty");
         }
         
-        if (config.getIpeExecutable() == null || config.getIpeExecutable().trim().isEmpty()) {
-            throw new IOException("Configuration error: 'ipe_executable' is required and cannot be empty");
+        if (config.getIpeExtract() == null || config.getIpeExtract().trim().isEmpty()) {
+            throw new IOException("Configuration error: 'ipe_extract' is required and cannot be empty");
         }
     }
 }

@@ -17,11 +17,15 @@ public class IpeWrapper {
 
     public boolean extractXml(File pdfFile, File outputXmlFile) {
         try {
-            String ipeExtractPath = configuration.getIpeExecutablePath();
+            String ipeExtractPath = configuration.getIpeExtractPath();
             ProcessBuilder processBuilder = new ProcessBuilder(ipeExtractPath, pdfFile.getAbsolutePath(), outputXmlFile.getAbsolutePath());
             Process process = processBuilder.start();
-            int exitCode = process.waitFor();
-            
+            boolean finished = process.waitFor(15, java.util.concurrent.TimeUnit.SECONDS);
+            if (!finished) {
+                process.destroyForcibly();
+                throw new Exception("Process timed out after 15sec");
+            }
+            int exitCode = process.exitValue();
             if (exitCode == 0 && outputXmlFile.exists() && outputXmlFile.length() > 0) {
                 return true;
             } else {
@@ -40,7 +44,7 @@ public class IpeWrapper {
     }
 
     public void decompile(File ipeFile, File outputXmlFile) throws Exception {
-        String ipe2ipePath = configuration.getIpeDir() + File.separator + "ipe2ipe";
+        String ipe2ipePath = configuration.getIpe2ipePath();
         ProcessBuilder processBuilder = new ProcessBuilder(ipe2ipePath, "-xml", ipeFile.getAbsolutePath(), outputXmlFile.getAbsolutePath());
         Process process = processBuilder.start();
         int exitCode = process.waitFor();
@@ -50,7 +54,7 @@ public class IpeWrapper {
     }
 
     public void compile(String xmlFilePath, String outputFilePath) throws Exception {
-        String ipe2ipePath = configuration.getIpeDir() + File.separator + "ipe2ipe";
+        String ipe2ipePath = configuration.getIpe2ipePath();
         ProcessBuilder processBuilder = new ProcessBuilder(ipe2ipePath, "-pdf", xmlFilePath, outputFilePath);
         Process process = processBuilder.start();
         int exitCode = process.waitFor();

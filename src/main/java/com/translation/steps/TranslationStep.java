@@ -7,16 +7,24 @@ import java.nio.file.Paths;
 public class TranslationStep extends PipelineStepBase {
     private final TranslationService translationService;
     private final String inputFile;
+    private final String outputFile;
 
     public TranslationStep(int order, TranslationService translationService, String inputFile) {
         super(order, "Translation");
         this.translationService = translationService;
         this.inputFile = inputFile;
+        this.outputFile = generateOutputPath();
+    }
+
+    public TranslationStep(int order, TranslationService translationService, String inputFile, String outputFile) {
+        super(order, "Translation");
+        this.translationService = translationService;
+        this.inputFile = inputFile;
+        this.outputFile = outputFile;
     }
 
     @Override
     protected void performAction() throws Exception {
-        String outputFile = generateOutputPath();
         logger.info("Processing translation from " + inputFile + " to " + outputFile);
         translationService.translate(inputFile, outputFile);
     }
@@ -30,6 +38,10 @@ public class TranslationStep extends PipelineStepBase {
 
     public String getInputFile() {
         return inputFile;
+    }
+
+    public String getOutputFile() {
+        return outputFile;
     }
 
     public TranslationService getTranslationService() {

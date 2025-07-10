@@ -18,7 +18,6 @@ public class DecompileStep extends PipelineStepBase {
         this.configuration = configuration;
     }
 
-    // Constructor for backward compatibility and custom ordering
     public DecompileStep(int order, String stepName, IpeWrapper ipeWrapper, Configuration configuration) {
         super(order, stepName);
         this.ipeWrapper = ipeWrapper;

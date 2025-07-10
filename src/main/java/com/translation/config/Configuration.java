@@ -6,8 +6,11 @@ public class Configuration {
     @JsonProperty("ipe_dir")
     private String ipeDir;
     
-    @JsonProperty("ipe_executable")
-    private String ipeExecutable = "ipeextract";
+    @JsonProperty("ipe_extract")
+    private String ipeExtract = "ipeextract.exe";
+    
+    @JsonProperty("ipe2ipe")
+    private String ipe2ipe = "ipe2ipe.exe";
     
     @JsonProperty("pipeline")
     private PipelineConfig pipeline = new PipelineConfig();
@@ -18,7 +21,6 @@ public class Configuration {
     @JsonProperty("download")
     private DownloadConfig download = new DownloadConfig();
     
-    // Getters and setters
     public String getIpeDir() {
         return ipeDir;
     }
@@ -27,12 +29,20 @@ public class Configuration {
         this.ipeDir = ipeDir;
     }
     
-    public String getIpeExecutable() {
-        return ipeExecutable;
+    public String getIpeExtract() {
+        return ipeExtract;
     }
     
-    public void setIpeExecutable(String ipeExecutable) {
-        this.ipeExecutable = ipeExecutable;
+    public void setIpeExtract(String ipeExtract) {
+        this.ipeExtract = ipeExtract;
+    }
+    
+    public String getIpe2ipe() {
+        return ipe2ipe;
+    }
+    
+    public void setIpe2ipe(String ipe2ipe) {
+        this.ipe2ipe = ipe2ipe;
     }
     
     public PipelineConfig getPipeline() {
@@ -59,12 +69,19 @@ public class Configuration {
         this.download = download;
     }
     
-    // Helper method to get full IPE executable path
-    public String getIpeExecutablePath() {
+    // Helper methods to get full executable paths
+    public String getIpeExtractPath() {
         if (ipeDir == null || ipeDir.isEmpty()) {
-            return ipeExecutable;
+            return ipeExtract;
         }
-        return ipeDir + java.io.File.separator + ipeExecutable;
+        return ipeDir + java.io.File.separator + ipeExtract;
+    }
+    
+    public String getIpe2ipePath() {
+        if (ipeDir == null || ipeDir.isEmpty()) {
+            return ipe2ipe;
+        }
+        return ipeDir + java.io.File.separator + ipe2ipe;
     }
     
     public static class PipelineConfig {
