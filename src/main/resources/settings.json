@@ -1,19 +1,5 @@
 {
   "ipe_dir": "C:/Program Files (x86)/IPE/bin",
-  "ipe_extract": "ipeextract.exe",
-  "ipe2ipe": "ipe2ipe.exe",
-  "pipeline": {
-    "working_directory": ".work",
-    "clean_on_start": false
-  },
-  "translation": {
-    "source_language": "en",
-    "target_language": "de",
-    "service": "automated"
-  },
-  "download": {
-    "base_url": "https://graphics.cs.cmu.edu/courses/15-462/lectures/",
-    "timeout_seconds": 30,
-    "max_retries": 3
-  }
+  "working_directory": ".work",
+  "clean_on_start": false
 }

@@ -2,46 +2,34 @@ package com.translation.steps;
 
 import com.translation.pipeline.PipelineStepBase;
 import com.translation.services.TranslationService;
-import java.nio.file.Paths;
+import java.io.File;
 
 public class TranslationStep extends PipelineStepBase {
     private final TranslationService translationService;
-    private final String inputFile;
-    private final String outputFile;
 
-    public TranslationStep(int order, TranslationService translationService, String inputFile) {
+    public TranslationStep(int order, TranslationService translationService) {
         super(order, "Translation");
         this.translationService = translationService;
-        this.inputFile = inputFile;
-        this.outputFile = generateOutputPath();
-    }
-
-    public TranslationStep(int order, TranslationService translationService, String inputFile, String outputFile) {
-        super(order, "Translation");
-        this.translationService = translationService;
-        this.inputFile = inputFile;
-        this.outputFile = outputFile;
     }
 
     @Override
     protected void performAction() throws Exception {
-        logger.info("Processing translation from " + inputFile + " to " + outputFile);
-        translationService.translate(inputFile, outputFile);
-    }
-
-    private String generateOutputPath() {
-        String repoRoot = System.getProperty("user.dir");
-        String stepPrefix = String.format("%02d", getOrder());
-        String stepName = getStepName().toLowerCase().replace(" ", "-");
-        return Paths.get(repoRoot, ".work", stepPrefix + "-" + stepName + ".txt").toString();
-    }
-
-    public String getInputFile() {
-        return inputFile;
-    }
-
-    public String getOutputFile() {
-        return outputFile;
+        logger.info("Processing translation from " + getInputDirectory() + " to " + getOutputDirectory());
+        
+        // Find .txt files in the input directory
+        File[] txtFiles = getInputDirectory().listFiles((dir, name) -> name.toLowerCase().endsWith(".txt"));
+        
+        if (txtFiles == null || txtFiles.length == 0) {
+            throw new Exception("No .txt files found in input directory: " + getInputDirectory().getAbsolutePath());
+        }
+        
+        for (File txtFile : txtFiles) {
+            String baseName = txtFile.getName().replaceAll("\\.[^.]*$", "");
+            File outputFile = new File(getOutputDirectory(), baseName + ".txt");
+            
+            logger.info("Translating: " + txtFile.getName() + " -> " + outputFile.getName());
+            translationService.translate(txtFile.getAbsolutePath(), outputFile.getAbsolutePath());
+        }
     }
 
     public TranslationService getTranslationService() {

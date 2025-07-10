@@ -13,7 +13,7 @@ public class DecompileStep extends PipelineStepBase {
 
     @Inject
     public DecompileStep(IpeWrapper ipeWrapper, Configuration configuration) {
-        super(1, "IPE Decompilation"); // Default to order 1, name can be overridden
+        super(1, "decompile");
         this.ipeWrapper = ipeWrapper;
         this.configuration = configuration;
     }

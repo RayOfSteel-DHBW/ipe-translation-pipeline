@@ -1,5 +1,6 @@
 package com.translation.services;
 
+import com.translation.Constants;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -21,9 +22,9 @@ public class AutomatedTranslationService implements TranslationService {
     private final String apiKey;
     private final String targetLanguage;
 
-    public AutomatedTranslationService(String apiKey) throws IOException {
+    public AutomatedTranslationService() throws IOException {
         this.apiKey = Files.readString(Paths.get("C:\\Dev\\Repos\\Remotes\\JavaProject\\api.key")).trim();
-        this.targetLanguage = "EN";
+        this.targetLanguage = Constants.TARGET_LANGUAGE;
     }
 
     @Override
@@ -57,7 +58,7 @@ public class AutomatedTranslationService implements TranslationService {
         );
         
         HttpRequest request = HttpRequest.newBuilder()
-            .uri(URI.create("https://api.deepl.com/v2/translate"))
+            .uri(URI.create("https://api-free.deepl.com/v2/translate"))
             .header("Content-Type", "application/json")
             .header("Authorization", "DeepL-Auth-Key " + apiKey)
             .POST(HttpRequest.BodyPublishers.ofString(requestBody))
@@ -66,15 +67,30 @@ public class AutomatedTranslationService implements TranslationService {
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
         
         if (response.statusCode() != 200) {
-            throw new Exception("DeepL API request failed with status: " + response.statusCode());
+            logger.severe("DeepL API request failed with status: " + response.statusCode());
+            logger.severe("Response body: " + response.body());
+            logger.severe("Request body: " + requestBody);
+            logger.severe("API key length: " + apiKey.length());
+            throw new Exception("DeepL API request failed with status: " + response.statusCode() + " - " + response.body());
         }
         
         return parseTranslationResponse(response.body());
     }
     
     private String parseTranslationResponse(String jsonResponse) {
-        int textStart = jsonResponse.indexOf("\"text\":\"") + 8;
+        // DeepL returns: {"translations":[{"detected_source_language":"EN","text":"Hallo Welt!"}]}
+        int translationsStart = jsonResponse.indexOf("\"translations\":[{");
+        if (translationsStart == -1) {
+            throw new RuntimeException("Invalid DeepL response format");
+        }
+        
+        int textStart = jsonResponse.indexOf("\"text\":\"", translationsStart) + 8;
         int textEnd = jsonResponse.indexOf("\"", textStart);
+        
+        if (textStart == 7 || textEnd == -1) { // 7 because indexOf returned -1 + 8
+            throw new RuntimeException("Could not parse translation from DeepL response");
+        }
+        
         return jsonResponse.substring(textStart, textEnd);
     }
     

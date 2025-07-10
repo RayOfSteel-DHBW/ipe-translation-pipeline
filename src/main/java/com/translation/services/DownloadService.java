@@ -39,12 +39,17 @@ public class DownloadService {
             String filename = getFilenameFromUrl(url);
             File outputFile = new File(targetDir, filename);
             
-            logger.info(String.format("[%d/%d] Downloading %s", i + 1, pdfUrls.size(), filename));
+            logger.info(String.format("[%d/%d] Processing %s", i + 1, pdfUrls.size(), filename));
+            
+            if (outputFile.exists()) {
+            logger.info("File already exists, skipping download: " + filename);
+            continue;
+            }
             
             if (downloadFile(url, outputFile)) {
-                logger.info("Successfully downloaded: " + filename);
+            logger.info("Successfully downloaded: " + filename);
             } else {
-                logger.warning("Failed to download: " + filename);
+            logger.warning("Failed to download: " + filename);
             }
         }
         
@@ -75,8 +80,8 @@ public class DownloadService {
             URL url = URI.create(urlString).toURL();
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
-            connection.setConnectTimeout(10000);
-            connection.setReadTimeout(30000);
+            connection.setConnectTimeout(Constants.TIMEOUT_SECONDS * 1000);
+            connection.setReadTimeout(Constants.TIMEOUT_SECONDS * 1000);
             
             int responseCode = connection.getResponseCode();
             if (responseCode != HttpURLConnection.HTTP_OK) {

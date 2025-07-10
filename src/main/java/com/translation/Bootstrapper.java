@@ -101,25 +101,15 @@ public class Bootstrapper {
         TextExtractionStep textExtractionStep = injector.getInstance(TextExtractionStep.class);
         steps.add(textExtractionStep);
         
-        String sourceTextFile = Constants.WORK_DIR + "/step-2/extracted_text_de.txt";
-        String targetTextFile = Constants.WORK_DIR + "/step-3/translated_text_en.txt";
-        
-        new File(Constants.WORK_DIR + "/step-3").mkdirs();
-        
         TranslationService translationService = injector.getInstance(TranslationService.class);
-        TranslationStep translationStep = new TranslationStep(3, translationService, sourceTextFile, targetTextFile);
+        TranslationStep translationStep = new TranslationStep(3, translationService);
         steps.add(translationStep);
         
-        String structureFile = Constants.WORK_DIR + "/step-2/structure.xml";
-        String restoredXmlFile = Constants.WORK_DIR + "/step-4/restored.xml";
-        
-        new File(Constants.WORK_DIR + "/step-4").mkdirs();
-        
-        TextRestorationStep restorationStep = new TextRestorationStep(4, structureFile, targetTextFile, restoredXmlFile);
+        TextRestorationStep restorationStep = new TextRestorationStep(4);
         steps.add(restorationStep);
         
         IpeWrapper ipeWrapper = new IpeWrapper(configuration);
-        CompileStep compileStep = new CompileStep(5, restoredXmlFile, Constants.OUTPUT_DIR + "/final.ipe", ipeWrapper);
+        CompileStep compileStep = new CompileStep(5, ipeWrapper);
         steps.add(compileStep);
         
         logger.info("Pipeline created with " + steps.size() + " steps");
