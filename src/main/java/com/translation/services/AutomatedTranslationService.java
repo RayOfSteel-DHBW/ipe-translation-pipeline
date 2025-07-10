@@ -1,15 +1,13 @@
 package com.translation.services;
 
+import com.google.gson.Gson;
 import com.translation.Constants;
+import okhttp3.*;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -18,13 +16,18 @@ import java.util.logging.Logger;
 
 public class AutomatedTranslationService implements TranslationService {
     private static final Logger logger = Logger.getLogger(AutomatedTranslationService.class.getName());
+    private static final int REQUEST_DELAY_MS = 10000;
     
     private final String apiKey;
     private final String targetLanguage;
+    private final OkHttpClient httpClient;
+    private final Gson gson;
 
     public AutomatedTranslationService() throws IOException {
         this.apiKey = Files.readString(Paths.get("C:\\Dev\\Repos\\Remotes\\JavaProject\\api.key")).trim();
         this.targetLanguage = Constants.TARGET_LANGUAGE;
+        this.httpClient = new OkHttpClient();
+        this.gson = new Gson();
     }
 
     @Override
@@ -34,7 +37,8 @@ public class AutomatedTranslationService implements TranslationService {
         List<String> lines = readLinesFromFile(inputFilePath);
         List<String> translatedLines = new ArrayList<>();
         
-        for (String line : lines) {
+        for (int i = 0; i < lines.size(); i++) {
+            String line = lines.get(i);
             if (line.trim().isEmpty()) {
                 translatedLines.add(line);
                 continue;
@@ -42,6 +46,17 @@ public class AutomatedTranslationService implements TranslationService {
             
             String translatedLine = translateWithDeepL(line.trim());
             translatedLines.add(translatedLine);
+            
+            // Add delay between requests to avoid rate limiting
+            if (i < lines.size() - 1) { // Don't delay after the last request
+                logger.info("Waiting " + REQUEST_DELAY_MS + "ms before next request to avoid rate limiting");
+                try {
+                    Thread.sleep(REQUEST_DELAY_MS);
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                    throw new Exception("Translation interrupted", e);
+                }
+            }
         }
         
         writeLinesToFile(translatedLines, outputFilePath);
@@ -49,32 +64,33 @@ public class AutomatedTranslationService implements TranslationService {
     }
     
     private String translateWithDeepL(String text) throws Exception {
-        HttpClient client = HttpClient.newHttpClient();
+        DeepLRequest request = new DeepLRequest(new String[]{text}, targetLanguage);
+        String requestBody = gson.toJson(request);
         
-        String requestBody = String.format(
-            "{\"text\": [\"%s\"], \"target_lang\": \"%s\"}",
-            text.replace("\"", "\\\""),
-            targetLanguage
+        RequestBody body = RequestBody.create(
+            requestBody, 
+            MediaType.get("application/json")
         );
         
-        HttpRequest request = HttpRequest.newBuilder()
-            .uri(URI.create("https://api-free.deepl.com/v2/translate"))
-            .header("Content-Type", "application/json")
+        Request httpRequest = new Request.Builder()
+            .url("https://api-free.deepl.com/v2/translate")
             .header("Authorization", "DeepL-Auth-Key " + apiKey)
-            .POST(HttpRequest.BodyPublishers.ofString(requestBody))
+            .post(body)
             .build();
         
-        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-        
-        if (response.statusCode() != 200) {
-            logger.severe("DeepL API request failed with status: " + response.statusCode());
-            logger.severe("Response body: " + response.body());
-            logger.severe("Request body: " + requestBody);
-            logger.severe("API key length: " + apiKey.length());
-            throw new Exception("DeepL API request failed with status: " + response.statusCode() + " - " + response.body());
+        try (Response response = httpClient.newCall(httpRequest).execute()) {
+            if (!response.isSuccessful()) {
+                String responseBody = response.body() != null ? response.body().string() : "";
+                logger.severe("DeepL API request failed with status: " + response.code());
+                logger.severe("Response body: " + responseBody);
+                logger.severe("Request body: " + requestBody);
+                logger.severe("API key length: " + apiKey.length());
+                throw new Exception("DeepL API request failed with status: " + response.code() + " - " + responseBody);
+            }
+            
+            String responseBody = response.body() != null ? response.body().string() : "";
+            return parseTranslationResponse(responseBody);
         }
-        
-        return parseTranslationResponse(response.body());
     }
     
     private String parseTranslationResponse(String jsonResponse) {
@@ -111,6 +127,16 @@ public class AutomatedTranslationService implements TranslationService {
                 writer.write(line);
                 writer.newLine();
             }
+        }
+    }
+    
+    private static class DeepLRequest {
+        private String[] text;
+        private String target_lang;
+        
+        public DeepLRequest(String[] text, String target_lang) {
+            this.text = text;
+            this.target_lang = target_lang;
         }
     }
 }

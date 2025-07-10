@@ -1,6 +1,7 @@
 package com.translation.services;
 
 import com.translation.Constants;
+import okhttp3.*;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -9,17 +10,23 @@ import org.jsoup.select.Elements;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URI;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
 public class DownloadService {
     private static final Logger logger = Logger.getLogger(DownloadService.class.getName());
+    private final OkHttpClient httpClient;
+    
+    public DownloadService() {
+        this.httpClient = new OkHttpClient.Builder()
+            .connectTimeout(Constants.TIMEOUT_SECONDS, TimeUnit.SECONDS)
+            .readTimeout(Constants.TIMEOUT_SECONDS, TimeUnit.SECONDS)
+            .build();
+    }
     
     public void downloadToDirectory(String targetDirectory) throws Exception {
         logger.info("Starting download to directory: " + targetDirectory);
@@ -77,25 +84,30 @@ public class DownloadService {
     
     private boolean downloadFile(String urlString, File outputFile) {
         try {
-            URL url = URI.create(urlString).toURL();
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-            connection.setRequestMethod("GET");
-            connection.setConnectTimeout(Constants.TIMEOUT_SECONDS * 1000);
-            connection.setReadTimeout(Constants.TIMEOUT_SECONDS * 1000);
+            Request request = new Request.Builder()
+                .url(urlString)
+                .build();
             
-            int responseCode = connection.getResponseCode();
-            if (responseCode != HttpURLConnection.HTTP_OK) {
-                logger.warning("HTTP " + responseCode + " for URL: " + urlString);
-                return false;
-            }
-            
-            try (InputStream inputStream = connection.getInputStream();
-                 FileOutputStream outputStream = new FileOutputStream(outputFile)) {
+            try (Response response = httpClient.newCall(request).execute()) {
+                if (!response.isSuccessful()) {
+                    logger.warning("HTTP " + response.code() + " for URL: " + urlString);
+                    return false;
+                }
                 
-                byte[] buffer = new byte[8192];
-                int bytesRead;
-                while ((bytesRead = inputStream.read(buffer)) != -1) {
-                    outputStream.write(buffer, 0, bytesRead);
+                ResponseBody responseBody = response.body();
+                if (responseBody == null) {
+                    logger.warning("Empty response body for URL: " + urlString);
+                    return false;
+                }
+                
+                try (InputStream inputStream = responseBody.byteStream();
+                     FileOutputStream outputStream = new FileOutputStream(outputFile)) {
+                    
+                    byte[] buffer = new byte[8192];
+                    int bytesRead;
+                    while ((bytesRead = inputStream.read(buffer)) != -1) {
+                        outputStream.write(buffer, 0, bytesRead);
+                    }
                 }
             }
             
@@ -109,8 +121,11 @@ public class DownloadService {
     
     private String getFilenameFromUrl(String urlString) {
         try {
-            URL url = URI.create(urlString).toURL();
-            String path = url.getPath();
+            String path = urlString;
+            if (path.contains("?")) {
+                path = path.substring(0, path.indexOf("?"));
+            }
+            
             String filename = path.substring(path.lastIndexOf('/') + 1);
             
             if (filename.isEmpty() || !filename.endsWith(".pdf")) {
