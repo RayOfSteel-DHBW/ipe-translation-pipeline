@@ -14,7 +14,6 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
 public class DownloadService {
@@ -23,14 +22,14 @@ public class DownloadService {
     
     public DownloadService() {
         this.httpClient = new OkHttpClient.Builder()
-            .connectTimeout(Constants.TIMEOUT_SECONDS, TimeUnit.SECONDS)
-            .readTimeout(Constants.TIMEOUT_SECONDS, TimeUnit.SECONDS)
             .build();
     }
     
-    public void downloadToDirectory(String targetDirectory) throws Exception {
+    public List<String> downloadToDirectory(String targetDirectory) throws Exception {
         logger.info("Starting download to directory: " + targetDirectory);
-        
+
+        List<String> downloaded = new ArrayList<>();
+
         File targetDir = new File(targetDirectory);
         if (!targetDir.exists()) {
             if (!targetDir.mkdirs()) {
@@ -48,19 +47,24 @@ public class DownloadService {
             
             logger.info(String.format("[%d/%d] Processing %s", i + 1, pdfUrls.size(), filename));
             
+            boolean success;
             if (outputFile.exists()) {
-            logger.info("File already exists, skipping download: " + filename);
-            continue;
-            }
-            
-            if (downloadFile(url, outputFile)) {
-            logger.info("Successfully downloaded: " + filename);
+                logger.info("File already exists, skipping download: " + filename);
+                success = true; // treat as available
             } else {
-            logger.warning("Failed to download: " + filename);
+                success = downloadFile(url, outputFile);
+            }
+
+            if (success) {
+                downloaded.add(stripExtension(filename));
+                logger.info("Available: " + filename);
+            } else {
+                logger.warning("Failed to obtain: " + filename);
             }
         }
         
         logger.info("Download completed. Files saved to: " + targetDir.getAbsolutePath());
+        return downloaded;
     }
     
     private List<String> scrapeCoursePage(String courseUrl) throws Exception {
@@ -136,6 +140,11 @@ public class DownloadService {
         } catch (Exception e) {
             return "document_" + Math.abs(urlString.hashCode()) + ".pdf";
         }
+    }
+    
+    private String stripExtension(String filename) {
+        int dot = filename.lastIndexOf('.');
+        return dot == -1 ? filename : filename.substring(0, dot);
     }
     
     public boolean validateDownloadedFiles(String directory) {

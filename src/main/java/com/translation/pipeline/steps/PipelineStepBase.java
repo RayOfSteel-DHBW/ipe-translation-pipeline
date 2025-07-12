@@ -1,6 +1,8 @@
-package com.translation.pipeline;
+package com.translation.pipeline.steps;
 
 import com.translation.Constants;
+import com.translation.pipeline.PipelineStepException;
+
 import java.io.File;
 import java.util.logging.Logger;
 import java.util.logging.Level;
@@ -25,11 +27,11 @@ public abstract class PipelineStepBase {
         }
     }
 
-    public final void execute() throws Exception {
+    public final void execute(String fileName) throws Exception {
         logger.info("Starting pipeline step: " + stepName);
         
         try {
-            performAction();
+            performAction(fileName);
             logger.info("Successfully completed pipeline step: " + stepName);
         } catch (Exception e) {
             logger.log(Level.SEVERE, "Failed to execute pipeline step: " + stepName, e);
@@ -37,7 +39,7 @@ public abstract class PipelineStepBase {
         }
     }
 
-    protected abstract void performAction() throws Exception;
+    protected abstract void performAction(String fileName) throws Exception;
     
     protected File getInputDirectory() {
         return inputDirectory;

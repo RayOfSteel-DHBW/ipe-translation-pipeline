@@ -63,7 +63,7 @@ public class TextElement {
     }
     
     public String getPlaceholder() {
-        return "{" + id + "}";
+        return "@PLACEHOLDER(" + id + ")@";
     }
     
     public static class TextContext {

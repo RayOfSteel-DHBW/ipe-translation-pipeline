@@ -6,17 +6,13 @@ import com.translation.config.Configuration;
 import com.translation.config.ConfigurationModule;
 import com.translation.di.ApplicationModule;
 import com.translation.pipeline.Pipeline;
-import com.translation.pipeline.PipelineStepBase;
-import com.translation.steps.CompileStep;
-import com.translation.steps.DecompileStep;
-import com.translation.steps.TextExtractionStep;
-import com.translation.steps.TextRestorationStep;
-import com.translation.steps.TranslationStep;
+import com.translation.pipeline.steps.*;
 import com.translation.services.DownloadService;
 import com.translation.services.TranslationService;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
@@ -33,10 +29,10 @@ public class Bootstrapper {
         try {
             setupDependencyInjection();
             createDirectories();
-            downloadIpeFiles();
+            String[] fileNames = downloadIpeFiles();
             
             Pipeline pipeline = createPipeline();
-            pipeline.execute();
+            pipeline.execute(fileNames);
             
             logger.info("Pipeline completed successfully!");
             
@@ -58,35 +54,29 @@ public class Bootstrapper {
     }
     
     private void createDirectories() {
-        logger.info("Creating working directories...");
+        logger.info("Creating working directory...");
         
-        String[] directories = {
-            Constants.INPUT_DIR, Constants.WORK_DIR, Constants.OUTPUT_DIR
-        };
-        
-        for (String dir : directories) {
-            File directory = new File(dir);
-            if (!directory.exists()) {
-                if (directory.mkdirs()) {
-                    logger.info("Created directory: " + dir);
-                } else {
-                    logger.warning("Failed to create directory: " + dir);
-                }
+        File directory = new File(Constants.WORK_DIR);
+        if (!directory.exists()) {
+            if (directory.mkdirs()) {
+                logger.info("Created directory: " + Constants.WORK_DIR);
+            } else {
+                logger.warning("Failed to create directory: " + Constants.WORK_DIR);
             }
         }
     }
     
-    private void downloadIpeFiles() throws Exception {
+    private String[] downloadIpeFiles() throws Exception {
         logger.info("Step 0: Downloading IPE files...");
-        
+
         File step0Dir = new File(Constants.WORK_DIR + "/step-0");
         if (!step0Dir.exists()) {
             step0Dir.mkdirs();
         }
-        
-        downloadService.downloadToDirectory(step0Dir.getAbsolutePath());
-        
+
+        List<String> names = downloadService.downloadToDirectory(step0Dir.getAbsolutePath());
         logger.info("Download completed. Files saved to: " + step0Dir.getAbsolutePath());
+        return names.toArray(new String[0]);
     }
     
     private Pipeline createPipeline() {
