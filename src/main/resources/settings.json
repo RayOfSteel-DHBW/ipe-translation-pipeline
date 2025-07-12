@@ -1,5 +1,5 @@
 {
-  "ipe_dir": "C:/Program Files (x86)/IPE/bin",
-  "working_directory": ".work",
+  "ipe_dir": "C:\\Program Files (x86)\\IPE\\bin",
+  "working_directory": "C:\\Dev\\Repos\\Remotes\\JavaProject\\ipe-translation-pipeline\\.work",
   "clean_on_start": false
 }

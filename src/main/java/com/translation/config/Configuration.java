@@ -45,8 +45,8 @@ public class Configuration {
     
     public String getIpe2ipePath() {
         if (ipeDir == null || ipeDir.isEmpty()) {
-            return "ipe2ipe.exe";
+            return "ipetoipe.exe";
         }
-        return ipeDir + java.io.File.separator + "ipe2ipe.exe";
+        return ipeDir + java.io.File.separator + "ipetoipe.exe";
     }
 }

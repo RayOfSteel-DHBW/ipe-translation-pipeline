@@ -17,6 +17,8 @@ public class AutomatedTranslationService implements TranslationService {
     private static final Logger logger = Logger.getLogger(AutomatedTranslationService.class.getName());
     private static final int INITIAL_RETRY_DELAY_MS = 5000; 
     private static final int RETRY_DELAY_INCREMENT_MS = 5000;
+    private static final int MAX_BATCH_SIZE = 50;
+    private static final int MAX_BATCH_CHARS = 90000;
 
     private final String apiKey;
     private final String targetLanguage;
@@ -35,28 +37,46 @@ public class AutomatedTranslationService implements TranslationService {
         List<String> lines = readLinesFromFile(inputFilePath);
         List<String> translatedLines = new ArrayList<>();
         
-        for (int i = 0; i < lines.size(); i++) {
-            String line = lines.get(i);
+        List<String> batch = new ArrayList<>();
+        int batchChars = 0;
+        
+        for (String line : lines) {
             if (line.trim().isEmpty()) {
                 translatedLines.add(line);
                 continue;
             }
             
-            String translatedLine = translateWithDeepL(line.trim());
-            translatedLines.add(translatedLine);
+            if (batchChars + line.length() > MAX_BATCH_CHARS || batch.size() >= MAX_BATCH_SIZE) {
+                List<TextResult> results = translateBatchWithDeepL(batch);
+                for (TextResult result : results) {
+                    translatedLines.add(result.getText());
+                }
+                batch.clear();
+                batchChars = 0;
+                Thread.sleep(1000);
+            }
+            
+            batch.add(line.trim());
+            batchChars += line.length();
+        }
+        
+        if (!batch.isEmpty()) {
+            List<TextResult> results = translateBatchWithDeepL(batch);
+            for (TextResult result : results) {
+                translatedLines.add(result.getText());
+            }
         }
         
         writeLinesToFile(translatedLines, outputFilePath);
         logger.info("Translation completed successfully");
     }
     
-    private String translateWithDeepL(String text) throws Exception {
+    private List<TextResult> translateBatchWithDeepL(List<String> texts) throws Exception {
         int retryCount = 0;
         while (true) {
             try {
-                TextResult result = translator.translateText(text, null, targetLanguage);
-                return result.getText();
-            } catch (TooManyRequestsException e) {   // 429 handling
+                return translator.translateText(texts, null, targetLanguage);
+            } catch (TooManyRequestsException e) {
                 retryCount++;
                 int delayMs = INITIAL_RETRY_DELAY_MS + (retryCount - 1) * RETRY_DELAY_INCREMENT_MS;
                 logger.warning("DeepL rate limit hit - retry " + retryCount + " after " + delayMs + "ms");
@@ -66,7 +86,7 @@ public class AutomatedTranslationService implements TranslationService {
                     Thread.currentThread().interrupt();
                     throw new Exception("Translation interrupted", ie);
                 }
-            } catch (DeepLException e) {             // propagate other DeepL errors
+            } catch (DeepLException e) {
                 throw e;
             }
         }

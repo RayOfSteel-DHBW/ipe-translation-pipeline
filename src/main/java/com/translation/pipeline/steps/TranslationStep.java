@@ -16,20 +16,22 @@ public class TranslationStep extends PipelineStepBase {
     }
 
     @Override
-    protected void performAction(String fileName) throws Exception {
+    protected boolean performAction(String fileName) throws Exception {
         if (fileName == null || fileName.trim().isEmpty()) {
             throw new Exception("Single-file mode: filename (without extension) must be provided");
         }
 
         File txtFile = new File(getInputDirectory(), fileName + INPUT_EXT);
         if (!txtFile.exists()) {
-            throw new Exception("Text file not found: " + txtFile.getAbsolutePath());
+            logger.warning("Text file not found: " + txtFile.getAbsolutePath() + " (likely previous step failed)");
+            return false;
         }
 
         File outputFile = new File(getOutputDirectory(), fileName + OUTPUT_EXT);
         logger.info("Translating: " + txtFile.getName() + " -> " + outputFile.getName());
 
         translationService.translate(txtFile.getAbsolutePath(), outputFile.getAbsolutePath());
+        return true;
     }
 
     public TranslationService getTranslationService() {

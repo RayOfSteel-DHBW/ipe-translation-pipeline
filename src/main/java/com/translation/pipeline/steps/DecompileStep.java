@@ -28,7 +28,7 @@ public class DecompileStep extends PipelineStepBase {
     }
 
     @Override
-    protected void performAction(String fileName) throws Exception {
+    protected boolean performAction(String fileName) throws Exception {
         if (fileName == null || fileName.trim().isEmpty()) {
             throw new Exception("Single-file mode: filename (without extension) must be provided");
         }
@@ -42,9 +42,11 @@ public class DecompileStep extends PipelineStepBase {
         logger.info("Extracting IPE XML from: " + pdfFile.getName() + " -> " + outputFile.getName());
 
         if (!ipeWrapper.extractXml(pdfFile, outputFile)) {
-            throw new Exception("Failed to extract IPE XML from: " + pdfFile.getName());
+            logger.warning("Failed to extract IPE XML from: " + pdfFile.getName() + " (likely not an IPE file)");
+            return false;
         }
 
         logger.info("Successfully extracted IPE XML to: " + outputFile.getAbsolutePath());
+        return true;
     }
 }

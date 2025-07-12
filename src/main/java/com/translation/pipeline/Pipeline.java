@@ -29,12 +29,23 @@ public class Pipeline {
 
         for (String fileName : fileNames) {
             logger.info("Processing file: " + fileName);
+            boolean fileProcessingFailed = false;
+            
             for (int i = 0; i < _steps.size(); i++) {
+                if (fileProcessingFailed) {
+                    logger.info("Skipping remaining steps for " + fileName + " due to previous step failure");
+                    break;
+                }
+                
                 PipelineStepBase step = _steps.get(i);
                 logger.info("Executing step " + (i + 1) + "/" + _steps.size() + ": " + step.getStepName());
 
                 try {
-                    step.execute(fileName); // pass current file to step
+                    boolean success = step.execute(fileName); // pass current file to step
+                    if (!success) {
+                        logger.warning("Step " + step.getStepName() + " failed for file " + fileName + ", skipping remaining steps");
+                        fileProcessingFailed = true;
+                    }
                 } catch (Exception e) {
                     logger.log(Level.SEVERE,
                                "Pipeline execution failed at step " + (i + 1) + ": " + step.getStepName(),

@@ -24,12 +24,13 @@ public class CompileStep extends PipelineStepBase {
     }
 
     @Override
-    protected void performAction(String fileName) throws Exception {
+    protected boolean performAction(String fileName) throws Exception {
         if (fileName != null && !fileName.trim().isEmpty()) {
             // single-file compilation
             File xmlFile = new File(getInputDirectory(), fileName + INPUT_EXT);
             if (!xmlFile.exists()) {
-                throw new Exception("XML file not found: " + xmlFile.getAbsolutePath());
+                logger.warning("XML file not found: " + xmlFile.getAbsolutePath() + " (likely previous step failed)");
+                return false;
             }
 
             File outputFile = new File(getOutputDirectory(), fileName + OUTPUT_EXT);
@@ -37,6 +38,7 @@ public class CompileStep extends PipelineStepBase {
 
             ipeWrapper.compile(xmlFile.getAbsolutePath(), outputFile.getAbsolutePath());
             logger.info("Successfully compiled: " + outputFile.getAbsolutePath());
+            return true;
         } else {
             // multi-file compilation
             File[] xmlFiles = getInputDirectory().listFiles((dir, name) -> name.toLowerCase().endsWith(INPUT_EXT));
@@ -64,6 +66,7 @@ public class CompileStep extends PipelineStepBase {
             if (successCount == 0) {
                 throw new Exception("Failed to compile any XML files");
             }
+            return true;
         }
     }
 }

@@ -27,19 +27,24 @@ public abstract class PipelineStepBase {
         }
     }
 
-    public final void execute(String fileName) throws Exception {
+    public final boolean execute(String fileName) throws Exception {
         logger.info("Starting pipeline step: " + stepName);
         
         try {
-            performAction(fileName);
-            logger.info("Successfully completed pipeline step: " + stepName);
+            boolean success = performAction(fileName);
+            if (success) {
+                logger.info("Successfully completed pipeline step: " + stepName);
+            } else {
+                logger.info("Pipeline step skipped: " + stepName);
+            }
+            return success;
         } catch (Exception e) {
             logger.log(Level.SEVERE, "Failed to execute pipeline step: " + stepName, e);
             throw new PipelineStepException(stepName, order, e.getMessage(), e);
         }
     }
 
-    protected abstract void performAction(String fileName) throws Exception;
+    protected abstract boolean performAction(String fileName) throws Exception;
     
     protected File getInputDirectory() {
         return inputDirectory;
