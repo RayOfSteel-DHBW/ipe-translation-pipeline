@@ -14,8 +14,8 @@ public abstract class PipelineStepBase {
     private final File inputDirectory;
     private final File outputDirectory;
 
-    public PipelineStepBase(int order, String stepName) {
-        this.order = order;
+    public PipelineStepBase(String stepName) {
+        this.order = getStepOrder();
         this.stepName = stepName;
         this.logger = Logger.getLogger(this.getClass().getName());
         
@@ -26,6 +26,8 @@ public abstract class PipelineStepBase {
             outputDirectory.mkdirs();
         }
     }
+
+    protected abstract int getStepOrder();
 
     public final boolean execute(String fileName) throws Exception {
         logger.info("Starting pipeline step: " + stepName);

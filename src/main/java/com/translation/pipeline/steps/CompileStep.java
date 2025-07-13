@@ -6,6 +6,7 @@ import com.translation.util.IpeWrapper;
 import java.io.File;
 
 public class CompileStep extends PipelineStepBase {
+    private static final int STEP_ORDER = 5;
     private final IpeWrapper ipeWrapper;
 
     // file-handling
@@ -14,13 +15,13 @@ public class CompileStep extends PipelineStepBase {
 
     @Inject
     public CompileStep(IpeWrapper ipeWrapper, Configuration configuration) {
-        super(5, "IPE Compilation");
+        super("IPE Compilation");
         this.ipeWrapper = ipeWrapper;
     }
 
-    public CompileStep(int order, IpeWrapper ipeWrapper) {
-        super(order, "IPE Compilation");
-        this.ipeWrapper = ipeWrapper;
+    @Override
+    protected int getStepOrder() {
+        return STEP_ORDER;
     }
 
     @Override

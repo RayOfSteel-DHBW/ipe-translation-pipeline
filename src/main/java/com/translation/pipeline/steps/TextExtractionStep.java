@@ -8,6 +8,7 @@ import com.translation.util.FileManager;
 import java.io.File;
 
 public class TextExtractionStep extends PipelineStepBase {
+    private static final int STEP_ORDER = 2;
     private final SmartTextExtractor textExtractor;
 
     // file-handling
@@ -17,13 +18,13 @@ public class TextExtractionStep extends PipelineStepBase {
 
     @Inject
     public TextExtractionStep(SmartTextExtractor textExtractor, Configuration configuration) {
-        super(2, "Text Extraction");
+        super("Text Extraction");
         this.textExtractor = textExtractor;
     }
 
-    public TextExtractionStep(int order, String stepName, SmartTextExtractor textExtractor, Configuration configuration) {
-        super(order, stepName);
-        this.textExtractor = textExtractor;
+    @Override
+    protected int getStepOrder() {
+        return STEP_ORDER;
     }
 
     @Override

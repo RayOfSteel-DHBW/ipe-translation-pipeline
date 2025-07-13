@@ -7,6 +7,7 @@ import com.translation.util.IpeWrapper;
 import java.io.File;
 
 public class DecompileStep extends PipelineStepBase {
+    private static final int STEP_ORDER = 1;
     private final IpeWrapper ipeWrapper;
     private final Configuration configuration;
 
@@ -16,15 +17,14 @@ public class DecompileStep extends PipelineStepBase {
 
     @Inject
     public DecompileStep(IpeWrapper ipeWrapper, Configuration configuration) {
-        super(1, "decompile");
+        super("decompile");
         this.ipeWrapper = ipeWrapper;
         this.configuration = configuration;
     }
 
-    public DecompileStep(int order, String stepName, IpeWrapper ipeWrapper, Configuration configuration) {
-        super(order, stepName);
-        this.ipeWrapper = ipeWrapper;
-        this.configuration = configuration;
+    @Override
+    protected int getStepOrder() {
+        return STEP_ORDER;
     }
 
     @Override

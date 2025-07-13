@@ -3,18 +3,25 @@ package com.translation.pipeline;
 import java.util.ArrayList;
 import java.util.logging.Logger;
 
+import com.google.inject.Inject;
 import com.translation.pipeline.steps.PipelineStepBase;
 
 import java.util.logging.Level;
 import java.util.Arrays;
+import java.util.Set;
+import java.util.Comparator;
 
 public class Pipeline {
     private ArrayList<PipelineStepBase> _steps;
     private static final Logger logger = Logger.getLogger(Pipeline.class.getName());
 
-    public Pipeline(ArrayList<PipelineStepBase> steps) 
-    {
-        _steps = steps;
+    @Inject
+    public Pipeline(Set<PipelineStepBase> steps) {
+        // Sort steps by their order automatically
+        _steps = new ArrayList<>(steps);
+        _steps.sort(Comparator.comparingInt(PipelineStepBase::getOrder));
+        
+        logger.info("Pipeline created with " + _steps.size() + " steps, sorted by order");
     }
 
     public void execute(String[] fileNames) throws PipelineStepException {

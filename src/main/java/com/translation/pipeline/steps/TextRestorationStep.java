@@ -1,16 +1,24 @@
 package com.translation.pipeline.steps;
 
+import com.google.inject.Inject;
 import com.translation.util.FileManager;
 import java.io.File;
 
 public class TextRestorationStep extends PipelineStepBase {
+    private static final int STEP_ORDER = 4;
 
     private static final String STRUCTURE_EXT = ".xml";
     private static final String TRANSLATED_TEXT_EXT = ".txt";
     private static final String OUTPUT_EXT = ".xml";
 
-    public TextRestorationStep(int order) {
-        super(order, "Text Restoration");
+    @Inject
+    public TextRestorationStep() {
+        super("Text Restoration");
+    }
+
+    @Override
+    protected int getStepOrder() {
+        return STEP_ORDER;
     }
 
     @Override
