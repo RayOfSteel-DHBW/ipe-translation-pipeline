@@ -67,7 +67,7 @@ public class TextRestorationStep extends PipelineStepBase {
                 String translatedText = line.substring(closeParenIndex + 2);
                 
                 String placeholder = "@PLACEHOLDER(" + numberPart + ")@";
-                logger.info("Replacing placeholder: " + placeholder + " with: " + translatedText.substring(0, Math.min(50, translatedText.length())));
+                logger.fine("Replacing placeholder: " + placeholder + " with: " + translatedText.substring(0, Math.min(50, translatedText.length())));
                 result = result.replace(placeholder, translatedText);
             }
         }

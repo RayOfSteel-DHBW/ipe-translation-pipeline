@@ -45,11 +45,11 @@ public class DownloadService {
             String filename = getFilenameFromUrl(url);
             File outputFile = new File(targetDir, filename);
             
-            logger.info(String.format("[%d/%d] Processing %s", i + 1, pdfUrls.size(), filename));
+            logger.fine(String.format("[%d/%d] Processing %s", i + 1, pdfUrls.size(), filename));
             
             boolean success;
             if (outputFile.exists()) {
-                logger.info("File already exists, skipping download: " + filename);
+                logger.fine("File already exists, skipping download: " + filename);
                 success = true; // treat as available
             } else {
                 success = downloadFile(url, outputFile);
@@ -57,7 +57,7 @@ public class DownloadService {
 
             if (success) {
                 downloaded.add(stripExtension(filename));
-                logger.info("Available: " + filename);
+                logger.fine("Available: " + filename);
             } else {
                 logger.warning("Failed to obtain: " + filename);
             }

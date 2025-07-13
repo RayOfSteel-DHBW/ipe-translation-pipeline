@@ -46,7 +46,7 @@ public class DecompileStep extends PipelineStepBase {
             return false;
         }
 
-        logger.info("Successfully extracted IPE XML to: " + outputFile.getAbsolutePath());
+        logger.fine("Successfully extracted IPE XML to: " + outputFile.getAbsolutePath());
         return true;
     }
 }

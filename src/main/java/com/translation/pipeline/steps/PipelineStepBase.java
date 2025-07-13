@@ -30,14 +30,14 @@ public abstract class PipelineStepBase {
     protected abstract int getStepOrder();
 
     public final boolean execute(String fileName) throws Exception {
-        logger.info("Starting pipeline step: " + stepName);
+        logger.fine("Starting pipeline step: " + stepName);
         
         try {
             boolean success = performAction(fileName);
             if (success) {
-                logger.info("Successfully completed pipeline step: " + stepName);
+                logger.fine("Successfully completed pipeline step: " + stepName);
             } else {
-                logger.info("Pipeline step skipped: " + stepName);
+                logger.fine("Pipeline step skipped: " + stepName);
             }
             return success;
         } catch (Exception e) {

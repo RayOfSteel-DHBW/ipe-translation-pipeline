@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.logging.Logger;
 
 import com.google.inject.Inject;
+import com.translation.ipe.CompilerException;
 import com.translation.pipeline.steps.PipelineStepBase;
 
 import java.util.logging.Level;
@@ -35,17 +36,17 @@ public class Pipeline {
         logger.info("Files to process: " + Arrays.toString(fileNames));
 
         for (String fileName : fileNames) {
-            logger.info("Processing file: " + fileName);
+            logger.fine("Processing file: " + fileName);
             boolean fileProcessingFailed = false;
             
             for (int i = 0; i < _steps.size(); i++) {
                 if (fileProcessingFailed) {
-                    logger.info("Skipping remaining steps for " + fileName + " due to previous step failure");
+                    logger.fine("Skipping remaining steps for " + fileName + " due to previous step failure");
                     break;
                 }
                 
                 PipelineStepBase step = _steps.get(i);
-                logger.info("Executing step " + (i + 1) + "/" + _steps.size() + ": " + step.getStepName());
+                logger.fine("Executing step " + (i + 1) + "/" + _steps.size() + ": " + step.getStepName());
 
                 try {
                     boolean success = step.execute(fileName); // pass current file to step
@@ -53,12 +54,15 @@ public class Pipeline {
                         logger.warning("Step " + step.getStepName() + " failed for file " + fileName + ", skipping remaining steps");
                         fileProcessingFailed = true;
                     }
+                } catch (CompilerException e) {
+                    // Handle compilation failures gracefully - log and continue with next file
+                    logger.warning("Compilation failed for file " + fileName + ": " + e.getMessage());
+                    fileProcessingFailed = true;
                 } catch (Exception e) {
-                    logger.log(Level.SEVERE,
-                               "Pipeline execution failed at step " + (i + 1) + ": " + step.getStepName(),
+                    logger.log(Level.WARNING,
+                               "Step " + step.getStepName() + " failed for file " + fileName + " with exception: " + e.getMessage(),
                                e);
-                    throw new PipelineStepException(step.getStepName(), step.getOrder(),
-                                                    "Pipeline execution failed", e);
+                    fileProcessingFailed = true; // Mark this file as failed and continue with next file
                 }
             }
         }

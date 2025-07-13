@@ -64,7 +64,7 @@ public class TextExtractionStep extends PipelineStepBase {
         });
         FileManager.writeFile(simpleTextFile.getAbsolutePath(), simpleTextBuilder.toString());
 
-        logger.info("Successfully processed file: " + xmlFile.getName());
+        logger.fine("Successfully processed file: " + xmlFile.getName());
         return true;
     }
 }
