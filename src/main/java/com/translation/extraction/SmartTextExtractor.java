@@ -4,10 +4,15 @@ import org.w3c.dom.*;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 import java.io.ByteArrayInputStream;
+import java.io.StringWriter;
 
 import com.google.inject.Singleton;
 
@@ -21,6 +26,7 @@ public class SmartTextExtractor {
 	public ExtractionResult extractText(String xml) {
 		List<TextElement> elements = new ArrayList<>();
 		int elementId = 1; // Counter for element IDs
+		Document doc = null; // Declare doc at method level
 
 		try {
 			// separate factory configuration from builder creation
@@ -29,7 +35,7 @@ public class SmartTextExtractor {
 			factory.setValidating(false);
 			factory.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
 			DocumentBuilder builder = factory.newDocumentBuilder();
-			Document doc = builder.parse(new ByteArrayInputStream(xml.getBytes()));
+			doc = builder.parse(new ByteArrayInputStream(xml.getBytes()));
 
 			doc.getDocumentElement().normalize();
 
@@ -73,6 +79,8 @@ public class SmartTextExtractor {
 				Element txt = (Element) texts.item(i);
 				String raw = txt.getTextContent();
 				if (shouldKeep(raw)) {
+					String placeholder = "@PLACEHOLDER(" + elementId + ")@";
+					
 					TextElement element = new TextElement(
 							elementId++,
 							"/text[" + (i + 1) + "]",
@@ -102,6 +110,9 @@ public class SmartTextExtractor {
 					}
 					
 					elements.add(element);
+					
+					// Replace text content directly in DOM
+					txt.setTextContent(placeholder);
 				}
 			}
 
@@ -112,26 +123,25 @@ public class SmartTextExtractor {
 		// Create ExtractionResult and set the text elements
 		ExtractionResult result = new ExtractionResult();
 		result.setOriginalXml(xml);
-		result.setProcessedXml(createProcessedXml(xml, elements));
+		result.setProcessedXml(createProcessedXml(doc));
 		result.setTextElements(elements);
 		return result;
 	}
 
-	/** Create processed XML by replacing extracted text with placeholders */
-	private String createProcessedXml(String originalXml, List<TextElement> elements) {
-		String processedXml = originalXml;
-		
-		// Replace text elements with placeholders
-		for (TextElement element : elements) {
-			String originalText = element.getOriginalText();
-			String placeholder = "@PLACEHOLDER(" + element.getId() + ")@";
+	/** Create processed XML by serializing the modified DOM */
+	private String createProcessedXml(Document doc) {
+		try {
+			TransformerFactory transformerFactory = TransformerFactory.newInstance();
+			Transformer transformer = transformerFactory.newTransformer();
+			transformer.setOutputProperty(javax.xml.transform.OutputKeys.OMIT_XML_DECLARATION, "yes");
 			
-			// For text elements, we need to replace the actual text content
-			// We'll do a simple string replacement for now
-			processedXml = processedXml.replace(originalText, placeholder);
+			StringWriter writer = new StringWriter();
+			transformer.transform(new DOMSource(doc), new StreamResult(writer));
+			return writer.toString();
+		} catch (Exception e) {
+			e.printStackTrace();
+			return ""; // fallback
 		}
-		
-		return processedXml;
 	}
 
 	/** Strip simple LaTeX commands; keep if a real word remains. */
