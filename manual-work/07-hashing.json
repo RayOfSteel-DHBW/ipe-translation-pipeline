@@ -1,0 +1,1110 @@
+{
+  "1": {
+    "german": "Verzeichnis von Telefonnummern",
+    "english": ""
+  },
+  "2": {
+    "german": "Hashing: Kernidee",
+    "english": ""
+  },
+  "3": {
+    "german": "Umgang mit Kollisionen",
+    "english": ""
+  },
+  "4": {
+    "german": "Wie schlimm ist der Worst-Case?",
+    "english": ""
+  },
+  "5": {
+    "german": "Tolle Hashfunktion und gutartige Eingabe",
+    "english": ""
+  },
+  "6": {
+    "german": "Geburtstagskollisionen",
+    "english": ""
+  },
+  "7": {
+    "german": "Zwischenstand: Umgang mit Kollisionen",
+    "english": ""
+  },
+  "8": {
+    "german": "Kollisionsauflösung mittels Chaining",
+    "english": ""
+  },
+  "9": {
+    "german": "Chaining: Erwartete Laufzeit",
+    "english": ""
+  },
+  "10": {
+    "german": "Dynamisch wachsende Hashtabelle",
+    "english": ""
+  },
+  "11": {
+    "german": "Zwischenstand",
+    "english": ""
+  },
+  "12": {
+    "german": "Universelles Hashing",
+    "english": ""
+  },
+  "13": {
+    "german": "Eine Universelle Familie",
+    "english": ""
+  },
+  "14": {
+    "german": "Andere Schlüsseltypen",
+    "english": ""
+  },
+  "15": {
+    "german": "Hashtabellen in der Wildnis",
+    "english": ""
+  },
+  "16": {
+    "german": "Zusammenfassung",
+    "english": "Summary"
+  },
+  "17": {
+    "german": "Thomas Bläsius~--~Algorithmen 1",
+    "english": "Thomas Bläsius~--~Algorithms 1"
+  },
+  "18": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "19": {
+    "german": "\\textbf{Hashing}",
+    "english": "\\textbf{Hashing}"
+  },
+  "20": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "21": {
+    "german": "\\textbf{Situation}",
+    "english": "\\textbf{Situation}"
+  },
+  "22": {
+    "german": "gegeben: Paare von $(\\text{Telefonnummer}, \\text{Name})$",
+    "english": ""
+  },
+  "23": {
+    "german": "Ziel: schnelle Beantwortung von Anfragen der Form\\\\\\n\\textit{Wem gehört die Telefonnummer 0721 1234567?}\\n",
+    "english": ""
+  },
+  "24": {
+    "german": "\\textbf{Name}",
+    "english": ""
+  },
+  "25": {
+    "german": "\\textbf{Nummer}",
+    "english": ""
+  },
+  "26": {
+    "german": "Peter Arbeitsloser",
+    "english": ""
+  },
+  "27": {
+    "german": "Martyn Vorstand",
+    "english": ""
+  },
+  "28": {
+    "german": "Henryk Ingenieur",
+    "english": ""
+  },
+  "29": {
+    "german": "Kiki Unbekannt",
+    "english": ""
+  },
+  "30": {
+    "german": "Der Alte",
+    "english": ""
+  },
+  "31": {
+    "german": "Personen aus: Qualityland, Marc-Uwe Kling",
+    "english": ""
+  },
+  "32": {
+    "german": "\\textbf{Lösung 1: Sortieren + Suchen}",
+    "english": ""
+  },
+  "33": {
+    "german": "Vorberechnung: sortiere nach Schlüssel $\\rightarrow$ $O(n \\log n)$",
+    "english": ""
+  },
+  "34": {
+    "german": "Anfrage: binäre Suche $\\rightarrow$ $O(\\log n)$",
+    "english": ""
+  },
+  "35": {
+    "german": "Problem: Änderungen (Einfügen/Löschen) sind teuer",
+    "english": ""
+  },
+  "36": {
+    "german": "\\textbf{Erinnerung}",
+    "english": "\\textbf{Reminder}"
+  },
+  "37": {
+    "german": "Arrays",
+    "english": ""
+  },
+  "38": {
+    "german": "schnelles Suchen",
+    "english": ""
+  },
+  "39": {
+    "german": "langsames Einfügen und Löschen",
+    "english": ""
+  },
+  "40": {
+    "german": "Listen",
+    "english": ""
+  },
+  "41": {
+    "german": "schnelles Einfügen und Löschen",
+    "english": ""
+  },
+  "42": {
+    "german": "langsames Suchen",
+    "english": ""
+  },
+  "43": {
+    "german": "\\textbf{Lösung 2: Lookup-Tabelle}",
+    "english": ""
+  },
+  "44": {
+    "german": "Beobachtung: Schlüssel sind Zahlen $\\rightarrow$ können zur\\nAdressierung benutzt werden\\n",
+    "english": ""
+  },
+  "45": {
+    "german": "also: Array $A$ mit $A[k] = v$ für jedes $(\\text{key}, \\text{value})$-Paar\\n$(k, v)$\\n",
+    "english": ""
+  },
+  "46": {
+    "german": "\\textbf{Welche Probleme hat dieses Vorgehen?}",
+    "english": ""
+  },
+  "47": {
+    "german": "Schlüssel (key)",
+    "english": ""
+  },
+  "48": {
+    "german": "Wert (value)",
+    "english": ""
+  },
+  "49": {
+    "german": "super: Anfragen, Einfügen, Löschen geht alles in $O(1)$",
+    "english": ""
+  },
+  "50": {
+    "german": "Problem: $\\text{Schlüsselgröße} \\gg \\#\\text{Paare}$ $\\Rightarrow$ viele leere\\nSpeicherzellen in $A$\\n",
+    "english": ""
+  },
+  "51": {
+    "german": "\\textbf{Lookup-Tabelle}",
+    "english": ""
+  },
+  "52": {
+    "german": "Peter Arbeitsloser",
+    "english": ""
+  },
+  "53": {
+    "german": "Kiki Unbekannt",
+    "english": ""
+  },
+  "54": {
+    "german": "Der Alte",
+    "english": ""
+  },
+  "55": {
+    "german": "Henryk Ingenieur",
+    "english": ""
+  },
+  "56": {
+    "german": "Martyn Vorstand",
+    "english": ""
+  },
+  "57": {
+    "german": "\\textbf{Idee: Speicherreduktion durch Schlüssel-Verkleinerung}",
+    "english": ""
+  },
+  "58": {
+    "german": "\\textbf{value}",
+    "english": ""
+  },
+  "59": {
+    "german": "\\textbf{key}",
+    "english": ""
+  },
+  "60": {
+    "german": "Peter Arbeitsloser",
+    "english": ""
+  },
+  "61": {
+    "german": "Martyn Vorstand",
+    "english": ""
+  },
+  "62": {
+    "german": "Henryk Ingenieur",
+    "english": ""
+  },
+  "63": {
+    "german": "Kiki Unbekannt",
+    "english": ""
+  },
+  "64": {
+    "german": "Der Alte",
+    "english": ""
+  },
+  "65": {
+    "german": "Personen aus: Qualityland, Marc-Uwe Kling",
+    "english": ""
+  },
+  "66": {
+    "german": "definiere \\emph{Hashfunktion} $h$, z.B.: $h(x) = x~\\mathrm{mod}~10$",
+    "english": ""
+  },
+  "67": {
+    "german": "Array $A$ mit $A[h(k)] = v$ für jedes $(\\text{key}, \\text{value})$-Paar\\n$(k, v)$\\n",
+    "english": ""
+  },
+  "68": {
+    "german": "Vorteil: $h(x)$ hat kleinen Wertebereich $\\Rightarrow$ Array $A$ ist\\nklein",
+    "english": ""
+  },
+  "69": {
+    "german": "Kiki Unbekannt",
+    "english": ""
+  },
+  "70": {
+    "german": "Der Alte",
+    "english": ""
+  },
+  "71": {
+    "german": "Peter Arbeitsloser",
+    "english": ""
+  },
+  "72": {
+    "german": "Henryk Ingenieur",
+    "english": ""
+  },
+  "73": {
+    "german": "Martyn Vorstand",
+    "english": ""
+  },
+  "74": {
+    "german": "\\textbf{Problem: Hash-Kollisionen}",
+    "english": ""
+  },
+  "75": {
+    "german": "es kann $h(x) = h(y)$ gelten, obwohl $x \\not= y$",
+    "english": ""
+  },
+  "76": {
+    "german": "Personen aus: Qualityland, Marc-Uwe Kling",
+    "english": ""
+  },
+  "77": {
+    "german": "Julia Nonne",
+    "english": ""
+  },
+  "78": {
+    "german": "oder Julia Nonne?",
+    "english": ""
+  },
+  "79": {
+    "german": "\\textbf{Hashtabelle}",
+    "english": "\\textbf{Hash table}"
+  },
+  "80": {
+    "german": "\\textbf{Erkenntnis}\\\\\\nKollisionen lassen sich selbst dann nicht vermeiden, wenn die\\nHashfunktion bestmöglich und die Eingabe gutartig ist.\\n",
+    "english": ""
+  },
+  "81": {
+    "german": "\\textbf{Ansatz 1: Kollisionen vermeiden}",
+    "english": ""
+  },
+  "82": {
+    "german": "wähle gute Hashfunktion",
+    "english": ""
+  },
+  "83": {
+    "german": "wähle Speicher groß genug",
+    "english": ""
+  },
+  "84": {
+    "german": "Hoffnung: keine Kollisionen (oder extrem unwahrscheinlich)",
+    "english": ""
+  },
+  "85": {
+    "german": "\\textbf{Ansatz 2: Auflösung der Kollisionen}",
+    "english": ""
+  },
+  "86": {
+    "german": "akzeptiere, dass (wenige) Kollisionen auftreten\\n",
+    "english": ""
+  },
+  "87": {
+    "german": "passe Datenstruktur entsprechend an, dass sie damit klar kommt",
+    "english": ""
+  },
+  "88": {
+    "german": "\\textbf{Erkenntnis}\\\\\\nUnter gewissen Annahmen an die Eingabe schaffen wir so $O(1)$ pro\\nOperation.\\n",
+    "english": ""
+  },
+  "89": {
+    "german": "\\textbf{Theorem: keine Hashfunktion ist im Worst-Case gut}\\\\\\nFür jede Hashfunktion gibt es eine Eingabe, bei der $\\frac{|U|}{m}$\\n$(\\text{key}, \\text{value})$-Paare im selben Bucket landen.\\n",
+    "english": ""
+  },
+  "90": {
+    "german": "es gibt ein Bucket in dem mindestens ${|U|}/{m}$ Schlüssel landen",
+    "english": ""
+  },
+  "91": {
+    "german": "im Schnitt landen ${|U|}/{m}$ Schlüssel in jedem Bucket",
+    "english": ""
+  },
+  "92": {
+    "german": "wähle diese ${|U|}/{m}$ Schlüssel als Eingabe",
+    "english": ""
+  },
+  "93": {
+    "german": "\\textbf{Notation}",
+    "english": "\\textbf{Notation}"
+  },
+  "94": {
+    "german": "$U$: Universum möglicher Schlüssel",
+    "english": ""
+  },
+  "95": {
+    "german": "$m$: Anzahl \\emph{Buckets} der Hashtabelle",
+    "english": ""
+  },
+  "96": {
+    "german": "Annahme: $|U| \\gg m$",
+    "english": ""
+  },
+  "97": {
+    "german": "\\textbf{Beweis}",
+    "english": "\\textbf{Proof}"
+  },
+  "98": {
+    "german": "\\textbf{Adversary Argument:} Egal wie man den Algorithmus baut, ein\\nGegner kann immer eine Eingabe wählen, die schlecht für diesen\\nAlgorithmus ist.",
+    "english": ""
+  },
+  "99": {
+    "german": "\\textbf{Universum $U$}",
+    "english": ""
+  },
+  "100": {
+    "german": "\\textbf{Hashfunktion $h$}",
+    "english": ""
+  },
+  "101": {
+    "german": "\\textbf{Hashtabelle}",
+    "english": "\\textbf{Hash table}"
+  },
+  "102": {
+    "german": "$m$ Buckets",
+    "english": ""
+  },
+  "103": {
+    "german": "\\textbf{Simple Uniform Hashing Assumption}",
+    "english": ""
+  },
+  "104": {
+    "german": "\\textbf{Plan im Folgenden}",
+    "english": "\\textbf{Plan below}"
+  },
+  "105": {
+    "german": "es gibt sehr wahrscheinlich trotzdem Kollisionen\\n",
+    "english": ""
+  },
+  "106": {
+    "german": "im Erwartungswert effizienter Umgang mit Kollisionen unter dieser Annahme",
+    "english": ""
+  },
+  "107": {
+    "german": "(außer, wenn wir sehr viel Speicher verschwenden)",
+    "english": ""
+  },
+  "108": {
+    "german": "Aufweichung der Annahme: austricksen des Gegners durch zufällige\\nEntscheidungen",
+    "english": ""
+  },
+  "109": {
+    "german": "Annahme: wir haben eine hypothetische Hashfunktion $h$ mit folgender\\nEigenschaft",
+    "english": ""
+  },
+  "110": {
+    "german": "jeder Schlüssel aus $U$ landet in jedem der $m$ Buckets mit der selben\\nWahrscheinlichkeit",
+    "english": ""
+  },
+  "111": {
+    "german": "unabhängig von zuvor eingefügten Schlüsseln",
+    "english": ""
+  },
+  "112": {
+    "german": "sehr optimistische Annahme, aber erstmal gut um den Worst-Case\\nloszuwerden",
+    "english": ""
+  },
+  "113": {
+    "german": "\\textbf{Situation}",
+    "english": "\\textbf{Situation}"
+  },
+  "114": {
+    "german": "Hashing ist im Worst-Case komplett nutzlos",
+    "english": ""
+  },
+  "115": {
+    "german": "in der Praxis: Hashing funktioniert hervorragend",
+    "english": ""
+  },
+  "116": {
+    "german": "\\textbf{Notation}",
+    "english": "\\textbf{Notation}"
+  },
+  "117": {
+    "german": "$U$: Universum möglicher Schlüssel",
+    "english": ""
+  },
+  "118": {
+    "german": "$m$: Anzahl Buckets der Hashtabelle",
+    "english": ""
+  },
+  "119": {
+    "german": "Annahme: $|U| \\gg m$",
+    "english": ""
+  },
+  "120": {
+    "german": "(wenige Kollisionen)",
+    "english": ""
+  },
+  "121": {
+    "german": "$h \\colon U \\to [0, m)$: Hashfunktion",
+    "english": ""
+  },
+  "122": {
+    "german": "\\textbf{Wie viele Personen muss ich nach ihrem Geburtstag fragen,\\n  damit ich mit Wahrscheinlichkeit $\\frac{1}{2}$ zwei Personen mit\\n  demselben Geburtstag erwische?}",
+    "english": ""
+  },
+  "123": {
+    "german": "\\textbf{Situation:} $n + 1$ Personen, \\num{365} mögliche Geburtstage,\\njeder gleich wahrscheinlich",
+    "english": ""
+  },
+  "124": {
+    "german": "\\textbf{Kollision:} es gibt Personen mit dem gleichen Geburtstag",
+    "english": ""
+  },
+  "125": {
+    "german": "Person~2 hat keine Kollision mit Person~1",
+    "english": ""
+  },
+  "126": {
+    "german": "Person~3 hat keine Kollision mit Personen~1 oder~2",
+    "english": ""
+  },
+  "127": {
+    "german": "letzte Person hat keine Kollision mit vorherigen Personen",
+    "english": ""
+  },
+  "128": {
+    "german": "super Abschätzung für kleine $x$",
+    "english": ""
+  },
+  "129": {
+    "german": "\\textbf{Was heißt das jetzt?}",
+    "english": ""
+  },
+  "130": {
+    "german": "für $n = 23$ ist die Wahrscheinlichkeit schon mehr als \\SI{50}{\\percent}",
+    "english": ""
+  },
+  "131": {
+    "german": "bei einer Hashtabelle mit \\num{365} Buckets gibt es schon bei $24$\\n$(\\text{key}, \\text{value})$-Paaren mit $\\SI{50}{\\percent}$\\nWahrscheinlichkeit eine Kollision\\n",
+    "english": ""
+  },
+  "132": {
+    "german": "\\textbf{Allgemein: Balls into Bins}",
+    "english": ""
+  },
+  "133": {
+    "german": "wirf $n$ Bälle zufällig gleichverteilt in einen von $m$ Eimern",
+    "english": ""
+  },
+  "134": {
+    "german": "(selbst mit der Simple Uniform Hashing Assumption)",
+    "english": ""
+  },
+  "135": {
+    "german": "für $n$ $(\\text{key}, \\text{value})$-Paare braucht man $m \\in\\n\\Omega(n^2)$ viel Speicher um die Wahrscheinlichkeit für eine\\nKollision auf unter \\SI{50}{\\percent} zu drücken",
+    "english": ""
+  },
+  "136": {
+    "german": "\\textbf{Erkenntnis}\\\\\\nKollisionen lassen sich selbst dann nicht vermeiden, wenn die\\nHashfunktion bestmöglich und die Eingabe gutartig ist.\\n",
+    "english": ""
+  },
+  "137": {
+    "german": "\\textbf{Ansatz 1: Kollisionen vermeiden}",
+    "english": ""
+  },
+  "138": {
+    "german": "wähle gute Hashfunktion",
+    "english": ""
+  },
+  "139": {
+    "german": "wähle Speicher groß genug",
+    "english": ""
+  },
+  "140": {
+    "german": "Hoffnung: keine Kollisionen (oder extrem unwahrscheinlich)",
+    "english": ""
+  },
+  "141": {
+    "german": "\\textbf{Ansatz 2: Auflösung der Kollisionen}",
+    "english": ""
+  },
+  "142": {
+    "german": "akzeptiere, dass (wenige) Kollisionen auftreten\\n",
+    "english": ""
+  },
+  "143": {
+    "german": "passe Datenstruktur entsprechend an, dass sie damit klar kommt",
+    "english": ""
+  },
+  "144": {
+    "german": "\\textbf{Erkenntnis}\\\\\\nUnter gewissen Annahmen an die Eingabe schaffen wir so $O(1)$ pro\\nOperation.\\n",
+    "english": ""
+  },
+  "145": {
+    "german": "\\textbf{Vorgehen}",
+    "english": "\\textbf{Approach}"
+  },
+  "146": {
+    "german": "Kiki Unbekannt",
+    "english": ""
+  },
+  "147": {
+    "german": "Der Alte",
+    "english": ""
+  },
+  "148": {
+    "german": "Peter Arbeitsloser",
+    "english": ""
+  },
+  "149": {
+    "german": "Henryk Ingenieur",
+    "english": ""
+  },
+  "150": {
+    "german": "Martyn Vorstand",
+    "english": ""
+  },
+  "151": {
+    "german": "oder Julia Nonne?",
+    "english": ""
+  },
+  "152": {
+    "german": "\\textbf{Vorher}",
+    "english": ""
+  },
+  "153": {
+    "german": "$\\langle$Kiki Unbekannt$\\rangle$",
+    "english": ""
+  },
+  "154": {
+    "german": "$\\langle$Der Alte$\\rangle$",
+    "english": ""
+  },
+  "155": {
+    "german": "$\\langle$Peter Arbeitsloser$\\rangle$",
+    "english": ""
+  },
+  "156": {
+    "german": "$\\langle$Henryk Ingenieur, Julia Nonne$\\rangle$",
+    "english": ""
+  },
+  "157": {
+    "german": "$\\langle$Martyn Vorstand$\\rangle$",
+    "english": ""
+  },
+  "158": {
+    "german": "\\textbf{Jetzt}",
+    "english": ""
+  },
+  "159": {
+    "german": "statt einem Objekt pro Bucket: Folge von Objekten",
+    "english": ""
+  },
+  "160": {
+    "german": "Implementierung z.B.\\ mittels Liste oder dynamischem Array",
+    "english": ""
+  },
+  "161": {
+    "german": "$(k, v)$ \\emph{einfügen}: hänge $(k, v)$ an Folge $A[h(k)]$ an \\\\\\n(bzw.\\ ersetze vorherigen Eintrag mit Schlüssel $k$ in $A[h(k)]$)\\n",
+    "english": ""
+  },
+  "162": {
+    "german": "nach Schlüssel $k$ \\emph{suchen}: lineare Suche auf Folge $A[h(k)]$\\n",
+    "english": ""
+  },
+  "163": {
+    "german": "Eintrag mit Schlüssel $k$ \\emph{löschen}: lösche in Folge $A[h(k)]$\\n",
+    "english": ""
+  },
+  "164": {
+    "german": "\\textbf{Laufzeit für eine Operation mit Schlüssel $k$}\\n",
+    "english": ""
+  },
+  "165": {
+    "german": "Hoffnung: konstant viele Kollisionen pro Schlüssel $\\rightarrow$\\n$\\Theta(1)$\\n",
+    "english": ""
+  },
+  "166": {
+    "german": "\\textbf{Notation}",
+    "english": "\\textbf{Notation}"
+  },
+  "167": {
+    "german": "$(k, v)$: $(\\text{key}, \\text{value})$-Paar",
+    "english": ""
+  },
+  "168": {
+    "german": "$A$: Array der Hashtabelle",
+    "english": ""
+  },
+  "169": {
+    "german": "$h$: Hashfunktion",
+    "english": ""
+  },
+  "170": {
+    "german": "$n$: Anzahl Paare",
+    "english": ""
+  },
+  "171": {
+    "german": "Worst-Case: alle Einträge landen im selben Bucket $\\rightarrow$\\n$\\Theta(n)$\\n",
+    "english": ""
+  },
+  "172": {
+    "german": "\\textbf{Simple Uniform Hashing Assumption}",
+    "english": ""
+  },
+  "173": {
+    "german": "jeder Schlüssel landet in jedem der Buckets mit der selben\\nWahrscheinlichkeit\\n",
+    "english": ""
+  },
+  "174": {
+    "german": "unabhängig von zuvor eingefügten Schlüsseln",
+    "english": ""
+  },
+  "175": {
+    "german": "\\textbf{Grob überschlagen}",
+    "english": ""
+  },
+  "176": {
+    "german": "jedes Bucket enthält im Schnitt $\\frac{n}{m}$ Einträge",
+    "english": ""
+  },
+  "177": {
+    "german": "\\textbf{Notation}",
+    "english": "\\textbf{Notation}"
+  },
+  "178": {
+    "german": "$k$: betrachteter Schlüssel",
+    "english": ""
+  },
+  "179": {
+    "german": "$A$: Array der Hashtabelle",
+    "english": ""
+  },
+  "180": {
+    "german": "$h$: Hashfunktion",
+    "english": ""
+  },
+  "181": {
+    "german": "$n$: Anzahl eingefügter Paare",
+    "english": ""
+  },
+  "182": {
+    "german": "$m$: Anzahl Buckets",
+    "english": ""
+  },
+  "183": {
+    "german": "Erwartungswert für $|A[h(k)]|$ ist $\\frac{n}{m}$",
+    "english": ""
+  },
+  "184": {
+    "german": "konstant, wenn $m \\in \\Theta(n)$\\n",
+    "english": ""
+  },
+  "185": {
+    "german": "super: $\\Theta(n)$ Speicher und Operationen in $\\Theta(1)$",
+    "english": ""
+  },
+  "186": {
+    "german": "\\textbf{Formaler: Erwartungswert für die Länge von $A[h(k)]$}",
+    "english": ""
+  },
+  "187": {
+    "german": "Schlüssel in der Hashtabelle: $k_1, \\dots, k_n$",
+    "english": ""
+  },
+  "188": {
+    "german": "Indikatorvariablen $X_i =\\n\\begin{cases}\\n  1, &\\text{falls } h(k) = h(k_i)\\\\\\n  0, &\\text{sonst}\\n\\end{cases}\\n$",
+    "english": ""
+  },
+  "189": {
+    "german": "damit gilt: $\\EX{|A[h(k)]|}\\n= \\EX{\\sum\\limits_{i = 1}^n X_i}\\n= \\sum\\limits_{i = 1}^n \\EX{X_i} =\\n\\begin{cases}\\n  \\frac{n}{m}, &\\text{falls } k \\notin \\{k_1, \\dots, k_n\\}\\\\\\n  1 + \\frac{n - 1}{m}, &\\text{falls } k \\in \\{k_1, \\dots, k_n\\}\\n\\end{cases}\\n$",
+    "english": ""
+  },
+  "190": {
+    "german": "also: $m \\in \\Theta(n) \\Rightarrow \\EX{|A[h(k)]|} \\in \\Theta(1)$",
+    "english": ""
+  },
+  "191": {
+    "german": "\\textbf{Theorem}\\\\\\nGegeben die Simple Uniform Hashing Assumption, dann kann eine\\nHashtabelle die Operationen Einfügen, Suchen und Löschen in erwartet\\nkonstanter Zeit ausführen, wenn die Anzahl Buckets $m$ linear ist in\\nder Anzahl $(\\text{key}, \\text{value})$-Paare $n$.\\n",
+    "english": ""
+  },
+  "192": {
+    "german": "\\textbf{Wie wählen wir $m$, wenn wir $n$ nicht kennen?}",
+    "english": ""
+  },
+  "193": {
+    "german": "starte mit irgendeiner kleinen Konstante für $m$\\n",
+    "english": ""
+  },
+  "194": {
+    "german": "$n$ zu groß (z.B. $n > m$) $\\rightarrow$ verdopple $m$\\n",
+    "english": ""
+  },
+  "195": {
+    "german": "erstelle neues Array der Größe $2m$ $\\rightarrow$ $2m$ Buckets\\n",
+    "english": ""
+  },
+  "196": {
+    "german": "neue Hashfunktion, die Schlüssel auf $[0, 2m)$ abbildet (statt vorher\\nauf $[0, m)$)\\n",
+    "english": ""
+  },
+  "197": {
+    "german": "füge alle Elementen aus der alten in die neue Tabelle ein und lösche\\ndie alte Tabelle\\n",
+    "english": ""
+  },
+  "198": {
+    "german": "wie bei dynamischen Arrays:\\n",
+    "english": ""
+  },
+  "199": {
+    "german": "amortisiert über alle Operationen: $\\Theta(1)$ pro Operation\\n",
+    "english": ""
+  },
+  "200": {
+    "german": "Worst-Case Kosten einer Operation (wenn gerade vergrößert wird): $\\Theta(n)$\\n",
+    "english": ""
+  },
+  "201": {
+    "german": "\\textbf{Simple Uniform Hashing Assumption}",
+    "english": ""
+  },
+  "202": {
+    "german": "jeder Schlüssel landet in jedem der Buckets mit der selben\\nWahrscheinlichkeit\\n",
+    "english": ""
+  },
+  "203": {
+    "german": "unabhängig von zuvor eingefügten Schlüsseln",
+    "english": ""
+  },
+  "204": {
+    "german": "\\textbf{Worst-Case}",
+    "english": ""
+  },
+  "205": {
+    "german": "für jede Hash-Funktion existiert eine Eingabe mit vielen Kollisionen",
+    "english": ""
+  },
+  "206": {
+    "german": "in der Praxis funktioniert es gut $\\rightarrow$ Worst-Case zu pessimistisch",
+    "english": ""
+  },
+  "207": {
+    "german": "\\textbf{Simple Uniform Hashing Assumption}",
+    "english": ""
+  },
+  "208": {
+    "german": "starke Annahme an Hashfunktion und Eingabe",
+    "english": ""
+  },
+  "209": {
+    "german": "erwartet konstante Laufzeiten",
+    "english": ""
+  },
+  "210": {
+    "german": "sehr optimistische Annahme $\\rightarrow$ schwache Garantie",
+    "english": ""
+  },
+  "211": {
+    "german": "oblivious Adversary: Gegner kennt den Algorithmus (inklusive\\nWahrscheinlichkeitsverteilung), aber nicht das Ergebnis zufälliger\\nEntscheidungen\\n",
+    "english": ""
+  },
+  "212": {
+    "german": "\\textbf{Idee: Gegner austricksen mit zufälligen Entscheidungen}",
+    "english": ""
+  },
+  "213": {
+    "german": "wähle bei Erstellung / Vergrößerung der Hashtabelle eine zufällige Hashfunktion",
+    "english": ""
+  },
+  "214": {
+    "german": "Worst-Case: Eingabe mit maximaler erwarteter Laufzeit",
+    "english": ""
+  },
+  "215": {
+    "german": "Adversary Argument: es gibt keinen Algorithmus, der für alle Eingaben\\ngut ist",
+    "english": ""
+  },
+  "216": {
+    "german": "\\textbf{Simple Uniform Hashing Assumption}",
+    "english": ""
+  },
+  "217": {
+    "german": "jeder Schlüssel landet in jedem der Buckets mit der selben\\nWahrscheinlichkeit\\n",
+    "english": ""
+  },
+  "218": {
+    "german": "unabhängig von zuvor eingefügten Schlüsseln",
+    "english": ""
+  },
+  "219": {
+    "german": "\\textbf{Notation}",
+    "english": "\\textbf{Notation}"
+  },
+  "220": {
+    "german": "$U$: Universum der Schlüssel",
+    "english": ""
+  },
+  "221": {
+    "german": "$m$: Anzahl Buckets",
+    "english": ""
+  },
+  "222": {
+    "german": "$h \\colon U \\to [0, m)$: Hashfunktion",
+    "english": ""
+  },
+  "223": {
+    "german": "\\textbf{Definition}\\\\\\nSei $H$ eine Menge von Hashfunktionen.  $H$ ist eine\\n\\emph{universelle Familie}, wenn für alle $k_1, k_2 \\in U$ mit\\n$k_1 \\not= k_2$ und ein zufälliges $h \\in H$ gilt, dass\\n$\\Pro{h(k_1) = h(k_2)} \\le \\frac{1}{m}$.\\n",
+    "english": ""
+  },
+  "224": {
+    "german": "\\textbf{Was bekommen wir damit?}",
+    "english": ""
+  },
+  "225": {
+    "german": "zufällige Wahl von $h \\in H$ $\\Rightarrow$ je zwei Schlüssel\\nkollidieren mit Wkt.\\ höchstens $\\frac{1}{m}$\\n",
+    "english": ""
+  },
+  "226": {
+    "german": "es folgt: $\\EX{X_i} \\le \\frac{1}{m}$",
+    "english": ""
+  },
+  "227": {
+    "german": "erwartete Laufzeit: $\\Theta(1)$ pro Operation",
+    "english": ""
+  },
+  "228": {
+    "german": "(Beweis: genauso wie vorher mit der Simple Uniform Hashing Assumption)",
+    "english": ""
+  },
+  "229": {
+    "german": "$k_1, \\dots, k_n$: bisherige Schlüssel",
+    "english": ""
+  },
+  "230": {
+    "german": "$k$: aktueller Schlüssel",
+    "english": ""
+  },
+  "231": {
+    "german": "$X_i =\\n\\begin{cases}\\n  1, &\\text{falls } h(k) = h(k_i)\\\\\\n  0, &\\text{sonst}\\n\\end{cases}\\n$",
+    "english": ""
+  },
+  "232": {
+    "german": "Worst-Case über alle möglichen Eingaben\\n",
+    "english": ""
+  },
+  "233": {
+    "german": "Erwartungswert über die Wahl $h \\in H$\\n",
+    "english": ""
+  },
+  "234": {
+    "german": "\\textbf{Worst-Case vs.\\ Average-Case}",
+    "english": ""
+  },
+  "235": {
+    "german": "\\textbf{Gibt es eine solche universelle Familie $H$ überhaupt?}",
+    "english": ""
+  },
+  "236": {
+    "german": "\\textbf{Universell aber wenig nützlich}",
+    "english": ""
+  },
+  "237": {
+    "german": "sei $H$ die Menge aller Funktionen der Form $h \\colon U \\to [0, m)$",
+    "english": ""
+  },
+  "238": {
+    "german": "\\textbf{Notation}",
+    "english": "\\textbf{Notation}"
+  },
+  "239": {
+    "german": "$U$: Universum der Schlüssel",
+    "english": ""
+  },
+  "240": {
+    "german": "$m$: Anzahl Buckets",
+    "english": ""
+  },
+  "241": {
+    "german": "$h \\colon U \\to [0, m)$: Hashfunktion",
+    "english": ""
+  },
+  "242": {
+    "german": "zufälliges $h \\in H$ $\\rightarrow$ bildet jeden Schlüssel auf\\nzufälligen Wert ab $\\Rightarrow$\\n$\\Pro{h(k_1) = h(k_2)} \\le \\frac{1}{m}$\\n",
+    "english": ""
+  },
+  "243": {
+    "german": "Problem: Wie verwalten wir $h$, ohne $h(k)$ für jedes $k \\in U$\\nexplizit zu speichern?",
+    "english": ""
+  },
+  "244": {
+    "german": "\\textbf{Universell und nützlich}",
+    "english": ""
+  },
+  "245": {
+    "german": "Annahme: $U = \\{0, \\dots, |U| - 1\\}$ und sei $p \\ge |U|$ eine Primzahl",
+    "english": ""
+  },
+  "246": {
+    "german": "$h_{a, b}(k) = ((a\\cdot k + b)~\\mathrm{mod}~p)~\\mathrm{mod}~m$",
+    "english": ""
+  },
+  "247": {
+    "german": "$H = \\{h_{a, b}(k) \\mid a, b \\in [0, p)\\text{ ganzzahlig und } a\\not= 0\\}$\\n",
+    "english": ""
+  },
+  "248": {
+    "german": "ohne Beweis: $H$ ist universell, also\\n$\\Pro{h(k_1) = h(k_2)} \\le \\frac{1}{m}$ für zufälliges $h \\in H$\\n",
+    "english": ""
+  },
+  "249": {
+    "german": "praktikabel: um $h \\in H$ zufällig zu wählen, wähle einfach $a$ und\\n$b$ zufällig",
+    "english": ""
+  },
+  "250": {
+    "german": "\\textbf{Theorem}\\\\\\nEine Hashtabelle kann die Operationen Einfügen (Key + Value), Suchen\\n(nach Key) und Löschen (bzgl. Key) in erwartet und amortisiert\\nkonstanter Zeit ausführen.\\n",
+    "english": ""
+  },
+  "251": {
+    "german": "\\textbf{Bisher}",
+    "english": ""
+  },
+  "252": {
+    "german": "Universum $U$ besteht aus natürlichen Zahlen",
+    "english": ""
+  },
+  "253": {
+    "german": "Hashfunktion $\\rightarrow$ natürliche Zahlen in kleinerem Intervall",
+    "english": ""
+  },
+  "254": {
+    "german": "damit: direkte Adressierung in $\\Theta(1)$ ohne zu viel\\nSpeicherverbrauch",
+    "english": ""
+  },
+  "255": {
+    "german": "\\textbf{Hashing eröffnet ganz neue Möglichkeiten}",
+    "english": ""
+  },
+  "256": {
+    "german": "die Schlüssel müssen keine ganzen Zahlen sein",
+    "english": ""
+  },
+  "257": {
+    "german": "Beispiele: Strings, Bilder",
+    "english": ""
+  },
+  "258": {
+    "german": "man benötigt nur geeignete Hashfunktionen",
+    "english": ""
+  },
+  "259": {
+    "german": "\\textbf{Empfehlungen bei der Wahl der Hashfunktion}",
+    "english": ""
+  },
+  "260": {
+    "german": "nach Möglichkeit keine eigene Hashfunktion wählen",
+    "english": ""
+  },
+  "261": {
+    "german": "nutze stattdessen existierende erprobte Implementierungen\\n",
+    "english": ""
+  },
+  "262": {
+    "german": "\\textbf{Java}",
+    "english": "\\textbf{Java}"
+  },
+  "263": {
+    "german": "\\textbf{Python}",
+    "english": ""
+  },
+  "264": {
+    "german": "\\textbf{Javascript}",
+    "english": ""
+  },
+  "265": {
+    "german": "\\textbf{Hashtabelle}",
+    "english": "\\textbf{Hash table}"
+  },
+  "266": {
+    "german": "speichert $(\\text{key}, \\text{value})$-Paare",
+    "english": ""
+  },
+  "267": {
+    "german": "Einfügen, Löschen und Suchen in erwartet $\\Theta(1)$",
+    "english": ""
+  },
+  "268": {
+    "german": "\\textbf{Vergleich zu sortiertem Array + binären Suche in $\\Theta(\\log n)$}",
+    "english": ""
+  },
+  "269": {
+    "german": "Hashtabelle ist dynamisch: wir können einfügen und löschen\\n",
+    "english": ""
+  },
+  "270": {
+    "german": "Suche in der Hashtabelle ist schneller (erwartet)",
+    "english": ""
+  },
+  "271": {
+    "german": "binäre Suche kann Vorgänger finden, falls gesuchter Schlüssel selbst\\nnicht vorhanden\\n",
+    "english": ""
+  },
+  "272": {
+    "german": "\\textbf{Datenstrukturen später in der Vorlesung}",
+    "english": ""
+  },
+  "273": {
+    "german": "dynamische Verwaltung geordneter Objekte $\\rightarrow$ Vorgängersuche,\\nMaximum / Minimum\\n",
+    "english": ""
+  },
+  "274": {
+    "german": "Hashtabelle ignoriert Ordnung auf den Schlüsseln",
+    "english": ""
+  },
+  "275": {
+    "german": "\\textbf{Techniken}",
+    "english": ""
+  },
+  "276": {
+    "german": "Analyse erwarteter Laufzeit: $1 - x \\le e^{-x}$ und Summe über Indikatorvariablen\\n",
+    "english": ""
+  },
+  "277": {
+    "german": "Adversary Argument und Lösung mittels zufälliger Entscheidungen\\n(oblivious Adversary)\\n",
+    "english": ""
+  }
+}

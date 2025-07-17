@@ -1,0 +1,890 @@
+{
+  "1": {
+    "german": "Sortieren",
+    "english": ""
+  },
+  "2": {
+    "german": "Sortieren",
+    "english": ""
+  },
+  "3": {
+    "german": "QuickSort -- Pivots",
+    "english": ""
+  },
+  "4": {
+    "german": "QuickSort -- Pivots",
+    "english": ""
+  },
+  "5": {
+    "german": "QuickSort -- Pivots",
+    "english": ""
+  },
+  "6": {
+    "german": "QuickSort -- Pivots",
+    "english": ""
+  },
+  "7": {
+    "german": "QuickSort -- Pivots",
+    "english": ""
+  },
+  "8": {
+    "german": "QuickSort -- Pivots",
+    "english": ""
+  },
+  "9": {
+    "german": "QuickSort -- Pivots",
+    "english": ""
+  },
+  "10": {
+    "german": "Hashing",
+    "english": ""
+  },
+  "11": {
+    "german": "Hash-Kollisionen",
+    "english": ""
+  },
+  "12": {
+    "german": "Universelle Hashfamilie",
+    "english": ""
+  },
+  "13": {
+    "german": "Platz sparen",
+    "english": ""
+  },
+  "14": {
+    "german": "Fotos hashen",
+    "english": ""
+  },
+  "15": {
+    "german": "Fotos hashen",
+    "english": ""
+  },
+  "16": {
+    "german": "Exkurs: Wahrscheinlichkeitstheorie",
+    "english": ""
+  },
+  "17": {
+    "german": "Fotos hashen",
+    "english": ""
+  },
+  "18": {
+    "german": "Maximilian Katzmann \\& Marcus Wilhelm~--~Algorithmen 1 - Übung",
+    "english": ""
+  },
+  "19": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "20": {
+    "german": "\\textbf{Übung 3}",
+    "english": ""
+  },
+  "21": {
+    "german": "\\textbf{Sortieren, Hashing}",
+    "english": ""
+  },
+  "22": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "23": {
+    "german": "Gegeben: $n$ Elemente aus einer geordneten Menge (z.B.: Zahlen)",
+    "english": ""
+  },
+  "24": {
+    "german": "Gesucht: sortierte Folge dieser Elemente",
+    "english": ""
+  },
+  "25": {
+    "german": "\\textbf{Algorithmen}",
+    "english": ""
+  },
+  "26": {
+    "german": "InsertionSort ($\\Theta(n^2)$)",
+    "english": ""
+  },
+  "27": {
+    "german": "Position jeden Elements durch binäre Suche im bisher sortierten Teil ermitteln",
+    "english": ""
+  },
+  "28": {
+    "german": "MergeSort ($\\Theta(n \\log(n))$)",
+    "english": ""
+  },
+  "29": {
+    "german": "Teile ein Array rekursiv in zwei Hälften, welche wieder zusammengeführt werden",
+    "english": ""
+  },
+  "30": {
+    "german": "QuickSort ($\\Theta(n \\log(n))$)",
+    "english": ""
+  },
+  "31": {
+    "german": "Teile ein Array rekursiv anhand eines Pivots in zwei Teile, welche jeweils alle Elemente kleiner bzw. größer dem Pivot enthalten",
+    "english": ""
+  },
+  "32": {
+    "german": "Die Wahl des Pivots beeinflusst die Laufzeit",
+    "english": ""
+  },
+  "33": {
+    "german": "Bereits gesehen",
+    "english": ""
+  },
+  "34": {
+    "german": "Worst Case $\\rightarrow$ Pivot ist immer kleinstes oder größtes Element",
+    "english": ""
+  },
+  "35": {
+    "german": "Mittels zufällig gewähltem Pivot kommt man nah an den Best Case",
+    "english": ""
+  },
+  "36": {
+    "german": "\\textbf{Warum?}",
+    "english": ""
+  },
+  "37": {
+    "german": "Worst Case vs. Average Case -- Adversary Sichtweise",
+    "english": ""
+  },
+  "38": {
+    "german": "Teile ein Array rekursiv anhand eines Pivots in zwei Teile, welche jeweils alle Elemente kleiner bzw. größer dem Pivot enthalten",
+    "english": ""
+  },
+  "39": {
+    "german": "Wenn wir nichts über die Eingabe wissen, kann jeder Eintrag im Array ein gutes oder schlechtes Pivot-Element sein",
+    "english": ""
+  },
+  "40": {
+    "german": "wähle irgendein Element als Pivot $\\rightarrow$ Beispiel: Pivot ist immer der erste Eintrag im Array",
+    "english": ""
+  },
+  "41": {
+    "german": "Was kann schlimmsten Falls passieren?",
+    "english": ""
+  },
+  "42": {
+    "german": "Auftritt: Adversary",
+    "english": ""
+  },
+  "43": {
+    "german": "Adapted from \\texttt{https://scryfall.com/card/mid/129/bloodthirsty-adversary}",
+    "english": ""
+  },
+  "44": {
+    "german": "kennt den Algorithmus",
+    "english": ""
+  },
+  "45": {
+    "german": "baut eine Instanz die für schlechte Laufzeit sorgt",
+    "english": ""
+  },
+  "46": {
+    "german": "Wie können wir Quicksort Adversary die Tour vermasseln?",
+    "english": ""
+  },
+  "47": {
+    "german": "... selbst wenn sie den Algorithmus kennt?",
+    "english": ""
+  },
+  "48": {
+    "german": "... unser Algo braucht eine Komponente die sie nicht vorhersehen kann",
+    "english": ""
+  },
+  "49": {
+    "german": "\\textbf{Zufall!}",
+    "english": ""
+  },
+  "50": {
+    "german": "Idee: Bevor wir das Pivot-Element wählen, wird die Eingabe zufällig gemischt.",
+    "english": ""
+  },
+  "51": {
+    "german": "Die Wahl von Quicksort Adversary wird irrelevant!",
+    "english": ""
+  },
+  "52": {
+    "german": "Adapted from \\texttt{https://scryfall.com/card/afr/79/tricksters-talisman}",
+    "english": ""
+  },
+  "53": {
+    "german": "\\flushright\\nWähle unter allen Permutationen zufällig gleich verteilt eine aus.",
+    "english": ""
+  },
+  "54": {
+    "german": "Problem:",
+    "english": ""
+  },
+  "55": {
+    "german": "Extra Aufwand (um sortieren zu können, wird erstmal gemischt)",
+    "english": ""
+  },
+  "56": {
+    "german": "Wird die Laufzeit dadurch wirklich besser?",
+    "english": ""
+  },
+  "57": {
+    "german": "Nach dem zufälligen Mischen des Arrays wählen wir das erste Element als Pivot.",
+    "english": ""
+  },
+  "58": {
+    "german": "Welches Element landet beim Mischen an erster Stelle?",
+    "english": ""
+  },
+  "59": {
+    "german": "Wie kommt die zufällige \\textcolor{red1}{Permutation} zustande?",
+    "english": ""
+  },
+  "60": {
+    "german": "Für Index $0$: Wähle aus $n$ Elementen gleich verteilt eins aus",
+    "english": ""
+  },
+  "61": {
+    "german": "Für Index $1$: Wähle aus $n - 1$ Elementen gleich verteilt eins aus",
+    "english": ""
+  },
+  "62": {
+    "german": "Für Index \\,$i$: Wähle aus $n - i$\\, Elementen gleich verteilt eins aus",
+    "english": ""
+  },
+  "63": {
+    "german": "Das Pivot-Element wird nur von der ersten zufälligen Wahl beeinflusst",
+    "english": ""
+  },
+  "64": {
+    "german": "Die Sortierung der restlichen Elemente ist irrelevant",
+    "english": ""
+  },
+  "65": {
+    "german": "Demzufolge kann als Pivot auch einfach direkt ein \\textit{zufälliges} Element gewählt werden",
+    "english": ""
+  },
+  "66": {
+    "german": "Bei einem beliebigen aber \\textbf{festen Pivot} kann Quicksort Adversary eine schlechte Laufzeit erzwingen.\\\\\\nBei einem \\textbf{zufällig gewählten Pivot} kann Quicksort Adversary die Laufzeit nicht beeinflussen.",
+    "english": ""
+  },
+  "67": {
+    "german": "Mit zufälliger Wahl des Pivots ist es unwahrscheinlicher, dass wir den Worst Case treffen.",
+    "english": ""
+  },
+  "68": {
+    "german": "Welche Laufzeit können wir erwarten?",
+    "english": ""
+  },
+  "69": {
+    "german": "$O(n \\log(n))$ (siehe VL)",
+    "english": ""
+  },
+  "70": {
+    "german": "Jetzt: Alternativer Beweis",
+    "english": ""
+  },
+  "71": {
+    "german": "Betrachte die Elemente in sortierter Reihenfolge",
+    "english": ""
+  },
+  "72": {
+    "german": "Laufzeit ist bestimmt durch die Anzahl der Vergleiche $X$",
+    "english": ""
+  },
+  "73": {
+    "german": "Betrachte jedes Paar $a_i, a_j$ von Elementen und frage: Werden $a_i$ und $a_j$ verglichen?",
+    "english": ""
+  },
+  "74": {
+    "german": "Indikatorzufallsvariable",
+    "english": ""
+  },
+  "75": {
+    "german": "\\[\\n  X_{ij} =\\n  \\begin{cases}\\n    1, & \\text{wenn $a_i$ und $a_j$ verglichen werden}\\\\\\n    0, & \\text{sonst}\\n  \\end{cases}\\n\\]",
+    "english": ""
+  },
+  "76": {
+    "german": "Das hängt davon ab, welche Elemente als Pivots gewählt werden!",
+    "english": ""
+  },
+  "77": {
+    "german": "\\textbf{Zufall!}",
+    "english": ""
+  },
+  "78": {
+    "german": "Linearität von $\\mathbb{E}$: $\\mathbb{E}[c \\! \\cdot \\! Y \\! + \\! d \\! \\cdot \\! Z] = c \\! \\cdot \\! \\mathbb{E}[Y] \\! + \\! d \\! \\cdot \\! \\mathbb{E}[Z]$",
+    "english": ""
+  },
+  "79": {
+    "german": "Indikatorvariable $Y$: $\\mathbb{E}[Y] = 0 \\cdot \\Pr[Y = 0] + 1 \\cdot \\Pr[Y = 1]$",
+    "english": ""
+  },
+  "80": {
+    "german": "Dank der Linearität von $\\mathbb{E}$ können wir die $X_{ij}$ einzeln betrachten, anstatt alle auf einmal!",
+    "english": ""
+  },
+  "81": {
+    "german": "Betrachte die Elemente in sortierter Reihenfolge",
+    "english": ""
+  },
+  "82": {
+    "german": "Betrachte jedes Paar $a_i, a_j$ von Elementen und frage: Werden $a_i$ und $a_j$ verglichen?",
+    "english": ""
+  },
+  "83": {
+    "german": "Fall 1: Das Pivot ist links von $a_i$ oder rechts von $a_j$",
+    "english": ""
+  },
+  "84": {
+    "german": "$a_i$ und $a_j$ kommen in das gleiche Teilarray",
+    "english": ""
+  },
+  "85": {
+    "german": "Dieses Pivot hat keinen Einfluss darauf ob $a_i$ und $a_j$ verglichen werden!",
+    "english": ""
+  },
+  "86": {
+    "german": "Fall 2: Das Pivot ist zwischen $a_i$ und $a_j$",
+    "english": ""
+  },
+  "87": {
+    "german": "$a_i$ und $a_j$ kommen in verschiedene Teilarrays",
+    "english": ""
+  },
+  "88": {
+    "german": "Mit diesem Pivot werden $a_i$ und $a_j$ niemals verglichen!",
+    "english": ""
+  },
+  "89": {
+    "german": "Fall 3: Das Pivot ist $a_i$ oder $a_j$",
+    "english": ""
+  },
+  "90": {
+    "german": "Mit diesem Pivot werden $a_i$ und $a_j$ auf jeden Fall verglichen!",
+    "english": ""
+  },
+  "91": {
+    "german": "Mit zufälliger Wahl des Pivots ist es unwahrscheinlicher, dass wir den Worst Case treffen.",
+    "english": ""
+  },
+  "92": {
+    "german": "Welche Laufzeit können wir erwarten?",
+    "english": ""
+  },
+  "93": {
+    "german": "Jetzt: Alternativer Beweis",
+    "english": ""
+  },
+  "94": {
+    "german": "Laufzeit ist bestimmt durch die Anzahl der Vergleiche $X$",
+    "english": ""
+  },
+  "95": {
+    "german": "Das hängt davon ab, welche Elemente als Pivots gewählt werden!",
+    "english": ""
+  },
+  "96": {
+    "german": "Fall 2: Das Pivot ist zwischen $a_i$ und $a_j$",
+    "english": ""
+  },
+  "97": {
+    "german": "$a_i$ und $a_j$ kommen in verschiedene Teilarrays",
+    "english": ""
+  },
+  "98": {
+    "german": "Mit diesem Pivot werden $a_i$ und $a_j$ niemals verglichen!",
+    "english": ""
+  },
+  "99": {
+    "german": "Fall 3: Das Pivot ist $a_i$ oder $a_j$",
+    "english": ""
+  },
+  "100": {
+    "german": "Mit diesem Pivot werden $a_i$ und $a_j$ auf jeden Fall verglichen!",
+    "english": ""
+  },
+  "101": {
+    "german": "Betrachte die Pivots die zufällig gewählt werden",
+    "english": ""
+  },
+  "102": {
+    "german": "Pivots außerhalb von $\\{a_i, \\dots, a_j\\}$ interessieren uns nicht",
+    "english": ""
+  },
+  "103": {
+    "german": "Das Schicksal von $X_{ij}$ wird besiegelt wenn das erste Pivot in $\\{a_i, \\dots, a_j\\}$ fällt",
+    "english": ""
+  },
+  "104": {
+    "german": "Dieser Bereich enthält $j - i + 1$ Elemente",
+    "english": ""
+  },
+  "105": {
+    "german": "Wie wahrscheinlich ist es, dass $X_{ij} = 1$ gilt, wenn wir schon wissen, dass das Pivot in diesem Bereich ist?",
+    "english": ""
+  },
+  "106": {
+    "german": "$\\frac{2}{k} > 0$, mehr Summanden machen die Summe größer",
+    "english": ""
+  },
+  "107": {
+    "german": "\\textbf{Harmonische Summe}",
+    "english": ""
+  },
+  "108": {
+    "german": "Harmonische Zahl $H_n = \\sum\\limits_{k = 1}^n \\frac{1}{k}$",
+    "english": ""
+  },
+  "109": {
+    "german": "Auf jeder Eingabe der Länge $n$ benötigt QuickSort mit zufälligen Pivots erwartet $\\le 2n \\ln(n)$ Vergleiche.",
+    "english": ""
+  },
+  "110": {
+    "german": "\\textbf{Theorem}",
+    "english": ""
+  },
+  "111": {
+    "german": "Wir haben eine Menge von Paaren bestehend aus Schlüsseln und Werten",
+    "english": ""
+  },
+  "112": {
+    "german": "Gegeben einen Schlüssel: Was ist der zugehörige Wert?",
+    "english": ""
+  },
+  "113": {
+    "german": "\\textbf{Nutzername}",
+    "english": ""
+  },
+  "114": {
+    "german": "\\textbf{Passwort}",
+    "english": ""
+  },
+  "115": {
+    "german": "Beispiel: Wenn sich ein Nutzer zum Online-Banking einloggen will, muss geprüft werden, ob das eingegebene Passwort auch zu dem Nutzer gehört.",
+    "english": ""
+  },
+  "116": {
+    "german": "Nutzer \\texttt{PickleRick} versucht sich mit dem Passwort \\texttt{dieNutella} einzuloggen",
+    "english": ""
+  },
+  "117": {
+    "german": "Datenstruktur: \\textbf{Hashtabelle}",
+    "english": ""
+  },
+  "118": {
+    "german": "\\textbf{Array} hält die Werte (die Einträge heißen \\textbf{Buckets})",
+    "english": ""
+  },
+  "119": {
+    "german": "\\textbf{Hashfunktion} $h$ bildet Schlüssel auf Arrayindex ab",
+    "english": ""
+  },
+  "120": {
+    "german": "Idee: $h$ bildet Nutzername auf Länge des Namens ab",
+    "english": ""
+  },
+  "121": {
+    "german": "Hash-Kollision!",
+    "english": ""
+  },
+  "122": {
+    "german": "$h(x) = h(y)$ obwohl $x \\neq y$",
+    "english": ""
+  },
+  "123": {
+    "german": "\\textbf{Notation}",
+    "english": "\\textbf{Notation}"
+  },
+  "124": {
+    "german": "$U$: Universum möglicher Schlüssel",
+    "english": ""
+  },
+  "125": {
+    "german": "$m$: Größe des Arrays",
+    "english": ""
+  },
+  "126": {
+    "german": "Es existiert keine Hash-Funktion die im Worst Case gut ist",
+    "english": ""
+  },
+  "127": {
+    "german": "\\textbf{Notation}",
+    "english": "\\textbf{Notation}"
+  },
+  "128": {
+    "german": "$U$: Universum möglicher Schlüssel",
+    "english": ""
+  },
+  "129": {
+    "german": "$m$: Größe des Arrays",
+    "english": ""
+  },
+  "130": {
+    "german": "Adversary: Baut Instanz wo $|U|/m$ Schlüssel auf den selben Bucket abgebildet werden",
+    "english": ""
+  },
+  "131": {
+    "german": "Idee: Kollisionen in Kauf nehmen",
+    "english": ""
+  },
+  "132": {
+    "german": "\\textbf{Chaining}: Bucket kann mehrere Werte halten (Liste oder Array)",
+    "english": ""
+  },
+  "133": {
+    "german": "\\textbf{dynamisch wachsende Hashtabelle}: Wenn mehr als $m$ Elemente eingefügt wurden, verdopple die Arraygröße",
+    "english": ""
+  },
+  "134": {
+    "german": "\\textbf{Random Choice}: Bei Verdopplung wird zufällig eine neue Hashfunktion gewählt",
+    "english": ""
+  },
+  "135": {
+    "german": "Adversary die Tour vermasseln",
+    "english": ""
+  },
+  "136": {
+    "german": "\\textbf{Simple Uniform Hashing Assumption}",
+    "english": ""
+  },
+  "137": {
+    "german": "Jeder Schlüssel landet in jedem der Buckets mit der gleichen Wahrscheinlichkeit",
+    "english": ""
+  },
+  "138": {
+    "german": "unabhängig von vorher eingefügten Schlüsseln",
+    "english": ""
+  },
+  "139": {
+    "german": "Ist die Anzahl eingefügter (Key, Value)-Paare linear in $m$, landen davon \\textit{erwartet} nur konstant viele in einem Bucket.",
+    "english": ""
+  },
+  "140": {
+    "german": "\\textbf{Woher?}",
+    "english": ""
+  },
+  "141": {
+    "german": "Aber bitte nicht alle!",
+    "english": ""
+  },
+  "142": {
+    "german": "Was wenn mehr eingefügt werden?",
+    "english": ""
+  },
+  "143": {
+    "german": "\\textbf{Notation}",
+    "english": "\\textbf{Notation}"
+  },
+  "144": {
+    "german": "$U$: Universum möglicher Schlüssel",
+    "english": ""
+  },
+  "145": {
+    "german": "$m$: Größe des Arrays",
+    "english": ""
+  },
+  "146": {
+    "german": "Menge $H$ von Hashfunktionen bei der für alle $k_1 \\neq k_2 \\in U$ und ein zufälliges $h \\in H$ gilt: $\\Pr[h(k_1) = h(k_2)] \\le 1/m$",
+    "english": ""
+  },
+  "147": {
+    "german": "$\\Rightarrow$ Mit zufällig gewähltem $h \\in H$ kollidieren zwei Schlüssel höchstens mit Wahrscheinlichkeit $1/m$.",
+    "english": ""
+  },
+  "148": {
+    "german": "\\textbf{Theorem}",
+    "english": ""
+  },
+  "149": {
+    "german": "Eine Hashtabelle kann die Operationen Einfügen, Suchen und Löschen in erwartet und amortisiert konstanter Zeit ausführen.",
+    "english": ""
+  },
+  "150": {
+    "german": "\\textbf{Key~~Takeaways}",
+    "english": ""
+  },
+  "151": {
+    "german": "funktioniert in der Praxis richtig gut",
+    "english": ""
+  },
+  "152": {
+    "german": "selbst eine Hashfunktion zu entwerfen ist typischerweise keine gute Idee...",
+    "english": ""
+  },
+  "153": {
+    "german": "(bezüglich Folge ausgeführter Operationen)",
+    "english": ""
+  },
+  "154": {
+    "german": "Problem: Smartphone-Speicher ist knapp",
+    "english": ""
+  },
+  "155": {
+    "german": "Fotos nehmen einen Großteil ein",
+    "english": ""
+  },
+  "156": {
+    "german": "Idee: Platz sparen durch Löschen von Duplikaten",
+    "english": ""
+  },
+  "157": {
+    "german": "Wie finden wir Duplikate?",
+    "english": ""
+  },
+  "158": {
+    "german": "Annahme: Smartphone aus dem 18. Jhr.",
+    "english": ""
+  },
+  "159": {
+    "german": "Fotos in Graustufen",
+    "english": ""
+  },
+  "160": {
+    "german": "Wert eines Pixels in $\\{0, \\dots, 255\\}$",
+    "english": ""
+  },
+  "161": {
+    "german": "Ein Foto ist ein 2D Array",
+    "english": ""
+  },
+  "162": {
+    "german": "Duplikat: Arraywerte sind gleich",
+    "english": ""
+  },
+  "163": {
+    "german": "Für zwei Fotos: Iteriere Pixel und überprüfe auf Gleicheit",
+    "english": ""
+  },
+  "164": {
+    "german": "Nicht billig, aber nehmen wir in Kauf",
+    "english": ""
+  },
+  "165": {
+    "german": "Sei $n$ die Anzahl der Bilder",
+    "english": ""
+  },
+  "166": {
+    "german": "Vergleiche jedes Bild mit jedem anderen",
+    "english": ""
+  },
+  "167": {
+    "german": "$\\Theta(n^2)$ nicht-billige Vergleiche...",
+    "english": ""
+  },
+  "168": {
+    "german": "\\textbf{Das muss besser gehen...}",
+    "english": ""
+  },
+  "169": {
+    "german": "Definiere eine Hashfunktion $h$ für Fotos",
+    "english": ""
+  },
+  "170": {
+    "german": "Packe Fotos in Array von Buckets",
+    "english": ""
+  },
+  "171": {
+    "german": "Vergleiche nur Fotos im selben Bucket",
+    "english": ""
+  },
+  "172": {
+    "german": "Hash-Kollisionen?",
+    "english": ""
+  },
+  "173": {
+    "german": "Kein Problem, solange wir erwartet konstant viele Fotos pro Bucket haben",
+    "english": ""
+  },
+  "174": {
+    "german": "Vergleiche jedes der $n$ Fotos mit erwartet konstant vielen anderen Fotos",
+    "english": ""
+  },
+  "175": {
+    "german": "Erwartete Laufzeit linear anstatt quadratisch!",
+    "english": ""
+  },
+  "176": {
+    "german": "\\textbf{Problem}: Wie hashen wir ein Foto?",
+    "english": ""
+  },
+  "177": {
+    "german": "\\textbf{Idee}: Summe der Pixelwerte",
+    "english": ""
+  },
+  "178": {
+    "german": "zwei Mal das gleiche Foto gibt den gleichen Wert",
+    "english": ""
+  },
+  "179": {
+    "german": "Duplikate landen im gleichen Bucket",
+    "english": ""
+  },
+  "180": {
+    "german": "$h$ bildet auf große Wert ab $\\rightarrow$ benutze zweite Hashfunktion um Indizes zu erhalten",
+    "english": ""
+  },
+  "181": {
+    "german": "Zwei Hashunfktionen",
+    "english": ""
+  },
+  "182": {
+    "german": "die erste bildet Fotos auf große Zahlen ab",
+    "english": ""
+  },
+  "183": {
+    "german": "die zweite bildet die großen Zahlen auf Buckets ab",
+    "english": ""
+  },
+  "184": {
+    "german": "Das hat man tatsächlich gemacht ...",
+    "english": ""
+  },
+  "185": {
+    "german": "und es ging so \\textit{richtig} schief!",
+    "english": ""
+  },
+  "186": {
+    "german": "\\textbf{Exkurs: Wahrscheinlichkeitstheorie}",
+    "english": ""
+  },
+  "187": {
+    "german": "Was passiert eigentlich, wenn ich viele Zufallsvariablen aufsummiere?",
+    "english": ""
+  },
+  "188": {
+    "german": "Beispiel: Münzwürfe",
+    "english": ""
+  },
+  "189": {
+    "german": "Kopf: $X_i = 1$ mit $Pr[X_i = 1] = 1/2$, Zahl: $X_i = 0$ mit $Pr[X_i = 0] = 1/2$",
+    "english": ""
+  },
+  "190": {
+    "german": "$n$ unabhängige Münzwürfe $X_1, X_2, \\dots, X_n$",
+    "english": ""
+  },
+  "191": {
+    "german": "Wie oft ist die Münze auf Kopf gelandet?",
+    "english": ""
+  },
+  "192": {
+    "german": "\\centering\\nVerteilung\\\\\\nvon $X$",
+    "english": ""
+  },
+  "193": {
+    "german": "Wie viele Bit-Strings der Länge $n$ gibt es?",
+    "english": ""
+  },
+  "194": {
+    "german": "Wie viele Bit-Strings der Länge $n$ gibt es die $x$ mal eine $1$ enthalten?",
+    "english": ""
+  },
+  "195": {
+    "german": "Beispiel: 6-seitige Münzen aka Würfel",
+    "english": ""
+  },
+  "196": {
+    "german": "Wurf: $X_i \\in \\{1, \\dots, 6\\}$ mit $Pr[X_i = x] = 1/6$",
+    "english": ""
+  },
+  "197": {
+    "german": "$n$ unabhängige Würfelwürfe $X_1, X_2, \\dots, X_n$",
+    "english": ""
+  },
+  "198": {
+    "german": "Was ist die Summe der gewürfelten Zahlen?",
+    "english": ""
+  },
+  "199": {
+    "german": "\\textbf{Standardnormalverteilung} $\\mathcal{N}(0,1)$",
+    "english": ""
+  },
+  "200": {
+    "german": "Dichte",
+    "english": ""
+  },
+  "201": {
+    "german": "\\textbf{Zentraler Grenzwertsatz}",
+    "english": ""
+  },
+  "202": {
+    "german": "Sei $X_1, X_2, \\dots, X_n, \\dots$ eine Folge von unabhängigen Zufallsvariablen mit Erwartungswert $\\mu$ und Varianz $\\sigma^2$ und sei $S_n = \\sum_{i = 1}^{n} X_i$ die $n$-te Teilsumme. Dann konvergiert die Zufallsvariable $Z_n \\! = \\! (S_n - n \\mu)/(\\sigma \\sqrt{n})$ für $n \\rightarrow \\infty$ gegen die Verteilungsfunktion der Standardnormalverteilung $\\mathcal{N}(0,1)$.",
+    "english": ""
+  },
+  "203": {
+    "german": "verschieben",
+    "english": ""
+  },
+  "204": {
+    "german": "stauchen",
+    "english": ""
+  },
+  "205": {
+    "german": "Die ursprüngliche Verteilung spielt keine Rolle!",
+    "english": ""
+  },
+  "206": {
+    "german": "\\textbf{Standardnormalverteilung} $\\mathcal{N}(0,1)$",
+    "english": ""
+  },
+  "207": {
+    "german": "Dichte",
+    "english": ""
+  },
+  "208": {
+    "german": "\\textbf{Zentraler Grenzwertsatz}",
+    "english": ""
+  },
+  "209": {
+    "german": "Sei $X_1, X_2, \\dots, X_n, \\dots$ eine Folge von unabhängigen Zufallsvariablen mit Erwartungswert $\\mu$ und Varianz $\\sigma^2$ und sei $S_n = \\sum_{i = 1}^{n} X_i$ die $n$-te Teilsumme. Dann konvergiert die Zufallsvariable $Z_n \\! = \\! (S_n - n \\mu)/(\\sigma \\sqrt{n})$ für $n \\rightarrow \\infty$ gegen die Verteilungsfunktion der Standardnormalverteilung $\\mathcal{N}(0,1)$.",
+    "english": ""
+  },
+  "210": {
+    "german": "Was hat das mit unseren Fotos zu tun?",
+    "english": ""
+  },
+  "211": {
+    "german": "Wenn unsere Pixel Würfel sind, konvergiert die Verteilung der Summe der Pixelwerte gegen die Normalverteilung",
+    "english": ""
+  },
+  "212": {
+    "german": "Unsere Pixel sind 256-seitige Würfel",
+    "english": ""
+  },
+  "213": {
+    "german": "(wenn auch vermutlich nicht gleich verteilt)",
+    "english": ""
+  },
+  "214": {
+    "german": "Unsere Hashunfktionen",
+    "english": ""
+  },
+  "215": {
+    "german": "die erste bildet Fotos auf große Zahlen ab",
+    "english": ""
+  },
+  "216": {
+    "german": "die zweite bildet nun die großen Zahlen auf Buckets ab",
+    "english": ""
+  },
+  "217": {
+    "german": "viele",
+    "english": ""
+  },
+  "218": {
+    "german": "die gleichen",
+    "english": ""
+  },
+  "219": {
+    "german": "Viele Fotos landen in den gleichen Buckets",
+    "english": ""
+  },
+  "220": {
+    "german": "die gleichen",
+    "english": ""
+  },
+  "221": {
+    "german": "... Laufzeitreduktion funktioniert nicht",
+    "english": ""
+  },
+  "222": {
+    "german": "\\textbf{Hashfunktionen besser nicht selbst entwerfen!}",
+    "english": ""
+  }
+}

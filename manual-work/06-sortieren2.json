@@ -1,0 +1,838 @@
+{
+  "1": {
+    "german": "Überblick",
+    "english": ""
+  },
+  "2": {
+    "german": "Bucketsort",
+    "english": ""
+  },
+  "3": {
+    "german": "Zahlen als Schlüssel",
+    "english": ""
+  },
+  "4": {
+    "german": "Bucketsort: Implementierung",
+    "english": ""
+  },
+  "5": {
+    "german": "Stabiles Sortieren und lexikographische Ordnungen",
+    "english": ""
+  },
+  "6": {
+    "german": "Und was ist mit größeren Zahlen?",
+    "english": ""
+  },
+  "7": {
+    "german": "Sortieren polynomiell großer Zahlen",
+    "english": ""
+  },
+  "8": {
+    "german": "Radixsort",
+    "english": ""
+  },
+  "9": {
+    "german": "Geht das alles wirklich so schnell?",
+    "english": ""
+  },
+  "10": {
+    "german": "Exkurs: Berechnungsmodell",
+    "english": ""
+  },
+  "11": {
+    "german": "Zusammenfassung",
+    "english": "Summary"
+  },
+  "12": {
+    "german": "Thomas Bläsius~--~Algorithmen 1",
+    "english": "Thomas Bläsius~--~Algorithms 1"
+  },
+  "13": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "14": {
+    "german": "\\textbf{Sortieren: Bucketsort, Radixsort, Word-RAM}",
+    "english": ""
+  },
+  "15": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "16": {
+    "german": "\\textbf{Letztes Mal gesehen}",
+    "english": ""
+  },
+  "17": {
+    "german": "Sortieralgorithmen mit Laufzeit $O(n \\log n)$ (Mergesort, Quicksort)\\n",
+    "english": ""
+  },
+  "18": {
+    "german": "vergleichsbasiert $\\rightarrow$ die Algorithmen sind universell\\neinsetzbar\\n",
+    "english": ""
+  },
+  "19": {
+    "german": "wir müssen Elemente nur vergleichen können und sonst nichts über sie\\nwissen\\n",
+    "english": ""
+  },
+  "20": {
+    "german": "\\textbf{Plan für heute}",
+    "english": ""
+  },
+  "21": {
+    "german": "untere Schranke: jeder vergleichsbasierte Sortieralgo benötigt\\n$\\Omega(n \\log n)$ Vergleiche\\n",
+    "english": ""
+  },
+  "22": {
+    "german": "sortieren von Zahlen in $O(n)$: Bucketsort, Radixsort\\n",
+    "english": ""
+  },
+  "23": {
+    "german": "unter gewissen Annahmen an die Größe der Zahlen",
+    "english": ""
+  },
+  "24": {
+    "german": "\\textbf{Theorem}\\\\\\nJeder vergleichsbasierte Sortieralgorithmus benötigt $\\Omega(n \\log\\nn)$ Vergleiche um eine Folge von $n$ Elementen zu sortieren.",
+    "english": ""
+  },
+  "25": {
+    "german": "\\textbf{Was können wir mit Zahlen tun?}",
+    "english": ""
+  },
+  "26": {
+    "german": "vergleichen $\\rightarrow$ hilft hier nicht",
+    "english": ""
+  },
+  "27": {
+    "german": "Array-Zellen adressieren $\\rightarrow$ das können wir nutzen",
+    "english": ""
+  },
+  "28": {
+    "german": "\\textbf{Bucketsort}",
+    "english": ""
+  },
+  "29": {
+    "german": "(wenn die Zahlen nicht zu groß sind)",
+    "english": ""
+  },
+  "30": {
+    "german": "zu sortieren: $n$ Zahlen aus $[0, m)$",
+    "english": ""
+  },
+  "31": {
+    "german": "erstelle Buckets: Array $B$ der Größe $m$",
+    "english": ""
+  },
+  "32": {
+    "german": "für jede Zahl $x$: speichere $x$ in $B[x]$",
+    "english": ""
+  },
+  "33": {
+    "german": "lies sortierte Folge aus $B$ ab",
+    "english": ""
+  },
+  "34": {
+    "german": "Laufzeit $\\Theta(n + m) = \\Theta(n)$, wenn $m \\in O(n)$",
+    "english": ""
+  },
+  "35": {
+    "german": "\\textbf{Laufzeit}",
+    "english": ""
+  },
+  "36": {
+    "german": "\\textbf{Was ist die Laufzeit?}",
+    "english": ""
+  },
+  "37": {
+    "german": "\\textbf{Mehr als nur Zahlen}",
+    "english": ""
+  },
+  "38": {
+    "german": "oft will man nicht tatsächlich Zahlen sortieren",
+    "english": ""
+  },
+  "39": {
+    "german": "sondern komplexere Objekte bezüglich einer Kennzahl\\n",
+    "english": ""
+  },
+  "40": {
+    "german": "diese Kennzahl nennt man auch \\emph{Schlüssel (Key)}",
+    "english": ""
+  },
+  "41": {
+    "german": "\\textbf{Beispiel 1: Personen nach Alter in Jahren}",
+    "english": ""
+  },
+  "42": {
+    "german": "Eingabe: Tabelle mit Personendaten ($n$ Zeilen)",
+    "english": ""
+  },
+  "43": {
+    "german": "\\textbf{Name}",
+    "english": ""
+  },
+  "44": {
+    "german": "\\textbf{Alter}",
+    "english": ""
+  },
+  "45": {
+    "german": "Peter Arbeitsloser",
+    "english": ""
+  },
+  "46": {
+    "german": "Martyn Vorstand",
+    "english": ""
+  },
+  "47": {
+    "german": "Henryk Ingenieur",
+    "english": ""
+  },
+  "48": {
+    "german": "Kiki Unbekannt",
+    "english": ""
+  },
+  "49": {
+    "german": "Der Alte",
+    "english": ""
+  },
+  "50": {
+    "german": "Personen aus: Qualityland, Marc-Uwe Kling",
+    "english": ""
+  },
+  "51": {
+    "german": "\\textbf{Beispiel 2: Knoten eines Graphen nach Grad (\\#Nachbarn)}",
+    "english": ""
+  },
+  "52": {
+    "german": "maximales Alter ist typischerweise klein (in $O(n)$)\\n",
+    "english": ""
+  },
+  "53": {
+    "german": "Eingabe: Graph mit $n$ Knoten",
+    "english": ""
+  },
+  "54": {
+    "german": "Grad jedes Knotens ist kleiner $n$",
+    "english": ""
+  },
+  "55": {
+    "german": "Bucketsort hat Laufzeit $\\Theta(n)$",
+    "english": ""
+  },
+  "56": {
+    "german": "Bucketsort hat Laufzeit $\\Theta(n)$",
+    "english": ""
+  },
+  "57": {
+    "german": "$\\function{Bucketsort}(\\mathrm{input})$",
+    "english": ""
+  },
+  "58": {
+    "german": "$m \\coloneqq \\text{largest key in the } \\mathrm{input} + 1$\\n",
+    "english": ""
+  },
+  "59": {
+    "german": "$\\type{Array} \\langle \\type{Array} \\rangle$\\n$\\mathrm{buckets} \\coloneqq$ array of size $m$ of empty arrays\\n",
+    "english": ""
+  },
+  "60": {
+    "german": "\\keyword{for} $\\mathrm{obj}$ \\keyword{in} $\\mathrm{input}$ \\keyword{do}",
+    "english": ""
+  },
+  "61": {
+    "german": "$\\mathrm{buckets}[\\mathrm{obj}.\\function{key}].\\function{pushBack}(\\mathrm{obj})$",
+    "english": ""
+  },
+  "62": {
+    "german": "\\type{Array} $A \\coloneqq$ empty array",
+    "english": ""
+  },
+  "63": {
+    "german": "\\keyword{for} $\\mathrm{bucket}$ \\keyword{in} $\\mathrm{buckets}$\\n\\keyword{do} \\hfill \\comment{$m$ buckets}\\n",
+    "english": ""
+  },
+  "64": {
+    "german": "\\keyword{for} $\\mathrm{obj}$ \\keyword{in} $\\mathrm{bucket}$\\n\\keyword{do} \\hfill \\comment{$n$ objects}\\n",
+    "english": ""
+  },
+  "65": {
+    "german": "$A.\\function{pushBack}(\\text{obj})$",
+    "english": ""
+  },
+  "66": {
+    "german": "\\textbf{Anmerkung}",
+    "english": "\\textbf{Note}"
+  },
+  "67": {
+    "german": "verschachtelte Schleifen\\\\ $\\rightarrow$ Laufzeit\\n$\\Theta (m \\cdot n)$?\\n",
+    "english": ""
+  },
+  "68": {
+    "german": "jedes Objekt liegt in nur einem Bucket\\n",
+    "english": ""
+  },
+  "69": {
+    "german": "daher: $\\Theta(m + n)$\\n",
+    "english": ""
+  },
+  "70": {
+    "german": "\\textbf{Theorem}\\\\\\nMit Bucketsort könne wir $n$ natürliche Zahlen in $\\Theta(n)$ Zeit\\nsortieren, wenn die Größe der Zahlen in $O(n)$ liegt.\\n",
+    "english": ""
+  },
+  "71": {
+    "german": "\\textbf{Beobachtung: Bucketsort ist \\emph{stabil}}\\\\\\nWenn Objekt $X$ in der Eingabe vor Objekt $Y$ steht und\\n$X.\\function{key} = Y.\\function{key}$, dann steht $X$ in der Ausgabe vor\\n$Y$.\\n",
+    "english": ""
+  },
+  "72": {
+    "german": "\\textbf{Lexikographische Ordnung auf den Nationen}",
+    "english": ""
+  },
+  "73": {
+    "german": "\\textbf{Nation}",
+    "english": ""
+  },
+  "74": {
+    "german": "\\textbf{Gold}",
+    "english": ""
+  },
+  "75": {
+    "german": "\\textbf{Silber}",
+    "english": ""
+  },
+  "76": {
+    "german": "\\textbf{Bronze}",
+    "english": ""
+  },
+  "77": {
+    "german": "\\textbf{Medaillenspiegel Olympia 2018}",
+    "english": ""
+  },
+  "78": {
+    "german": "\\worldflag{NO}NOR",
+    "english": ""
+  },
+  "79": {
+    "german": "\\worldflag{DE}GER",
+    "english": ""
+  },
+  "80": {
+    "german": "\\worldflag{CA}CAN",
+    "english": ""
+  },
+  "81": {
+    "german": "\\worldflag{US}USA",
+    "english": ""
+  },
+  "82": {
+    "german": "\\worldflag{GB}GBR",
+    "english": ""
+  },
+  "83": {
+    "german": "\\worldflag{PL}POL",
+    "english": ""
+  },
+  "84": {
+    "german": "\\worldflag{UA}UKR",
+    "english": ""
+  },
+  "85": {
+    "german": "\\worldflag{CH}SUI",
+    "english": ""
+  },
+  "86": {
+    "german": "\\worldflag{FR}FRA",
+    "english": ""
+  },
+  "87": {
+    "german": "ordne nach Anzahl Goldmedaillen",
+    "english": ""
+  },
+  "88": {
+    "german": "bei gleicher Anzahl Gold: nach Silbermedaillen",
+    "english": ""
+  },
+  "89": {
+    "german": "bei gleicher Anzahl Gold und Silber: nach Bronze",
+    "english": ""
+  },
+  "90": {
+    "german": "sortiere drei Mal, jeweils mit stabilem Sortieralgorithmus: erst nach Bronze,\\ndann nach Silber, dann nach Gold\\n",
+    "english": ""
+  },
+  "91": {
+    "german": "\\textbf{Sortieralgorithmus}",
+    "english": ""
+  },
+  "92": {
+    "german": "letzte Sortierung nach Gold: mehr Gold $\\Rightarrow$ weiter oben\\n",
+    "english": ""
+  },
+  "93": {
+    "german": "bei gleicher Anzahl Gold: vorherige Sortierung nach $(\\text{Silber},\\n\\text{Bronze})$ bleibt erhalten\\n",
+    "english": ""
+  },
+  "94": {
+    "german": "$\\function{Bucketsort}(\\mathrm{input})$",
+    "english": ""
+  },
+  "95": {
+    "german": "$m \\coloneqq \\text{largest key in the input} + 1$",
+    "english": ""
+  },
+  "96": {
+    "german": "$\\type{Array} \\langle \\type{Array} \\rangle$\\n$\\mathrm{buckets} \\coloneqq$ array of size $m$ of empty arrays\\n",
+    "english": ""
+  },
+  "97": {
+    "german": "\\keyword{for} $\\mathrm{obj}$ \\keyword{in} $\\mathrm{input}$ \\keyword{do}",
+    "english": ""
+  },
+  "98": {
+    "german": "$\\mathrm{buckets}[\\mathrm{obj}.\\function{key}].\\function{pushBack}(\\mathrm{obj})$",
+    "english": ""
+  },
+  "99": {
+    "german": "\\type{Array} $A \\coloneqq$ empty array",
+    "english": ""
+  },
+  "100": {
+    "german": "\\keyword{for} $\\mathrm{bucket}$ \\keyword{in} $\\mathrm{buckets}$\\n\\keyword{do} \\hfill \\comment{$m$ buckets}\\n",
+    "english": ""
+  },
+  "101": {
+    "german": "\\keyword{for} $\\mathrm{obj}$ \\keyword{in} $\\mathrm{bucket}$\\n\\keyword{do} \\hfill \\comment{$n$ objects}\\n",
+    "english": ""
+  },
+  "102": {
+    "german": "$A.\\function{pushBack}(\\text{Obj})$",
+    "english": ""
+  },
+  "103": {
+    "german": "\\textbf{Wie können wir mit Bucketsort lexikographisch sortieren?}",
+    "english": ""
+  },
+  "104": {
+    "german": "\\textbf{Name}",
+    "english": ""
+  },
+  "105": {
+    "german": "\\textbf{Einkommen}",
+    "english": ""
+  },
+  "106": {
+    "german": "Peter Arbeitsloser",
+    "english": ""
+  },
+  "107": {
+    "german": "Martyn Vorstand",
+    "english": ""
+  },
+  "108": {
+    "german": "Henryk Ingenieur",
+    "english": ""
+  },
+  "109": {
+    "german": "Kiki Unbekannt",
+    "english": ""
+  },
+  "110": {
+    "german": "Der Alte",
+    "english": ""
+  },
+  "111": {
+    "german": "Personen aus: Qualityland, Marc-Uwe Kling",
+    "english": ""
+  },
+  "112": {
+    "german": "\\textbf{Problem}",
+    "english": ""
+  },
+  "113": {
+    "german": "die Zahlen sind möglicherweise signifikant größer als die Anzahl zu\\nsortierender Objekte",
+    "english": ""
+  },
+  "114": {
+    "german": "zu viele Buckets $\\rightarrow$ kostet Speicher und Laufzeit\\n",
+    "english": ""
+  },
+  "115": {
+    "german": "\\textbf{Idee für das Beispiel: dreistufiges Verfahren}",
+    "english": ""
+  },
+  "116": {
+    "german": "\\textbf{Name}",
+    "english": ""
+  },
+  "117": {
+    "german": "\\textbf{Einkommen}",
+    "english": ""
+  },
+  "118": {
+    "german": "Peter Arbeitsloser",
+    "english": ""
+  },
+  "119": {
+    "german": "\\num[minimum-integer-digits = 9]{35211}",
+    "english": ""
+  },
+  "120": {
+    "german": "Martyn Vorstand",
+    "english": ""
+  },
+  "121": {
+    "german": "\\num[minimum-integer-digits = 9]{783491}",
+    "english": ""
+  },
+  "122": {
+    "german": "Henryk Ingenieur",
+    "english": ""
+  },
+  "123": {
+    "german": "\\num[minimum-integer-digits = 9]{123456789}",
+    "english": ""
+  },
+  "124": {
+    "german": "Kiki Unbekannt",
+    "english": ""
+  },
+  "125": {
+    "german": "\\num[minimum-integer-digits = 9]{46823}",
+    "english": ""
+  },
+  "126": {
+    "german": "Der Alte",
+    "english": ""
+  },
+  "127": {
+    "german": "\\num[minimum-integer-digits = 9]{46129}",
+    "english": ""
+  },
+  "128": {
+    "german": "Personen aus: Qualityland, Marc-Uwe Kling",
+    "english": ""
+  },
+  "129": {
+    "german": "ordne lexikographisch nach\\n$(\\text{Ziffern 1--3}, \\text{Ziffern 4--6}, \\text{Ziffern 7--9})$\\n",
+    "english": ""
+  },
+  "130": {
+    "german": "jetzt: $3$ Mal Bucketsort mit $10^3$ Buckets\\n",
+    "english": ""
+  },
+  "131": {
+    "german": "vorher: Bucketsort mit $10^9$ Buckets\\n",
+    "english": ""
+  },
+  "132": {
+    "german": "\\textbf{Allgemein: asymptotische Verbesserung?}",
+    "english": ""
+  },
+  "133": {
+    "german": "Eingabe: $n$ Zahlen aus $[0, n^c)$",
+    "english": ""
+  },
+  "134": {
+    "german": "Anzahl Ziffern: $\\log(n^c) = c \\cdot \\log n$",
+    "english": ""
+  },
+  "135": {
+    "german": "aufspalten in $c$ Blöcke mit je $\\log n$ Ziffern $\\rightarrow$\\nZahlen im Intervall $[0, n)$",
+    "english": ""
+  },
+  "136": {
+    "german": "also: $c$ mal Bucketsort mit Laufzeit je $\\Theta(n)$ $\\Rightarrow$\\nGesamtlaufzeit $\\Theta(c\\cdot n)$",
+    "english": ""
+  },
+  "137": {
+    "german": "\\textbf{Bei Aufspaltung in $c$ Blöcke mit je $\\log n$ Ziffern:}\\\\\\n\\textbf{Wie groß werden die Zahlen pro Block? Welche Laufzeit erhalten\\nwir?}\\n",
+    "english": ""
+  },
+  "138": {
+    "german": "\\textbf{Gerade gesehen}",
+    "english": ""
+  },
+  "139": {
+    "german": "$n$ Zahlen aus dem Intervall $[0, n^c)$ $\\rightarrow$ $c$ mal\\nBucketsort mit Zahlen aus dem Intervall $[0, n)$",
+    "english": ""
+  },
+  "140": {
+    "german": "Laufzeit $\\Theta(cn)$ $\\rightarrow$ $\\Theta(n)$, wenn $c$ konstant",
+    "english": ""
+  },
+  "141": {
+    "german": "den Algorithmus nennt man auch \\emph{Radixsort}",
+    "english": ""
+  },
+  "142": {
+    "german": "\\textbf{Theorem}\\\\\\nMit Radixsort können wir $n$ natürliche Zahlen in $\\Theta(n)$ Zeit\\nsortieren, wenn die Größe der Zahlen in $n^{O(1)}$ liegt, also\\npolynomiell in $n$ ist.\\n",
+    "english": ""
+  },
+  "143": {
+    "german": "\\textbf{Was jetzt?}",
+    "english": ""
+  },
+  "144": {
+    "german": "explizitere Formulierung des Algorihtmus $\\rightarrow$ erster Schritt\\nRichtung Implementierung\\n",
+    "english": ""
+  },
+  "145": {
+    "german": "Erklärung des Namens\\n",
+    "english": ""
+  },
+  "146": {
+    "german": "(bzw.\\ LSD Radixsort)",
+    "english": ""
+  },
+  "147": {
+    "german": "Korrektheit und Laufzeit nochmal klar machen\\n",
+    "english": ""
+  },
+  "148": {
+    "german": "\\textbf{Algorithmus}",
+    "english": "\\textbf{Algorithm}"
+  },
+  "149": {
+    "german": "Eingabe: $n$ ganze Zahlen aus $[0, n^c)$",
+    "english": ""
+  },
+  "150": {
+    "german": "Darstellung jeder Zahl $x$ zu einer Basis $b$:\\\\\\n$x_k \\cdot b^k + \\dots + x_1 \\cdot b^1 + x_0 \\cdot b^0$\\n",
+    "english": ""
+  },
+  "151": {
+    "german": "\\num[minimum-integer-digits = 9]{123456789} = 123 \\cdot 1000^2 + 456\\n\\cdot 1000^1 + 789 \\cdot 1000^0",
+    "english": ""
+  },
+  "152": {
+    "german": "\\textbf{Beispiel von vorhin:} $b = 1000$",
+    "english": ""
+  },
+  "153": {
+    "german": "\\num[minimum-integer-digits = 9]{35211} = 000 \\cdot 1000^2 + 035\\n\\cdot 1000^1 + 211 \\cdot 1000^0",
+    "english": ""
+  },
+  "154": {
+    "german": "\\num[minimum-integer-digits = 9]{783491} = 000 \\cdot 1000^2 + 783\\n\\cdot 1000^1 + 491 \\cdot 1000^0",
+    "english": ""
+  },
+  "155": {
+    "german": "sortiere die Zahlen erst bzgl. $x_0$",
+    "english": ""
+  },
+  "156": {
+    "german": "sortiere dann stabil bzgl.\\ $x_1$",
+    "english": ""
+  },
+  "157": {
+    "german": "\\textbf{Laufzeit}",
+    "english": ""
+  },
+  "158": {
+    "german": "$k$ mal sortieren von $n$ Zahlen der Größe $b$",
+    "english": ""
+  },
+  "159": {
+    "german": "für $b = n$ gilt $k = \\lceil c \\rceil$ $\\Rightarrow$ $\\Theta(n)$",
+    "english": ""
+  },
+  "160": {
+    "german": "\\textbf{Korrektheit}",
+    "english": "\\textbf{Correctness}"
+  },
+  "161": {
+    "german": "nach Sortierung bzgl. $x_i$ gilt: Zahlen sind sortiert bzgl.\\n$x_i \\cdot b^i + \\dots + x_1 \\cdot b^1 + x_0 \\cdot b^0$\\n",
+    "english": ""
+  },
+  "162": {
+    "german": "Beweis: Induktion über $i$\\n",
+    "english": ""
+  },
+  "163": {
+    "german": "dann bzgl.\\ $x_2$ und so weiter",
+    "english": ""
+  },
+  "164": {
+    "german": "die Basis in einem Zahlensystem nennt man auch \\emph{Radix} (binär\\n$\\rightarrow 2$, dezimal $\\rightarrow 10$, etc.)\\n",
+    "english": ""
+  },
+  "165": {
+    "german": "daher der Name \\emph{Radixsort}",
+    "english": ""
+  },
+  "166": {
+    "german": "\\textbf{Nebenbemerkung}\\n",
+    "english": ""
+  },
+  "167": {
+    "german": "\\textbf{Repräsentation der Zahlen im Computer}",
+    "english": ""
+  },
+  "168": {
+    "german": "Zahlen die bis zu $n^c$ groß sind $\\rightarrow$ $\\log (n^c) = c \\log\\nn$ Bits",
+    "english": ""
+  },
+  "169": {
+    "german": "wir machen verschiedene Dinge mit den Zahlen:",
+    "english": ""
+  },
+  "170": {
+    "german": "Vergleichen",
+    "english": ""
+  },
+  "171": {
+    "german": "Speicherzellen adressieren",
+    "english": ""
+  },
+  "172": {
+    "german": "rechnen (z.B.\\ $x_0 \\coloneqq x~\\mathrm{mod}~n$ um die letzten\\n$\\log n$ Bits von $x$ zu erhalten)\\n",
+    "english": ""
+  },
+  "173": {
+    "german": "bisherige Annahme: das geht alles in konstanter Zeit",
+    "english": ""
+  },
+  "174": {
+    "german": "\\textbf{Fragen über Fragen}",
+    "english": ""
+  },
+  "175": {
+    "german": "Sollte man nicht eher von $\\Theta(\\log n)$ Zeit pro Operation\\nausgehen?\\n",
+    "english": ""
+  },
+  "176": {
+    "german": "Hat Radixsort damit doch Laufzeit $\\Theta(n \\log n)$?",
+    "english": ""
+  },
+  "177": {
+    "german": "Sorgen die $\\Theta(n \\log n)$ Vergleiche bei Merge- und Quicksort dann\\nfür Laufzeit $\\Theta(n \\log^2 n)$?\\n",
+    "english": ""
+  },
+  "178": {
+    "german": "\\textbf{Antwort}",
+    "english": ""
+  },
+  "179": {
+    "german": "nein (zumindest nicht im Word-RAM Modell)\\n",
+    "english": ""
+  },
+  "180": {
+    "german": "\\textbf{Hier übliche Notation}\\n",
+    "english": ""
+  },
+  "181": {
+    "german": "\\textbf{Berechnungsmodell (informell)}",
+    "english": ""
+  },
+  "182": {
+    "german": "RAM (random-access machine): $O(1)$-Speicherzugriff mittels Adresse",
+    "english": ""
+  },
+  "183": {
+    "german": "word RAM",
+    "english": ""
+  },
+  "184": {
+    "german": "jeder Speicherplatz hält ein \\emph{Wort} bestehend aus $w$ Bits\\n$\\rightarrow$ ganze Zahlen in $[0, 2^w)$\\n",
+    "english": ""
+  },
+  "185": {
+    "german": "arithmetische Operationen und Vergleiche auf Worten in $\\Theta(1)$\\n",
+    "english": ""
+  },
+  "186": {
+    "german": "\\textbf{Welche Annahme treffen wir für $w$?}",
+    "english": ""
+  },
+  "187": {
+    "german": "Möglichkeit 1: $w$ konstant",
+    "english": ""
+  },
+  "188": {
+    "german": "nur endlich viel Speicher adressierbar $\\rightarrow$ theoretisch\\nunschön (endlicher Automat)\\n",
+    "english": ""
+  },
+  "189": {
+    "german": "arithmetische Operationen in $\\Theta(\\log n)$ $\\rightarrow$\\nunrealistisch pessimistisch\\n",
+    "english": ""
+  },
+  "190": {
+    "german": "(typischer Computer: $w = 64$)",
+    "english": ""
+  },
+  "191": {
+    "german": "Möglichkeit 2: $w$ unbeschränkt $\\rightarrow$ zu optimistisch",
+    "english": ""
+  },
+  "192": {
+    "german": "Möglichkeit 3: $w \\ge \\log n$",
+    "english": ""
+  },
+  "193": {
+    "german": "genug Bits um alle benutzten Speicherzellen zu adressieren",
+    "english": ""
+  },
+  "194": {
+    "german": "nicht zu mächtig: $w \\ge \\log n$ ist realistisch für echte Computer",
+    "english": ""
+  },
+  "195": {
+    "german": "\\textbf{Implikationen fürs Sortieren polynomiell großer Zahlen}",
+    "english": ""
+  },
+  "196": {
+    "german": "Vergleiche und Operationen laufen in $O(1)$",
+    "english": ""
+  },
+  "197": {
+    "german": "damit: Laufzeiten $\\Theta(n)$ für Radixsort und $\\Theta(n \\log n)$ für\\nMerge- oder Quicksort",
+    "english": ""
+  },
+  "198": {
+    "german": "Annahme: jede Zahl ist weiterhin durch ein Wort repräsentierbar, aber\\n$w \\in \\omega(\\log n)$",
+    "english": ""
+  },
+  "199": {
+    "german": "\\textbf{Sortieren noch größerer Zahlen}",
+    "english": ""
+  },
+  "200": {
+    "german": "weiterhin $O(1)$-Operationen, aber Radixsort braucht zu viele\\nSortierschritte\\n",
+    "english": ""
+  },
+  "201": {
+    "german": "geht in erwartet $O(n \\sqrt{\\log\\log n})$ bzw.\\ deterministisch in\\n$O(n \\log\\log n)$\\n",
+    "english": ""
+  },
+  "202": {
+    "german": "$\\Theta(n)$-Sortieren von linear großen Zahlen: Bucketsort\\n",
+    "english": ""
+  },
+  "203": {
+    "german": "\\textbf{Sortieren polynomiell großer Zahlen}",
+    "english": ""
+  },
+  "204": {
+    "german": "nutze aus, dass man mit Zahlen in $O(1)$ Zeit Speicherzellen\\nadressieren kann (Arrays)\\n",
+    "english": ""
+  },
+  "205": {
+    "german": "$\\Theta(n)$-Sortieren von polynomiell großen Zahlen: Aufspalten jeder Zahl\\nin konstant viele linear große Zahlen $\\rightarrow$ Radixsort\\n",
+    "english": ""
+  },
+  "206": {
+    "german": "in dem Kontext kennen gelernt: lexikographische Sortierung",
+    "english": ""
+  },
+  "207": {
+    "german": "\\textbf{Exkurs: Berechnungsmodell word RAM}\\n",
+    "english": ""
+  },
+  "208": {
+    "german": "verhält sich bei der Algorithmenanalyse meist wie gewünscht",
+    "english": ""
+  },
+  "209": {
+    "german": "formalere Einführung von Berechnungsmodellen: TGI (nächstes Semester)\\n",
+    "english": ""
+  }
+}

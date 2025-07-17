@@ -1,0 +1,942 @@
+{
+  "1": {
+    "german": "Letztes Mal",
+    "english": "Last time"
+  },
+  "2": {
+    "german": "Heute",
+    "english": "Today"
+  },
+  "3": {
+    "german": "Was speichern wir bei jedem Knoten?",
+    "english": "What do we store per node?"
+  },
+  "4": {
+    "german": "Suchen -- Vorüberlegung \\& Initialisierung",
+    "english": "Search -- idea and init"
+  },
+  "5": {
+    "german": "Suche",
+    "english": "Search"
+  },
+  "6": {
+    "german": "Einfügen -- Was wollen wir eigentlich genau?",
+    "english": "Insert -- what exactly do we want?"
+  },
+  "7": {
+    "german": "Einfügen -- Vorüberlegung",
+    "english": "Insert -- idea"
+  },
+  "8": {
+    "german": "Einfügen",
+    "english": "Insert"
+  },
+  "9": {
+    "german": "Aufspalten: Knoten mit 4 Kindern",
+    "english": "Split: node with 4 children"
+  },
+  "10": {
+    "german": "Geht das noch etwas schöner?",
+    "english": "Can this be nicer?"
+  },
+  "11": {
+    "german": "Grundlegende Subroutinen",
+    "english": "Basic subroutines"
+  },
+  "12": {
+    "german": "Löschen -- Vorüberlegung",
+    "english": "Delete -- idea"
+  },
+  "13": {
+    "german": "Existierendes Blatt entfernen",
+    "english": "Remove existing leaf"
+  },
+  "14": {
+    "german": "\\function{fuse} und \\function{rebalance}",
+    "english": "\\function{fuse} and \\function{rebalance}"
+  },
+  "15": {
+    "german": "\\function{fixKeysOnPathToRoot}",
+    "english": "\\function{fixKeysOnPathToRoot}"
+  },
+  "16": {
+    "german": "Zusammenfassung",
+    "english": "Summary"
+  },
+  "17": {
+    "german": "Thomas Bläsius~--~Algorithmen 1",
+    "english": "Thomas Bläsius~--~Algorithms 1"
+  },
+  "18": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "19": {
+    "german": "\\textbf{$(2, 3)$-Bäume -- Implementierung}",
+    "english": "\\textbf{$(2,3)$-trees -- implementation}"
+  },
+  "20": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "21": {
+    "german": "\\textbf{aufspalten}",
+    "english": "\\textbf{split}"
+  },
+  "22": {
+    "german": "\\textbf{ausbalancieren}",
+    "english": "\\textbf{balancing}"
+  },
+  "23": {
+    "german": "\\textbf{vereinigen}",
+    "english": "\\textbf{merge}"
+  },
+  "24": {
+    "german": "\\textbf{Suchbaum zum Verwalten von sortierten Folgen}",
+    "english": "\\textbf{Search tree for managing sorted sequences}"
+  },
+  "25": {
+    "german": "verzeigerte Struktur $\\rightarrow$ gut zum Einfügen/Löschen\\n",
+    "english": "pointer structure $\\rightarrow$ good for insert/delete\\n"
+  },
+  "26": {
+    "german": "Baumstruktur $\\rightarrow$ simuliert binäre Suche",
+    "english": "tree structure $\\rightarrow$ simulates binary search"
+  },
+  "27": {
+    "german": "\\textbf{$(2, 3)$-Baum}",
+    "english": "\\textbf{$(2,3)$-tree}"
+  },
+  "28": {
+    "german": "\\emph{fast binär:} jeder innere Knoten hat 2 oder 3 Kinder\\n",
+    "english": "\\emph{almost binary:} each inner node has 2 or 3 children\\n"
+  },
+  "29": {
+    "german": "\\emph{balanciert:} jedes Blatt hat gleiche Tiefe\\n",
+    "english": "\\emph{balanced:} all leaves at same depth"
+  },
+  "30": {
+    "german": "\\textbf{Erhaltung der Struktur beim Einfügen und Löschen}",
+    "english": "\\textbf{Maintain structure when inserting and deleting}"
+  },
+  "31": {
+    "german": "Einfügen erzeugt ggf.\\ Knoten mit 4 Kindern $\\rightarrow$ aufspalten\\n",
+    "english": "Insert may create 4-child node $\\rightarrow$ split\\n"
+  },
+  "32": {
+    "german": "Löschen erzeugt ggf.\\ Knoten mit nur 1 Kind\\\\\\n$\\rightarrow$ vereinigen oder ausbalancieren\\n",
+    "english": "Delete may create 1-child node\\\\\\n$\\rightarrow$ merge or rebalance\\n"
+  },
+  "33": {
+    "german": "verschiebt das Problem Schrittweise nach oben\\n",
+    "english": "moves the problem upward step by step\\n"
+  },
+  "34": {
+    "german": "$O(\\log n)$ Höhe $\\rightarrow$ $O(\\log n)$ Laufzeit",
+    "english": "$O(\\log n)$ height $\\rightarrow$ $O(\\log n)$ time"
+  },
+  "35": {
+    "german": "\\textbf{Ausarbeitung der Details}",
+    "english": "\\textbf{Working out the details}"
+  },
+  "36": {
+    "german": "Was genau speichern wir bei jedem Knoten?",
+    "english": "Exactly what do we store per node?"
+  },
+  "37": {
+    "german": "Wie gehen wir mit Sonderfällen um (z.B.\\ leerer Baum)?",
+    "english": "How do we handle edge cases (e.g. empty tree)?"
+  },
+  "38": {
+    "german": "Wie müssen wir die Schlüssel updaten?",
+    "english": "How must we update the keys?"
+  },
+  "39": {
+    "german": "Wie setzen wir die Datenstruktur in Pseudocode um?",
+    "english": "How do we turn the DS into pseudocode?"
+  },
+  "40": {
+    "german": "\\textbf{Anmerkungen}",
+    "english": "\\textbf{Notes}"
+  },
+  "41": {
+    "german": "es gibt meist nicht nur eine Antwort auf die Fragen\\n",
+    "english": "usually there is not a single answer\\n"
+  },
+  "42": {
+    "german": "Ziele, wenn wir mehrere Möglichkeiten haben etwas umzusetzen:\\n",
+    "english": "Goals when several designs are possible:\\n"
+  },
+  "43": {
+    "german": "möglichst wenige Sonderbehandlungen",
+    "english": "as few special cases as possible"
+  },
+  "44": {
+    "german": "so einfach wie möglich",
+    "english": "as simple as possible"
+  },
+  "45": {
+    "german": "Korrektheit + richtige asymptotische Laufzeit",
+    "english": "correctness + right asymptotic time"
+  },
+  "46": {
+    "german": "Lernziel: Umsetzung eines Algorithmus auf hoher Abstraktionsebene in\\nPseudocode",
+    "english": "Learning goal: translate a high-level algorithm into pseudocode\\n"
+  },
+  "47": {
+    "german": "nicht das Lernziel: Pseudocode von $(2, 3)$-Bäumen auswendig können",
+    "english": "goal is not to memorise $(2,3)$-tree pseudocode"
+  },
+  "48": {
+    "german": "\\textbf{Baumstruktur}",
+    "english": "\\textbf{Tree structure}"
+  },
+  "49": {
+    "german": "jeder Knoten hat Zeiger zu bis zu 4 Kindern\\n",
+    "english": "each node has pointers to up to 4 children\\n"
+  },
+  "50": {
+    "german": "jeder Knoten hat einen Zeiger zum Elter",
+    "english": "each node has a pointer to its parent"
+  },
+  "51": {
+    "german": "\\type{Node} $\\mathrm{parent}$\\n",
+    "english": "\\type{Node} $\\mathrm{parent}$\\n"
+  },
+  "52": {
+    "german": "\\type{$\\text{Array}\\langle \\text{Node}, 4\\rangle$} $\\mathrm{child}$\\n",
+    "english": "\\type{$\\text{Array}\\langle \\text{Node}, 4\\rangle$} $\\mathrm{child}$\\n"
+  },
+  "53": {
+    "german": "\\type{Key} $\\mathrm{key}$\\n",
+    "english": "\\type{Key} $\\mathrm{key}$\\n"
+  },
+  "54": {
+    "german": "parent",
+    "english": "parent"
+  },
+  "55": {
+    "german": "child$[0]$",
+    "english": "child$[0]$"
+  },
+  "56": {
+    "german": "child$[1]$",
+    "english": "child$[1]$"
+  },
+  "57": {
+    "german": "\\textbf{Navigation entsprechend der Schlüssel}",
+    "english": "\\textbf{Navigation according to keys}"
+  },
+  "58": {
+    "german": "letztes Mal",
+    "english": "Last time"
+  },
+  "59": {
+    "german": "jeder Knoten kennt mehrere Schlüssel",
+    "english": "each node knows several keys"
+  },
+  "60": {
+    "german": "$\\ell - 1$ Schlüssel für $\\ell$ Kinder\\n",
+    "english": "$\\ell - 1$ keys for $\\ell$ children\\n"
+  },
+  "61": {
+    "german": "etwas einfacher",
+    "english": "a bit simpler"
+  },
+  "62": {
+    "german": "jeder Knoten $a$ kennt nur einen Schlüssel $a.\\text{key}$",
+    "english": "each node $a$ knows only one key $a.\\text{key}$"
+  },
+  "63": {
+    "german": "$a.\\text{key} = $ größter Schlüssel im Teilbaum unter $a$\\n",
+    "english": "$a.\\text{key} = $ largest key in subtree below $a$\\n"
+  },
+  "64": {
+    "german": "Entscheidung für das richtige Kind beim Suchen: entsprechend der\\nSchlüssel der Kinder\\n",
+    "english": "Choosing the correct child when searching: use the children's keys\\n"
+  },
+  "65": {
+    "german": "\\textbf{Invariante}, die wir nach jeder Operation wiederherstellen",
+    "english": "\\textbf{Invariant} we restore after each operation"
+  },
+  "66": {
+    "german": "\\textbf{Wonach genau suchen wir?}",
+    "english": "\\textbf{What exactly are we searching for?}"
+  },
+  "67": {
+    "german": "Eingabe: ein Schlüssel $k$",
+    "english": "Input: a key $k$"
+  },
+  "68": {
+    "german": "falls $k$ in der Folge $\\rightarrow$ entsprechendes Blatt zurückgeben",
+    "english": "if $k$ in sequence $\\rightarrow$ return corresponding leaf"
+  },
+  "69": {
+    "german": "$k$ nicht in der Folge $\\rightarrow$ Blatt mit nächst größerem Schlüssel\\n",
+    "english": "$k$ not in sequence $\\rightarrow$ leaf with next larger key\\n"
+  },
+  "70": {
+    "german": "\\textbf{$\\infty$-Trick}",
+    "english": "\\textbf{$\\infty$ trick}"
+  },
+  "71": {
+    "german": "Was, wenn $k$ größer als alle existierenden Schlüssel?",
+    "english": "What if $k$ is larger than all existing keys?"
+  },
+  "72": {
+    "german": "füge ein Dummy-Blatt mit Schlüssel $\\infty$ ein",
+    "english": "insert a dummy leaf with key $\\infty$"
+  },
+  "73": {
+    "german": "vermeidet den Sonderfall, wenn $k$ zu groß",
+    "english": "avoids the edge case when $k$ is too large"
+  },
+  "74": {
+    "german": "vermeidet den Sonderfall, für einen leeren Baum",
+    "english": "avoids the edge case for an empty tree"
+  },
+  "75": {
+    "german": "\\type{Node} $\\mathrm{root}$\\n",
+    "english": "\\type{Node} $\\mathrm{root}$\\n"
+  },
+  "76": {
+    "german": "\\textbf{Initialisierung des $(2, 3)$-Baums}",
+    "english": "\\textbf{Initialising the $(2,3)$ tree}"
+  },
+  "77": {
+    "german": "Wurzelknoten mit einem Kind mit Schlüssel $\\infty$\\n",
+    "english": "root node with one child with key $\\infty$\\n"
+  },
+  "78": {
+    "german": "Schlüssel der Wurzel: ebenfalls $\\infty$",
+    "english": "key of the root: also $\\infty$"
+  },
+  "79": {
+    "german": "$a.\\mathrm{key} \\coloneqq \\infty$",
+    "english": "$a.\\mathrm{key} \\coloneqq \\infty$"
+  },
+  "80": {
+    "german": "$a.\\mathrm{parent} \\coloneqq \\mathrm{root}$",
+    "english": "$a.\\mathrm{parent} \\coloneqq \\mathrm{root}$"
+  },
+  "81": {
+    "german": "$\\mathrm{root}.\\mathrm{child}[0] \\coloneqq a$",
+    "english": "$\\mathrm{root}.\\mathrm{child}[0] \\coloneqq a$"
+  },
+  "82": {
+    "german": "$\\mathrm{root}.\\mathrm{key} \\coloneqq \\infty$",
+    "english": "$\\mathrm{root}.\\mathrm{key} \\coloneqq \\infty$"
+  },
+  "83": {
+    "german": "\\mathrm{root}",
+    "english": "\\mathrm{root}"
+  },
+  "84": {
+    "german": "$a \\coloneqq a.\\mathrm{child}[i]$",
+    "english": "$a \\coloneqq a.\\mathrm{child}[i]$"
+  },
+  "85": {
+    "german": "\\type{Node} $a \\coloneqq \\mathrm{root}$",
+    "english": "\\type{Node} $a \\coloneqq \\mathrm{root}$"
+  },
+  "86": {
+    "german": "\\keyword{while} $a$ is not a leaf \\keyword{do}",
+    "english": "\\keyword{while} $a$ is not a leaf \\keyword{do}"
+  },
+  "87": {
+    "german": "\\textbf{Erinnerung}",
+    "english": "\\textbf{Reminder}"
+  },
+  "88": {
+    "german": "Ziel: finde erstes Blatt mit Schlüssel $\\ge k$\\n",
+    "english": "Goal: find first leaf with key $\\ge k$\\n"
+  },
+  "89": {
+    "german": "Invariante: $a.\\text{key} = $ größter Schlüssel im Teilbaum unter $a$\\n",
+    "english": "Invariant: $a.\\text{key} = $ largest key in subtree below $a$\\n"
+  },
+  "90": {
+    "german": "$i \\coloneqq \\min\\{i \\mid k \\le a.\\mathrm{child}[i].\\mathrm{key}\\}$",
+    "english": "$i \\coloneqq \\min\\{i \\mid k \\le a.\\mathrm{child}[i].\\mathrm{key}\\}$"
+  },
+  "91": {
+    "german": "\\textbf{Option 1: $\\function{insert}(k)$}",
+    "english": "\\textbf{Option 1: $\\function{insert}(k)$}"
+  },
+  "92": {
+    "german": "Abbildung von Schlüsseln auf Werte",
+    "english": "Mapping keys to values"
+  },
+  "93": {
+    "german": "durchsuchbare Menge von Schlüsseln",
+    "english": "searchable set of keys"
+  },
+  "94": {
+    "german": "\\textbf{Option 2: $\\function{set}(k, v)$}",
+    "english": "\\textbf{Option 2: $\\function{set}(k, v)$}"
+  },
+  "95": {
+    "german": "Duplikate beim Einfügen überspringen",
+    "english": "skip duplicates when inserting"
+  },
+  "96": {
+    "german": "speichere zusätzlich einen Wert an jedem Blatt",
+    "english": "also store a value at each leaf"
+  },
+  "97": {
+    "german": "Blatt mit Schlüssel existiert nicht $\\rightarrow$ neues Blatt",
+    "english": "leaf with key doesn't exist $\\rightarrow$ new leaf"
+  },
+  "98": {
+    "german": "Blatt existiert $\\rightarrow$ Wert überschreiben\\n",
+    "english": "leaf exists $\\rightarrow$ overwrite value\\n"
+  },
+  "99": {
+    "german": "\\textbf{Heute}",
+    "english": "\\textbf{Today}"
+  },
+  "100": {
+    "german": "wir betrachten hier Option 1",
+    "english": "we consider option 1 here"
+  },
+  "101": {
+    "german": "Option 2 lässt sich aber analog umsetzen",
+    "english": "option 2 can be implemented similarly"
+  },
+  "102": {
+    "german": "\\textbf{Erinnerung: Neues Blatt einfügen}",
+    "english": "\\textbf{Reminder: insert new leaf}"
+  },
+  "103": {
+    "german": "Schritt 1: neues Blatt an der richtigen Stelle einfügen\\n",
+    "english": "Step 1: insert new leaf at correct position\\n"
+  },
+  "104": {
+    "german": "Schritt 2: Knoten mit 4 Kindern aufspalten",
+    "english": "Step 2: split node with 4 children"
+  },
+  "105": {
+    "german": "\\textbf{Schritt 1: Wo genau fügen wir den neuen Schlüssel $k$ ein?}\\n",
+    "english": "\\textbf{Step 1: where exactly to insert the new key $k$?}\\n"
+  },
+  "106": {
+    "german": "also: neues Blatt wird an $\\function{find}(k).\\text{parent}$ gehängt\\n",
+    "english": "so: new leaf is attached to $\\function{find}(k).\\text{parent}$\\n"
+  },
+  "107": {
+    "german": "an den Elter des Nachfolgers\\n",
+    "english": "to the parent of the successor\\n"
+  },
+  "108": {
+    "german": "eigentlich egal: an den Elter des Vorgängers hängen würde auch gehen\\n",
+    "english": "actually doesn't matter: could also hang to the parent of the predecessor\\n"
+  },
+  "109": {
+    "german": "\\textbf{Anmerkung}\\n",
+    "english": "\\textbf{Note}\\n"
+  },
+  "110": {
+    "german": "der Elter des Nachfolgers hat aber ein paar Vorteile",
+    "english": "but the parent of the successor has some advantages"
+  },
+  "111": {
+    "german": "$\\function{find}(k)$ liefert direkt den Nachfolger",
+    "english": "$\\function{find}(k)$ directly gives the successor"
+  },
+  "112": {
+    "german": "Nachfolger existiert immer, dank des $\\infty$-Knotens $\\rightarrow$\\nkein Sonderfall",
+    "english": "Successor always exists thanks to the $\\infty$ node $\\rightarrow$ no edge case"
+  },
+  "113": {
+    "german": "Schlüssel der inneren Knoten bleiben korrekt $\\rightarrow$ kein Update\\nnötig",
+    "english": "Keys of internal nodes stay correct $\\rightarrow$ no update needed\\n"
+  },
+  "114": {
+    "german": "\\textbf{Erinnerung: Neues Blatt einfügen}",
+    "english": "\\textbf{Reminder: insert new leaf}"
+  },
+  "115": {
+    "german": "Schritt 1: neues Blatt an der richtigen Stelle einfügen\\n",
+    "english": "Step 1: insert new leaf at correct position\\n"
+  },
+  "116": {
+    "german": "Schritt 2: Knoten mit 4 Kindern aufspalten",
+    "english": "Step 2: split node with 4 children"
+  },
+  "117": {
+    "german": "\\keyword{if} $\\function{find}(k).\\mathrm{key} = k$ \\keyword{then} \\keyword{return}",
+    "english": "\\keyword{if} $\\function{find}(k).\\mathrm{key} = k$ \\keyword{then} \\keyword{return}"
+  },
+  "118": {
+    "german": "\\type{Node} $b \\coloneqq \\{\\mathrm{key: } k, \\mathrm{parent: } a\\}$ \\hfill \\comment{new leaf}",
+    "english": "\\type{Node} $b \\coloneqq \\{\\mathrm{key: } k, \\mathrm{parent: } a\\}$ \\hfill \\comment{new leaf}"
+  },
+  "119": {
+    "german": "insert $b$ into $a.\\mathrm{child}$ \\hfill\\comment{keeping it sorted}\\n",
+    "english": "insert $b$ into $a.\\mathrm{child}$ \\hfill\\comment{keeping it sorted}\\n"
+  },
+  "120": {
+    "german": "\\keyword{if} $a$ has four children \\keyword{then}",
+    "english": "\\keyword{if} $a$ has four children \\keyword{then}"
+  },
+  "121": {
+    "german": "\\type{Node} $a \\coloneqq \\function{find}(k).\\mathrm{parent}$",
+    "english": "\\type{Node} $a \\coloneqq \\function{find}(k).\\mathrm{parent}$"
+  },
+  "122": {
+    "german": "$a \\coloneqq b.\\mathrm{parent}$",
+    "english": "$a \\coloneqq b.\\mathrm{parent}$"
+  },
+  "123": {
+    "german": "$c_i \\coloneqq b.\\mathrm{child}[i]$ (for $i \\in \\{0, 1\\}$)",
+    "english": "$c_i \\coloneqq b.\\mathrm{child}[i]$ (for $i \\in \\{0, 1\\}$)"
+  },
+  "124": {
+    "german": "\\type{Node}\\n$b' \\coloneqq \\{\\mathrm{key}\\colon c_1.\\mathrm{key},\\n\\mathrm{parent}\\colon a, \\mathrm{child}\\colon \\langle c_0, c_1\\rangle\\}$\\n",
+    "english": "\\type{Node}\\n$b' \\coloneqq \\{\\mathrm{key}\\colon c_1.\\mathrm{key},\\n\\mathrm{parent}\\colon a, \\mathrm{child}\\colon \\langle c_0, c_1\\rangle\\}$\\n"
+  },
+  "125": {
+    "german": "remove $c_0$ and $c_1$ from $b.\\mathrm{child}$",
+    "english": "remove $c_0$ and $c_1$ from $b.\\mathrm{child}$"
+  },
+  "126": {
+    "german": "$c_0.\\mathrm{parent}, c_1.\\mathrm{parent} \\coloneqq b'$",
+    "english": "$c_0.\\mathrm{parent}, c_1.\\mathrm{parent} \\coloneqq b'$"
+  },
+  "127": {
+    "german": "insert $b'$ into $a.\\mathrm{child}$\\n",
+    "english": "insert $b'$ into $a.\\mathrm{child}$\\n"
+  },
+  "128": {
+    "german": "\\textbf{Was haben wir da noch vergessen?}",
+    "english": "\\textbf{What did we forget?}"
+  },
+  "129": {
+    "german": "\\textbf{Sonderfall Wurzel}",
+    "english": "\\textbf{Root special case}"
+  },
+  "130": {
+    "german": "\\keyword{if} $b = \\mathrm{root}$ \\keyword{then}",
+    "english": "\\keyword{if} $b = \\mathrm{root}$ \\keyword{then}"
+  },
+  "131": {
+    "german": "\\type{Node} $a \\coloneqq \\{\\mathrm{key}\\colon \\infty; \\mathrm{parent}\\colon\\n\\bot; \\mathrm{child}\\colon\\langle b \\rangle\\}$",
+    "english": "\\type{Node} $a \\coloneqq \\{\\mathrm{key}\\colon \\infty; \\mathrm{parent}\\colon\\n\\bot; \\mathrm{child}\\colon\\langle b \\rangle\\}$"
+  },
+  "132": {
+    "german": "$b.\\mathrm{parent} \\coloneqq a$",
+    "english": "$b.\\mathrm{parent} \\coloneqq a$"
+  },
+  "133": {
+    "german": "$\\mathrm{root} \\coloneqq a$",
+    "english": "$\\mathrm{root} \\coloneqq a$"
+  },
+  "134": {
+    "german": "\\keyword{if} $a$ has four children \\keyword{then}",
+    "english": "\\keyword{if} $a$ has four children \\keyword{then}"
+  },
+  "135": {
+    "german": "\\textbf{ggf. rekursiv aufspalten}",
+    "english": "\\textbf{recursively split if needed}"
+  },
+  "136": {
+    "german": "create \\type{Node} $b'$",
+    "english": "create \\type{Node} $b'$"
+  },
+  "137": {
+    "german": "move children $c_0$ and $c_1$ from $b$ to $b'$\\n",
+    "english": "move children $c_0$ and $c_1$ from $b$ to $b'$\\n"
+  },
+  "138": {
+    "german": "add $b'$ as child to $a$\\n",
+    "english": "add $b'$ as child to $a$\\n"
+  },
+  "139": {
+    "german": "\\type{Node}\\n$b' \\coloneqq \\{\\mathrm{key}\\colon c_1.\\mathrm{key},\\n\\mathrm{parent}\\colon a, \\mathrm{child}\\colon \\langle c_0, c_1\\rangle\\}$\\n",
+    "english": "\\type{Node}\\n$b' \\coloneqq \\{\\mathrm{key}\\colon c_1.\\mathrm{key},\\n\\mathrm{parent}\\colon a, \\mathrm{child}\\colon \\langle c_0, c_1\\rangle\\}$\\n"
+  },
+  "140": {
+    "german": "remove $c_0$ and $c_1$ from $b.\\mathrm{child}$",
+    "english": "remove $c_0$ and $c_1$ from $b.\\mathrm{child}$"
+  },
+  "141": {
+    "german": "$c_0.\\mathrm{parent}, c_1.\\mathrm{parent} \\coloneqq b'$",
+    "english": "$c_0.\\mathrm{parent}, c_1.\\mathrm{parent} \\coloneqq b'$"
+  },
+  "142": {
+    "german": "insert $b'$ into $a.\\mathrm{child}$\\n",
+    "english": "insert $b'$ into $a.\\mathrm{child}$\\n"
+  },
+  "143": {
+    "german": "\\textbf{Probleme}",
+    "english": "\\textbf{Problems}"
+  },
+  "144": {
+    "german": "schwer zu parsen",
+    "english": "hard to parse"
+  },
+  "145": {
+    "german": "fehleranfällig",
+    "english": "prone to errors"
+  },
+  "146": {
+    "german": "Wiederverwendbarkeit",
+    "english": "reusability"
+  },
+  "147": {
+    "german": "\\textbf{Eigentlich machen wir drei Dinge}",
+    "english": "\\textbf{In fact we do three things}"
+  },
+  "148": {
+    "german": "Knoten $b'$ erstellen",
+    "english": "create node $b'$"
+  },
+  "149": {
+    "german": "Kinder $c_0, c_1$ von $b$ nach $b'$ verschieben",
+    "english": "move children $c_0, c_1$ from $b$ to $b'$"
+  },
+  "150": {
+    "german": "$b'$ als Kind zu $a$ hinzufügen",
+    "english": "add $b'$ as child to $a$"
+  },
+  "151": {
+    "german": "\\textbf{Besser}",
+    "english": "\\textbf{Better}"
+  },
+  "152": {
+    "german": "lagere grundlegende Operationen in Subroutinen aus",
+    "english": "delegate basic operations to subroutines"
+  },
+  "153": {
+    "german": "\\textbf{$b$ als Kind von $a$ einfügen}",
+    "english": "\\textbf{Insert $b$ as child of $a$}"
+  },
+  "154": {
+    "german": "$b$ an der richtigen Position von $a.\\mathrm{child}$ einfügen",
+    "english": "insert $b$ at the correct position in $a.\\mathrm{child}$"
+  },
+  "155": {
+    "german": "$b.\\mathrm{parent}$ auf $a$ setzen",
+    "english": "set $b.\\mathrm{parent}$ to $a$"
+  },
+  "156": {
+    "german": "$a.\\mathrm{key}$ auf $b.\\mathrm{key}$ setzen, falls $b$ das rechtes Kind ist\\n",
+    "english": "set $a.\\mathrm{key}$ to $b.\\mathrm{key}$ if $b$ is the right child\\n"
+  },
+  "157": {
+    "german": "\\textbf{Kind $b$ von Elter $a$ zu $a'$ schieben:} löschen +\\neinfügen",
+    "english": "\\textbf{Move child $b$ from parent $a$ to $a'$:} delete + insert"
+  },
+  "158": {
+    "german": "\\textbf{Anmerkung: Aktualisierung des Schlüssels}",
+    "english": "\\textbf{Note: key update}"
+  },
+  "159": {
+    "german": "machen wir hier nur lokal $\\rightarrow$ wird insbesondere nicht an den\\nElter von $a$ weitergegeben\\n",
+    "english": "done only locally $\\rightarrow$ not propagated to $a$'s parent\\n"
+  },
+  "160": {
+    "german": "daher: Subroutinen immer bottom-up ausführen",
+    "english": "therefore: always execute subroutines bottom-up"
+  },
+  "161": {
+    "german": "ggf.\\ am Ende nochmal Restpfad zur Wurzel aktualisieren",
+    "english": "possibly update rest path to root at the end"
+  },
+  "162": {
+    "german": "(werden wir beim Löschen gleich noch sehen)",
+    "english": "(we will see this when deleting)"
+  },
+  "163": {
+    "german": "\\textbf{Kind $b$ von $a$ löschen}",
+    "english": "\\textbf{Delete child $b$ from $a$}"
+  },
+  "164": {
+    "german": "$b$ aus $a.\\mathrm{child}$ entfernen",
+    "english": "remove $b$ from $a.\\mathrm{child}$"
+  },
+  "165": {
+    "german": "$a.\\mathrm{key}$ aktualisieren, falls $b$ das rechtes Kind war\\n",
+    "english": "update $a.\\mathrm{key}$ if $b$ was the right child\\n"
+  },
+  "166": {
+    "german": "$b.\\mathrm{parent}$ auf $\\bot$ setzen\\n",
+    "english": "set $b.\\mathrm{parent}$ to $\\bot$\\n"
+  },
+  "167": {
+    "german": "\\textbf{Erinnerung}",
+    "english": "\\textbf{Reminder}"
+  },
+  "168": {
+    "german": "Schritt 1: entsprechendes Blatt einfach löschen\\n",
+    "english": "Step 1: simply delete corresponding leaf\\n"
+  },
+  "169": {
+    "german": "Schritt 2: Knoten mit nur einem Kind aufräumen",
+    "english": "Step 2: clean up node with only one child"
+  },
+  "170": {
+    "german": "(Verschmelzen oder Ausbalancieren)",
+    "english": "(merge or rebalance)"
+  },
+  "171": {
+    "german": "\\textbf{Rekursive Aufrufe}",
+    "english": "\\textbf{Recursive calls}"
+  },
+  "172": {
+    "german": "benutze Operationen von eben $\\rightarrow$ Schlüssel werden auf dem\\nWeg nach oben aktualisiert\\n",
+    "english": "use those operations $\\rightarrow$ keys updated on the way up\\n"
+  },
+  "173": {
+    "german": "nach Verschmelzen: Elter hat ggf.\\ nur noch ein Kind $\\rightarrow$\\nrekursiv aufräumen\\n",
+    "english": "after merge: parent may now have only one child $\\rightarrow$ clean up recursively\\n"
+  },
+  "174": {
+    "german": "Problem wird Schritt für Schritt weiter nach oben propagiert\\n",
+    "english": "problem is propagated upward step by step\\n"
+  },
+  "175": {
+    "german": "Stopp bei Ausbalancieren oder wenn der Elter bei Verschmelzen vorher drei\\nKinder hatte",
+    "english": "stop after rebalancing or if the parent had three children before merging"
+  },
+  "176": {
+    "german": "\\textbf{Aktualisierung der Schlüssel}",
+    "english": "\\textbf{Update of keys}"
+  },
+  "177": {
+    "german": "stimmt nicht für den restlichen Pfad zur Wurzel, wenn die Rekursion\\nstoppt",
+    "english": "not correct for the remaining path to the root when recursion stops"
+  },
+  "178": {
+    "german": "ignorieren wir zunächst und fixen es später",
+    "english": "let's ignore it for now and fix later"
+  },
+  "179": {
+    "german": "\\keyword{if} $b.\\mathrm{key} \\not= k$ \\keyword{then} \\keyword{return}",
+    "english": "\\keyword{if} $b.\\mathrm{key} \\not= k$ \\keyword{then} \\keyword{return}"
+  },
+  "180": {
+    "german": "$a \\coloneqq b.\\mathrm{parent}$",
+    "english": "$a \\coloneqq b.\\mathrm{parent}$"
+  },
+  "181": {
+    "german": "remove $b$ as child from $a$",
+    "english": "remove $b$ as child from $a$"
+  },
+  "182": {
+    "german": "\\keyword{if} $a$ has only one child \\keyword{then}",
+    "english": "\\keyword{if} $a$ has only one child \\keyword{then}"
+  },
+  "183": {
+    "german": "\\keyword{if} $b = \\mathrm{root}$ \\keyword{then}",
+    "english": "\\keyword{if} $b = \\mathrm{root}$ \\keyword{then}"
+  },
+  "184": {
+    "german": "remove child $\\mathrm{root}$ from $b$",
+    "english": "remove child $\\mathrm{root}$ from $b$"
+  },
+  "185": {
+    "german": "$\\mathrm{root} \\coloneqq b.\\mathrm{child}[0]$",
+    "english": "$\\mathrm{root} \\coloneqq b.\\mathrm{child}[0]$"
+  },
+  "186": {
+    "german": "$\\type{Node }a \\coloneqq b.\\mathrm{parent}$",
+    "english": "$\\type{Node }a \\coloneqq b.\\mathrm{parent}$"
+  },
+  "187": {
+    "german": "\\keyword{if} $b'$ has two children \\keyword{then}\\n",
+    "english": "\\keyword{if} $b'$ has two children \\keyword{then}\\n"
+  },
+  "188": {
+    "german": "\\textbf{Erinnerung}",
+    "english": "\\textbf{Reminder}"
+  },
+  "189": {
+    "german": "Schritt 1: entsprechendes Blatt einfach löschen\\n",
+    "english": "Step 1: simply delete corresponding leaf\\n"
+  },
+  "190": {
+    "german": "Schritt 2: Knoten mit nur einem Kind aufräumen",
+    "english": "Step 2: clean up node with only one child"
+  },
+  "191": {
+    "german": "$\\type{Node } b' = $ successor or predecessor of $b$ in\\n$a.\\mathrm{child}$\\n",
+    "english": "$\\type{Node } b' = $ successor or predecessor of $b$ in\\n$a.\\mathrm{child}$\\n"
+  },
+  "192": {
+    "german": "(Verschmelzen oder Ausbalancieren)",
+    "english": "(merge or rebalance)"
+  },
+  "193": {
+    "german": "\\textbf{Welche Knoten haben garantiert den richtigen Schlüssel?}",
+    "english": "\\textbf{Which nodes surely have the correct key?}"
+  },
+  "194": {
+    "german": "\\keyword{for} \\type{Node} $c \\in b'.\\mathrm{child}$ \\keyword{do}",
+    "english": "\\keyword{for} \\type{Node} $c \\in b'.\\mathrm{child}$ \\keyword{do}"
+  },
+  "195": {
+    "german": "remove $b'$ as child from $a$",
+    "english": "remove $b'$ as child from $a$"
+  },
+  "196": {
+    "german": "$a \\coloneqq b.\\mathrm{parent}$",
+    "english": "$a \\coloneqq b.\\mathrm{parent}$"
+  },
+  "197": {
+    "german": "move child $c$ from $b'$ to $b$\\n",
+    "english": "move child $c$ from $b'$ to $b$\\n"
+  },
+  "198": {
+    "german": "\\keyword{if} $a$ has only one child \\keyword{then}",
+    "english": "\\keyword{if} $a$ has only one child \\keyword{then}"
+  },
+  "199": {
+    "german": "\\keyword{if} $\\ell$ has three children \\keyword{do}",
+    "english": "\\keyword{if} $\\ell$ has three children \\keyword{do}"
+  },
+  "200": {
+    "german": "$a \\coloneqq b.\\mathrm{parent}$",
+    "english": "$a \\coloneqq b.\\mathrm{parent}$"
+  },
+  "201": {
+    "german": "move child $\\ell.\\mathrm{child}[2]$ from $\\ell$ to $r$\\n",
+    "english": "move child $\\ell.\\mathrm{child}[2]$ from $\\ell$ to $r$\\n"
+  },
+  "202": {
+    "german": "$\\ell \\coloneqq \\arg\\min_{x \\in \\{b, b'\\}} x.\\mathrm{key}$",
+    "english": "$\\ell \\coloneqq \\arg\\min_{x \\in \\{b, b'\\}} x.\\mathrm{key}$"
+  },
+  "203": {
+    "german": "$r \\coloneqq \\arg\\max_{x \\in \\{b, b'\\}} x.\\mathrm{key}$",
+    "english": "$r \\coloneqq \\arg\\max_{x \\in \\{b, b'\\}} x.\\mathrm{key}$"
+  },
+  "204": {
+    "german": "move child $r.\\mathrm{child}[0]$ from $r$ to $\\ell$\\n",
+    "english": "move child $r.\\mathrm{child}[0]$ from $r$ to $\\ell$\\n"
+  },
+  "205": {
+    "german": "\\keyword{if} $b.\\mathrm{key} \\not= k$ \\keyword{then} \\keyword{return}",
+    "english": "\\keyword{if} $b.\\mathrm{key} \\not= k$ \\keyword{then} \\keyword{return}"
+  },
+  "206": {
+    "german": "$a \\coloneqq b.\\mathrm{parent}$",
+    "english": "$a \\coloneqq b.\\mathrm{parent}$"
+  },
+  "207": {
+    "german": "remove $b$ as child from $a$",
+    "english": "remove $b$ as child from $a$"
+  },
+  "208": {
+    "german": "\\keyword{if} $a$ has only one child \\keyword{then}",
+    "english": "\\keyword{if} $a$ has only one child \\keyword{then}"
+  },
+  "209": {
+    "german": "\\keyword{for} \\type{Node} $c \\in b'.\\mathrm{child}$ \\keyword{do}",
+    "english": "\\keyword{for} \\type{Node} $c \\in b'.\\mathrm{child}$ \\keyword{do}"
+  },
+  "210": {
+    "german": "remove $b'$ as child from $a$",
+    "english": "remove $b'$ as child from $a$"
+  },
+  "211": {
+    "german": "$a \\coloneqq b.\\mathrm{parent}$",
+    "english": "$a \\coloneqq b.\\mathrm{parent}$"
+  },
+  "212": {
+    "german": "move child $c$ from $b'$ to $b$\\n",
+    "english": "move child $c$ from $b'$ to $b$\\n"
+  },
+  "213": {
+    "german": "\\keyword{if} $a$ has only one child \\keyword{then}",
+    "english": "\\keyword{if} $a$ has only one child \\keyword{then}"
+  },
+  "214": {
+    "german": "\\keyword{if} $\\ell$ has three children \\keyword{do}",
+    "english": "\\keyword{if} $\\ell$ has three children \\keyword{do}"
+  },
+  "215": {
+    "german": "$a \\coloneqq b.\\mathrm{parent}$",
+    "english": "$a \\coloneqq b.\\mathrm{parent}$"
+  },
+  "216": {
+    "german": "move child $\\ell.\\mathrm{child}[2]$ from $\\ell$ to $r$\\n",
+    "english": "move child $\\ell.\\mathrm{child}[2]$ from $\\ell$ to $r$\\n"
+  },
+  "217": {
+    "german": "$\\ell \\coloneqq \\arg\\min_{x \\in \\{b, b'\\}} x.\\mathrm{key}$",
+    "english": "$\\ell \\coloneqq \\arg\\min_{x \\in \\{b, b'\\}} x.\\mathrm{key}$"
+  },
+  "218": {
+    "german": "$r \\coloneqq \\arg\\max_{x \\in \\{b, b'\\}} x.\\mathrm{key}$",
+    "english": "$r \\coloneqq \\arg\\max_{x \\in \\{b, b'\\}} x.\\mathrm{key}$"
+  },
+  "219": {
+    "german": "move child $r.\\mathrm{child}[0]$ from $r$ to $\\ell$\\n",
+    "english": "move child $r.\\mathrm{child}[0]$ from $r$ to $\\ell$\\n"
+  },
+  "220": {
+    "german": "\\keyword{while} $a \\not= \\text{root}$ \\keyword{do}",
+    "english": "\\keyword{while} $a \\not= \\text{root}$ \\keyword{do}"
+  },
+  "221": {
+    "german": "$a \\coloneqq a.\\mathrm{parent}$",
+    "english": "$a \\coloneqq a.\\mathrm{parent}$"
+  },
+  "222": {
+    "german": "$a.\\mathrm{key} \\coloneqq$ key of right-most child",
+    "english": "$a.\\mathrm{key} \\coloneqq$ key of right-most child"
+  },
+  "223": {
+    "german": "\\textbf{$(2, 3)$-Bäume}",
+    "english": "\\textbf{$(2,3)$-trees}"
+  },
+  "224": {
+    "german": "Ausarbeitung der Details",
+    "english": "Elaboration of the details"
+  },
+  "225": {
+    "german": "insbesondere Verwaltung und Aktualisierung der Schlüssel",
+    "english": "in particular management and updating of the keys"
+  },
+  "226": {
+    "german": "Endergebnis: Pseudocode",
+    "english": "Final result: pseudocode"
+  },
+  "227": {
+    "german": "\\textbf{Der Weg ist das Ziel}",
+    "english": "\\textbf{The journey is the goal}"
+  },
+  "228": {
+    "german": "unwichtig: unser Endergebnis -- der Pseudocode selbst",
+    "english": "unimportant: our final result -- the pseudocode itself"
+  },
+  "229": {
+    "german": "wichtig: der Prozess, der uns dort hin gebracht hat\\n",
+    "english": "important: the process that got us there\\n"
+  },
+  "230": {
+    "german": "\\textbf{Lernziel: von der Algorithmenidee zum Pseudocode}",
+    "english": "\\textbf{Learning goal: from algorithm idea to pseudocode}"
+  },
+  "231": {
+    "german": "Sonderfälle vermeiden ($\\infty$-Knoten)\\n",
+    "english": "avoid edge cases ($\\infty$-nodes)\\n"
+  },
+  "232": {
+    "german": "keine Scheu nochmal umzubauen, wenn es zu frickelig wird\\n",
+    "english": "don't hesitate to rebuild if it gets too messy\\n"
+  },
+  "233": {
+    "german": "Ziel: Lesbarkeit, Wiederverwendbarkeit, geringe Fehleranfälligkeit\\n",
+    "english": "goal: readability, reusability, low error proneness\\n"
+  },
+  "234": {
+    "german": "gegeben die algorithmische Idee",
+    "english": "given the algorithmic idea"
+  },
+  "235": {
+    "german": "Details ausarbeiten $\\rightarrow$ korrekten Pseudocode bauen",
+    "english": "Work out details $\\rightarrow$ build correct pseudocode"
+  }
+}

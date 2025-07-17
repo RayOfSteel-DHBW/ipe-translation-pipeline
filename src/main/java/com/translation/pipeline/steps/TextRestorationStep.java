@@ -66,6 +66,9 @@ public class TextRestorationStep extends PipelineStepBase {
                 String numberPart = line.substring(2, closeParenIndex);
                 String translatedText = line.substring(closeParenIndex + 2);
                 
+                // Unescape newline characters that were escaped during text extraction
+                translatedText = translatedText.replace("\\n", "\n");
+                
                 String placeholder = "@PLACEHOLDER(" + numberPart + ")@";
                 logger.fine("Replacing placeholder: " + placeholder + " with: " + translatedText.substring(0, Math.min(50, translatedText.length())));
                 result = result.replace(placeholder, translatedText);

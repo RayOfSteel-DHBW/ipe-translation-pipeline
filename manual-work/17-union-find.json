@@ -1,0 +1,974 @@
+{
+  "1": {
+    "german": "Motivation: Union--Find",
+    "english": ""
+  },
+  "2": {
+    "german": "Union--Find",
+    "english": ""
+  },
+  "3": {
+    "german": "Vorüberlegung: maximale Ordnung",
+    "english": ""
+  },
+  "4": {
+    "german": "Schnelleres Union: erlaube etwas Unordnung",
+    "english": ""
+  },
+  "5": {
+    "german": "Was genau machen wir jetzt?",
+    "english": ""
+  },
+  "6": {
+    "german": "Höhe des Baumes",
+    "english": ""
+  },
+  "7": {
+    "german": "Geht es besser?",
+    "english": "Can we improve?"
+  },
+  "8": {
+    "german": "Union by Rank",
+    "english": ""
+  },
+  "9": {
+    "german": "Beispiel",
+    "english": ""
+  },
+  "10": {
+    "german": "Laufzeitanalyse: Grundlegende Invarianten",
+    "english": ""
+  },
+  "11": {
+    "german": "Laufzeitanalyse: neue Operation \\function{link}",
+    "english": ""
+  },
+  "12": {
+    "german": "Laufzeitanalyse: neue Operation \\function{compress}",
+    "english": ""
+  },
+  "13": {
+    "german": "Laufzeitanalyse: Umsortieren der Operationen",
+    "english": ""
+  },
+  "14": {
+    "german": "Laufzeitanalyse: Zwischenstand",
+    "english": ""
+  },
+  "15": {
+    "german": "Laufzeitanalyse: Einteilung in Ranggruppen",
+    "english": ""
+  },
+  "16": {
+    "german": "Laufzeitanalyse: Type 1 Operationen",
+    "english": ""
+  },
+  "17": {
+    "german": "Laufzeitanalyse: Wahl der Gruppen",
+    "english": ""
+  },
+  "18": {
+    "german": "Laufzeitanalyse",
+    "english": ""
+  },
+  "19": {
+    "german": "Wie cool ist das denn?",
+    "english": ""
+  },
+  "20": {
+    "german": "Zusammenfassung",
+    "english": "Summary"
+  },
+  "21": {
+    "german": "Thomas Bläsius~--~Algorithmen 1",
+    "english": "Thomas Bläsius~--~Algorithms 1"
+  },
+  "22": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "23": {
+    "german": "\\textbf{Union-Find}",
+    "english": ""
+  },
+  "24": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "25": {
+    "german": "\\textbf{Letzte Vorlesung: Algorithmus von Kruskal}",
+    "english": ""
+  },
+  "26": {
+    "german": "wähle in jedem Schritt minimale Kante",
+    "english": ""
+  },
+  "27": {
+    "german": "unter allen Kanten, die keinen Kreis mit schon gewählten Kanten bilden",
+    "english": ""
+  },
+  "28": {
+    "german": "\\textbf{Was wollen wir erreichen?}",
+    "english": ""
+  },
+  "29": {
+    "german": "äquivalent: $u$ und $v$ liegen in der selben Komponente\\n",
+    "english": ""
+  },
+  "30": {
+    "german": "auswählen",
+    "english": ""
+  },
+  "31": {
+    "german": "überspringen",
+    "english": ""
+  },
+  "32": {
+    "german": "schnell testen ob $\\{u, v\\}$ Kreis schließt",
+    "english": ""
+  },
+  "33": {
+    "german": "Einfügen einer Kante vereinigt zwei Komponenten\\n",
+    "english": ""
+  },
+  "34": {
+    "german": "gewünschte Operationen",
+    "english": ""
+  },
+  "35": {
+    "german": "$\\function{union}(u, v)$: vereinige Komponenten von $u$ und $v$",
+    "english": ""
+  },
+  "36": {
+    "german": "$\\function{find}(v)$: Komponente* von~$v$",
+    "english": ""
+  },
+  "37": {
+    "german": "Test ob $u$ und $v$ in der selben Komponente liegen:\\n$\\function{find}(u) = \\function{find}(v)$",
+    "english": ""
+  },
+  "38": {
+    "german": "*Umsetzung: bestimme für jede Komponente einen eindeutigen Vertreter\\nund gib diesen zurück",
+    "english": ""
+  },
+  "39": {
+    "german": "\\textbf{Etwas formaler (und ohne die Anwendung im Hinterkopf)}",
+    "english": ""
+  },
+  "40": {
+    "german": "Ausgangssituation: endliche Menge von disjunkten einelementigen Mengen",
+    "english": ""
+  },
+  "41": {
+    "german": "$\\function{union}(x, y)$: vereinige die Mengen, die $x$ und $y$\\nenthalten",
+    "english": ""
+  },
+  "42": {
+    "german": "$\\function{find}(x)$: liefere einen eindeutigen Vertreter der Menge,\\ndie $x$ enthält\\n",
+    "english": ""
+  },
+  "43": {
+    "german": "Beispiel: $\\{\\{a\\}, \\{b\\}, \\{c\\}, \\{d\\}, \\{e\\}, \\{f\\}, \\{g\\}\\}$",
+    "english": ""
+  },
+  "44": {
+    "german": "\\textbf{Beispiel}",
+    "english": ""
+  },
+  "45": {
+    "german": "Menge",
+    "english": ""
+  },
+  "46": {
+    "german": "Vertreter",
+    "english": ""
+  },
+  "47": {
+    "german": "\\textbf{Fokus auf \\function{find}: Was hätten wir gerne?}",
+    "english": ""
+  },
+  "48": {
+    "german": "$\\function{union}(x, y)$: vereinige die Mengen, die $x$ und $y$\\nenthalten",
+    "english": ""
+  },
+  "49": {
+    "german": "$\\function{find}(x)$: liefere einen eindeutigen Vertreter der Menge,\\ndie $x$ enthält\\n",
+    "english": ""
+  },
+  "50": {
+    "german": "\\textbf{Erinnerung: Operationen}",
+    "english": ""
+  },
+  "51": {
+    "german": "optimal: jedes Element kennt den Vertreter der eigenen Menge",
+    "english": ""
+  },
+  "52": {
+    "german": "Verzeigerte Struktur",
+    "english": ""
+  },
+  "53": {
+    "german": "jedes Element ist ein Knoten",
+    "english": ""
+  },
+  "54": {
+    "german": "jeder Knoten hat einen Zeiger zum Vertreter der Menge\\n",
+    "english": ""
+  },
+  "55": {
+    "german": "\\function{find}: nur einen Zeiger verfolgen $\\rightarrow$ $\\Theta(1)$\\n",
+    "english": ""
+  },
+  "56": {
+    "german": "\\textbf{Problem für \\function{union}}",
+    "english": ""
+  },
+  "57": {
+    "german": "maximale Ordnung aufrecht zu erhalten ist teuer\\n",
+    "english": ""
+  },
+  "58": {
+    "german": "alle Elemente aus einer der beiden Mengen müssen umgehängt werden $\\rightarrow$ $\\Theta(n)$\\n",
+    "english": ""
+  },
+  "59": {
+    "german": "\\textbf{Lösung: erlaube etwas Unordnung}",
+    "english": ""
+  },
+  "60": {
+    "german": "weniger Zeiger umhängen $\\rightarrow$ schnelles \\function{union}",
+    "english": ""
+  },
+  "61": {
+    "german": "kein direkter Zeiger zum Vertreter $\\rightarrow$ langsameres\\n\\function{find}\\n",
+    "english": ""
+  },
+  "62": {
+    "german": "Ziel: genug Ordnung, dass \\function{find} weiterhin schnell ist",
+    "english": ""
+  },
+  "63": {
+    "german": "\\textbf{Wie lange dauert \\function{union}, wenn zwei Mengen der Größe\\n  $n$ vereinigt werden?}\\n",
+    "english": ""
+  },
+  "64": {
+    "german": "\\textbf{Plan für schnelles \\function{union}}",
+    "english": ""
+  },
+  "65": {
+    "german": "Situation: vereinige $X$ und $Y$ mit Vertretern $x \\in X$ und\\n$y \\in Y$",
+    "english": ""
+  },
+  "66": {
+    "german": "wähle $x$ als neuen Vertreter von $X \\cup Y$",
+    "english": ""
+  },
+  "67": {
+    "german": "neuer Zeiger: $y \\rightarrow x$",
+    "english": ""
+  },
+  "68": {
+    "german": "für alle anderen $y' \\in Y$: behalte Zeiger zu $y$",
+    "english": ""
+  },
+  "69": {
+    "german": "\\textbf{Mehr Aufwand für \\function{find}}",
+    "english": ""
+  },
+  "70": {
+    "german": "verfolge ggf.\\ mehrere Zeiger, um den Vertreter zu finden",
+    "english": ""
+  },
+  "71": {
+    "german": "Hoffnung: die Pfade von Zeigern werden nicht so lang",
+    "english": ""
+  },
+  "72": {
+    "german": "\\textbf{Worst-Case Kosten und Baumhöhe}",
+    "english": ""
+  },
+  "73": {
+    "german": "resultierender Baum hat Höhe $h$ $\\rightarrow$ Kosten $O(h)$ pro\\nOperation\\n",
+    "english": ""
+  },
+  "74": {
+    "german": "Plan: wähle neuen Vertreter, sodass Höhe möglichst klein",
+    "english": ""
+  },
+  "75": {
+    "german": "\\textbf{Repräsentation der Menge als gewurzelten Wald}",
+    "english": ""
+  },
+  "76": {
+    "german": "jeder Baum gehört zu einer Menge",
+    "english": ""
+  },
+  "77": {
+    "german": "Wurzel jedes Baums ist der Vertreter der Menge",
+    "english": ""
+  },
+  "78": {
+    "german": "\\textbf{Mengen}",
+    "english": ""
+  },
+  "79": {
+    "german": "\\textbf{Waldrepräsentation}",
+    "english": ""
+  },
+  "80": {
+    "german": "\\textbf{$\\function{find}(x)$:} verfolge Zeiger zum Elter bis zur\\nWurzel\\n",
+    "english": ""
+  },
+  "81": {
+    "german": "finde zunächst Wurzeln: $w_x = \\function{find}(x)$ und $w_y = \\function{find}(y)$",
+    "english": ""
+  },
+  "82": {
+    "german": "seien $h_x$ und $h_y$ die Höhen der Bäume",
+    "english": ""
+  },
+  "83": {
+    "german": "o.B.d.A.\\ $h_x \\le h_y$ $\\rightarrow$ füge $w_x$ als Kind von $w_y$\\nein\\n",
+    "english": ""
+  },
+  "84": {
+    "german": "\\textbf{Anmerkungen}",
+    "english": "\\textbf{Notes}"
+  },
+  "85": {
+    "german": "Laufzeit: dominiert durch die Höhe bei \\function{find}",
+    "english": ""
+  },
+  "86": {
+    "german": "\\textbf{Wie hoch wird der Baum maximal?}",
+    "english": ""
+  },
+  "87": {
+    "german": "speichere Höhe des Baums an der Wurzel $\\rightarrow$ ggf.\\ update bei \\function{union}",
+    "english": ""
+  },
+  "88": {
+    "german": "finde zunächst Wurzeln: $w_x = \\function{find}(x)$ und $w_y = \\function{find}(y)$",
+    "english": ""
+  },
+  "89": {
+    "german": "seien $h_x$ und $h_y$ die Höhen der Bäume",
+    "english": ""
+  },
+  "90": {
+    "german": "o.B.d.A.\\ $h_x \\le h_y$ $\\rightarrow$ füge $w_x$ als Kind von $w_y$\\nein\\n",
+    "english": ""
+  },
+  "91": {
+    "german": "\\textbf{Lemma}\\\\\\nEin solcher Baum der Höhe $h$ enthält mindestens $2^h$ Knoten.  Damit gilt\\n$h \\in O(\\log n)$.\\n",
+    "english": ""
+  },
+  "92": {
+    "german": "\\textbf{Beweis:} Induktion über $h$",
+    "english": ""
+  },
+  "93": {
+    "german": "Höhe:",
+    "english": ""
+  },
+  "94": {
+    "german": "Anfang: $h = 0$ $\\Rightarrow$ $1 = 2^0$ Knoten",
+    "english": ""
+  },
+  "95": {
+    "german": "Höhe $h + 1$ entsteht nur durch \\function{union} zweier Bäume der Höhe\\n$h$\\n",
+    "english": ""
+  },
+  "96": {
+    "german": "nach Induktionsvoraussetzung: mindestens $2\\cdot 2^h = 2^{h + 1}$\\nKnoten\\n",
+    "english": ""
+  },
+  "97": {
+    "german": "\\textbf{Theorem}\\\\\\nEs gibt eine Union--Find Datenstruktur, bei der \\function{union} und\\n\\function{find} je $O(\\log n)$ Zeit benötigen.\\n",
+    "english": ""
+  },
+  "98": {
+    "german": "\\textbf{Idee}",
+    "english": ""
+  },
+  "99": {
+    "german": "optimal: alle Knoten sind direkte Kinder der Wurzel",
+    "english": ""
+  },
+  "100": {
+    "german": "sei $\\pi$ der Pfad von $x$ zur Wurzel $w$",
+    "english": ""
+  },
+  "101": {
+    "german": "Höhe verringern durch gelegentliches Aufräumen",
+    "english": ""
+  },
+  "102": {
+    "german": "Aufräumen $\\equiv$ Knoten direkt an die Wurzel hängen",
+    "english": ""
+  },
+  "103": {
+    "german": "hänge jeden Knoten auf $\\pi$ direkt an $w$",
+    "english": ""
+  },
+  "104": {
+    "german": "asymptotisch keine zusätzlichen Kosten für $\\function{find}(x)$",
+    "english": ""
+  },
+  "105": {
+    "german": "aber: spätere Aufrufe von \\function{find} ggf.\\ schneller",
+    "english": ""
+  },
+  "106": {
+    "german": "\\textbf{Problem}",
+    "english": ""
+  },
+  "107": {
+    "german": "Pfadkompression verringert ggf.\\ die Höhe des Baumes, ohne dass wir es\\nmerken",
+    "english": ""
+  },
+  "108": {
+    "german": "bei späteren \\function{union} Operationen kennen wir ggf.\\ nicht die\\nkorrekte Höhe",
+    "english": ""
+  },
+  "109": {
+    "german": "\\textbf{Gar nicht schlimm}",
+    "english": ""
+  },
+  "110": {
+    "german": "nenne die in der Wurzel gespeicherte Zahl nicht Höhe, sondern \\emph{Rang}",
+    "english": ""
+  },
+  "111": {
+    "german": "\\function{union} wie bisher: hänge Wurzel mit kleinerem Rang an Wurzel\\nmit größerem Rang",
+    "english": ""
+  },
+  "112": {
+    "german": "es gilt weiterhin: Teilbaum unter Wurzel $w$ mit Rang $r$ hat\\nmindestens $2^r$ Knoten\\n",
+    "english": ""
+  },
+  "113": {
+    "german": "\\function{union} nutzt die Höhe um zu entscheiden, welcher Baum unter\\nwelchen gehängt wird",
+    "english": ""
+  },
+  "114": {
+    "german": "außerdem: Teilbaum unter einem Knoten mit Rang $r$ hat höchstens Höhe $r$\\n",
+    "english": ""
+  },
+  "115": {
+    "german": "\\textbf{Operationen}",
+    "english": ""
+  },
+  "116": {
+    "german": "\\textbf{Tiebreaker}",
+    "english": ""
+  },
+  "117": {
+    "german": "\\function{union} zwei Wurzeln mit gleichem Rang",
+    "english": ""
+  },
+  "118": {
+    "german": "wähle alphabetisch kleineren Knoten als Wurzel\\n",
+    "english": ""
+  },
+  "119": {
+    "german": "\\textbf{Welchen Zustand hat die Datenstruktur nach Anwendung der drei\\n  übrigen Operationen?}",
+    "english": ""
+  },
+  "120": {
+    "german": "\\textbf{Lemma}\\\\\\nEs gibt höchstens $n / 2^r$ Knoten mit Rang gleich $r$.\\n",
+    "english": ""
+  },
+  "121": {
+    "german": "\\textbf{Beweis}",
+    "english": "\\textbf{Proof}"
+  },
+  "122": {
+    "german": "beachte: Ränge ändern sich nur durch \\function{union}",
+    "english": ""
+  },
+  "123": {
+    "german": "zeige mittels Induktion über $r$: Anzahl Knoten unter Baum mit Rang\\n$r$ ist mindestens $2^r$",
+    "english": ""
+  },
+  "124": {
+    "german": "\\textbf{Lemma}\\\\\\nJeder Knoten hat einen größeren Rang als jedes seiner Kinder.\\n",
+    "english": ""
+  },
+  "125": {
+    "german": "\\textbf{Beweis}",
+    "english": "\\textbf{Proof}"
+  },
+  "126": {
+    "german": "neue Eltern--Kind Beziehungen entstehen nur durch \\function{union}",
+    "english": ""
+  },
+  "127": {
+    "german": "der Rang des Elter ist dann immer größer als der des Kindes",
+    "english": ""
+  },
+  "128": {
+    "german": "Pfadkompression: Rang des neuen Elters größer als des alten\\n",
+    "english": ""
+  },
+  "129": {
+    "german": "\\textbf{path compression}",
+    "english": ""
+  },
+  "130": {
+    "german": "außerdem: Teilbäume unter Knoten mit dem selben Rang $r$ sind disjunkt\\n",
+    "english": ""
+  },
+  "131": {
+    "german": "\\textbf{Lemma}\\\\\\nEs gibt höchstens $n / 2^r$ Knoten mit Rang größer $r$.\\n",
+    "english": ""
+  },
+  "132": {
+    "german": "\\textbf{Beweis}",
+    "english": "\\textbf{Proof}"
+  },
+  "133": {
+    "german": "bilde Summe über alle größeren Ränge:",
+    "english": ""
+  },
+  "134": {
+    "german": "\\textbf{Die drei Schritte von $\\function{union}(x, y)$}",
+    "english": ""
+  },
+  "135": {
+    "german": "\\textbf{Neue Operation: $\\function{link}$}",
+    "english": ""
+  },
+  "136": {
+    "german": "hänge $w_x$ unter $w_y$ oder umgekehrt",
+    "english": ""
+  },
+  "137": {
+    "german": "genauso wie \\function{union}, aber nur für Wurzeln",
+    "english": ""
+  },
+  "138": {
+    "german": "die beiden \\function{find} Operationen fallen dann weg",
+    "english": ""
+  },
+  "139": {
+    "german": "\\textbf{Warum machen wir das?}",
+    "english": ""
+  },
+  "140": {
+    "german": "Plan: analysiere Kosten für \\function{union} und \\function{find}\\ngetrennt voneinander\\n",
+    "english": ""
+  },
+  "141": {
+    "german": "Problem: lässt sich kaum trennen, wenn jedes \\function{union} zwei Mal\\n\\function{find} ausführt\\n",
+    "english": ""
+  },
+  "142": {
+    "german": "Lösung: ersetze Sequenz von $n$ \\function{union} und $m$\\n\\function{find} durch $n$ \\function{link} und $2n + m$ \\function{find}\\n",
+    "english": ""
+  },
+  "143": {
+    "german": "\\textbf{Die zwei Schritte von $\\function{find}(v)$}",
+    "english": ""
+  },
+  "144": {
+    "german": "Finden der Wurzel $w$\\n",
+    "english": ""
+  },
+  "145": {
+    "german": "Kompression des Pfades von $v$ nach $w$ $\\rightarrow$ bezeichne diesen\\nSchritt mit $\\function{compress}(v, w)$",
+    "english": ""
+  },
+  "146": {
+    "german": "\\textbf{Betrachte \\function{compress} statt \\function{find}}",
+    "english": ""
+  },
+  "147": {
+    "german": "ersetze in Folge von \\function{link} und \\function{find} Operationen\\njedes \\function{find} durch passendes \\function{compress}",
+    "english": ""
+  },
+  "148": {
+    "german": "außerdem: asymptotische Laufzeit bleibt gleich",
+    "english": ""
+  },
+  "149": {
+    "german": "beachte: resultierende Folge liefert zu jedem Zeitpunkt die selbe\\nDatenstruktur",
+    "english": ""
+  },
+  "150": {
+    "german": "gleich: sortiere \\function{compress} nach hinten",
+    "english": ""
+  },
+  "151": {
+    "german": "\\textbf{Grundsätzliches Vorgehen}",
+    "english": ""
+  },
+  "152": {
+    "german": "Ziel: Analysiere Laufzeit von Algo $A$\\n",
+    "english": ""
+  },
+  "153": {
+    "german": "analysiere stattdessen einen anderen Algo $B$",
+    "english": ""
+  },
+  "154": {
+    "german": "zeige: Laufzeit von $A$ ist nicht größer als die von $B$",
+    "english": ""
+  },
+  "155": {
+    "german": "damit: Laufzeit von $B$ gibt Schranke an Laufzeit von $A$",
+    "english": ""
+  },
+  "156": {
+    "german": "\\textbf{Tausche \\function{compress} nach hinten}",
+    "english": ""
+  },
+  "157": {
+    "german": "Ergebnis und Laufzeit werden durch den Tausch nicht geändert",
+    "english": ""
+  },
+  "158": {
+    "german": "wir können annehmen: zunächst alle \\function{link} und dann alle\\n\\function{compress} Operationen\\n",
+    "english": ""
+  },
+  "159": {
+    "german": "\\textbf{Umbau der Folge von Operationen}",
+    "english": ""
+  },
+  "160": {
+    "german": "eigentlich: $n$ \\function{union} und $m$ \\function{find} in beliebiger\\nReihenfolge",
+    "english": ""
+  },
+  "161": {
+    "german": "stattdessen: $n$ \\function{link} gefolgt von $2n + m$ \\function{compress}",
+    "english": ""
+  },
+  "162": {
+    "german": "machen sehr unterschiedliche Dinge,\\naber: selbe asymptotische Laufzeit\\n",
+    "english": ""
+  },
+  "163": {
+    "german": "\\textbf{Die $n$ \\function{link} Operationen}",
+    "english": ""
+  },
+  "164": {
+    "german": "\\function{link} läuft in Konstanter Zeit $\\rightarrow$ $\\Theta(n)$",
+    "english": ""
+  },
+  "165": {
+    "german": "Ergebnis: Wald mit höchstens $N = 2n$ nicht-isolierten Knoten",
+    "english": ""
+  },
+  "166": {
+    "german": "\\textbf{Was wir noch tun müssen}",
+    "english": ""
+  },
+  "167": {
+    "german": "analysiere $M = 2n + m$ \\function{compress} Operationen auf einem Wald\\nmit $N$ Knoten",
+    "english": ""
+  },
+  "168": {
+    "german": "\\textbf{Invarianten für die Ränge der Knoten}",
+    "english": ""
+  },
+  "169": {
+    "german": "\\textbf{Lemma}\\\\\\nJeder Knoten hat einen größeren Rang als jedes seiner Kinder.\\n",
+    "english": ""
+  },
+  "170": {
+    "german": "\\textbf{Lemma}\\\\\\nEs gibt höchstens $N / 2^r$ Knoten mit Rang größer $r$.\\n",
+    "english": ""
+  },
+  "171": {
+    "german": "\\textbf{Gruppen von Rängen}",
+    "english": ""
+  },
+  "172": {
+    "german": "gruppiere Knoten nach ihrem Rang in $k$ Gruppen",
+    "english": ""
+  },
+  "173": {
+    "german": "zwei Typen von Knoten bei einem \\function{compress}-Pfad",
+    "english": ""
+  },
+  "174": {
+    "german": "Typ 1: Elter ist in der selben Gruppe",
+    "english": ""
+  },
+  "175": {
+    "german": "Typ 2: Elter ist in einer höheren Gruppe",
+    "english": ""
+  },
+  "176": {
+    "german": "\\textbf{Wie oft hängen wir Typ 2 Knoten um?}",
+    "english": ""
+  },
+  "177": {
+    "german": "höchstens $k$ Typ 2 Knoten pro \\function{compress}",
+    "english": ""
+  },
+  "178": {
+    "german": "$M$ mal \\function{compress} $\\rightarrow$ insgesamt $O(k M)$ Zeit\\n",
+    "english": ""
+  },
+  "179": {
+    "german": "\\textbf{Wie oft hängen wir Typ 1 Knoten um?}",
+    "english": ""
+  },
+  "180": {
+    "german": "betrachte beliebigen Knoten $v$",
+    "english": ""
+  },
+  "181": {
+    "german": "$v$ wird umgehängt $\\rightarrow$ neuer Elter hat größeren Rang",
+    "english": ""
+  },
+  "182": {
+    "german": "kleiner Bereich von Rängen pro Gruppe\\\\\\n$\\rightarrow$ $v$ kann nicht oft Typ 1 sein bevor $v$ Typ 2 wird\\n",
+    "english": ""
+  },
+  "183": {
+    "german": "Rang $\\ge 8$",
+    "english": ""
+  },
+  "184": {
+    "german": "Rang $\\in [5, 7]$",
+    "english": ""
+  },
+  "185": {
+    "german": "Rang $\\in [2, 4]$",
+    "english": ""
+  },
+  "186": {
+    "german": "Rang $\\le 1$",
+    "english": ""
+  },
+  "187": {
+    "german": "\\textbf{Lemma}\\\\\\nSei Gruppe $i$ die Menge aller Knoten mit Rang in $(r_i, r_{i - 1}]$\\nfür $r_0 > r_1 > \\dots > r_k$.  In jeder Folge von \\function{compress}\\nOperationen werden insgesamt höchstens\\n$N \\cdot \\frac{r_{i - 1}}{2^{r_i}}$ Knoten aus Gruppe $i$ von Typ 1\\numgehängt.\\n",
+    "english": ""
+  },
+  "188": {
+    "german": "Gruppe 1",
+    "english": ""
+  },
+  "189": {
+    "german": "Gruppe 2",
+    "english": ""
+  },
+  "190": {
+    "german": "Gruppe 3",
+    "english": ""
+  },
+  "191": {
+    "german": "Gruppe 4",
+    "english": ""
+  },
+  "192": {
+    "german": "\\textbf{Beweis}",
+    "english": "\\textbf{Proof}"
+  },
+  "193": {
+    "german": "jeder Knoten in Gruppe $i$ ist höchstens\\n$r_{i - 1}$ mal Typ 1\\n",
+    "english": ""
+  },
+  "194": {
+    "german": "$v$ wird umgehängt $\\rightarrow$ neuer Elter hat größeren Rang",
+    "english": ""
+  },
+  "195": {
+    "german": "jeder Knoten in Gruppe $i$ hat Rang größer $r_i$\\n",
+    "english": ""
+  },
+  "196": {
+    "german": "davon gibt es höchstens $N / 2^{r_i}$ viele\\n",
+    "english": ""
+  },
+  "197": {
+    "german": "\\textbf{Lemma}\\\\\\nJeder Knoten hat einen größeren Rang als jedes seiner Kinder.\\n",
+    "english": ""
+  },
+  "198": {
+    "german": "\\textbf{Lemma}\\\\\\nEs gibt höchstens $N / 2^r$ Knoten mit Rang größer $r$.\\n",
+    "english": ""
+  },
+  "199": {
+    "german": "\\textbf{Wie oft kann ein Knoten aus Gruppe $i$ als Typ~1 Knoten umgehängt werden?}",
+    "english": ""
+  },
+  "200": {
+    "german": "\\textbf{Wie viele Knoten enthält Gruppe $i$ höchstens?}",
+    "english": ""
+  },
+  "201": {
+    "german": "\\textbf{Lemma}\\\\\\nEs werden insgesamt höchstens $N \\cdot \\frac{r_{i - 1}}{2^{r_i}}$\\nKnoten aus Gruppe $i$ von Typ 1 umgehängt.\\n",
+    "english": ""
+  },
+  "202": {
+    "german": "Gruppe 1",
+    "english": ""
+  },
+  "203": {
+    "german": "Gruppe 2",
+    "english": ""
+  },
+  "204": {
+    "german": "Gruppe 3",
+    "english": ""
+  },
+  "205": {
+    "german": "Gruppe 4",
+    "english": ""
+  },
+  "206": {
+    "german": "\\textbf{Lemma}\\\\\\nEs werden insgesamt nur $O(kM)$ Knoten von Typ 2 umgehängt.\\n",
+    "english": ""
+  },
+  "207": {
+    "german": "($N$: Anzahl Knoten)",
+    "english": ""
+  },
+  "208": {
+    "german": "($M$: Anzahl \\function{compress} Operationen, $k$: Anzahl Gruppen)",
+    "english": ""
+  },
+  "209": {
+    "german": "\\textbf{Wähle: $r_0 = R$ (\\text{maximaler Rang}) und\\n  $r_i = \\log r_{i - 1}$}\\n",
+    "english": ""
+  },
+  "210": {
+    "german": "dann: Kosten für Typ 1 in Gruppe $i$ in $O(N)$\\n",
+    "english": ""
+  },
+  "211": {
+    "german": "Typ 1 insgesamt: $O(kN)$\\n",
+    "english": ""
+  },
+  "212": {
+    "german": "\\textbf{Wie viele Gruppen bekommen wir dann?}\\n",
+    "english": ""
+  },
+  "213": {
+    "german": "Nach wie vielen $\\log$ ist das Ergebnis $\\le 1$?\\n",
+    "english": ""
+  },
+  "214": {
+    "german": "diese Anzahl heißt \\emph{iterierten Logarithmus} $\\log^* R$\\n",
+    "english": ""
+  },
+  "215": {
+    "german": "beachte: $R \\in O(\\log N)$\\n",
+    "english": ""
+  },
+  "216": {
+    "german": "\\textbf{Folgerung}\\\\\\nEine Folge von $M$ \\function{compress} Operationen in einem Wald mit\\n$N$ Knoten benötigt nur $O((N + M) \\log^* N)$ Umhängeoperationen.",
+    "english": ""
+  },
+  "217": {
+    "german": "\\textbf{Zurück zu \\function{union} und \\function{find}}",
+    "english": ""
+  },
+  "218": {
+    "german": "was wir analysieren wollten: $n$ \\function{union} und $m$\\n\\function{find} Operationen\\n",
+    "english": ""
+  },
+  "219": {
+    "german": "was wir analysiert haben:",
+    "english": ""
+  },
+  "220": {
+    "german": "$n$ \\function{link} $\\rightarrow$ liefert Wald mit höchstens $N = 2n$\\nKnoten in $\\Theta(n)$ Zeit",
+    "english": ""
+  },
+  "221": {
+    "german": "$M = 2n + m$ \\function{compress} auf Wald mit $N$ Knoten in $O((N + M)\\n\\log^* N)$\\n",
+    "english": ""
+  },
+  "222": {
+    "german": "wir wissen: \\function{union}, \\function{find}-Folge hat gleiche Laufzeit\\nwie \\function{link}, \\function{compress}-Folge",
+    "english": ""
+  },
+  "223": {
+    "german": "\\textbf{Theorem}\\\\\\nEine beliebige Folge von $n$ \\function{union} und $m$ \\function{find}\\nOperationen mit Union-by-Rank und Pfadkompression benötigt $O((n + m)\\n\\log^* n)$ Zeit. Also amortisiert $O(\\log^* n)$ pro Operation.",
+    "english": ""
+  },
+  "224": {
+    "german": "\\textbf{Theorem}\\\\\\nEine beliebige Folge von $n$ \\function{union} und $m$ \\function{find}\\nOperationen mit Union-by-Rank und Pfadkompression benötigt $O((n + m)\\n\\log^* n)$ Zeit. Also amortisiert $O(\\log^* n)$ pro Operation.",
+    "english": ""
+  },
+  "225": {
+    "german": "\\textbf{Wie schnell wächst $\\log^*(n)$?}",
+    "english": ""
+  },
+  "226": {
+    "german": "betrachte Potenzturm der Höhe $k$:\\n$n = 2^{2^{\\cdot^{\\cdot^{\\cdot^2}}}}$\\n",
+    "english": ""
+  },
+  "227": {
+    "german": "dann gilt: $\\log^* n = k$\\n",
+    "english": ""
+  },
+  "228": {
+    "german": "mit größer werdendem $k$ wächst $n$ extrem schnell\\\\\\n$\\rightarrow$ mit größer werdendem $n$ wächst $\\log^* n$ extrem\\nlangsam\\n",
+    "english": ""
+  },
+  "229": {
+    "german": "für $n \\in (\\num{65536}, 2^{\\num{65536}}]$ gilt $\\log^* n = 5$ und\\n$\\log n \\in (16, \\num{65536}]$",
+    "english": ""
+  },
+  "230": {
+    "german": "\\textbf{Zum Vergleich}",
+    "english": ""
+  },
+  "231": {
+    "german": "das beobachtbare Universum hat zwischen $10^{78}$ und $10^{82}$ Atome",
+    "english": ""
+  },
+  "232": {
+    "german": "\\textbf{Union--Find}",
+    "english": ""
+  },
+  "233": {
+    "german": "sehr nützliche Datenstruktur",
+    "english": ""
+  },
+  "234": {
+    "german": "in vielen Programmiersprachen (z.B.\\ C++, Java) nicht Teil des\\nStandards",
+    "english": ""
+  },
+  "235": {
+    "german": "aber: nicht so schwer selbst zu implementieren (Analyse kompliziert,\\nAlgo selbst leicht)\\n",
+    "english": ""
+  },
+  "236": {
+    "german": "\\textbf{Laufzeitanalyse}",
+    "english": "\\textbf{Runtime analysis}"
+  },
+  "237": {
+    "german": "spannende Technik: baue den Algorithmus zum Zweck der Analyse um",
+    "english": ""
+  },
+  "238": {
+    "german": "der analysierte Algo macht ggf.\\ gar nicht das gewünschte oder ist\\nnicht umsetzbar\\n",
+    "english": ""
+  },
+  "239": {
+    "german": "aber: die Analyse des anderen Algos liefert trotzdem Schranke für den\\neigentlichen Algo\\n",
+    "english": ""
+  },
+  "240": {
+    "german": "\\textbf{Ausblick: Da geht noch was}",
+    "english": ""
+  },
+  "241": {
+    "german": "kann verbessert werden auf amortisierte Laufzeit $\\Theta(\\alpha(n))$ pro\\nOperation (das ist tight)",
+    "english": ""
+  },
+  "242": {
+    "german": "$\\alpha(n)$: inverse Ackermannfunktion",
+    "english": ""
+  },
+  "243": {
+    "german": "$\\alpha(n)$ wächst noch langsamer als $\\log^* n$",
+    "english": ""
+  }
+}

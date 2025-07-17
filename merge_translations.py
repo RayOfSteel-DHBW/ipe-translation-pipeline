@@ -72,8 +72,8 @@ def get_txt_files(directory: str) -> Set[str]:
 
 def merge_translations(step2_dir: str, step3_dir: str, output_dir: str):
     """
-    Merge German texts from step-2 with English translations from step-3.
-    Creates JSON files in output_dir for each txt file found in step-2.
+    Merge German texts from step-2 into JSON files with empty English strings.
+    The step-3 directory is ignored.
     """
     # Ensure output directory exists
     os.makedirs(output_dir, exist_ok=True)
@@ -92,25 +92,15 @@ def merge_translations(step2_dir: str, step3_dir: str, output_dir: str):
         
         # Parse German content from step-2
         german_content = parse_file_content(step2_path)
-        
-        # Parse English content from step-3 (if exists)
-        step3_path = os.path.join(step3_dir, filename)
-        english_content = parse_file_content(step3_path)
-        
-        # Skip if no German content was parsed
-        if not german_content:
-            print(f"  → Skipping {filename} (no parseable content found)")
-            continue
-        
-        
-        # Parse English content from step-3 (if exists)
-        step3_path = os.path.join(step3_dir, filename)
-        english_content = parse_file_content(step3_path)
+
+        # Remove lookup in step-3; translations are intentionally left blank
+        english_content = {}  # <- always empty
         
         # Skip if no German content was parsed
         if not german_content:
             print(f"  → Skipping {filename} (no parseable content found)")
             continue
+        
         
         # Create merged dictionary
         merged_dict = {}
@@ -119,7 +109,7 @@ def merge_translations(step2_dir: str, step3_dir: str, output_dir: str):
         for order_num_str in sorted(german_content.keys(), key=int):
             order_num = int(order_num_str)  # Convert to integer for proper sorting
             german_text = german_content[order_num_str]
-            english_text = english_content.get(order_num_str, "")  # Empty string if no translation
+            english_text = ""  # <- force empty translation
             
             merged_dict[order_num] = {
                 "german": german_text,
@@ -135,9 +125,9 @@ def merge_translations(step2_dir: str, step3_dir: str, output_dir: str):
         
         print(f"  → Created {json_filename} with {len(merged_dict)} entries")
         if english_content:
-            print(f"    (Found translations for {len(english_content)} entries)")
+            pass  # no message when we purposely ignore translations
         else:
-            print(f"    (No translation file found)")
+            print(f"    (Translations intentionally left empty)")
 
 
 def main():
@@ -152,6 +142,16 @@ def main():
     print(f"Source (German): {step2_dir}")
     print(f"Translations (English): {step3_dir}")
     print(f"Output directory: {output_dir}")
+    print("-" * 50)
+    
+    merge_translations(str(step2_dir), str(step3_dir), str(output_dir))
+    
+    print("-" * 50)
+    print("Merge completed!")
+
+
+if __name__ == "__main__":
+    main()
     print("-" * 50)
     
     merge_translations(str(step2_dir), str(step3_dir), str(output_dir))

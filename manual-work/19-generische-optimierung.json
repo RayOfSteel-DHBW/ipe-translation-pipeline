@@ -1,0 +1,858 @@
+{
+  "1": {
+    "german": "Beispiel: Ausgewogen und Billig",
+    "english": ""
+  },
+  "2": {
+    "german": "Lineare Programme",
+    "english": ""
+  },
+  "3": {
+    "german": "Ein schwieriges Graphenproblem",
+    "english": ""
+  },
+  "4": {
+    "german": "Independent Set als lineares Programm",
+    "english": ""
+  },
+  "5": {
+    "german": "LPs und ILPs",
+    "english": ""
+  },
+  "6": {
+    "german": "Rohe Gewalt (Brute-Force)",
+    "english": ""
+  },
+  "7": {
+    "german": "Branching: Beispiel",
+    "english": ""
+  },
+  "8": {
+    "german": "Branch-and-Bound",
+    "english": ""
+  },
+  "9": {
+    "german": "Zwischenstand",
+    "english": ""
+  },
+  "10": {
+    "german": "Allgemeines Optimierungsproblem",
+    "english": ""
+  },
+  "11": {
+    "german": "Lokale Suche",
+    "english": ""
+  },
+  "12": {
+    "german": "Umgang mit Lokalen Optima",
+    "english": ""
+  },
+  "13": {
+    "german": "Evolutionärer Algorithmus",
+    "english": ""
+  },
+  "14": {
+    "german": "Variation: Rekombination und Mutation",
+    "english": ""
+  },
+  "15": {
+    "german": "Evolutionäre Algorithmen: Anmerkung",
+    "english": ""
+  },
+  "16": {
+    "german": "Zusammenfassung",
+    "english": "Summary"
+  },
+  "17": {
+    "german": "Nächste Woche",
+    "english": ""
+  },
+  "18": {
+    "german": "Thomas Bläsius~--~Algorithmen 1",
+    "english": "Thomas Bläsius~--~Algorithms 1"
+  },
+  "19": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "20": {
+    "german": "\\textbf{Generische Optimierungsmethoden}",
+    "english": ""
+  },
+  "21": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "22": {
+    "german": "\\textit{\\dots and when Rabbid said, ``Honey or condensed milk with your\\n  bread?'' he was so excited that he said, ``Both,'' and then, so as\\n  not to seem greedy, he added, ``But don't bother about the bread,\\n  please.''}\\\\\\n{\\color{white}.}\\hfill A.~A.~Milne, Winnie the Pooh\\n",
+    "english": ""
+  },
+  "23": {
+    "german": "\\textbf{Problem}",
+    "english": ""
+  },
+  "24": {
+    "german": "Burger entsprechen nicht den offiziellen Ernährungsrichtlinien",
+    "english": ""
+  },
+  "25": {
+    "german": "pro Gericht fehlen $\\SI{0,5}{mg}$ Vitamin A, $\\SI{15}{mg}$ Vitamin\\nC, $\\SI{4}{g}$ Ballaststoffe\\n",
+    "english": ""
+  },
+  "26": {
+    "german": "Ziel: Behebung dieses Problems bei möglichst geringen Kosten\\n",
+    "english": ""
+  },
+  "27": {
+    "german": "Vitamin A ($\\si{mg/kg}$)",
+    "english": ""
+  },
+  "28": {
+    "german": "Vitamin C ($\\si{mg/kg}$)",
+    "english": ""
+  },
+  "29": {
+    "german": "Ballaststoffe ($\\si{g/kg}$)",
+    "english": ""
+  },
+  "30": {
+    "german": " Preis (€/\\si{kg})",
+    "english": ""
+  },
+  "31": {
+    "german": "Karotten",
+    "english": ""
+  },
+  "32": {
+    "german": "Weißkohl",
+    "english": ""
+  },
+  "33": {
+    "german": "Gewürzgurken",
+    "english": ""
+  },
+  "34": {
+    "german": "\\textbf{Lösung:} $x_1, x_2, x_3$ repräsentieren die Menge an Karotten, Kohl und Gurken\\n",
+    "english": ""
+  },
+  "35": {
+    "german": "minimiere:",
+    "english": ""
+  },
+  "36": {
+    "german": "Nebenbedingungen:",
+    "english": ""
+  },
+  "37": {
+    "german": "optimale Lösung:\\n",
+    "english": ""
+  },
+  "38": {
+    "german": "$\\SI{9,5}{g}$ Karotten\\n\\n",
+    "english": ""
+  },
+  "39": {
+    "german": "$\\SI{38}{g}$ Kohl\\n\\n",
+    "english": ""
+  },
+  "40": {
+    "german": "$\\SI{290}{g}$ Gurken\\n\\n",
+    "english": ""
+  },
+  "41": {
+    "german": "wurden bereits in den 40er Jahren verwendet (und manuell gelöst)\\n",
+    "english": ""
+  },
+  "42": {
+    "german": "\"`Programm\"' ist ein militärischer Begriff für verschiedene Arten von\\nPlänen (z.B. Versorgungsplan, Verlegungsplan für Truppen etc.)\\n",
+    "english": ""
+  },
+  "43": {
+    "german": "erstes großes LP, das mit dem Simplex-Algorithmus gelöst wurde",
+    "english": ""
+  },
+  "44": {
+    "german": "optimiere Kosten für ausgewogene Ernährung",
+    "english": ""
+  },
+  "45": {
+    "german": "77 Variablen, 9 Nebenbedingungen",
+    "english": ""
+  },
+  "46": {
+    "german": "Simplex-Methode (per Hand in 1947): 120 Personentage",
+    "english": ""
+  },
+  "47": {
+    "german": "etwas später (mittels Computer): George Dantzig versucht seine eigene\\nErnährung zu optimieren",
+    "english": ""
+  },
+  "48": {
+    "german": "erster Versuch: mehrere Liter Essig pro Tag",
+    "english": ""
+  },
+  "49": {
+    "german": "zweiter Versuch: 200 Brühwürfel pro Tag",
+    "english": ""
+  },
+  "50": {
+    "german": "$\\Rightarrow$ ein sinnvolles LP zu formulieren ist nicht immer trivial",
+    "english": ""
+  },
+  "51": {
+    "german": "\\textbf{Trivia}\\n",
+    "english": ""
+  },
+  "52": {
+    "german": "\\textbf{Problem: \\emph{Independent Set}}\\\\\\nSei $G = (V, E)$ ein Graph.  Finde eine möglichst große Knotenmenge\\n$I \\subseteq V$, sodass für jede Kante $\\{u, v\\} \\in E$ höchstens\\neiner der Knoten $u$ oder $v$ in $I$ liegt.\\n",
+    "english": ""
+  },
+  "53": {
+    "german": "\\textbf{Intuition}",
+    "english": "\\textbf{Intuition}"
+  },
+  "54": {
+    "german": "die Kanten modellieren Konflikte",
+    "english": ""
+  },
+  "55": {
+    "german": "finde möglichst große konfliktfreie Knotenmenge\\n",
+    "english": ""
+  },
+  "56": {
+    "german": "\\textbf{Algorithmische Situation}",
+    "english": ""
+  },
+  "57": {
+    "german": "Independent Set ist NP-schwer",
+    "english": ""
+  },
+  "58": {
+    "german": "wir kennen keinen Algorithmus mit polynomieller Laufzeit",
+    "english": ""
+  },
+  "59": {
+    "german": "wir gehen davon aus, dass es keinen solchen Algorithmus gibt",
+    "english": ""
+  },
+  "60": {
+    "german": "man sollte trotzdem nicht alle Hoffnung verlieren",
+    "english": ""
+  },
+  "61": {
+    "german": "ggf.\\ sind viele Instanzen gutartig $\\rightarrow$ nur manchmal langsam\\n",
+    "english": ""
+  },
+  "62": {
+    "german": "suboptimale Lösungen können ggf.\\ effizient gefunden werden",
+    "english": ""
+  },
+  "63": {
+    "german": "\\textbf{Die Variablen}",
+    "english": ""
+  },
+  "64": {
+    "german": "\\textbf{Problem: \\emph{Independent Set}}\\\\\\nSei $G = (V, E)$ ein Graph.  Finde eine möglichst große Knotenmenge\\n$I \\subseteq V$, sodass für jede Kante $\\{u, v\\} \\in E$ höchstens\\neiner der Knoten $u$ oder $v$ in $I$ liegt.\\n",
+    "english": ""
+  },
+  "65": {
+    "german": "Knoten $v \\in V$ $\\rightarrow$ Variable $x_v$\\n",
+    "english": ""
+  },
+  "66": {
+    "german": "Einschränkung: $x_v \\in \\{0, 1\\}$",
+    "english": ""
+  },
+  "67": {
+    "german": "Interpretation: $x_v = 1 \\Leftrightarrow v \\in I$",
+    "english": ""
+  },
+  "68": {
+    "german": "\\textbf{Welches lineare Programm modelliert das Independent Set Problem?}",
+    "english": ""
+  },
+  "69": {
+    "german": "\\textbf{Optimierungsfunktion}",
+    "english": ""
+  },
+  "70": {
+    "german": "Ziel: wähle möglichst viele Knoten aus $\\rightarrow$ setze viele\\nVariablen auf $1$",
+    "english": ""
+  },
+  "71": {
+    "german": "maximiere: $\\sum\\limits_{v \\in V} x_v$",
+    "english": ""
+  },
+  "72": {
+    "german": "\\textbf{Nebenbedingungen}",
+    "english": ""
+  },
+  "73": {
+    "german": "für jede Kante: höchstens einer der Endpunkte ausgewählt\\n",
+    "english": ""
+  },
+  "74": {
+    "german": "für jede Kante $\\{u, v\\} \\in E$ eine Nebenbedingung: $x_u + x_v \\le 1$\\n",
+    "english": ""
+  },
+  "75": {
+    "german": "\\textbf{Anmerkung}",
+    "english": "\\textbf{Note}"
+  },
+  "76": {
+    "german": "Forderung, dass $x_v$ ganzzahlige Werte annimmt macht das Problem\\nschwer",
+    "english": ""
+  },
+  "77": {
+    "german": "\\textbf{Lineare Programme (LP)}",
+    "english": ""
+  },
+  "78": {
+    "german": "gegeben: lineare Optimierungsfunktion und lineare Nebenbedingungen",
+    "english": ""
+  },
+  "79": {
+    "german": "finde optimale \\emph{reellwertige} Variablenbelegung unter Einhaltung der\\nNebenbedingungen\\n",
+    "english": ""
+  },
+  "80": {
+    "german": "\\textbf{Ganzzahliges lineare Programme (ILP -- Integer Linear Program)}",
+    "english": ""
+  },
+  "81": {
+    "german": "finde optimale \\emph{ganzzahlige} Variablenbelegung unter Einhaltung der\\nNebenbedingungen\\n",
+    "english": ""
+  },
+  "82": {
+    "german": "Theorie: in polynomieller Zeit lösbar\\n",
+    "english": ""
+  },
+  "83": {
+    "german": "Praxis: hoch effiziente Implementierungen verfügbar (frei und\\nkommerziell)\\n",
+    "english": ""
+  },
+  "84": {
+    "german": "Theorie: NP-schwer (vermutlich nicht in polynomieller Zeit lösbar)\\n",
+    "english": ""
+  },
+  "85": {
+    "german": "Praxis: meist effiziente Implementierungen verfügbar (frei und\\nkommerziell)\\n",
+    "english": ""
+  },
+  "86": {
+    "german": "\\textbf{mächtiges generisches Werkzeug um auch schwierige Probleme zu lösen}",
+    "english": ""
+  },
+  "87": {
+    "german": "\\textbf{Problem: \\emph{Independent Set}}\\\\\\nSei $G = (V, E)$ ein Graph.  Finde eine möglichst große Knotenmenge\\n$I \\subseteq V$, sodass für jede Kante $\\{u, v\\} \\in E$ höchstens\\neiner der Knoten $u$ oder $v$ in $I$ liegt.\\n",
+    "english": ""
+  },
+  "88": {
+    "german": "\\textbf{Naiver Plan}",
+    "english": ""
+  },
+  "89": {
+    "german": "zähle alle Teilmengen $I \\in V$ auf",
+    "english": ""
+  },
+  "90": {
+    "german": "teste ob $I$ ein Independent Set ist",
+    "english": ""
+  },
+  "91": {
+    "german": "gib größtes Independent Set aus",
+    "english": ""
+  },
+  "92": {
+    "german": "\\textbf{Beobachtung}",
+    "english": "\\textbf{Observation}"
+  },
+  "93": {
+    "german": "Kante $\\{u, v\\} \\in E$ $\\rightarrow$ falls $u \\in I$ und $v \\in I$,\\ndann ist $I$ kein Independent Set",
+    "english": ""
+  },
+  "94": {
+    "german": "wir könnten uns eigentlich alle Teilmengen sparen, bei denen $u \\in\\nI$ und $v \\in I$",
+    "english": ""
+  },
+  "95": {
+    "german": "\\textbf{Geschickteres Brute-Force: Branching}",
+    "english": ""
+  },
+  "96": {
+    "german": "finde eine einzelne Entscheidung und probiere alle möglichen Fälle aus",
+    "english": ""
+  },
+  "97": {
+    "german": "hier: für einen Knoten $v \\in V$ entweder $v \\notin I$ oder $v \\in I$\\n",
+    "english": ""
+  },
+  "98": {
+    "german": "$v \\notin I$ $\\rightarrow$ lösche $v$ aus dem Graphen und löse die\\nrestliche Instanz\\n",
+    "english": ""
+  },
+  "99": {
+    "german": "$v \\in I$ $\\rightarrow$ Nachbarn von $v$ sind alle nicht in $I$\\n$\\rightarrow$ lösche $N(v)$ aus dem Graphen und löse die restliche Instanz\\n",
+    "english": ""
+  },
+  "100": {
+    "german": "\\textbf{Für die beiden Zweige $v \\notin I$ und $v \\in I$: Wie können wir $G$\\nverkleinern?}",
+    "english": ""
+  },
+  "101": {
+    "german": "\\textbf{Beobachtung}",
+    "english": "\\textbf{Observation}"
+  },
+  "102": {
+    "german": "im Zweig $v \\in I$ wurde der Graph deutlich einfacher",
+    "english": ""
+  },
+  "103": {
+    "german": "je mehr Nachbarn $v$ hat, desto mehr Knoten werden im Zweig $v \\in I$\\ngelöscht",
+    "english": ""
+  },
+  "104": {
+    "german": "sinnvolle Heuristik: wähle hochgradigen Knoten $v$ zum branchen",
+    "english": ""
+  },
+  "105": {
+    "german": "\\textbf{Wie können wir Brute Force schneller machen?}",
+    "english": ""
+  },
+  "106": {
+    "german": "geschicktes Branching (gerade gesehen)",
+    "english": ""
+  },
+  "107": {
+    "german": "treffe \"`offensichtliche\"' Entscheidungen $\\rightarrow$\\nReduktionsregel",
+    "english": ""
+  },
+  "108": {
+    "german": "aktueller Zweig \"`offensichtlich\"' schlecht $\\rightarrow$ Zweig\\nabschneiden (Pruning)\\n",
+    "english": ""
+  },
+  "109": {
+    "german": "\\textbf{Reduktionsregel (Beispiel)}",
+    "english": ""
+  },
+  "110": {
+    "german": "\\textbf{Pruning (Beispiel)}",
+    "english": ""
+  },
+  "111": {
+    "german": "$\\deg(v) \\le 1$ $\\Rightarrow$ es gibt ein maximales Independen Set $I$\\nmit $v \\in I$\\n",
+    "english": ""
+  },
+  "112": {
+    "german": "lower bound (global): wir kennen schon eine Lösung der Größe 17\\n",
+    "english": ""
+  },
+  "113": {
+    "german": "upper bound (Situation im aktuellen Zweig):",
+    "english": ""
+  },
+  "114": {
+    "german": "haben bisher 14 Knoten ausgewählt",
+    "english": ""
+  },
+  "115": {
+    "german": "übriger Graph kann mit 3 Cliquen überdeckt werden",
+    "english": ""
+  },
+  "116": {
+    "german": "Lösung in diesem Zweig kann nicht besser als 17 werde",
+    "english": ""
+  },
+  "117": {
+    "german": "Branch-and-Bound: Framework für Brute-Force Algorithmen",
+    "english": ""
+  },
+  "118": {
+    "german": "auszufüllen: branching, Reduktionsregeln, Pruning mit upper/lower Bounds",
+    "english": ""
+  },
+  "119": {
+    "german": "Freiheitsgrade füllen ist sehr Problemspezifisch",
+    "english": ""
+  },
+  "120": {
+    "german": "\\textbf{Exakte Lösungen, ggf.\\ langsam}",
+    "english": ""
+  },
+  "121": {
+    "german": "Formulierung als (I)LP oder auch NLP (nicht-lineares Programm)",
+    "english": ""
+  },
+  "122": {
+    "german": "Übersetzung in ein (I)LP ist problemspezifisch und nicht immer leicht\\n",
+    "english": ""
+  },
+  "123": {
+    "german": "tatsächlicher Algorithmus: nutze stark optimierte Bibliothek",
+    "english": ""
+  },
+  "124": {
+    "german": "\\textbf{Heuristische Ansätze: opfere Optimalität für Laufzeit}",
+    "english": ""
+  },
+  "125": {
+    "german": "kennen wir schon: Greedy (funktioniert oft gut; meist nicht optimal)",
+    "english": ""
+  },
+  "126": {
+    "german": "gleich: problemunabhängige Metaheuristiken",
+    "english": ""
+  },
+  "127": {
+    "german": "\\textbf{Wikipedia zu Metaheuristiken:} \\\\\\nWhile the field also features high-quality research, many of the\\npublications have been of poor quality; flaws include vagueness, lack\\nof conceptual elaboration, poor experiments, and ignorance of previous\\nliterature.\\n",
+    "english": ""
+  },
+  "128": {
+    "german": "\\textbf{Problem:} generisches Maximierungsproblem\\\\\\nGegeben sei eine Funktion $f \\colon X \\to \\mathbb R$.  Finde $x \\in X$\\nmit $f(x) \\ge f(y)$ für alle $y \\in X$.\\n",
+    "english": ""
+  },
+  "129": {
+    "german": "\\textbf{Problem: \\emph{Independent Set}}\\\\\\nSei $G = (V, E)$ ein Graph.  Finde eine möglichst große Knotenmenge\\n$I \\subseteq V$, sodass für jede Kante $\\{u, v\\} \\in E$ höchstens\\neiner der Knoten $u$ oder $v$ in $I$ liegt.\\n",
+    "english": ""
+  },
+  "130": {
+    "german": "\\textbf{Beispiel: Independent Set}",
+    "english": ""
+  },
+  "131": {
+    "german": "Möglichkeit 1: $X$ komplett unabhängig vom eigentlichen Problem",
+    "english": ""
+  },
+  "132": {
+    "german": "$X \\subseteq 2^V$ ist die Menge aller Independent Sets\\n",
+    "english": ""
+  },
+  "133": {
+    "german": "Möglichkeit 2: $X$ enthält nur gültige Teilmengen $\\rightarrow$ problemspezifisch",
+    "english": ""
+  },
+  "134": {
+    "german": "$X = 2^V$ ist die Potenzmenge von $V$ (z.B. codiert als Bitvektor\\n$\\{0, 1\\}^n$)\\n",
+    "english": ""
+  },
+  "135": {
+    "german": "$f(x) =\\n\\begin{cases}\\n  |x| & \\text{wenn $x$ ein Independent Set ist}\\\\\\n  0 & \\text{sonst}\\n\\end{cases}\\n$",
+    "english": ""
+  },
+  "136": {
+    "german": "\\textbf{Grundsätzliches Vorgehen}",
+    "english": ""
+  },
+  "137": {
+    "german": "starte mit irgendeiner Lösung $x\\in X$",
+    "english": ""
+  },
+  "138": {
+    "german": "iteriere solange wie gewünscht:",
+    "english": ""
+  },
+  "139": {
+    "german": "wähle Lösung $y \\in X$ die ähnlich ist zu $x$",
+    "english": ""
+  },
+  "140": {
+    "german": "falls $f(y) > f(x)$  $\\rightarrow$ ersetze $x$ durch $y$",
+    "english": ""
+  },
+  "141": {
+    "german": "\\textbf{Mögliche konkrete Umsetzung (sehr generisch)}",
+    "english": ""
+  },
+  "142": {
+    "german": "Annahme: $X = \\{0, 1\\}^n$",
+    "english": ""
+  },
+  "143": {
+    "german": "Start: wähle $x \\in X$ uniform zufällig",
+    "english": ""
+  },
+  "144": {
+    "german": "wiederhole, bis $x$ sich $k$ mal in Folge nicht ändert:",
+    "english": ""
+  },
+  "145": {
+    "german": "setze $y = x$ und ändere ein zufälliges Bit von $y$",
+    "english": ""
+  },
+  "146": {
+    "german": "falls $f(y) > f(x)$  $\\rightarrow$ ersetze $x$ durch $y$",
+    "english": ""
+  },
+  "147": {
+    "german": "das lohnt sich ggf.\\ problemspezifisch zu machen",
+    "english": ""
+  },
+  "148": {
+    "german": "\\textbf{Problem}",
+    "english": ""
+  },
+  "149": {
+    "german": "lokale Suche hängt leicht in lokalen Optima fest",
+    "english": ""
+  },
+  "150": {
+    "german": "\\textbf{Lösungsansätze}",
+    "english": ""
+  },
+  "151": {
+    "german": "Neustart mit anderer initialen Lösung",
+    "english": ""
+  },
+  "152": {
+    "german": "erlaube auch kleine Verschlechterungen mit einer gewissen\\nWahrscheinlichkeit",
+    "english": ""
+  },
+  "153": {
+    "german": "erlaube größere Veränderungsschritte",
+    "english": ""
+  },
+  "154": {
+    "german": "\\textbf{Gleich: evolutionärer Algorithmus}",
+    "english": ""
+  },
+  "155": {
+    "german": "ein möglicher Ansatz die lokale Suche zu erweitern",
+    "english": ""
+  },
+  "156": {
+    "german": "setzt die verschiedenen Ansätze zur Vermeidung lokaler Optima um",
+    "english": ""
+  },
+  "157": {
+    "german": "es gibt eine Vielzahl Varianten und verwandter Algorithmen",
+    "english": ""
+  },
+  "158": {
+    "german": "\\textbf{Grundsätzliches Vorgehen}",
+    "english": ""
+  },
+  "159": {
+    "german": "starte mit einer Menge $P_1 = \\{x_1^1, \\dots, x_n^1\\} \\subset X$ von\\nLösungen\\n",
+    "english": ""
+  },
+  "160": {
+    "german": "iteriere so lange wie gewünscht:",
+    "english": ""
+  },
+  "161": {
+    "german": "erzeuge neue Lösungen $O_i = \\{y_1^i, \\dots, y_m^i\\}$ aus der\\naktuellen Lösungsmenge $P_i$\\n",
+    "english": ""
+  },
+  "162": {
+    "german": "wähle neue Lösungsmenge\\n$P_{i + 1} = \\{x_1^{i + 1}, \\dots, x_n^{i + 1}\\} \\subset P_i \\cup O_i$\\nbasierend auf $f$\\n",
+    "english": ""
+  },
+  "163": {
+    "german": "\\textbf{Aus der Evolution entliehene Begrifflichkeiten}",
+    "english": ""
+  },
+  "164": {
+    "german": "$P_i$ ist die $i$te \\emph{Population}, $f$ ist die\\n\\emph{Fitnessfunktion}\\n",
+    "english": ""
+  },
+  "165": {
+    "german": "die $x_j^i$ sind die \\emph{Eltern (parents)}, die $y_j^i$ der\\n\\emph{Nachwuchs (offspring)}\\n",
+    "english": ""
+  },
+  "166": {
+    "german": "\\emph{Variation}",
+    "english": ""
+  },
+  "167": {
+    "german": "\\emph{Selektion}",
+    "english": ""
+  },
+  "168": {
+    "german": "\\emph{Variation}",
+    "english": ""
+  },
+  "169": {
+    "german": "\\textbf{Rekombination}",
+    "english": ""
+  },
+  "170": {
+    "german": "wähle zwei (oder mehr) Lösungen $x_1^i, x_2^i \\in P_i$",
+    "english": ""
+  },
+  "171": {
+    "german": "kombiniere $x_1^i$ und $x_2^i$ auf irgendeine Art",
+    "english": ""
+  },
+  "172": {
+    "german": "Beispiel:",
+    "english": ""
+  },
+  "173": {
+    "german": "\\textbf{Mutation}",
+    "english": ""
+  },
+  "174": {
+    "german": "ähnlich wie bei der lokalen Suche",
+    "english": ""
+  },
+  "175": {
+    "german": "ändere eine (z.B. durch Rekombination erzeugte) Lösung etwas ab",
+    "english": ""
+  },
+  "176": {
+    "german": "Beispiel:",
+    "english": ""
+  },
+  "177": {
+    "german": "\\textbf{Lokale Minima und Vergleich zur lokalen Suche}",
+    "english": ""
+  },
+  "178": {
+    "german": "größere Population $\\rightarrow$ startet lokale Suche im Prinzip an\\nmehreren Stellen",
+    "english": ""
+  },
+  "179": {
+    "german": "Rekombination $\\rightarrow$ größere Sprünge möglich (nicht nur lokale\\nVeränderungen)",
+    "english": ""
+  },
+  "180": {
+    "german": "Mutation $\\rightarrow$ wie bei der lokale Suche",
+    "english": ""
+  },
+  "181": {
+    "german": "trotzdem: wir können natürlich nicht garantieren, dass wir das Optimum finden",
+    "english": ""
+  },
+  "182": {
+    "german": "\\textbf{Independent Set: Generisch vs.\\ problemspezifisch}",
+    "english": ""
+  },
+  "183": {
+    "german": "Erinnerung: zwei mögliche Definitionen für die Lösungsmenge $X$\\n",
+    "english": ""
+  },
+  "184": {
+    "german": "$X \\subseteq 2^V$ ist die Menge aller Independent Sets\\n",
+    "english": ""
+  },
+  "185": {
+    "german": "$X = 2^V$ ist die Potenzmenge von $V$\\n",
+    "english": ""
+  },
+  "186": {
+    "german": "jeder Bitvektor kommt in Betracht",
+    "english": ""
+  },
+  "187": {
+    "german": "generische Rekombination und Mutation möglich",
+    "english": ""
+  },
+  "188": {
+    "german": "nur manche Bitvektoren sind gültig",
+    "english": ""
+  },
+  "189": {
+    "german": "Rekombination und Mutation problemspezifische",
+    "english": ""
+  },
+  "190": {
+    "german": "\\textbf{Generisch}\\\\\\n\\textbf{Pro:} sehr leicht umzusetzen\\\\\\n\\textbf{Con:} funktioniert nicht immer gut",
+    "english": ""
+  },
+  "191": {
+    "german": "\\textbf{Problemspezifisch}\\\\\\n\\textbf{Con:} mehr Arbeit\\\\\\n\\textbf{Pro:} funktioniert meist deutlich besser\\n",
+    "english": ""
+  },
+  "192": {
+    "german": "\\textbf{Lineare Programmierung}",
+    "english": ""
+  },
+  "193": {
+    "german": "mächtige Modellierungssprache um verschiedene andere Probleme\\nauszudrücken",
+    "english": ""
+  },
+  "194": {
+    "german": "noch mächtiger: ganzzahlige Variablen",
+    "english": ""
+  },
+  "195": {
+    "german": "mächtige Bibliotheken zum Lösen $\\rightarrow$ man muss selbst keinen\\nAlgorithmus bauen",
+    "english": ""
+  },
+  "196": {
+    "german": "\\textbf{Branch-and-Bound (Brute-Force)}",
+    "english": ""
+  },
+  "197": {
+    "german": "allgemeines Framework um geschickt alle Lösungen durchzuprobieren\\n",
+    "english": ""
+  },
+  "198": {
+    "german": "problemspezifisch: branching, Reduktionsregeln, Pruning mit upper/lower Bounds",
+    "english": ""
+  },
+  "199": {
+    "german": "langsam im worst-case, aber in der Praxis oft gut",
+    "english": ""
+  },
+  "200": {
+    "german": "\\textbf{Metaheuristiken: Lokale Suche, Evolutionäre Algorithmen}",
+    "english": ""
+  },
+  "201": {
+    "german": "sehr generisch $\\rightarrow$ für alle Probleme nutzbar, geringer Arbeitsaufwand",
+    "english": ""
+  },
+  "202": {
+    "german": "keine (kaum) Garantien für Qualität und Laufzeit",
+    "english": ""
+  },
+  "203": {
+    "german": "problemspezifische Anpassungen $\\rightarrow$ bessere Qualität und\\nLaufzeit",
+    "english": ""
+  },
+  "204": {
+    "german": "\\textbf{Montag: Letzte Vorlesung}",
+    "english": ""
+  },
+  "205": {
+    "german": "Ausblick",
+    "english": ""
+  },
+  "206": {
+    "german": "Rückblick",
+    "english": ""
+  },
+  "207": {
+    "german": "Was haben wir gelernt?",
+    "english": ""
+  },
+  "208": {
+    "german": "Wie lief die Veranstaltung?",
+    "english": ""
+  },
+  "209": {
+    "german": "Welche weiterführenden Lehrveranstaltungen gibt es?",
+    "english": ""
+  },
+  "210": {
+    "german": "Welche Lernangebote gibt es für die Vorbereitung auf die Klausur?",
+    "english": ""
+  },
+  "211": {
+    "german": "Woran forschen wir so?",
+    "english": ""
+  },
+  "212": {
+    "german": "\\textbf{Mittwoch: Letzte Übung}",
+    "english": ""
+  },
+  "213": {
+    "german": "Dynamische Programme",
+    "english": ""
+  },
+  "214": {
+    "german": "Fragerunde",
+    "english": ""
+  }
+}

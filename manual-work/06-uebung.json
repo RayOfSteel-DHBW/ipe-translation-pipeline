@@ -1,0 +1,782 @@
+{
+  "1": {
+    "german": "Tiefensuche (DFS)",
+    "english": ""
+  },
+  "2": {
+    "german": "Zusammenhang",
+    "english": ""
+  },
+  "3": {
+    "german": "SCCs -- Berechnung",
+    "english": ""
+  },
+  "4": {
+    "german": "SCCs -- Struktur",
+    "english": ""
+  },
+  "5": {
+    "german": "SCCs -- Mehr Struktur",
+    "english": ""
+  },
+  "6": {
+    "german": "SCCs -- Knoten in Senken Komponente finden",
+    "english": ""
+  },
+  "7": {
+    "german": "SCCs -- Knoten in Senken Komponente finden 2",
+    "english": ""
+  },
+  "8": {
+    "german": "SCCs -- Pseudocode",
+    "english": ""
+  },
+  "9": {
+    "german": "Evaluierung der Übung",
+    "english": ""
+  },
+  "10": {
+    "german": "Vollständige Induktion",
+    "english": ""
+  },
+  "11": {
+    "german": "Binärbäume rekursiv",
+    "english": ""
+  },
+  "12": {
+    "german": "Strukturelle Induktion -- Beispiel",
+    "english": ""
+  },
+  "13": {
+    "german": "Strukturelle Induktion -- Beispiel  2",
+    "english": ""
+  },
+  "14": {
+    "german": "Induktion und Rekursion",
+    "english": ""
+  },
+  "15": {
+    "german": "Maximilian Katzmann \\& Marcus Wilhelm~--~Algorithmen 1 - Übung",
+    "english": ""
+  },
+  "16": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "17": {
+    "german": "\\textbf{Übung 6}",
+    "english": ""
+  },
+  "18": {
+    "german": "\\textbf{starker Zusammenhang mit DFS, strukturelle Induktion}",
+    "english": ""
+  },
+  "19": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "20": {
+    "german": "Legende:",
+    "english": ""
+  },
+  "21": {
+    "german": "ungesehen",
+    "english": ""
+  },
+  "22": {
+    "german": "gesehen",
+    "english": ""
+  },
+  "23": {
+    "german": "fertig",
+    "english": ""
+  },
+  "24": {
+    "german": "Rückkante",
+    "english": "back edge"
+  },
+  "25": {
+    "german": "Vorkante",
+    "english": ""
+  },
+  "26": {
+    "german": "Querkante",
+    "english": ""
+  },
+  "27": {
+    "german": "\\textbf{DFS-Nummer}",
+    "english": ""
+  },
+  "28": {
+    "german": "\\textbf{FIN-Nummer}",
+    "english": ""
+  },
+  "29": {
+    "german": "klein $\\rightarrow$ groß",
+    "english": ""
+  },
+  "30": {
+    "german": "groß $\\rightarrow$ klein",
+    "english": ""
+  },
+  "31": {
+    "german": "groß $\\rightarrow$ klein",
+    "english": ""
+  },
+  "32": {
+    "german": "groß $\\rightarrow$ klein",
+    "english": ""
+  },
+  "33": {
+    "german": "klein $\\rightarrow$ groß",
+    "english": ""
+  },
+  "34": {
+    "german": "groß $\\rightarrow$ klein",
+    "english": ""
+  },
+  "35": {
+    "german": "\\textbf{Baumkante}",
+    "english": ""
+  },
+  "36": {
+    "german": "klein $\\rightarrow$ groß",
+    "english": ""
+  },
+  "37": {
+    "german": "groß $\\rightarrow$ klein",
+    "english": ""
+  },
+  "38": {
+    "german": "\\textbf{Bisherige Erkenntnisse:}",
+    "english": ""
+  },
+  "39": {
+    "german": "verschiedene Kantentypen",
+    "english": ""
+  },
+  "40": {
+    "german": "z.B. kreisfrei $\\Leftrightarrow$ keine Rückkanten",
+    "english": ""
+  },
+  "41": {
+    "german": "Topologische Sortierung mittels FIN",
+    "english": ""
+  },
+  "42": {
+    "german": "$\\mathrm{low}(v)$ für Brücken, cut-vertices",
+    "english": ""
+  },
+  "43": {
+    "german": "DFS hat viel (nützliche) Struktur",
+    "english": ""
+  },
+  "44": {
+    "german": "\\textbf{Ungerichtete Graphen}",
+    "english": ""
+  },
+  "45": {
+    "german": "$\\textcolor{orange1}{v}$ \\textit{erreicht} $\\textcolor{maygreen1}{w}$: $\\exists$ \\textcolor{KITgreen}{Pfad} von $\\textcolor{orange1}{v}$ nach $\\textcolor{maygreen1}{w}$",
+    "english": ""
+  },
+  "46": {
+    "german": "Äquivalenzrelation",
+    "english": ""
+  },
+  "47": {
+    "german": "Äquivalenzklassen: \\textit{Zusammenhangskomponenten}",
+    "english": ""
+  },
+  "48": {
+    "german": "\\textbf{Gerichtete Graphen}",
+    "english": ""
+  },
+  "49": {
+    "german": "Erreichbarkeit nicht mehr symmetrisch",
+    "english": ""
+  },
+  "50": {
+    "german": "\\textit{starker Zusammenhang}",
+    "english": ""
+  },
+  "51": {
+    "german": "Pfad in beide Richtungen",
+    "english": ""
+  },
+  "52": {
+    "german": "\\textit{schwacher Zusammenhang}",
+    "english": ""
+  },
+  "53": {
+    "german": "Pfad in zugrundeliegendem ungerichteten Graphen",
+    "english": ""
+  },
+  "54": {
+    "german": "Einfach zu Berechnen",
+    "english": ""
+  },
+  "55": {
+    "german": "Jetzt gleich",
+    "english": ""
+  },
+  "56": {
+    "german": "\\flushleft Für jeden Knoten Zusammenhangskomponente berechnen",
+    "english": ""
+  },
+  "57": {
+    "german": "$\\mathrm{reach}_G(v)$: von $v$ erreichbare Knoten in $G$",
+    "english": ""
+  },
+  "58": {
+    "german": "$\\mathrm{scc}(v) = \\mathrm{reach}_G(v) \\cap \\mathrm{reach}_{\\mathrm{rev}(G)}(v)$",
+    "english": ""
+  },
+  "59": {
+    "german": "\\textbf{Einfacher Ansatz}",
+    "english": ""
+  },
+  "60": {
+    "german": "$G$ mit umgekehrten Kantenrichtungen",
+    "english": ""
+  },
+  "61": {
+    "german": "$a \\in \\mathrm{reach}_{\\mathrm{rev}(G)}(p)$",
+    "english": ""
+  },
+  "62": {
+    "german": "$p$ von $a$ erreichbar in $G$",
+    "english": ""
+  },
+  "63": {
+    "german": "von $v$ erreichbar und erreicht $v$",
+    "english": ""
+  },
+  "64": {
+    "german": "Berechne so $\\mathrm{scc}(v)$ für alle $v \\in V$",
+    "english": ""
+  },
+  "65": {
+    "german": "\\textbf{Geht das schneller?}",
+    "english": ""
+  },
+  "66": {
+    "german": "nur eine Zusammenhangskomponente",
+    "english": ""
+  },
+  "67": {
+    "german": "$|V|$ Zusammenhangskomponenten",
+    "english": ""
+  },
+  "68": {
+    "german": "Allgemeiner Fall: auch in $\\mathcal{O}(|V| + |E|)$",
+    "english": ""
+  },
+  "69": {
+    "german": "Technik: DFS!",
+    "english": ""
+  },
+  "70": {
+    "german": "\\textbf{Beobachtung:} Seien $v$, $w$ Knoten in der gleichen SCC $C$ und $P$ ein Pfad von $v$ nach $w$. Dann liegt $P$ auch in $C$.",
+    "english": ""
+  },
+  "71": {
+    "german": "$u$ erreicht $w$",
+    "english": ""
+  },
+  "72": {
+    "german": "$u$ erreicht ganz $C$",
+    "english": ""
+  },
+  "73": {
+    "german": "$v$ erreicht $u$",
+    "english": ""
+  },
+  "74": {
+    "german": "ganz $C$ erreicht $u$",
+    "english": ""
+  },
+  "75": {
+    "german": "\\textbf{Lemma:} Betrachte einen DFS-Wald $F$ eines gerichteten Graphen $G$. Jede SCC $C$ von $G$ enthält genau einen Knoten $w$ mit $\\mathrm{parent}(w) \\notin C$ oder $\\mathrm{parent}(w) = \\bot$.",
+    "english": ""
+  },
+  "76": {
+    "german": "\\textbf{Beweis:}",
+    "english": ""
+  },
+  "77": {
+    "german": "sei $\\textcolor{KITgreen}{v}$ in $C$ mit kleinster DFS-Nummer",
+    "english": ""
+  },
+  "78": {
+    "german": "falls $\\textcolor{KITgreen}{v}$ Elternknoten $\\textcolor{blue1}{p}$ hat: $\\textcolor{blue1}{p}.\\mathrm{DFS} < \\textcolor{KITgreen}{v}.\\mathrm{DFS}$ also $\\textcolor{blue1}{p} \\notin C$",
+    "english": ""
+  },
+  "79": {
+    "german": "betrachte nun anderen Knoten $\\textcolor{orange1}{w} \\in C$",
+    "english": ""
+  },
+  "80": {
+    "german": "$w$ Nachfahre von $v$ in DFS Baum",
+    "english": ""
+  },
+  "81": {
+    "german": "Andernfalls: betrachte $\\textcolor{KITgreen}{v}$-$\\textcolor{orange1}{w}$-Pfad $\\textcolor{gray1}{P}$",
+    "english": ""
+  },
+  "82": {
+    "german": ", sei $\\textcolor{maygreen1}{x}$ hinterster Nachfahre von $\\textcolor{KITgreen}{v}$",
+    "english": ""
+  },
+  "83": {
+    "german": "hätte Nachfahre von $\\textcolor{KITgreen}{v}$ werden müssen",
+    "english": ""
+  },
+  "84": {
+    "german": "gibt Pfad aus Baumkanten von $\\textcolor{KITgreen}{v}$ zu $\\textcolor{orange1}{w}$",
+    "english": ""
+  },
+  "85": {
+    "german": "nach Beobachtung: Elternknoten von $\\textcolor{orange1}{w}$ in $C$",
+    "english": ""
+  },
+  "86": {
+    "german": "\\textbf{Lemma:} Betrachte einen DFS-Wald $F$ eines gerichteten Graphen $G$. Jede SCC $C$ von $G$ enthält genau einen Knoten $w$ mit $\\mathrm{parent}(w) \\notin C$ oder $\\mathrm{parent}(w) = \\bot$.",
+    "english": ""
+  },
+  "87": {
+    "german": "\\textbf{Beobachtung:} Die SCCs eines Graphen bilden einen azyklischen Graphen.",
+    "english": ""
+  },
+  "88": {
+    "german": "$\\mathrm{scc}(G)$",
+    "english": ""
+  },
+  "89": {
+    "german": "\\flushleft Senken-Komponente: Senke in $\\mathrm{scc}(G)$",
+    "english": ""
+  },
+  "90": {
+    "german": "SCC von Knoten $v$ in Senken- Komp. finden ist einfach",
+    "english": ""
+  },
+  "91": {
+    "german": "solange $V \\neq \\emptyset$: finde Knoten $v$ in Senken-Komponente",
+    "english": ""
+  },
+  "92": {
+    "german": "finde SCC $C$ von $v$, lösche $C$",
+    "english": ""
+  },
+  "93": {
+    "german": "Algorithmus:",
+    "english": ""
+  },
+  "94": {
+    "german": "\\textbf{Lemma:} Der Knoten mit der größten FIN-Nummer liegt in einer Quellen-Komponente.",
+    "english": ""
+  },
+  "95": {
+    "german": "Beweis:",
+    "english": ""
+  },
+  "96": {
+    "german": "sei $v$ Knoten mit größter FIN-Nummer",
+    "english": ""
+  },
+  "97": {
+    "german": "$v$ ist Wurzel von zuletzt gefundenem Baum im DFS-Wald",
+    "english": ""
+  },
+  "98": {
+    "german": "$v$ ist einziger Knoten ohne Elter in $v$'s SCC $\\textcolor{cyan1}{C}$",
+    "english": ""
+  },
+  "99": {
+    "german": "Angenommen $(x,\\textcolor{purple1}{y}) \\in E$ mit $x \\notin \\textcolor{cyan1}{C}$, $\\textcolor{purple1}{y} \\in \\textcolor{cyan1}{C}$",
+    "english": ""
+  },
+  "100": {
+    "german": "$x$ nicht im DFS Baum unter $v$",
+    "english": ""
+  },
+  "101": {
+    "german": "also: $(x,\\textcolor{purple1}{y})$ \\textcolor{orange1}{Querkante}",
+    "english": ""
+  },
+  "102": {
+    "german": "\\textbf{DFS-Nummer}",
+    "english": ""
+  },
+  "103": {
+    "german": "\\textbf{FIN-Nummer}",
+    "english": ""
+  },
+  "104": {
+    "german": "groß $\\rightarrow$ klein",
+    "english": ""
+  },
+  "105": {
+    "german": "groß $\\rightarrow$ klein",
+    "english": ""
+  },
+  "106": {
+    "german": "$x$ nach $\\textcolor{purple1}{y}$ gefunden, aber vor $v$ fertig",
+    "english": ""
+  },
+  "107": {
+    "german": "$x$ Nachfahre von $v$",
+    "english": ""
+  },
+  "108": {
+    "german": "Pfad von $v$ zu $x$ und von $x$ zu $v$",
+    "english": ""
+  },
+  "109": {
+    "german": "Fertig?",
+    "english": ""
+  },
+  "110": {
+    "german": "\\textbf{Lemma:} Der Knoten mit der größten FIN-Nummer liegt in einer Quellen-Komponente.",
+    "english": ""
+  },
+  "111": {
+    "german": "\\textbf{Beobachtung:} $\\mathrm{rev}(\\mathrm{scc}(G)) = \\mathrm{scc}(\\mathrm{rev}(G))$",
+    "english": ""
+  },
+  "112": {
+    "german": "scc(G)",
+    "english": ""
+  },
+  "113": {
+    "german": "rev(G)",
+    "english": ""
+  },
+  "114": {
+    "german": "$\\mathrm{rev}(\\mathrm{scc}(G))$",
+    "english": ""
+  },
+  "115": {
+    "german": "$\\mathrm{scc}(\\mathrm{rev}(G))$",
+    "english": ""
+  },
+  "116": {
+    "german": "Betrachte Knotenpaar $u,v \\in V$",
+    "english": ""
+  },
+  "117": {
+    "german": "Fall 1: $u$ erreicht $v$ und $v$ erreicht $u$",
+    "english": ""
+  },
+  "118": {
+    "german": "Fall 2: $u$ erreicht $v$, aber $v$ erreicht $u$ nicht (o.B.d.A.)",
+    "english": ""
+  },
+  "119": {
+    "german": "Fall 3: $u$ erreicht $v$ nicht und $v$ erreicht $u$ nicht",
+    "english": ""
+  },
+  "120": {
+    "german": "\\textbf{Idee:}",
+    "english": ""
+  },
+  "121": {
+    "german": "DFS Traversierung von $\\mathrm{rev}(G)$",
+    "english": ""
+  },
+  "122": {
+    "german": "Knoten $v$ mit Größter FIN-Nummer liegt in Quellen- Komp. von $\\mathrm{rev}(G)$",
+    "english": ""
+  },
+  "123": {
+    "german": "$v$ liegt in Senken-Komponente von $G$",
+    "english": ""
+  },
+  "124": {
+    "german": "$S \\coloneqq$ new \\type{Stack}",
+    "english": ""
+  },
+  "125": {
+    "german": "set $v$ unmarked",
+    "english": ""
+  },
+  "126": {
+    "german": "mark $v$\\n",
+    "english": ""
+  },
+  "127": {
+    "german": "\\keyword{for} \\type{Node} $u$ with $v \\in N(u)$ \\keyword{do}",
+    "english": ""
+  },
+  "128": {
+    "german": "\\keyword{if} $u$ is unmarked \\keyword{then}\\n",
+    "english": ""
+  },
+  "129": {
+    "german": "$v.\\mathrm{root} \\coloneqq \\bot$",
+    "english": ""
+  },
+  "130": {
+    "german": "\\keyword{if} $v$ is unmarked \\keyword{then}\\n",
+    "english": ""
+  },
+  "131": {
+    "german": "$v.\\mathrm{root} = r$\\n",
+    "english": ""
+  },
+  "132": {
+    "german": "\\keyword{if} $u.\\mathrm{root} = \\bot$ \\keyword{then}\\n",
+    "english": ""
+  },
+  "133": {
+    "german": "\\keyword{while} $S$ is not empty \\keyword{do}",
+    "english": ""
+  },
+  "134": {
+    "german": "\\keyword{if} $v.\\mathrm{root} = \\bot$ \\keyword{then}\\n",
+    "english": ""
+  },
+  "135": {
+    "german": "https://onlineumfrage.kit.edu/evasys/online.php?p=X4APS",
+    "english": ""
+  },
+  "136": {
+    "german": "\\textbf{Summenformel für Quadrate}",
+    "english": ""
+  },
+  "137": {
+    "german": "\\textbf{Induktionsanfang} $n = 1$",
+    "english": ""
+  },
+  "138": {
+    "german": "\\textbf{Induktionsvoraussetzung}",
+    "english": ""
+  },
+  "139": {
+    "german": "Wir nehmen an die Formel gilt für ein beliebiges festes $n \\in \\mathbb{N}$.",
+    "english": ""
+  },
+  "140": {
+    "german": "\\textbf{Induktionsschritt}",
+    "english": ""
+  },
+  "141": {
+    "german": "Sei $M \\subseteq \\mathbb{N}$. Falls gilt\\n",
+    "english": ""
+  },
+  "142": {
+    "german": "\\textbf{Formal}",
+    "english": ""
+  },
+  "143": {
+    "german": "$1 \\in M$; und",
+    "english": ""
+  },
+  "144": {
+    "german": "für alle $m \\in M$ ist auch $m+1 \\in M$,",
+    "english": ""
+  },
+  "145": {
+    "german": "dann gilt $M = \\mathbb{N}$.",
+    "english": ""
+  },
+  "146": {
+    "german": "\\textbf{Induktionsanfang} $1 \\in M$",
+    "english": ""
+  },
+  "147": {
+    "german": "\\textbf{Induktionsschritt}",
+    "english": ""
+  },
+  "148": {
+    "german": "Angenommen $m\\in M$. Dann gilt $m+1 \\in M$:",
+    "english": ""
+  },
+  "149": {
+    "german": "Wieso stimmt das?",
+    "english": ""
+  },
+  "150": {
+    "german": "\\textbf{Folgerung} $M = \\mathbb{N}$",
+    "english": ""
+  },
+  "151": {
+    "german": "\\textbf{Definition:} Binärbaum",
+    "english": ""
+  },
+  "152": {
+    "german": "Graphen mit genau einem Knoten $v$ sind Binärbäume mit Wurzel $v$",
+    "english": ""
+  },
+  "153": {
+    "german": "für disjunkte Binärbäume $T_1$ und $T_2$ mit Wurzeln $r_1, r_2$ und einem weiteren Knoten $v$, ist\\\\\\n$T = (V(T_1)\\cup V(T_2) \\cup \\{v\\}, E(T_1) \\cup E(T_2) \\cup \\{(v,r_1), (v, r_2)\\})$ ein Binärbaum.",
+    "english": ""
+  },
+  "154": {
+    "german": "\\textbf{Strukturelle Induktion mit Binärbäumen}\\n",
+    "english": ""
+  },
+  "155": {
+    "german": "Sei $M$ eine Menge von Binärbäumen. Falls gilt\\n",
+    "english": ""
+  },
+  "156": {
+    "german": "Binärbäume mit genau einem Knoten sind in $M$; und",
+    "english": ""
+  },
+  "157": {
+    "german": "für disjunkte Binärbäume $T_1$ und $T_2$ in $M$ mit Wurzeln $r_1, r_2$ und einem weiteren Knoten $v$, ist $T = (V(T_1)\\cup V(T_2) \\cup v, E(T_1) \\cup E(T_2) \\cup \\{(v,r_1), (v, r_2)\\})$ in $M$,",
+    "english": ""
+  },
+  "158": {
+    "german": "dann ist $M$ die Menge aller Binärbäume.",
+    "english": ""
+  },
+  "159": {
+    "german": "\\textbf{Satz über innere Knoten und Blätter}\\\\\\nIn jedem Binärbaum gibt es einen inneren Knoten (Knoten mit Ausgangsgrad $> 0$) weniger als Blätter (Knoten mit Ausgangsgrad $0$).",
+    "english": ""
+  },
+  "160": {
+    "german": "Beweis:",
+    "english": ""
+  },
+  "161": {
+    "german": "Basisfall: Binärbäume mit einem Knoten",
+    "english": ""
+  },
+  "162": {
+    "german": "Innere Knoten: 0, Blätter: 1",
+    "english": ""
+  },
+  "163": {
+    "german": "rekursiver Fall: Wurzel $v$ mit Kindern $r_1$ und $r_2$, darunter Teilbäume $T_1$, $T_2$",
+    "english": ""
+  },
+  "164": {
+    "german": "Innere Knoten: $\\mathrm{inner}(T_1) + \\mathrm{inner}(T_2) + 1$",
+    "english": ""
+  },
+  "165": {
+    "german": "Blätter: $\\mathrm{leafs}(T_1) + \\mathrm{leafs}(T_2)$",
+    "english": ""
+  },
+  "166": {
+    "german": "Induktionsvoraussetzung: $\\mathrm{inner}(T_1) + 1 = \\mathrm{leafs}(T_1)$, $\\mathrm{inner}(T_2) + 1 = \\mathrm{leafs}(T_2)$",
+    "english": ""
+  },
+  "167": {
+    "german": "$= \\mathrm{inner}(T_1) + 1 + \\mathrm{inner}(T_2) + 1$",
+    "english": ""
+  },
+  "168": {
+    "german": "$= \\mathrm{inner}(T_1) + \\mathrm{inner}(T_2) + 2$",
+    "english": ""
+  },
+  "169": {
+    "german": "\\textbf{Satz über Balance}\\\\\\nSei $T$ ein Binärbaum mit $n$ Knoten, sodass für jeden Teilbaum $T'$ mit Kindbäumen $L$ und $R$ gilt $|h(L) - h(R)| \\le 1$. Dann gilt $\\sqrt{2}^{h(T) - 1} \\le n$.",
+    "english": ""
+  },
+  "170": {
+    "german": "Beweis:",
+    "english": ""
+  },
+  "171": {
+    "german": "Basisfall: Binärbäume mit einem Knoten",
+    "english": ""
+  },
+  "172": {
+    "german": "rekursiver Fall: Wurzel $v$ mit Kindbäumen $T_1$, $T_2$",
+    "english": ""
+  },
+  "173": {
+    "german": "sei $n_1 = |V(T_1)|, n_2 = |V(T_2)|$; o.B.d.A. $n_1 \\le n_2$",
+    "english": ""
+  },
+  "174": {
+    "german": "dann $\\sqrt{2}^{h(T_1)-1} \\le n_1$",
+    "english": ""
+  },
+  "175": {
+    "german": "\\textbf{Frage:} Was hat das mit Algorithmik zu tun?",
+    "english": ""
+  },
+  "176": {
+    "german": "\\textbf{Antwort:} Zusammenhang zw. Induktion und rekursiven Algorithmen / DPs",
+    "english": ""
+  },
+  "177": {
+    "german": ", zudem: $h(T) \\le h(T_1)+2$",
+    "english": ""
+  },
+  "178": {
+    "german": "\\textbf{Algorithmus für Höhe von Baum (rekursiv)}",
+    "english": ""
+  },
+  "179": {
+    "german": "Basisfall: Einzelner Knoten",
+    "english": ""
+  },
+  "180": {
+    "german": "Korrektheit:",
+    "english": ""
+  },
+  "181": {
+    "german": "Vollständige Induktion über Anzahl Knoten",
+    "english": ""
+  },
+  "182": {
+    "german": "$\\function{height}(\\type{Tree }T, \\type{Node }\\mathit{root})$",
+    "english": ""
+  },
+  "183": {
+    "german": "$\\mathit{left} \\coloneqq \\function{height}(\\function{leftSubtree}(\\mathit{root}))$",
+    "english": ""
+  },
+  "184": {
+    "german": "$\\mathit{right} \\coloneqq \\function{height}(\\function{rightSubtree}(\\mathit{root}))$",
+    "english": ""
+  },
+  "185": {
+    "german": "\\keyword{return} $1 + \\mathrm{max}\\{\\mathit{left}, \\mathit{right}\\}$",
+    "english": ""
+  },
+  "186": {
+    "german": "\\keyword{if} $\\mathit{root}$ is only Node in $T$ \\keyword{then}",
+    "english": ""
+  },
+  "187": {
+    "german": "Korrektheit:",
+    "english": ""
+  },
+  "188": {
+    "german": "Induktionsschritt: Höhe = 1 + Höhe in Teilbäumen",
+    "english": ""
+  },
+  "189": {
+    "german": "Strukturelle Induktion über alle Binärbäume",
+    "english": ""
+  },
+  "190": {
+    "german": "$\\mathit{source} \\coloneqq \\function{findSource(G)}$",
+    "english": ""
+  },
+  "191": {
+    "german": "\\keyword{return} $\\langle \\mathit{source} \\rangle + \\langle \\function{topoSort}(G') \\rangle$",
+    "english": ""
+  },
+  "192": {
+    "german": "$G' \\coloneqq \\function{removeNode}(G, \\mathit{source})$",
+    "english": ""
+  },
+  "193": {
+    "german": "\\textbf{Topologische Sortierung}",
+    "english": ""
+  },
+  "194": {
+    "german": "Induktionsanfang: $|V| = 1$",
+    "english": ""
+  },
+  "195": {
+    "german": "Induktionsschritt: falls \\function{topoSort} für $n-1$ Knoten korrekt, dann auch für $n$",
+    "english": ""
+  }
+}

@@ -1,0 +1,51 @@
+Problematic Translations Report
+========================================
+
+
+File: 12-ab-trees.json
+--------------------
+Key: 114
+German: Schritt 1: erstmal entsprechendes Blatt einfach löschen
+English: Step 1: delete leaf
+Length ratio: 0.35
+
+Key: 117
+German: Elter hat ein Kind weniger $\rightarrow$ ggf.\ rekursiv aufräumen\n
+English: Parent may fix up\n
+Length ratio: 0.28
+
+Key: 123
+German: $\rightarrow$ 2 Aufspaltungen
+English: → 2 splits
+Length ratio: 0.34
+
+Key: 124
+German: $\rightarrow$ 1 Vereinigung
+English: → 1 merge
+Length ratio: 0.33
+
+Key: 127
+German: \emph{fast binär:} jeder innere Knoten hat 2 oder 3 Kinder\n
+English: 2--3 kids, balanced\n
+Length ratio: 0.35
+
+Key: 147
+German: Element mit minimaler Priorität extrahieren
+English: extract min prio
+Length ratio: 0.37
+
+Key: 155
+German: hier sind jeweils nur die wichtigsten Operationen aufgeführt\n
+English: only main ops listed\n
+Length ratio: 0.35
+
+Key: 167
+German: können für eine Anwendung die passende Datenstruktur wählen\n
+English: Pick right DS for need\n
+Length ratio: 0.39
+
+Key: 172
+German: stellt eure Fragen (gerne vorab via Discord oder auch live im Twitch Chat)
+English: Ask via Discord or live chat
+Length ratio: 0.38
+

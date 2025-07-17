@@ -1,0 +1,822 @@
+{
+  "1": {
+    "german": "Multiplikation: Idee $\\rightarrow$ Code",
+    "english": ""
+  },
+  "2": {
+    "german": "Einschub: Pseudocode",
+    "english": ""
+  },
+  "3": {
+    "german": "Teile und Herrsche",
+    "english": ""
+  },
+  "4": {
+    "german": "Teile und Herrsche",
+    "english": ""
+  },
+  "5": {
+    "german": "Einschub: Exponentielle Summen \\& geometrische Reihen",
+    "english": ""
+  },
+  "6": {
+    "german": "Ziel: weniger rekursive Aufrufe",
+    "english": ""
+  },
+  "7": {
+    "german": "Karatsubas Algorithmus",
+    "english": ""
+  },
+  "8": {
+    "german": "Karatsubas Algorithmus -- Laufzeitanalyse",
+    "english": ""
+  },
+  "9": {
+    "german": "Rundungsfehler?",
+    "english": ""
+  },
+  "10": {
+    "german": "Karatsubas Algorithmus",
+    "english": ""
+  },
+  "11": {
+    "german": "Rekurrenzen",
+    "english": ""
+  },
+  "12": {
+    "german": "Lösen allgemeiner Rekurrenzen",
+    "english": ""
+  },
+  "13": {
+    "german": "Master-Theorem",
+    "english": ""
+  },
+  "14": {
+    "german": "Zusammenfassung",
+    "english": "Summary"
+  },
+  "15": {
+    "german": "Erinnerung",
+    "english": ""
+  },
+  "16": {
+    "german": "Thomas Bläsius~--~Algorithmen 1",
+    "english": "Thomas Bläsius~--~Algorithms 1"
+  },
+  "17": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "18": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "19": {
+    "german": "\\textbf{Teile und Herrsche}",
+    "english": ""
+  },
+  "20": {
+    "german": "\\textbf{Karatsubas Algorithmus und Master-Theorem}",
+    "english": ""
+  },
+  "21": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "22": {
+    "german": "\\textbf{Wie geht das nochmal?}",
+    "english": ""
+  },
+  "23": {
+    "german": "berechne $a \\cdot b_i$ für jede Ziffer $b_i$ von $b = (b_{n-1} \\dots b_0)$",
+    "english": ""
+  },
+  "24": {
+    "german": "verschiebe Ergebnis um $i$ Stellen nach links",
+    "english": ""
+  },
+  "25": {
+    "german": "addiere Ergebnisse",
+    "english": ""
+  },
+  "26": {
+    "german": "\\textbf{Hohe Abstraktionsebene}",
+    "english": ""
+  },
+  "27": {
+    "german": "leicht zu verstehen",
+    "english": ""
+  },
+  "28": {
+    "german": "schwer zu implementieren",
+    "english": ""
+  },
+  "29": {
+    "german": "\\textbf{Konkretisierung mittels Pseudocode}",
+    "english": ""
+  },
+  "30": {
+    "german": "$\\mathrm{total} \\coloneqq 0$",
+    "english": ""
+  },
+  "31": {
+    "german": "\\keyword{for} $i$ from $0$ to $n - 1$ \\keyword{do}",
+    "english": ""
+  },
+  "32": {
+    "german": "$\\mathrm{prod} \\coloneqq a \\cdot b_i \\cdot 10^i$",
+    "english": ""
+  },
+  "33": {
+    "german": "$\\mathrm{total} \\coloneqq \\mathrm{total} + \\mathrm{prod}$",
+    "english": ""
+  },
+  "34": {
+    "german": "\\keyword{return} $\\mathrm{total}$",
+    "english": ""
+  },
+  "35": {
+    "german": "relativ mächtige Operationen",
+    "english": ""
+  },
+  "36": {
+    "german": "$\\rightarrow$ relative hohe Abstraktionsebene",
+    "english": ""
+  },
+  "37": {
+    "german": "$\\mathrm{carry} \\coloneqq 0$",
+    "english": ""
+  },
+  "38": {
+    "german": "\\keyword{for} $j$ from $0$ to $n - 1$ \\keyword{do}",
+    "english": ""
+  },
+  "39": {
+    "german": "$(\\mathrm{carry}, c_j) \\coloneqq a_j \\cdot b_i + \\mathrm{carry}$",
+    "english": ""
+  },
+  "40": {
+    "german": "$c_n \\coloneqq \\mathrm{carry}$",
+    "english": ""
+  },
+  "41": {
+    "german": "\\textbf{Regeln}",
+    "english": ""
+  },
+  "42": {
+    "german": "\\textbf{Nutzen}",
+    "english": ""
+  },
+  "43": {
+    "german": "kann helfen von der high-level Idee zu einer Implementierung zu kommen",
+    "english": ""
+  },
+  "44": {
+    "german": "interpoliert zwischen hoher und niedriger Abstraktionsebene",
+    "english": ""
+  },
+  "45": {
+    "german": "viele mächtige Operationen $\\rightarrow$ hohe Abstraktionsebene\\n$\\rightarrow$ Ideenvermittlung",
+    "english": ""
+  },
+  "46": {
+    "german": "nur primitive Operationen $\\rightarrow$ tiefe Abstraktionsebene\\n$\\rightarrow$ tatsächliche Implementierung",
+    "english": ""
+  },
+  "47": {
+    "german": "kann bei der Analyse (Laufzeit und Korrektheit) helfen",
+    "english": ""
+  },
+  "48": {
+    "german": "flexibler als bei richtiger Programmiersprache (z.B.\\ mathematische\\nFormeln)",
+    "english": ""
+  },
+  "49": {
+    "german": "man kann auch etwas kreativ sein, sollte es aber konsistent halten",
+    "english": ""
+  },
+  "50": {
+    "german": "in der Vorlesung: Syntax wird immer on-the-fly miterklärt",
+    "english": ""
+  },
+  "51": {
+    "german": "Hauptziele:",
+    "english": ""
+  },
+  "52": {
+    "german": "gut lesbar (für Menschen)",
+    "english": ""
+  },
+  "53": {
+    "german": "richtige Abstraktionsebene",
+    "english": ""
+  },
+  "54": {
+    "german": "\\textbf{Schriftliche Multiplikation}",
+    "english": ""
+  },
+  "55": {
+    "german": "\\textbf{Idee im Kern}",
+    "english": ""
+  },
+  "56": {
+    "german": "spalte schwieriges Problem in mehrere leichtere Probleme\\n",
+    "english": ""
+  },
+  "57": {
+    "german": "wiederhole das, bis die Instanz trivial ist",
+    "english": ""
+  },
+  "58": {
+    "german": "hier: Problem selbst wird substanziell leichter (Zahl $\\rightarrow$\\nZiffer)\\n",
+    "english": ""
+  },
+  "59": {
+    "german": "allgemein: Problem bleibt gleich, aber Instanz wird leichter (z.B.\\\\nkleineres $n$)\\n",
+    "english": ""
+  },
+  "60": {
+    "german": "\\textbf{Multiplikation mit anderer Zerlegung}",
+    "english": ""
+  },
+  "61": {
+    "german": "\\textbf{Größe des Rekursionsbaums}",
+    "english": ""
+  },
+  "62": {
+    "german": "\\textbf{Wie groß ist der Rekursionsbaum?}",
+    "english": ""
+  },
+  "63": {
+    "german": "$n$ wird mit jeder Lage halbiert $\\rightarrow$ $\\log_2(n)$ Lagen\\n",
+    "english": ""
+  },
+  "64": {
+    "german": "jeder Knoten hat $4$ Kinder $\\rightarrow$ Lage $i$ hat $4^i$ Knoten",
+    "english": ""
+  },
+  "65": {
+    "german": "Knoten insgesamt: $\\sum\\limits_{i = 0}^{\\log_2(n)} 4^i \\in\\n\\Theta\\left(4^{\\log_2(n)}\\right) = \\Theta\\left(n^2\\right)$",
+    "english": ""
+  },
+  "66": {
+    "german": "Achtung: das heißt noch nicht, dass die Laufzeit auch\\n$\\Theta\\left(n^2\\right)$ ist",
+    "english": ""
+  },
+  "67": {
+    "german": "(stimmt in diesem Fall aber)",
+    "english": ""
+  },
+  "68": {
+    "german": "$a, b \\coloneqq$ first and second half of $x$",
+    "english": ""
+  },
+  "69": {
+    "german": "$c, d \\coloneqq$ first and second half of $y$",
+    "english": ""
+  },
+  "70": {
+    "german": "\\textbf{Exponentiell wachsende Lagen}",
+    "english": ""
+  },
+  "71": {
+    "german": "Lage $i$",
+    "english": ""
+  },
+  "72": {
+    "german": "Anzahl Knoten",
+    "english": ""
+  },
+  "73": {
+    "german": "\\textbf{Summe der Knoten}",
+    "english": ""
+  },
+  "74": {
+    "german": "klein $\\rightarrow$ groß",
+    "english": ""
+  },
+  "75": {
+    "german": "groß $\\rightarrow$ klein",
+    "english": ""
+  },
+  "76": {
+    "german": "geometrische Summe $\\in \\Theta(1)$",
+    "english": ""
+  },
+  "77": {
+    "german": "\\textbf{Mentaler Shortcut: Summen, die exponentiell schrumpfen/wachsen}",
+    "english": ""
+  },
+  "78": {
+    "german": "$\\sum_i c^i$ wird asymptotisch vom größten Summanden dominiert",
+    "english": ""
+  },
+  "79": {
+    "german": "also: $\\sum\\limits_{i = a}^b c^i \\in \\Theta\\left(c^a + c^b\\right)$",
+    "english": ""
+  },
+  "80": {
+    "german": "($c \\in (0, 1) \\cup (1, \\infty)$ konstant)",
+    "english": ""
+  },
+  "81": {
+    "german": "($a, b > 0$ können von $n$ abhängen)",
+    "english": ""
+  },
+  "82": {
+    "german": "\\textbf{Bisher}",
+    "english": ""
+  },
+  "83": {
+    "german": "vier rekursive Multiplikationen",
+    "english": ""
+  },
+  "84": {
+    "german": "\\textbf{Idee zur Verbesserung}",
+    "english": ""
+  },
+  "85": {
+    "german": "ignoriere zunächst die 10er-Potenzen",
+    "english": ""
+  },
+  "86": {
+    "german": "nur drei rekursive Multiplikationen",
+    "english": ""
+  },
+  "87": {
+    "german": "berechne $(a + b) \\cdot (c + d)$, $ac$ und $bd$",
+    "english": ""
+  },
+  "88": {
+    "german": "berechne dann $(ad + bc) = (a + b) \\cdot (c + d) - ac - bd$",
+    "english": ""
+  },
+  "89": {
+    "german": "wenn wir $(a + b) \\cdot (c + d)$, $ac$ und $bd$ kennen, können wir daraus $ad + bc$ erhalten",
+    "english": ""
+  },
+  "90": {
+    "german": "dafür etwas mehr Additionen",
+    "english": ""
+  },
+  "91": {
+    "german": "$a, b \\coloneqq$ first and second half of $x$",
+    "english": ""
+  },
+  "92": {
+    "german": "$c, d \\coloneqq$ first and second half of $y$",
+    "english": ""
+  },
+  "93": {
+    "german": "$a, b \\coloneqq$ first and second half of $x$",
+    "english": ""
+  },
+  "94": {
+    "german": "$c, d \\coloneqq$ first and second half of $y$",
+    "english": ""
+  },
+  "95": {
+    "german": "\\textbf{Erinnerung}",
+    "english": "\\textbf{Reminder}"
+  },
+  "96": {
+    "german": "\\keyword{return} $ac \\cdot 10^{n} + \\mathrm{sum}\\cdot 10^{n/2} + bd$\\n",
+    "english": ""
+  },
+  "97": {
+    "german": "$\\mathrm{sum} \\coloneqq \\function{mult}((a + b), (c + d)) - ac\\n- bd$\\n",
+    "english": ""
+  },
+  "98": {
+    "german": "\\textbf{Anzahl Knoten im Rekursionsbaum}",
+    "english": ""
+  },
+  "99": {
+    "german": "\\textbf{Wie groß ist der Rekursionsbaum?}",
+    "english": ""
+  },
+  "100": {
+    "german": "$3$ Kinder $\\rightarrow$ $3^i$ Knoten auf Lage $i$",
+    "english": ""
+  },
+  "101": {
+    "german": "$n$ wird immer halbiert $\\rightarrow$ $\\log_2(n)$ Lagen",
+    "english": ""
+  },
+  "102": {
+    "german": "\\textbf{Nebenrechnung}",
+    "english": ""
+  },
+  "103": {
+    "german": "\\textbf{Offene Fragen}",
+    "english": ""
+  },
+  "104": {
+    "german": "Wie viel Arbeit macht man in jedem Knoten? Sind die zusätzlichen\\nAdditionen schlimm?",
+    "english": ""
+  },
+  "105": {
+    "german": "Können wir annehmen, dass $n$ eine Zweierpotenz ist?  Könnte nicht $|a\\n+ b| > \\frac{n}{2}$ sein?",
+    "english": ""
+  },
+  "106": {
+    "german": "\\textbf{Arbeit pro Lage}",
+    "english": ""
+  },
+  "107": {
+    "german": "\\textbf{Arbeit pro Knoten}",
+    "english": ""
+  },
+  "108": {
+    "german": "linear in der Größe der Zahlen",
+    "english": ""
+  },
+  "109": {
+    "german": "also: $\\Theta\\left(n \\cdot \\frac{1}{2^i}\\right)$ für einen Knoten auf Lage $i$",
+    "english": ""
+  },
+  "110": {
+    "german": "$3^i$ Knoten auf Lage $i$",
+    "english": ""
+  },
+  "111": {
+    "german": "Gesamtarbeit für Lage $i$:\\n$3^i\\cdot \\Theta\\left(n\\cdot \\frac{1}{2^i}\\right) = \\Theta\\left(n\\cdot\\n  \\left(\\frac{3}{2}\\right)^i\\right)$\\n",
+    "english": ""
+  },
+  "112": {
+    "german": "exponentielle Summe $\\rightarrow$ dominiert durch letzte Lage $i = \\log_2(n)$",
+    "english": ""
+  },
+  "113": {
+    "german": "\\textbf{Arbeit insgesamt}",
+    "english": ""
+  },
+  "114": {
+    "german": "also:\\n$\\Theta\\left(n \\cdot \\left( \\frac{3}{2} \\right)^{\\log_2(n)}\\right) =\\n\\Theta\\left(n \\cdot \\left( \\frac{n^{\\log_2(3)}}{n} \\right)\\right) =\\n\\Theta\\left(n^{\\log_2(3)}\\right)$\\n",
+    "english": ""
+  },
+  "115": {
+    "german": "Sanity Check: letzte Lage hat $n^{\\log_2(3)}$ Knoten und konstanten\\nAufwand pro Knoten",
+    "english": ""
+  },
+  "116": {
+    "german": "\\textbf{Annahme: $n = |x| = |y|$ ist Zweierpotenz}\\n",
+    "english": ""
+  },
+  "117": {
+    "german": "$a, b \\coloneqq$ first, second half of $x$",
+    "english": ""
+  },
+  "118": {
+    "german": "$\\mathrm{sum} \\coloneqq \\function{mult}((a + b), (\\dots))\\dots$",
+    "english": ""
+  },
+  "119": {
+    "german": "$n$ ungerade $\\Rightarrow$\\n$|a| = \\lceil \\frac{n}{2} \\rceil = \\frac{n}{2} + \\frac{1}{2}$\\n",
+    "english": ""
+  },
+  "120": {
+    "german": "Problem: $a + b$ hat ggf.\\ $\\frac{n}{2} + 1$ Ziffern\\n",
+    "english": ""
+  },
+  "121": {
+    "german": "also: keine Zweiterpotenz mehr im rekursiven Aufruf",
+    "english": ""
+  },
+  "122": {
+    "german": "\\textbf{Umgang mit ungeradem $n$}",
+    "english": ""
+  },
+  "123": {
+    "german": "damit hat $a + b$ bis zu $\\frac{n}{2} + \\frac{3}{2}$ Ziffern\\n",
+    "english": ""
+  },
+  "124": {
+    "german": "\\textbf{Was ändert sich bei der Analyse?}",
+    "english": ""
+  },
+  "125": {
+    "german": "$n_i = \\text{\\#Ziffern auf Lage $i$}$ ($n_0 = n$)",
+    "english": ""
+  },
+  "126": {
+    "german": "bisher: $n_i = \\frac{n}{2^i}$",
+    "english": ""
+  },
+  "127": {
+    "german": "jetzt: $n_{i + 1} \\le \\frac{n_{i}}{2} + \\frac{3}{2} \\le \\frac{n}{2^i}\\n+ 3$\\n",
+    "english": ""
+  },
+  "128": {
+    "german": "\\textbf{Nebenrechnung}",
+    "english": ""
+  },
+  "129": {
+    "german": "kein asymptotischer Unterschied $\\rightarrow$ Laufzeit $\\Theta\\left(n^{\\log_2(3)}\\right)$\\n",
+    "english": ""
+  },
+  "130": {
+    "german": "Achtung: Abbruch der Rekursion müsste man hier nochmal genauer\\nanschauen.\\n\\nMöglichkeit 1: Zeige, dass es für konstant viele Ziffern nach\\nkonstanter Zeit terminiert.\\n\\nMöglichkeit 2: Brich die Rekursion nicht erst bei $n = 1$, sondern\\netwas früher ab.\\n",
+    "english": ""
+  },
+  "131": {
+    "german": "$a, b \\coloneqq$ first and second half of $x$",
+    "english": ""
+  },
+  "132": {
+    "german": "$c, d \\coloneqq$ first and second half of $y$",
+    "english": ""
+  },
+  "133": {
+    "german": "\\keyword{return} $ac \\cdot 10^{n} + \\mathrm{sum}\\cdot 10^{n/2} + bd$\\n",
+    "english": ""
+  },
+  "134": {
+    "german": "$\\mathrm{sum} \\coloneqq \\function{mult}((a + b), (c + d)) - ac\\n- bd$\\n",
+    "english": ""
+  },
+  "135": {
+    "german": "\\textbf{Theorem}\\\\\\nKaratsubas Algo.\\ multipliziert zwei $n$-Ziffern Zahlen in\\n$\\Theta\\left(n^{\\log_2(3)}\\right) \\subseteq\\nO\\left(n^{\\num{1.585}}\\right)$ Zeit.\\n",
+    "english": ""
+  },
+  "136": {
+    "german": "\\textbf{Analyse via Rekursionsbaum}",
+    "english": ""
+  },
+  "137": {
+    "german": "Wie viele Knoten sind auf Lage $i$?",
+    "english": ""
+  },
+  "138": {
+    "german": "Wie groß ist das $n$ auf Lage $i$?",
+    "english": ""
+  },
+  "139": {
+    "german": "Wie viel Zeit kostet ein Knoten in Lage $i$?\\n",
+    "english": ""
+  },
+  "140": {
+    "german": "Grumpy cat line art",
+    "english": "Grumpy cat line art"
+  },
+  "141": {
+    "german": "XXspiritwolf2000XX",
+    "english": "XXspiritwolf2000XX"
+  },
+  "142": {
+    "german": "Creative Commons",
+    "english": "Creative Commons"
+  },
+  "143": {
+    "german": "Bild:",
+    "english": "Image:"
+  },
+  "144": {
+    "german": "\\textbf{Warum ist das so viel Arbeit?}",
+    "english": ""
+  },
+  "145": {
+    "german": "\\textbf{Muss ich das für jeden rekursiven Algorithmus so analysieren?}\\n",
+    "english": ""
+  },
+  "146": {
+    "german": "\\textbf{Kann man da nicht irgendwie abkürzen?}\\n",
+    "english": ""
+  },
+  "147": {
+    "german": "\\textbf{Laufzeit als Formel}",
+    "english": ""
+  },
+  "148": {
+    "german": "$T(n) =\\n\\begin{cases}\\n  \\Theta(1) & \\text{wenn $n = 1$,}\\\\\\n  3 \\cdot T\\left(\\frac{n}{2}\\right) + \\Theta(n) & \\text{wenn $n > 1$.}\\n\\end{cases}\\n$",
+    "english": ""
+  },
+  "149": {
+    "german": "Laufzeit für Basisfall $\\rightarrow$ Kosten in den Blättern",
+    "english": ""
+  },
+  "150": {
+    "german": "Anzahl rekursiver Aufrufe\\\\\\n$\\rightarrow$ Anzahl Kinder im Baum\\n",
+    "english": ""
+  },
+  "151": {
+    "german": "neue Instanzgrößen\\\\\\n$\\rightarrow$ Änderung von $n$ zwischen Lagen\\n",
+    "english": ""
+  },
+  "152": {
+    "german": "Laufzeit für den Aufruf selbst\\\\\\n$\\rightarrow$ Kosten für einen Knoten",
+    "english": ""
+  },
+  "153": {
+    "german": "\\textbf{Können wir das verallgemeinern?}",
+    "english": ""
+  },
+  "154": {
+    "german": "$T(n) =\\n\\begin{cases}\\n  \\Theta(1) & \\text{wenn $n = 1$,}\\\\\\n  a \\cdot T\\left(\\frac{n}{b}\\right) + \\Theta(n^c) & \\text{wenn $n > 1$.}\\n\\end{cases}\\n$",
+    "english": ""
+  },
+  "155": {
+    "german": "\\textbf{Analyse via Rekursionsbaum}",
+    "english": ""
+  },
+  "156": {
+    "german": "Wie viele Knoten sind auf Lage $i$?",
+    "english": ""
+  },
+  "157": {
+    "german": "Wie groß ist das $n$ auf Lage $i$?",
+    "english": ""
+  },
+  "158": {
+    "german": "Wie viel Zeit kostet ein Knoten in Lage $i$?\\n",
+    "english": ""
+  },
+  "159": {
+    "german": "$a, b \\coloneqq$ first and second half of $x$",
+    "english": ""
+  },
+  "160": {
+    "german": "$c, d \\coloneqq$ first and second half of $y$",
+    "english": ""
+  },
+  "161": {
+    "german": "\\keyword{return} $ac \\cdot 10^{n} + \\mathrm{sum}\\cdot 10^{n/2} + bd$\\n",
+    "english": ""
+  },
+  "162": {
+    "german": "$\\mathrm{sum} \\coloneqq \\function{mult}((a + b), (c + d)) - ac\\n- bd$\\n",
+    "english": ""
+  },
+  "163": {
+    "german": "\\textbf{Können wir das verallgemeinern?}",
+    "english": ""
+  },
+  "164": {
+    "german": "$T(n) =\\n\\begin{cases}\\n  \\Theta(1) & \\text{wenn $n = 1$,}\\\\\\n  a \\cdot T\\left(\\frac{n}{b}\\right) + \\Theta(n^c) & \\text{wenn $n > 1$.}\\n\\end{cases}\\n$",
+    "english": ""
+  },
+  "165": {
+    "german": "\\textbf{Analyse via Rekursionsbaum}",
+    "english": ""
+  },
+  "166": {
+    "german": "Wie viele Knoten sind auf Lage $i$?",
+    "english": ""
+  },
+  "167": {
+    "german": "Wie groß ist das $n$ auf Lage $i$?",
+    "english": ""
+  },
+  "168": {
+    "german": "Wie viel Zeit kostet ein Knoten in Lage $i$?\\n",
+    "english": ""
+  },
+  "169": {
+    "german": "\\textbf{Situation für Lage $i$}",
+    "english": ""
+  },
+  "170": {
+    "german": "\\#Knoten:",
+    "english": ""
+  },
+  "171": {
+    "german": "Instanzgröße:",
+    "english": ""
+  },
+  "172": {
+    "german": "Kosten pro Knoten:",
+    "english": ""
+  },
+  "173": {
+    "german": "\\textbf{Gesamtkosten für Lage $i$}",
+    "english": ""
+  },
+  "174": {
+    "german": "\\textbf{Gesamtkosten für den Baum}",
+    "english": ""
+  },
+  "175": {
+    "german": "\\textbf{Anzahl Lagen}",
+    "english": ""
+  },
+  "176": {
+    "german": "exponentielle Summe",
+    "english": ""
+  },
+  "177": {
+    "german": "$\\rightarrow$ dominiert von größtem Summanden",
+    "english": ""
+  },
+  "178": {
+    "german": "(außer wenn $a / b^c = 1$)",
+    "english": ""
+  },
+  "179": {
+    "german": "(Kosten der Wurzel dominiert)",
+    "english": ""
+  },
+  "180": {
+    "german": "(Kosten auf jeder der $\\log_b(n)$ Lagen gleich)",
+    "english": ""
+  },
+  "181": {
+    "german": "(Kosten der $n^{\\log_b(a)}$ Blätter dominiert)",
+    "english": ""
+  },
+  "182": {
+    "german": "\\textbf{Theorem}\\\\\\nSei $T(n) = a\\cdot T(\\frac{n}{b}) + f(n)$ mit $f(n) \\in \\Theta(n^c)$\\nund $T(1) \\in \\Theta(1)$. Dann gilt\\n%\\n\\begin{align*}\\n  T(n) \\in\\n  \\begin{cases}\\n    \\Theta\\left(n^c\\right) &\\text{wenn }a < b^c,\\\\\\n    \\Theta\\left(n^c \\log n\\right) &\\text{wenn }a = b^c,\\\\\\n    \\Theta\\left(n^{\\log_b(a)}\\right) &\\text{wenn }a > b^c.\\n  \\end{cases}\\n\\end{align*}\\n",
+    "english": ""
+  },
+  "183": {
+    "german": "\\textbf{Ein Name, viele Theoreme}",
+    "english": ""
+  },
+  "184": {
+    "german": "es gibt viele Varianten des Master-Theorems",
+    "english": ""
+  },
+  "185": {
+    "german": "Einschränkung $f(n) \\in \\Theta(n^c)$ kann man aufweichen",
+    "english": ""
+  },
+  "186": {
+    "german": "asymmetrische Verzweigung: z.B.  $T(n) = T(\\frac{n}{2}) + 2 T(\\frac{n}{4})$\\n",
+    "english": ""
+  },
+  "187": {
+    "german": "Runden auf ganze Zahlen",
+    "english": ""
+  },
+  "188": {
+    "german": "aktuelles Papier zum Thema:",
+    "english": ""
+  },
+  "189": {
+    "german": "Floors and Ceilings in Divide-and-Conquer Recurrences",
+    "english": ""
+  },
+  "190": {
+    "german": "William Kuszmaul, Charles E. Leiserson",
+    "english": ""
+  },
+  "191": {
+    "german": "Symposium on Simplicity in Algorithms (SOSA 2021)",
+    "english": ""
+  },
+  "192": {
+    "german": "\\textbf{Karatsubas Algorithmus}",
+    "english": ""
+  },
+  "193": {
+    "german": "Multiplikation zweier $n$-Ziffern Zahlen in\\n$\\Theta\\left(n^{\\log_2(3)}\\right) \\subseteq\\nO\\left(n^{\\num{1.585}}\\right)$ Zeit\\n",
+    "english": ""
+  },
+  "194": {
+    "german": "noch schneller:",
+    "english": ""
+  },
+  "195": {
+    "german": "\\textbf{Auflösung von Rekurrenzen}",
+    "english": ""
+  },
+  "196": {
+    "german": "Analyse des Rekursionsbaums + exponentielle Summen $\\rightarrow$\\nMaster-Theorem\\n",
+    "english": ""
+  },
+  "197": {
+    "german": "Master-Theorem funktioniert nicht immer (z.B.  $T(n) = 2T(n - 1)$)\\n",
+    "english": ""
+  },
+  "198": {
+    "german": "weitere Techniken: branching vector, vollständige Induktion",
+    "english": ""
+  },
+  "199": {
+    "german": "nützlich: WolframAlpha",
+    "english": ""
+  },
+  "200": {
+    "german": "\\textbf{Pseudocode}",
+    "english": ""
+  },
+  "201": {
+    "german": "algorithmische Technik: Teile und Herrsche\\n",
+    "english": ""
+  },
+  "202": {
+    "german": "meldet euch  bis \\textbf{morgen 18 Uhr} für die Tutorien an",
+    "english": ""
+  },
+  "203": {
+    "german": "kommt in den Discord-Server",
+    "english": ""
+  },
+  "204": {
+    "german": "(Infos auf der Homepage)",
+    "english": ""
+  },
+  "205": {
+    "german": "(Link im Ilias)",
+    "english": ""
+  }
+}

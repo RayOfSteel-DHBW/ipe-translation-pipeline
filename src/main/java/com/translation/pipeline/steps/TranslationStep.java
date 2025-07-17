@@ -38,8 +38,8 @@ public class TranslationStep extends PipelineStepBase {
         File outputFile = new File(getOutputDirectory(), fileName + OUTPUT_EXT);
         logger.info("Translating: " + txtFile.getName() + " -> " + outputFile.getName());
 
-        translationService.translate(txtFile.getAbsolutePath(), outputFile.getAbsolutePath());
-        return true;
+        return translationService.translate(txtFile.getAbsolutePath(), outputFile.getAbsolutePath());
+
     }
 
     public TranslationService getTranslationService() {

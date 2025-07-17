@@ -1,0 +1,854 @@
+{
+  "1": {
+    "german": "Brücken in Graphen",
+    "english": "Bridges in graphs"
+  },
+  "2": {
+    "german": "Erinnerung: Graphtraversierung",
+    "english": "Recall: graph traversal"
+  },
+  "3": {
+    "german": "DFS-Baum",
+    "english": "DFS tree"
+  },
+  "4": {
+    "german": "Charakterisierung von Brücken via DFS-Baum",
+    "english": "Characterising bridges via DFS tree"
+  },
+  "5": {
+    "german": "Beweis der strukturellen Einsicht",
+    "english": "Proof of structural insight"
+  },
+  "6": {
+    "german": "Von der strukturellen zur algorithmischen Sichtweise",
+    "english": "From structural to algorithmic view"
+  },
+  "7": {
+    "german": "Algorithmische Umsetzung",
+    "english": "Algorithmic realisation"
+  },
+  "8": {
+    "german": "Berechnung von $\\low(v)$",
+    "english": "Computing $\\low(v)$"
+  },
+  "9": {
+    "german": "Algorithmus $\\rightarrow$ Rekursive Implementierung",
+    "english": "Algorithm → recursive implementation"
+  },
+  "10": {
+    "german": "Algorithmus $\\rightarrow$ Implementierung",
+    "english": "Algorithm → implementation"
+  },
+  "11": {
+    "german": "Zusammenfassung \\& Ausblick",
+    "english": "Summary and outlook"
+  },
+  "12": {
+    "german": "Thomas Bläsius~--~Algorithmen 1",
+    "english": "Thomas Bläsius~--~Algorithms 1"
+  },
+  "13": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "14": {
+    "german": "\\textbf{Tiefensuche: Brücken finden",
+    "english": "\\textbf{Depth-first search: finding bridges}"
+  },
+  "15": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "16": {
+    "german": "\\textbf{Definition}\\\\\\nSei $G = (V, E)$ ein Graph.  Eine Kante $e = \\{u, v\\} \\in E$ heißt\\n\\emph{Brücke}, wenn $u$ und $v$ in $G - e$ in verschiedenen\\nZusammenhangskomponenten liegen.\\n",
+    "english": "\\textbf{Definition}\\\\\\nLet $G = (V, E)$ be a graph. An edge $e = \\{u, v\\} \\in E$ is a\\n\\emph{bridge} if $u$ and $v$ lie in different components of $G - e$.\\n"
+  },
+  "17": {
+    "german": "Brücke",
+    "english": "Bridge"
+  },
+  "18": {
+    "german": "Brücke",
+    "english": "Bridge"
+  },
+  "19": {
+    "german": "\\textbf{Ziel heute}",
+    "english": "\\textbf{Goal today}"
+  },
+  "20": {
+    "german": "finde alle Brücken",
+    "english": "find all bridges"
+  },
+  "21": {
+    "german": "lerne dabei die Tiefensuche (DFS) besser kennen",
+    "english": "get to know DFS better"
+  },
+  "22": {
+    "german": "\\textbf{Warum interessieren uns Brücken?}",
+    "english": "\\textbf{Why care about bridges?}"
+  },
+  "23": {
+    "german": "interessante graphtheoretische Struktur $\\rightarrow$ kleinstmögliche\\nSchnitte",
+    "english": "interesting graph-theoretic structure $\\rightarrow$ minimum cuts"
+  },
+  "24": {
+    "german": "zerlegt den Graphen in mehrere Komponenten $\\rightarrow$ gut für Teile\\nund Herrsche",
+    "english": "splits the graph into components $\\rightarrow$ good for divide and conquer"
+  },
+  "25": {
+    "german": "\\textbf{Breitensuche (BFS)}",
+    "english": "\\textbf{Breadth-first search (BFS)}"
+  },
+  "26": {
+    "german": "\\textbf{Tiefensuche (DFS)}",
+    "english": "\\textbf{Depth-first search (DFS)}"
+  },
+  "27": {
+    "german": "starte bei einem Knoten $s$",
+    "english": "start at a node $s$"
+  },
+  "28": {
+    "german": "besuche alle Nachbarn von $s$",
+    "english": "visit all neighbours of $s$"
+  },
+  "29": {
+    "german": "dann alle Nachbarn der Nachbarn usw.",
+    "english": "then neighbours of neighbours etc."
+  },
+  "30": {
+    "german": "starte bei einem Knoten $s$",
+    "english": "start at a node $s$"
+  },
+  "31": {
+    "german": "laufe in jedem Schritt zu neuem Nachbarn\\n",
+    "english": "walk to a new neighbour each step\\n"
+  },
+  "32": {
+    "german": "Sackgasse (kein neuer Nachbar)\\\\\\n$\\rightarrow$ Backtracking:  zurück zum Vorgänger\\n",
+    "english": "Dead end (no new neighbour)\\\\\\n$\\rightarrow$ backtracking: return to predecessor\\n"
+  },
+  "33": {
+    "german": "besuchter Knoten",
+    "english": "visited node"
+  },
+  "34": {
+    "german": "unbesuchter Knoten",
+    "english": "unvisited node"
+  },
+  "35": {
+    "german": "aktueller Knoten",
+    "english": "current node"
+  },
+  "36": {
+    "german": "Pfad zum aktuellen Knoten",
+    "english": "path to current node"
+  },
+  "37": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "38": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "39": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "40": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "41": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "42": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "43": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "44": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "45": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "46": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "47": {
+    "german": "\\textbf{Ende}",
+    "english": "\\textbf{End}"
+  },
+  "48": {
+    "german": "$s$ ist Sackgasse",
+    "english": "$s$ is a dead end"
+  },
+  "49": {
+    "german": "$\\Rightarrow$ alle von $s$ erreichbaren Knoten gefärbt",
+    "english": "$\\Rightarrow$ all nodes reachable from $s$ are coloured"
+  },
+  "50": {
+    "german": "\\textbf{Nachbarn}",
+    "english": "\\textbf{Neighbours}"
+  },
+  "51": {
+    "german": "\\textbf{Nachbarn der Nachbarn}",
+    "english": "\\textbf{Neighbours of neighbours}"
+  },
+  "52": {
+    "german": "\\textbf{Nachbarn der Nachbarn der Nachbarn}",
+    "english": "\\textbf{Neighbours of neighbours of neighbours}"
+  },
+  "53": {
+    "german": "{Layer 1}",
+    "english": "{Layer 1}"
+  },
+  "54": {
+    "german": "{Layer 2}",
+    "english": "{Layer 2}"
+  },
+  "55": {
+    "german": "{Layer 3}",
+    "english": "{Layer 3}"
+  },
+  "56": {
+    "german": "besuchter Knoten",
+    "english": "visited node"
+  },
+  "57": {
+    "german": "unbesuchter Knoten",
+    "english": "unvisited node"
+  },
+  "58": {
+    "german": "aktueller Knoten",
+    "english": "current node"
+  },
+  "59": {
+    "german": "Pfad zum aktuellen Knoten",
+    "english": "path to current node"
+  },
+  "60": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "61": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "62": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "63": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "64": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "65": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "66": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "67": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "68": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "69": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "70": {
+    "german": "\\textbf{Beobachtung}",
+    "english": "\\textbf{Observation}"
+  },
+  "71": {
+    "german": "beim Explorieren eines Knotens überspringen wir Kanten zu schon\\nbesuchten Knoten",
+    "english": "while exploring a node we skip edges to already visited nodes"
+  },
+  "72": {
+    "german": "nicht-übersprungene Kanten bilden einen Baum $\\rightarrow$\\n\\emph{Baumkanten}",
+    "english": "non-skipped edges form a tree $\\rightarrow$ \\emph{tree edges}"
+  },
+  "73": {
+    "german": "Rückkante",
+    "english": "back edge"
+  },
+  "74": {
+    "german": "wir nennen sie auch \\emph{Rückkanten}",
+    "english": "we also call them \\emph{back edges}"
+  },
+  "75": {
+    "german": "\\textbf{Anmerkung: Rückkanten}",
+    "english": "\\textbf{Note: back edges}"
+  },
+  "76": {
+    "german": "zeigen immer zu einem Vorgänger im DFS-Baum",
+    "english": "always point to an ancestor in the DFS tree"
+  },
+  "77": {
+    "german": "gerichtete Graphen: weitere Kantentypen",
+    "english": "directed graphs: more edge types"
+  },
+  "78": {
+    "german": "englisch: back edge",
+    "english": "English: back edge"
+  },
+  "79": {
+    "german": "\\textbf{Brücken und Bäume}",
+    "english": "\\textbf{Bridges and trees}"
+  },
+  "80": {
+    "german": "in einem Baum ist jede Kante eine Brücke",
+    "english": "in a tree every edge is a bridge"
+  },
+  "81": {
+    "german": "die Rückkanten sind entscheidend",
+    "english": "the back edges are crucial"
+  },
+  "82": {
+    "german": "\\textbf{Beispiel: Warum ist $\\{0, 1\\}$ keine Brücke?}",
+    "english": "\\textbf{Example: why is $\\{0, 1\\}$ not a bridge?}"
+  },
+  "83": {
+    "german": "löschen von $\\{0, 1\\}$ trennt im DFS-Baum den Teilbaum unter $1$ vom\\nRest ab",
+    "english": "deleting $\\{0, 1\\}$ separates the subtree under $1$ from the rest in the DFS tree"
+  },
+  "84": {
+    "german": "$\\{3, 0\\}$ ist Zeuge, dass $\\{0, 1\\}$ keine Brücke ist",
+    "english": "$\\{3, 0\\}$ witnesses that $\\{0, 1\\}$ is not a bridge"
+  },
+  "85": {
+    "german": "Rückkante $\\{3, 0\\}$ stellt Verbindung zum Restgraphen her",
+    "english": "Back edge $\\{3, 0\\}$ reconnects to the rest of the graph"
+  },
+  "86": {
+    "german": "\\textbf{Beispiel: Warum ist $\\{1, 2\\}$ keine Brücke?}",
+    "english": "\\textbf{Example: why is $\\{1, 2\\}$ not a bridge?}"
+  },
+  "87": {
+    "german": "löschen von $\\{1, 2\\}$ trennt im DFS-Baum den Teilbaum unter $2$ vom\\nRest ab",
+    "english": "deleting $\\{1, 2\\}$ separates the subtree under $2$ from the rest in the DFS tree"
+  },
+  "88": {
+    "german": "hier gibt es gleich mehrere Zeugen: $\\{3, 0\\}$, $\\{3, 1\\}$, $\\{5, 1\\}$",
+    "english": "there are several witnesses: $\\{3, 0\\}$, $\\{3, 1\\}$, $\\{5, 1\\}$"
+  },
+  "89": {
+    "german": "\\textbf{Beispiel: Warum ist $\\{0, 6\\}$ eine Brücke?}",
+    "english": "\\textbf{Example: why is $\\{0, 6\\}$ a bridge?}"
+  },
+  "90": {
+    "german": "löschen von $\\{0, 6\\}$ trennt im DFS-Baum den Teilbaum unter $6$ vom\\nRest ab",
+    "english": "deleting $\\{0, 6\\}$ separates the subtree under $6$ from the rest in the DFS tree"
+  },
+  "91": {
+    "german": "es gibt keine Rückkante aus dem Teilbaum zu einem Vorgänger von $6$",
+    "english": "there is no back edge from the subtree to an ancestor of $6$"
+  },
+  "92": {
+    "german": "man erreicht insbesondere nicht mehr die Wurzel ($0$)",
+    "english": "in particular the root ($0$) is no longer reachable"
+  },
+  "93": {
+    "german": "\\textbf{Wann ist eine Baumkante $\\{u, v\\}$ eine Brücke?}",
+    "english": "\\textbf{When is a tree edge $\\{u, v\\}$ a bridge?}"
+  },
+  "94": {
+    "german": "\\textbf{Anmerkung: Notation}",
+    "english": "\\textbf{Note: notation}"
+  },
+  "95": {
+    "german": "Knoten sind hier mit ihrer DFS-Nummer bezeichnet",
+    "english": "nodes are labelled by their DFS number here"
+  },
+  "96": {
+    "german": "Rückkanten sehen wir als gerichtet an",
+    "english": "we view back edges as directed"
+  },
+  "97": {
+    "german": "sei $u$ der Elter und $v$ das Kind",
+    "english": "let $u$ be the parent and $v$ the child"
+  },
+  "98": {
+    "german": "$\\{u, v\\}$ ist Brücke $\\Leftrightarrow$ keine Rückkante aus dem Teilbaum\\nunter $v$ nach oberhalb von $v$\\n",
+    "english": "$\\{u, v\\}$ is a bridge $\\Leftrightarrow$ no back edge from the subtree under $v$ ends above $v$\\n"
+  },
+  "99": {
+    "german": "\\textbf{Außerdem:} Rückkanten sind nie Brücken\\n",
+    "english": "\\textbf{Moreover:} back edges are never bridges\\n"
+  },
+  "100": {
+    "german": "\\textbf{Wann ist eine Rückkante $\\{u, v\\}$ eine Brücke?}",
+    "english": "\\textbf{When is a back edge $\\{u, v\\}$ a bridge?}"
+  },
+  "101": {
+    "german": "\\textbf{Theorem\\hfill (strukturell)}\\\\\\nEine Kante $\\{u, v\\}$ ist genau dann eine Brücke, wenn%\\n",
+    "english": "\\textbf{Theorem\\hfill (structural)}\\\\\\nAn edge $\\{u, v\\}$ is a bridge iff%"
+  },
+  "102": {
+    "german": "$\\{u, v\\}$ ist eine Baumkante mit Elter $u$ und Kind $v$ und\\hfill (1)\\n",
+    "english": "$\\{u, v\\}$ is a tree edge with parent $u$ and child $v$ and\\hfill (1)\\n"
+  },
+  "103": {
+    "german": "keine Rückkante aus dem Teilbaum unter $v$ endet oberhalb von\\n$v$. \\hfill (2)\\n",
+    "english": "no back edge from the subtree under $v$ ends above $v$. \\hfill (2)\\n"
+  },
+  "104": {
+    "german": "\\textbf{Grober Plan: Fallunterscheidung}",
+    "english": "\\textbf{Rough plan: case analysis}"
+  },
+  "105": {
+    "german": "Fall 1: $\\{u, v\\}$ ist eine Rückkante $\\Rightarrow$ keine Brücke",
+    "english": "Case 1: $\\{u, v\\}$ is a back edge $\\Rightarrow$ not a bridge"
+  },
+  "106": {
+    "german": "es gibt einen Pfad zwischen $u$ und $v$ im DFS-Baum",
+    "english": "there is a path between $u$ and $v$ in the DFS tree"
+  },
+  "107": {
+    "german": "$u$ und $v$ bleiben in der selben Komponente, wenn man $\\{u,\\nv\\}$ löscht",
+    "english": "$u$ and $v$ stay in the same component when $\\{u, v\\}$ is removed"
+  },
+  "108": {
+    "german": "Fall 2: $\\{u, v\\}$ ist eine Baumkante $\\Rightarrow$ \\big[Brücke\\n$\\Leftrightarrow$ (2) gilt\\big]",
+    "english": "Case 2: $\\{u, v\\}$ is a tree edge $\\Rightarrow$ \\big[bridge $\\Leftrightarrow$ (2) holds\\big]"
+  },
+  "109": {
+    "german": "Fall 2.1: (2) gilt nicht (es gibt Rückkante) $\\Rightarrow$ keine\\nBrücke\\n",
+    "english": "Case 2.1: (2) fails (there is a back edge) $\\Rightarrow$ not a bridge\\n"
+  },
+  "110": {
+    "german": "Fall 2.2: (2) gilt (es gibt keine Rückkante) $\\Rightarrow$ Brücke",
+    "english": "Case 2.2: (2) holds (no back edge) $\\Rightarrow$ bridge"
+  },
+  "111": {
+    "german": "\\textbf{Beachte}",
+    "english": "\\textbf{Note}"
+  },
+  "112": {
+    "german": "die Fallunterscheidung deckt alle Fälle ab",
+    "english": "the case analysis covers all cases"
+  },
+  "113": {
+    "german": "zeige: in jedem Fall ist die Aussage des Theorems erfüllt",
+    "english": "show: in every case the theorem holds"
+  },
+  "114": {
+    "german": "\\textbf{Zeige für Fall 1: $\\{u, v\\}$ ist eine Rückkante $\\Rightarrow$ keine Brücke}",
+    "english": "Prove for Case 1: $\\{u, v\\}$ is a back edge $\\Rightarrow$ not a bridge"
+  },
+  "115": {
+    "german": "\\textbf{Zeige für Fall 2.1: (2) gilt nicht (es gibt Rückkante)\\n  $\\Rightarrow$ keine Brücke }\\n",
+    "english": "Prove for Case 2.1: (2) fails (there is a back edge) $\\Rightarrow$ not a bridge"
+  },
+  "116": {
+    "german": "sei $\\{v', u'\\}$ die Rückkante, sodass $v'$ im Teilbaum von $v$ und\\n$u'$ über $v$ liegt",
+    "english": "let $\\{v', u'\\}$ be the back edge with $v'$ in $v$'s subtree and $u'$ above $v$"
+  },
+  "117": {
+    "german": "(Baumpfad $v, \\dots, v'$) + $\\{v', u'\\}$ + (Baumpfad $u', \\dots, u$)\\\\\\n$\\Rightarrow$ $u$ und $v$ bleiben in der selben Komponente\\n",
+    "english": "(tree path $v, \\dots, v'$) + $\\{v', u'\\}$ + (tree path $u', \\dots, u$)\\\\\\n$\\Rightarrow$ $u$ and $v$ stay in the same component\\n"
+  },
+  "118": {
+    "german": "\\textbf{Zeige für Fall 2.2: (2) gilt (es gibt keine Rückkante) $\\Rightarrow$ Brücke}",
+    "english": "Prove for Case 2.2: (2) holds (no back edge) $\\Rightarrow$ bridge"
+  },
+  "119": {
+    "german": "sei $T_v = (V_v, E_v)$ der Teilbaum unter $v$ (inklusive $v$)\\n",
+    "english": "let $T_v = (V_v, E_v)$ be the subtree under $v$ (including $v$)\\n"
+  },
+  "120": {
+    "german": "$\\{u, v\\}$ ist die einzige Kante zwischen $T_v$ und Knoten außerhalb, denn:",
+    "english": "$\\{u, v\\}$ is the only edge between $T_v$ and outside nodes, because:"
+  },
+  "121": {
+    "german": "angenommen es gibt weitere Kante $\\{u', v'\\}$ mit $v' \\in V_v$ und $u'\\n\\notin V_v$",
+    "english": "assume there is another edge $\\{u', v'\\}$ with $v' \\in V_v$ and $u' \\notin V_v$"
+  },
+  "122": {
+    "german": "$\\{u', v'\\}$ ist keine Baumkante, sonst wäre $u'$ in $T_v$",
+    "english": "$\\{u', v'\\}$ is not a tree edge, otherwise $u'$ would be in $T_v$"
+  },
+  "123": {
+    "german": "$\\{u', v'\\}$ ist also Rückkante und $u'$ ist Vorgänger von $v'$ im DFS-Baum",
+    "english": "thus $\\{u', v'\\}$ is a back edge and $u'$ is an ancestor of $v'$ in the DFS tree"
+  },
+  "124": {
+    "german": "da $u' \\notin V_v$ muss $u'$ auch oberhalb von $v$ liegen\\n$\\Rightarrow$ (2) gilt nicht",
+    "english": "since $u' \\notin V_v$ it lies above $v$ $\\Rightarrow$ (2) fails"
+  },
+  "125": {
+    "german": "$\\{u, v\\}$ löschen trennt $T_v$ vom Rest des Graphen $\\Rightarrow$\\n$\\{u, v\\}$ ist Brücke",
+    "english": "deleting $\\{u, v\\}$ separates $T_v$ from the rest $\\Rightarrow$ bridge"
+  },
+  "126": {
+    "german": "\\textbf{Theorem\\hfill (strukturell)}\\\\\\nEine Kante $\\{u, v\\}$ ist genau dann eine Brücke, wenn%\\n",
+    "english": "\\textbf{Theorem\\hfill (structural)}\\\\\\nAn edge $\\{u, v\\}$ is a bridge iff%"
+  },
+  "127": {
+    "german": "$\\{u, v\\}$ ist eine Baumkante mit Elter $u$ und Kind $v$ und\\hfill (1)\\n",
+    "english": "$\\{u, v\\}$ is a tree edge with parent $u$ and child $v$ and\\hfill (1)\\n"
+  },
+  "128": {
+    "german": "keine Rückkante aus dem Teilbaum unter $v$ endet oberhalb von\\n$v$. \\hfill (2)\\n",
+    "english": "no back edge from the subtree under $v$ ends above $v$. \\hfill (2)\\n"
+  },
+  "129": {
+    "german": "\\textbf{Algorithmische Sichtweise}",
+    "english": "\\textbf{Algorithmic view}"
+  },
+  "130": {
+    "german": "(1) ist leicht zu überprüfen für eine Kante $\\{u, v\\}$",
+    "english": "(1) is easy to check for an edge $\\{u, v\\}$"
+  },
+  "131": {
+    "german": "Problem bei (2): den ganzen Teilbaum unter $v$ anschauen ist teuer",
+    "english": "issue with (2): inspecting the whole subtree of $v$ is expensive"
+  },
+  "132": {
+    "german": "(linear in der Größe des Teilbaums $\\rightarrow$ potentiell\\nquadratisch insgesamt)",
+    "english": "(linear in subtree size $\\rightarrow$ potentially quadratic overall)"
+  },
+  "133": {
+    "german": "\\textbf{Plan im Folgenden}",
+    "english": "\\textbf{Plan below}"
+  },
+  "134": {
+    "german": "definiere einen Wert $\\low(v)$ für jeden Knoten $v$",
+    "english": "define a value $\\low(v)$ for each node $v$"
+  },
+  "135": {
+    "german": "sodass man an $\\low(v)$ ablesen kann, ob (2) für $v$ erfüllt ist\\n",
+    "english": "such that $\\low(v)$ tells whether (2) holds for $v$\\n"
+  },
+  "136": {
+    "german": "berechne diese $\\low(v)$ während der DFS gleich mit\\n",
+    "english": "compute these $\\low(v)$ during the DFS\\n"
+  },
+  "137": {
+    "german": "\\textbf{Definition}\\\\\\nSei \\emph{$\\low(v)$} das Minimum aus der DFS-Nummer von $v$ und der\\nkleinsten DFS-Nummer, die man von einem Knoten im Teilbaum unter $v$\\nmit einer Rückkante erreichen kann.\\n",
+    "english": "\\textbf{Definition}\\\\\\nLet \\emph{$\\low(v)$} be the minimum of the DFS number of $v$ and the\\nsmallest DFS number reachable from the subtree under $v$ via a back edge.\\n"
+  },
+  "138": {
+    "german": "\\textbf{Wann ist eine Baumkante $\\{u, v\\}$ eine Brücke?}",
+    "english": "\\textbf{When is a tree edge $\\{u, v\\}$ a bridge?}"
+  },
+  "139": {
+    "german": "keine Rückkante (2)\\hfill $\\Rightarrow$ $\\low(v) = $ DFS-Nummer von $v$",
+    "english": "no back edge (2)\\hfill $\\Rightarrow$ $\\low(v) = $ DFS number of $v$"
+  },
+  "140": {
+    "german": "\\textbf{Theorem\\hfill (strukturell)}\\\\\\nEine Kante $\\{u, v\\}$ ist genau dann eine Brücke, wenn%\\n",
+    "english": "\\textbf{Theorem\\hfill (structural)}\\\\\\nAn edge $\\{u, v\\}$ is a bridge iff%"
+  },
+  "141": {
+    "german": "$\\{u, v\\}$ ist eine Baumkante mit Elter $u$ und Kind $v$ und\\hfill (1)\\n",
+    "english": "$\\{u, v\\}$ is a tree edge with parent $u$ and child $v$ and\\hfill (1)\\n"
+  },
+  "142": {
+    "german": "keine Rückkante aus dem Teilbaum unter $v$ endet oberhalb von\\n$v$. \\hfill (2)\\n",
+    "english": "no back edge from the subtree under $v$ ends above $v$. \\hfill (2)\\n"
+  },
+  "143": {
+    "german": "Rückkante (nicht 2)\\hfill $\\Rightarrow$ $\\low(v) < $ DFS-Nummer von $v$",
+    "english": "back edge present\\hfill $\\Rightarrow$ $\\low(v) < $ DFS number of $v$"
+  },
+  "144": {
+    "german": "also: $\\{u, v\\}$ ist Brücke \\hfill $\\Leftrightarrow$ $\\low(v) = $ DFS-Nummer\\nvon $v$",
+    "english": "thus: $\\{u, v\\}$ is a bridge $\\Leftrightarrow$ $\\low(v) = $ DFS number of $v$"
+  },
+  "145": {
+    "german": "\\textbf{Wie berechnen wir $\\low(v)$?}",
+    "english": "\\textbf{How do we compute $\\low(v)$?}"
+  },
+  "146": {
+    "german": "können wir on-the-fly bei der DFS erledigen",
+    "english": "we can compute it on the fly during DFS"
+  },
+  "147": {
+    "german": "grob: $\\low(v)$ ergibt sich aus",
+    "english": "roughly, $\\low(v)$ depends on"
+  },
+  "148": {
+    "german": "der DFS-Nummer von $v$",
+    "english": "the DFS number of $v$"
+  },
+  "149": {
+    "german": "den Rückkanten von $v$",
+    "english": "the back edges of $v$"
+  },
+  "150": {
+    "german": "den Werten $\\low(u_1), \\dots, \\low(u_k)$ der Kinder $u_1, \\dots, u_k$\\nvon $v$",
+    "english": "the values $\\low(u_1), \\dots, \\low(u_k)$ of the children $u_1, \\dots, u_k$ of $v$"
+  },
+  "151": {
+    "german": "\\textbf{Definition}\\\\\\nSei \\emph{$\\low(v)$} das Minimum aus der DFS-Nummer von $v$ und der\\nkleinsten DFS-Nummer, die man von einem Knoten im Teilbaum unter $v$\\nmit einer Rückkante erreichen kann.\\n",
+    "english": "\\textbf{Definition}\\\\\\nLet \\emph{$\\low(v)$} be the minimum of the DFS number of $v$ and the\\nsmallest DFS number reachable from the subtree under $v$ via a back edge.\\n"
+  },
+  "152": {
+    "german": "\\textbf{Situationen in denen wir $\\low(v)$ anpassen}",
+    "english": "\\textbf{Situations in which we adjust $\\low(v)$}"
+  },
+  "153": {
+    "german": "$v$ das erste Mal gesehen: $\\low(v) \\coloneqq $ DFS-Nummer von $v$",
+    "english": "$v$ first seen: $\\low(v) \\coloneqq $ DFS number of $v$"
+  },
+  "154": {
+    "german": "Rückkante $\\{v, u\\}$ gefunden: $\\low(v) \\coloneqq $\\n$\\min\\{\\low(v), \\text{DFS-Nummer von }u\\}$\\n",
+    "english": "back edge $\\{v, u\\}$ found: $\\low(v) \\coloneqq \\min\\{\\low(v), \\text{DFS number of }u\\}$\\n"
+  },
+  "155": {
+    "german": "backtracken von einem Kind $u$ von $v$: $\\low(v) \\coloneqq $ $\\min\\{\\low(v), \\low(u)\\}$",
+    "english": "backtracking from child $u$ of $v$: $\\low(v) \\coloneqq $ $\\min\\{\\low(v), \\low(u)\\}$"
+  },
+  "156": {
+    "german": "besuchter Knoten",
+    "english": "visited node"
+  },
+  "157": {
+    "german": "unbesuchter Knoten",
+    "english": "unvisited node"
+  },
+  "158": {
+    "german": "aktueller Knoten",
+    "english": "current node"
+  },
+  "159": {
+    "german": "Pfad zum aktuellen Knoten",
+    "english": "path to current node"
+  },
+  "160": {
+    "german": "Rückkante",
+    "english": "back edge"
+  },
+  "161": {
+    "german": "\\textbf{Korrektheit}",
+    "english": "\\textbf{Correctness}"
+  },
+  "162": {
+    "german": "zeige: wenn man von $v$ zum Elter backtrackt, dann ist $\\low(v)$\\nkorrekt\\n",
+    "english": "show: when backtracking from $v$ to its parent, $\\low(v)$ is correct\\n"
+  },
+  "163": {
+    "german": "strukturelle Induktion:",
+    "english": "structural induction:"
+  },
+  "164": {
+    "german": "es gilt für die Blätter \\hfill(Anfang)",
+    "english": "holds for leaves \\hfill(base)"
+  },
+  "165": {
+    "german": "angenommen es gilt für die Kinder von $v$\\hfill(Voraussetzung)",
+    "english": "assume it holds for the children of $v$\\hfill(induction hyp.)"
+  },
+  "166": {
+    "german": "dann gilt es auch für $v$ \\hfill(Schritt)",
+    "english": "then it also holds for $v$ \\hfill(step)"
+  },
+  "167": {
+    "german": "$\\mathrm{dfs}[v] \\coloneqq \\mathrm{next\\_dfs}$\\n",
+    "english": "$\\mathrm{dfs}[v] \\coloneqq \\mathrm{next\\_dfs}$\\n"
+  },
+  "168": {
+    "german": "\\keyword{if} $\\mathrm{dfs}[u] = \\infty$ \\keyword{then}\\n",
+    "english": "\\keyword{if} $\\mathrm{dfs}[u] = \\infty$ \\keyword{then}\\n"
+  },
+  "169": {
+    "german": "$\\mathrm{next\\_dfs} \\coloneqq 0$\\n",
+    "english": "$\\mathrm{next\\_dfs} \\coloneqq 0$\\n"
+  },
+  "170": {
+    "german": "$\\mathrm{dfs}, \\mathrm{low} \\coloneqq$ \\type{Array} of size $n$ init with $\\infty$\\n",
+    "english": "$\\mathrm{dfs}, \\mathrm{low} \\coloneqq$ \\type{Array} of size $n$ init with $\\infty$\\n"
+  },
+  "171": {
+    "german": "$\\mathrm{next\\_dfs} \\coloneqq \\mathrm{next\\_dfs} + 1$\\n",
+    "english": "$\\mathrm{next\\_dfs} \\coloneqq \\mathrm{next\\_dfs} + 1$\\n"
+  },
+  "172": {
+    "german": "$\\mathrm{low}[v] \\coloneqq \\mathrm{dfs}[v]$\\n",
+    "english": "$\\mathrm{low}[v] \\coloneqq \\mathrm{dfs}[v]$\\n"
+  },
+  "173": {
+    "german": "$\\mathrm{low}[v] = \\min\\{\\mathrm{low}[v], \\mathrm{dfs}[u]\\}$",
+    "english": "$\\mathrm{low}[v] = \\min\\{\\mathrm{low}[v], \\mathrm{dfs}[u]\\}$"
+  },
+  "174": {
+    "german": "$\\mathrm{low}[v] = \\min\\{\\mathrm{low}[v], \\mathrm{low}[u]\\}$",
+    "english": "$\\mathrm{low}[v] = \\min\\{\\mathrm{low}[v], \\mathrm{low}[u]\\}$"
+  },
+  "175": {
+    "german": "$\\mathrm{dfs}[v] \\coloneqq \\mathrm{next\\_dfs}$\\n",
+    "english": "$\\mathrm{dfs}[v] \\coloneqq \\mathrm{next\\_dfs}$\\n"
+  },
+  "176": {
+    "german": "\\keyword{if} $\\mathrm{dfs}[u] = \\infty$ \\keyword{then}\\n",
+    "english": "\\keyword{if} $\\mathrm{dfs}[u] = \\infty$ \\keyword{then}\\n"
+  },
+  "177": {
+    "german": "$\\mathrm{next\\_dfs} \\coloneqq \\mathrm{next\\_dfs} + 1$\\n",
+    "english": "$\\mathrm{next\\_dfs} \\coloneqq \\mathrm{next\\_dfs} + 1$\\n"
+  },
+  "178": {
+    "german": "\\textbf{An welchen Stellen müssen wir $\\low$ ändern?}",
+    "english": "\\textbf{Where do we need to update $\\low$?}"
+  },
+  "179": {
+    "german": "\\textbf{Erinnerung: Situationen in denen wir $\\low[v]$ anpassen}",
+    "english": "\\textbf{Reminder: situations in which we adjust $\\low[v]$}"
+  },
+  "180": {
+    "german": "$v$ das erste Mal gesehen: $\\low[v] \\coloneqq \\mathrm{dfs}[v]$",
+    "english": "$v$ first seen: $\\low[v] \\coloneqq \\mathrm{dfs}[v]$"
+  },
+  "181": {
+    "german": "Rückkante $\\{v, u\\}$: $\\low[v] \\coloneqq \\min\\{\\low[v], \\mathrm{dfs}[u]\\}$\\n",
+    "english": "back edge $\\{v, u\\}$: $\\low[v] \\coloneqq \\min\\{\\low[v], \\mathrm{dfs}[u]\\}$\\n"
+  },
+  "182": {
+    "german": "backtracken von Kind $u$ zu $v$: $\\low[v] \\coloneqq \\min\\{\\low[v], \\low[u]\\}$",
+    "english": "backtracking from child $u$ to $v$: $\\low[v] \\coloneqq \\min\\{\\low[v], \\low[u]\\}$"
+  },
+  "183": {
+    "german": "erster Besuch bei $v$",
+    "english": "first visit to $v$"
+  },
+  "184": {
+    "german": "DFS für Kind $u$ fertig $\\rightarrow$ backtracken von $u$ zu $v$",
+    "english": "DFS for child $u$ done $\\rightarrow$ backtrack from $u$ to $v$"
+  },
+  "185": {
+    "german": "Nachbar $u$ vorher schon gesehen $\\rightarrow$ Rückkante",
+    "english": "neighbour $u$ seen before $\\rightarrow$ back edge"
+  },
+  "186": {
+    "german": "Achtung: wir müssen $u$ überspringen, wenn $u$ der Elter von $v$ ist",
+    "english": "note: skip $u$ if $u$ is the parent of $v$"
+  },
+  "187": {
+    "german": "(sonst interpretieren wir die Baumkante von $u$ nach $v$ als Rückkante\\nvon $v$ nach $u$)",
+    "english": "(otherwise we read the tree edge $u \\to v$ as a back edge $v \\to u$)"
+  },
+  "188": {
+    "german": "\\textbf{Anmerkung zur Umsetzung in (Pseudo)code}",
+    "english": "\\textbf{Note on implementing in (pseudo)code}"
+  },
+  "189": {
+    "german": "zwei Varianten",
+    "english": "two variants"
+  },
+  "190": {
+    "german": "\\textbf{Rekursive Implementierung}",
+    "english": "\\textbf{Recursive implementation}"
+  },
+  "191": {
+    "german": "\\textbf{Iterative Implementierung}",
+    "english": "\\textbf{Iterative implementation}"
+  },
+  "192": {
+    "german": "schön einfach",
+    "english": "nice and simple"
+  },
+  "193": {
+    "german": "backtracking passiert quasi automatisch",
+    "english": "backtracking happens almost automatically"
+  },
+  "194": {
+    "german": "Problem: möglicherweise tiefe Rekursion $\\rightarrow$ verbraucht viel\\nStack-Speicher",
+    "english": "problem: deep recursion may use a lot of stack memory"
+  },
+  "195": {
+    "german": "Stack-Speicher ist statisch alloziert $\\rightarrow$ wenn der voll ist\\nbricht das Programm ab\\n",
+    "english": "stack memory is static $\\rightarrow$ overflow crashes program"
+  },
+  "196": {
+    "german": "umständlich, wenn man beim Backtracken etwas tun möchte",
+    "english": "awkward if you need to act during backtracking"
+  },
+  "197": {
+    "german": "Vorteil: verbraucht hauptsächlich (dynamisch allozierten)\\nHeap-Speicher",
+    "english": "advantage: mainly uses dynamically allocated heap memory"
+  },
+  "198": {
+    "german": "(stack overflow)",
+    "english": "(stack overflow)"
+  },
+  "199": {
+    "german": "rekursiv: jeder Knoten ruft DFS für alle seine Kinder auf",
+    "english": "recursive: each node calls DFS for all its children"
+  },
+  "200": {
+    "german": "iterativ: ohne rekursive Aufrufe",
+    "english": "iterative: no recursive calls"
+  },
+  "201": {
+    "german": "man muss sich dann im Prinzip den Rekursionsbaum manuell mitverwalten",
+    "english": "must manage the recursion tree manually"
+  },
+  "202": {
+    "german": "\\textbf{DFS -- Tiefensuche}",
+    "english": "\\textbf{DFS -- depth-first search}"
+  },
+  "203": {
+    "german": "sehr grundlegender Algorithmus zur Graphtraversierung",
+    "english": "very basic algorithm for graph traversal"
+  },
+  "204": {
+    "german": "Basis für das Lösen vieler verschiedener Probleme\\n",
+    "english": "basis for solving many different problems\\n"
+  },
+  "205": {
+    "german": "zwei wichtige Zeitpunkte:",
+    "english": "two important moments:"
+  },
+  "206": {
+    "german": "entdecken eines Knotens",
+    "english": "discovering a node"
+  },
+  "207": {
+    "german": "backtracken von einem Kind zum Elter",
+    "english": "backtracking from a child to the parent"
+  },
+  "208": {
+    "german": "\\textbf{Nächstes Mal}",
+    "english": "\\textbf{Next time}"
+  },
+  "209": {
+    "german": "mehr DFS auf gerichteten Graphen",
+    "english": "more DFS on directed graphs"
+  },
+  "210": {
+    "german": "Wie zieht man sich richtig an?",
+    "english": "How to dress properly?"
+  },
+  "211": {
+    "german": "\\textbf{Ein bisschen Graphentheorie}",
+    "english": "\\textbf{A bit of graph theory}"
+  },
+  "212": {
+    "german": "Brücken in Graphen",
+    "english": "Bridges in graphs"
+  },
+  "213": {
+    "german": "strukturelle Einsicht $\\rightarrow$ effizienter Algorithmus",
+    "english": "structural insight $\\rightarrow$ efficient algorithm"
+  }
+}

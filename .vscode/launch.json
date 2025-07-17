@@ -20,6 +20,33 @@
             "projectName": "ipe-translation-pipeline",
             "preLaunchTask": "clean compile",
             "args": ["--no-translate"]
+        },
+        {
+            "type": "java",
+            "name": "Application (Dictionary)",
+            "request": "launch",
+            "mainClass": "com.translation.Application",
+            "projectName": "ipe-translation-pipeline",
+            "preLaunchTask": "clean compile",
+            "args": ["--dictionary"]
+        },
+        {
+            "type": "java",
+            "name": "Application (Skip Download)",
+            "request": "launch",
+            "mainClass": "com.translation.Application",
+            "projectName": "ipe-translation-pipeline",
+            "preLaunchTask": "clean compile",
+            "args": ["--skip-download"]
+        },
+        {
+            "type": "java",
+            "name": "Application (Skip Download + No Translate)",
+            "request": "launch",
+            "mainClass": "com.translation.Application",
+            "projectName": "ipe-translation-pipeline",
+            "preLaunchTask": "clean compile",
+            "args": ["--skip-download", "--no-translate"]
         }
     ]
 }

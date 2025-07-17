@@ -1,0 +1,502 @@
+{
+  "1": {
+    "german": "Organisatorisches",
+    "english": ""
+  },
+  "2": {
+    "german": "Organisatorisches",
+    "english": ""
+  },
+  "3": {
+    "german": "Asymptotik",
+    "english": ""
+  },
+  "4": {
+    "german": "Asymptotik -- Tipps",
+    "english": ""
+  },
+  "5": {
+    "german": "Asymptotik -- Beispiele",
+    "english": ""
+  },
+  "6": {
+    "german": "Asymptotik -- Beispiele (2)",
+    "english": ""
+  },
+  "7": {
+    "german": "Asymptotik -- Beispiele (3)",
+    "english": ""
+  },
+  "8": {
+    "german": "Asymptotik -- Beispiele (4)",
+    "english": ""
+  },
+  "9": {
+    "german": "Pseudocode",
+    "english": ""
+  },
+  "10": {
+    "german": "Master--Theorem",
+    "english": ""
+  },
+  "11": {
+    "german": "Fibonacci",
+    "english": ""
+  },
+  "12": {
+    "german": "Fibonacci -- Laufzeit",
+    "english": ""
+  },
+  "13": {
+    "german": "Fibonacci -- Laufzeit (bessere obere Schranke)",
+    "english": ""
+  },
+  "14": {
+    "german": "Fibonacci -- Das Problem",
+    "english": ""
+  },
+  "15": {
+    "german": "Fibonacci -- Schneller",
+    "english": ""
+  },
+  "16": {
+    "german": "Maximilian Katzmann \\& Marcus Wilhelm~--~Algorithmen 1 - Übung",
+    "english": ""
+  },
+  "17": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "18": {
+    "german": "\\textbf{Übung 1}",
+    "english": ""
+  },
+  "19": {
+    "german": "\\textbf{Asymptotik, Pseudocode \\& Master-Theorem }",
+    "english": ""
+  },
+  "20": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "21": {
+    "german": "\\textbf{Organisatoren}",
+    "english": ""
+  },
+  "22": {
+    "german": "Thomas",
+    "english": ""
+  },
+  "23": {
+    "german": "Max",
+    "english": ""
+  },
+  "24": {
+    "german": "Marcus",
+    "english": ""
+  },
+  "25": {
+    "german": "\\textbf{\"Übung\"?}",
+    "english": ""
+  },
+  "26": {
+    "german": "Wiederholung des Vorlesungsstoffes",
+    "english": ""
+  },
+  "27": {
+    "german": "inkl. Vertiefung und Erweiterung",
+    "english": ""
+  },
+  "28": {
+    "german": "manchmal anderer Blickwinkel",
+    "english": ""
+  },
+  "29": {
+    "german": "\\textbf{Nicht Übung?}",
+    "english": ""
+  },
+  "30": {
+    "german": "Übungsblätter",
+    "english": ""
+  },
+  "31": {
+    "german": "Fragen!",
+    "english": ""
+  },
+  "32": {
+    "german": "Vorlesung",
+    "english": ""
+  },
+  "33": {
+    "german": "\"Übung\"",
+    "english": ""
+  },
+  "34": {
+    "german": "Veröffentlicht: Mittwoch 14:00 Uhr",
+    "english": ""
+  },
+  "35": {
+    "german": "Abgabe: Freitag 18:00 Uhr in der {da\\-rauffolgenden} Woche",
+    "english": ""
+  },
+  "36": {
+    "german": "Vorlesung richtet sich nicht strikt nach einem konkreten Buch",
+    "english": ""
+  },
+  "37": {
+    "german": "\\textbf{Literatur zur Vorlesung}",
+    "english": ""
+  },
+  "38": {
+    "german": "Folien sollten zum Verständnis ausreichend detailliert sein",
+    "english": ""
+  },
+  "39": {
+    "german": "Für weitergehende Recherche",
+    "english": ""
+  },
+  "40": {
+    "german": "Algorithms and Data Structures -- The Basic Toolbox",
+    "english": ""
+  },
+  "41": {
+    "german": "Kurt Mehlhorn, Peter Sanders",
+    "english": ""
+  },
+  "42": {
+    "german": "Algorithmen und Datenstrukturen: Die Grundwerkzeuge",
+    "english": ""
+  },
+  "43": {
+    "german": "Martin Dietzfelbinger, Kurt Mehlhorn, Peter Sanders",
+    "english": ""
+  },
+  "44": {
+    "german": "\\textbf{Konventionen}",
+    "english": ""
+  },
+  "45": {
+    "german": "Algorithmen sollen immer so effizient wie möglich sein",
+    "english": ""
+  },
+  "46": {
+    "german": "Wenn nicht anders angegeben, ist $\\log(\\cdot)$ immer zur Basis 2",
+    "english": ""
+  },
+  "47": {
+    "german": "Tretet gern dem Discord Server bei",
+    "english": ""
+  },
+  "48": {
+    "german": "Exponentielle Algorithmen geben immer 0 Punkte!",
+    "english": ""
+  },
+  "49": {
+    "german": "Werkzeug zur Klassifizierung der Laufzeit von Algorithmen",
+    "english": ""
+  },
+  "50": {
+    "german": "Abstrahieren von Implementierungs- bzw. Hardwaredetails",
+    "english": ""
+  },
+  "51": {
+    "german": "Vereinfacht die Analyse",
+    "english": ""
+  },
+  "52": {
+    "german": "\\textbf{Landau-Notation, $O$-Notation, big-$O$ notation}",
+    "english": ""
+  },
+  "53": {
+    "german": "$f(n)$ wächst max.\\ so schnell wie $g(n)$\\n",
+    "english": ""
+  },
+  "54": {
+    "german": "$n$ bezeichnet die Größe der Eingabe",
+    "english": ""
+  },
+  "55": {
+    "german": "Intuitiv: Wenn die Eingabe ausreichend groß ist (mindestens $n_0$), dann braucht ein Algorithmus mit Laufzeit $f(n)$ (ungefähr) höchstens so lang wie einer mit Laufzeit $g(n)$.",
+    "english": ""
+  },
+  "56": {
+    "german": "Eingabegröße",
+    "english": ""
+  },
+  "57": {
+    "german": "Laufzeit",
+    "english": ""
+  },
+  "58": {
+    "german": "$f(n)$ wächst schneller als $g(n)$",
+    "english": ""
+  },
+  "59": {
+    "german": "$f(n)$ wächst min.\\ so schnell wie $g(n)$",
+    "english": ""
+  },
+  "60": {
+    "german": "$f(n)$ und $g(n)$ wachsen gleich schnell",
+    "english": ""
+  },
+  "61": {
+    "german": "$f(n)$ wächst langsamer als $g(n)$\\n",
+    "english": ""
+  },
+  "62": {
+    "german": "Multiplikation von \\textbf{$2$} Zahlen mit \\textbf{$x$} Ziffern",
+    "english": ""
+  },
+  "63": {
+    "german": "Suche in einer Menge von \\textbf{$k$} Zahlen die je maximal\\n\\textbf{$x$} Ziffern haben",
+    "english": ""
+  },
+  "64": {
+    "german": "Abstraktionsniveau!",
+    "english": ""
+  },
+  "65": {
+    "german": "Plots helfen, um ein Gefühl zu bekommen, können aber auch trügerisch sein",
+    "english": ""
+  },
+  "66": {
+    "german": "Der Logarithmus ist unheimlich klein",
+    "english": ""
+  },
+  "67": {
+    "german": "ca. $6 \\cdot 10^{79}$ Atome im Universum $\\rightarrow \\log(6 \\cdot 10^{79}) \\approx 265$",
+    "english": ""
+  },
+  "68": {
+    "german": "Mentaler Shortcut: Alle Logarithmen wachsen langsamer als alle Polynome",
+    "english": ""
+  },
+  "69": {
+    "german": "Eine Laufzeit in $O(n \\log(n))$ nennt man \\emph{quasi-linear}",
+    "english": ""
+  },
+  "70": {
+    "german": "manchmal auch $O(n \\log^k(n))$",
+    "english": ""
+  },
+  "71": {
+    "german": "In der Praxis ist ab quadratisch nur bedingt brauchbar, exponentiell geht gar nicht",
+    "english": ""
+  },
+  "72": {
+    "german": "\\textbf{Zeige: $10n \\in O(n^2)$}",
+    "english": ""
+  },
+  "73": {
+    "german": "\\textbf{Zeige: $n \\in \\Omega(\\log(n))$}",
+    "english": ""
+  },
+  "74": {
+    "german": "binomischer Lehrsatz",
+    "english": ""
+  },
+  "75": {
+    "german": "\\textbf{Zeige: $\\frac{n}{\\log(n)} \\in \\omega(\\sqrt{n})$}",
+    "english": ""
+  },
+  "76": {
+    "german": "(für ausreichend großes $n$)",
+    "english": ""
+  },
+  "77": {
+    "german": "Für $n_0 = 2^{16}$ gilt $\\log(n_0) = n_0^{1/4}$.",
+    "english": ""
+  },
+  "78": {
+    "german": "\\centering\\nWie können wir zeigen, dass eine Funktion schneller wächst als eine andere?",
+    "english": ""
+  },
+  "79": {
+    "german": "Anstieg",
+    "english": ""
+  },
+  "80": {
+    "german": "Ableitung",
+    "english": ""
+  },
+  "81": {
+    "german": "\\textbf{Zeige: $2^{O(\\log(n))} \\subseteq O((1+\\varepsilon)^n)$, $\\varepsilon > 0$}",
+    "english": ""
+  },
+  "82": {
+    "german": "Zu zeigen: Für jedes $f(n) \\in 2^{O(\\log(n))}$ gilt: $f(n) \\in O((1 + \\varepsilon)^n)$",
+    "english": ""
+  },
+  "83": {
+    "german": "Zuvor:",
+    "english": ""
+  },
+  "84": {
+    "german": "für ${\\color{orange1} c} \\ge 1$",
+    "english": ""
+  },
+  "85": {
+    "german": "Abschätzen",
+    "english": ""
+  },
+  "86": {
+    "german": "Ableiten",
+    "english": ""
+  },
+  "87": {
+    "german": "Substituieren",
+    "english": ""
+  },
+  "88": {
+    "german": "Ein Zwischenschritt auf dem Weg von der Algorithmusidee zur Implementierung",
+    "english": ""
+  },
+  "89": {
+    "german": "Wir iterieren alle Ziffern und ...",
+    "english": ""
+  },
+  "90": {
+    "german": "Algorithmusidee",
+    "english": ""
+  },
+  "91": {
+    "german": "Pseudocode",
+    "english": ""
+  },
+  "92": {
+    "german": "Code",
+    "english": ""
+  },
+  "93": {
+    "german": "Beispiel: Was macht der von diesem Pseudocode beschriebene Algorithmus?",
+    "english": ""
+  },
+  "94": {
+    "german": "für Menschen gut lesbar",
+    "english": ""
+  },
+  "95": {
+    "german": "richtige Abstraktionsebene",
+    "english": ""
+  },
+  "96": {
+    "german": "$\\function{wrongAlgo}(\\textit{input})$\\n",
+    "english": ""
+  },
+  "97": {
+    "german": "\\keyword{return} correct output",
+    "english": ""
+  },
+  "98": {
+    "german": "Beispiel Eingaben:",
+    "english": ""
+  },
+  "99": {
+    "german": "Gegeben eine Zahl $x \\ge 1$, berechnet der Algorithmus $\\lceil \\log_{10}(x) \\rceil$",
+    "english": ""
+  },
+  "100": {
+    "german": "Werkzeug zur Berechnung der Laufzeit von rekursiven Algorithmen",
+    "english": ""
+  },
+  "101": {
+    "german": "\\textbf{Master--Theorem}\\\\\\nSei $T(n) = a\\cdot T(\\frac{n}{b}) + f(n)$ mit $f(n) \\in \\Theta(n^c)$\\nund $T(1) \\in \\Theta(1)$. Dann gilt\\n%\\n\\begin{align*}\\n  T(n) \\in\\n  \\begin{cases}\\n    \\Theta\\left(n^c\\right) &\\text{wenn }a < b^c,\\\\\\n    \\Theta\\left(n^c \\log n\\right) &\\text{wenn }a = b^c,\\\\\\n    \\Theta\\left(n^{\\log_b(a)}\\right) &\\text{wenn }a > b^c.\\n  \\end{cases}\\n\\end{align*}\\n",
+    "english": ""
+  },
+  "102": {
+    "german": "\\textbf{Master--Theorem}\\\\\\nSei $T(n) = a\\cdot T(\\frac{n}{b}) + f(n)$ mit $f(n) \\in \\Theta(n^c)$\\nund $T(1) \\in \\Theta(1)$. Dann gilt\\n%\\n\\begin{align*}\\n  T(n) \\in\\n  \\begin{cases}\\n    \\Theta\\left(n^c\\right) &\\text{wenn }a < b^c,\\\\\\n    \\Theta\\left(n^c \\log n\\right) &\\text{wenn }a = b^c,\\\\\\n    \\Theta\\left(n^{\\log_b(a)}\\right) &\\text{wenn }a > b^c.\\n  \\end{cases}\\n\\end{align*}\\n",
+    "english": ""
+  },
+  "103": {
+    "german": "Induktion",
+    "english": ""
+  },
+  "104": {
+    "german": "Was wir bereits wissen",
+    "english": ""
+  },
+  "105": {
+    "german": "$T(n) \\in \\Omega(\\sqrt{2}^n)$, wobei $\\sqrt{2} \\approx 1.4142$ und",
+    "english": ""
+  },
+  "106": {
+    "german": "Idee: $T(n) \\le c^n$, $c \\in [\\sqrt{2}, 2]$ konstant",
+    "english": ""
+  },
+  "107": {
+    "german": "Idee 2: $T(n) \\le c^n - 1$",
+    "english": ""
+  },
+  "108": {
+    "german": "Test: $T(0) \\le \\phi^0 - 1 = 0, T(1) \\le \\phi^1 - 1 \\approx 0.618$",
+    "english": ""
+  },
+  "109": {
+    "german": "Idee 3: $T(n) \\le 2 \\cdot c^n - 1$",
+    "english": ""
+  },
+  "110": {
+    "german": "Bed.: $2c^n - 1 \\ge 2c^{n - 1} - 1 + 2c^{n - 2}$",
+    "english": ""
+  },
+  "111": {
+    "german": "Test: $T(0) \\le 2\\phi^0 - 1 = 1$",
+    "english": ""
+  },
+  "112": {
+    "german": "Bedingung: $c^n \\ge c^{n - 1} + c^{n - 2} + 1$",
+    "english": ""
+  },
+  "113": {
+    "german": "Bedingung: $c^n - 1 \\ge c^{n - 1} - 1 + c^{n - 2}$",
+    "english": ""
+  },
+  "114": {
+    "german": "Im Rekursionsbaum verdoppeln sich die Knoten mit jeder weiteren Lage (ungefähr)",
+    "english": ""
+  },
+  "115": {
+    "german": "Mit wachsender Anzahl von Lagen schrumpft $n$ nicht schnell genug.",
+    "english": ""
+  },
+  "116": {
+    "german": "Viele Teilergebnisse werden mehrfach berechnet",
+    "english": ""
+  },
+  "117": {
+    "german": "Viele Lagen!",
+    "english": ""
+  },
+  "118": {
+    "german": "\\keyword{for} $i$ from $0$ to $n - 1$ \\keyword{do}",
+    "english": ""
+  },
+  "119": {
+    "german": "fib $\\coloneqq 0$",
+    "english": ""
+  },
+  "120": {
+    "german": "fibNext $\\coloneqq 1$",
+    "english": ""
+  },
+  "121": {
+    "german": "temp $\\coloneqq$ fib",
+    "english": ""
+  },
+  "122": {
+    "german": "fib $\\coloneqq$ fibNext",
+    "english": ""
+  },
+  "123": {
+    "german": "fibNext $\\coloneqq$ fib + temp",
+    "english": ""
+  },
+  "124": {
+    "german": "\\keyword{return} fib",
+    "english": ""
+  },
+  "125": {
+    "german": "Fibonacci rekursiv: exponentielle Laufzeit. Fibonacci iterativ: lineare Laufzeit.",
+    "english": ""
+  }
+}

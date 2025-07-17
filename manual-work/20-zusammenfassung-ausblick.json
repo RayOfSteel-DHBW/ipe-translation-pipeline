@@ -1,0 +1,978 @@
+{
+  "1": {
+    "german": "Why is everything so heavy?",
+    "english": ""
+  },
+  "2": {
+    "german": "Why is everything so easy?",
+    "english": ""
+  },
+  "3": {
+    "german": "Praktische Instanzen: Graphen",
+    "english": ""
+  },
+  "4": {
+    "german": "Zurück in die Theorie?",
+    "english": ""
+  },
+  "5": {
+    "german": "Eigenschaften von echten Graphen",
+    "english": ""
+  },
+  "6": {
+    "german": "Zurück in die Theorie?",
+    "english": ""
+  },
+  "7": {
+    "german": "Zufallsgraph",
+    "english": ""
+  },
+  "8": {
+    "german": "Geometrischer Zufallsgraph",
+    "english": ""
+  },
+  "9": {
+    "german": "Geometrischer Zufallsgraph",
+    "english": ""
+  },
+  "10": {
+    "german": "Eval -- Gesamteindruck",
+    "english": ""
+  },
+  "11": {
+    "german": "Eval -- Klicker",
+    "english": ""
+  },
+  "12": {
+    "german": "Eval -- Vortragsstil",
+    "english": ""
+  },
+  "13": {
+    "german": "Eval -- Lernmaterialien",
+    "english": ""
+  },
+  "14": {
+    "german": "Eval -- Plattformen",
+    "english": ""
+  },
+  "15": {
+    "german": "Eval -- Sonstiges",
+    "english": ""
+  },
+  "16": {
+    "german": "Eval -- Übung",
+    "english": ""
+  },
+  "17": {
+    "german": "Was haben wir gelernt?",
+    "english": ""
+  },
+  "18": {
+    "german": "Klausur (31. August, 8 Uhr)",
+    "english": ""
+  },
+  "19": {
+    "german": "Algorithmen-Vorlesungen am KIT",
+    "english": ""
+  },
+  "20": {
+    "german": "Todo für euch",
+    "english": ""
+  },
+  "21": {
+    "german": "Thomas Bläsius \\& Maximilian Katzmann~--~Algorithmen 1 - Vorlesung",
+    "english": ""
+  },
+  "22": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "23": {
+    "german": "\\textbf{Vorlesung 20}",
+    "english": ""
+  },
+  "24": {
+    "german": "\\textbf{Average-Case Analyse, Zusammfassung \\& Ausblick}",
+    "english": ""
+  },
+  "25": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "26": {
+    "german": "Teilmengen aufzählen",
+    "english": ""
+  },
+  "27": {
+    "german": "die Welt braucht effiziente Algorithmen",
+    "english": ""
+  },
+  "28": {
+    "german": "elementare Funktionen die Laufzeiten beschreiben",
+    "english": ""
+  },
+  "29": {
+    "german": "binäre Suche",
+    "english": ""
+  },
+  "30": {
+    "german": "lineare Suche",
+    "english": ""
+  },
+  "31": {
+    "german": "sub-linear",
+    "english": ""
+  },
+  "32": {
+    "german": "linear",
+    "english": ""
+  },
+  "33": {
+    "german": "quasi-linear",
+    "english": ""
+  },
+  "34": {
+    "german": "quasi-lineare Suche$\\hat{\\phantom{x}}\\hat{\\phantom{x}}$",
+    "english": ""
+  },
+  "35": {
+    "german": "Sortieren",
+    "english": ""
+  },
+  "36": {
+    "german": "polynomiell",
+    "english": ""
+  },
+  "37": {
+    "german": "Floyd-Warshall",
+    "english": ""
+  },
+  "38": {
+    "german": "quasi-polynomiell",
+    "english": ""
+  },
+  "39": {
+    "german": "super-polynomiell, sub-exponentiell",
+    "english": ""
+  },
+  "40": {
+    "german": "exponentiell",
+    "english": ""
+  },
+  "41": {
+    "german": "super-exponentiell",
+    "english": ""
+  },
+  "42": {
+    "german": "super viele praktisch relevante Probleme scheinen hier zu leben",
+    "english": ""
+  },
+  "43": {
+    "german": "Was heißt das?",
+    "english": ""
+  },
+  "44": {
+    "german": "Wir wissen, dass diese Probleme gleich schwer zu lösen sind",
+    "english": ""
+  },
+  "45": {
+    "german": "Bisher hat niemand einen polynomiellen Algorithmus gefunden",
+    "english": ""
+  },
+  "46": {
+    "german": "Wir kennen keine (unbedingten) unteren Schranken",
+    "english": ""
+  },
+  "47": {
+    "german": "Bekannte Algorithmen haben exponentielle Laufzeit im Worst Case",
+    "english": ""
+  },
+  "48": {
+    "german": "Ändert nichts daran, dass wir sie in der Praxis trotzdem lösen müssen \\dots",
+    "english": ""
+  },
+  "49": {
+    "german": "Häufig sind die Algorithmen in der Praxis super effizient",
+    "english": ""
+  },
+  "50": {
+    "german": "\\texttt{https://i.imgflip.com/o63vh.jpg?a460593} (cropped)",
+    "english": ""
+  },
+  "51": {
+    "german": "die Welt braucht effiziente Algorithmen",
+    "english": ""
+  },
+  "52": {
+    "german": "elementare Funktionen die Laufzeiten beschreiben",
+    "english": ""
+  },
+  "53": {
+    "german": "Algorithmen",
+    "english": ""
+  },
+  "54": {
+    "german": "Theorie",
+    "english": ""
+  },
+  "55": {
+    "german": "Praxis",
+    "english": ""
+  },
+  "56": {
+    "german": "theoretische Analyse unbrauchbar?",
+    "english": ""
+  },
+  "57": {
+    "german": "zu pessimistisch!",
+    "english": ""
+  },
+  "58": {
+    "german": "bisher typischerweise betrachtet: Worst-Case Laufzeit",
+    "english": ""
+  },
+  "59": {
+    "german": "ein Adversary kennt den Algorithmus und baut eine Instanz die die Laufzeit maximiert",
+    "english": ""
+  },
+  "60": {
+    "german": "\\texttt{https://i.imgflip.com/3w723.jpg?a460595} (cropped)",
+    "english": ""
+  },
+  "61": {
+    "german": "aber... so entstehen keine Instanzen in der Praxis \\dots",
+    "english": ""
+  },
+  "62": {
+    "german": "so gut wie immer die richtige Sichtweise (stärkst-mögliche Aussage, insbesondere beim Entwurf von Algorithmen)",
+    "english": ""
+  },
+  "63": {
+    "german": "Straßen",
+    "english": ""
+  },
+  "64": {
+    "german": "Soziale Interaktionen",
+    "english": ""
+  },
+  "65": {
+    "german": "Internet",
+    "english": ""
+  },
+  "66": {
+    "german": "werden nicht gebaut um deinen Algorithmus langsam zu machen",
+    "english": ""
+  },
+  "67": {
+    "german": "echte Netzwerke unterscheiden sich von Worst-Case Instanzen",
+    "english": ""
+  },
+  "68": {
+    "german": "theoretisch erklären warum Algorithmen in der Praxis schnell sind $\\rightarrow$ Analyse einschränken auf realistische Instanzen",
+    "english": ""
+  },
+  "69": {
+    "german": "Menge aller Graphen",
+    "english": ""
+  },
+  "70": {
+    "german": "Wie können wir mathematisch beschreiben wie der Adversary Instanzen wählen darf?",
+    "english": ""
+  },
+  "71": {
+    "german": "``alle Graphen mit Maximalgrad höchstens 2''",
+    "english": ""
+  },
+  "72": {
+    "german": "Einschränkung über Eigenschaften von Graphen",
+    "english": ""
+  },
+  "73": {
+    "german": "Welche Eigenschaften haben realistische Instanzen?",
+    "english": ""
+  },
+  "74": {
+    "german": "\\textbf{Gradverteilung}",
+    "english": ""
+  },
+  "75": {
+    "german": "Grad",
+    "english": ""
+  },
+  "76": {
+    "german": "Anzahl Knoten",
+    "english": ""
+  },
+  "77": {
+    "german": "Anzahl Knoten",
+    "english": ""
+  },
+  "78": {
+    "german": "Grad",
+    "english": ""
+  },
+  "79": {
+    "german": "homogen",
+    "english": ""
+  },
+  "80": {
+    "german": "Anzahl Knoten",
+    "english": ""
+  },
+  "81": {
+    "german": "Grad",
+    "english": ""
+  },
+  "82": {
+    "german": "heterogen",
+    "english": ""
+  },
+  "83": {
+    "german": "konstanter Durchschnittsgrad",
+    "english": ""
+  },
+  "84": {
+    "german": "wurzeliger Maximalgrad",
+    "english": ""
+  },
+  "85": {
+    "german": "\\textbf{Die Gradverteilung eines sozialen Netzwerks ist eher...}",
+    "english": ""
+  },
+  "86": {
+    "german": "\\textbf{Die Gradverteilung eines Straßennetzwerks ist eher...}",
+    "english": ""
+  },
+  "87": {
+    "german": "\\textbf{Lokalität}",
+    "english": ""
+  },
+  "88": {
+    "german": "``Kanten sind kurz''",
+    "english": ""
+  },
+  "89": {
+    "german": "Kanten verbinden Knoten zwischen denen es schon kurze Pfade gibt",
+    "english": ""
+  },
+  "90": {
+    "german": "\\begin{center}\\ndeine\\nbeste\\nFreundin\\n\\end{center}",
+    "english": ""
+  },
+  "91": {
+    "german": "\\begin{center}\\nihr\\nbester\\nFreund\\n\\end{center}",
+    "english": ""
+  },
+  "92": {
+    "german": "\\textbf{Durchmesser}",
+    "english": ""
+  },
+  "93": {
+    "german": "``Jeder kennt jeden über 6 Ecken''",
+    "english": ""
+  },
+  "94": {
+    "german": "der längste kürzeste Pfad ist kurz",
+    "english": ""
+  },
+  "95": {
+    "german": "in Facebook kennt jeder jeden über $3.57$ Ecken (im Durchschnitt)",
+    "english": ""
+  },
+  "96": {
+    "german": "in Straßennetzwerken eher nicht",
+    "english": ""
+  },
+  "97": {
+    "german": "Menge aller Graphen",
+    "english": ""
+  },
+  "98": {
+    "german": "Wie können wir mathematisch beschreiben wie der Adversary Instanzen wählen darf?",
+    "english": ""
+  },
+  "99": {
+    "german": "``Graphen mit heterogener Gradverteilung''",
+    "english": ""
+  },
+  "100": {
+    "german": "``\\dots und hoher Lokalität''",
+    "english": ""
+  },
+  "101": {
+    "german": "``\\dots und kleinem Durchmesser''",
+    "english": ""
+  },
+  "102": {
+    "german": "\\texttt{https://i.imgflip.com/o63vh.jpg?a460593} (cropped)",
+    "english": ""
+  },
+  "103": {
+    "german": "Das ist alles zu unkonkret!",
+    "english": ""
+  },
+  "104": {
+    "german": "Ein \\textbf{Zufallsgraph} ist ein Graph $G = (V, E)$ bei dem $E$ eine Zufallsvariable ist.",
+    "english": ""
+  },
+  "105": {
+    "german": "$X_{u,v}$ Indikatorzufallsvariable mit\\\\$p(X_{u, v} = 1) = p$ für alle $1 \\le u < v \\le n$.",
+    "english": ""
+  },
+  "106": {
+    "german": "\\textbf{Erdős-Rényi Modell}",
+    "english": ""
+  },
+  "107": {
+    "german": "\\textbf{Beispiel}",
+    "english": ""
+  },
+  "108": {
+    "german": "folgt einer Verteilung über alle Graphen mit $n$ Knoten",
+    "english": ""
+  },
+  "109": {
+    "german": "Menge aller Graphen",
+    "english": ""
+  },
+  "110": {
+    "german": "(unter der Annahme, dass wir nach der Generierung die Knoten-IDs vergessen)",
+    "english": ""
+  },
+  "111": {
+    "german": "\\textbf{Eigenschaften}",
+    "english": ""
+  },
+  "112": {
+    "german": "erwarteter Grad eines Knotens",
+    "english": ""
+  },
+  "113": {
+    "german": "homogen",
+    "english": ""
+  },
+  "114": {
+    "german": "Kanten unabhängig",
+    "english": ""
+  },
+  "115": {
+    "german": "keine Lokalität",
+    "english": ""
+  },
+  "116": {
+    "german": "``Adversary soll Erdős-Rényi Zufallsgraph generieren''",
+    "english": ""
+  },
+  "117": {
+    "german": "$X_{v}$ gleichverteilt aus dem Einheitskreis",
+    "english": ""
+  },
+  "118": {
+    "german": "\\textbf{Euklidisch}",
+    "english": ""
+  },
+  "119": {
+    "german": "Lokalität",
+    "english": ""
+  },
+  "120": {
+    "german": "Sind zwei Knoten mit gemeinsamem Nachbar wahrscheinlicher verbunden, als zwei zufällig gewählte Knoten?",
+    "english": ""
+  },
+  "121": {
+    "german": "$u, w$ haben Nachbar $v$",
+    "english": ""
+  },
+  "122": {
+    "german": "$u, w$ sind zwei zufällig gewählte Knoten",
+    "english": ""
+  },
+  "123": {
+    "german": "Gradverteilung",
+    "english": ""
+  },
+  "124": {
+    "german": "\\dots aber nicht beliebig klein",
+    "english": ""
+  },
+  "125": {
+    "german": "Menge aller Graphen",
+    "english": ""
+  },
+  "126": {
+    "german": "homogen",
+    "english": ""
+  },
+  "127": {
+    "german": "$X_{v}$ gleichverteilt aus einem Kreis in der hyperbolischen Ebene $\\mathbb{H}$",
+    "english": ""
+  },
+  "128": {
+    "german": "$E = \\{\\{u, v\\} \\in {V \\choose 2} \\mid \\text{dist}_\\mathbb{H}(u, v) \\le R\\}$",
+    "english": ""
+  },
+  "129": {
+    "german": "\\textbf{Hyperbolisch}",
+    "english": ""
+  },
+  "130": {
+    "german": "Lokalität",
+    "english": ""
+  },
+  "131": {
+    "german": "Gradverteilung",
+    "english": ""
+  },
+  "132": {
+    "german": "heterogen",
+    "english": ""
+  },
+  "133": {
+    "german": "\\textbf{Average-Case Analyse}",
+    "english": ""
+  },
+  "134": {
+    "german": "Eingabe für den Algorithmus: ein hyperbolischer Zufallsgraph",
+    "english": ""
+  },
+  "135": {
+    "german": "Theorie",
+    "english": ""
+  },
+  "136": {
+    "german": "Praxis",
+    "english": ""
+  },
+  "137": {
+    "german": "Algorithmen",
+    "english": ""
+  },
+  "138": {
+    "german": "geringe Laufzeit mit hoher Wahrscheinlichkeit",
+    "english": ""
+  },
+  "139": {
+    "german": "\\textbf{Was ist eure Meinung zu den Umfragen?}",
+    "english": ""
+  },
+  "140": {
+    "german": "auf der Homepage: Dokument mit Lernzielen, Literaturhinweisen und Glossar\\n",
+    "english": ""
+  },
+  "141": {
+    "german": "Grumpy cat line art",
+    "english": "Grumpy cat line art"
+  },
+  "142": {
+    "german": "XXspiritwolf2000XX",
+    "english": "XXspiritwolf2000XX"
+  },
+  "143": {
+    "german": "Creative Commons",
+    "english": "Creative Commons"
+  },
+  "144": {
+    "german": "Bild:",
+    "english": "Image:"
+  },
+  "145": {
+    "german": "\\textbf{Letztes Jahr}",
+    "english": ""
+  },
+  "146": {
+    "german": "\\textbf{Dieses Jahr}",
+    "english": ""
+  },
+  "147": {
+    "german": "\\textbf{Datenstrukturen}",
+    "english": ""
+  },
+  "148": {
+    "german": "\\textbf{Algorithmen}",
+    "english": ""
+  },
+  "149": {
+    "german": "\\textbf{Methoden und Techniken}",
+    "english": ""
+  },
+  "150": {
+    "german": "Welche Datenstrukturen haben wir kennen gelernt?",
+    "english": ""
+  },
+  "151": {
+    "german": "Für welchen Zweck ist welche Datenstruktur geeignet?",
+    "english": ""
+  },
+  "152": {
+    "german": "Wie funktioniert die effiziente Umsetzung?",
+    "english": ""
+  },
+  "153": {
+    "german": "Welche Algorithmen haben wir kennen gelernt?",
+    "english": ""
+  },
+  "154": {
+    "german": "Wie und warum funktionieren sie?",
+    "english": ""
+  },
+  "155": {
+    "german": "Formalisierung",
+    "english": ""
+  },
+  "156": {
+    "german": "Algorithmenentwurf",
+    "english": ""
+  },
+  "157": {
+    "german": "Detailumsetzung",
+    "english": ""
+  },
+  "158": {
+    "german": "Korrektheit",
+    "english": ""
+  },
+  "159": {
+    "german": "Laufzeit",
+    "english": ""
+  },
+  "160": {
+    "german": "dynamisches Array",
+    "english": ""
+  },
+  "161": {
+    "german": "Hashmap",
+    "english": ""
+  },
+  "162": {
+    "german": "$(a, b)$-Baum",
+    "english": ""
+  },
+  "163": {
+    "german": "Liste",
+    "english": ""
+  },
+  "164": {
+    "german": "binärer Heap",
+    "english": ""
+  },
+  "165": {
+    "german": "Union--Find",
+    "english": ""
+  },
+  "166": {
+    "german": "\\textbf{Kante:} Überleg dir, was jeweils die Vor- und Nachteile der\\nbeiden Strukturen im Vergleich miteinander sind.  Kennst du für beide\\nRichtungen Situationen, in denen jeweils die eine der anderen\\nüberlegen ist?",
+    "english": ""
+  },
+  "167": {
+    "german": "Graphdatenstruktur",
+    "english": ""
+  },
+  "168": {
+    "german": "\\textbf{binäre Suche}",
+    "english": ""
+  },
+  "169": {
+    "german": "\\textbf{sortieren}",
+    "english": ""
+  },
+  "170": {
+    "german": "vergleichsbasiert",
+    "english": ""
+  },
+  "171": {
+    "german": "(Merge- und Quicksort)",
+    "english": ""
+  },
+  "172": {
+    "german": "Zahlen",
+    "english": ""
+  },
+  "173": {
+    "german": "(Bucket- und Radixsort)",
+    "english": ""
+  },
+  "174": {
+    "german": "\\textbf{Tiefensuche}",
+    "english": ""
+  },
+  "175": {
+    "german": "gerichtet",
+    "english": ""
+  },
+  "176": {
+    "german": "ungerichtet",
+    "english": ""
+  },
+  "177": {
+    "german": "\\textbf{kürzeste Wege}",
+    "english": ""
+  },
+  "178": {
+    "german": "Breitensuche",
+    "english": ""
+  },
+  "179": {
+    "german": "Dijkstra",
+    "english": ""
+  },
+  "180": {
+    "german": "Bellman--Ford",
+    "english": ""
+  },
+  "181": {
+    "german": "Floyd--Warshall",
+    "english": ""
+  },
+  "182": {
+    "german": "\\textbf{minimale Spannbäume}",
+    "english": ""
+  },
+  "183": {
+    "german": "Prim und Kruskal",
+    "english": ""
+  },
+  "184": {
+    "german": "\\textbf{Formulierung in natürlicher Sprache}",
+    "english": ""
+  },
+  "185": {
+    "german": "\\textbf{formales Problem}",
+    "english": ""
+  },
+  "186": {
+    "german": "\\textbf{Teile und Herrsche}",
+    "english": ""
+  },
+  "187": {
+    "german": "\\textbf{Greedy}",
+    "english": ""
+  },
+  "188": {
+    "german": "\\textbf{dynamische Programmierung}",
+    "english": ""
+  },
+  "189": {
+    "german": "\\textbf{kleinere Tricks}",
+    "english": ""
+  },
+  "190": {
+    "german": "etwas Unordnung erlauben",
+    "english": ""
+  },
+  "191": {
+    "german": "Lazy Evaluation",
+    "english": ""
+  },
+  "192": {
+    "german": "nutze Zahlen als Arrayindex",
+    "english": ""
+  },
+  "193": {
+    "german": "\\textbf{algorithmische Idee}",
+    "english": ""
+  },
+  "194": {
+    "german": "\\textbf{Pseudocode}",
+    "english": ""
+  },
+  "195": {
+    "german": "\\textbf{Average-Case Analyse}",
+    "english": ""
+  },
+  "196": {
+    "german": "(randomisierte Algorithmen)",
+    "english": ""
+  },
+  "197": {
+    "german": "\\textbf{Rekurrenzen auflösen}",
+    "english": ""
+  },
+  "198": {
+    "german": "(via Rekursionsbaum)",
+    "english": ""
+  },
+  "199": {
+    "german": "\\textbf{Asymptotik: $O$-Notation}",
+    "english": ""
+  },
+  "200": {
+    "german": "\\textbf{exponentielle Summen}",
+    "english": ""
+  },
+  "201": {
+    "german": "\\textbf{amortisierte Analyse}",
+    "english": ""
+  },
+  "202": {
+    "german": "\\textbf{Adversary Argument}",
+    "english": ""
+  },
+  "203": {
+    "german": "\\textbf{Invarianten}",
+    "english": ""
+  },
+  "204": {
+    "german": "\\textbf{Induktion}",
+    "english": ""
+  },
+  "205": {
+    "german": "\\textbf{Widerspruchsbeweis}",
+    "english": ""
+  },
+  "206": {
+    "german": "(minimales Gegenbeispiel)",
+    "english": ""
+  },
+  "207": {
+    "german": "\\textbf{Austauschargument (Greedy)}",
+    "english": ""
+  },
+  "208": {
+    "german": "(es gibt aber meist kein Kochrezept)",
+    "english": ""
+  },
+  "209": {
+    "german": "\\textbf{Materialien}",
+    "english": ""
+  },
+  "210": {
+    "german": "Folien für Vorlesung und Übung \\hfill (Homepage) \\n",
+    "english": ""
+  },
+  "211": {
+    "german": "Übungsblätter mit Lösungen\\hfill (Homepage)\\n",
+    "english": ""
+  },
+  "212": {
+    "german": "Lernziele, Literaturhinweise und Glossar\\hfill (Homepage)\\n",
+    "english": ""
+  },
+  "213": {
+    "german": "Aufzeichnung von Vorlesung und Übung \\hfill (Ilias)\\n",
+    "english": ""
+  },
+  "214": {
+    "german": "alte Klausuren \\hfill (Fachschaft, Homepage)\\n",
+    "english": ""
+  },
+  "215": {
+    "german": "Zusatztutorien jede Woche jeweils Montag und Mittwoch 9:45 in Raum $-101$/$-102$",
+    "english": ""
+  },
+  "216": {
+    "german": "\\textbf{Zusätzliche Angebote}",
+    "english": ""
+  },
+  "217": {
+    "german": "digitale Sprechstunde (via Twitch): Mittwoch 2.8. um 18 Uhr und\\nvoraussichtlich nochmal in der Woche 21.8. -- 25.8.\\n",
+    "english": ""
+  },
+  "218": {
+    "german": "\\textbf{Erlaubte Hilfsmittel}",
+    "english": ""
+  },
+  "219": {
+    "german": "Spickzettel: ein A4 Blatt (Vor- und Rückseite), mit beliebigem Inhalt",
+    "english": ""
+  },
+  "220": {
+    "german": "Empfehlung: selbst erstellen und nicht von Kommiliton:innen kopieren",
+    "english": ""
+  },
+  "221": {
+    "german": "\\textbf{Plant ihr zu den Nachholtuts zu gehen?}",
+    "english": ""
+  },
+  "222": {
+    "german": "\\textbf{Im Bachelor belegbar}",
+    "english": ""
+  },
+  "223": {
+    "german": "Algorithmen 2",
+    "english": ""
+  },
+  "224": {
+    "german": "Algorithmen für planare Graphen",
+    "english": ""
+  },
+  "225": {
+    "german": "Algorithmen für Routenplanung",
+    "english": ""
+  },
+  "226": {
+    "german": "Algorithmische Graphentheorie",
+    "english": ""
+  },
+  "227": {
+    "german": "(Theoretische Grundlagen der Informatik)",
+    "english": ""
+  },
+  "228": {
+    "german": "Algorithmen zur Visualisierung von Graphen",
+    "english": ""
+  },
+  "229": {
+    "german": "Basispraktikum ICPC",
+    "english": ""
+  },
+  "230": {
+    "german": "Algorithmische Geometrie",
+    "english": ""
+  },
+  "231": {
+    "german": "Parametrisierte Algorithmen",
+    "english": ""
+  },
+  "232": {
+    "german": "Algorithm Engineering",
+    "english": ""
+  },
+  "233": {
+    "german": "Fortgeschrittene Datenstrukturen",
+    "english": ""
+  },
+  "234": {
+    "german": "Parallele Algorithmen",
+    "english": ""
+  },
+  "235": {
+    "german": "Text-Indexierung",
+    "english": ""
+  },
+  "236": {
+    "german": "Randomisierte Algorithmik",
+    "english": ""
+  },
+  "237": {
+    "german": "Modelle der Parallelverarbeitung",
+    "english": ""
+  },
+  "238": {
+    "german": "\\textbf{Vertiefungsvorlesungen für den Master}",
+    "english": ""
+  },
+  "239": {
+    "german": "Welche Vorlesungen genau angeboten werden ist natürlich immer etwas im\\nWandel.",
+    "english": ""
+  },
+  "240": {
+    "german": "Fortgeschrittenes algorithmisches Programmieren",
+    "english": ""
+  },
+  "241": {
+    "german": "Meldet euch für die Klausur an!",
+    "english": ""
+  },
+  "242": {
+    "german": "Bereitet euch gut darauf vor!",
+    "english": ""
+  },
+  "243": {
+    "german": "Schreibt eine gute Klausur!",
+    "english": ""
+  },
+  "244": {
+    "german": "\\textbf{Wir wünschen viel Erfolg!}",
+    "english": ""
+  }
+}

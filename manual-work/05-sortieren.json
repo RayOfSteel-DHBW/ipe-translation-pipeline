@@ -1,0 +1,918 @@
+{
+  "1": {
+    "german": "Anmerkung: untere Laufzeitschranken",
+    "english": ""
+  },
+  "2": {
+    "german": "Sortieren",
+    "english": ""
+  },
+  "3": {
+    "german": "Sortieren mittels Teile und Herrsche",
+    "english": ""
+  },
+  "4": {
+    "german": "Mergesort im Detail",
+    "english": ""
+  },
+  "5": {
+    "german": "Wie funktioniert \\function{merge}?",
+    "english": ""
+  },
+  "6": {
+    "german": "Merge im Detail",
+    "english": ""
+  },
+  "7": {
+    "german": "Laufzeit Mergesort",
+    "english": ""
+  },
+  "8": {
+    "german": "Sortieren mittels Teile und Herrsche",
+    "english": ""
+  },
+  "9": {
+    "german": "Quicksort: arbeiten beim Zerlegen",
+    "english": ""
+  },
+  "10": {
+    "german": "Erwartete Laufzeit bei zufälligen Pivots",
+    "english": ""
+  },
+  "11": {
+    "german": "Gute und schlechte Vergleiche im Detail",
+    "english": ""
+  },
+  "12": {
+    "german": "Quicksort: Ergebnis",
+    "english": ""
+  },
+  "13": {
+    "german": "Untere Schranke: Geht es schneller?",
+    "english": ""
+  },
+  "14": {
+    "german": "Nebenrechnung: $\\log(n!)\\in \\Theta(n \\log n)$",
+    "english": ""
+  },
+  "15": {
+    "german": "Zusammenfassung",
+    "english": "Summary"
+  },
+  "16": {
+    "german": "Bonus: Alternative Analyse",
+    "english": ""
+  },
+  "17": {
+    "german": "Bonus: Nebenbemerkung zur harmonischen Summe",
+    "english": ""
+  },
+  "18": {
+    "german": "Thomas Bläsius~--~Algorithmen 1",
+    "english": "Thomas Bläsius~--~Algorithms 1"
+  },
+  "19": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "20": {
+    "german": "\\textbf{Sortieren: Mergesort, Quicksort, untere Schranke}",
+    "english": ""
+  },
+  "21": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "22": {
+    "german": "\\textbf{Der Algorithmus benötigt $\\Omega(n^2)$ Schritte -- Was bedeutet das?}",
+    "english": ""
+  },
+  "23": {
+    "german": "Interpretation 1: auf allen Eingaben ist die Laufzeit mindestens\\nquadratisch",
+    "english": ""
+  },
+  "24": {
+    "german": "Interpretation 2: es gibt Eingaben, sodass die Laufzeit mindestens\\nquadratisch ist",
+    "english": ""
+  },
+  "25": {
+    "german": "\\textbf{Was gilt für die Vorlesung?}",
+    "english": ""
+  },
+  "26": {
+    "german": "außer explizit angegeben sprechen wir immer über den Worst Case",
+    "english": ""
+  },
+  "27": {
+    "german": "also: Interpretation 2",
+    "english": ""
+  },
+  "28": {
+    "german": "\\textbf{Warum machen wir das so?}",
+    "english": ""
+  },
+  "29": {
+    "german": "Interpretation 1 betrachtet den Best Case $\\rightarrow$ der ist selten\\nrelevant",
+    "english": ""
+  },
+  "30": {
+    "german": "\"`jeder Algo hat Laufzeit $\\Omega(n^2)$\"' $\\rightarrow$ es gibt keinen\\nsub-quadratischen Algo\\n",
+    "english": ""
+  },
+  "31": {
+    "german": "\"`ein konkreter Algo hat Laufzeit $\\Omega(n^2)$ und $O(n^3)$\"'\\n$\\rightarrow$ die Laufzeit ist im Worst Case zwischen quadratisch und\\nkubisch",
+    "english": ""
+  },
+  "32": {
+    "german": "Interpretation 2 nützlich in verschiedenen Situationen:",
+    "english": ""
+  },
+  "33": {
+    "german": "\\textbf{Gegeben}",
+    "english": "\\textbf{Given}"
+  },
+  "34": {
+    "german": "$n$ Elemente aus einer geordneten Menge (z.B.\\ Zahlen)",
+    "english": ""
+  },
+  "35": {
+    "german": "\\textbf{Gesucht}",
+    "english": ""
+  },
+  "36": {
+    "german": "sortierte Folge dieser Elemente (z.B. als Array oder Liste)",
+    "english": ""
+  },
+  "37": {
+    "german": "\\textbf{Insertion Sort}",
+    "english": ""
+  },
+  "38": {
+    "german": "füge Elemente nach und nach ein",
+    "english": ""
+  },
+  "39": {
+    "german": "halte Folge dabei sortiert",
+    "english": ""
+  },
+  "40": {
+    "german": "Bearbeitung des $i$ten Elements:\\n",
+    "english": ""
+  },
+  "41": {
+    "german": "suchen in Folge der Länge $i - 1$",
+    "english": ""
+  },
+  "42": {
+    "german": "einfügen in Folge der Länge $i - 1$",
+    "english": ""
+  },
+  "43": {
+    "german": "bisher sortierte Teilfolge:",
+    "english": ""
+  },
+  "44": {
+    "german": "binäre Suche: \\hfill $O(\\log n)$",
+    "english": ""
+  },
+  "45": {
+    "german": "einfügen:\\hfill$O(1)$",
+    "english": ""
+  },
+  "46": {
+    "german": "$O(\\log n)$ pro Element",
+    "english": ""
+  },
+  "47": {
+    "german": "$\\Rightarrow$ $O(n \\log n)$ gesamt",
+    "english": ""
+  },
+  "48": {
+    "german": "\\textbf{für Arrays (random access)}",
+    "english": ""
+  },
+  "49": {
+    "german": "\\textbf{für Listen}",
+    "english": ""
+  },
+  "50": {
+    "german": "\\textbf{Problem}",
+    "english": ""
+  },
+  "51": {
+    "german": "wir kennen noch keine Datenstruktur, mit der wir schnell suchen\\n\\textbf{und} einfügen können\\n",
+    "english": ""
+  },
+  "52": {
+    "german": "\\textbf{Array}",
+    "english": ""
+  },
+  "53": {
+    "german": "\\textbf{Liste}",
+    "english": ""
+  },
+  "54": {
+    "german": "Kosten in Schritt $i$:",
+    "english": ""
+  },
+  "55": {
+    "german": "Laufzeit: $\\sum\\limits_{i = 1}^{n} \\Theta(i) = \\Theta(n^2)$",
+    "english": ""
+  },
+  "56": {
+    "german": "\\textbf{heute:} zwei andere Algorithmen mit $\\Theta(n \\log n)$\\nLaufzeit",
+    "english": ""
+  },
+  "57": {
+    "german": "\\textbf{Mergesort:} arbeite beim Zusammenfügen",
+    "english": ""
+  },
+  "58": {
+    "german": "\\textbf{Quicksort:} arbeite beim Zerlegen",
+    "english": ""
+  },
+  "59": {
+    "german": "\\textbf{Instanz zerlegen}",
+    "english": ""
+  },
+  "60": {
+    "german": "\\textbf{Teile lösen}",
+    "english": ""
+  },
+  "61": {
+    "german": "\\textbf{kombinieren}",
+    "english": ""
+  },
+  "62": {
+    "german": "\\textbf{Zwei offene Fragen}",
+    "english": ""
+  },
+  "63": {
+    "german": "Wie setzt man das im Detail um?",
+    "english": ""
+  },
+  "64": {
+    "german": "Welche Laufzeit liefert das?",
+    "english": ""
+  },
+  "65": {
+    "german": "\\textbf{Korrektheit}",
+    "english": "\\textbf{Correctness}"
+  },
+  "66": {
+    "german": "Induktion über $A.\\function{size}()$",
+    "english": ""
+  },
+  "67": {
+    "german": "Anfang: passt für $A.\\function{size}() \\le 1$",
+    "english": ""
+  },
+  "68": {
+    "german": "Induktionsschritt:",
+    "english": ""
+  },
+  "69": {
+    "german": "Induktionsvoraussetzung $\\Rightarrow$ $\\function{mergesort}(B)$ sortiert $B$",
+    "english": ""
+  },
+  "70": {
+    "german": "analog:\\\\\\n$\\function{mergesort}(C)$ sortiert $C$",
+    "english": ""
+  },
+  "71": {
+    "german": "daher: $\\function{merge}(B, C)$ liefert $A$ in sortierter Form\\n",
+    "english": ""
+  },
+  "72": {
+    "german": "(vorrausgesetzt \\function{merge} ist korrekt)",
+    "english": ""
+  },
+  "73": {
+    "german": "$B \\coloneqq \\text{ first half of }A$",
+    "english": ""
+  },
+  "74": {
+    "german": "$C \\coloneqq \\text{ second half of }A$",
+    "english": ""
+  },
+  "75": {
+    "german": "\\textbf{Laufzeitanalyse}",
+    "english": "\\textbf{Runtime analysis}"
+  },
+  "76": {
+    "german": "$i_B + i_C$ wird in jedem Schleifendurchlauf um genau $1$ größer\\n",
+    "english": ""
+  },
+  "77": {
+    "german": "daher: $n_B + n_C$ Schleifendurchläufe",
+    "english": ""
+  },
+  "78": {
+    "german": "Laufzeit: $\\Theta(n_B + n_C) = \\Theta(A.\\function{size}())$",
+    "english": ""
+  },
+  "79": {
+    "german": "\\textbf{Plan}",
+    "english": "\\textbf{Plan}"
+  },
+  "80": {
+    "german": "erstelle neues Array $A$ für das Ergebnis",
+    "english": ""
+  },
+  "81": {
+    "german": "füge iterativ das kleinste noch nicht eingefügte Element in $A$ ein\\n",
+    "english": ""
+  },
+  "82": {
+    "german": "\\textbf{Invariante (nach jedem Einfügen)}",
+    "english": ""
+  },
+  "83": {
+    "german": "für $B, C$: kenne Positionen $i_B, i_C$ ab der die noch nicht\\neingefügten Elemente kommen\\n",
+    "english": ""
+  },
+  "84": {
+    "german": "genau die Elemente vor $i_B$ aus $B$ und vor $i_C$ aus $C$ wurden\\nschon in $A$ eingefügt\\n",
+    "english": ""
+  },
+  "85": {
+    "german": "bisher in $A$ eingefügte Elemente sind sortiert\\n",
+    "english": ""
+  },
+  "86": {
+    "german": "$B$ und $C$ sortiert $\\Rightarrow$ kleinstes nicht eingefügtes Element\\nist $B[i_B]$ oder $C[i_C]$\\n",
+    "english": ""
+  },
+  "87": {
+    "german": "damit: $\\min\\{B[i_B], C[i_C]\\}$ in $A$ einfügen (und $i_B$ bzw.\\ $i_C$\\nerhöhen) erhält Invariante\\n",
+    "english": ""
+  },
+  "88": {
+    "german": "alle eingefügten Elemente sind kleiner als die nicht eingefügten\\nElemente",
+    "english": ""
+  },
+  "89": {
+    "german": "\\textbf{Bleibt die Invariante in jedem Schritt erhalten?}",
+    "english": ""
+  },
+  "90": {
+    "german": "(beachte: sie gilt am Anfang)",
+    "english": ""
+  },
+  "91": {
+    "german": "\\textbf{Laufzeitanalyse}",
+    "english": "\\textbf{Runtime analysis}"
+  },
+  "92": {
+    "german": "$i_B + i_C$ wird in jedem Schleifendurchlauf um genau $1$ größer\\n",
+    "english": ""
+  },
+  "93": {
+    "german": "daher: $n_B + n_C$ Schleifendurchläufe",
+    "english": ""
+  },
+  "94": {
+    "german": "Laufzeit: $\\Theta(n_B + n_C) = \\Theta(A.\\function{size}())$",
+    "english": ""
+  },
+  "95": {
+    "german": "\\textbf{Welche Rekurrenz beschreibt die Laufzeit?}",
+    "english": ""
+  },
+  "96": {
+    "german": "\\textbf{Laufzeit}",
+    "english": ""
+  },
+  "97": {
+    "german": "Rekurrenz: $T(n) = 2 \\cdot T(\\frac{n}{2}) + \\Theta(n)$",
+    "english": ""
+  },
+  "98": {
+    "german": "Mastertheorem $\\Rightarrow$ $T(n) \\in \\Theta(n \\log n)$",
+    "english": ""
+  },
+  "99": {
+    "german": "Grumpy cat line art",
+    "english": "Grumpy cat line art"
+  },
+  "100": {
+    "german": "XXspiritwolf2000XX",
+    "english": "XXspiritwolf2000XX"
+  },
+  "101": {
+    "german": "Creative Commons",
+    "english": "Creative Commons"
+  },
+  "102": {
+    "german": "Bild:",
+    "english": "Image:"
+  },
+  "103": {
+    "german": "\\textbf{Mastertheorem?}",
+    "english": ""
+  },
+  "104": {
+    "german": "\\textbf{Voll anstrengend!}",
+    "english": ""
+  },
+  "105": {
+    "german": "\\textbf{Muss ich das auswendig können?}\\n",
+    "english": ""
+  },
+  "106": {
+    "german": "\\textbf{Herleitung für $\\Theta(n \\log n)$ in diesem Fall}",
+    "english": ""
+  },
+  "107": {
+    "german": "Rekursionsbaum: Binärbaum der Tiefe $\\log_2 n$",
+    "english": ""
+  },
+  "108": {
+    "german": "Aufwand auf Ebene $i$:",
+    "english": ""
+  },
+  "109": {
+    "german": "$2^i$ Knoten mit $n\\cdot 2^{-i}$ Elementen",
+    "english": ""
+  },
+  "110": {
+    "german": "$\\Theta(n)$ Kosten für $n$ Elem.\\ $\\Rightarrow$ $\\Theta(n)$ pro Ebene",
+    "english": ""
+  },
+  "111": {
+    "german": "gesamt: $\\Theta(n \\log n)$",
+    "english": ""
+  },
+  "112": {
+    "german": "$B \\coloneqq \\text{ first half of }A$",
+    "english": ""
+  },
+  "113": {
+    "german": "$C \\coloneqq \\text{ second half of }A$",
+    "english": ""
+  },
+  "114": {
+    "german": "\\textbf{Mergesort:} arbeite beim Zusammenfügen",
+    "english": ""
+  },
+  "115": {
+    "german": "\\textbf{Quicksort:} arbeite beim Zerlegen",
+    "english": ""
+  },
+  "116": {
+    "german": "\\textbf{Instanz zerlegen}",
+    "english": ""
+  },
+  "117": {
+    "german": "\\textbf{Teile lösen}",
+    "english": ""
+  },
+  "118": {
+    "german": "\\textbf{kombinieren}",
+    "english": ""
+  },
+  "119": {
+    "german": "\\textbf{Zwei offene Fragen}",
+    "english": ""
+  },
+  "120": {
+    "german": "Wie setzt man das im Detail um?",
+    "english": ""
+  },
+  "121": {
+    "german": "Welche Laufzeit liefert das?",
+    "english": ""
+  },
+  "122": {
+    "german": "\\textbf{Zerlegung in große und kleine Elemente}",
+    "english": ""
+  },
+  "123": {
+    "german": "wähle ein Element als \\emph{Pivot Element}",
+    "english": ""
+  },
+  "124": {
+    "german": "zwei Teilarrays: Elemente die kleiner/größer sind als das Pivot",
+    "english": ""
+  },
+  "125": {
+    "german": "\\textbf{Best Case}",
+    "english": ""
+  },
+  "126": {
+    "german": "$\\Theta(\\log n)$ Ebenen, $\\Theta(n)$ Vergleiche pro Ebene",
+    "english": ""
+  },
+  "127": {
+    "german": "die zwei Teilarrays sind etwa gleich groß",
+    "english": ""
+  },
+  "128": {
+    "german": "Gesamtkosten: $\\Theta(n \\log n)$",
+    "english": ""
+  },
+  "129": {
+    "german": "\\textbf{Worst Case}",
+    "english": ""
+  },
+  "130": {
+    "german": "Pivot ist kleinstes oder größtes Element",
+    "english": ""
+  },
+  "131": {
+    "german": "Vergleich zwischen jedem Elementpaar",
+    "english": ""
+  },
+  "132": {
+    "german": "Gesamtkosten: $\\Theta(n^2)$\\n",
+    "english": ""
+  },
+  "133": {
+    "german": "\\textbf{Hoffnung:} mit zufällig gewähltem Pivot ist man nah am Best\\nCase\\n",
+    "english": ""
+  },
+  "134": {
+    "german": "\\textbf{Nutze Linearität des Erwartungswerts}\\n",
+    "english": ""
+  },
+  "135": {
+    "german": "\\textbf{Vergleiche des $i$-ten Elements $e_i$}\\n",
+    "english": ""
+  },
+  "136": {
+    "german": "Ziel: schätze $\\EX{X_i}$ ab für beliebiges aber festes $i$",
+    "english": ""
+  },
+  "137": {
+    "german": "\\textbf{Zufallsvariablen}\\n",
+    "english": ""
+  },
+  "138": {
+    "german": "$X$: Anzahl Vergleiche insgesamt",
+    "english": ""
+  },
+  "139": {
+    "german": "$X_i$: Anzahl Vergleiche des $i$-ten Elements $e_i$ mit einem Pivot",
+    "english": ""
+  },
+  "140": {
+    "german": "Ziel: wähle genaue Definition sodass",
+    "english": ""
+  },
+  "141": {
+    "german": "weniger schlecht als gut:\\hfill $\\EX{X_i^-} \\le \\EX{X_i^+}$",
+    "english": ""
+  },
+  "142": {
+    "german": "\\textbf{guter Vergleich}",
+    "english": ""
+  },
+  "143": {
+    "german": "\\textbf{schlechter Vergleich}",
+    "english": ""
+  },
+  "144": {
+    "german": "gleichmäßige Aufteilung",
+    "english": ""
+  },
+  "145": {
+    "german": "ungleichmäßige Aufteilung",
+    "english": ""
+  },
+  "146": {
+    "german": "$X_i^-$: Anzahl schlechte Vergleiche von $e_i$ mit einem Pivot",
+    "english": ""
+  },
+  "147": {
+    "german": "$X_i^+$: Anzahl gute Vergleiche von $e_i$ mit einem Pivot",
+    "english": ""
+  },
+  "148": {
+    "german": "wenige gute Vergleiche: \\hfill $X_i^+ \\in O(\\log n)$",
+    "english": ""
+  },
+  "149": {
+    "german": "\\textbf{Wann nennen wir den Vergleich mit einem Pivot gut?}\\n",
+    "english": ""
+  },
+  "150": {
+    "german": "\\textbf{Zufallsvariablen}\\n",
+    "english": ""
+  },
+  "151": {
+    "german": "$X_i^-$: Anzahl schlechte Vergleiche von $e_i$ mit einem Pivot",
+    "english": ""
+  },
+  "152": {
+    "german": "$X_i^+$: Anzahl gute Vergleiche von $e_i$ mit einem Pivot",
+    "english": ""
+  },
+  "153": {
+    "german": "\\textbf{Mehr gute als schlechte Vergleiche:} $\\EX{X_i^+} \\ge \\EX{X_i^-}$",
+    "english": ""
+  },
+  "154": {
+    "german": "\\textbf{Wenige gute Vergleiche:} $X_i^+ \\in O(\\log n)$",
+    "english": ""
+  },
+  "155": {
+    "german": "Teilarray von $e_i$ schrumpft bei jedem guten Vergleich um den Faktor $\\frac{3}{4}$",
+    "english": ""
+  },
+  "156": {
+    "german": "das kann nur $O(\\log n)$ oft passieren",
+    "english": ""
+  },
+  "157": {
+    "german": "Hälfte der möglichen Pivots führen zu gutem Vergleich",
+    "english": ""
+  },
+  "158": {
+    "german": "daher: $\\Pro{\\text{guter Vergleich}} \\ge \\frac{1}{2} \\ge\\n\\Pro{\\text{schlechter Vergleich}}$",
+    "english": ""
+  },
+  "159": {
+    "german": "$\\left\\lceil \\frac{k}{2} \\right\\rceil$ gute Pivots",
+    "english": ""
+  },
+  "160": {
+    "german": "(sortiertes Teilarray)",
+    "english": ""
+  },
+  "161": {
+    "german": "$k$: Größe des aktuellen Arrays",
+    "english": ""
+  },
+  "162": {
+    "german": "guter Vergleich: beide Teilarrays\\n$\\le\\left\\lfloor \\frac{3}{4} k \\right\\rfloor$\\n",
+    "english": ""
+  },
+  "163": {
+    "german": "\\textbf{Theorem}\\\\\\nAuf jeder Eingabe der Länge $n$ benötigt Quicksort mit zufälligen\\nPivots im Erwartungswert $O(n \\log n)$ Vergleiche.\\n",
+    "english": ""
+  },
+  "164": {
+    "german": "\\textbf{Anmerkungen}",
+    "english": "\\textbf{Notes}"
+  },
+  "165": {
+    "german": "wir sprechen hier auch vom \\emph{Average Case}",
+    "english": ""
+  },
+  "166": {
+    "german": "der Erwartungswert bezieht sich nur auf die zufälligen Entscheidungen\\ndes Algorithmus",
+    "english": ""
+  },
+  "167": {
+    "german": "bei der Eingabe wird weiterhin der Worst Case betrachtet",
+    "english": ""
+  },
+  "168": {
+    "german": "damit ist auch die Erwartete Laufzeit in $O(n \\log n)$",
+    "english": ""
+  },
+  "169": {
+    "german": "\\textbf{Bonus am Ende der Folien: alternative Analyse}",
+    "english": ""
+  },
+  "170": {
+    "german": "liefert alternative Perspektive",
+    "english": ""
+  },
+  "171": {
+    "german": "gibt genaueres Ergebnis",
+    "english": ""
+  },
+  "172": {
+    "german": "\\textbf{Theorem}\\\\\\nJeder vergleichsbasierte Sortieralgorithmus benötigt $\\Omega(n \\log\\nn)$ Vergleiche um eine Folge von $n$ Elementen zu sortieren.",
+    "english": ""
+  },
+  "173": {
+    "german": "\\textbf{Beweis}",
+    "english": "\\textbf{Proof}"
+  },
+  "174": {
+    "german": "ähnlich wie bei der binären Suche:",
+    "english": ""
+  },
+  "175": {
+    "german": "binäre Entscheidung pro Vergleich",
+    "english": ""
+  },
+  "176": {
+    "german": "$k$ Vergleiche $\\rightarrow$ $2^k$ verschiedene Ausführungen\\n",
+    "english": ""
+  },
+  "177": {
+    "german": "$k$ Vergleiche",
+    "english": ""
+  },
+  "178": {
+    "german": "$2^k$ Ausführungen",
+    "english": ""
+  },
+  "179": {
+    "german": "\\textbf{Wie viele verschiedene Ausführungen muss jeder korrekte\\n  Algorithmus haben können?}\\n",
+    "english": ""
+  },
+  "180": {
+    "german": "verschiedene Ausführungen:",
+    "english": ""
+  },
+  "181": {
+    "german": "betrachte zwei Permutationen der Eingabe",
+    "english": ""
+  },
+  "182": {
+    "german": "Elemente müssen unterschiedlich umsortiert werden",
+    "english": ""
+  },
+  "183": {
+    "german": "jede Permutation führt zu unterschiedlicher Ausführung\\n",
+    "english": ""
+  },
+  "184": {
+    "german": "jeder korrekte Algo braucht $n!$ verschiedene Ausführungen ($n!$\\nBlätter im Entscheidungsbaum)\\n",
+    "english": ""
+  },
+  "185": {
+    "german": "min.\\ $n!$ Ausführungen $\\Rightarrow$ min.\\ $\\log(n!)$ Vergleiche\\n",
+    "english": ""
+  },
+  "186": {
+    "german": "\\textbf{zu zeigen:} $\\log(n!) \\in \\Theta(n \\log n)$",
+    "english": ""
+  },
+  "187": {
+    "german": "\\textbf{Anmerkung: vergleichsbasiert}",
+    "english": ""
+  },
+  "188": {
+    "german": "Ausführung des Algo: Sequenz von Lese- und Schreibzugriffen auf den\\nSpeicher\\n",
+    "english": ""
+  },
+  "189": {
+    "german": "vergleichsbasiert: diese Sequenz hängt nur von den Vergleichen ab",
+    "english": ""
+  },
+  "190": {
+    "german": "selbe Vergleichsergebnisse $\\Rightarrow$ selbe Ausführung",
+    "english": ""
+  },
+  "191": {
+    "german": "\\textbf{Möglichkeit 1: Stirlingformel}",
+    "english": ""
+  },
+  "192": {
+    "german": "die Stirlingformel sagt: $n! \\approx \\sqrt{2 \\pi n} \\left( \\frac{n}{e}\\n\\right)^n \\in \\Theta\\left(\\sqrt{n} \\left( \\frac{n}{e} \\right)^n\\right)$",
+    "english": ""
+  },
+  "193": {
+    "german": "daher: $\\log(n!) \\in \\Theta\\left(\\log\\left(\\sqrt{n} \\left( \\frac{n}{e} \\right)^n\\right)\\right)$",
+    "english": ""
+  },
+  "194": {
+    "german": "\\textbf{Logarithmengesetze}",
+    "english": ""
+  },
+  "195": {
+    "german": "$\\log(a\\cdot b) = \\log(a) + log(b)$",
+    "english": ""
+  },
+  "196": {
+    "german": "$\\log(\\frac{a}{b}) = \\log(a) - log(b)$",
+    "english": ""
+  },
+  "197": {
+    "german": "\\textbf{Möglichkeit 2: von Hand}",
+    "english": ""
+  },
+  "198": {
+    "german": "$n$ Summanden, jeder $\\le \\log n$",
+    "english": ""
+  },
+  "199": {
+    "german": "ersten $\\frac{n}{2}$ Summanden $\\ge \\log(\\frac{n}{2})$",
+    "english": ""
+  },
+  "200": {
+    "german": "also: $\\log(n!) \\ge \\frac{n}{2} \\cdot \\log(\\frac{n}{2}) = \\frac{n}{2}\\n\\log n - \\frac{n}{2} \\log 2 \\in \\Omega(n \\log n)$",
+    "english": ""
+  },
+  "201": {
+    "german": "\\textbf{Heute gesehen}",
+    "english": ""
+  },
+  "202": {
+    "german": "Mergesort: arbeite beim Zusammenfügen der Teillösungen",
+    "english": ""
+  },
+  "203": {
+    "german": "Quicksort: arbeite beim Zerlegen in Teilprobleme",
+    "english": ""
+  },
+  "204": {
+    "german": "Teile und Herrsche zum Sortieren von Folgen",
+    "english": ""
+  },
+  "205": {
+    "german": "\\textbf{Average Case Analyse bei Quicksort}",
+    "english": ""
+  },
+  "206": {
+    "german": "betrachte Vergleichswahrscheinlichkeit für jedes Elementpaar",
+    "english": ""
+  },
+  "207": {
+    "german": "Abschätzen von Erwartungswerten: Aufspaltung in Summe einfacherer\\nZufallsvariablen\\n",
+    "english": ""
+  },
+  "208": {
+    "german": "Abschätzung von Summen: Approximation mittels Integral",
+    "english": ""
+  },
+  "209": {
+    "german": "hier gesehen: zähle Vergleiche für ein einzelnes Element",
+    "english": ""
+  },
+  "210": {
+    "german": "\\textbf{Bonus (nach dieser Folie): Average Case Analyse bei Quicksort}",
+    "english": ""
+  },
+  "211": {
+    "german": "\\textbf{Vergleichsbasiertes Sortieren}",
+    "english": ""
+  },
+  "212": {
+    "german": "untere Schranke: jeder vergleichsbasierte Sortieralgo benötigt\\n$\\Omega(n \\log n)$ Vergleiche\\n",
+    "english": ""
+  },
+  "213": {
+    "german": "Technik: Entscheidungsbaum (wie schon bei der binären Suche)\\n",
+    "english": ""
+  },
+  "214": {
+    "german": "\\textbf{Zufallsvariablen}\\n",
+    "english": ""
+  },
+  "215": {
+    "german": "$X$: Anzahl Vergleiche insgesamt",
+    "english": ""
+  },
+  "216": {
+    "german": "$X_{ij}$: Indikatorvariable für Vergleich zwischen $e_i$ und $e_j$",
+    "english": ""
+  },
+  "217": {
+    "german": "\\textbf{Summe der einzelnen Vergleiche}",
+    "english": ""
+  },
+  "218": {
+    "german": "seien $e_1 \\le e_2 \\le \\dots \\le e_n$ die sortierten Elemente",
+    "english": ""
+  },
+  "219": {
+    "german": "$X_{ij} = 1$ wenn $e_i$ und $e_j$ verglichen werden, $X_{ij} = 0$ sonst",
+    "english": ""
+  },
+  "220": {
+    "german": "\\textbf{Wahrscheinlichkeit für $X_{ij} = 1$}",
+    "english": ""
+  },
+  "221": {
+    "german": "$X_{ij} = 1$ $\\Leftrightarrow$ das erste Pivot aus\\n$\\{e_i, e_{i+1}, \\dots, e_{j - 1}, e_j\\}$ ist $e_i$ oder $e_j$\\n",
+    "english": ""
+  },
+  "222": {
+    "german": "oder",
+    "english": ""
+  },
+  "223": {
+    "german": "\\textbf{Mit welcher Wahrscheinlichkeit wird $e_i$ mit $e_j$ verglichen?}",
+    "english": ""
+  },
+  "224": {
+    "german": "\\textbf{harmonische Summe}",
+    "english": ""
+  },
+  "225": {
+    "german": "(gleich mehr dazu)",
+    "english": ""
+  },
+  "226": {
+    "german": "\\textbf{Theorem}\\\\\\nAuf jeder Eingabe der Länge $n$ benötigt Quicksort mit zufälligen\\nPivots erwartet $\\le 2n \\ln n$ Vergleiche.\\n",
+    "english": ""
+  },
+  "227": {
+    "german": "\\textbf{Harmonische Zahl $H_n$}",
+    "english": ""
+  },
+  "228": {
+    "german": "nützlich zu wissen: $H_n \\in \\Theta(\\log n)$",
+    "english": ""
+  },
+  "229": {
+    "german": "\\textbf{Beweis und genauere Abschätzung}",
+    "english": ""
+  }
+}

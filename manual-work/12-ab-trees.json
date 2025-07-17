@@ -1,0 +1,914 @@
+{
+  "1": {
+    "german": "Best-Fit Bin-Packing",
+    "english": "Best-fit bin packing"
+  },
+  "2": {
+    "german": "Versuch 1: sortiertes Array",
+    "english": "Try 1: sorted array"
+  },
+  "3": {
+    "german": "Versuch 2: sortierte Liste",
+    "english": "Try 2: sorted list"
+  },
+  "4": {
+    "german": "Versuch 3: Hashing oder Heaps",
+    "english": "Try 3: hashing / heaps"
+  },
+  "5": {
+    "german": "Ziel: dynamische sortierte Folgen",
+    "english": "Goal: dynamic sorted seq."
+  },
+  "6": {
+    "german": "Suchbaum: Vorüberlegungen zum Update",
+    "english": "Search tree: update ideas"
+  },
+  "7": {
+    "german": "Nicht-Binär: Suchbaum mit höherem Verzweigungsgrad",
+    "english": "Non-binary: higher fan-out"
+  },
+  "8": {
+    "german": "$(2, 3)$-Baum",
+    "english": "$(2,3)$-tree"
+  },
+  "9": {
+    "german": "$(2, 3)$-Baum: Einfügen am Beispiel",
+    "english": "$(2,3)$-tree: insert ex."
+  },
+  "10": {
+    "german": "$(2, 3)$-Baum: Einfügen",
+    "english": "$(2,3)$-tree: insert"
+  },
+  "11": {
+    "german": "$(2, 3)$-Baum: Löschen",
+    "english": "$(2,3)$-tree: delete"
+  },
+  "12": {
+    "german": "Wie viel müssen wir Arbeiten?",
+    "english": "How much work needed?"
+  },
+  "13": {
+    "german": "$(2, 3)$-Baum: Überblick",
+    "english": "$(2,3)$-tree: overview"
+  },
+  "14": {
+    "german": "Suchbäume in der Wildnis",
+    "english": "Search trees in the wild"
+  },
+  "15": {
+    "german": "Überblick Datenstrukturen",
+    "english": "Data structures overview"
+  },
+  "16": {
+    "german": "Zusammenfassung",
+    "english": "Summary"
+  },
+  "17": {
+    "german": "Ankündigung",
+    "english": "Announcement"
+  },
+  "18": {
+    "german": "Thomas Bläsius~--~Algorithmen 1",
+    "english": "Thomas Bläsius~--~Algorithms 1"
+  },
+  "19": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "20": {
+    "german": "\\textbf{Sortierte Folgen und Suchbäume}",
+    "english": "\\textbf{Sorted sequences and search trees}"
+  },
+  "21": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "22": {
+    "german": "\\textbf{Bin-Packing: Umzugskisten packen}\\n",
+    "english": "\\textbf{Bin packing: moving boxes}\\n"
+  },
+  "23": {
+    "german": "gegeben: Gegenstände unterschiedlicher Größe\\n",
+    "english": "Given: items of various size\\n"
+  },
+  "24": {
+    "german": "hier: Größe ist eine Zahl aus $[0, 1]$",
+    "english": "Here: size $\\in [0,1]$"
+  },
+  "25": {
+    "german": "in jede Kiste passen Gegenstände mit Gesamtgröße $1$\\n",
+    "english": "Bin capacity 1 total\\n"
+  },
+  "26": {
+    "german": "Ziel: packe alle Gegenstände in möglichst wenige Kisten\\n",
+    "english": "Goal: pack all items into as few bins as possible\\n"
+  },
+  "27": {
+    "german": "\\textbf{Best-Fit Strategie}\\n",
+    "english": "\\textbf{Best-fit strategy}\\n"
+  },
+  "28": {
+    "german": "pro Schritt: füge einen Gegenstand in eine Kiste ein",
+    "english": "per Step: place one item"
+  },
+  "29": {
+    "german": "Freiheitsgrad: Wahl der Kiste",
+    "english": "Freedom: choose bin"
+  },
+  "30": {
+    "german": "hier: möglichst volle Kiste, in die der Gegenstand passt\\n",
+    "english": "Here: pick fullest fitting bin\\n"
+  },
+  "31": {
+    "german": "\\textbf{Optimale Lösung}",
+    "english": "\\textbf{Optimal solution}"
+  },
+  "32": {
+    "german": "\\textbf{Best-Fit Lösung}",
+    "english": "\\textbf{Best-fit solution}"
+  },
+  "33": {
+    "german": "Anmerkung: nicht optimal, aber brauchbare Approximation",
+    "english": "Note: not optimal, but good approximation"
+  },
+  "34": {
+    "german": "Ziel heute: $O(\\log n)$ pro Schritt\\n",
+    "english": "Target today: $O(\\log n)$\\n"
+  },
+  "35": {
+    "german": "\\textbf{Warum eignen sich unsere bisherigen Datenstrukturen nicht?}",
+    "english": "\\textbf{Why don't our DS work?}"
+  },
+  "36": {
+    "german": "Füllgrad der Bins:",
+    "english": "Bin fill levels:"
+  },
+  "37": {
+    "german": "Array sortiert nach freier Kapazität:",
+    "english": "Array sorted by free cap:"
+  },
+  "38": {
+    "german": "\\textbf{Super: richtigen Bin finden}",
+    "english": "\\textbf{Great: find right bin}"
+  },
+  "39": {
+    "german": "Ziel: Gegenstand der Größe $x$ einfügen",
+    "english": "Goal: insert item size $x$"
+  },
+  "40": {
+    "german": "binäre Suche nach $x$ $\\rightarrow$ Bin mit kleinster freier Kapazität\\n$\\ge x$\\n",
+    "english": "binary search for $x$ $\\rightarrow$ bin with smallest free capacity\\n$\\ge x$\\n"
+  },
+  "41": {
+    "german": "Kosten: $O(\\log n)$\\n",
+    "english": "Cost $O(\\log n)$\\n"
+  },
+  "42": {
+    "german": "\\textbf{Problem: Array sortiert halten}",
+    "english": "\\textbf{Problem: keeping array sorted}"
+  },
+  "43": {
+    "german": "Element verschieben: ggf.\\ müssen $\\Theta(n)$ Elemente angefasst werden\\n",
+    "english": "Moving element: may need to touch $\\Theta(n)$ elements\\n"
+  },
+  "44": {
+    "german": "Zielposition des Bins kann wieder leicht gefunden werden (binäre Suche)\\n",
+    "english": "Target bin position found easily (binary search)\\n"
+  },
+  "45": {
+    "german": "\\textbf{Super: Einträge umhängen geht schnell}",
+    "english": "\\textbf{Great: moving entries fast}"
+  },
+  "46": {
+    "german": "nur ein paar Zeiger umhängen",
+    "english": "Just relink few pointers"
+  },
+  "47": {
+    "german": "\\textbf{Problem: Richtiges Bin finden}",
+    "english": "\\textbf{Problem: find correct bin}"
+  },
+  "48": {
+    "german": "keine binäre Suche, da kein wahlfreier Zugriff",
+    "english": "No bin search, no random acc."
+  },
+  "49": {
+    "german": "kostet ggf.\\ $\\Theta(n)$",
+    "english": "May cost $\\Theta(n)$"
+  },
+  "50": {
+    "german": "Füllgrad der Bins:",
+    "english": "Bin fill levels:"
+  },
+  "51": {
+    "german": "Liste sortiert nach freier Kapazität:",
+    "english": "List sorted by free cap:"
+  },
+  "52": {
+    "german": "\\textbf{Heaps}",
+    "english": "\\textbf{Heaps}"
+  },
+  "53": {
+    "german": "\\textbf{Hashing}",
+    "english": "\\textbf{Hashing}"
+  },
+  "54": {
+    "german": "kann nur exakte Anfragen",
+    "english": "Only exact queries"
+  },
+  "55": {
+    "german": "wir können schnell rausfinden, ob es einen Bin gibt, in den der neue\\nGegenstand genau rein passt\\n",
+    "english": "We can quickly test if an item fits exactly into a bin\\n"
+  },
+  "56": {
+    "german": "nächstkleinere freie Kapazität finden geht nicht",
+    "english": "No next-smaller search"
+  },
+  "57": {
+    "german": "Maximale freie Kapazität kann schnell gefunden werden\\n",
+    "english": "Max free capacity found quickly\\n"
+  },
+  "58": {
+    "german": "darüber hinaus können wir nicht effizient suchen",
+    "english": "Else no efficient search"
+  },
+  "59": {
+    "german": "\\textbf{Ziel: kombiniere Vorteile von Listen (Modifizierbarkeit) und\\n  Arrays (binäre Suche)}\\n",
+    "english": "\\textbf{Goal: combine list (modifiable) and array (binary search) strengths}\\n"
+  },
+  "60": {
+    "german": "Problem der Liste: kein wahlfreier Zugriff auf mittleres Element\\n",
+    "english": "List issue: no random acc.\\n"
+  },
+  "61": {
+    "german": "binäre Suche nach $x = 42$",
+    "english": "Bin search for $x=42$"
+  },
+  "62": {
+    "german": "(bzw.\\ nach nächst-größerem Eintrag, falls $x$ nicht existiert)",
+    "english": "(or next larger if absent)"
+  },
+  "63": {
+    "german": "Vergleich 1: $x \\le$",
+    "english": "Cmp 1: $x \\le$"
+  },
+  "64": {
+    "german": "Vergleich 2: $x \\le$",
+    "english": "Cmp 2: $x \\le$"
+  },
+  "65": {
+    "german": "Vergleich 3: $x \\le$",
+    "english": "Cmp 3: $x \\le$"
+  },
+  "66": {
+    "german": "Vergleich 4: $x \\le$",
+    "english": "Cmp 4: $x \\le$"
+  },
+  "67": {
+    "german": "binäre Suche nach $x = 11$",
+    "english": "Bin search $x=11$"
+  },
+  "68": {
+    "german": "binäre Suche nach $x = 25$",
+    "english": "Bin search $x=25$"
+  },
+  "69": {
+    "german": "Beobachtung: wir fragen im Entscheidungsbaum immer die selben Elemente an\\n",
+    "english": "Observation: we always query same elements in decision tree\\n"
+  },
+  "70": {
+    "german": "wir brauchen nicht wirklich wahlfreien Zugriff",
+    "english": "Thus no full random acc."
+  },
+  "71": {
+    "german": "wenn wir den Entscheidungsbaum speichern",
+    "english": "Store decision tree"
+  },
+  "72": {
+    "german": "\\textbf{Plan: Suchbaum}\\n",
+    "english": "\\textbf{Plan: search tree}\\n"
+  },
+  "73": {
+    "german": "speichere sortierte Liste + Baum",
+    "english": "Keep list + tree"
+  },
+  "74": {
+    "german": "Suche: $O(\\log n)$ dank Baum",
+    "english": "Search $O(\\log n)$ via tree"
+  },
+  "75": {
+    "german": "(simuliert eine binäre Suche)",
+    "english": "(simulates bin search)"
+  },
+  "76": {
+    "german": "Einfügen und Löschen:",
+    "english": "Insert and delete:"
+  },
+  "77": {
+    "german": "in der Liste selbst schnell",
+    "english": "Fast inside list"
+  },
+  "78": {
+    "german": "($O(1)$ nach dem Suchen)",
+    "english": "($O(1)$ after search)"
+  },
+  "79": {
+    "german": "Hoffnung: Baum kann man schnell updaten\\n",
+    "english": "Hope: tree easy to upd.\\n"
+  },
+  "80": {
+    "german": "\\textbf{Binärer Suchbaum -- Eigenschaften}",
+    "english": "\\textbf{Binary search tree -- properties}"
+  },
+  "81": {
+    "german": "\\emph{Suchbaum:} für Knoten mit Schlüssel $k$ gilt:\\n",
+    "english": "\\emph{Search tree:} node key $k$:\\n"
+  },
+  "82": {
+    "german": "Knoten in linkem Teilbaum: $\\le k$\\n",
+    "english": "Left subtree $\\le k$\\n"
+  },
+  "83": {
+    "german": "Knoten in rechtem Teilbaum: $> k$\\n",
+    "english": "Right subtree > $k$\\n"
+  },
+  "84": {
+    "german": "\\emph{balanciert:} jedes Blatt hat gleiche Tiefe\\n",
+    "english": "\\emph{balanced:} all leaves at same depth"
+  },
+  "85": {
+    "german": "\\emph{binär:} jeder innere Knoten hat genau zwei Kinder\\n",
+    "english": "\\emph{binary:} each node 2 kids\\n"
+  },
+  "86": {
+    "german": "\\textbf{Suchbaum-Eigenschaft}",
+    "english": "\\textbf{Search tree property}"
+  },
+  "87": {
+    "german": "essentiell, da Suche sonst nicht funktioniert $\\rightarrow$ müssen wir\\nbeim Update sicherstellen\\n",
+    "english": "essential for search → must preserve during updates\\n"
+  },
+  "88": {
+    "german": "\\textbf{Binär und balanciert}",
+    "english": "\\textbf{Binary and balanced}"
+  },
+  "89": {
+    "german": "sorgt für logarithmische Höhe $\\rightarrow$ schnelle Suche",
+    "english": "$\\Rightarrow$ height $\\log n$ $\\rightarrow$ fast"
+  },
+  "90": {
+    "german": "(Distanz zur Wurzel)",
+    "english": "(distance to root)"
+  },
+  "91": {
+    "german": "etwas Unordnung ist ok: wir brauchen nicht beides exakt",
+    "english": "Some disorder is ok: we don't need both exact"
+  },
+  "92": {
+    "german": "binär und halbwegs balanciert: rot-schwarz Baum\\n",
+    "english": "Binary and ~balanced: RB-tree\\n"
+  },
+  "93": {
+    "german": "halbwegs binär und perfekt balanciert: $(a, b)$-Baum $\\rightarrow$\\nheute\\n",
+    "english": "nearly binary \\& perfectly balanced: $(a,b)$-tree $\\rightarrow$\\ntoday\\n"
+  },
+  "94": {
+    "german": "\\textbf{Suche nach $x$ in binärem Suchbaum}",
+    "english": "\\textbf{Search for $x$ in a BST}"
+  },
+  "95": {
+    "german": "pro Knoten: in linken oder rechten Teilbaum absteigen\\n",
+    "english": "Per node: go left / right\\n"
+  },
+  "96": {
+    "german": "Knoten speichert einen Schlüssel $k$",
+    "english": "Node holds key $k$"
+  },
+  "97": {
+    "german": "Fall 1: $x \\le k$ $\\rightarrow$ linker Teilbaum",
+    "english": "Case $x \\le k$: left"
+  },
+  "98": {
+    "german": "Fall 2: $k < x$ $\\rightarrow$ rechter Teilbaum",
+    "english": "Case $k < x$: right"
+  },
+  "99": {
+    "german": "\\textbf{Suche nach $x$ in Suchbaum mit 3 Kindern pro Knoten}",
+    "english": "\\textbf{Search for $x$ in 3-way search tree}"
+  },
+  "100": {
+    "german": "pro Knoten: in linken, mittleren oder rechten Teilbaum absteigen\\n",
+    "english": "3-way node: left/ mid/ right\\n"
+  },
+  "101": {
+    "german": "Knoten speichert zwei Schlüssel $k_1$ und $k_2$",
+    "english": "Node holds $k_1,k_2$"
+  },
+  "102": {
+    "german": "Fall 1: $x \\le k_1$ $\\rightarrow$ linker Teilbaum",
+    "english": "Case 1: $x \\le k_1$ $\\rightarrow$ left subtree"
+  },
+  "103": {
+    "german": "Fall 2: $k_1 < x \\le k_2$ $\\rightarrow$ mittlerer Teilbaum",
+    "english": "Case 2: $k_1 < x \\le k_2$ $\\rightarrow$ middle subtree"
+  },
+  "104": {
+    "german": "Fall 3: $k_2 < x$ $\\rightarrow$ rechter Teilbaum",
+    "english": "Case 3: $k_2 < x$ $\\rightarrow$ right subtree"
+  },
+  "105": {
+    "german": "\\textbf{noch mehr Kinder:} analog",
+    "english": "\\textbf{Even more children}: analog"
+  },
+  "106": {
+    "german": "\\textbf{Gewünschte Eigenschaften}",
+    "english": "\\textbf{Desired properties}"
+  },
+  "107": {
+    "german": "\\emph{fast binär:} jeder innere Knoten hat 2 oder 3 Kinder\\n",
+    "english": "\\emph{almost binary:} each inner node has 2 or 3 children\\n"
+  },
+  "108": {
+    "german": "\\emph{balanciert:} jedes Blatt hat gleiche Tiefe\\n",
+    "english": "\\emph{balanced:} all leaves at same depth"
+  },
+  "109": {
+    "german": "(Distanz zur Wurzel)",
+    "english": "(distance to root)"
+  },
+  "110": {
+    "german": "\\textbf{Beobachtungen \\& Anmerkungen}",
+    "english": "\\textbf{Observations \\& notes}"
+  },
+  "111": {
+    "german": "Höhe ist logarithmisch:",
+    "english": "Height is $\\log n$:"
+  },
+  "112": {
+    "german": "die Anzahl Knoten pro Lage wachsen exponentiell (mindestens Faktor 2)",
+    "english": "Nodes / level grow $\\ge 2\\times$"
+  },
+  "113": {
+    "german": "daher: nur logarithmisch viele Lagen",
+    "english": "$\\Rightarrow$ only $\\log$ levels"
+  },
+  "114": {
+    "german": "Möglichkeit für 2 oder 3 Kinder gibt Flexibilität beim Einfügen und\\nLöschen\\n",
+    "english": "2/3 children give flexibility for insert/delete\\n"
+  },
+  "115": {
+    "german": "im Folgenden: vereinfachte Darstellung",
+    "english": "Now: simplified view"
+  },
+  "116": {
+    "german": "Fokus auf die Baumstruktur",
+    "english": "Focus on tree shape"
+  },
+  "117": {
+    "german": "Schlüssel in den Knoten erstmal ignorieren",
+    "english": "Ignore keys for now"
+  },
+  "118": {
+    "german": "(wenn die Baumstruktur passt, dann bekommt man die Schlüssel sicher\\nauch noch hin)",
+    "english": "(if the tree structure fits, you can surely get the keys right too)"
+  },
+  "119": {
+    "german": "\\textbf{Plan}",
+    "english": "\\textbf{Plan}"
+  },
+  "120": {
+    "german": "richtige Stelle zum Einfügen finden\\\\\\n$\\rightarrow$ Elter $b$ des Nachfolgers\\n",
+    "english": "Find insert spot\\\\\\n$\\rightarrow$ parent $b$ of successor\\n"
+  },
+  "121": {
+    "german": "füge neues Blatt einfach als Kind von $b$ ein\\n",
+    "english": "insert new leaf as child of $b$\\n"
+  },
+  "122": {
+    "german": "Fall 1: $b$ hat danach 3 Kinder $\\rightarrow$ alles gut\\n",
+    "english": "Case: $b$→3 kids → ok\\n"
+  },
+  "123": {
+    "german": "Fall 2: $b$ hat danach 4 Kinder $\\rightarrow$ aufspalten\\n",
+    "english": "Case 2: $b$ has 4 kids $\\rightarrow$ split\\n"
+  },
+  "124": {
+    "german": "erzeugt 2 Knoten mit je 2 Kindern",
+    "english": "2 nodes, 2 kids each"
+  },
+  "125": {
+    "german": "Elter $a$ von $b$ hat dann ein Kind mehr als vorher\\n",
+    "english": "Parent $a$ gains a child\\n"
+  },
+  "126": {
+    "german": "verschiebt Problem Schritt für Schritt nach oben",
+    "english": "moves problem step by step upward"
+  },
+  "127": {
+    "german": "kann nur $O(\\log n)$ oft passieren (Höhe des Baumes)",
+    "english": "happens at most $O(\\log n)$ times (tree height)"
+  },
+  "128": {
+    "german": "\\textbf{Anmerkung}",
+    "english": "\\textbf{Note}"
+  },
+  "129": {
+    "german": "Aufspaltung der Wurzel $\\rightarrow$ neue Wurzel",
+    "english": "Split root $\\rightarrow$ new root"
+  },
+  "130": {
+    "german": "\\textbf{Neues Blatt einfügen}",
+    "english": "\\textbf{Insert new leaf}"
+  },
+  "131": {
+    "german": "Schritt 1: erstmal einfach neues Blatt an der richtigen Stelle\\neinfügen",
+    "english": "Step 1: first just insert new leaf at the right spot"
+  },
+  "132": {
+    "german": "Schritt 2: Knoten mit 4 Kindern aufspalten",
+    "english": "Step 2: split node with 4 children"
+  },
+  "133": {
+    "german": "\\textbf{Aufspalten}",
+    "english": "\\textbf{Split}"
+  },
+  "134": {
+    "german": "\\textbf{Aufspalten (Wurzel)}",
+    "english": "\\textbf{Split (root)}"
+  },
+  "135": {
+    "german": "ersetze $b$ durch $b_1$ mit Kindern $c_1$ und $c_2$, sowie $b_2$ mit\\nKindern $c_3$ und $c_4$",
+    "english": "replace $b$ with $b_1$ having children $c_1$ and $c_2$, and $b_2$ with\\nchildren $c_3$ and $c_4$"
+  },
+  "136": {
+    "german": "$a$ hat ein Kind mehr $\\rightarrow$ ggf.\\ rekursiv aufspalten\\n",
+    "english": "$a$ may split recursively\\n"
+  },
+  "137": {
+    "german": "wie sonst: aufspalten von $b$ in $b_1$ und $b_2$\\n",
+    "english": "split $b$→$b_1,b_2$\\n"
+  },
+  "138": {
+    "german": "neue Wurzel mit Kindern $b_1$ und $b_2$",
+    "english": "new root $b_1,b_2$"
+  },
+  "139": {
+    "german": "jedes Blatt hat die gleiche Tiefe\\n",
+    "english": "all leaves have same depth\\n"
+  },
+  "140": {
+    "german": "\\textbf{Invarianten}\\n",
+    "english": "\\textbf{Invariants}\\n"
+  },
+  "141": {
+    "german": "höchstens ein Knoten hat nicht 2 oder 3 Kinder\\n",
+    "english": "$\\le 1$ node not 2/3 kids\\n"
+  },
+  "142": {
+    "german": "(und dieser wandert mit jeder Aufspaltung nach oben)",
+    "english": "(moves upward each split)"
+  },
+  "143": {
+    "german": "\\textbf{Existierendes Blatt entfernen}",
+    "english": "\\textbf{Remove existing leaf}"
+  },
+  "144": {
+    "german": "Schritt 1: erstmal entsprechendes Blatt einfach löschen",
+    "english": "Step 1: simply delete corresponding leaf"
+  },
+  "145": {
+    "german": "Schritt 2: Knoten mit nur einem Kind aufräumen",
+    "english": "Step 2: clean up node with only one child"
+  },
+  "146": {
+    "german": "\\textbf{Geschwister mit 2 Kindern: Verschmelzen}",
+    "english": "\\textbf{Sibling with 2 kids: merge}"
+  },
+  "147": {
+    "german": "\\textbf{Geschwister mit 3 Kindern: Ausbalancieren}",
+    "english": "\\textbf{Sibling with 3 kids: balance}"
+  },
+  "148": {
+    "german": "verschmelze mit Geschwisterknoten\\n",
+    "english": "Merge with sibling\\n"
+  },
+  "149": {
+    "german": "Elter hat ein Kind weniger $\\rightarrow$ ggf.\\ rekursiv aufräumen\\n",
+    "english": "Parent has one less child $\\rightarrow$ may need recursive cleanup\\n"
+  },
+  "150": {
+    "german": "verschiebe eins der Kinder (inklusive Teilbaum)",
+    "english": "Move a child subtree"
+  },
+  "151": {
+    "german": "jedes Blatt hat die gleiche Tiefe\\n",
+    "english": "all leaves have same depth\\n"
+  },
+  "152": {
+    "german": "\\textbf{Invarianten}\\n",
+    "english": "\\textbf{Invariants}\\n"
+  },
+  "153": {
+    "german": "höchstens ein Knoten hat nicht 2 oder 3 Kinder\\n",
+    "english": "$\\le 1$ node not 2/3 kids\\n"
+  },
+  "154": {
+    "german": "(und dieser wandert mit jeder Aufspaltung nach oben)",
+    "english": "(moves upward each split)"
+  },
+  "155": {
+    "german": "\\textbf{Wurzel hat nur 1 Kind}",
+    "english": "\\textbf{Root has only 1 child}"
+  },
+  "156": {
+    "german": "lösche die Wurzel (Höhe des Baums sinkt um 1)",
+    "english": "Delete root → height-1"
+  },
+  "157": {
+    "german": "\\textbf{aufspalten}",
+    "english": "\\textbf{split}"
+  },
+  "158": {
+    "german": "\\textbf{vereinigen}",
+    "english": "\\textbf{merge}"
+  },
+  "159": {
+    "german": "\\textbf{ausbalancieren}",
+    "english": "\\textbf{balancing}"
+  },
+  "160": {
+    "german": "\\textbf{Wie oft müssen wir vereinigen, wenn wir $63$ löschen?}\\n",
+    "english": "\\textbf{How many merges when deleting $63$?}\\n"
+  },
+  "161": {
+    "german": "\\textbf{Wie oft ausbalancieren?}\\n",
+    "english": "\\textbf{How many balances?}\\n"
+  },
+  "162": {
+    "german": "\\textbf{Wie oft müssen wir aufspalten, wenn wir $1$ einfügen?}",
+    "english": "\\textbf{How many splits inserting $1$?}"
+  },
+  "163": {
+    "german": "$\\rightarrow$ 2 Aufspaltungen",
+    "english": "$\\rightarrow$ 2 splits"
+  },
+  "164": {
+    "german": "$\\rightarrow$ 1 Vereinigung",
+    "english": "$\\rightarrow$ 1 merge"
+  },
+  "165": {
+    "german": "$\\rightarrow$ 1 Ausbalancierung",
+    "english": "→ 1 rebalance"
+  },
+  "166": {
+    "german": "\\textbf{Lemma}\\\\\\nEin $(2, 3)$-Baum hat logarithmische Tiefe.",
+    "english": "\\textbf{Lemma}\\\\\\nA $(2,3)$-tree has logarithmic depth."
+  },
+  "167": {
+    "german": "\\textbf{Erinnerung: $(2, 3)$-Baum}\\n",
+    "english": "\\textbf{Reminder: $(2,3)$-tree}\\n"
+  },
+  "168": {
+    "german": "\\emph{fast binär:} jeder innere Knoten hat 2 oder 3 Kinder\\n",
+    "english": "\\emph{almost binary:} each inner node has 2 or 3 children\\n"
+  },
+  "169": {
+    "german": "\\emph{balanciert:} jedes Blatt hat gleiche Tiefe\\n",
+    "english": "\\emph{balanced:} all leaves at same depth"
+  },
+  "170": {
+    "german": "\\textbf{aufspalten}",
+    "english": "\\textbf{split}"
+  },
+  "171": {
+    "german": "\\textbf{ausbalancieren}",
+    "english": "\\textbf{balancing}"
+  },
+  "172": {
+    "german": "\\textbf{vereinigen}",
+    "english": "\\textbf{merge}"
+  },
+  "173": {
+    "german": "\\textbf{Achtung:} Wir müssen uns eigentlich noch um die Schlüssel in\\nden Knoten kümmern!",
+    "english": "\\textbf{Attention:} still need to handle the keys!"
+  },
+  "174": {
+    "german": "\\textbf{Analoge Folgerung}\\\\\\nWir können in $O(\\log n)$ in einem $(2, 3)$-Baum löschen.\\n",
+    "english": "\\textbf{Corollary}\\\\\\nWe can delete in $O(\\log n)$ in a $(2,3)$-tree.\\n"
+  },
+  "175": {
+    "german": "\\textbf{Folgerung}\\\\\\nWir können in $O(\\log n)$ in einen $(2, 3)$-Baum einfügen.\\n",
+    "english": "\\textbf{Corollary}\\\\\\nWe can insert into a $(2,3)$-tree in $O(\\log n)$.\\n"
+  },
+  "176": {
+    "german": "\\textbf{Lemma}\\\\\\nSei $T$ ein Baum der die $(2, 3)$-Baum Eigenschaften erfüllt,\\nabgesehen für einen Knoten mit 4 Kindern. $T$ kann mit $O(\\log n)$\\nAufspaltungen in einen $(2, 3)$-Baum überführt werden.",
+    "english": "\\textbf{Lemma}\\\\\\nIf $T$ violates $(2,3)$-tree only by one 4-child node, $T$ becomes a $(2,3)$-tree with $O(\\log n)$ splits."
+  },
+  "177": {
+    "german": "\\textbf{Java}",
+    "english": "\\textbf{Java}"
+  },
+  "178": {
+    "german": "Element $x$ hinten einfügen",
+    "english": "push $x$ at back"
+  },
+  "179": {
+    "german": "letztes Element löschen",
+    "english": "pop back elem"
+  },
+  "180": {
+    "german": "Zugriff auf Element mit Indes $i$",
+    "english": "access index $i$"
+  },
+  "181": {
+    "german": "\\textbf{C++:} vector \\hfill\\textbf{Java:} ArrayList",
+    "english": "C++ vector / Java ArrayList"
+  },
+  "182": {
+    "german": "\\textbf{Unbeschränkte Arrays}",
+    "english": "\\textbf{Unbounded arrays}"
+  },
+  "183": {
+    "german": "binäre Suche nach $x$, wenn sortiert",
+    "english": "Bin search $x$ when sorted"
+  },
+  "184": {
+    "german": "\\textbf{Listen}",
+    "english": "\\textbf{Lists}"
+  },
+  "185": {
+    "german": "Element $x$ nach Knoten $a$ einfügen",
+    "english": "Insert $x$ after node $a$"
+  },
+  "186": {
+    "german": "Knoten $a$ löschen",
+    "english": "Delete node $a$"
+  },
+  "187": {
+    "german": "Teillisten $\\langle a, \\dots, b \\rangle$ hinter $c$ einfügen",
+    "english": "Insert sublist ⟨a…b⟩ after $c$"
+  },
+  "188": {
+    "german": "\\textbf{C++:} list \\hfill \\textbf{Java:} LinkedList",
+    "english": "C++ list / Java LinkedList"
+  },
+  "189": {
+    "german": "\\textbf{Hashtabelle}",
+    "english": "\\textbf{Hash table}"
+  },
+  "190": {
+    "german": "setze Wert für Schlüssel $k$ auf $v$",
+    "english": "set key $k$ to $v$"
+  },
+  "191": {
+    "german": "Zugriff auf Wert von Schlüssel $k$",
+    "english": "access value of $k$"
+  },
+  "192": {
+    "german": "Eintrag für Schlüssel $k$ löschen",
+    "english": "delete key $k$"
+  },
+  "193": {
+    "german": "\\textbf{C++:} unordered\\_map \\hfill \\textbf{Java:} HashMap",
+    "english": "C++ unordered\\_map / Java HashMap"
+  },
+  "194": {
+    "german": "\\textbf{Prioritätswarteschlange (Heap)}",
+    "english": "\\textbf{Priority queue (heap)}"
+  },
+  "195": {
+    "german": "Element $x$ mit Priorität $p$ einfügen",
+    "english": "insert $x$ prio $p$"
+  },
+  "196": {
+    "german": "Element mit minimaler Priorität extrahieren",
+    "english": "extract element with minimal priority"
+  },
+  "197": {
+    "german": " Priorität von Knoten $a$ auf $p$ verkleinern",
+    "english": "dec prio of $a$ to $p$"
+  },
+  "198": {
+    "german": "\\textbf{Sortierte Folge (Suchbaum)}",
+    "english": "\\textbf{Sorted sequence (search tree)}"
+  },
+  "199": {
+    "german": "Suche nach Schlüssel $k$",
+    "english": "search key $k$"
+  },
+  "200": {
+    "german": " Eintrag mit Schlüssel $k$ löschen",
+    "english": "delete key $k$"
+  },
+  "201": {
+    "german": "setze Wert für Schlüssel $k$ auf $v$",
+    "english": "set key $k$ to $v$"
+  },
+  "202": {
+    "german": "\\textbf{C++:} map \\hfill \\textbf{Java:} TreeMap",
+    "english": "C++ map / Java TreeMap"
+  },
+  "203": {
+    "german": "\\textbf{C++:} priority\\_queue \\hfill \\textbf{Java:} PriorityQueue",
+    "english": "C++ priority\\_queue / Java PriorityQueue"
+  },
+  "204": {
+    "german": "(Prioritätsänderungen muss man sich ggf.\\ selbst bauen: Lazy\\nEvaluation)\\n",
+    "english": "(Priority changes may need custom code: lazy evaluation)\\n"
+  },
+  "205": {
+    "german": "\\textbf{Anmerkung}",
+    "english": "\\textbf{Note}"
+  },
+  "206": {
+    "german": "hier sind jeweils nur die wichtigsten Operationen aufgeführt\\n",
+    "english": "only the most important operations are listed here\\n"
+  },
+  "207": {
+    "german": "Faustregel: wähle einfachste DS, die benötigte Operationen effizient\\nkann\\n",
+    "english": "Rule: choose the simplest DS that supports the needed ops efficiently\\n"
+  },
+  "208": {
+    "german": "(die Datenstrukturen können meist noch mehr)",
+    "english": "(DS usually offer more)"
+  },
+  "209": {
+    "german": "\\textbf{Die eierlegende Wollmilchsau}",
+    "english": "\\textbf{The jack-of-all-trades}"
+  },
+  "210": {
+    "german": "Wollmilchsau",
+    "english": "Jack-of-all-trades"
+  },
+  "211": {
+    "german": "Georg Mittenecker",
+    "english": "Georg Mittenecker"
+  },
+  "212": {
+    "german": "Creative Commons",
+    "english": "Creative Commons"
+  },
+  "213": {
+    "german": "Bild:",
+    "english": "Image:"
+  },
+  "214": {
+    "german": "Suchbäume können im Prinzip alles, was das Herz begehrt\\n",
+    "english": "Search trees can do almost all\\n"
+  },
+  "215": {
+    "german": "einfügen, suchen, löschen, Min/Max extrahieren, Bereichsanfragen,\\njeweils in $O(\\log n)$\\n",
+    "english": "insert, search, delete, extract min/max, range queries—each in $O(\\log n)$\\n"
+  },
+  "216": {
+    "german": "\\textbf{Lernziel}",
+    "english": "\\textbf{Learning goal}"
+  },
+  "217": {
+    "german": "wissen, wie Suchbäume funktionieren\\n",
+    "english": "Know how trees work\\n"
+  },
+  "218": {
+    "german": "\\textbf{Allgemeiner: $(a, b)$-Bäume}",
+    "english": "\\textbf{General: $(a,b)$-trees}"
+  },
+  "219": {
+    "german": "Knoten haben mindestens $a$ und höchstens $b$ Kinder\\n",
+    "english": "Node: $\\ge a$ $\\le b$ children\\n"
+  },
+  "220": {
+    "german": "funktioniert analog, wenn $2 \\le a \\le (b + 1) / 2$",
+    "english": "Works if $2 \\le a \\le (b+1)/2$"
+  },
+  "221": {
+    "german": "können für eine Anwendung die passende Datenstruktur wählen\\n",
+    "english": "can choose appropriate data structure for application\\n"
+  },
+  "222": {
+    "german": "Fähigkeit zur Ausarbeitung der Details: Wissen über die Funktionsweise\\n(Kenntnisstand heute; hohe Abstraktionsebene) $\\rightarrow$\\nImplementierung (Pseudocode)\\n",
+    "english": "Skill: move from high-level understanding (today) to implementation (pseudocode)\\n"
+  },
+  "223": {
+    "german": "(Pseudocode auswendig können ist nicht hilfreich)",
+    "english": "(memorizing code useless)"
+  },
+  "224": {
+    "german": "\\textbf{Digitale Sprechstunde}",
+    "english": "\\textbf{Digital office hour}"
+  },
+  "225": {
+    "german": "online Fragerunde auf Twitch",
+    "english": "Online Q\\&A on Twitch"
+  },
+  "226": {
+    "german": "Donnerstag 29.6. (nächste Woche)",
+    "english": "Thu 29.6. (next week)"
+  },
+  "227": {
+    "german": "stellt eure Fragen (gerne vorab via Discord oder auch live im Twitch Chat)",
+    "english": "ask your questions (preferably via Discord or live in Twitch chat)"
+  },
+  "228": {
+    "german": "genauere Infos demnächst auf der Homepage und via Discord",
+    "english": "More info soon on homepage"
+  }
+}

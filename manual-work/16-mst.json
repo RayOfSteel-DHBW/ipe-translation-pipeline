@@ -1,0 +1,570 @@
+{
+  "1": {
+    "german": "Problemstellung MST",
+    "english": ""
+  },
+  "2": {
+    "german": "Grundsätzliche Anmerkungen zu Bäumen und Schnitten",
+    "english": ""
+  },
+  "3": {
+    "german": "Beweisbar essentielle Kanten",
+    "english": ""
+  },
+  "4": {
+    "german": "Minimale Schnittkanten",
+    "english": ""
+  },
+  "5": {
+    "german": "Strukturelle Einsicht $\\rightarrow$ Algorithmus von Prim",
+    "english": ""
+  },
+  "6": {
+    "german": "Algorithmus von Prim -- Effiziente Umsetzung",
+    "english": ""
+  },
+  "7": {
+    "german": "Algorithmus von Prim -- Laufzeit \\& Anmerkungen",
+    "english": ""
+  },
+  "8": {
+    "german": "Evaluation",
+    "english": ""
+  },
+  "9": {
+    "german": "Alternative Greedy-Strategie: Kruskal",
+    "english": ""
+  },
+  "10": {
+    "german": "Algorithmus von Kruskal: Umsetzung",
+    "english": ""
+  },
+  "11": {
+    "german": "Zusammenfassung",
+    "english": "Summary"
+  },
+  "12": {
+    "german": "Thomas Bläsius~--~Algorithmen 1",
+    "english": "Thomas Bläsius~--~Algorithms 1"
+  },
+  "13": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "14": {
+    "german": "\\textbf{Minimale Spannbäume}",
+    "english": ""
+  },
+  "15": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "16": {
+    "german": "\\textbf{Definition}\\\\\\nSei $G = (V, E)$ ein Graph.  Ein Baum auf der selben Knotenmenge\\n$T = (V, E_T)$ mit $E_T \\subseteq E$ heißt \\emph{Spannbaum} von $G$.\\n",
+    "english": ""
+  },
+  "17": {
+    "german": "\\textbf{Problem: Minimaler Spannbaum (MST)}\\\\\\nSei $G = (V, E)$ ein Graph mit Kantengewichten\\n$w \\colon E \\to \\mathbb Z$.  Finde einen Spannbaum $T = (V, E_T)$,\\nsodass die Summe der Gewichte in $E_T$ minimal ist.\\n",
+    "english": ""
+  },
+  "18": {
+    "german": "\\textbf{Wie schwer ist der minimale Spannbaum?}",
+    "english": ""
+  },
+  "19": {
+    "german": "Gewicht: $1 + 2 + 4 + 5 + 8 = 20$",
+    "english": ""
+  },
+  "20": {
+    "german": "\\textbf{Vereinfachende Annahme}",
+    "english": ""
+  },
+  "21": {
+    "german": "eindeutige Gewichte, also $w(e_1) \\neq w(e_2)$ wenn $e_1 \\neq e_2$",
+    "english": ""
+  },
+  "22": {
+    "german": "kein echter Unterschied, vereinfacht aber ein paar Dinge\\n",
+    "english": ""
+  },
+  "23": {
+    "german": "\\textbf{Plan im Folgenden}",
+    "english": "\\textbf{Plan below}"
+  },
+  "24": {
+    "german": "gewinne ein paar strukturelle Einsichten über MSTs",
+    "english": ""
+  },
+  "25": {
+    "german": "leite daraus zwei Algorithmen ab",
+    "english": ""
+  },
+  "26": {
+    "german": "\\textbf{Bäume sind charakterisiert durch}",
+    "english": ""
+  },
+  "27": {
+    "german": "sie sind kreisfrei",
+    "english": ""
+  },
+  "28": {
+    "german": "sie sind zusammenhängend",
+    "english": ""
+  },
+  "29": {
+    "german": "sie haben $n - 1$ Kanten",
+    "english": ""
+  },
+  "30": {
+    "german": "je zwei der Eigenschaften implizieren die dritte",
+    "english": ""
+  },
+  "31": {
+    "german": "\\textbf{Definition}\\\\\\nSei $G = (V, E)$ ein Graph.  Ein \\emph{Schnitt} ist eine Zerlegung von\\n$V$ in zwei nicht-leere Teilmengen $S$ und $V \\setminus S$.  Eine\\nKante zwischen einem Knoten aus $S$ und einem aus $V \\setminus S$\\nheißt \\emph{Schnittkante}.\\n",
+    "english": ""
+  },
+  "32": {
+    "german": "\\textbf{Idee}",
+    "english": ""
+  },
+  "33": {
+    "german": "zeige, dass gewissen Kanten in jedem MST enthalten sind",
+    "english": ""
+  },
+  "34": {
+    "german": "finde iterativ solche Kanten und wähle sie aus",
+    "english": ""
+  },
+  "35": {
+    "german": "nach $n - 1$ Schritten bilden die $n - 1$ gewählten Kanten den MST",
+    "english": ""
+  },
+  "36": {
+    "german": "\\textbf{Kurz vorm Ziel: Welche Kante ist essentiell?}",
+    "english": ""
+  },
+  "37": {
+    "german": "Annahme: bereits $n - 2$ Kanten gewählt (grün)",
+    "english": ""
+  },
+  "38": {
+    "german": "die zwei Teilbäume induzieren einen Schnitt\\n",
+    "english": ""
+  },
+  "39": {
+    "german": "$\\Rightarrow$ minimale Schnittkante muss gewählt werden\\n",
+    "english": ""
+  },
+  "40": {
+    "german": "Auswahl der letzten Kante (Schritt $n - 1$):",
+    "english": ""
+  },
+  "41": {
+    "german": "wir müssen eine Schnittkante wählen\\n",
+    "english": ""
+  },
+  "42": {
+    "german": "jede Schnittkante liefert einen Baum",
+    "english": ""
+  },
+  "43": {
+    "german": "\\textbf{Lemma}\\\\\\nFür jeden Schnitt gilt, dass die minimale Schnittkante in jedem MST\\nenthalten ist.\\n",
+    "english": ""
+  },
+  "44": {
+    "german": "(Erinnerung: wir nehmen an, dass das Minimum eindeutig ist)",
+    "english": ""
+  },
+  "45": {
+    "german": "\\textbf{Lemma}\\\\\\nFür jeden Schnitt gilt, dass die minimale Schnittkante in jedem MST\\nenthalten ist.\\n",
+    "english": ""
+  },
+  "46": {
+    "german": "(Erinnerung: wir nehmen an, dass das Minimum eindeutig ist)",
+    "english": ""
+  },
+  "47": {
+    "german": "\\textbf{Beweis}",
+    "english": "\\textbf{Proof}"
+  },
+  "48": {
+    "german": "betrachte Schnitt mit minimaler Schnittkante $\\{u, v\\}$\\n",
+    "english": ""
+  },
+  "49": {
+    "german": "betrachte einen Spannbaum $T$ ohne $\\{u, v\\}$",
+    "english": ""
+  },
+  "50": {
+    "german": "\\textbf{Ziel:} zeige, dass $T$ kein MST ist",
+    "english": ""
+  },
+  "51": {
+    "german": "betrachte eindeutigen Pfad von $u$ nach $v$ in $T$",
+    "english": ""
+  },
+  "52": {
+    "german": "mindestens eine der Pfadkanten $\\{x, y\\}$ ist auch eine Schnittkante",
+    "english": ""
+  },
+  "53": {
+    "german": "neuer Teilgraph $T'$: lösche $\\{x, y\\}$ und füge $\\{u, v\\}$ zu $T$ hinzu",
+    "english": ""
+  },
+  "54": {
+    "german": "\\textbf{Beobachtung}",
+    "english": "\\textbf{Observation}"
+  },
+  "55": {
+    "german": "$T'$ ist ein Baum (kreisfrei, $n - 1$ Kanten)",
+    "english": ""
+  },
+  "56": {
+    "german": "$T'$ hat kleineres Gewicht als $T$ ($w(\\{u, v\\}) < w(\\{x, y\\})$)\\n",
+    "english": ""
+  },
+  "57": {
+    "german": "$\\Rightarrow$ $T$ ist kein MST",
+    "english": ""
+  },
+  "58": {
+    "german": "\\textbf{Idee}",
+    "english": ""
+  },
+  "59": {
+    "german": "zeige, dass gewisse Kanten in jedem MST enthalten sind",
+    "english": ""
+  },
+  "60": {
+    "german": "finde iterativ solche Kanten und wähle sie aus",
+    "english": ""
+  },
+  "61": {
+    "german": "nach $n - 1$ Schritten bilden die $n - 1$ gewählten Kanten den MST",
+    "english": ""
+  },
+  "62": {
+    "german": "\\textbf{Lemma}\\\\\\nFür jeden Schnitt gilt, dass die minimale Schnittkante in jedem MST\\nenthalten ist.\\n",
+    "english": ""
+  },
+  "63": {
+    "german": "\\textbf{Finde essentielle Kanten}",
+    "english": ""
+  },
+  "64": {
+    "german": "betrachte Schnitt zwischen abgearbeiteten und nicht-abgearbeiteten\\nKnoten",
+    "english": ""
+  },
+  "65": {
+    "german": "starte mit einem abgearbeiteten Knoten",
+    "english": ""
+  },
+  "66": {
+    "german": "pro Schritt: markiere Endpunkt der hinzugefügten Kante als\\nabgearbeitet",
+    "english": ""
+  },
+  "67": {
+    "german": "abgearbeitet",
+    "english": ""
+  },
+  "68": {
+    "german": "nicht-abgearbeitet",
+    "english": ""
+  },
+  "69": {
+    "german": "\\textbf{Welche Laufzeit hat der Algorithmus?}",
+    "english": ""
+  },
+  "70": {
+    "german": "abgearbeitet",
+    "english": ""
+  },
+  "71": {
+    "german": "nicht-abgearbeitet",
+    "english": ""
+  },
+  "72": {
+    "german": "\\textbf{Was müssen wir in jedem der $n - 1$ Schritte tun?}",
+    "english": ""
+  },
+  "73": {
+    "german": "bestimme Schnittkante mit minimalem Gewicht",
+    "english": ""
+  },
+  "74": {
+    "german": "naive Lösung: jede Kante einmal anschauen\\\\\\n$\\rightarrow$ $\\Theta(m)$ $\\rightarrow$ insgesamt $\\Theta(n \\cdot m)$\\n",
+    "english": ""
+  },
+  "75": {
+    "german": "Idee: benutze eine Priority-Queue",
+    "english": ""
+  },
+  "76": {
+    "german": "\\textbf{Prioritätswarteschlange (Heap)}",
+    "english": "\\textbf{Priority queue (heap)}"
+  },
+  "77": {
+    "german": "Element $x$ mit Priorität $p$ einfügen",
+    "english": "insert $x$ prio $p$"
+  },
+  "78": {
+    "german": "Element mit minimaler Priorität extrahieren",
+    "english": "extract element with minimal priority"
+  },
+  "79": {
+    "german": " Priorität von Knoten $a$ auf $p$ verkleinern",
+    "english": "dec prio of $a$ to $p$"
+  },
+  "80": {
+    "german": "\\textbf{C++:} priority\\_queue \\hfill \\textbf{Java:} PriorityQueue",
+    "english": "C++ priority\\_queue / Java PriorityQueue"
+  },
+  "81": {
+    "german": "(Prioritätsänderungen muss man sich ggf.\\ selbst bauen: Lazy\\nEvaluation)\\n",
+    "english": "(Priority changes may need custom code: lazy evaluation)\\n"
+  },
+  "82": {
+    "german": "(z.B.\\ binärer Heap: $\\Theta(\\log n)$ pro Operation)",
+    "english": ""
+  },
+  "83": {
+    "german": "\\textbf{Welche Laufzeit hat der Algorithmus?}",
+    "english": ""
+  },
+  "84": {
+    "german": "\\textbf{Eine mögliche Umsetzung mit Priority-Queue $Q$}",
+    "english": ""
+  },
+  "85": {
+    "german": "Ziel für den Zustand von $Q$ zu jedem Zeitpunkt",
+    "english": ""
+  },
+  "86": {
+    "german": "$Q$ enthält die noch nicht abgearbeiteten Knoten\\n",
+    "english": ""
+  },
+  "87": {
+    "german": "Priorität: minimale Kante zu abgearbeiteten Knoten",
+    "english": ""
+  },
+  "88": {
+    "german": "pro Schritt: abarbeiten von $u = Q.\\function{popMin}()$",
+    "english": ""
+  },
+  "89": {
+    "german": "betrachte jeden Nachbarn $v \\in N(u)$ von $u$",
+    "english": ""
+  },
+  "90": {
+    "german": "verringere ggf.\\ die Priorität von $v$ zu $w(\\{u, v\\})$",
+    "english": ""
+  },
+  "91": {
+    "german": "\\textbf{Eine mögliche Umsetzung mit Priority-Queue $Q$}",
+    "english": ""
+  },
+  "92": {
+    "german": "pro Schritt: abarbeiten von $u = Q.\\function{popMin}()$",
+    "english": ""
+  },
+  "93": {
+    "german": "betrachte jeden Nachbarn $v \\in N(u)$ von $u$",
+    "english": ""
+  },
+  "94": {
+    "german": "verringere ggf.\\ die Priorität von $v$ zu $w(\\{u, v\\})$",
+    "english": ""
+  },
+  "95": {
+    "german": "Initialisierung: jeden Knoten in $Q$ einfügen\\n",
+    "english": ""
+  },
+  "96": {
+    "german": "$\\Theta(n)$ mal \\function{popMin}",
+    "english": ""
+  },
+  "97": {
+    "german": "$\\Theta(m)$ mal \\function{decPrio}",
+    "english": ""
+  },
+  "98": {
+    "german": "$\\Theta(n)$ mal \\function{push}",
+    "english": ""
+  },
+  "99": {
+    "german": "$\\Rightarrow$ $\\Theta((n + m)\\cdot \\log n)$ mit einem binären und\\n$\\Theta(n \\log n + m)$ mit einem Fibonacci Heap\\n",
+    "english": ""
+  },
+  "100": {
+    "german": "\\textbf{Anmerkung -- Vergleich zu Dijkstra}",
+    "english": ""
+  },
+  "101": {
+    "german": "der Algorithmus hat sehr große Ähnlichkeit zu Dijkstras Algorithmus\\n(kürzeste Wege)\\n",
+    "english": ""
+  },
+  "102": {
+    "german": "nur die Prioritäten werden leicht anders aktualisiert\\n",
+    "english": ""
+  },
+  "103": {
+    "german": "\\textbf{Anmerkung -- Greedy-Algorithmus}",
+    "english": ""
+  },
+  "104": {
+    "german": "wir wählen in jedem Schritt die minimale Kante, die den bisherigen\\nTeilbaum vergrößert\\n",
+    "english": ""
+  },
+  "105": {
+    "german": "wir nennen ein solches Vorgehen auch \\emph{Greedy-Algorithmus}\\n(gieriger Algorithmus)",
+    "english": ""
+  },
+  "106": {
+    "german": "\\textbf{Greedy Auswahl}",
+    "english": ""
+  },
+  "107": {
+    "german": "wähle in jedem Schritt minimale Kante\\n",
+    "english": ""
+  },
+  "108": {
+    "german": "\\emph{Prim:} unter allen Kanten, die den bisherigen Teilbaum vergrößern\\n",
+    "english": ""
+  },
+  "109": {
+    "german": "\\textbf{Lemma}\\\\\\nFür jeden Schnitt gilt, dass die minimale Schnittkante in jedem MST\\nenthalten ist.\\n",
+    "english": ""
+  },
+  "110": {
+    "german": "\\emph{Kruskal:} unter allen Kanten, die keinen Kreis mit schon\\ngewählten Kanten bilden\\n",
+    "english": ""
+  },
+  "111": {
+    "german": "\\textbf{Korrektheit}",
+    "english": "\\textbf{Correctness}"
+  },
+  "112": {
+    "german": "sei $\\{u, v\\}$ kleinste Kante, die keinen Kreis schließt\\n",
+    "english": ""
+  },
+  "113": {
+    "german": "beobachte: es gibt einen Schnitt sodass",
+    "english": ""
+  },
+  "114": {
+    "german": "$\\{u, v\\}$ ist Schnittkante",
+    "english": ""
+  },
+  "115": {
+    "german": "keine Schnittkante ist schon gewählt",
+    "english": ""
+  },
+  "116": {
+    "german": "beobachte: Schnittkanten schließen keinen Kreis\\n",
+    "english": ""
+  },
+  "117": {
+    "german": "daher: $\\{u, v\\}$ ist minimale Schnittkante",
+    "english": ""
+  },
+  "118": {
+    "german": "Korrektheit folgt aus dem Lemma",
+    "english": ""
+  },
+  "119": {
+    "german": "\\textbf{Greedy Auswahl}",
+    "english": ""
+  },
+  "120": {
+    "german": "wähle in jedem Schritt minimale Kante\\n",
+    "english": ""
+  },
+  "121": {
+    "german": "unter allen Kanten, die keinen Kreis mit schon\\ngewählten Kanten bilden\\n",
+    "english": ""
+  },
+  "122": {
+    "german": "\\textbf{Algorithmische Umsetzung}",
+    "english": ""
+  },
+  "123": {
+    "german": "sortiere Kanten aufsteigend und iteriere über sie\\n",
+    "english": ""
+  },
+  "124": {
+    "german": "zwei Optionen für jede so betrachtete Kante $\\{u, v\\}$:",
+    "english": ""
+  },
+  "125": {
+    "german": "$\\{u, v\\}$ schließt Kreis $\\rightarrow$ $\\{u, v\\}$ überspringen",
+    "english": ""
+  },
+  "126": {
+    "german": "$\\{u, v\\}$ schließt keinen Kreis $\\rightarrow$ $\\{u, v\\}$ auswählen\\n",
+    "english": ""
+  },
+  "127": {
+    "german": "auswählen",
+    "english": ""
+  },
+  "128": {
+    "german": "überspringen",
+    "english": ""
+  },
+  "129": {
+    "german": "\\textbf{Wie testen wir schnell, ob $\\{u, v\\}$ Kreis schließt?}",
+    "english": ""
+  },
+  "130": {
+    "german": "$\\{u, v\\}$ schließt Kreis $\\Leftrightarrow$ $u$ und $v$ liegen bzgl.\\\\ngewählter Kanten in der selben Komponente\\n",
+    "english": ""
+  },
+  "131": {
+    "german": "jedes Mal BFS oder DFS ist zu teuer ($\\Theta(m)$)\\n",
+    "english": ""
+  },
+  "132": {
+    "german": "nächstes Mal: Datenstruktur zur effizienten Verwaltung der Komponenten\\n",
+    "english": ""
+  },
+  "133": {
+    "german": "\\textbf{Minimaler Spannbaum (MST)}",
+    "english": ""
+  },
+  "134": {
+    "german": "zwei Greedy-Varianten, die optimale Lösung liefern (Prim, Kruskal)",
+    "english": ""
+  },
+  "135": {
+    "german": "\\textbf{Greedy Algorithmen im Allgemeinen}",
+    "english": ""
+  },
+  "136": {
+    "german": "Vorgehen: triff iterativ Entscheidungen, die in dem Moment am besten\\naussehen\\n",
+    "english": ""
+  },
+  "137": {
+    "german": "oft nicht optimal (und ggf. sehr schlecht im Worst Case), aber gute\\nHeuristik für die Praxis\\n",
+    "english": ""
+  },
+  "138": {
+    "german": "wenn optimal: Beweis mittels Austauschargument",
+    "english": ""
+  },
+  "139": {
+    "german": "(für jede Lösung ohne das greedy gewählte Element gibt es eine\\nmindestens genauso gute mit dem Element)",
+    "english": ""
+  },
+  "140": {
+    "german": "tatsächlich funktioniert fast jegliche Greedy-Variante korrekt\\\\\\n(z.B. lösche iterativ die größte Kante auf einem Kreis)",
+    "english": ""
+  },
+  "141": {
+    "german": "effiziente Implementierung von Prim: Priority-Queue",
+    "english": ""
+  },
+  "142": {
+    "german": "effiziente Implementierung von Kruskal: Union-Find (nächstes Mal)\\n",
+    "english": ""
+  }
+}

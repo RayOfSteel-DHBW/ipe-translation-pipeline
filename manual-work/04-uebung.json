@@ -1,0 +1,846 @@
+{
+  "1": {
+    "german": "Graphen",
+    "english": ""
+  },
+  "2": {
+    "german": "Grundlagen und Notation",
+    "english": ""
+  },
+  "3": {
+    "german": "Besondere Graphen",
+    "english": ""
+  },
+  "4": {
+    "german": "Besondere Graphen",
+    "english": ""
+  },
+  "5": {
+    "german": "Besondere Graphen",
+    "english": ""
+  },
+  "6": {
+    "german": "Dijkstra (Wiederholung)",
+    "english": ""
+  },
+  "7": {
+    "german": "Dijkstra (zielgerichtet)",
+    "english": ""
+  },
+  "8": {
+    "german": "Dijkstra (zielgerichtet): Korrektheit",
+    "english": ""
+  },
+  "9": {
+    "german": "Dijkstra (zielgerichtet)",
+    "english": ""
+  },
+  "10": {
+    "german": "Problem: Dependencies",
+    "english": ""
+  },
+  "11": {
+    "german": "Problem: Dependencies",
+    "english": ""
+  },
+  "12": {
+    "german": "Cyclic Dependency",
+    "english": ""
+  },
+  "13": {
+    "german": "Cyclic Dependency",
+    "english": ""
+  },
+  "14": {
+    "german": "Knoten löschen",
+    "english": ""
+  },
+  "15": {
+    "german": "Knoten löschen?",
+    "english": ""
+  },
+  "16": {
+    "german": "Maximilian Katzmann \\& Marcus Wilhelm  \\& Wendy Yi~--~Algorithmen 1 - Übung",
+    "english": ""
+  },
+  "17": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "18": {
+    "german": "\\textbf{Übung 4}",
+    "english": ""
+  },
+  "19": {
+    "german": "\\textbf{Graphen}",
+    "english": ""
+  },
+  "20": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "21": {
+    "german": "flexibles Tool zur Modellierung",
+    "english": ""
+  },
+  "22": {
+    "german": "viele praktische Fragestellungen sind \\mbox{algorithmische Probleme} auf Graphen",
+    "english": ""
+  },
+  "23": {
+    "german": "Heidelberg",
+    "english": ""
+  },
+  "24": {
+    "german": "Frankfurt",
+    "english": ""
+  },
+  "25": {
+    "german": "Karlsruhe",
+    "english": ""
+  },
+  "26": {
+    "german": "Pforzheim",
+    "english": ""
+  },
+  "27": {
+    "german": "Stuttgart",
+    "english": ""
+  },
+  "28": {
+    "german": "Freiburg",
+    "english": ""
+  },
+  "29": {
+    "german": "Mannheim",
+    "english": ""
+  },
+  "30": {
+    "german": "Transportnetzwerke",
+    "english": ""
+  },
+  "31": {
+    "german": "soziale Netzwerke",
+    "english": ""
+  },
+  "32": {
+    "german": "sonstiges",
+    "english": ""
+  },
+  "33": {
+    "german": "\\textbf{Graph}",
+    "english": ""
+  },
+  "34": {
+    "german": "endliche Menge",
+    "english": ""
+  },
+  "35": {
+    "german": "Teilmenge von $V \\choose 2$",
+    "english": ""
+  },
+  "36": {
+    "german": "Knoten",
+    "english": ""
+  },
+  "37": {
+    "german": "Kante",
+    "english": ""
+  },
+  "38": {
+    "german": "Kante $e = \\{\\textcolor{KITgreen}{a}, \\textcolor{KITgreen}{b}\\}$",
+    "english": ""
+  },
+  "39": {
+    "german": "Relationen",
+    "english": ""
+  },
+  "40": {
+    "german": "$\\textcolor{KITgreen}{a}$ adjazent zu $\\textcolor{KITgreen}{b}$",
+    "english": ""
+  },
+  "41": {
+    "german": "$\\textcolor{blue1}{e}$ inzident zu $\\textcolor{KITgreen}{a}$, $\\textcolor{KITgreen}{b}$",
+    "english": ""
+  },
+  "42": {
+    "german": "\\textbf{Graph (gerichtet)}",
+    "english": ""
+  },
+  "43": {
+    "german": "endliche Menge",
+    "english": ""
+  },
+  "44": {
+    "german": "Teilmenge von $V \\times V$",
+    "english": ""
+  },
+  "45": {
+    "german": "Kante $e = (\\textcolor{KITgreen}{a}, \\textcolor{KITgreen}{b})$",
+    "english": ""
+  },
+  "46": {
+    "german": "\\textbf{Sonstiges}",
+    "english": ""
+  },
+  "47": {
+    "german": "$\\deg_\\mathrm{in}(\\textcolor{KITgreen}{b}) = 2$\\n\\n$\\deg_\\mathrm{out}(\\textcolor{KITgreen}{b}) = 1$",
+    "english": ""
+  },
+  "48": {
+    "german": "Gewichte: $G = (V, E, w)$ mit $w: E \\mapsto \\mathbb{R}$",
+    "english": ""
+  },
+  "49": {
+    "german": "Multigraphen",
+    "english": ""
+  },
+  "50": {
+    "german": "Bäume",
+    "english": ""
+  },
+  "51": {
+    "german": "Charakterisierung:",
+    "english": ""
+  },
+  "52": {
+    "german": "kreisfrei",
+    "english": ""
+  },
+  "53": {
+    "german": "zusammenhängend",
+    "english": ""
+  },
+  "54": {
+    "german": "Zwei Eigenschaften implizieren dritte",
+    "english": ""
+  },
+  "55": {
+    "german": "Bäume",
+    "english": ""
+  },
+  "56": {
+    "german": "Kreise $C_n$",
+    "english": ""
+  },
+  "57": {
+    "german": "Charakterisierung:",
+    "english": ""
+  },
+  "58": {
+    "german": "zusammenhängend",
+    "english": ""
+  },
+  "59": {
+    "german": "Argumentation: $\\forall v \\in V: \\deg(v)=2 \\Rightarrow G$ ist Kreis",
+    "english": ""
+  },
+  "60": {
+    "german": "für $2\\le i < k - 1$: $\\{v_i, v_k\\} \\notin E$",
+    "english": ""
+  },
+  "61": {
+    "german": "$\\{v_k, v_1\\} \\in E$ falls $k=n$",
+    "english": ""
+  },
+  "62": {
+    "german": "Bäume",
+    "english": ""
+  },
+  "63": {
+    "german": "Kreise",
+    "english": ""
+  },
+  "64": {
+    "german": "vollst. Graph $K_n$",
+    "english": ""
+  },
+  "65": {
+    "german": "bipartiter Graph",
+    "english": ""
+  },
+  "66": {
+    "german": "In-tree / zur Wurzel ger. Baum",
+    "english": ""
+  },
+  "67": {
+    "german": "Wurzel",
+    "english": ""
+  },
+  "68": {
+    "german": "Charakterisierung über $\\deg_\\mathrm{out}$",
+    "english": ""
+  },
+  "69": {
+    "german": "Ein Knoten $r$ mit $\\deg_\\mathrm{out}(r) = 0$",
+    "english": ""
+  },
+  "70": {
+    "german": "Jeder andere Knoten $v$:\\n\\[\\n\\deg_\\mathrm{out}(v)=1\\n\\]",
+    "english": ""
+  },
+  "71": {
+    "german": "Beweis: $\\Rightarrow$",
+    "english": ""
+  },
+  "72": {
+    "german": "Beweis: $\\Leftarrow$",
+    "english": ""
+  },
+  "73": {
+    "german": "per Induktion",
+    "english": ""
+  },
+  "74": {
+    "german": "Anfang:",
+    "english": ""
+  },
+  "75": {
+    "german": "Schritt:",
+    "english": ""
+  },
+  "76": {
+    "german": "\\deg_\\mathrm{out}(v) = 1",
+    "english": ""
+  },
+  "77": {
+    "german": "$n-1$ Knoten",
+    "english": ""
+  },
+  "78": {
+    "german": "In-tree per Ind.",
+    "english": ""
+  },
+  "79": {
+    "german": "directed acyclic graph (DAG)",
+    "english": ""
+  },
+  "80": {
+    "german": "Quelle",
+    "english": ""
+  },
+  "81": {
+    "german": "Senke",
+    "english": ""
+  },
+  "82": {
+    "german": "Charakterisierung:\\\\\\nG enthält nur Kreise \\textit{gerader} Länge in $G$",
+    "english": ""
+  },
+  "83": {
+    "german": "\\textbf{Achtung!} Zusätzliche Forderung notwendig, damit Vorgänger von $v$ keiner der bereits betrachteten Knoten sein kann:",
+    "english": ""
+  },
+  "84": {
+    "german": "entweder kreisfreiheit",
+    "english": ""
+  },
+  "85": {
+    "german": "oder: jeder Knoten hat Pfad zur Wurzel",
+    "english": ""
+  },
+  "86": {
+    "german": "$d \\coloneqq$ \\type{Array} of size $n$ initialized with $\\infty$\\n",
+    "english": "$d \\coloneqq$ \\type{Array} of size $n$ initialized with $\\infty$\\n"
+  },
+  "87": {
+    "german": "\\type{PriorityQueue} $Q \\coloneqq$ empty priority queue",
+    "english": "\\type{PriorityQueue} $Q \\coloneqq$ empty priority queue"
+  },
+  "88": {
+    "german": "Wie viele Knoten werden aus der Queue entfernt, bevor $t$ entfernt wird?",
+    "english": ""
+  },
+  "89": {
+    "german": "Knoten werden mit nicht-absteigender\\\\ Distanz zu $s$ aus der Queue entfernt",
+    "english": ""
+  },
+  "90": {
+    "german": "alle Knoten $v$ mit $\\dist(s, v) < \\dist(s,t)$\\\\ werden vor $t$ entfernt",
+    "english": ""
+  },
+  "91": {
+    "german": "Ziel: bestimme $\\dist(s,t)$",
+    "english": ""
+  },
+  "92": {
+    "german": "Wann ist $\\dist(s,t)$ bekannt?",
+    "english": ""
+  },
+  "93": {
+    "german": "\\textbf{Lemma} \\\\\\nIn dem Moment, in dem u aus der Queue entfernt und exploriert wird gilt $d[u] = \\dist(s, u)$.",
+    "english": ""
+  },
+  "94": {
+    "german": "Straßengraph mit Straßenlänge als Gewichte (Gewicht $1 \\widehat{=} 50m$)",
+    "english": ""
+  },
+  "95": {
+    "german": "\\textbf{Neues Setting}",
+    "english": ""
+  },
+  "96": {
+    "german": "mehr Infos über den Graphen \\\\(z.B. geographische Koordinaten)",
+    "english": ""
+  },
+  "97": {
+    "german": "falsche Richtung?!?",
+    "english": ""
+  },
+  "98": {
+    "german": "Straßengraph mit Straßenlänge als Gewichte (Gewicht $1 \\widehat{=} 50m$)",
+    "english": ""
+  },
+  "99": {
+    "german": "\\textbf{Neues Setting}",
+    "english": ""
+  },
+  "100": {
+    "german": "mehr Infos über den Graphen \\\\(z.B. geographische Koordinaten)",
+    "english": ""
+  },
+  "101": {
+    "german": "mache gute Kanten günstiger und schlechte Kanten teurer",
+    "english": ""
+  },
+  "102": {
+    "german": "\\textbf{Idee}",
+    "english": ""
+  },
+  "103": {
+    "german": "Was sind gute/schlechte Kanten?",
+    "english": ""
+  },
+  "104": {
+    "german": "Ziel: bestimme $\\dist(s,t)$",
+    "english": ""
+  },
+  "105": {
+    "german": "Wie können wir Kanten bewerten?",
+    "english": ""
+  },
+  "106": {
+    "german": "abhängig von euklidischer Distanz $\\pi(v)$ zum Ziel",
+    "english": ""
+  },
+  "107": {
+    "german": "\\textbf{Neue Kantengewichtsfunktion} in $G^*$",
+    "english": ""
+  },
+  "108": {
+    "german": "abhängig von euklidischer Distanz $\\pi(v)$ zum Ziel",
+    "english": ""
+  },
+  "109": {
+    "german": "Wie viele Knoten werden aus der Queue entfernt, bevor $t$ entfernt wird?",
+    "english": ""
+  },
+  "110": {
+    "german": "Bleibt der kürzeste $s$-$t$-Pfad gleich?",
+    "english": ""
+  },
+  "111": {
+    "german": "zu zeigen: kürzester $s$-$t$-Pfad in $G^*$ ist auch kürzester $s$-$t$-Pfad in $G$",
+    "english": ""
+  },
+  "112": {
+    "german": "\\textbf{Neue Kantengewichtsfunktion} in $G^*$",
+    "english": ""
+  },
+  "113": {
+    "german": "$s$-$t$-Pfad $P = (s = v_1, v_2, v_3, \\ldots, v_k = t)$",
+    "english": ""
+  },
+  "114": {
+    "german": "Wie verändert sich die Länge eines $s$-$t$-Pfades?",
+    "english": ""
+  },
+  "115": {
+    "german": "konstant für alle $s$-$t$-Pfade",
+    "english": ""
+  },
+  "116": {
+    "german": "Formel gilt für alle Potentialfunktionen $\\pi \\colon V \\to \\mathbb{R}$",
+    "english": ""
+  },
+  "117": {
+    "german": "Findet Dijkstra mit jedem $\\pi$ den kürzesten $s$-$t$-Weg?",
+    "english": ""
+  },
+  "118": {
+    "german": "gute Potentialfunktion:",
+    "english": ""
+  },
+  "119": {
+    "german": "$\\len^*(u,v) = \\len(u,v) - \\pi(u) + \\pi(v) \\geq 0$ für alle $(u,v) \\in E$",
+    "english": ""
+  },
+  "120": {
+    "german": "$\\pi(u)$ möglichst nah an $\\dist(u, t)$",
+    "english": ""
+  },
+  "121": {
+    "german": "Ist euklidische Distanz auf Straßengraphen eine gute Potentialfunktion?",
+    "english": ""
+  },
+  "122": {
+    "german": "oft bessere Laufzeit in der Praxis (NICHT im Worst Case)",
+    "english": ""
+  },
+  "123": {
+    "german": "Was passiert bei $\\pi(u) = \\dist(u, t)$ für alle $u \\in V$?",
+    "english": ""
+  },
+  "124": {
+    "german": "$\\lightning$ negative Kantengewichte",
+    "english": ""
+  },
+  "125": {
+    "german": "\\textbf{Anwendungen}",
+    "english": ""
+  },
+  "126": {
+    "german": "Routenplanung",
+    "english": ""
+  },
+  "127": {
+    "german": "Robotik",
+    "english": ""
+  },
+  "128": {
+    "german": "Dijkstra sucht viel ab, um Ziel zu finden",
+    "english": ""
+  },
+  "129": {
+    "german": "Potentialfunktion: schätzt, wie gut ein Knoten ist, wenn man zum Ziel möchte",
+    "english": ""
+  },
+  "130": {
+    "german": "auf modifiziertem Graph: kleinerer Suchraum",
+    "english": ""
+  },
+  "131": {
+    "german": "verallgemeinerte Variante: A*",
+    "english": ""
+  },
+  "132": {
+    "german": "Puzzle lösen",
+    "english": ""
+  },
+  "133": {
+    "german": "Potential: Anzahl richtige Steine",
+    "english": ""
+  },
+  "134": {
+    "german": "ipe",
+    "english": ""
+  },
+  "135": {
+    "german": "poppler",
+    "english": ""
+  },
+  "136": {
+    "german": "curl",
+    "english": ""
+  },
+  "137": {
+    "german": "ipe",
+    "english": ""
+  },
+  "138": {
+    "german": "poppler",
+    "english": ""
+  },
+  "139": {
+    "german": "curl",
+    "english": ""
+  },
+  "140": {
+    "german": "\\textbf{Modellierung als Graph}",
+    "english": ""
+  },
+  "141": {
+    "german": "Knoten V: Menge von Paketen",
+    "english": ""
+  },
+  "142": {
+    "german": "Knoten E: $(v,w) \\in E \\Leftrightarrow$ $v$ von $w$ benötigt",
+    "english": ""
+  },
+  "143": {
+    "german": "\\textbf{Frage}",
+    "english": ""
+  },
+  "144": {
+    "german": "Gibt es zyklische Abhängigkeiten?",
+    "english": ""
+  },
+  "145": {
+    "german": "\\textbf{Formal}",
+    "english": ""
+  },
+  "146": {
+    "german": "gegeben: gerichteter Graph $G = (V, E)$",
+    "english": ""
+  },
+  "147": {
+    "german": "Frage: Enthält $G$ gerichteten Kreis?",
+    "english": ""
+  },
+  "148": {
+    "german": "\\textbf{Problemstellung}",
+    "english": ""
+  },
+  "149": {
+    "german": "gegeben: gerichteter Graph $G = (V, E)$",
+    "english": ""
+  },
+  "150": {
+    "german": "Frage: Enthält $G$ gerichteten Kreis?",
+    "english": ""
+  },
+  "151": {
+    "german": "\\textbf{Lösungsansätze}",
+    "english": ""
+  },
+  "152": {
+    "german": "brute-force",
+    "english": ""
+  },
+  "153": {
+    "german": "betrachte jede Teilmenge $E' \\subset E$",
+    "english": ""
+  },
+  "154": {
+    "german": "prüfe ob $E'$ Kreis ergibt",
+    "english": ""
+  },
+  "155": {
+    "german": "$\\deg_\\mathrm{in}(v) = 1$ und\\\\\\n$\\deg_\\mathrm{out}(v) = 1$",
+    "english": ""
+  },
+  "156": {
+    "german": "Gesamt: $O(2^m \\cdot (n+m))$",
+    "english": ""
+  },
+  "157": {
+    "german": "etwas geschickter",
+    "english": ""
+  },
+  "158": {
+    "german": "betrachte jede Kante $(a,b) \\in E$",
+    "english": ""
+  },
+  "159": {
+    "german": "suche $b$-$a$-Pfad",
+    "english": ""
+  },
+  "160": {
+    "german": "Gesamt: $O(m(n+m))$",
+    "english": ""
+  },
+  "161": {
+    "german": "\\textbf{Frage:} Ist Linearzeit möglich?",
+    "english": ""
+  },
+  "162": {
+    "german": "\\textbf{Problemstellung}",
+    "english": ""
+  },
+  "163": {
+    "german": "gegeben: gerichteter Graph $G = (V, E)$",
+    "english": ""
+  },
+  "164": {
+    "german": "Frage: Enthält $G$ gerichteten Kreis?",
+    "english": ""
+  },
+  "165": {
+    "german": "\\textbf{Frage:} Ist Linearzeit möglich?",
+    "english": ""
+  },
+  "166": {
+    "german": "Beobachtung",
+    "english": ""
+  },
+  "167": {
+    "german": "DAG enthält immer \\textcolor{maygreen1}{Quelle}, \\textcolor{orange1}{Senke}",
+    "english": ""
+  },
+  "168": {
+    "german": "\\begin{flushleft}Löschen von Quellen/Senken erhält Kreis(freiheit)\\end{flushleft}",
+    "english": ""
+  },
+  "169": {
+    "german": "\\textbf{Effiziente Implementierung}",
+    "english": ""
+  },
+  "170": {
+    "german": "finde zu Beginn alle Quellen",
+    "english": ""
+  },
+  "171": {
+    "german": "lösche iterativ Quelle $q$\\n",
+    "english": ""
+  },
+  "172": {
+    "german": "suche neue Quellen in $N(q)$",
+    "english": ""
+  },
+  "173": {
+    "german": "$\\Theta(\\deg_\\mathrm{out}(v))$",
+    "english": ""
+  },
+  "174": {
+    "german": "$\\Theta(\\deg_\\mathrm{out}(v))$?",
+    "english": ""
+  },
+  "175": {
+    "german": "$\\mathrm{deg}_\\mathrm{in}: [\\mathbb{N}]$= $\\textcolor{blue1}{[0,0,2,1,\\dots]}$",
+    "english": ""
+  },
+  "176": {
+    "german": "$\\textcolor{maygreen1}{\\mathrm{sources}}: \\mathrm{Queue}$",
+    "english": ""
+  },
+  "177": {
+    "german": "$\\mathrm{deg}_\\mathrm{in}: [\\mathbb{N}]$= $\\textcolor{blue1}{[0,0,\\textcolor{red1}{1},\\textcolor{red1}{0},\\dots]}$",
+    "english": ""
+  },
+  "178": {
+    "german": "$\\mathrm{deg}_\\mathrm{in}: [\\mathbb{N}]$= $\\textcolor{blue1}{[0,0,1,0,\\dots]}$",
+    "english": ""
+  },
+  "179": {
+    "german": "Wie findet man neue Quellen?",
+    "english": ""
+  },
+  "180": {
+    "german": "\\textbf{Adjazenzliste}",
+    "english": ""
+  },
+  "181": {
+    "german": "Naiver Ansatz: lösche",
+    "english": ""
+  },
+  "182": {
+    "german": "Kanten zu gelöschten Knoten",
+    "english": ""
+  },
+  "183": {
+    "german": "Kanten von gelöschten Knoten",
+    "english": ""
+  },
+  "184": {
+    "german": "Beispiel: Lösche 4",
+    "english": ""
+  },
+  "185": {
+    "german": "Knoten",
+    "english": ""
+  },
+  "186": {
+    "german": "teuer",
+    "english": ""
+  },
+  "187": {
+    "german": "Besserer Ansatz",
+    "english": ""
+  },
+  "188": {
+    "german": "speichere Pointer zwischen Listen",
+    "english": ""
+  },
+  "189": {
+    "german": "lösche inzidente Kanten in $\\Theta(\\deg(v))$",
+    "english": ""
+  },
+  "190": {
+    "german": "Knoten Löschen: swap mit Knoten $n-1$",
+    "english": ""
+  },
+  "191": {
+    "german": "mapping zw. neuen und alten Indizes\\\\\\n\\texttt{old\\_index}: [$\\mathbb{N}$], \\texttt{new\\_index}: [$\\mathbb{N}$]",
+    "english": ""
+  },
+  "192": {
+    "german": "Aktualisierung Indizes:\\\\ \\texttt{new\\_index}[9] = 4\\\\\\n\\texttt{old\\_index}[4] = 9",
+    "english": ""
+  },
+  "193": {
+    "german": "Gesamtlaufzeit: $\\Theta(\\deg(v))$",
+    "english": ""
+  },
+  "194": {
+    "german": "Und auf gerichteten Graphen?",
+    "english": ""
+  },
+  "195": {
+    "german": "\\textbf{Problemstellung}",
+    "english": ""
+  },
+  "196": {
+    "german": "gegeben: gerichteter Graph $G = (V, E)$",
+    "english": ""
+  },
+  "197": {
+    "german": "Frage: Ist $G$ DAG?",
+    "english": ""
+  },
+  "198": {
+    "german": "\\textbf{Algorithmus}",
+    "english": "\\textbf{Algorithm}"
+  },
+  "199": {
+    "german": "finde zu Beginn alle Quellen",
+    "english": ""
+  },
+  "200": {
+    "german": "lösche iterativ Quelle $q$\\n",
+    "english": ""
+  },
+  "201": {
+    "german": "suche neue Quellen in $N(q)$",
+    "english": ""
+  },
+  "202": {
+    "german": "$\\Theta(\\deg_\\mathrm{out}(v))$",
+    "english": ""
+  },
+  "203": {
+    "german": "$\\Theta(\\deg_\\mathrm{out}(v))$?",
+    "english": ""
+  },
+  "204": {
+    "german": "$\\mathrm{deg}_\\mathrm{in}: [\\mathbb{N}]$= $\\textcolor{blue1}{[0,0,2,1,\\dots]}$",
+    "english": ""
+  },
+  "205": {
+    "german": "$\\textcolor{maygreen1}{\\mathrm{sources}}: \\mathrm{Queue}$",
+    "english": ""
+  },
+  "206": {
+    "german": "$\\mathrm{deleted}: [\\mathbb{N}]$",
+    "english": ""
+  },
+  "207": {
+    "german": "Gesamtlaufzeit: $\\Theta(n+m)$",
+    "english": ""
+  },
+  "208": {
+    "german": "Knoten \\textit{löschen} oft nicht notwendig",
+    "english": ""
+  },
+  "209": {
+    "german": "geschicktes Verwalten zusätzlicher Informationen hilfreich",
+    "english": ""
+  },
+  "210": {
+    "german": "\\textbf{Wichtig}",
+    "english": ""
+  },
+  "211": {
+    "german": "$\\Theta(\\deg_\\mathrm{out}(v))$",
+    "english": ""
+  }
+}

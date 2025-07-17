@@ -1,0 +1,982 @@
+{
+  "1": {
+    "german": "Wiederholung: Zwei Arten der Datenablage",
+    "english": ""
+  },
+  "2": {
+    "german": "Doppelt verkettete Liste",
+    "english": ""
+  },
+  "3": {
+    "german": "Wo stehen wir?",
+    "english": ""
+  },
+  "4": {
+    "german": "Implementierungsdetails",
+    "english": ""
+  },
+  "5": {
+    "german": "Mächtigere Operationen",
+    "english": ""
+  },
+  "6": {
+    "german": "Liste oder Array?",
+    "english": ""
+  },
+  "7": {
+    "german": "Listenvarianten",
+    "english": ""
+  },
+  "8": {
+    "german": "Listen in der Wildnis",
+    "english": ""
+  },
+  "9": {
+    "german": "Stapel und Warteschlangen",
+    "english": ""
+  },
+  "10": {
+    "german": "Suchen",
+    "english": ""
+  },
+  "11": {
+    "german": "Suchen in sortierten Folgen",
+    "english": ""
+  },
+  "12": {
+    "german": "Abstraktionslevel: Idee $\\rightarrow$ Implementierung",
+    "english": ""
+  },
+  "13": {
+    "german": "Implementierung: zweiter Versuch",
+    "english": ""
+  },
+  "14": {
+    "german": "Zusammenfassung: Binäre Suche",
+    "english": ""
+  },
+  "15": {
+    "german": "Schneller geht es nicht",
+    "english": ""
+  },
+  "16": {
+    "german": "Schneller geht es nicht",
+    "english": ""
+  },
+  "17": {
+    "german": "Zusammenfassung",
+    "english": "Summary"
+  },
+  "18": {
+    "german": "Umfrage zu Ihrem Studienstart am KIT (2022/23)",
+    "english": ""
+  },
+  "19": {
+    "german": "Thomas Bläsius~--~Algorithmen 1",
+    "english": "Thomas Bläsius~--~Algorithms 1"
+  },
+  "20": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "21": {
+    "german": "\\textbf{Listen und binäre Suche}",
+    "english": ""
+  },
+  "22": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "23": {
+    "german": "\\textbf{Felder (Arrays)}",
+    "english": ""
+  },
+  "24": {
+    "german": "Menge aufeinanderfolgender Speicherzellen",
+    "english": ""
+  },
+  "25": {
+    "german": "Zugriff mit Adresse bzw.\\ Index an beliebiger Stelle in $\\Theta(1)$\\n",
+    "english": ""
+  },
+  "26": {
+    "german": "sehr nah an der Hardware",
+    "english": ""
+  },
+  "27": {
+    "german": "\\textbf{Verzeigerte Strukturen}",
+    "english": "\\textbf{Pointer structures}"
+  },
+  "28": {
+    "german": "viele kleine Stückchen Speicher (Knoten)",
+    "english": "Lots of small memory cells (nodes)"
+  },
+  "29": {
+    "german": "ein Knoten speichert:",
+    "english": "A node stores:"
+  },
+  "30": {
+    "german": "Daten, die uns tatsächlich interessieren",
+    "english": "Actual payload data"
+  },
+  "31": {
+    "german": "Speicheradressen anderer Knoten (Zeiger)",
+    "english": "Pointers to other nodes"
+  },
+  "32": {
+    "german": "Zugriff durch Navigation entlang Zeiger\\n",
+    "english": "Access by navigating pointers\\n"
+  },
+  "33": {
+    "german": "abstrahiert stärker von der Hardware\\n",
+    "english": ""
+  },
+  "34": {
+    "german": "letztes Mal: Komfort-Funktionen für dynamisches Wachstum",
+    "english": ""
+  },
+  "35": {
+    "german": "heute: Listen als einfaches Beispiel",
+    "english": ""
+  },
+  "36": {
+    "german": "Adresse:",
+    "english": ""
+  },
+  "37": {
+    "german": "Daten:",
+    "english": ""
+  },
+  "38": {
+    "german": "Index:",
+    "english": ""
+  },
+  "39": {
+    "german": "\\textbf{Ziele}",
+    "english": ""
+  },
+  "40": {
+    "german": "speichere eine Folge von Zahlen $\\langle 4, 48, 89, 1 \\rangle$\\n\\hfill (abstraktes Objekt, \\emph{Mathe})",
+    "english": ""
+  },
+  "41": {
+    "german": "flexible Einfüge- und Löschoperationen \\hfill (Funktionalität,\\n\\emph{Softwaretechnik})\\n",
+    "english": ""
+  },
+  "42": {
+    "german": "\\textbf{Repräsentation und Effiziente Umsetzung} \\hfill (\\emph{Algorithmik})",
+    "english": ""
+  },
+  "43": {
+    "german": "jeder Knoten der Datenstruktur speichert:",
+    "english": ""
+  },
+  "44": {
+    "german": "eine der Zahlen der Folge $\\function{value}$",
+    "english": ""
+  },
+  "45": {
+    "german": "Zeiger zum nächsten Knoten $\\function{next}$",
+    "english": ""
+  },
+  "46": {
+    "german": "Zeiger zum vorherigen Knoten $\\function{prev}$",
+    "english": ""
+  },
+  "47": {
+    "german": "Einstiegspunkte: \\function{head}, \\function{end}",
+    "english": ""
+  },
+  "48": {
+    "german": "Einfüge- und Löschoperationen",
+    "english": ""
+  },
+  "49": {
+    "german": "Änderungen sind nur lokal",
+    "english": ""
+  },
+  "50": {
+    "german": "konstant viele Zeiger umhängen\\\\\\n$\\rightarrow$ konstante Laufzeit ($\\Theta(1)$)",
+    "english": ""
+  },
+  "51": {
+    "german": "\\textbf{Beispiel:}",
+    "english": ""
+  },
+  "52": {
+    "german": "\\textbf{Gerade gesehen}",
+    "english": ""
+  },
+  "53": {
+    "german": "grundlegende Funktionsweise einer Liste",
+    "english": ""
+  },
+  "54": {
+    "german": "High-Level Verständnis, warum flexibles Einfügen und Löschen effizient geht",
+    "english": ""
+  },
+  "55": {
+    "german": "$\\rightarrow$ hohes Abstraktionslevel",
+    "english": ""
+  },
+  "56": {
+    "german": "\\textbf{Offene Detailfragen}",
+    "english": ""
+  },
+  "57": {
+    "german": "Gibt es Sonderfälle zu beachten?",
+    "english": ""
+  },
+  "58": {
+    "german": "Wie gehe ich mit den $\\bot$-Pointern um?",
+    "english": ""
+  },
+  "59": {
+    "german": "Ziel: Elegante Implementierung, die Sonderfälle reduziert",
+    "english": ""
+  },
+  "60": {
+    "german": "Welche nützlichen Operationen gehen sonst noch?",
+    "english": ""
+  },
+  "61": {
+    "german": "\\textbf{Beispiel:}",
+    "english": ""
+  },
+  "62": {
+    "german": "\\textbf{Dummy Knoten $\\bot$ für den Kopf}",
+    "english": ""
+  },
+  "63": {
+    "german": "keine Null-Pointer mehr für erstes und letztes Listenelement",
+    "english": ""
+  },
+  "64": {
+    "german": "einfacher, dank Reduktion von Sonderfällen",
+    "english": ""
+  },
+  "65": {
+    "german": "\\textbf{Beachte:} funktioniert auch dann, wenn $a = \\bot$ oder\\n$a.\\function{next} = \\bot$\\n",
+    "english": ""
+  },
+  "66": {
+    "german": "\\textbf{Operation: Splice (verbinden, zusammenfügen)}",
+    "english": ""
+  },
+  "67": {
+    "german": "gegeben: zwei Listen $L_1$ und $L_2$ mit Knoten $a, b \\in L_1$ und $c \\in L_2$",
+    "english": ""
+  },
+  "68": {
+    "german": "Ziel: verschiebe $\\langle a, \\dots, b \\rangle$ von $L_1$ nach $L_2$ hinter $c$",
+    "english": ""
+  },
+  "69": {
+    "german": "\\textbf{Ergebnis:}",
+    "english": ""
+  },
+  "70": {
+    "german": "\\textbf{Laufzeit:} $\\Theta(1)$",
+    "english": ""
+  },
+  "71": {
+    "german": "\\textbf{Welche Datenstruktur ist besser für welche Anwendung?}",
+    "english": ""
+  },
+  "72": {
+    "german": "\\textbf{Stärken der Liste: flexibel modifizierbar in $\\Theta(1)$}",
+    "english": ""
+  },
+  "73": {
+    "german": "Einfügen, Löschen, Verschieben",
+    "english": ""
+  },
+  "74": {
+    "german": "Verschieben ganzer Bereiche",
+    "english": ""
+  },
+  "75": {
+    "german": "Löschen ganzer Bereiche",
+    "english": ""
+  },
+  "76": {
+    "german": "Konkatenation zweier Listen",
+    "english": ""
+  },
+  "77": {
+    "german": "\\textbf{Nebenbemerkung}",
+    "english": ""
+  },
+  "78": {
+    "german": "$\\Theta(1)$ für das Löschen eines Bereichs ist ggf.\\ eine etwas\\nblauäugige Sichtweise\\n",
+    "english": ""
+  },
+  "79": {
+    "german": "Was passiert mit dem reservierten Speicher?\\n",
+    "english": ""
+  },
+  "80": {
+    "german": "Oder nehmen wir ein memory leak in Kauf?\\n",
+    "english": ""
+  },
+  "81": {
+    "german": "Geben wir den frei?  Wer bezahlt das?",
+    "english": ""
+  },
+  "82": {
+    "german": "\\textbf{Schwächen der Liste}",
+    "english": ""
+  },
+  "83": {
+    "german": "kein wahlfreier Zugriff (\\emph{random access})",
+    "english": ""
+  },
+  "84": {
+    "german": "man muss die relevanten Knoten immer schon in der Hand haben",
+    "english": ""
+  },
+  "85": {
+    "german": "in der Praxis: schlechtere konstante Faktoren (Speicheroverhead,\\nCache-Effekte)",
+    "english": ""
+  },
+  "86": {
+    "german": "\\textbf{Beispiel 2: Einfach verkettete Liste}",
+    "english": ""
+  },
+  "87": {
+    "german": "\\textbf{Mehr als nur eine Liste}",
+    "english": ""
+  },
+  "88": {
+    "german": "Liste ist eher ein Konzept als eine einzelne Datenstruktur",
+    "english": ""
+  },
+  "89": {
+    "german": "unterschiedliche Anwendungen erfordern im Detail unterschiedliche\\nImplementierungen",
+    "english": ""
+  },
+  "90": {
+    "german": "\\textbf{Beispiel 1: Listengröße}",
+    "english": ""
+  },
+  "91": {
+    "german": "Lösung: speichere diese Info und aktualisiere sie bei Änderungen\\n",
+    "english": ""
+  },
+  "92": {
+    "german": "nützliche Information: Größe der Liste (Anzahl Knoten)",
+    "english": ""
+  },
+  "93": {
+    "german": "Problem: \\function{splice} wird teurer, weil wir die verschobenen\\nElemente zählen müssen\\n",
+    "english": ""
+  },
+  "94": {
+    "german": "speichere nur \\function{next} aber nicht \\function{prev}",
+    "english": ""
+  },
+  "95": {
+    "german": "weniger Speicherplatz, oft schneller",
+    "english": ""
+  },
+  "96": {
+    "german": "aber: weniger flexibel, merkwürdige Benutzerschnittstelle (z.B.\\ \\function{removeAfter})",
+    "english": ""
+  },
+  "97": {
+    "german": "\\textbf{Java}",
+    "english": "\\textbf{Java}"
+  },
+  "98": {
+    "german": "\\textbf{Stack}",
+    "english": ""
+  },
+  "99": {
+    "german": "Operationen: \\function{pushBack}, \\function{popBack}",
+    "english": ""
+  },
+  "100": {
+    "german": "Implementierung: z.B.\\ mittels Array",
+    "english": ""
+  },
+  "101": {
+    "german": "LIFO: Last In -- First Out",
+    "english": ""
+  },
+  "102": {
+    "german": "\\textbf{Queue}",
+    "english": ""
+  },
+  "103": {
+    "german": "Operationen: \\function{pushBack}, \\function{popFront}",
+    "english": ""
+  },
+  "104": {
+    "german": "Implementierung: z.B.\\ mittels Liste",
+    "english": ""
+  },
+  "105": {
+    "german": "FIFO: First In -- First Out",
+    "english": ""
+  },
+  "106": {
+    "german": "\\textbf{Deque -- Double-ended Queue}",
+    "english": ""
+  },
+  "107": {
+    "german": "Operationen: \\function{pushBack}, \\function{popBack}, \\function{pushFront}, \\function{popFront}",
+    "english": ""
+  },
+  "108": {
+    "german": "Implementierung: z.B.\\ mittels Liste",
+    "english": ""
+  },
+  "109": {
+    "german": "\\textbf{Problemstellung}",
+    "english": ""
+  },
+  "110": {
+    "german": "gegeben: Folge von $n$ Zahlen $A$ (als Array oder Liste) und eine Zahl $x$",
+    "english": ""
+  },
+  "111": {
+    "german": "Ziel: finde $x$ in der Folge $A$ (z.B.\\ erstes/jedes Auftreten)",
+    "english": ""
+  },
+  "112": {
+    "german": "\\textbf{Lineare Suche}",
+    "english": ""
+  },
+  "113": {
+    "german": "schaue jedes Element aus $A$ an",
+    "english": ""
+  },
+  "114": {
+    "german": "lineare Laufzeit: $\\Theta(n)$",
+    "english": ""
+  },
+  "115": {
+    "german": "\\textbf{Geht es besser?}",
+    "english": "\\textbf{Can we do better?}"
+  },
+  "116": {
+    "german": "nur manche Elemente betrachtet $\\rightarrow$ $x$ kann sich unter den\\nnicht angeschauten verstecken\\n",
+    "english": ""
+  },
+  "117": {
+    "german": "wir müssen zumindest die Eingabe einmal komplett lesen $\\Rightarrow$\\n$\\Omega(n)$\\n",
+    "english": ""
+  },
+  "118": {
+    "german": "also: besser als $\\Theta(n)$ geht nicht, außer wir fordern zusätzliche\\nEigenschaften für $A$",
+    "english": ""
+  },
+  "119": {
+    "german": "\\textbf{Problemstellung}",
+    "english": ""
+  },
+  "120": {
+    "german": "gegeben: sortierte Folge von $n$ Zahlen $A$ und eine Zahl $x$",
+    "english": ""
+  },
+  "121": {
+    "german": "Ziel: finde $x$ in der Folge $A$ (z.B.\\ erstes Auftreten oder\\nVorgänger)\\n",
+    "english": ""
+  },
+  "122": {
+    "german": "\\textbf{Binäre Suche}",
+    "english": ""
+  },
+  "123": {
+    "german": "durch einen Vergleich: entscheide ob $x$ in der linken oder rechten\\nHälfte von $A$ liegt",
+    "english": ""
+  },
+  "124": {
+    "german": "suche rekursiv in der relevanten Hälfte von $A$",
+    "english": ""
+  },
+  "125": {
+    "german": "Abbruch: zu durchsuchende Folge ist nur noch konstant groß (hier: $2$)",
+    "english": ""
+  },
+  "126": {
+    "german": "\\textbf{Laufzeit: Wie viele Vergleiche brauchen wir?}",
+    "english": ""
+  },
+  "127": {
+    "german": "\\textbf{Implementierung: Sollten wir $A$ als Liste oder Array\\n  repräsentieren?}\\n",
+    "english": ""
+  },
+  "128": {
+    "german": "\\textbf{Anzahl Vergleiche}",
+    "english": ""
+  },
+  "129": {
+    "german": "pro Vergleich halbiert sich die Größe von $A$ $\\rightarrow$ nur\\n$\\Theta(\\log n)$ Halbierungen\\n",
+    "english": ""
+  },
+  "130": {
+    "german": "\\textbf{Implementierung}",
+    "english": ""
+  },
+  "131": {
+    "german": "pro Schritt: Zugriff auf \\emph{mittleres} Element im aktuell\\nbetrachteten Bereich",
+    "english": ""
+  },
+  "132": {
+    "german": "wahlfreier Zugriff $\\rightarrow$ Array bietet sich an",
+    "english": ""
+  },
+  "133": {
+    "german": "$\\function{binSearchRec}(A, x, \\mathrm{beg} = 0, \\mathrm{end} = n -\\n1)$\\n",
+    "english": ""
+  },
+  "134": {
+    "german": "\\keyword{if} $\\mathrm{end} - \\mathrm{beg} = 1$ \\keyword{then}",
+    "english": ""
+  },
+  "135": {
+    "german": "\\keyword{if} $x = A[\\mathrm{beg}]$ \\keyword{then} \\keyword{return} $\\mathrm{beg}$",
+    "english": ""
+  },
+  "136": {
+    "german": "\\keyword{if} $x = A[\\mathrm{end}]$ \\keyword{then} \\keyword{return} $\\mathrm{end}$",
+    "english": ""
+  },
+  "137": {
+    "german": "\\keyword{return} between $\\mathrm{beg}$ and $\\mathrm{end}$\\n",
+    "english": ""
+  },
+  "138": {
+    "german": "$\\mathrm{mid} \\coloneqq \\lceil (\\mathrm{beg} + \\mathrm{end})/2 \\rceil$",
+    "english": ""
+  },
+  "139": {
+    "german": "\\keyword{if} $x < A[\\mathrm{mid}]$ \\keyword{then}",
+    "english": ""
+  },
+  "140": {
+    "german": "\\keyword{return} $\\function{binSearchRec}(A, x, \\mathrm{beg}, \\mathrm{mid})$",
+    "english": ""
+  },
+  "141": {
+    "german": "\\keyword{return} $\\function{binSearchRec}(A, x, \\mathrm{mid}, \\mathrm{end})$",
+    "english": ""
+  },
+  "142": {
+    "german": "\\textbf{Korrektheitsbeweis mittels Invarianten}",
+    "english": ""
+  },
+  "143": {
+    "german": "zeige, dass wir immer im richtigen Teilbereich suchen:\\n$A[\\mathrm{beg}] \\le x \\le A[\\mathrm{end}]$\\n",
+    "english": ""
+  },
+  "144": {
+    "german": "\\textbf{Was müssen wir beweisen?}",
+    "english": ""
+  },
+  "145": {
+    "german": "ausgegebenes Ergebnis ist \\emph{korrekt}",
+    "english": ""
+  },
+  "146": {
+    "german": "Terminierung nach \\emph{Laufzeit} $\\Theta(\\log n)$\\n",
+    "english": ""
+  },
+  "147": {
+    "german": "\\mathrm{mid}",
+    "english": ""
+  },
+  "148": {
+    "german": "\\mathrm{beg}",
+    "english": ""
+  },
+  "149": {
+    "german": "\\mathrm{end}",
+    "english": ""
+  },
+  "150": {
+    "german": "Bereich des aktuellen Aufrufs",
+    "english": ""
+  },
+  "151": {
+    "german": "neuer Bereich für $x < A[\\mathrm{mid}]$",
+    "english": ""
+  },
+  "152": {
+    "german": "neuer Bereich für $x \\ge A[\\mathrm{mid}]$",
+    "english": ""
+  },
+  "153": {
+    "german": "wenn $A[\\mathrm{beg}] \\le x \\le A[\\mathrm{end}]$ im aktuellen Aufruf gilt\\n\\n",
+    "english": ""
+  },
+  "154": {
+    "german": "dann auch im nächsten",
+    "english": ""
+  },
+  "155": {
+    "german": "\\textbf{Achtung am Anfang:}\\\\ $A[0] \\le x \\le A[n-1]$ muss nicht gelten!",
+    "english": ""
+  },
+  "156": {
+    "german": "$\\function{binSearchRec}(A, x, \\mathrm{beg} = 0, \\mathrm{end} = n)$\\n",
+    "english": ""
+  },
+  "157": {
+    "german": "\\textbf{Was genau wollen wir haben?}",
+    "english": ""
+  },
+  "158": {
+    "german": "Index $i$, sodass: $A[i] = x$ \\hfill (falls $x \\in A$)\\\\\\noder $A[i - 1] < x < A[i]$ \\hfill (falls $x \\not\\in A$)\\n",
+    "english": ""
+  },
+  "159": {
+    "german": "(Konvention: $A[-1] = -\\infty$, $A[n] = \\infty$)",
+    "english": ""
+  },
+  "160": {
+    "german": "Invariante für diesen Index $i$: $i \\in [\\mathrm{beg}, \\mathrm{end}]$",
+    "english": ""
+  },
+  "161": {
+    "german": "\\textbf{Beweis der Invariante}",
+    "english": ""
+  },
+  "162": {
+    "german": "gilt am Anfang mit $\\mathrm{beg} = 0$ und $\\mathrm{end} = n$\\n",
+    "english": ""
+  },
+  "163": {
+    "german": "\\keyword{if} $\\mathrm{beg} = \\mathrm{end}$ \\keyword{then}\\n\\keyword{return} $\\mathrm{beg}$\\n",
+    "english": ""
+  },
+  "164": {
+    "german": "$\\mathrm{mid} \\coloneqq \\lfloor (\\mathrm{beg} + \\mathrm{end})/2 \\rfloor$",
+    "english": ""
+  },
+  "165": {
+    "german": "\\keyword{if} $x \\le A[\\mathrm{mid}]$ \\keyword{then}",
+    "english": ""
+  },
+  "166": {
+    "german": "\\keyword{return} $\\function{binSearchRec}(A, x, \\mathrm{beg}, \\mathrm{mid})$",
+    "english": ""
+  },
+  "167": {
+    "german": "\\keyword{return} $\\function{binSearchRec}(A, x, \\mathrm{mid} + 1, \\mathrm{end})$",
+    "english": ""
+  },
+  "168": {
+    "german": "\\mathrm{mid}",
+    "english": ""
+  },
+  "169": {
+    "german": "\\mathrm{beg}",
+    "english": ""
+  },
+  "170": {
+    "german": "\\mathrm{end}",
+    "english": ""
+  },
+  "171": {
+    "german": "Bereich des aktuellen Aufrufs",
+    "english": ""
+  },
+  "172": {
+    "german": "neuer Bereich für $x \\le A[\\mathrm{mid}]$",
+    "english": ""
+  },
+  "173": {
+    "german": "neuer Bereich für $x > A[\\mathrm{mid}]$",
+    "english": ""
+  },
+  "174": {
+    "german": "für den Erhalt der Invariante, prüfe 4 Fälle:",
+    "english": ""
+  },
+  "175": {
+    "german": "Fall 1.1: $x \\in A$ und $x \\le A[\\mathrm{mid}]$\\n",
+    "english": ""
+  },
+  "176": {
+    "german": "Fall 1.2: $x \\in A$ und $x > A[\\mathrm{mid}]$\\n",
+    "english": ""
+  },
+  "177": {
+    "german": "Fall 2.1: $x \\not\\in A$ und $x \\le A[\\mathrm{mid}]$\\n",
+    "english": ""
+  },
+  "178": {
+    "german": "Fall 2.2: $x \\not\\in A$ und $x > A[\\mathrm{mid}]$\\n",
+    "english": ""
+  },
+  "179": {
+    "german": "\\textbf{Basisfall:} mit der Invariante sehr einfach",
+    "english": ""
+  },
+  "180": {
+    "german": "\\textbf{Beweis der Laufzeit}",
+    "english": ""
+  },
+  "181": {
+    "german": "$\\text{end} - \\text{beg}$ wird mindestens halbiert:",
+    "english": ""
+  },
+  "182": {
+    "german": "$\\text{mid} - \\text{beg} = \\left\\lfloor \\frac{\\text{beg} +\\n    \\text{end}}{2} \\right\\rfloor - \\text{beg}$\\\\\\n\\hphantom{$\\text{mid} -\\n  \\text{beg}$ }$\\le \\;\\; \\frac{\\text{beg} + \\text{end}}{2} -\\n\\text{beg} = \\frac{\\text{end} - \\text{beg}}{2}$\\n",
+    "english": ""
+  },
+  "183": {
+    "german": "$\\text{end} - (\\text{mid} + 1) = \\text{end} - \\left( \\left\\lfloor \\frac{\\text{beg} +\\n    \\text{end}}{2} \\right\\rfloor + 1\\right)$\\\\\\n\\hphantom{$\\text{end} - (\\text{mid} + 1)$ } \\hspace{-1.5ex}$\\le \\text{end} - \\frac{\\text{beg} + \\text{end}}{2}$\\\\\\n\\hphantom{$\\text{end} - (\\text{mid} + 1)$ } \\hspace{-1.5ex}$= \\frac{\\text{end} - \\text{beg}}{2}$\\n",
+    "english": ""
+  },
+  "184": {
+    "german": "\\mathrm{mid}",
+    "english": ""
+  },
+  "185": {
+    "german": "\\mathrm{beg}",
+    "english": ""
+  },
+  "186": {
+    "german": "\\mathrm{end}",
+    "english": ""
+  },
+  "187": {
+    "german": "\\mathrm{mid}",
+    "english": ""
+  },
+  "188": {
+    "german": "\\mathrm{beg}",
+    "english": ""
+  },
+  "189": {
+    "german": "\\mathrm{end}",
+    "english": ""
+  },
+  "190": {
+    "german": "Beispiel für ungerade Differenz",
+    "english": ""
+  },
+  "191": {
+    "german": "Beispiel für gerade Differenz",
+    "english": ""
+  },
+  "192": {
+    "german": "\\textbf{Theorem}\\\\\\nSei $M$ eine geordnete Menge (z.B. $\\mathbb Z$).  Sei $A$ ein\\nsortiertes Array der Länge $n$ mit Werten aus $M$ und sei $x \\in M$.\\nDie \\emph{binäre Suche} findet den Index $i$ mit\\n$A[i - 1] < x \\le A[i]$ in $\\Theta(\\log n)$ Zeit.\\n",
+    "english": ""
+  },
+  "193": {
+    "german": "(Konvention: $A[-1] = -\\infty$, $A[n] = \\infty$)",
+    "english": ""
+  },
+  "194": {
+    "german": "\\textbf{Folgerungen: Bereichsanfragen}",
+    "english": ""
+  },
+  "195": {
+    "german": "für $a, b \\in M$ können wir in $\\Theta(\\log n)$ herausfinden, wie\\nviele Elemente $A$ aus $[a, b]$ enthält\\n",
+    "english": ""
+  },
+  "196": {
+    "german": "$A$ enthält $k$ Elemente aus $[a, b]$ $\\rightarrow$ wir können sie in\\n$\\Theta(\\log n + k)$ aufzählen\\n",
+    "english": ""
+  },
+  "197": {
+    "german": "\\textbf{Einfache Idee, mit Stolperfallen in der Umsetzung}",
+    "english": ""
+  },
+  "198": {
+    "german": "abstrakte Idee: vergleiche in jedem Schritt mit mittlerem Element\\n$\\rightarrow$ halbiere Suchraum\\n",
+    "english": ""
+  },
+  "199": {
+    "german": "Umsetzung: man muss mit Randfällen etwas aufpassen\\n",
+    "english": ""
+  },
+  "200": {
+    "german": "hilfreiche Technik: Korrektheitsbeweis mittels Invariante\\n",
+    "english": ""
+  },
+  "201": {
+    "german": "\\textbf{Theorem}\\\\\\nMan kann nicht in $o(\\log n)$ suchen.\\n",
+    "english": ""
+  },
+  "202": {
+    "german": "\\textbf{Theorem}\\\\\\nEs gibt keine Datenstruktur die für jede geordnete Menge $M$ und jede\\nTeilmenge $M' \\subseteq M$ mit $n \\coloneqq |M'|$ berechnet werden\\nkann, die für jedes $x \\in M$ in $o(\\log n)$ Zeit testet, ob\\n$x \\in M'$.\\n",
+    "english": ""
+  },
+  "203": {
+    "german": "\\textbf{Sehr verkürzte Darstellung!}",
+    "english": ""
+  },
+  "204": {
+    "german": "\\textbf{Warum ist das so umständlich?}",
+    "english": ""
+  },
+  "205": {
+    "german": "\\textbf{Sagt die einfachere Formulierung nicht das gleiche!?!}\\n",
+    "english": ""
+  },
+  "206": {
+    "german": "Grumpy cat line art",
+    "english": "Grumpy cat line art"
+  },
+  "207": {
+    "german": "XXspiritwolf2000XX",
+    "english": "XXspiritwolf2000XX"
+  },
+  "208": {
+    "german": "Creative Commons",
+    "english": "Creative Commons"
+  },
+  "209": {
+    "german": "Bild:",
+    "english": "Image:"
+  },
+  "210": {
+    "german": "hier wichtig: wir wissen von $M$ nur, dass es eine geordnete Menge ist\\n",
+    "english": ""
+  },
+  "211": {
+    "german": "wir sagen auch: \\emph{vergleichsbasiertes} Suchen geht nicht in\\n$o(\\log n)$\\n",
+    "english": ""
+  },
+  "212": {
+    "german": "das einzige was wir mit Elementen aus $M$ tun können: Ordnungsrelation\\nüberprüfen $\\rightarrow$ jede Entscheidung basiert auf einem Vergleich\\n",
+    "english": ""
+  },
+  "213": {
+    "german": "für manche Mengen $M$ kann man tatsächlich in $o(\\log n)$ suchen\\n",
+    "english": ""
+  },
+  "214": {
+    "german": "(später auf Übungsblatt)",
+    "english": ""
+  },
+  "215": {
+    "german": "\\textbf{Beweis}",
+    "english": "\\textbf{Proof}"
+  },
+  "216": {
+    "german": "\\textbf{Theorem}\\\\\\nEs gibt keine Datenstruktur die für jede geordnete Menge $M$ und jede\\nTeilmenge $M' \\subseteq M$ mit $n \\coloneqq |M'|$ berechnet werden\\nkann, die für jedes $x \\in M$ in $o(\\log n)$ Zeit testet, ob\\n$x \\in M'$.\\n",
+    "english": ""
+  },
+  "217": {
+    "german": "Ausführung der Suche hängt nur von Vergleichen zwischen $x$ und\\nElementen in $M'$ ab\\n",
+    "english": ""
+  },
+  "218": {
+    "german": "fasse Ausführung als Entscheidungsbaum auf",
+    "english": ""
+  },
+  "219": {
+    "german": "bei \"`$=$\"' wird terminiert, da $x$ gefunden $\\rightarrow$\\ngrünes Blatt\\n",
+    "english": ""
+  },
+  "220": {
+    "german": "eine Ausführung: Pfad von Wurzel zu Blatt $\\rightarrow$\\n$\\text{Pfadlänge} = \\text{Anzahl Vergleiche}$",
+    "english": ""
+  },
+  "221": {
+    "german": "höchstens $k$ Vergleiche $\\Rightarrow$ höchstens\\n$\\sum\\limits_{i = 0}^{k-1} 2^i = 2^k - 1$ verschiedene grüne Blätter\\n",
+    "english": ""
+  },
+  "222": {
+    "german": "für $k < \\log_2 n$ kann nicht für jedes $x \\in M'$ das richtige\\nErgebnis herauskommen",
+    "english": ""
+  },
+  "223": {
+    "german": "jedes $x \\in M'$ findet man an einem andern grünen Blatt",
+    "english": ""
+  },
+  "224": {
+    "german": "\\textbf{Listen}",
+    "english": "\\textbf{Lists}"
+  },
+  "225": {
+    "german": "verzeigerte Datenstruktur zur Speicherung einer Folge",
+    "english": ""
+  },
+  "226": {
+    "german": "flexibel modifizierbar: z.B.\\ schnelles Einfügen, Löschen, Splice\\n",
+    "english": ""
+  },
+  "227": {
+    "german": "kein wahlfreier Zugriff mittels Index (kein random access)",
+    "english": ""
+  },
+  "228": {
+    "german": "\\textbf{Binäre Suche}",
+    "english": ""
+  },
+  "229": {
+    "german": "Voraussetzung: sortierte Folge und wir haben random access\\n",
+    "english": ""
+  },
+  "230": {
+    "german": "Korrektheit der Detailumsetzung via Invariante",
+    "english": ""
+  },
+  "231": {
+    "german": "\\textbf{Abstraktionsebene}",
+    "english": ""
+  },
+  "232": {
+    "german": "Vergleich mit mittlerem Element des aktuellen Suchraums\\\\\\n$\\rightarrow$ halbiert Suchraum $\\rightarrow$ $\\Theta(\\log n)$\\nVergleiche\\n",
+    "english": ""
+  },
+  "233": {
+    "german": "\\textbf{Untere Schranke}",
+    "english": "\\textbf{Lower bound}"
+  },
+  "234": {
+    "german": "besser als $\\Theta(\\log n)$ geht es nicht",
+    "english": ""
+  },
+  "235": {
+    "german": "außer, wenn wir Annahmen darüber machen, auf welcher Art von Daten wir suchen",
+    "english": ""
+  },
+  "236": {
+    "german": "\\textbf{niedrig}",
+    "english": ""
+  },
+  "237": {
+    "german": "(Formalisierung, Weg zur Implementierung)",
+    "english": ""
+  },
+  "238": {
+    "german": "\\textbf{hoch}",
+    "english": ""
+  },
+  "239": {
+    "german": "(Ideenfindung, Abschätzung der Laufzeit)",
+    "english": ""
+  },
+  "240": {
+    "german": "Die Beantwortung der Umfrage:",
+    "english": ""
+  },
+  "241": {
+    "german": "dauert ca. 5 Minuten",
+    "english": ""
+  },
+  "242": {
+    "german": "ist anonym",
+    "english": ""
+  },
+  "243": {
+    "german": "hilft den Studienstart am KIT zu verbessern!",
+    "english": ""
+  },
+  "244": {
+    "german": "\\begin{center}\\n  Sollten Sie in anderen Lehrveranstaltungen die gleiche Anfrage\\n  erhalten, bitte nur einmal an der Umfrage teilnehmen.\\n\\end{center}",
+    "english": ""
+  },
+  "245": {
+    "german": "\\emph{Vielen Dank für Ihre Teilnahme!}",
+    "english": ""
+  }
+}

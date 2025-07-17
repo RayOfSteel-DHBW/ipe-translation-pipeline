@@ -1,0 +1,922 @@
+{
+  "1": {
+    "german": "Datenstrukturen",
+    "english": ""
+  },
+  "2": {
+    "german": "Zwei Arten der Datenablage",
+    "english": ""
+  },
+  "3": {
+    "german": "Beschränkte und Unbeschränkte Arrays",
+    "english": ""
+  },
+  "4": {
+    "german": "Unbeschränkte Arrays: naives Vorgehen",
+    "english": ""
+  },
+  "5": {
+    "german": "Unbeschränkte Arrays: besseres Vorgehen",
+    "english": ""
+  },
+  "6": {
+    "german": "Unbeschränkte Arrays: Anmerkungen",
+    "english": ""
+  },
+  "7": {
+    "german": "Unbeschränkte Arrays in der Wildnis",
+    "english": ""
+  },
+  "8": {
+    "german": "Unbeschränkte Arrays: Zusammenfassung",
+    "english": ""
+  },
+  "9": {
+    "german": "Ausflug: Amortisierte Analyse",
+    "english": ""
+  },
+  "10": {
+    "german": "Amortisierte Analyse: Aggregation",
+    "english": ""
+  },
+  "11": {
+    "german": "Amortisierte Analyse: Charging",
+    "english": ""
+  },
+  "12": {
+    "german": "Amortisierte Analyse: Konto",
+    "english": ""
+  },
+  "13": {
+    "german": "Amortisierte Analyse: Potential",
+    "english": ""
+  },
+  "14": {
+    "german": "Amortisierte Analyse: Potential",
+    "english": ""
+  },
+  "15": {
+    "german": "Amortisierte Analyse: Potential -- Anmerkungen",
+    "english": ""
+  },
+  "16": {
+    "german": "Amortisierte Analyse: Zusammenfassung",
+    "english": ""
+  },
+  "17": {
+    "german": "Zusammenfassung",
+    "english": "Summary"
+  },
+  "18": {
+    "german": "Hochschulgruppen",
+    "english": ""
+  },
+  "19": {
+    "german": "Thomas Bläsius~--~Algorithmen 1",
+    "english": "Thomas Bläsius~--~Algorithms 1"
+  },
+  "20": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "21": {
+    "german": "\\textbf{Dynamische Arrays \\& amortisierte Analyse}",
+    "english": ""
+  },
+  "22": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "23": {
+    "german": "\\textbf{Was ist das überhaupt?}",
+    "english": ""
+  },
+  "24": {
+    "german": "Algorithmus: Abfolge von Schritten.  Jeder Schritt \\dots\\n",
+    "english": ""
+  },
+  "25": {
+    "german": "liest (wenige) Daten im Speicher\\n",
+    "english": ""
+  },
+  "26": {
+    "german": "verarbeitet die gelesenen Daten\\n",
+    "english": ""
+  },
+  "27": {
+    "german": "schreibt Daten in den Speicher\\n",
+    "english": ""
+  },
+  "28": {
+    "german": "Zugriff auf den Speicher mittels Speicheradressen",
+    "english": ""
+  },
+  "29": {
+    "german": "Datenstruktur: Abstraktionsebene über dem Speicher",
+    "english": ""
+  },
+  "30": {
+    "german": "versteckt, wie Daten genau im Speicher abgelegt sind",
+    "english": ""
+  },
+  "31": {
+    "german": "bietet Schnittstelle mit angenehmen Operationen",
+    "english": ""
+  },
+  "32": {
+    "german": "\\textbf{Felder (Arrays)}",
+    "english": ""
+  },
+  "33": {
+    "german": "Menge aufeinanderfolgender Speicherzellen",
+    "english": ""
+  },
+  "34": {
+    "german": "Zugriff mit Adresse bzw.\\ Index an beliebiger Stelle in $\\Theta(1)$\\n",
+    "english": ""
+  },
+  "35": {
+    "german": "sehr nah an der Hardware",
+    "english": ""
+  },
+  "36": {
+    "german": "\\textbf{Verzeigerte Strukturen}",
+    "english": "\\textbf{Pointer structures}"
+  },
+  "37": {
+    "german": "viele kleine Stückchen Speicher (Knoten)",
+    "english": "Lots of small memory cells (nodes)"
+  },
+  "38": {
+    "german": "ein Knoten speichert:",
+    "english": "A node stores:"
+  },
+  "39": {
+    "german": "Daten, die uns tatsächlich interessieren",
+    "english": "Actual payload data"
+  },
+  "40": {
+    "german": "Speicheradressen anderer Knoten (Zeiger)",
+    "english": "Pointers to other nodes"
+  },
+  "41": {
+    "german": "Zugriff durch Navigation entlang Zeiger\\n",
+    "english": "Access by navigating pointers\\n"
+  },
+  "42": {
+    "german": "abstrahiert stärker von der Hardware\\n",
+    "english": ""
+  },
+  "43": {
+    "german": "heute: Komfort-Funktionen",
+    "english": ""
+  },
+  "44": {
+    "german": "nächstes Mal: Listen als einfaches Beispiel",
+    "english": ""
+  },
+  "45": {
+    "german": "Adresse:",
+    "english": ""
+  },
+  "46": {
+    "german": "Daten:",
+    "english": ""
+  },
+  "47": {
+    "german": "Index:",
+    "english": ""
+  },
+  "48": {
+    "german": "\\textbf{Beschränkte Arrays}",
+    "english": ""
+  },
+  "49": {
+    "german": "nachträgliches Vergrößern schwierig: nachfolgende Speicherzellen ggf.\\\\nschon belegt\\n",
+    "english": ""
+  },
+  "50": {
+    "german": "beim Erstellen des Arrays muss ich festlegen, wie viel Speicher ich brauche",
+    "english": ""
+  },
+  "51": {
+    "german": "Problem: benötigter Speicher ist ggf.\\ durch äußere Faktoren bedingt\\n(Nutzereingabe)\\n",
+    "english": ""
+  },
+  "52": {
+    "german": "Adresse:",
+    "english": ""
+  },
+  "53": {
+    "german": "Daten:",
+    "english": ""
+  },
+  "54": {
+    "german": "Index:",
+    "english": ""
+  },
+  "55": {
+    "german": "\\textbf{Ich wünsche mir: unbeschränkte Arrays}",
+    "english": ""
+  },
+  "56": {
+    "german": "Verhalten wie bei Arrays (direkter Zugriff mittels Index)\\n",
+    "english": ""
+  },
+  "57": {
+    "german": "zusätzliche Funktionen:\\n",
+    "english": ""
+  },
+  "58": {
+    "german": "Wünschen kann man sich ja viel, aber wie setzen wir das um?",
+    "english": ""
+  },
+  "59": {
+    "german": "Adresse:",
+    "english": ""
+  },
+  "60": {
+    "german": "Index:",
+    "english": ""
+  },
+  "61": {
+    "german": "\\textbf{Umsetzung von $\\function{pushBack}(x)$}",
+    "english": ""
+  },
+  "62": {
+    "german": "erstelle neues Array, das um 1 größer ist",
+    "english": ""
+  },
+  "63": {
+    "german": "Daten:",
+    "english": ""
+  },
+  "64": {
+    "german": "kopiere Daten von altem in neues Array",
+    "english": ""
+  },
+  "65": {
+    "german": "lösche altes Array",
+    "english": ""
+  },
+  "66": {
+    "german": "schreibe $x$ in die freie Zelle am Ende",
+    "english": ""
+  },
+  "67": {
+    "german": "\\textbf{Wie lange dauert das Einfügen von $n$ Elementen?}",
+    "english": ""
+  },
+  "68": {
+    "german": "\\textbf{Kosten für das Einfügen von Elementen}",
+    "english": ""
+  },
+  "69": {
+    "german": "Einfügen von $i$tem Element: Kosten $\\Theta(i)$",
+    "english": ""
+  },
+  "70": {
+    "german": "Einfügen von $n$ Elementen: $\\sum\\limits_{i = 1}^{n} \\Theta(i) =\\n\\Theta\\left( \\sum\\limits_{i = 1}^{n} i \\right) = \\Theta(n^2)$",
+    "english": ""
+  },
+  "71": {
+    "german": "im Schnitt: Kosten $\\Theta(n)$ pro Operation $\\rightarrow$ viel zu\\nteuer",
+    "english": ""
+  },
+  "72": {
+    "german": "\\textbf{Müssen wir wirklich jedes Mal umkopieren?}",
+    "english": ""
+  },
+  "73": {
+    "german": "alloziere großzügig etwas mehr Speicher",
+    "english": ""
+  },
+  "74": {
+    "german": "nur dann kopieren, wenn der allozierte Speicher voll ist",
+    "english": ""
+  },
+  "75": {
+    "german": "\\textbf{Umsetzung von $\\function{pushBack}(x)$}",
+    "english": ""
+  },
+  "76": {
+    "german": "Adresse:",
+    "english": ""
+  },
+  "77": {
+    "german": "Index:",
+    "english": ""
+  },
+  "78": {
+    "german": "Daten:",
+    "english": ""
+  },
+  "79": {
+    "german": "\\textbf{Größe vs.\\ Kapazität}",
+    "english": ""
+  },
+  "80": {
+    "german": "Kapazität: für das Array allozierter Speicher",
+    "english": ""
+  },
+  "81": {
+    "german": "Größe: tatsächlich benutzte Speicherzellen",
+    "english": ""
+  },
+  "82": {
+    "german": "nach außen Sichtbar: Größe (via \\function{size}())",
+    "english": ""
+  },
+  "83": {
+    "german": "Größe",
+    "english": ""
+  },
+  "84": {
+    "german": "Kapazität",
+    "english": ""
+  },
+  "85": {
+    "german": "falls $\\text{Kapazität} > \\text{Größe}$: einfach einfügen",
+    "english": ""
+  },
+  "86": {
+    "german": "sonst: erstelle neues Array mit doppelter Kapazität und verfahre wie\\nbisher\\n",
+    "english": ""
+  },
+  "87": {
+    "german": "\\textbf{Beispiel:}",
+    "english": ""
+  },
+  "88": {
+    "german": "\\textbf{Wie lange dauert das Einfügen von $n$ Elementen?}",
+    "english": ""
+  },
+  "89": {
+    "german": "\\textbf{Kosten für das Einfügen von Elementen}",
+    "english": ""
+  },
+  "90": {
+    "german": "Kosten für $i$tes Element, wenn $i = 2^j + 1$: $\\Theta(i) = \\Theta(2^j)$\\n",
+    "english": ""
+  },
+  "91": {
+    "german": "sonst: $\\Theta(1)$",
+    "english": ""
+  },
+  "92": {
+    "german": "Einfügen von $n$ Elementen:\\n$\\sum\\limits_{i = 1}^{n} \\Theta(1) + \\sum\\limits_{j = 0}^{\\log_2 n} \\Theta(2^j) = \\Theta(n) + \\Theta(2^{\\log_2 n}) =\\n\\Theta(n)$\\n",
+    "english": ""
+  },
+  "93": {
+    "german": "im Schnitt: Kosten $\\Theta(1)$ pro Operation $\\rightarrow$ besser\\ngeht's nicht\\n",
+    "english": ""
+  },
+  "94": {
+    "german": "\\textbf{Speicherverschwendung}",
+    "english": ""
+  },
+  "95": {
+    "german": "wir allozieren mehr Speicher als wir tatsächlich brauchen",
+    "english": ""
+  },
+  "96": {
+    "german": "aber: höchstens einen Faktor 2 zu viel",
+    "english": ""
+  },
+  "97": {
+    "german": "\\textbf{Was machen wir bei $\\function{popBack}()$?}",
+    "english": ""
+  },
+  "98": {
+    "german": "hier kann man verschiedene Strategien verfolgen",
+    "english": ""
+  },
+  "99": {
+    "german": "z.B.: einfach die Größe des Arrays verringern aber Kapazität\\nbeibehalten $\\rightarrow$ $\\Theta(1)$\\n",
+    "english": ""
+  },
+  "100": {
+    "german": "\\textbf{Worst Case vs.\\ Durchschnitt}",
+    "english": ""
+  },
+  "101": {
+    "german": "im Worst Case benötigt eine einzelne Operation $\\Theta(n)$ Zeit ($n =\\n\\text{Arraygröße}$)\\n",
+    "english": ""
+  },
+  "102": {
+    "german": "aber: im Schnitt benötigt jede Operation nur $\\Theta(1)$ Zeit\\n",
+    "english": ""
+  },
+  "103": {
+    "german": "wir sagen: $\\function{pushBack}()$ hat \\emph{amortisiert} konstante\\nLaufzeit\\n",
+    "english": ""
+  },
+  "104": {
+    "german": "\\textbf{Abgrenzung zum Average Case}",
+    "english": ""
+  },
+  "105": {
+    "german": "Average Case: Durchschnitt über alle möglichen Eingaben/Ausführungen\\n",
+    "english": ""
+  },
+  "106": {
+    "german": "amortisiert: Durchschnitt über alle Operationen für beliebige (Worst\\nCase) Eingabe\\n\\n",
+    "english": ""
+  },
+  "107": {
+    "german": "(werden wir später noch kennen lernen)",
+    "english": ""
+  },
+  "108": {
+    "german": "\\textbf{Java}",
+    "english": "\\textbf{Java}"
+  },
+  "109": {
+    "german": "\\textbf{Effiziente Operationen ((amortisiert) konstant)}\\n",
+    "english": ""
+  },
+  "110": {
+    "german": "Zugriff an beliebiger Stelle",
+    "english": ""
+  },
+  "111": {
+    "german": "hinten einfügen",
+    "english": ""
+  },
+  "112": {
+    "german": "hinten löschen",
+    "english": ""
+  },
+  "113": {
+    "german": "\\textbf{Langsame Operationen (linear)}",
+    "english": ""
+  },
+  "114": {
+    "german": "einfügen an beliebiger Stelle",
+    "english": ""
+  },
+  "115": {
+    "german": "löschen an beliebiger Stelle",
+    "english": ""
+  },
+  "116": {
+    "german": "zwei Arrays konkatenieren",
+    "english": ""
+  },
+  "117": {
+    "german": "Teilarray löschen",
+    "english": ""
+  },
+  "118": {
+    "german": "\\textbf{Situation}",
+    "english": "\\textbf{Situation}"
+  },
+  "119": {
+    "german": "Sequenz von vielen Operationen",
+    "english": ""
+  },
+  "120": {
+    "german": "manche sind teuer, die meisten sind günstig $\\rightarrow$ günstig im\\nDurchschnitt",
+    "english": ""
+  },
+  "121": {
+    "german": "Worst Case über alle möglichen Sequenzen von Operationen",
+    "english": ""
+  },
+  "122": {
+    "german": "Garantie: Gesamtlaufzeit verhält sich, als wäre jede Operation günstig",
+    "english": ""
+  },
+  "123": {
+    "german": "\\textbf{Amortisierte Analyse}",
+    "english": ""
+  },
+  "124": {
+    "german": "\\textbf{Jetzt: verschiedene Techniken für die Analyse}",
+    "english": ""
+  },
+  "125": {
+    "german": "Aggregation",
+    "english": ""
+  },
+  "126": {
+    "german": "Konto",
+    "english": ""
+  },
+  "127": {
+    "german": "Potential",
+    "english": ""
+  },
+  "128": {
+    "german": "Charging",
+    "english": ""
+  },
+  "129": {
+    "german": "jeweils am Beispiel von $n$ \\function{pushBack} Operationen",
+    "english": ""
+  },
+  "130": {
+    "german": "\\textbf{Am Beispiel \\function{pushBack}}",
+    "english": ""
+  },
+  "131": {
+    "german": "Kosten für das Einfügen von $n$ Elementen:\\n$\\sum\\limits_{i = 1}^{n} \\Theta(1) + \\sum\\limits_{j = 0}^{\\log_2 n}\\n\\Theta(2^j) = \\Theta(n)$\\n",
+    "english": ""
+  },
+  "132": {
+    "german": "durchschnittliche Kosten pro Operation: $\\Theta(1)$",
+    "english": ""
+  },
+  "133": {
+    "german": "\\textbf{Allgemeines Vorgehen}",
+    "english": ""
+  },
+  "134": {
+    "german": "summiere die Kosten für alle Operationen",
+    "english": ""
+  },
+  "135": {
+    "german": "teile Gesamtkosten durch Anzahl Operationen",
+    "english": ""
+  },
+  "136": {
+    "german": "\\textbf{Anmerkungen}",
+    "english": "\\textbf{Notes}"
+  },
+  "137": {
+    "german": "schön einfach und direkt",
+    "english": ""
+  },
+  "138": {
+    "german": "manchmal unpraktikabel, insbesondere bei mehrere Operationen\\nunterschiedlichen Typs",
+    "english": ""
+  },
+  "139": {
+    "german": "\\textbf{Am Beispiel \\function{pushBack}}",
+    "english": ""
+  },
+  "140": {
+    "german": "$i$te Operation hat $i$ Tokens, falls $i = 2^j + 1$, sonst $1$ Token",
+    "english": ""
+  },
+  "141": {
+    "german": "\\textbf{Allgemeines Vorgehen}",
+    "english": ""
+  },
+  "142": {
+    "german": "verteile Kosten-Tokens von teuren zu günstigen Operationen (Charging)",
+    "english": ""
+  },
+  "143": {
+    "german": "zeige: jede Operation hat am Ende nur wenige Tokens",
+    "english": ""
+  },
+  "144": {
+    "german": "Tokens:",
+    "english": ""
+  },
+  "145": {
+    "german": "verschiebe von $2^j + 1$ je zwei Tokens auf jede der $2^{j - 1} - 1$\\nOperation in $(2^{j - 1} + 1, 2^j]$\\n",
+    "english": ""
+  },
+  "146": {
+    "german": "falls $i = 2^j + 1$: Operation wird $2^j - 2 = i - 3$ Tokens los\\n$\\rightarrow$ $3$ Tokens verbleiben",
+    "english": ""
+  },
+  "147": {
+    "german": "sonst: Operation erhält höchstens zwei zusätzliche Tokens\\n$\\rightarrow$ maximal $3$ Tokens\\n",
+    "english": ""
+  },
+  "148": {
+    "german": "\\textbf{Anmerkung}",
+    "english": "\\textbf{Note}"
+  },
+  "149": {
+    "german": "lokal: hohe Kosten fallen an $\\rightarrow$ charge sie rückwirkend auf\\nvorherige Operationen\\n",
+    "english": ""
+  },
+  "150": {
+    "german": "global: aufpassen, dass keine Operation zu viele Token bekommt",
+    "english": ""
+  },
+  "151": {
+    "german": "\\textbf{Wie viele Kostentoken haben die Operationen nach der\\n  Verschiebung?}",
+    "english": ""
+  },
+  "152": {
+    "german": "\\textbf{Am Beispiel \\function{pushBack}}",
+    "english": ""
+  },
+  "153": {
+    "german": "\\textbf{Allgemeines Vorgehen}",
+    "english": ""
+  },
+  "154": {
+    "german": "günstige Operation: bezahlt mehr als sie tatsächlich Kostet\\n$\\rightarrow$ ins Konto einzahlen\\n",
+    "english": ""
+  },
+  "155": {
+    "german": "teure Operation: bezahlt tatsächlich Kosten zum Teil mit Guthaben aus\\ndem Konto\\n",
+    "english": ""
+  },
+  "156": {
+    "german": "günstige Operation ($i \\in (2^{j - 1} + 1, 2^j]$): Kosten $1$, bezahle\\n$3$ $\\rightarrow$ zahle $2$ ins Konto ein\\n",
+    "english": ""
+  },
+  "157": {
+    "german": "teure Operation ($i = 2^j + 1$): Kosten $i$, bezahle $3$ $\\rightarrow$ hebe $i - 3 = 2^j\\n- 2$ vom Konto ab\\n",
+    "english": ""
+  },
+  "158": {
+    "german": "Guthaben nach Operation $2^j$ beträgt mindestens $2 \\cdot (2^j - (2^{j - 1} + 1)) = 2^j - 2$\\n",
+    "english": ""
+  },
+  "159": {
+    "german": "jede Operation bezahlt nur $3$ und Konto ist nie negativ $\\Rightarrow$\\namortisiert $\\Theta(1)$",
+    "english": ""
+  },
+  "160": {
+    "german": "\\textbf{Anmerkung}",
+    "english": "\\textbf{Note}"
+  },
+  "161": {
+    "german": "lokal: günstige Operationen zahlen vorausschauend Kosten für spätere\\nOperationen\\n",
+    "english": ""
+  },
+  "162": {
+    "german": "global: aufpassen, dass nie mehr abgehoben wird als schon eingezahlt wurde",
+    "english": ""
+  },
+  "163": {
+    "german": "sehr ähnlich zum Charging, aber leicht andere Perspektive",
+    "english": ""
+  },
+  "164": {
+    "german": "\\textbf{Allgemeines Vorgehen}",
+    "english": ""
+  },
+  "165": {
+    "german": "Potentialfunktion $\\Phi(A)$: bildet den Zustand des Arrays $A$ auf\\neine Zahl $\\ge 0$ ab\\n",
+    "english": ""
+  },
+  "166": {
+    "german": "bei der Konto-Methode:",
+    "english": ""
+  },
+  "167": {
+    "german": "definiere wie viel jede Operation (amortisiert) bezahlt\\n",
+    "english": ""
+  },
+  "168": {
+    "german": "daraus ergibt sich: Änderung des Kontostands",
+    "english": ""
+  },
+  "169": {
+    "german": "bei der Potential-Methode:",
+    "english": ""
+  },
+  "170": {
+    "german": "definiere Kontostand abhängig vom Zustand der Datenstruktur\\n$\\rightarrow$ Potentialfunktion\\n",
+    "english": ""
+  },
+  "171": {
+    "german": "daraus ergibt sich: die amortisierten Kosten jeder Operation\\n",
+    "english": ""
+  },
+  "172": {
+    "german": "genauer:",
+    "english": ""
+  },
+  "173": {
+    "german": "$A_{\\text{vor}}$ und $A_{\\text{nach}}$: die Zustände vor bzw.\\ nach\\neiner Operation\\n",
+    "english": ""
+  },
+  "174": {
+    "german": "$\\text{amortisierte Kosten} = \\text{tatsächliche Kosten} +\\n\\Phi(A_{\\text{nach}}) - \\Phi(A_{\\text{vor}})$",
+    "english": ""
+  },
+  "175": {
+    "german": "\\textbf{Am Beispiel \\function{pushBack}}",
+    "english": ""
+  },
+  "176": {
+    "german": "Potentialfunktion: $\\Phi(A) = 2\\cdot A.\\function{size}() - A.\\function{capacity}()$",
+    "english": ""
+  },
+  "177": {
+    "german": "\\textbf{Erinnerung:}\\n$\\text{amortisierte Kosten} = \\text{tatsächliche Kosten} +\\n\\Phi(A_{\\text{nach}}) - \\Phi(A_{\\text{vor}})$\\n",
+    "english": ""
+  },
+  "178": {
+    "german": "günstige Operation:",
+    "english": ""
+  },
+  "179": {
+    "german": "Größe wächst um 1; Kapazität bleibt gleich",
+    "english": ""
+  },
+  "180": {
+    "german": "$\\Phi(A_{\\text{nach}}) - \\Phi(A_{\\text{vor}}) = 2$",
+    "english": ""
+  },
+  "181": {
+    "german": "$\\text{amortisierte Kosten} = \\text{tatsächliche Kosten} + 2 \\in \\Theta(1)$",
+    "english": ""
+  },
+  "182": {
+    "german": "teure Operation ($i = 2^j + 1$):\\n",
+    "english": ""
+  },
+  "183": {
+    "german": "Größe wächst um 1; Kapazität wächst um $2^j$",
+    "english": ""
+  },
+  "184": {
+    "german": "$\\Phi(A_{\\text{nach}}) - \\Phi(A_{\\text{vor}}) = 2 - 2^j$",
+    "english": ""
+  },
+  "185": {
+    "german": "$\\text{amortisierte Kosten} = \\text{tatsächliche Kosten} + 2 - 2^j \\in\\n\\Theta(1)$\\n",
+    "english": ""
+  },
+  "186": {
+    "german": "beachte: $\\Phi(A) \\ge 0$",
+    "english": ""
+  },
+  "187": {
+    "german": "\\textbf{Wie kommt man auf die Potentialfunktion?}",
+    "english": ""
+  },
+  "188": {
+    "german": "das ist der Knackpunkt; wenn man die erstmal hat ist der Rest einfach",
+    "english": ""
+  },
+  "189": {
+    "german": "Interpretation 1: Maß dafür, wie nah man an einer teuren Operation ist",
+    "english": ""
+  },
+  "190": {
+    "german": "\\textbf{Erinnerung:} $\\Phi$ für $\\function{pushBack}()$",
+    "english": ""
+  },
+  "191": {
+    "german": "niedrig: kommende Operationen sind günstig",
+    "english": ""
+  },
+  "192": {
+    "german": "hoch: bald kommt vermutlich eine teure Operation\\n",
+    "english": ""
+  },
+  "193": {
+    "german": "Interpretation 2: Maß für die Unordnung der DS",
+    "english": ""
+  },
+  "194": {
+    "german": "niedrig: aufgeräumt; nahe dem Idealzustand",
+    "english": ""
+  },
+  "195": {
+    "german": "hoch: unordentlich; weit vom Idealzustand entfernt",
+    "english": ""
+  },
+  "196": {
+    "german": "\\textbf{Vor- und Nachteile}",
+    "english": ""
+  },
+  "197": {
+    "german": "Beweis oft recht kompakt",
+    "english": ""
+  },
+  "198": {
+    "german": "Potentialfunktion manchmal intuitiv schwer nachvollziehbar",
+    "english": ""
+  },
+  "199": {
+    "german": "(man kann das Ergebnis zwar nachrechnen, weiß aber gar nicht so genau,\\nwas man da rechnet)",
+    "english": ""
+  },
+  "200": {
+    "german": "\\textbf{Wann ist eine amortisierte Betrachtungsweise angebracht?}",
+    "english": ""
+  },
+  "201": {
+    "german": "bei einer Folge unterschiedlich teurer Operationen\\n",
+    "english": ""
+  },
+  "202": {
+    "german": "vor jeder teuren Operation kommen immer ausreichend viele günstige\\nOperationen",
+    "english": ""
+  },
+  "203": {
+    "german": "\\textbf{Was garantiert eine amortisierte Laufzeitschranke?}",
+    "english": ""
+  },
+  "204": {
+    "german": "gute Gesamtlaufzeit (Worst Case) über alle Operationen hinweg\\n",
+    "english": ""
+  },
+  "205": {
+    "german": "keine Garantie für einzelne Operation",
+    "english": ""
+  },
+  "206": {
+    "german": "(relevant z.B. in Echtzeitsystemen oder bei Parallelisierung)",
+    "english": ""
+  },
+  "207": {
+    "german": "\\textbf{Techniken für die amortisierte Analyse}\\n",
+    "english": ""
+  },
+  "208": {
+    "german": "Aggregation: summiere Kosten über alle Operationen",
+    "english": ""
+  },
+  "209": {
+    "german": "Konto: lass günstige Operationen später folgende teure Operationen\\nvorab bezahlen",
+    "english": ""
+  },
+  "210": {
+    "german": "Potential: definiere Unordnungskonto, das misst wie unschön der\\naktuelle Zustand ist\\n",
+    "english": ""
+  },
+  "211": {
+    "german": "Charging: charge Kosten von teuren Operationen auf vorherige günstige\\nOperationen\\n",
+    "english": ""
+  },
+  "212": {
+    "german": "\\textbf{Beschränkte Arrays}",
+    "english": ""
+  },
+  "213": {
+    "german": "ein Stück Speicher (konsekutive Speicherzellen) auf das man mittels\\nAdresse zugreift\\n",
+    "english": ""
+  },
+  "214": {
+    "german": "andere Arten Daten zu speichern basieren immer auf diesem\\nGrundbaustein\\n",
+    "english": ""
+  },
+  "215": {
+    "german": "\\textbf{Unbeschränkte Arrays}\\n",
+    "english": ""
+  },
+  "216": {
+    "german": "effiziente Implementierung mittels sinnvoller\\nGrößenänderungs-Strategie\\n",
+    "english": ""
+  },
+  "217": {
+    "german": "Interface für dynamisch wachsendes Array $\\rightarrow$ abstrahiert von\\neinem Stück Speicher\\n",
+    "english": ""
+  },
+  "218": {
+    "german": "\\textbf{Drei Sichtweisen auf eine Datenstruktur}\\n",
+    "english": ""
+  },
+  "219": {
+    "german": "\\emph{Mathe}\\, abstraktes Objekt (hier: Folge von Zahlen\\n$\\langle 4, 48, 89, 1, 0, 9, 13, 7, 32, 76, 17, 5 \\rangle$)\\n",
+    "english": ""
+  },
+  "220": {
+    "german": "\\emph{Softwaretechnik}\\, Funktionalität (hier: Zugriff mit Index,\\n\\function{pushBack}, \\function{popBack}, \\function{size})\\n",
+    "english": ""
+  },
+  "221": {
+    "german": "\\emph{Algorithmik}\\, Repräsentation und effiziente Umsetzung\\n",
+    "english": ""
+  },
+  "222": {
+    "german": "\\textbf{Amortisierte Analyse}\\n",
+    "english": ""
+  },
+  "223": {
+    "german": "wichtige Technik für die Analyse von Algorithmen\\n",
+    "english": ""
+  },
+  "224": {
+    "german": "\\textbf{Was ist das?}",
+    "english": ""
+  },
+  "225": {
+    "german": "studentisch organisierte Gruppen",
+    "english": ""
+  },
+  "226": {
+    "german": "große thematische Bandbreite: von sozialem Engagement bis hin zum\\nSegelfliegen",
+    "english": ""
+  },
+  "227": {
+    "german": "\\textbf{Mitgliederwerbung}",
+    "english": ""
+  },
+  "228": {
+    "german": "viele Gruppen suchen neue Mitglieder",
+    "english": ""
+  },
+  "229": {
+    "german": "einige Infoveranstaltungen in den nächsten Wochen",
+    "english": ""
+  },
+  "230": {
+    "german": "siehe auch: Link auf der Homepage",
+    "english": ""
+  }
+}

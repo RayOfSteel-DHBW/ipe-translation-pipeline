@@ -1,0 +1,1226 @@
+{
+  "1": {
+    "german": "Hinweise / Organisatorisches",
+    "english": ""
+  },
+  "2": {
+    "german": "Pseudocode",
+    "english": ""
+  },
+  "3": {
+    "german": "Pseudocode",
+    "english": ""
+  },
+  "4": {
+    "german": "Pseudocode",
+    "english": ""
+  },
+  "5": {
+    "german": "Wie kommuniziert man Algorithmen?",
+    "english": ""
+  },
+  "6": {
+    "german": "Ziel: viel Geld verdienen",
+    "english": ""
+  },
+  "7": {
+    "german": "Gewinnmaximierung",
+    "english": ""
+  },
+  "8": {
+    "german": "Formalisierung",
+    "english": ""
+  },
+  "9": {
+    "german": "Entwickeln eines Algorithmus",
+    "english": ""
+  },
+  "10": {
+    "german": "Entwickeln eines schnelleren Algorithmus",
+    "english": ""
+  },
+  "11": {
+    "german": "Entwickeln eines schnelleren Algorithmus",
+    "english": ""
+  },
+  "12": {
+    "german": "Pause?",
+    "english": ""
+  },
+  "13": {
+    "german": "Motivation: Datenstrukturen",
+    "english": ""
+  },
+  "14": {
+    "german": "Motivation: Amortisierte Analyse",
+    "english": ""
+  },
+  "15": {
+    "german": "Beispiel: Binärzähler",
+    "english": ""
+  },
+  "16": {
+    "german": "Beispiel: Binärzähler",
+    "english": ""
+  },
+  "17": {
+    "german": "Analyse: Aggregatmethode",
+    "english": ""
+  },
+  "18": {
+    "german": "Analyse: Aggregatmethode",
+    "english": ""
+  },
+  "19": {
+    "german": "Analyse mittels Charging",
+    "english": ""
+  },
+  "20": {
+    "german": "Analyse: Potentialmethode",
+    "english": ""
+  },
+  "21": {
+    "german": "Analyse: Potentialmethode",
+    "english": ""
+  },
+  "22": {
+    "german": "Beispiel 2: Stacks und Queues",
+    "english": ""
+  },
+  "23": {
+    "german": "Eine Queue aus Stacks",
+    "english": ""
+  },
+  "24": {
+    "german": "Analyse: Kontomethode",
+    "english": ""
+  },
+  "25": {
+    "german": "Analyse: Potentialmethode",
+    "english": ""
+  },
+  "26": {
+    "german": "Maximilian Katzmann \\& Marcus Wilhelm~--~Algorithmen 1 - Übung",
+    "english": ""
+  },
+  "27": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "28": {
+    "german": "\\textbf{Übung 2}",
+    "english": ""
+  },
+  "29": {
+    "german": "\\textbf{Algorithmenentwurf, amortisierte Analyse}",
+    "english": ""
+  },
+  "30": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "31": {
+    "german": "Blatt 3, Aufgabe 2",
+    "english": ""
+  },
+  "32": {
+    "german": "left",
+    "english": ""
+  },
+  "33": {
+    "german": "right",
+    "english": ""
+  },
+  "34": {
+    "german": "down",
+    "english": ""
+  },
+  "35": {
+    "german": "right",
+    "english": ""
+  },
+  "36": {
+    "german": "left",
+    "english": ""
+  },
+  "37": {
+    "german": "down",
+    "english": ""
+  },
+  "38": {
+    "german": "top, farleft",
+    "english": ""
+  },
+  "39": {
+    "german": "farright",
+    "english": ""
+  },
+  "40": {
+    "german": "bottom",
+    "english": ""
+  },
+  "41": {
+    "german": "möglicher Trick (siehe VL.):\\\\\\nDummy Knoten",
+    "english": ""
+  },
+  "42": {
+    "german": "Pseudocode vs. textuelle Beschreibung",
+    "english": ""
+  },
+  "43": {
+    "german": ",,Gib Algorithmen nur in Pseudocode an anstatt sie in Worten zu beschreiben, falls dies explizit gefordert ist{!}``\\n",
+    "english": ""
+  },
+  "44": {
+    "german": "ansonsten: 0 Punkte",
+    "english": ""
+  },
+  "45": {
+    "german": "Hochschulgruppen",
+    "english": ""
+  },
+  "46": {
+    "german": "Was macht der Pseudocode?",
+    "english": ""
+  },
+  "47": {
+    "german": "\\keyword{return} ,,not found``\\n",
+    "english": ""
+  },
+  "48": {
+    "german": "\\keyword{if} $x = A[m]$ \\keyword{then} \\keyword{return} ,,found $x$``",
+    "english": ""
+  },
+  "49": {
+    "german": "Welche Probleme hat der Pseudocode?",
+    "english": ""
+  },
+  "50": {
+    "german": "In welchen Zeilen befinden sich Fehler?",
+    "english": ""
+  },
+  "51": {
+    "german": "Was macht der Pseudocode?",
+    "english": ""
+  },
+  "52": {
+    "german": "\\keyword{return} ,,not found``\\n",
+    "english": ""
+  },
+  "53": {
+    "german": "\\keyword{if} $x = A[m]$ \\keyword{then} \\keyword{return} ,,found $x$``",
+    "english": ""
+  },
+  "54": {
+    "german": "In welchen Zeilen befinden sich Fehler?",
+    "english": ""
+  },
+  "55": {
+    "german": "betrachte $\\ell=4, r=5$:",
+    "english": ""
+  },
+  "56": {
+    "german": "runden nötig",
+    "english": ""
+  },
+  "57": {
+    "german": "angenommen $A[4] = 7, A[5] = 10$ und $x=9$",
+    "english": ""
+  },
+  "58": {
+    "german": "runden nötig, $m \\coloneqq 4$",
+    "english": ""
+  },
+  "59": {
+    "german": "Endlosschleife",
+    "english": ""
+  },
+  "60": {
+    "german": "$x > A[m]$, also setze $\\ell = 5$",
+    "english": ""
+  },
+  "61": {
+    "german": "Abbruch der Schleife",
+    "english": ""
+  },
+  "62": {
+    "german": "nicht korrekt, falls $x=10$",
+    "english": ""
+  },
+  "63": {
+    "german": "Stimmt der Pseudocode nun?",
+    "english": ""
+  },
+  "64": {
+    "german": "\\keyword{return} ,,not found``\\n",
+    "english": ""
+  },
+  "65": {
+    "german": "\\keyword{if} $x = A[m]$ \\keyword{then} \\keyword{return} ,,found $x$``",
+    "english": ""
+  },
+  "66": {
+    "german": "\\textbf{Frage:} Was wenn $x=10$?",
+    "english": ""
+  },
+  "67": {
+    "german": ",,found $x$`` sobald $m=5$",
+    "english": ""
+  },
+  "68": {
+    "german": "\\textbf{Behauptung:} Pseudocode ist korrekt.",
+    "english": ""
+  },
+  "69": {
+    "german": "falls $x \\in A$:",
+    "english": ""
+  },
+  "70": {
+    "german": "$\\ell$ und $r$ werden angepasst, bis $x=A[m]$",
+    "english": ""
+  },
+  "71": {
+    "german": "falls $x \\notin A$:",
+    "english": ""
+  },
+  "72": {
+    "german": "$\\ell$ und $r$ werden angepasst, bis $\\ell = r$",
+    "english": ""
+  },
+  "73": {
+    "german": "danach $r = \\ell - 1$ oder $\\ell = r + 1$",
+    "english": ""
+  },
+  "74": {
+    "german": ",,not found``",
+    "english": ""
+  },
+  "75": {
+    "german": ",,found x``",
+    "english": ""
+  },
+  "76": {
+    "german": "Pseudocode",
+    "english": ""
+  },
+  "77": {
+    "german": "\\keyword{return} ,,not found``\\n",
+    "english": ""
+  },
+  "78": {
+    "german": "\\keyword{if} $x \\coloneqq A[m]$ \\keyword{then} \\keyword{return} ,,found $x$``",
+    "english": ""
+  },
+  "79": {
+    "german": "nah an Implementierung",
+    "english": ""
+  },
+  "80": {
+    "german": "Abstrakte Beschreibung",
+    "english": ""
+  },
+  "81": {
+    "german": "\\textbf{Binäre Suche}",
+    "english": ""
+  },
+  "82": {
+    "german": "durch einen Vergleich: entscheide ob $x$ in der linken oder rechten\\nHälfte von $A$ liegt",
+    "english": ""
+  },
+  "83": {
+    "german": "suche rekursiv in der relevanten Hälfte von $A$",
+    "english": ""
+  },
+  "84": {
+    "german": "Abbruch: zu durchsuchende Folge ist nur noch konstant groß (hier: $2$)",
+    "english": ""
+  },
+  "85": {
+    "german": "Intuition einfacher zu erkennen",
+    "english": ""
+  },
+  "86": {
+    "german": "Implementierungsdetails fehlen",
+    "english": ""
+  },
+  "87": {
+    "german": "anfällig für kleine Fehler",
+    "english": ""
+  },
+  "88": {
+    "german": "gut um Idee zu kommunizieren",
+    "english": ""
+  },
+  "89": {
+    "german": "gut um Details für Implementierung zu kommunizieren",
+    "english": ""
+  },
+  "90": {
+    "german": "Beim Lösen von Problemen: \\emph{zuerst} Idee überlegen, \\emph{dann} Pseudocode schreiben.",
+    "english": ""
+  },
+  "91": {
+    "german": "Schritt 2: Zeitmaschine suchen.",
+    "english": ""
+  },
+  "92": {
+    "german": "Preis (€)",
+    "english": ""
+  },
+  "93": {
+    "german": "Zeit",
+    "english": ""
+  },
+  "94": {
+    "german": "Preisverlauf der ALGO-Aktie",
+    "english": ""
+  },
+  "95": {
+    "german": "Masterplan für großen Reichtum",
+    "english": ""
+  },
+  "96": {
+    "german": "Schritt 1: vielversprechende Aktie suchen.",
+    "english": ""
+  },
+  "97": {
+    "german": "Schritt 3: zum richtigen Zeitpunkt kaufen und verkaufen\\dots",
+    "english": ""
+  },
+  "98": {
+    "german": "\\textbf{Problem:} wie finden wir Zeitpunkte um Gewinn zu maximieren?",
+    "english": ""
+  },
+  "99": {
+    "german": "POLICE \\hfill BOX",
+    "english": ""
+  },
+  "100": {
+    "german": "PUBLIC CALL",
+    "english": ""
+  },
+  "101": {
+    "german": "\\textbf{Gesucht:} Algorithmus für dieses Problem",
+    "english": ""
+  },
+  "102": {
+    "german": "Schritt 2: Zeitmaschine suchen. (single use)",
+    "english": ""
+  },
+  "103": {
+    "german": "Schritt 2: Zeitmaschine suchen.",
+    "english": ""
+  },
+  "104": {
+    "german": "Preis (€)",
+    "english": ""
+  },
+  "105": {
+    "german": "Zeit",
+    "english": ""
+  },
+  "106": {
+    "german": "Preisverlauf der ALGO-Aktie",
+    "english": ""
+  },
+  "107": {
+    "german": "\\textbf{Problem:} wie finden wir Zeitpunkte um Gewinn zu maximieren?",
+    "english": ""
+  },
+  "108": {
+    "german": "\\textbf{Gesucht:} Algorithmus für dieses Problem",
+    "english": ""
+  },
+  "109": {
+    "german": "\\textbf{Fragen:}",
+    "english": ""
+  },
+  "110": {
+    "german": "1. Formalisierung des Problems",
+    "english": ""
+  },
+  "111": {
+    "german": "Was sind Eingabe, Ausgabe?",
+    "english": ""
+  },
+  "112": {
+    "german": "2. Entwickeln eines Algorithmus",
+    "english": ""
+  },
+  "113": {
+    "german": "3. Überprüfen des Algorithmus",
+    "english": ""
+  },
+  "114": {
+    "german": "Algorithmische Idee finden",
+    "english": ""
+  },
+  "115": {
+    "german": "Beschreibung, evtl. Pseudocode",
+    "english": ""
+  },
+  "116": {
+    "german": "\\flushleft Analyse von Korrektheit und Laufzeit",
+    "english": ""
+  },
+  "117": {
+    "german": "ggf. Algo anpassen",
+    "english": ""
+  },
+  "118": {
+    "german": "ggf. Algo oder Formalisierung anpassen",
+    "english": ""
+  },
+  "119": {
+    "german": "Preis (€)",
+    "english": ""
+  },
+  "120": {
+    "german": "Zeit",
+    "english": ""
+  },
+  "121": {
+    "german": "Preisverlauf der ALGO-Aktie",
+    "english": ""
+  },
+  "122": {
+    "german": "\\textbf{Problem:} wie finden wir Zeitpunkte um Gewinn zu maximieren?",
+    "english": ""
+  },
+  "123": {
+    "german": "\\textbf{Gesucht:} Algorithmus für dieses Problem",
+    "english": ""
+  },
+  "124": {
+    "german": "\\textbf{Frage:} Formalisierung des Problems",
+    "english": ""
+  },
+  "125": {
+    "german": "Was sind Eingabe, Ausgabe?",
+    "english": ""
+  },
+  "126": {
+    "german": "Mögliche Antwort:",
+    "english": ""
+  },
+  "127": {
+    "german": "\\emph{gegeben:} Array $A$ mit Zahlen",
+    "english": ""
+  },
+  "128": {
+    "german": "\\emph{gesucht:} Indizes $i, j$ mit $i<j$, sodass\\n\\[\\nA[j] - A[i] \\text{ maximal ist.}\\n\\]",
+    "english": ""
+  },
+  "129": {
+    "german": "Gewinn",
+    "english": ""
+  },
+  "130": {
+    "german": "Werte von $A$",
+    "english": ""
+  },
+  "131": {
+    "german": "Indizes von $A$",
+    "english": ""
+  },
+  "132": {
+    "german": "\\textbf{Gegeben:} Array $A$ mit Zahlen",
+    "english": ""
+  },
+  "133": {
+    "german": "\\textbf{Gesucht:} Indizes $i, j$ mit $i<j$, sodass\\n\\[\\nA[j] - A[i] \\text{ maximal ist.}\\n\\]",
+    "english": ""
+  },
+  "134": {
+    "german": "$A[j] - A[i]$ (,,Gewinn``)",
+    "english": ""
+  },
+  "135": {
+    "german": "\\textbf{Frage:} Wie könnte ein (einfacher) Algorithmus aussehen?",
+    "english": ""
+  },
+  "136": {
+    "german": "Idee: vergleiche alle Werte von $A$ paarweise und gib Paar mit größtem Gewinn aus",
+    "english": ""
+  },
+  "137": {
+    "german": "Pseudocode:",
+    "english": ""
+  },
+  "138": {
+    "german": "\\keyword{if} $A[j]-A[i] > \\mathrm{best\\_val}$ \\keyword{then:}",
+    "english": ""
+  },
+  "139": {
+    "german": "$\\mathrm{best\\_val} \\coloneqq -1, \\mathrm{best\\_i} \\coloneqq -1, \\mathrm{best\\_j} \\coloneqq -1$",
+    "english": ""
+  },
+  "140": {
+    "german": "$\\mathrm{best\\_val} \\coloneqq A[j]-A[i],\\n\\mathrm{best\\_i} \\coloneqq i,\\n\\mathrm{best\\_j} \\coloneqq j$",
+    "english": ""
+  },
+  "141": {
+    "german": "\\keyword{return} best\\_i, best\\_j",
+    "english": ""
+  },
+  "142": {
+    "german": "\\textbf{Analyse}",
+    "english": ""
+  },
+  "143": {
+    "german": "Laufzeit: $O(n^2)$",
+    "english": ""
+  },
+  "144": {
+    "german": "Korrektheit: alle Paare werden überprüft",
+    "english": ""
+  },
+  "145": {
+    "german": "\\textbf{Frage:} geht es schneller?",
+    "english": ""
+  },
+  "146": {
+    "german": "Werte von $A$",
+    "english": ""
+  },
+  "147": {
+    "german": "Indizes von $A$",
+    "english": ""
+  },
+  "148": {
+    "german": "\\textbf{Gegeben:} Array $A$ mit Zahlen",
+    "english": ""
+  },
+  "149": {
+    "german": "\\textbf{Gesucht:} Indizes $i, j$ mit $i<j$ sodass\\n\\[\\nA[j] - A[i] \\text{ maximal ist.}\\n\\]",
+    "english": ""
+  },
+  "150": {
+    "german": "\\textbf{Frage:} Müssen wirklich alle Paare betrachtet werden?",
+    "english": ""
+  },
+  "151": {
+    "german": "nur lokale Minima / Maxima betrachten",
+    "english": ""
+  },
+  "152": {
+    "german": "Kauf zum Zeitpunkt $i$ nur falls für alle $k<i$: $A[k] > A[i]$",
+    "english": ""
+  },
+  "153": {
+    "german": "Idee:",
+    "english": ""
+  },
+  "154": {
+    "german": "berechne für jedes $i \\in \\{0,\\dots, n-1\\}$ den Wert $A'[i] = \\min\\{A[k] \\mid 0\\le k \\le i\\}$",
+    "english": ""
+  },
+  "155": {
+    "german": "finde Maximum durch Prüfen von $A[i] - A'[i]$ für jedes $i \\in \\{0, n-1\\}$",
+    "english": ""
+  },
+  "156": {
+    "german": "aktuelles Maximum",
+    "english": ""
+  },
+  "157": {
+    "german": "Maximum",
+    "english": ""
+  },
+  "158": {
+    "german": "Idee:",
+    "english": ""
+  },
+  "159": {
+    "german": "berechne für jedes $i \\in \\{0, n-1\\}$ den Wert $A'[i] = \\min\\{A[k] \\mid 0\\le k \\le i\\}$",
+    "english": ""
+  },
+  "160": {
+    "german": "finde Maximum durch Prüfen von $A[i] - A'[i]$ für jedes $i \\in \\{0, n-1\\}$",
+    "english": ""
+  },
+  "161": {
+    "german": "Werte von $A$",
+    "english": ""
+  },
+  "162": {
+    "german": "Indizes von $A$",
+    "english": ""
+  },
+  "163": {
+    "german": "Maximum",
+    "english": ""
+  },
+  "164": {
+    "german": "Pseudocode:",
+    "english": ""
+  },
+  "165": {
+    "german": "${\\color{maygreen1}\\mathrm{min\\_val}} \\coloneqq A[i]$, $\\mathrm{min\\_i} = i$",
+    "english": ""
+  },
+  "166": {
+    "german": "${\\color{maygreen1}\\mathrm{min\\_val}} \\coloneqq \\infty$, $\\mathrm{min\\_i} \\coloneqq -1$",
+    "english": ""
+  },
+  "167": {
+    "german": "\\keyword{return} $\\mathrm{profit\\_idx}$",
+    "english": ""
+  },
+  "168": {
+    "german": "\\keyword{if} $A[i] < {\\color{maygreen1}\\mathrm{min\\_val}}$ \\keyword{then:} ${\\color{maygreen1}\\mathrm{min\\_val}} = A[i]$, $\\mathrm{min\\_i} = i$",
+    "english": ""
+  },
+  "169": {
+    "german": "$\\mathrm{max\\_profit} \\coloneqq -1$, $\\mathrm{profit\\_idx} \\coloneqq (-1,-1)$",
+    "english": ""
+  },
+  "170": {
+    "german": "$\\mathrm{max\\_profit} \\coloneqq A[i] - {\\color{maygreen1}\\mathrm{min\\_val}}$, $\\mathrm{profit\\_idx} \\coloneqq (\\mathrm{min\\_i}, i)$",
+    "english": ""
+  },
+  "171": {
+    "german": "\\keyword{if} $A[i] - {\\color{maygreen1}\\mathrm{min\\_val}} > \\mathrm{max\\_profit}$ \\keyword{then:}",
+    "english": ""
+  },
+  "172": {
+    "german": "\\textbf{Analyse}",
+    "english": ""
+  },
+  "173": {
+    "german": "Laufzeit: $O(n)$",
+    "english": ""
+  },
+  "174": {
+    "german": "Korrektheit zeigen:",
+    "english": ""
+  },
+  "175": {
+    "german": "Maximum hat Form $A[i] - A'[i] $",
+    "english": ""
+  },
+  "176": {
+    "german": "Algo berechnet $A'$ und $A[i] - A'[i]$",
+    "english": ""
+  },
+  "177": {
+    "german": "Idee:",
+    "english": ""
+  },
+  "178": {
+    "german": "berechne für jedes $i \\in \\{0, n-1\\}$ den Wert $A'[i] = \\min\\{A[k] \\mid 0\\le k \\le i\\}$",
+    "english": ""
+  },
+  "179": {
+    "german": "finde Maximum durch Prüfen von $A[i] - A'[i]$ für jedes $i \\in \\{0, n-1\\}$",
+    "english": ""
+  },
+  "180": {
+    "german": "Werte von $A$",
+    "english": ""
+  },
+  "181": {
+    "german": "Indizes von $A$",
+    "english": ""
+  },
+  "182": {
+    "german": "Maximum",
+    "english": ""
+  },
+  "183": {
+    "german": "Pseudocode:",
+    "english": ""
+  },
+  "184": {
+    "german": "\\textbf{Analyse}",
+    "english": ""
+  },
+  "185": {
+    "german": "Laufzeit: $O(n)$",
+    "english": ""
+  },
+  "186": {
+    "german": "Korrektheit zeigen:",
+    "english": ""
+  },
+  "187": {
+    "german": "Maximum hat Form $A[i] - A'[i] $",
+    "english": ""
+  },
+  "188": {
+    "german": "Algo berechnet $A'$ und $A[i] - A'[i]$",
+    "english": ""
+  },
+  "189": {
+    "german": "${\\color{maygreen1}\\mathrm{min\\_val}} \\coloneqq A[i]$, $\\mathrm{min\\_i} = i$",
+    "english": ""
+  },
+  "190": {
+    "german": "${\\color{maygreen1}\\mathrm{min\\_val}} \\coloneqq \\infty$, $\\mathrm{min\\_i} \\coloneqq -1$",
+    "english": ""
+  },
+  "191": {
+    "german": "\\keyword{return} $\\mathrm{profit\\_idx}$",
+    "english": ""
+  },
+  "192": {
+    "german": "\\keyword{if} $A[i] < {\\color{maygreen1}\\mathrm{min\\_val}}$ \\keyword{then:} ${\\color{maygreen1}\\mathrm{min\\_val}} = A[i]$, $\\mathrm{min\\_i} = i$",
+    "english": ""
+  },
+  "193": {
+    "german": "$\\mathrm{max\\_profit} \\coloneqq -1$, $\\mathrm{profit\\_idx} \\coloneqq (-1,-1)$",
+    "english": ""
+  },
+  "194": {
+    "german": "$\\mathrm{max\\_profit} \\coloneqq A[i] - {\\color{maygreen1}\\mathrm{min\\_val}}$, $\\mathrm{profit\\_idx} \\coloneqq (\\mathrm{min\\_i}, i)$",
+    "english": ""
+  },
+  "195": {
+    "german": "\\keyword{if} $A[i] - {\\color{maygreen1}\\mathrm{min\\_val}} > \\mathrm{max\\_profit}$ \\keyword{then:}",
+    "english": ""
+  },
+  "196": {
+    "german": "Abstraktionsebenen auf dem Speicher",
+    "english": ""
+  },
+  "197": {
+    "german": "Manuelles Verwalten von Speicheradressen",
+    "english": ""
+  },
+  "198": {
+    "german": "Arrays, verzeigerte Strukturen, Structs / Objekte",
+    "english": ""
+  },
+  "199": {
+    "german": "Datenstrukturen (z.B. Listen, Queues, etc.)",
+    "english": ""
+  },
+  "200": {
+    "german": "hoch",
+    "english": ""
+  },
+  "201": {
+    "german": "tief",
+    "english": ""
+  },
+  "202": {
+    "german": "\\textbf{Bsp}: Queue",
+    "english": ""
+  },
+  "203": {
+    "german": "\\textit{z.B. mittels verketteter Liste}",
+    "english": ""
+  },
+  "204": {
+    "german": "First In -- First Out Prinzip:",
+    "english": ""
+  },
+  "205": {
+    "german": "Laufzeit von Operationen auf DS nicht immer gleich",
+    "english": ""
+  },
+  "206": {
+    "german": "Beispiel: unbeschränktes Array",
+    "english": ""
+  },
+  "207": {
+    "german": "z.B.: Operation meist günstig, seltener teurer",
+    "english": ""
+  },
+  "208": {
+    "german": "\\textbf{Idee}",
+    "english": ""
+  },
+  "209": {
+    "german": "\\emph{amortisierte Kosten}:\\ndurchschnittliche Kosten pro Operation in einer Folge von Operationen",
+    "english": ""
+  },
+  "210": {
+    "german": "\\textbf{Verschiedene Techniken zur Analyse}",
+    "english": ""
+  },
+  "211": {
+    "german": "Aggregation",
+    "english": ""
+  },
+  "212": {
+    "german": "Charging",
+    "english": ""
+  },
+  "213": {
+    "german": "Konto",
+    "english": ""
+  },
+  "214": {
+    "german": "Potential",
+    "english": ""
+  },
+  "215": {
+    "german": "\\textbf{Idee}",
+    "english": ""
+  },
+  "216": {
+    "german": "Array $A$ verwaltet Bits",
+    "english": ""
+  },
+  "217": {
+    "german": "Funktion \\function{increment()} erhöht Zähler",
+    "english": ""
+  },
+  "218": {
+    "german": "\\textbf{Algorithmus}",
+    "english": "\\textbf{Algorithm}"
+  },
+  "219": {
+    "german": "suche Stelle $i$ mit rechtester $0$",
+    "english": ""
+  },
+  "220": {
+    "german": "setze Stelle $i$ auf $1$",
+    "english": ""
+  },
+  "221": {
+    "german": "setze Stellen rechts von $i$ auf $0$",
+    "english": ""
+  },
+  "222": {
+    "german": "\\textbf{Idee}",
+    "english": ""
+  },
+  "223": {
+    "german": "Array $A$ verwaltet Bits",
+    "english": ""
+  },
+  "224": {
+    "german": "Funktion \\function{increment()} erhöht Zähler",
+    "english": ""
+  },
+  "225": {
+    "german": "\\textbf{Algorithmus in Pseudocode}",
+    "english": ""
+  },
+  "226": {
+    "german": "\\textbf{Laufzeit?}",
+    "english": "\\textbf{Runtime?}"
+  },
+  "227": {
+    "german": "\\textbf{Idee}",
+    "english": ""
+  },
+  "228": {
+    "german": "berechne Gesamtkosten",
+    "english": ""
+  },
+  "229": {
+    "german": "teile durch Anzahl von Operationen",
+    "english": ""
+  },
+  "230": {
+    "german": "\\textbf{Beobachtung}",
+    "english": "\\textbf{Observation}"
+  },
+  "231": {
+    "german": "nicht jedes Bit flipt bei jeder Operation",
+    "english": ""
+  },
+  "232": {
+    "german": "$A[0]$ flipt jedes mal, $A[1]$ jedes zweite, etc.",
+    "english": ""
+  },
+  "233": {
+    "german": "$A[i]$ flipt bei jedem $2^i$-ten Inkrement",
+    "english": ""
+  },
+  "234": {
+    "german": "Bei $n$ Aufrufen: $A[i]$ flipt $\\lfloor \\frac{n}{2^i} \\rfloor$ mal",
+    "english": ""
+  },
+  "235": {
+    "german": "\\textbf{Beobachtung}",
+    "english": "\\textbf{Observation}"
+  },
+  "236": {
+    "german": "nicht jedes Bit flipt bei jeder Operation",
+    "english": ""
+  },
+  "237": {
+    "german": "$A[0]$ flipt jedes mal, $A[1]$ jedes zweite, etc.",
+    "english": ""
+  },
+  "238": {
+    "german": "$A[i]$ flipt bei jedem $2^i$-ten Inkrement",
+    "english": ""
+  },
+  "239": {
+    "german": "Bei $n$ Aufrufen: $A[i]$ flipt $\\lfloor \\frac{n}{2^i} \\rfloor$ mal",
+    "english": ""
+  },
+  "240": {
+    "german": "In Summe ergibt sich für $k$ bits:",
+    "english": ""
+  },
+  "241": {
+    "german": "D.h.: pro Operation nur 2 Bit-Flips",
+    "english": ""
+  },
+  "242": {
+    "german": "Somit: \\emph{amortisierte Kosten} in $O(1)$",
+    "english": ""
+  },
+  "243": {
+    "german": "\\textbf{Idee}",
+    "english": ""
+  },
+  "244": {
+    "german": "teure Operationen legen Kosten um auf günstige Operationen",
+    "english": ""
+  },
+  "245": {
+    "german": "Vorgehen hier:",
+    "english": ""
+  },
+  "246": {
+    "german": "lege Kosten von 10-flip auf letzte Operation welche zuvor 01-flip ausgeführt hat",
+    "english": ""
+  },
+  "247": {
+    "german": "das geht für jeden 10-flip",
+    "english": ""
+  },
+  "248": {
+    "german": "pro Operation übrig:",
+    "english": ""
+  },
+  "249": {
+    "german": "Kosten für 01-flip + evtl. für fremden 10-flip $\\Rightarrow$ amortisiert $O(1)$",
+    "english": ""
+  },
+  "250": {
+    "german": "\\textbf{Idee}",
+    "english": ""
+  },
+  "251": {
+    "german": "definiere Potentialfunktion $\\Phi(D_i)$",
+    "english": ""
+  },
+  "252": {
+    "german": "Maß für Unaufgeräumtheit von $D$ zum Zeitpunkt $i$",
+    "english": ""
+  },
+  "253": {
+    "german": "definiere amortisierte Kosten $\\hat{c}_i = c_i + \\Phi(D_i) - \\Phi(D_{i-1})$",
+    "english": ""
+  },
+  "254": {
+    "german": "tatsächliche Kosten",
+    "english": ""
+  },
+  "255": {
+    "german": "\\begin{flushleft}\\nAnstieg des Potenzials\\n\\end{flushleft}",
+    "english": ""
+  },
+  "256": {
+    "german": "\\textbf{Definition sinnvoll?}",
+    "english": ""
+  },
+  "257": {
+    "german": "Falls $\\Phi(D_n) \\ge \\Phi(D_0)$: amortisierte Kosten obere Schranke für tatsächliche Kosten",
+    "english": ""
+  },
+  "258": {
+    "german": "$\\Rightarrow$ fordere $\\Phi(D_i) \\ge \\Phi(D_0)$ f.a. $i>0$",
+    "english": ""
+  },
+  "259": {
+    "german": "oder: $\\Phi(D_0) = 0$ und $\\Phi(D_i) \\ge 0$ f.a. $i>0$",
+    "english": ""
+  },
+  "260": {
+    "german": "Potentialfunktion für Binärzähler:",
+    "english": ""
+  },
+  "261": {
+    "german": "def. $\\Phi(D_i) = \\sum_{j=0}^{k-1} A[j]$ (Anzahl 1-bits zum Zeitpunkt $i$)",
+    "english": ""
+  },
+  "262": {
+    "german": "Dann ergibt sich:",
+    "english": ""
+  },
+  "263": {
+    "german": "\\textbf{Definition}: amortisierte Kosten $\\hat{c}_i = c_i + \\Phi(D_i) - \\Phi(D_{i-1})$",
+    "english": ""
+  },
+  "264": {
+    "german": "\\hfill \\textit{gültige Pot.fun.} :)",
+    "english": ""
+  },
+  "265": {
+    "german": "tatsächliche Kosten: $c_i = \\#\\text{01-flips} + \\#\\text{10-flips}$",
+    "english": ""
+  },
+  "266": {
+    "german": "Potentialänderung: $\\#\\text{01-flips} - \\#\\text{10-flips}$",
+    "english": ""
+  },
+  "267": {
+    "german": "amort. Kosten: $\\hat{c}_i = 2 \\cdot \\#\\text{01-flips} \\le 2$",
+    "english": ""
+  },
+  "268": {
+    "german": "\\textbf{Wiederholung}",
+    "english": ""
+  },
+  "269": {
+    "german": "Queue",
+    "english": ""
+  },
+  "270": {
+    "german": "\\textit{z.B. mittels verketteter Liste}",
+    "english": ""
+  },
+  "271": {
+    "german": "Stack",
+    "english": ""
+  },
+  "272": {
+    "german": "\\textit{z.B. mittels verketteter Liste}",
+    "english": ""
+  },
+  "273": {
+    "german": "\\textbf{Frage}",
+    "english": ""
+  },
+  "274": {
+    "german": "Angenommen wir können Stacks (als Blackbox) verwenden.",
+    "english": ""
+  },
+  "275": {
+    "german": "(Wie) können wir daraus eine Queue bauen?",
+    "english": ""
+  },
+  "276": {
+    "german": "Stack $A$",
+    "english": ""
+  },
+  "277": {
+    "german": "Operationen:",
+    "english": ""
+  },
+  "278": {
+    "german": "Stack $B$",
+    "english": ""
+  },
+  "279": {
+    "german": "\\textbf{Algorithmische Umsetzung}",
+    "english": ""
+  },
+  "280": {
+    "german": "\\function{push}: auf $A$ pushen",
+    "english": ""
+  },
+  "281": {
+    "german": "falls $B$ voll: von $B$ poppen",
+    "english": ""
+  },
+  "282": {
+    "german": "falls $B$ leer: alles von $A$ nach $B$ verschieben",
+    "english": ""
+  },
+  "283": {
+    "german": "Stack $A$",
+    "english": ""
+  },
+  "284": {
+    "german": "Stack $B$",
+    "english": ""
+  },
+  "285": {
+    "german": "\\textbf{Idee}",
+    "english": ""
+  },
+  "286": {
+    "german": "günstige Operationen bauen Guthaben auf",
+    "english": ""
+  },
+  "287": {
+    "german": "teure Operationen nutzen Guthaben",
+    "english": ""
+  },
+  "288": {
+    "german": "\\textbf{Umsetzung hier}",
+    "english": ""
+  },
+  "289": {
+    "german": "Gesamtkosten linear in \\function{push} und \\function{pop} Aufrufen",
+    "english": ""
+  },
+  "290": {
+    "german": "Bei \\function{push}: zahle 3",
+    "english": ""
+  },
+  "291": {
+    "german": "Bei \\function{pop}: zahle 1",
+    "english": ""
+  },
+  "292": {
+    "german": "Falls $B$ voll: $B$.\\function{pop}() mit Kosten 1",
+    "english": ""
+  },
+  "293": {
+    "german": "$3, 1 \\in \\Theta(1)$ $\\Rightarrow$ konstante amortisierte Kosten",
+    "english": ""
+  },
+  "294": {
+    "german": "Konto wird nie negativ",
+    "english": ""
+  },
+  "295": {
+    "german": "Falls $B$ leer: nutze 2 Guthaben für $A$.\\function{pop()} und $B$.\\function{push()}",
+    "english": ""
+  },
+  "296": {
+    "german": "(für alle Elemente in $A$)",
+    "english": ""
+  },
+  "297": {
+    "german": "Definiere $\\Phi(D_i) = 2 \\cdot |A_i|$ (Anzahl Elemente auf $A$ zum Zeitpunkt $i$)",
+    "english": ""
+  },
+  "298": {
+    "german": "Stack $A$",
+    "english": ""
+  },
+  "299": {
+    "german": "Stack $B$",
+    "english": ""
+  },
+  "300": {
+    "german": "\\textbf{Potentialfunktion}",
+    "english": ""
+  },
+  "301": {
+    "german": "\\textbf{Analyse}",
+    "english": ""
+  },
+  "302": {
+    "german": "(d.h. gültige Potentialfunktion)",
+    "english": ""
+  },
+  "303": {
+    "german": "amortisierte Kosten \\function{push}:",
+    "english": ""
+  },
+  "304": {
+    "german": "\\textbf{Definition}: amortisierte Kosten $\\hat{c}_i = c_i + \\Phi(D_i) - \\Phi(D_{i-1})$",
+    "english": ""
+  },
+  "305": {
+    "german": "amortisierte Kosten \\function{pop}:",
+    "english": ""
+  },
+  "306": {
+    "german": "amortisierte Kosten in $O(1)$",
+    "english": ""
+  }
+}

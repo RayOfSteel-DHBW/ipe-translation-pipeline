@@ -71,7 +71,6 @@ public class TextElement {
         private Map<String, String> parentAttributes;
         private String style;
         private boolean isMath;
-        private boolean isLatex;
         
         public TextContext() {
             this.parentAttributes = new HashMap<>();
@@ -107,14 +106,6 @@ public class TextElement {
         
         public void setMath(boolean math) {
             isMath = math;
-        }
-        
-        public boolean isLatex() {
-            return isLatex;
-        }
-        
-        public void setLatex(boolean latex) {
-            isLatex = latex;
         }
     }
 }

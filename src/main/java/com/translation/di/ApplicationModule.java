@@ -8,6 +8,7 @@ import com.translation.config.Configuration;
 import com.translation.pipeline.Pipeline;
 import com.translation.pipeline.steps.*;
 import com.translation.services.AutomatedTranslationService;
+import com.translation.services.DictionaryTranslationService;
 import com.translation.services.DownloadService;
 import com.translation.services.NullTranslationService;
 import com.translation.services.TranslationService;
@@ -44,6 +45,9 @@ public class ApplicationModule extends AbstractModule {
             if ("--no-translate".equals(arg) || "-nt".equals(arg)) {
                 return new NullTranslationService();
             }
+            if ("--dictionary".equals(arg)) {
+                return new DictionaryTranslationService();
+            }
         }
         
         // Default to automated translation
@@ -52,6 +56,18 @@ public class ApplicationModule extends AbstractModule {
         } catch (Exception e) {
             throw new RuntimeException("Failed to initialize TranslationService", e);
         }
+    }
+    
+    @Provides
+    @Singleton
+    public Boolean provideSkipDownload() {
+        // Check for --skip-download flag
+        for (String arg : args) {
+            if ("--skip-download".equals(arg)) {
+                return true;
+            }
+        }
+        return false;
     }
     
     @Provides

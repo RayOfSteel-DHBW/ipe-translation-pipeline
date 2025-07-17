@@ -1,0 +1,1138 @@
+{
+  "1": {
+    "german": "Graphen: Grundbegriffe",
+    "english": ""
+  },
+  "2": {
+    "german": "Ein erstes Graphenproblem",
+    "english": ""
+  },
+  "3": {
+    "german": "Graphtraversierung",
+    "english": ""
+  },
+  "4": {
+    "german": "Breitensuche",
+    "english": ""
+  },
+  "5": {
+    "german": "Algorithmus $\\rightarrow$ Pseudocode (erster Versuch)",
+    "english": ""
+  },
+  "6": {
+    "german": "Algorithmus $\\rightarrow$ Pseudocode (zweiter Versuch)",
+    "english": ""
+  },
+  "7": {
+    "german": "Algorithmus $\\rightarrow$ Pseudocode (Endergebnis)",
+    "english": ""
+  },
+  "8": {
+    "german": "Breitensuche: Laufzeit",
+    "english": ""
+  },
+  "9": {
+    "german": "Einschub: Graphrepräsentation",
+    "english": ""
+  },
+  "10": {
+    "german": "Zusammenhangskomponenten",
+    "english": ""
+  },
+  "11": {
+    "german": "BFS: Layer, Distanzen, Kürzeste Pfade",
+    "english": ""
+  },
+  "12": {
+    "german": "BFS kann Distanzen berechnen",
+    "english": ""
+  },
+  "13": {
+    "german": "Distanzen und kürzeste Wege: tatsächliche Berechnung",
+    "english": ""
+  },
+  "14": {
+    "german": "Zusammenfassung",
+    "english": "Summary"
+  },
+  "15": {
+    "german": "Thomas Bläsius~--~Algorithmen 1",
+    "english": "Thomas Bläsius~--~Algorithms 1"
+  },
+  "16": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "17": {
+    "german": "\\textbf{Graphen und Breitensuche}",
+    "english": ""
+  },
+  "18": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "19": {
+    "german": "\\textbf{Knoten \\& Kanten}",
+    "english": ""
+  },
+  "20": {
+    "german": "\\textbf{Nachbarschaft}",
+    "english": ""
+  },
+  "21": {
+    "german": "\\textbf{Gerichtete Graphen}",
+    "english": ""
+  },
+  "22": {
+    "german": "\\textbf{Komponenten}",
+    "english": ""
+  },
+  "23": {
+    "german": "\\textbf{Einfache Graphen}",
+    "english": ""
+  },
+  "24": {
+    "german": "\\textbf{Baum}",
+    "english": ""
+  },
+  "25": {
+    "german": "\\textbf{Wald}",
+    "english": ""
+  },
+  "26": {
+    "german": "\\textbf{Gewurzelter Baum}",
+    "english": ""
+  },
+  "27": {
+    "german": "Knoten",
+    "english": ""
+  },
+  "28": {
+    "german": "Kante",
+    "english": ""
+  },
+  "29": {
+    "german": "Graph $G = (V, E)$",
+    "english": ""
+  },
+  "30": {
+    "german": "adjazent",
+    "english": ""
+  },
+  "31": {
+    "german": "inzident",
+    "english": ""
+  },
+  "32": {
+    "german": "Knotengrad",
+    "english": ""
+  },
+  "33": {
+    "german": "Nachbarschaft $N(v)$",
+    "english": ""
+  },
+  "34": {
+    "german": "ungerichtet",
+    "english": ""
+  },
+  "35": {
+    "german": "gerichtet",
+    "english": ""
+  },
+  "36": {
+    "german": "gerichteter Kreis (Zyklus)",
+    "english": ""
+  },
+  "37": {
+    "german": "unzusammenhängend",
+    "english": ""
+  },
+  "38": {
+    "german": "4 Zusammenhangskomp.",
+    "english": ""
+  },
+  "39": {
+    "german": "keine Schleifen",
+    "english": ""
+  },
+  "40": {
+    "german": "keine Mehrfachkanten",
+    "english": ""
+  },
+  "41": {
+    "german": "Schleife",
+    "english": ""
+  },
+  "42": {
+    "german": "Mehrfachkante",
+    "english": ""
+  },
+  "43": {
+    "german": "zusammenhängend",
+    "english": ""
+  },
+  "44": {
+    "german": "kreisfrei",
+    "english": ""
+  },
+  "45": {
+    "german": "Blätter",
+    "english": ""
+  },
+  "46": {
+    "german": "innere Knoten",
+    "english": ""
+  },
+  "47": {
+    "german": "Blätter",
+    "english": ""
+  },
+  "48": {
+    "german": "kreisfrei",
+    "english": ""
+  },
+  "49": {
+    "german": "Elter",
+    "english": ""
+  },
+  "50": {
+    "german": "Kinder",
+    "english": ""
+  },
+  "51": {
+    "german": "Höhe",
+    "english": ""
+  },
+  "52": {
+    "german": "Wurzel",
+    "english": ""
+  },
+  "53": {
+    "german": "modelliert Beziehungen (Kanten) zwischen Paaren von Objekten (Knoten)\\n",
+    "english": ""
+  },
+  "54": {
+    "german": "Kontakte zwischen Lebewesen",
+    "english": ""
+  },
+  "55": {
+    "german": "Interaktionen zwischen Proteinen",
+    "english": ""
+  },
+  "56": {
+    "german": "\\textbf{Graphen sind allgegenwärtig}",
+    "english": ""
+  },
+  "57": {
+    "german": "Kommunikation zwischen Sensoren",
+    "english": ""
+  },
+  "58": {
+    "german": "\\textbf{Grundlegendes Problem: Zusammenhangskomponenten finden}",
+    "english": ""
+  },
+  "59": {
+    "german": "gegeben: Graph (z.B. als Liste von Kanten)\\n",
+    "english": ""
+  },
+  "60": {
+    "german": "\\textbf{Vorgehen: Graphtraversierung}",
+    "english": ""
+  },
+  "61": {
+    "german": "laufe bei einem Knoten $s$ los",
+    "english": ""
+  },
+  "62": {
+    "german": "finde und färbe alle Knoten, die von $s$ aus erreichbar sind\\n",
+    "english": ""
+  },
+  "63": {
+    "german": "wähle neue Farbe und wiederhole mit noch ungefärbtem Knoten (falls\\nvorhanden)\\n",
+    "english": ""
+  },
+  "64": {
+    "german": "Ziel: färbe die Knoten entsprechend der Komponenten\\n",
+    "english": ""
+  },
+  "65": {
+    "german": "\\textbf{Breitensuche (BFS)}",
+    "english": "\\textbf{Breadth-first search (BFS)}"
+  },
+  "66": {
+    "german": "\\textbf{Tiefensuche (DFS)}",
+    "english": "\\textbf{Depth-first search (DFS)}"
+  },
+  "67": {
+    "german": "starte bei einem Knoten $s$",
+    "english": "start at a node $s$"
+  },
+  "68": {
+    "german": "besuche alle Nachbarn von $s$",
+    "english": "visit all neighbours of $s$"
+  },
+  "69": {
+    "german": "dann alle Nachbarn der Nachbarn usw.",
+    "english": "then neighbours of neighbours etc."
+  },
+  "70": {
+    "german": "starte bei einem Knoten $s$",
+    "english": "start at a node $s$"
+  },
+  "71": {
+    "german": "laufe in jedem Schritt zu neuem Nachbarn\\n",
+    "english": "walk to a new neighbour each step\\n"
+  },
+  "72": {
+    "german": "Sackgasse (kein neuer Nachbar)\\\\\\n$\\rightarrow$ Backtracking:  zurück zum Vorgänger\\n",
+    "english": "Dead end (no new neighbour)\\\\\\n$\\rightarrow$ backtracking: return to predecessor\\n"
+  },
+  "73": {
+    "german": "besuchter Knoten",
+    "english": "visited node"
+  },
+  "74": {
+    "german": "unbesuchter Knoten",
+    "english": "unvisited node"
+  },
+  "75": {
+    "german": "aktueller Knoten",
+    "english": "current node"
+  },
+  "76": {
+    "german": "Pfad zum aktuellen Knoten",
+    "english": "path to current node"
+  },
+  "77": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "78": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "79": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "80": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "81": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "82": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "83": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "84": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "85": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "86": {
+    "german": "\\textbf{Sackgasse}",
+    "english": "\\textbf{Dead end}"
+  },
+  "87": {
+    "german": "\\textbf{Ende}",
+    "english": "\\textbf{End}"
+  },
+  "88": {
+    "german": "$s$ ist Sackgasse",
+    "english": "$s$ is a dead end"
+  },
+  "89": {
+    "german": "$\\Rightarrow$ alle von $s$ erreichbaren Knoten gefärbt",
+    "english": "$\\Rightarrow$ all nodes reachable from $s$ are coloured"
+  },
+  "90": {
+    "german": "\\textbf{Nachbarn}",
+    "english": "\\textbf{Neighbours}"
+  },
+  "91": {
+    "german": "\\textbf{Nachbarn der Nachbarn}",
+    "english": "\\textbf{Neighbours of neighbours}"
+  },
+  "92": {
+    "german": "\\textbf{Nachbarn der Nachbarn der Nachbarn}",
+    "english": "\\textbf{Neighbours of neighbours of neighbours}"
+  },
+  "93": {
+    "german": "{Layer 1}",
+    "english": "{Layer 1}"
+  },
+  "94": {
+    "german": "{Layer 2}",
+    "english": "{Layer 2}"
+  },
+  "95": {
+    "german": "{Layer 3}",
+    "english": "{Layer 3}"
+  },
+  "96": {
+    "german": "\\textbf{Abstrakte Algorithmenidee}",
+    "english": ""
+  },
+  "97": {
+    "german": "\\textbf{Breitensuche (BFS)}",
+    "english": "\\textbf{Breadth-first search (BFS)}"
+  },
+  "98": {
+    "german": "starte bei einem Knoten $s$",
+    "english": "start at a node $s$"
+  },
+  "99": {
+    "german": "besuche alle Nachbarn von $s$",
+    "english": "visit all neighbours of $s$"
+  },
+  "100": {
+    "german": "dann alle Nachbarn der Nachbarn usw.",
+    "english": "then neighbours of neighbours etc."
+  },
+  "101": {
+    "german": "\\textbf{Nachbarn}",
+    "english": "\\textbf{Neighbours}"
+  },
+  "102": {
+    "german": "\\textbf{Nachbarn der Nachbarn}",
+    "english": "\\textbf{Neighbours of neighbours}"
+  },
+  "103": {
+    "german": "\\textbf{Nachbarn der Nachbarn der Nachbarn}",
+    "english": "\\textbf{Neighbours of neighbours of neighbours}"
+  },
+  "104": {
+    "german": "{Layer 1}",
+    "english": "{Layer 1}"
+  },
+  "105": {
+    "german": "{Layer 2}",
+    "english": "{Layer 2}"
+  },
+  "106": {
+    "german": "{Layer 3}",
+    "english": "{Layer 3}"
+  },
+  "107": {
+    "german": "\\textbf{Effiziente Umsetzung}",
+    "english": ""
+  },
+  "108": {
+    "german": "\\textbf{Wiederholung: Ziele der Vorlesung}",
+    "english": ""
+  },
+  "109": {
+    "german": "im Prinzip wissen wir, was die BFS tut",
+    "english": ""
+  },
+  "110": {
+    "german": "nicht leicht",
+    "english": ""
+  },
+  "111": {
+    "german": "mit etwas Übung aber auch nicht schwer",
+    "english": ""
+  },
+  "112": {
+    "german": "sind aber noch weit von einer Implementierung entfernt",
+    "english": ""
+  },
+  "113": {
+    "german": "eigene Algorithmenideen entwickeln",
+    "english": ""
+  },
+  "114": {
+    "german": "effiziente Umsetzung der Ideen",
+    "english": ""
+  },
+  "115": {
+    "german": "gute Intuition, welche Ideen sich effizient umsetzen lassen",
+    "english": ""
+  },
+  "116": {
+    "german": "für BFS: gleich",
+    "english": ""
+  },
+  "117": {
+    "german": "{Layer 1}",
+    "english": "{Layer 1}"
+  },
+  "118": {
+    "german": "{Layer 2}",
+    "english": "{Layer 2}"
+  },
+  "119": {
+    "german": "{Layer 3}",
+    "english": "{Layer 3}"
+  },
+  "120": {
+    "german": "\\keyword{while} there is a node in layer $\\ell + 1$ \\keyword{do}",
+    "english": ""
+  },
+  "121": {
+    "german": "color node $s$",
+    "english": ""
+  },
+  "122": {
+    "german": "\\keyword{for} \\type{Node} $v$ in layer $\\ell$ \\keyword{do}",
+    "english": ""
+  },
+  "123": {
+    "german": "color node $v$",
+    "english": ""
+  },
+  "124": {
+    "german": "\\textbf{Zu hohe Abstraktion für Pseudocode}",
+    "english": ""
+  },
+  "125": {
+    "german": "\\keyword{while} there is a node in layer $\\ell + 1$ \\keyword{do}",
+    "english": ""
+  },
+  "126": {
+    "german": "\\keyword{for} \\type{Node} $v$ in layer $\\ell$ \\keyword{do}",
+    "english": ""
+  },
+  "127": {
+    "german": "\\textbf{Ziele für die Laufzeit}",
+    "english": ""
+  },
+  "128": {
+    "german": "über Knoten in Layer $\\ell$ iterieren: linear in Anzahl Knoten in\\nLayer $\\ell$\\\\\\n$\\rightarrow$ insgesamt $\\Theta(n)$",
+    "english": ""
+  },
+  "129": {
+    "german": "Layer $\\ell + 1$ aus Layer $\\ell$: betrachte nur Kanten inzident zu\\nKnoten aus Layer $\\ell$\\\\\\n$\\rightarrow$ insgesamt $\\Theta(m)$\\n",
+    "english": ""
+  },
+  "130": {
+    "german": "Woher wissen wir das?",
+    "english": ""
+  },
+  "131": {
+    "german": "Welche Knoten liegen in Layer $\\ell$?",
+    "english": ""
+  },
+  "132": {
+    "german": "$\\mathrm{currLayer} \\coloneqq \\{s\\}$",
+    "english": ""
+  },
+  "133": {
+    "german": "$\\mathrm{nextLayer} \\coloneqq N(s)$\\n",
+    "english": ""
+  },
+  "134": {
+    "german": "\\keyword{while} $\\mathrm{nextLayer} \\not= \\emptyset$ \\keyword{do}",
+    "english": ""
+  },
+  "135": {
+    "german": "$\\mathrm{currLayer} \\coloneqq \\mathrm{nextLayer}$",
+    "english": ""
+  },
+  "136": {
+    "german": "color node $s$",
+    "english": ""
+  },
+  "137": {
+    "german": "$\\mathrm{nextLayer} \\coloneqq \\emptyset$",
+    "english": ""
+  },
+  "138": {
+    "german": "\\keyword{for} \\type{Node} $u$ in $\\mathrm{currLayer}$ \\keyword{do}",
+    "english": ""
+  },
+  "139": {
+    "german": "insert $v$ into $\\mathrm{nextLayer}$",
+    "english": ""
+  },
+  "140": {
+    "german": "\\textbf{Problem 1}",
+    "english": ""
+  },
+  "141": {
+    "german": "manche Nachbarn von $u$ sind aus dem vorherigen Layer, nicht aus dem\\nnächsten",
+    "english": ""
+  },
+  "142": {
+    "german": "\\textbf{Lösung}",
+    "english": ""
+  },
+  "143": {
+    "german": "füge nur ungefärbte Knoten hinzu",
+    "english": ""
+  },
+  "144": {
+    "german": "\\keyword{if} \\type{Node} $v$ is uncolored \\keyword{then}",
+    "english": ""
+  },
+  "145": {
+    "german": "insert $v$ into $\\mathrm{nextLayer}$\\n",
+    "english": ""
+  },
+  "146": {
+    "german": "\\textbf{A:} färbe Knoten in nextLayer",
+    "english": ""
+  },
+  "147": {
+    "german": "\\textbf{B:} färbe Knoten in currLayer",
+    "english": ""
+  },
+  "148": {
+    "german": "\\textbf{C:} färbe Knoten $u$",
+    "english": ""
+  },
+  "149": {
+    "german": "\\textbf{D:} färbe Knoten $v$",
+    "english": ""
+  },
+  "150": {
+    "german": "\\textbf{E:} färbe Knoten $v$",
+    "english": ""
+  },
+  "151": {
+    "german": "\\textbf{Problem 2}",
+    "english": ""
+  },
+  "152": {
+    "german": "wir haben vergessen besuchte Knoten zu färben",
+    "english": ""
+  },
+  "153": {
+    "german": "\\textbf{Wo sollten wir Knoten färben?}",
+    "english": ""
+  },
+  "154": {
+    "german": "color node $v$",
+    "english": ""
+  },
+  "155": {
+    "german": "and color $N(s)$\\n",
+    "english": ""
+  },
+  "156": {
+    "german": "\\textbf{Färbung beim Einfügen in nextLayer}",
+    "english": ""
+  },
+  "157": {
+    "german": "stellt sicher, dass jeder Knoten $v$ nur einmal eingefügt wird",
+    "english": ""
+  },
+  "158": {
+    "german": "auch dann, wenn $v$ mehrere Kanten vom vorherigen Layer hat",
+    "english": ""
+  },
+  "159": {
+    "german": "currLayer",
+    "english": ""
+  },
+  "160": {
+    "german": "nextLayer",
+    "english": ""
+  },
+  "161": {
+    "german": "currLayer",
+    "english": ""
+  },
+  "162": {
+    "german": "nextLayer",
+    "english": ""
+  },
+  "163": {
+    "german": "currLayer",
+    "english": ""
+  },
+  "164": {
+    "german": "nextLayer",
+    "english": ""
+  },
+  "165": {
+    "german": "currLayer",
+    "english": ""
+  },
+  "166": {
+    "german": "nextLayer",
+    "english": ""
+  },
+  "167": {
+    "german": "\\textbf{Beobachtung}",
+    "english": "\\textbf{Observation}"
+  },
+  "168": {
+    "german": "neue Knoten $v$ werden hinten eingefügt",
+    "english": ""
+  },
+  "169": {
+    "german": "Knoten $u$ läuft von vorne nach hinten",
+    "english": ""
+  },
+  "170": {
+    "german": "Verhalten einer Queue (First In, First Out)",
+    "english": ""
+  },
+  "171": {
+    "german": "\\type{Queue} $Q \\coloneqq$ empty queue",
+    "english": ""
+  },
+  "172": {
+    "german": "color node $s$",
+    "english": ""
+  },
+  "173": {
+    "german": "\\keyword{if} $v$ is uncolored \\keyword{then}",
+    "english": ""
+  },
+  "174": {
+    "german": "color node $v$",
+    "english": ""
+  },
+  "175": {
+    "german": "\\textbf{Erinnerung: Queue}",
+    "english": ""
+  },
+  "176": {
+    "german": "Operationen: \\function{pushBack}, \\function{popFront}",
+    "english": ""
+  },
+  "177": {
+    "german": "FIFO: First In -- First Out",
+    "english": ""
+  },
+  "178": {
+    "german": "\\textbf{Intuition von vorhin: pro Layer \\dots}",
+    "english": ""
+  },
+  "179": {
+    "german": "betrachte Knoten in dem Layer $\\rightarrow$ insgesamt $\\Theta(n)$\\n",
+    "english": ""
+  },
+  "180": {
+    "german": "betrachte nur Kanten inzident zu Knoten aus dem Layer $\\rightarrow$\\ninsgesamt $\\Theta(m)$\\n",
+    "english": ""
+  },
+  "181": {
+    "german": "\\textbf{Etwas formaler für unsere finale Umsetzung}",
+    "english": ""
+  },
+  "182": {
+    "german": "jeder Knoten wird nur einmal in die Queue eingefügt",
+    "english": ""
+  },
+  "183": {
+    "german": "\\keyword{while}-Schleife: ein Durchlauf für jeden Knoten $u \\in V$",
+    "english": ""
+  },
+  "184": {
+    "german": "\\keyword{for}-Schleife: $\\deg(u) = |N(u)|$ Durchläufe",
+    "english": ""
+  },
+  "185": {
+    "german": "Gesamtkosten: $\\sum\\limits_{u \\in V} \\deg(u) = 2m$",
+    "english": ""
+  },
+  "186": {
+    "german": "\\textbf{Notation}",
+    "english": "\\textbf{Notation}"
+  },
+  "187": {
+    "german": "$V$: Knotenmenge",
+    "english": ""
+  },
+  "188": {
+    "german": "$E$: Kantenmenge",
+    "english": ""
+  },
+  "189": {
+    "german": "$\\deg(u)$: Grad von $u$",
+    "english": ""
+  },
+  "190": {
+    "german": "\\textbf{$\\Rightarrow$ BFS hat lineare Laufzeit $\\Theta(m)$}",
+    "english": ""
+  },
+  "191": {
+    "german": "(vorausgesetzt, unsere Graphdatenstruktur erlaubt es uns in\\n$O(\\deg(u))$ über $N(u)$ zu iterieren)\\n",
+    "english": ""
+  },
+  "192": {
+    "german": "\\textbf{Zu was summiert sich $\\sum\\limits_{u \\in V} \\deg(u)$?}",
+    "english": ""
+  },
+  "193": {
+    "german": "(jede Kante $\\{u, v\\}$ wird doppelt gezählt:\\\\\\neinmal für $u$ in $\\deg(u)$ und einmal für $v$ in $\\deg(v)$)\\n",
+    "english": ""
+  },
+  "194": {
+    "german": "\\type{Queue} $Q \\coloneqq$ empty queue",
+    "english": ""
+  },
+  "195": {
+    "german": "color node $s$",
+    "english": ""
+  },
+  "196": {
+    "german": "\\keyword{if} $v$ is uncolored \\keyword{then}",
+    "english": ""
+  },
+  "197": {
+    "german": "color node $v$",
+    "english": ""
+  },
+  "198": {
+    "german": "\\textbf{Adjazenzliste}",
+    "english": ""
+  },
+  "199": {
+    "german": "\\textbf{Grundsätzliches}",
+    "english": ""
+  },
+  "200": {
+    "german": "repräsentiere jeden Knoten durch eine Zahl in $\\{0, \\dots, n - 1\\}$",
+    "english": ""
+  },
+  "201": {
+    "german": "Zusatzinfos für Knoten (z.B. Farbe): Array der Länge $n$",
+    "english": ""
+  },
+  "202": {
+    "german": "Array erstellen: einmalig $\\Theta(n)$",
+    "english": ""
+  },
+  "203": {
+    "german": "Eigenschaft eines Knotens ändern/abfragen: $\\Theta(1)$",
+    "english": ""
+  },
+  "204": {
+    "german": "Detailumsetzung hängt von Anwendung ab\\n",
+    "english": ""
+  },
+  "205": {
+    "german": "(mit Engineering-Potential, z.B.\\ für bessere Cache-Effizienz)",
+    "english": ""
+  },
+  "206": {
+    "german": "\\textbf{Adjazenzmatrix}",
+    "english": ""
+  },
+  "207": {
+    "german": "über $N(v)$ iterieren: $\\Theta(\\deg(v))$\\n",
+    "english": ""
+  },
+  "208": {
+    "german": "testen ob $\\{u,v \\} \\in E$ geht in $\\Theta(1)$\\n",
+    "english": ""
+  },
+  "209": {
+    "german": "$\\Theta(n^2)$ Speicher",
+    "english": ""
+  },
+  "210": {
+    "german": "$N(v)$ iterieren: $\\Theta(n)$",
+    "english": ""
+  },
+  "211": {
+    "german": "\\textbf{Grundlegendes Problem: Zusammenhangskomponenten finden}",
+    "english": ""
+  },
+  "212": {
+    "german": "gegeben: Graph",
+    "english": ""
+  },
+  "213": {
+    "german": "Ziel: färbe die Knoten entsprechend der Komponenten\\n",
+    "english": ""
+  },
+  "214": {
+    "german": "\\textbf{Gerade gesehen}",
+    "english": ""
+  },
+  "215": {
+    "german": "$\\function{BFS}(G, s)$ färbt von $s$ aus erreichbaren Knoten\\n(Komponente $C(s)$)\\n",
+    "english": ""
+  },
+  "216": {
+    "german": "\\textbf{Notation}",
+    "english": "\\textbf{Notation}"
+  },
+  "217": {
+    "german": "$G = (V, E)$: Graph",
+    "english": ""
+  },
+  "218": {
+    "german": "$C(s)$: Komponente von $s$",
+    "english": ""
+  },
+  "219": {
+    "german": "$m_{C(s)}$: \\#Kanten in $C(s)$",
+    "english": ""
+  },
+  "220": {
+    "german": "Laufzeit: $\\Theta(m_{C(s)})$\\n",
+    "english": ""
+  },
+  "221": {
+    "german": "\\textbf{Färbung aller Komponenten}",
+    "english": ""
+  },
+  "222": {
+    "german": "iteriere über alle Knoten $s \\in V$ $\\rightarrow$\\n$\\function{BFS}(G, s)$ wenn $s$ noch ungefärbt\\n",
+    "english": ""
+  },
+  "223": {
+    "german": "wähle für jeden Aufruf der BFS eine neue Farbe\\n",
+    "english": ""
+  },
+  "224": {
+    "german": "für jede Komponente wird die BFS einmal ausgeführt $\\rightarrow$ eine\\nFarbe pro Komponenten",
+    "english": ""
+  },
+  "225": {
+    "german": "Laufzeit: $\\Theta(n + m)$",
+    "english": ""
+  },
+  "226": {
+    "german": "über alle Knoten Iterieren: $\\Theta(n)$",
+    "english": ""
+  },
+  "227": {
+    "german": "BFS in Summe (jede Kante gehört zu nur einer Komponente): $\\Theta(m)$",
+    "english": ""
+  },
+  "228": {
+    "german": "\\textbf{Theorem}\\\\\\nLiegt ein Knoten $v$ bei der Breitensuche von $s$ aus in Layer $\\ell$\\ndann gilt $\\dist(s, v) = \\ell$.\\n",
+    "english": ""
+  },
+  "229": {
+    "german": "{Layer 1}",
+    "english": "{Layer 1}"
+  },
+  "230": {
+    "german": "{Layer 2}",
+    "english": "{Layer 2}"
+  },
+  "231": {
+    "german": "{Layer 3}",
+    "english": "{Layer 3}"
+  },
+  "232": {
+    "german": "\\textbf{Beobachtung}",
+    "english": "\\textbf{Observation}"
+  },
+  "233": {
+    "german": "Knoten in Layer $\\ell$ kann man mit $\\ell$ Schritten von $s$ aus\\nerreichen",
+    "english": ""
+  },
+  "234": {
+    "german": "BFS berechnet also die Distanz von $s$ zu anderen Knoten",
+    "english": ""
+  },
+  "235": {
+    "german": "\\textbf{Etwas formaler: ein paar Grundbegriffe}",
+    "english": ""
+  },
+  "236": {
+    "german": "\\emph{Pfad}: Knotenfolge $\\langle v_0, \\dots, v_\\ell \\rangle$, mit\\n$\\{v_{i - 1}, v_i\\} \\in E$ für $i \\in \\{1, \\dots, \\ell\\}$\\n",
+    "english": ""
+  },
+  "237": {
+    "german": "\\emph{Länge} des Pfades $\\langle v_0, \\dots, v_\\ell \\rangle$: $\\ell$\\n",
+    "english": ""
+  },
+  "238": {
+    "german": "\\emph{kürzester Pfad} von $s \\in V$ nach $t \\in V$: Pfad minimaler\\nLänge mit Start $s$ und Ende $t$\\n",
+    "english": ""
+  },
+  "239": {
+    "german": "$v_0$ und $v_\\ell$ sind \\emph{Start-} bzw.\\ \\emph{Endknoten} von\\n$\\langle v_0, \\dots, v_\\ell \\rangle$\\n",
+    "english": ""
+  },
+  "240": {
+    "german": "\\emph{Distanz} $\\dist(s, t)$: Länge des kürzesten $st$-Pfades\\n",
+    "english": "\\emph{Distance} $\\dist(s, t)$: length of the shortest $st$ path\\n"
+  },
+  "241": {
+    "german": "\\textbf{Theorem}\\\\\\nLiegt ein Knoten $v$ bei der Breitensuche von $s$ aus in Layer $\\ell$\\ndann gilt $\\dist(s, v) = \\ell$.\\n",
+    "english": ""
+  },
+  "242": {
+    "german": "\\textbf{Beweis}",
+    "english": "\\textbf{Proof}"
+  },
+  "243": {
+    "german": "es gibt einen Pfad der Länge $\\ell$ von $s$ nach $v$",
+    "english": ""
+  },
+  "244": {
+    "german": "es gibt keinen kürzeren Pfad von $s$ nach $v$",
+    "english": ""
+  },
+  "245": {
+    "german": "Induktion über $\\ell$: klar für $\\ell = 0$",
+    "english": ""
+  },
+  "246": {
+    "german": "$v$ in Layer $\\ell$ $\\Rightarrow$ $v$ hat Nachbarn $u$ in Layer\\n$\\ell - 1$\\n",
+    "english": ""
+  },
+  "247": {
+    "german": "I.-Voraussetzung $\\Rightarrow$ $su$-Pfad der Länge $\\ell - 1$\\n",
+    "english": ""
+  },
+  "248": {
+    "german": "daher: $sv$-Pfad der Länge $\\ell$",
+    "english": ""
+  },
+  "249": {
+    "german": "Kanten überspringen keine Layer",
+    "english": ""
+  },
+  "250": {
+    "german": "jeder Pfad von $v$ (Layer $\\ell$) nach $s$ (Layer $0$) hat Länge\\nmindestens $\\ell$\\n",
+    "english": ""
+  },
+  "251": {
+    "german": "{Layer 1}",
+    "english": "{Layer 1}"
+  },
+  "252": {
+    "german": "{Layer 2}",
+    "english": "{Layer 2}"
+  },
+  "253": {
+    "german": "{Layer 3}",
+    "english": "{Layer 3}"
+  },
+  "254": {
+    "german": "\\keyword{if} $v$ is uncolored \\keyword{then}",
+    "english": ""
+  },
+  "255": {
+    "german": "color node $v$",
+    "english": ""
+  },
+  "256": {
+    "german": "\\textbf{Folgerungen aus dem Beweis}",
+    "english": ""
+  },
+  "257": {
+    "german": "{Layer 1}",
+    "english": "{Layer 1}"
+  },
+  "258": {
+    "german": "{Layer 2}",
+    "english": "{Layer 2}"
+  },
+  "259": {
+    "german": "{Layer 3}",
+    "english": "{Layer 3}"
+  },
+  "260": {
+    "german": "gerade bewiesen: die Layer geben die Distanzen von $s$\\n",
+    "english": ""
+  },
+  "261": {
+    "german": "im Beweis sieht man, wie man den kürzesten Weg erhält:\\n",
+    "english": ""
+  },
+  "262": {
+    "german": "Knoten $v$ wird durch Knoten $u$ gefunden",
+    "english": ""
+  },
+  "263": {
+    "german": "definiere $u$ als Elternknoten von $v$\\n",
+    "english": ""
+  },
+  "264": {
+    "german": "Zurückverfolgung der Eltern bis $s$ liefert kürzesten Pfad",
+    "english": ""
+  },
+  "265": {
+    "german": "\\textbf{Beobachtung}",
+    "english": "\\textbf{Observation}"
+  },
+  "266": {
+    "german": "Eltern-Beziehung liefert Baum mit Wurzel $s$",
+    "english": ""
+  },
+  "267": {
+    "german": "diesen Baum nennt man auch \\emph{BFS-Baum}",
+    "english": ""
+  },
+  "268": {
+    "german": "\\textbf{Anmerkung}",
+    "english": "\\textbf{Note}"
+  },
+  "269": {
+    "german": "auch hier: wie das geht ist im Prinzip klar",
+    "english": ""
+  },
+  "270": {
+    "german": "für die tatsächliche Umsetzung muss man aber nochmal tätig werden",
+    "english": ""
+  },
+  "271": {
+    "german": "\\keyword{if} $v$ is uncolored \\keyword{then}",
+    "english": ""
+  },
+  "272": {
+    "german": "color node $v$",
+    "english": ""
+  },
+  "273": {
+    "german": "\\textbf{Graph Traversierung}",
+    "english": ""
+  },
+  "274": {
+    "german": "zwei Vorgehensweisen: BFS und DFS (DFS kommt später nochmal im Detail)",
+    "english": ""
+  },
+  "275": {
+    "german": "damit kann man zum Beispiel die Zusammenhangskomponenten finden",
+    "english": ""
+  },
+  "276": {
+    "german": "\\textbf{Kürzeste Wege}",
+    "english": ""
+  },
+  "277": {
+    "german": "\\textbf{Algorithmenidee $\\rightarrow$ Pseudocode am Beispiel BFS}",
+    "english": ""
+  },
+  "278": {
+    "german": "auch bei einem so einfachen Algorithmus kann man viel falsch machen\\n",
+    "english": ""
+  },
+  "279": {
+    "german": "meine Hoffnung:",
+    "english": ""
+  },
+  "280": {
+    "german": "dann kannst du eine Breitensuche im Schlaf implementieren",
+    "english": ""
+  },
+  "281": {
+    "german": "wenn du die Idee der Breitensuche kennst\\n",
+    "english": ""
+  },
+  "282": {
+    "german": "du aber \\textbf{nicht} den Pseudocode dazu auswendig kannst\\n",
+    "english": ""
+  },
+  "283": {
+    "german": "BFS besucht Knoten in aufsteigender Distanz vom Start",
+    "english": ""
+  },
+  "284": {
+    "german": "daher: Berechnung von Distanzen und kürzesten Wegen",
+    "english": ""
+  }
+}

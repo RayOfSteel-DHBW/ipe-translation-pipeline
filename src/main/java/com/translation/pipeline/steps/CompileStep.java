@@ -21,6 +21,7 @@ public class CompileStep extends PipelineStepBase {
     
     // IPE log file handling
     private static final String IPE_LOG_PATH = "C:\\Users\\raine\\AppData\\Local\\ipe\\ipetemp.log";
+    private static final String IPE_TEX_PATH = "C:\\Users\\raine\\AppData\\Local\\ipe\\ipetemp.tex";
     private static final String IPE_LOGS_DIR = "ipelogs";
 
     @Inject
@@ -53,7 +54,7 @@ public class CompileStep extends PipelineStepBase {
                 return true;
             } catch (Exception e) {
                 logger.warning("Failed to compile: " + xmlFile.getName() + " - " + e.getMessage());
-                saveIpeLogFile(fileName);
+                saveIpeFiles(fileName);
                 // Wrap in CompilerException for more specific error handling
                 throw new CompilerException("IPE compilation failed for " + xmlFile.getName(), e);
             }
@@ -63,32 +64,40 @@ public class CompileStep extends PipelineStepBase {
     }
 
     /**
-     * Copies the IPE log file to our ipelogs directory when compilation fails
+     * Copies the IPE log and tex files to our ipelogs directory when compilation fails
      */
-    private void saveIpeLogFile(String xmlFileName) {
+    private void saveIpeFiles(String xmlFileName) {
         try {
-            Path ipeLogPath = Paths.get(IPE_LOG_PATH);
-            if (!Files.exists(ipeLogPath)) {
-                logger.warning("IPE log file not found at: " + IPE_LOG_PATH);
-                return;
-            }
-
             // Create ipelogs directory if it doesn't exist
             Path ipeLogsDir = Paths.get(IPE_LOGS_DIR);
             if (!Files.exists(ipeLogsDir)) {
                 Files.createDirectories(ipeLogsDir);
             }
 
-            // Create destination file with XML filename + .log extension
-            String logFileName = xmlFileName + ".log";
-            Path destinationPath = ipeLogsDir.resolve(logFileName);
+            // Save log file
+            Path ipeLogPath = Paths.get(IPE_LOG_PATH);
+            if (Files.exists(ipeLogPath)) {
+                String logFileName = xmlFileName + ".log";
+                Path destinationLogPath = ipeLogsDir.resolve(logFileName);
+                Files.copy(ipeLogPath, destinationLogPath, StandardCopyOption.REPLACE_EXISTING);
+                logger.info("Saved IPE compilation log to: " + destinationLogPath.toAbsolutePath());
+            } else {
+                logger.warning("IPE log file not found at: " + IPE_LOG_PATH);
+            }
 
-            // Copy the log file
-            Files.copy(ipeLogPath, destinationPath, StandardCopyOption.REPLACE_EXISTING);
-            logger.info("Saved IPE compilation log to: " + destinationPath.toAbsolutePath());
+            // Save tex file
+            Path ipeTexPath = Paths.get(IPE_TEX_PATH);
+            if (Files.exists(ipeTexPath)) {
+                String texFileName = xmlFileName + ".tex";
+                Path destinationTexPath = ipeLogsDir.resolve(texFileName);
+                Files.copy(ipeTexPath, destinationTexPath, StandardCopyOption.REPLACE_EXISTING);
+                logger.info("Saved IPE compilation tex file to: " + destinationTexPath.toAbsolutePath());
+            } else {
+                logger.warning("IPE tex file not found at: " + IPE_TEX_PATH);
+            }
 
         } catch (IOException e) {
-            logger.warning("Failed to save IPE log file: " + e.getMessage());
+            logger.warning("Failed to save IPE files: " + e.getMessage());
         }
     }
 }

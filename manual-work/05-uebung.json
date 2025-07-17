@@ -1,0 +1,974 @@
+{
+  "1": {
+    "german": "Ankündigung: Nachholtutorien im August",
+    "english": ""
+  },
+  "2": {
+    "german": "Listen und Binäre Suche",
+    "english": ""
+  },
+  "3": {
+    "german": "Listen und Binäre Suche",
+    "english": ""
+  },
+  "4": {
+    "german": "$(2, 3)$-Bäume",
+    "english": ""
+  },
+  "5": {
+    "german": "$(2, 3)$-Bäume -- Einfügen \\& Löschen",
+    "english": ""
+  },
+  "6": {
+    "german": "Rot-Schwarz-Bäume",
+    "english": ""
+  },
+  "7": {
+    "german": "Rot-Schwarz-Bäume",
+    "english": ""
+  },
+  "8": {
+    "german": "Rot-Schwarz-Bäume -- Einfügen",
+    "english": ""
+  },
+  "9": {
+    "german": "Rot-Schwarz-Bäume -- Einfügen",
+    "english": ""
+  },
+  "10": {
+    "german": "Rot-Schwarz-Bäume -- Höhe",
+    "english": ""
+  },
+  "11": {
+    "german": "Suchbäume -- Höhe",
+    "english": ""
+  },
+  "12": {
+    "german": "Tiefensuche",
+    "english": ""
+  },
+  "13": {
+    "german": "Tiefensuche -- Knotenreihenfolge",
+    "english": ""
+  },
+  "14": {
+    "german": "Rot-Schwarz-Bäume -- Traversieren",
+    "english": ""
+  },
+  "15": {
+    "german": "Suche in Graphen -- Ein Spiel",
+    "english": ""
+  },
+  "16": {
+    "german": "Cocktails -- Beispiel \\& Modellierung",
+    "english": ""
+  },
+  "17": {
+    "german": "Cocktails -- Das Problem",
+    "english": ""
+  },
+  "18": {
+    "german": "Cocktails -- Die Lösung",
+    "english": ""
+  },
+  "19": {
+    "german": "Zusammenfassung",
+    "english": "Summary"
+  },
+  "20": {
+    "german": "Maximilian Katzmann \\& Marcus Wilhelm~--~Algorithmen 1 - Übung",
+    "english": ""
+  },
+  "21": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "22": {
+    "german": "\\textbf{Übung 5}",
+    "english": ""
+  },
+  "23": {
+    "german": "\\textbf{Suchbäume \\& Suche in Graphen}",
+    "english": ""
+  },
+  "24": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "25": {
+    "german": "\\textbf{Idee}",
+    "english": ""
+  },
+  "26": {
+    "german": "Wiederholung wichtiger Themen",
+    "english": ""
+  },
+  "27": {
+    "german": "Üben für Prüfung",
+    "english": ""
+  },
+  "28": {
+    "german": "\\textbf{Tutorinnen und Tutoren}",
+    "english": ""
+  },
+  "29": {
+    "german": "Kilian Wurm",
+    "english": ""
+  },
+  "30": {
+    "german": "Henriette Färber",
+    "english": ""
+  },
+  "31": {
+    "german": "Jonas Seiler",
+    "english": ""
+  },
+  "32": {
+    "german": "\\textbf{Termine}",
+    "english": ""
+  },
+  "33": {
+    "german": "Montags 9:45 und Mittwochs 9:45",
+    "english": ""
+  },
+  "34": {
+    "german": "gesamter August",
+    "english": ""
+  },
+  "35": {
+    "german": "\\verb+Juli+",
+    "english": ""
+  },
+  "36": {
+    "german": "\\verb+        August      +\\\\\\n\\verb+Mo Di Mi Do Fr Sa So   +\\\\\\n\\verb+31  1  2  3  4  5  6   +\\\\\\n\\verb+ 7  8  9 10 11 12 13   +\\\\\\n\\verb+14 15 16 17 18 19 20   +\\\\\\n\\verb+21 22 23 24 25 26 27   +\\\\\\n\\verb+28 29 30 31            +",
+    "english": ""
+  },
+  "37": {
+    "german": "In Suchbäumen wollen wir die Vorteile von Listen und der binären Suche vereinen",
+    "english": ""
+  },
+  "38": {
+    "german": "Listen erlauben schnelles Einfügen",
+    "english": ""
+  },
+  "39": {
+    "german": "das erfordert Zugang zum Vorgänger Element",
+    "english": ""
+  },
+  "40": {
+    "german": "Listen erlauben einfaches Löschen",
+    "english": ""
+  },
+  "41": {
+    "german": "das erfordert Zugang zum zu löschenden Element",
+    "english": ""
+  },
+  "42": {
+    "german": "In Listen können wir schnell umsortieren, wenn wir die Elemente schon in der Hand haben.",
+    "english": ""
+  },
+  "43": {
+    "german": "Wie können wir in Listen \\emph{schnell} suchen?",
+    "english": ""
+  },
+  "44": {
+    "german": "Finde Elemente mit linearer Suche. Beispiel: Finde $13$.",
+    "english": ""
+  },
+  "45": {
+    "german": "In Suchbäumen wollen wir die Vorteile von Listen und der binären Suche vereinen",
+    "english": ""
+  },
+  "46": {
+    "german": "Speed-Up der Suche durch Simulation von binärer Suche wie in Arrays",
+    "english": ""
+  },
+  "47": {
+    "german": "Beispiel: Binäre Suche nach $8$",
+    "english": ""
+  },
+  "48": {
+    "german": "Aktueller Suchbereich",
+    "english": ""
+  },
+  "49": {
+    "german": "Mittleres Element",
+    "english": ""
+  },
+  "50": {
+    "german": "Größe des Suchbereichs halbiert sich in jedem Schritt $\\rightarrow O(\\log(n))$",
+    "english": ""
+  },
+  "51": {
+    "german": "Idee: Speichere alle möglichen Suchen als Baum ab",
+    "english": ""
+  },
+  "52": {
+    "german": "Problem(?): Blätter hängen in unterschiedlicher Tiefe",
+    "english": ""
+  },
+  "53": {
+    "german": "Kann das beliebig schlimm werden?",
+    "english": ""
+  },
+  "54": {
+    "german": "Nicht beim initialen Aufbau...",
+    "english": ""
+  },
+  "55": {
+    "german": "... aber beim Einfügen / Löschen?",
+    "english": ""
+  },
+  "56": {
+    "german": "Idee: \\emph{fast} binär und dafür balanciert",
+    "english": ""
+  },
+  "57": {
+    "german": "jeder Knoten hat $2$ oder $3$ Kinder",
+    "english": ""
+  },
+  "58": {
+    "german": "dadurch können wir dafür sorgen, dass alle Blätter die gleiche Tiefe haben",
+    "english": ""
+  },
+  "59": {
+    "german": "Knoten halten ggf. zwei Schlüssel $k_1, k_2$. Abstieg: Links ($x \\le k_1$), Mitte ($k_1 < x \\le k_2$), Rechts ($k_2 < x$)",
+    "english": ""
+  },
+  "60": {
+    "german": "Beispiel: Suche nach $13$",
+    "english": ""
+  },
+  "61": {
+    "german": "Einfügen: Neues Blatt an Elter vom Nachfolger anhängen und danach (rekursiv) aufspalten wenn nötig",
+    "english": ""
+  },
+  "62": {
+    "german": "Beispiel: $16$ Einfügen",
+    "english": ""
+  },
+  "63": {
+    "german": "Löschen: Blatt einfach abschneiden und danach (rekursiv) verschmelzen oder ausbalancieren",
+    "english": ""
+  },
+  "64": {
+    "german": "Beispiel: $36$ Löschen",
+    "english": ""
+  },
+  "65": {
+    "german": "Wichtiger Unterschied: Daten nicht nur in den Blättern",
+    "english": ""
+  },
+  "66": {
+    "german": "Suche nach $x$: Vergleiche $x$ mit Schlüssel $k$",
+    "english": ""
+  },
+  "67": {
+    "german": "$x < k$: Abstieg in linken Teilbaum",
+    "english": ""
+  },
+  "68": {
+    "german": "$x = k$: Element gefunden",
+    "english": ""
+  },
+  "69": {
+    "german": "$x > k$: Abstieg in rechten Teilbaum",
+    "english": ""
+  },
+  "70": {
+    "german": "Beispiel: Suche nach $8$",
+    "english": ""
+  },
+  "71": {
+    "german": "Einfügen: Füge an richtigen noch nicht existierenden Abstieg ein",
+    "english": ""
+  },
+  "72": {
+    "german": "Beispiel: $50$ Einfügen",
+    "english": ""
+  },
+  "73": {
+    "german": "Beispiel: $37$ Einfügen",
+    "english": ""
+  },
+  "74": {
+    "german": "Beispiel: $38$ Einfügen",
+    "english": ""
+  },
+  "75": {
+    "german": "Beispiel: $39$ Einfügen",
+    "english": ""
+  },
+  "76": {
+    "german": "Problem: Zu wenig Balance $\\rightarrow$ Operationen nicht mehr in $O(\\log(n))$",
+    "english": ""
+  },
+  "77": {
+    "german": "Baum darf nicht zu tief werden!",
+    "english": ""
+  },
+  "78": {
+    "german": "Idee: Suchbaum, bei dem wir weniger Wert auf Balance legen, dafür bitte immer binär.",
+    "english": ""
+  },
+  "79": {
+    "german": "Idee: Suchbaum, bei dem wir weniger Wert auf Balance legen, dafür bitte immer binär.",
+    "english": ""
+  },
+  "80": {
+    "german": "Kriterium: Das tiefste Blatt hängt höchstens \\emph{doppelt} so tief wie das flachste Blatt.",
+    "english": ""
+  },
+  "81": {
+    "german": "Knoten werden rot oder blau gefärbt",
+    "english": ""
+  },
+  "82": {
+    "german": "Keine",
+    "english": ""
+  },
+  "83": {
+    "german": "Kante \\&",
+    "english": ""
+  },
+  "84": {
+    "german": "-Höhe aller Dummys gleich.",
+    "english": ""
+  },
+  "85": {
+    "german": "Beispiel: $50$ Einfügen",
+    "english": ""
+  },
+  "86": {
+    "german": "-Höhe = $3$",
+    "english": ""
+  },
+  "87": {
+    "german": "-Höhe = $4$",
+    "english": ""
+  },
+  "88": {
+    "german": "Wir können 50 nicht einfügen ohne die Kriterien zu verletzen",
+    "english": ""
+  },
+  "89": {
+    "german": "Es muss ausbalanciert werden!",
+    "english": ""
+  },
+  "90": {
+    "german": "und blaue Dummy-Blätter eingefügt",
+    "english": ""
+  },
+  "91": {
+    "german": "keine",
+    "english": ""
+  },
+  "92": {
+    "german": "Kante",
+    "english": ""
+  },
+  "93": {
+    "german": "Blätter gleiche",
+    "english": ""
+  },
+  "94": {
+    "german": "-Höhe",
+    "english": ""
+  },
+  "95": {
+    "german": "Idee: Neues Element als rotes Blatt an richtiger Stelle einfügen und gegebenenfalls ausbalancieren.",
+    "english": ""
+  },
+  "96": {
+    "german": "Suchbaumeigenschaft",
+    "english": ""
+  },
+  "97": {
+    "german": "Fall 1: Elter ist rot",
+    "english": ""
+  },
+  "98": {
+    "german": "dann ist Großelter blau (Warum?)",
+    "english": ""
+  },
+  "99": {
+    "german": "Fall 1a: Eltergeschwister ist blau",
+    "english": ""
+  },
+  "100": {
+    "german": "trimagische",
+    "english": ""
+  },
+  "101": {
+    "german": "Umstrukturierung",
+    "english": ""
+  },
+  "102": {
+    "german": "Drei-Knoten-",
+    "english": ""
+  },
+  "103": {
+    "german": "Kind, Elter, und Großelter in die richtige Reihenfolge bringen",
+    "english": ""
+  },
+  "104": {
+    "german": "Mittlerer Knoten wird Elter der anderen beiden",
+    "english": ""
+  },
+  "105": {
+    "german": "Mittlerer Knoten wird blau, die anderen rot",
+    "english": ""
+  },
+  "106": {
+    "german": "Teilbäume die unter den Knoten hingen korrekt umhängen",
+    "english": ""
+  },
+  "107": {
+    "german": "Fall 1b: Eltergeschwister ist rot",
+    "english": ""
+  },
+  "108": {
+    "german": "Umfärben: Elter und Eltergeschwister blau, Großelter rot",
+    "english": ""
+  },
+  "109": {
+    "german": "Sind wir jetzt fertig?",
+    "english": ""
+  },
+  "110": {
+    "german": "-Höhe und Suchbaumeigenschaft erhalten, ggf.",
+    "english": ""
+  },
+  "111": {
+    "german": "Kante erzeugt!",
+    "english": ""
+  },
+  "112": {
+    "german": "\\emph{Rekursion}",
+    "english": ""
+  },
+  "113": {
+    "german": "Drei-Knoten-",
+    "english": ""
+  },
+  "114": {
+    "german": "Fall 2: Elter ist blau",
+    "english": ""
+  },
+  "115": {
+    "german": "$\\rightarrow$ fertig",
+    "english": ""
+  },
+  "116": {
+    "german": "Diverse Fallunterscheidungen (Welche Eltergeschwister existieren? Wie werden zugehörige Teilbäume umgehangen? etc.)",
+    "english": ""
+  },
+  "117": {
+    "german": "Laufzeit",
+    "english": ""
+  },
+  "118": {
+    "german": "Blatt an richtiger Stelle anhängen",
+    "english": ""
+  },
+  "119": {
+    "german": "Umstrukturieren (höchstens 1x)",
+    "english": ""
+  },
+  "120": {
+    "german": "$O(\\textit{Höhe des Baumes})$",
+    "english": ""
+  },
+  "121": {
+    "german": "Umstrukturieren \\textbf{oder} Umfärben",
+    "english": ""
+  },
+  "122": {
+    "german": "Umfärben (höchstens $O(\\textit{Höhe des Baumes})$)",
+    "english": ""
+  },
+  "123": {
+    "german": "$O(\\textit{Höhe des Baumes})$",
+    "english": ""
+  },
+  "124": {
+    "german": "$O(\\textit{Höhe des Baumes})$",
+    "english": ""
+  },
+  "125": {
+    "german": "Löschen auch in $O(\\textit{Höhe des Baumes})$",
+    "english": ""
+  },
+  "126": {
+    "german": "noch umständlicher",
+    "english": ""
+  },
+  "127": {
+    "german": "Aber was ist denn nun die Höhe des Baumes?",
+    "english": ""
+  },
+  "128": {
+    "german": "Hat das mit den Farben überhaupt funktioniert?",
+    "english": ""
+  },
+  "129": {
+    "german": "keine",
+    "english": ""
+  },
+  "130": {
+    "german": "Kante",
+    "english": ""
+  },
+  "131": {
+    "german": "Blätter gleiche",
+    "english": ""
+  },
+  "132": {
+    "german": "-Höhe",
+    "english": ""
+  },
+  "133": {
+    "german": "Suchbaumeigenschaft",
+    "english": ""
+  },
+  "134": {
+    "german": "Beobachtung 1: Der Teilbaum eines Knotens in einem Rot-Schwarz-Baum ist wieder ein Rot-Schwarz-Baum.",
+    "english": ""
+  },
+  "135": {
+    "german": "\\textbf{Lemma} \\textit{Rot-Schwarz-Baum -- Anzahl Knoten}",
+    "english": ""
+  },
+  "136": {
+    "german": "Sei $T$ ein Rot-Schwarz-Baum mit",
+    "english": ""
+  },
+  "137": {
+    "german": "-Höhe $h$. Dann hat $T$ mindestens",
+    "english": ""
+  },
+  "138": {
+    "german": "$n \\ge 2^h - 1$ Knoten.",
+    "english": ""
+  },
+  "139": {
+    "german": "\\textbf{Beweis über Induktion}",
+    "english": ""
+  },
+  "140": {
+    "german": "Anfang: $h = 1$",
+    "english": ""
+  },
+  "141": {
+    "german": "Schritt: $h + 1$",
+    "english": ""
+  },
+  "142": {
+    "german": "Teilbäume mit",
+    "english": ""
+  },
+  "143": {
+    "german": "-Höhe $h$",
+    "english": ""
+  },
+  "144": {
+    "german": "Beobachtung 2: Auf jedem Wurzel-Dummy-Pfad ist mindestens die Hälfte der Knoten blau.",
+    "english": ""
+  },
+  "145": {
+    "german": "(Dummy ist blau \\& keine",
+    "english": ""
+  },
+  "146": {
+    "german": "Kante)",
+    "english": ""
+  },
+  "147": {
+    "german": "Für die Höhe $H$ des Baumes gilt: $H \\le 2 \\cdot h$",
+    "english": ""
+  },
+  "148": {
+    "german": "\\textbf{Lemma} \\textit{Rot-Schwarz-Baum -- Höhe}",
+    "english": ""
+  },
+  "149": {
+    "german": "Sei $T$ ein Rot-Schwarz-Baum mit $n$ Knoten. Dann hat $T$ eine Höhe von $H \\le 2 \\log(n + 1).$",
+    "english": ""
+  },
+  "150": {
+    "german": "Wir wünschen uns binäre und balancierte Suchbäume",
+    "english": ""
+  },
+  "151": {
+    "german": "je eins der Kriterien kann etwas aufgeweicht werden",
+    "english": ""
+  },
+  "152": {
+    "german": "$(a, b)$-Bäume: \\emph{fast} binär, dafür perfekt balanciert",
+    "english": ""
+  },
+  "153": {
+    "german": "Rot-Schwarz-Bäume: binär, dafür \\emph{ausreichend} balanciert",
+    "english": ""
+  },
+  "154": {
+    "german": "in beiden Fällen konnten wir logarithmische Höhe erreichen",
+    "english": ""
+  },
+  "155": {
+    "german": "Zufall?",
+    "english": ""
+  },
+  "156": {
+    "german": "Ziehe im Rot-Schwarz-Baum die roten Knoten zu ihren Eltern",
+    "english": ""
+  },
+  "157": {
+    "german": "Rot-Schwarz-Bäume haben quasi die gleiche Struktur wie $(2, 4)$-Bäume!",
+    "english": ""
+  },
+  "158": {
+    "german": "Aber irgendwie ist uns die Listenstruktur in den Blättern verloren gegangen...",
+    "english": ""
+  },
+  "159": {
+    "german": "Starte bei einem Knoten $s$",
+    "english": ""
+  },
+  "160": {
+    "german": "Gehe in jedem Schritt zu einem neuen Nachbarn",
+    "english": ""
+  },
+  "161": {
+    "german": "Sackgasse: (kein neuer Nachbar) $\\rightarrow$ Backtracking: zurück zum Vorgänger",
+    "english": ""
+  },
+  "162": {
+    "german": "Während einer Tiefensuche kann sich ein Knoten in 3 Zuständen befinden",
+    "english": ""
+  },
+  "163": {
+    "german": "ungesehen",
+    "english": ""
+  },
+  "164": {
+    "german": "gesehen",
+    "english": ""
+  },
+  "165": {
+    "german": "fertig",
+    "english": ""
+  },
+  "166": {
+    "german": "Beispiel: Startknoten 4",
+    "english": ""
+  },
+  "167": {
+    "german": "ungesehenen",
+    "english": ""
+  },
+  "168": {
+    "german": "Tiefensuchbaum",
+    "english": ""
+  },
+  "169": {
+    "german": "Warum?",
+    "english": ""
+  },
+  "170": {
+    "german": "jeder Knoten 1x gesehen (außer Wurzel)",
+    "english": ""
+  },
+  "171": {
+    "german": "keine Rückkanten",
+    "english": ""
+  },
+  "172": {
+    "german": "$\\rightarrow n - 1$ Kanten",
+    "english": ""
+  },
+  "173": {
+    "german": "$\\rightarrow$ keine Kreise",
+    "english": ""
+  },
+  "174": {
+    "german": "Freiheitsgrad: Knotenreihenfolge",
+    "english": ""
+  },
+  "175": {
+    "german": "Rückkante",
+    "english": "back edge"
+  },
+  "176": {
+    "german": "Freiheitsgrad: Knotenreihenfolge",
+    "english": ""
+  },
+  "177": {
+    "german": "Die Knotenreihenfolge bestimmt die Struktur des Tiefensuchbaums.",
+    "english": ""
+  },
+  "178": {
+    "german": "Wir können uns die Reihenfolge zu Nutze machen...",
+    "english": ""
+  },
+  "179": {
+    "german": "Knotenreihenfolge: Kleineres Kind zuerst",
+    "english": ""
+  },
+  "180": {
+    "german": "ungesehen",
+    "english": ""
+  },
+  "181": {
+    "german": "gesehen",
+    "english": ""
+  },
+  "182": {
+    "german": "fertig",
+    "english": ""
+  },
+  "183": {
+    "german": "Startknoten: Wurzel",
+    "english": ""
+  },
+  "184": {
+    "german": "Linker Teilbaum fertig? $\\rightarrow$ Schlüssel ausgeben",
+    "english": ""
+  },
+  "185": {
+    "german": "Tiefensuche: \\textbf{In-Order-Traversierung}",
+    "english": ""
+  },
+  "186": {
+    "german": "Wir erhalten die Schlüssel in aufsteigender Reihenfolge!",
+    "english": ""
+  },
+  "187": {
+    "german": "Laufzeit?",
+    "english": ""
+  },
+  "188": {
+    "german": "Jede Kante wird genau zwei Mal abgelaufen",
+    "english": ""
+  },
+  "189": {
+    "german": "Der Baum hat $n - 1$ Kanten",
+    "english": ""
+  },
+  "190": {
+    "german": "Die sortierte Folge kann in Linearzeit aus dem Baum abgelesen werden.",
+    "english": ""
+  },
+  "191": {
+    "german": "wir haben eine Menge von Gläsern",
+    "english": ""
+  },
+  "192": {
+    "german": "darin sind (alkoholfreie) Cocktails bestehend aus verschiedenen Säften",
+    "english": ""
+  },
+  "193": {
+    "german": "\\textbf{Ziel}: Entmischen (jeder Saft für sich in einem Glas)",
+    "english": ""
+  },
+  "194": {
+    "german": "Regeln",
+    "english": ""
+  },
+  "195": {
+    "german": "ein Glas hält $\\le4$ Einheiten, es gibt $4$ Einheiten pro Saft",
+    "english": ""
+  },
+  "196": {
+    "german": "keinen Saft auf einen anderen kippen",
+    "english": ""
+  },
+  "197": {
+    "german": "ein Saft wird immer in Gänze umgefüllt",
+    "english": ""
+  },
+  "198": {
+    "german": "Gesucht: Abfolge von erlaubten Umfüll-Operationen",
+    "english": ""
+  },
+  "199": {
+    "german": "Wie lösen wir dieses Problem algorithmisch?",
+    "english": ""
+  },
+  "200": {
+    "german": "Beginne mit Startkonfiguration",
+    "english": ""
+  },
+  "201": {
+    "german": "Führe irgendeine erlaubte Umfüll-Operation durch",
+    "english": ""
+  },
+  "202": {
+    "german": "... wiederholt ...",
+    "english": ""
+  },
+  "203": {
+    "german": "... bis entmischte Konfiguration erreicht",
+    "english": ""
+  },
+  "204": {
+    "german": "Wie verwaltet man das sinnvoll?",
+    "english": ""
+  },
+  "205": {
+    "german": "Modellierung als Graph",
+    "english": ""
+  },
+  "206": {
+    "german": "eine Konfiguration ist ein Knoten",
+    "english": ""
+  },
+  "207": {
+    "german": "Kanten zwischen Konfigurationen die man mit erlaubten Operationen ineinander überführen kann",
+    "english": ""
+  },
+  "208": {
+    "german": "Eine Lösung ist ein Pfad von der Startkonfiguration zu einer entmischten Zielkonfiguration",
+    "english": ""
+  },
+  "209": {
+    "german": "\\textit{Wir wissen schon, wie man Wege in Graphen sucht!}",
+    "english": ""
+  },
+  "210": {
+    "german": "... aber es gibt da ein Problem...",
+    "english": ""
+  },
+  "211": {
+    "german": "$k$ Säfte, $\\ell$ Gläser",
+    "english": ""
+  },
+  "212": {
+    "german": "$4k$ Safteinheiten, $4\\ell$ Glaseinheiten",
+    "english": ""
+  },
+  "213": {
+    "german": "${4\\ell}\\choose{4k}$ Möglichkeiten Safteinheiten auf Gläser aufzuteilen",
+    "english": ""
+  },
+  "214": {
+    "german": "$k \\cdot 4!$ Möglichkeiten Safteinheiten gleicher  Säfte zu vertauschen",
+    "english": ""
+  },
+  "215": {
+    "german": "Schwerkraft: Pro Glas $2^4 - 5$ Füllungen mit Luftblasen",
+    "english": ""
+  },
+  "216": {
+    "german": "Anzahl Konfigurationen:",
+    "english": ""
+  },
+  "217": {
+    "german": "Die Anzahl möglicher Konfigurationen ist \\emph{exponentiell} in der Anzahl Säfte.",
+    "english": ""
+  },
+  "218": {
+    "german": "Anzahl Knoten im Graph viel zu hoch",
+    "english": ""
+  },
+  "219": {
+    "german": "Graph aufbauen benötigt zu viel Zeit / Speicher",
+    "english": ""
+  },
+  "220": {
+    "german": "Und dann müssen wir in dem Graphen auch noch Pfade finden...",
+    "english": ""
+  },
+  "221": {
+    "german": "Idee: Graph aufbauen während wir ihn explorieren",
+    "english": ""
+  },
+  "222": {
+    "german": "Startknoten erzeugen",
+    "english": ""
+  },
+  "223": {
+    "german": "eine erlaubte Umfüll-Operationen bestimmen und zugehörige Kante / Knoten in den Graph einfügen",
+    "english": ""
+  },
+  "224": {
+    "german": "Testen ob neuer Knoten eine Zielkonfiguration repräsentiert",
+    "english": ""
+  },
+  "225": {
+    "german": "\\textit{Dieses Verfahren entspricht einer Tiefensuche im Konfigurationsgraphen!}",
+    "english": ""
+  },
+  "226": {
+    "german": "Sackgasse: In einer Konfiguration kann nicht mehr umgefüllt werden",
+    "english": ""
+  },
+  "227": {
+    "german": "Woher wissen wir, wann eine Kante die wir in den Graphen einfügen eine Rückkante ist?",
+    "english": ""
+  },
+  "228": {
+    "german": "Verwalte Hashtabelle von bereits gesehenen Konfigurationen!",
+    "english": ""
+  },
+  "229": {
+    "german": "Wie sieht eine Breitensuche in dem Graphen aus?",
+    "english": ""
+  },
+  "230": {
+    "german": "Warum ist eine Breitensuche ggf. nicht so gut geeignet wie eine Tiefensuche?",
+    "english": ""
+  },
+  "231": {
+    "german": "Breitensuche?",
+    "english": ""
+  },
+  "232": {
+    "german": "\\textbf{Suchbäume}",
+    "english": ""
+  },
+  "233": {
+    "german": "Einfügen, Suchen, Löschen in logarithmischer Zeit",
+    "english": ""
+  },
+  "234": {
+    "german": "Beschränkte Höhe des Suchbaums durch Ausgleich von Binarität und Balanciertheit",
+    "english": ""
+  },
+  "235": {
+    "german": "$(2, 3)$-Bäume vs. Rot-Schwarz-Bäume",
+    "english": ""
+  },
+  "236": {
+    "german": "\\textbf{Tiefensuche}",
+    "english": ""
+  },
+  "237": {
+    "german": "Freiheitsgrad: Reihenfolge der Knoten",
+    "english": ""
+  },
+  "238": {
+    "german": "In-Order-Traversierung zum Auslesen von Rot-Schwarz-Bäumen",
+    "english": ""
+  },
+  "239": {
+    "german": "\\textbf{Modellierung als Graphproblem}",
+    "english": ""
+  },
+  "240": {
+    "german": "Mittels Tiefensuche den Graph möglicher Konfigurationen Schritt für Schritt generieren und durchsuchen",
+    "english": ""
+  },
+  "241": {
+    "german": "Das funktioniert auch mit Konfigurationen anderer Spiele",
+    "english": ""
+  },
+  "242": {
+    "german": "Schach, Dame, Sudoku, \\dots",
+    "english": ""
+  },
+  "243": {
+    "german": "Graphen als Framework für Spiele-Solver!",
+    "english": ""
+  }
+}

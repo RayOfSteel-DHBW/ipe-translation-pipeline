@@ -1,0 +1,754 @@
+{
+  "1": {
+    "german": "In welcher Reihenfolge sollte ich mich anziehen?",
+    "english": ""
+  },
+  "2": {
+    "german": "Topologische Sortierung",
+    "english": ""
+  },
+  "3": {
+    "german": "Topologische Sortierung",
+    "english": ""
+  },
+  "4": {
+    "german": "DFS auf gerichteten Graphen",
+    "english": ""
+  },
+  "5": {
+    "german": "Erkennung der verschiedenen Kantentypen",
+    "english": ""
+  },
+  "6": {
+    "german": "Wie hilft die DFS eine topologische Sortierung zu finden?",
+    "english": ""
+  },
+  "7": {
+    "german": "Abarbeitung aller Knoten",
+    "english": ""
+  },
+  "8": {
+    "german": "Algorithmus $\\rightarrow$ Pseudocode",
+    "english": "Algorithm $\\rightarrow$ pseudocode"
+  },
+  "9": {
+    "german": "Laufzeit und Korrektheit",
+    "english": ""
+  },
+  "10": {
+    "german": "Anmerkungen",
+    "english": "Notes"
+  },
+  "11": {
+    "german": "Zusammenfassung",
+    "english": "Summary"
+  },
+  "12": {
+    "german": "Thomas Bläsius~--~Algorithmen 1",
+    "english": "Thomas Bläsius~--~Algorithms 1"
+  },
+  "13": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "14": {
+    "german": "\\textbf{Tiefensuche auf gerichteten Graphen}",
+    "english": ""
+  },
+  "15": {
+    "german": "\\textbf{Topologische Sortierung}",
+    "english": ""
+  },
+  "16": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "17": {
+    "german": "\\textbf{Abhängigkeiten beachten!}",
+    "english": ""
+  },
+  "18": {
+    "german": "\\textbf{Definition}\\\\\\nSei $G = (V, E)$ ein gerichteter Graph.  Eine \\emph{topologische\\n  Sortierung} ist eine total Ordnung der Knoten $V$, sodass jede Kante\\nvon kleinerem zu größerem Knoten zeigt.\\n",
+    "english": ""
+  },
+  "19": {
+    "german": "\\textbf{Definition}\\\\\\nSei $G = (V, E)$ ein gerichteter Graph.  Eine \\emph{topologische\\n  Sortierung} ist eine total Ordnung der Knoten $V$, sodass jede Kante\\nvon kleinerem zu größerem Knoten zeigt.\\n",
+    "english": ""
+  },
+  "20": {
+    "german": "\\textbf{Wie viele topologische Sortierungen hat dieser Graph?}",
+    "english": ""
+  },
+  "21": {
+    "german": "\\textbf{Ordnungen zählen}",
+    "english": ""
+  },
+  "22": {
+    "german": "$a$ ist in jeder topologischen Sortierung der erste Knoten",
+    "english": ""
+  },
+  "23": {
+    "german": "$f$ ist in jeder topologischen Sortierung der letzte Knoten\\n",
+    "english": ""
+  },
+  "24": {
+    "german": "nach $a$ kommt $b$ oder $c$ $\\rightarrow$ die beiden Fälle sind symmetrisch",
+    "english": ""
+  },
+  "25": {
+    "german": "drei topologische Sortierungen für jeden der Fälle",
+    "english": ""
+  },
+  "26": {
+    "german": "\\textbf{Anmerkung}",
+    "english": "\\textbf{Note}"
+  },
+  "27": {
+    "german": "existiert genau dann wenn $G$ azyklisch ist\\n",
+    "english": ""
+  },
+  "28": {
+    "german": "\\emph{DAG} -- directed acyclic graph\\n",
+    "english": ""
+  },
+  "29": {
+    "german": "\\textbf{Grundsätzliches Ziel auf ungerichteten Graphen}",
+    "english": ""
+  },
+  "30": {
+    "german": "starte bei einem Knoten $s$",
+    "english": "start at a node $s$"
+  },
+  "31": {
+    "german": "besuche alle von $s$ aus erreichbaren Knoten",
+    "english": ""
+  },
+  "32": {
+    "german": "also alle Knoten in der Zusammenhangskomponente von $s$",
+    "english": ""
+  },
+  "33": {
+    "german": "\\textbf{Grundsätzliches Ziel auf gerichteten Graphen}",
+    "english": ""
+  },
+  "34": {
+    "german": "starte bei einem Knoten $s$",
+    "english": "start at a node $s$"
+  },
+  "35": {
+    "german": "besuche alle von $s$ aus erreichbaren Knoten",
+    "english": ""
+  },
+  "36": {
+    "german": "benutze Kanten nur in die richtige Richtung",
+    "english": ""
+  },
+  "37": {
+    "german": "\\textbf{Beobachtungen}",
+    "english": ""
+  },
+  "38": {
+    "german": "man findet ggf.\\ nicht alle Knoten in der Komponente (z.B.: $s = c$)",
+    "english": ""
+  },
+  "39": {
+    "german": "\\emph{Rückkante} ist für manche nicht-Baumkanten eine unpassende Bezeichnung",
+    "english": ""
+  },
+  "40": {
+    "german": "\\emph{\\color{blue1}Vorkanten}: nicht-Baumkante zu einem Nachfolger im\\nselben Teilbaum",
+    "english": ""
+  },
+  "41": {
+    "german": "\\emph{\\color{orange1}Querkanten}: Kante zu einem vorher betrachteten\\nTeilbaum",
+    "english": ""
+  },
+  "42": {
+    "german": "\\textbf{Rückkante}",
+    "english": ""
+  },
+  "43": {
+    "german": "\\textbf{Vorkante}",
+    "english": ""
+  },
+  "44": {
+    "german": "\\textbf{Querkante}",
+    "english": ""
+  },
+  "45": {
+    "german": "\\textbf{Typen von nicht-Baumkanten}",
+    "english": ""
+  },
+  "46": {
+    "german": "\\emph{Rückkante}: Kante zu einem Vorgänger im DFS-Baum",
+    "english": ""
+  },
+  "47": {
+    "german": "\\emph{\\color{blue1}Vorkanten}: Kante zu einem Nachfolger im selben\\nTeilbaum\\n",
+    "english": ""
+  },
+  "48": {
+    "german": "\\emph{\\color{orange1}Querkanten}: Kante zu einem vorher abgearbeiteten\\nTeilbaum\\n",
+    "english": ""
+  },
+  "49": {
+    "german": "\\textbf{Unterscheidung anhand der DFS-Nummer}",
+    "english": ""
+  },
+  "50": {
+    "german": "\\textbf{\\color{blue1}Vorkanten} gehen von kleiner zu großer DFS-Nummer",
+    "english": ""
+  },
+  "51": {
+    "german": "\\textbf{\\color{green1}Rückkanten} und\\n\\textbf{\\color{orange1}Querkanten} von groß zu klein\\n",
+    "english": ""
+  },
+  "52": {
+    "german": "\\textbf{Unterschied zwischen {\\color{green1}Rück-} und\\n  {\\color{orange1} Querkanten}}",
+    "english": ""
+  },
+  "53": {
+    "german": "\\textbf{\\color{green1}Rückkanten}: Start- ist vor Zielknoten fertig\\nabgearbeitet",
+    "english": ""
+  },
+  "54": {
+    "german": "\\textbf{\\color{orange1}Querkante}: Start- ist nach Zielknoten fertig\\nabgearbeitet",
+    "english": ""
+  },
+  "55": {
+    "german": "speichere zusätzlich eine Fertigstellungs-Nummer: FIN-Nummer",
+    "english": ""
+  },
+  "56": {
+    "german": "\\textbf{DFS- und FIN-Nummer}",
+    "english": ""
+  },
+  "57": {
+    "german": "DFS-Nummer: beim ersten Antreffen eines Knotens",
+    "english": ""
+  },
+  "58": {
+    "german": "werden jeweils aufsteigend vergeben",
+    "english": ""
+  },
+  "59": {
+    "german": "FIN-Nummer: beim letzten Antreffen eines Knotens",
+    "english": ""
+  },
+  "60": {
+    "german": "\\textbf{DFS-Nummer}",
+    "english": ""
+  },
+  "61": {
+    "german": "\\textbf{FIN-Nummer}",
+    "english": ""
+  },
+  "62": {
+    "german": "klein $\\rightarrow$ groß",
+    "english": ""
+  },
+  "63": {
+    "german": "groß $\\rightarrow$ klein",
+    "english": ""
+  },
+  "64": {
+    "german": "groß $\\rightarrow$ klein",
+    "english": ""
+  },
+  "65": {
+    "german": "groß $\\rightarrow$ klein",
+    "english": ""
+  },
+  "66": {
+    "german": "klein $\\rightarrow$ groß",
+    "english": ""
+  },
+  "67": {
+    "german": "groß $\\rightarrow$ klein",
+    "english": ""
+  },
+  "68": {
+    "german": "\\textbf{Rückkante}",
+    "english": ""
+  },
+  "69": {
+    "german": "\\textbf{Vorkante}",
+    "english": ""
+  },
+  "70": {
+    "german": "\\textbf{Querkante}",
+    "english": ""
+  },
+  "71": {
+    "german": "\\textbf{Rückkante}",
+    "english": ""
+  },
+  "72": {
+    "german": "\\textbf{Vorkante}",
+    "english": ""
+  },
+  "73": {
+    "german": "\\textbf{Querkante}",
+    "english": ""
+  },
+  "74": {
+    "german": "\\textbf{DFS-Nummer}",
+    "english": ""
+  },
+  "75": {
+    "german": "\\textbf{FIN-Nummer}",
+    "english": ""
+  },
+  "76": {
+    "german": "klein $\\rightarrow$ groß",
+    "english": ""
+  },
+  "77": {
+    "german": "groß $\\rightarrow$ klein",
+    "english": ""
+  },
+  "78": {
+    "german": "groß $\\rightarrow$ klein",
+    "english": ""
+  },
+  "79": {
+    "german": "groß $\\rightarrow$ klein",
+    "english": ""
+  },
+  "80": {
+    "german": "klein $\\rightarrow$ groß",
+    "english": ""
+  },
+  "81": {
+    "german": "groß $\\rightarrow$ klein",
+    "english": ""
+  },
+  "82": {
+    "german": "\\textbf{Baumkante}",
+    "english": ""
+  },
+  "83": {
+    "german": "klein $\\rightarrow$ groß",
+    "english": ""
+  },
+  "84": {
+    "german": "groß $\\rightarrow$ klein",
+    "english": ""
+  },
+  "85": {
+    "german": "\\textbf{Beobachtungen}",
+    "english": ""
+  },
+  "86": {
+    "german": "Rückkanten erzeugen einen Kreis $\\rightarrow$ kann es im DAG nicht geben",
+    "english": ""
+  },
+  "87": {
+    "german": "FIN-Nummer auf den übrigen Kanten:",
+    "english": ""
+  },
+  "88": {
+    "german": "geht immer von groß nach klein",
+    "english": ""
+  },
+  "89": {
+    "german": "ordne Knoten mit absteigender FIN-Nummer\\\\\\n$\\Rightarrow$ Kanten gehen alle von vorne nach hinten",
+    "english": ""
+  },
+  "90": {
+    "german": "\\textbf{Offene Frage}",
+    "english": ""
+  },
+  "91": {
+    "german": "ggf.\\ sind nicht alle Knoten vom Start erreichbar",
+    "english": ""
+  },
+  "92": {
+    "german": "Was tun wir dann?",
+    "english": ""
+  },
+  "93": {
+    "german": "\\textbf{Rückkante}",
+    "english": ""
+  },
+  "94": {
+    "german": "\\textbf{Vorkante}",
+    "english": ""
+  },
+  "95": {
+    "german": "\\textbf{Querkante}",
+    "english": ""
+  },
+  "96": {
+    "german": "\\textbf{Erste DFS}",
+    "english": ""
+  },
+  "97": {
+    "german": "starte DFS bei irgendeinem Knoten $s$",
+    "english": ""
+  },
+  "98": {
+    "german": "sei $V_s$ die von $s$ aus erreichbare Knotenmenge",
+    "english": ""
+  },
+  "99": {
+    "german": "FIN-Nummern liefern topologische Sortierung für $V_s$\\n",
+    "english": ""
+  },
+  "100": {
+    "german": "\\textbf{Noch nicht erreichte Knoten}",
+    "english": ""
+  },
+  "101": {
+    "german": "seien $\\bar V_s = V \\setminus V_s$ die restlichen Knoten",
+    "english": ""
+  },
+  "102": {
+    "german": "keine Kante von $V_s$ nach $\\bar V_s$ (DFS hätte sie sonst gefunden)\\n",
+    "english": ""
+  },
+  "103": {
+    "german": "es ist ok, wenn alle Knoten aus $\\bar V_s$ vor $V_s$ kommen\\n",
+    "english": ""
+  },
+  "104": {
+    "german": "\\textbf{Weitere DFSs}",
+    "english": ""
+  },
+  "105": {
+    "german": "solange es noch unbesuchte Knoten gibt: DFS von unbesuchtem Knoten\\n",
+    "english": ""
+  },
+  "106": {
+    "german": "zähle FIN-Nummern weiter hoch\\n",
+    "english": ""
+  },
+  "107": {
+    "german": "FIN-Nummern liefern topologische Sortierung für alle Knoten\\n",
+    "english": ""
+  },
+  "108": {
+    "german": "\\textbf{Wo sollten die restlichen Knoten $V \\setminus V_s$ einsortiert werden?}",
+    "english": ""
+  },
+  "109": {
+    "german": "$\\mathrm{FIN} \\coloneqq$ \\type{Array} of size $n$ initialized with $\\infty$\\n",
+    "english": ""
+  },
+  "110": {
+    "german": "\\keyword{if} $v$ is uncolored \\keyword{then}\\n",
+    "english": ""
+  },
+  "111": {
+    "german": "\\keyword{return} $V$ sorted by decreasing $\\mathrm{FIN}$",
+    "english": ""
+  },
+  "112": {
+    "german": "color $v$\\n",
+    "english": ""
+  },
+  "113": {
+    "german": "$\\mathrm{curr} \\coloneqq 0$",
+    "english": ""
+  },
+  "114": {
+    "german": "\\keyword{if} $u$ is uncolored \\keyword{then}\\n",
+    "english": ""
+  },
+  "115": {
+    "german": "$\\mathrm{FIN}[v] \\coloneqq \\mathrm{curr}$",
+    "english": ""
+  },
+  "116": {
+    "german": "$\\mathrm{curr} \\coloneqq \\mathrm{curr} + 1$\\n",
+    "english": ""
+  },
+  "117": {
+    "german": "\\mathrm{FIN}[b] = 5",
+    "english": ""
+  },
+  "118": {
+    "german": "\\mathrm{FIN}[e] = 4",
+    "english": ""
+  },
+  "119": {
+    "german": "\\mathrm{FIN}[a] = 1",
+    "english": ""
+  },
+  "120": {
+    "german": "\\mathrm{FIN}[f] = 0",
+    "english": ""
+  },
+  "121": {
+    "german": "\\mathrm{FIN}[d] = 2",
+    "english": ""
+  },
+  "122": {
+    "german": "\\mathrm{FIN}[c] = 3",
+    "english": ""
+  },
+  "123": {
+    "german": "\\mathrm{curr} = 0",
+    "english": ""
+  },
+  "124": {
+    "german": "\\mathrm{curr} = 1",
+    "english": ""
+  },
+  "125": {
+    "german": "\\mathrm{curr} = 2",
+    "english": ""
+  },
+  "126": {
+    "german": "\\mathrm{curr} = 3",
+    "english": ""
+  },
+  "127": {
+    "german": "\\mathrm{curr} = 4",
+    "english": ""
+  },
+  "128": {
+    "german": "\\mathrm{curr} = 5",
+    "english": ""
+  },
+  "129": {
+    "german": "\\mathrm{curr} = 6",
+    "english": ""
+  },
+  "130": {
+    "german": "\\textbf{Theorem}\\\\\\nFür einen DAG $G = (V, E)$ berechnet \\function{topoSort} in\\n$\\Theta(n + m)$ eine topologische Sortierung.\\n",
+    "english": ""
+  },
+  "131": {
+    "german": "\\textbf{Laufzeit}",
+    "english": ""
+  },
+  "132": {
+    "german": "zusätzlich: \\function{topoSort} iteriert einmal über alle Knoten\\n$\\rightarrow$ $\\Theta(n)$\\n",
+    "english": ""
+  },
+  "133": {
+    "german": "grundsätzlich: \\function{DFS} wird nur für ungefärbte Knoten\\naufgerufen",
+    "english": ""
+  },
+  "134": {
+    "german": "Knoten wird gleich zu Beginn von \\function{DFS} gefärbt",
+    "english": ""
+  },
+  "135": {
+    "german": "daher: \\function{DFS} wird für jeden Knoten einmal aufgerufen\\n$\\rightarrow$ $\\Theta(n)$ Aufrufe\\n",
+    "english": ""
+  },
+  "136": {
+    "german": "Kosten der \\function{DFS} Aufrufe selbst:",
+    "english": ""
+  },
+  "137": {
+    "german": "$\\function{DFS}(G, v)$ iteriert über alle ausgehenden Kanten von $v$",
+    "english": ""
+  },
+  "138": {
+    "german": "das betrachtet insgesamt jede Kante einmal $\\rightarrow$ $\\Theta(m)$",
+    "english": ""
+  },
+  "139": {
+    "german": "\\textbf{Korrektheit}",
+    "english": "\\textbf{Correctness}"
+  },
+  "140": {
+    "german": "Korrektheit folgt im Prinzip schon aus der Herleitung mit den\\nKantentypen von vorhin.  Hier aber jetzt nochmal der Vollständigkeit\\nhalber ein formaler Beweis mit dem finalen Wissen, was der Algo tut.\\n",
+    "english": ""
+  },
+  "141": {
+    "german": "für eine Kante $(u, v) \\in E$, zeige:\\n$\\mathrm{FIN}[u] > \\mathrm{FIN}[v]$\\n",
+    "english": ""
+  },
+  "142": {
+    "german": "Fall 1: $\\function{DFS}(G, u)$ wird vor $\\function{DFS}(G, v)$\\naufgerufen",
+    "english": ""
+  },
+  "143": {
+    "german": "color $v$\\n",
+    "english": ""
+  },
+  "144": {
+    "german": "\\keyword{if} $u$ is uncolored \\keyword{then}\\n",
+    "english": ""
+  },
+  "145": {
+    "german": "$\\mathrm{FIN}[v] \\coloneqq \\mathrm{curr}$",
+    "english": ""
+  },
+  "146": {
+    "german": "$\\mathrm{curr} \\coloneqq \\mathrm{curr} + 1$\\n",
+    "english": ""
+  },
+  "147": {
+    "german": "$\\function{DFS}(G, v)$ wird aufgerufen, bevor $\\function{DFS}(G, u)$\\nfertig wird",
+    "english": ""
+  },
+  "148": {
+    "german": "$\\function{DFS}(G, v)$ wird fertig, bevor $\\function{DFS}(G, u)$\\nfertig wird\\n",
+    "english": ""
+  },
+  "149": {
+    "german": "daher: $\\mathrm{FIN}[u] > \\mathrm{FIN}[v]$",
+    "english": ""
+  },
+  "150": {
+    "german": "Fall 2: $\\function{DFS}(G, v)$ wird vor $\\function{DFS}(G, u)$\\naufgerufen",
+    "english": ""
+  },
+  "151": {
+    "german": "$G$ ist ein DAG $\\Rightarrow$ $u$ von $v$ aus nicht erreichbar\\n",
+    "english": ""
+  },
+  "152": {
+    "german": "$\\function{DFS}(G, v)$ wird fertig, bevor $\\function{DFS}(G, u)$\\naufgerufen wird\\n",
+    "english": ""
+  },
+  "153": {
+    "german": "daher: $\\mathrm{FIN}[u] > \\mathrm{FIN}[v]$",
+    "english": ""
+  },
+  "154": {
+    "german": "\\textbf{Was passiert, wenn der Graph kein DAG ist, sondern einen\\n  gerichteten Kreis enthält?}\\n",
+    "english": ""
+  },
+  "155": {
+    "german": "color $v$\\n",
+    "english": ""
+  },
+  "156": {
+    "german": "\\keyword{if} $u$ is uncolored \\keyword{then}\\n",
+    "english": ""
+  },
+  "157": {
+    "german": "$\\mathrm{FIN}[v] \\coloneqq \\mathrm{curr}$",
+    "english": ""
+  },
+  "158": {
+    "german": "$\\mathrm{curr} \\coloneqq \\mathrm{curr} + 1$\\n",
+    "english": ""
+  },
+  "159": {
+    "german": "$\\mathrm{FIN} \\coloneqq$ \\type{Array} of size $n$ initialized with $\\infty$\\n",
+    "english": ""
+  },
+  "160": {
+    "german": "\\keyword{if} $v$ is uncolored \\keyword{then}\\n",
+    "english": ""
+  },
+  "161": {
+    "german": "\\keyword{return} $V$ sorted by decreasing $\\mathrm{FIN}$",
+    "english": ""
+  },
+  "162": {
+    "german": "$\\mathrm{curr} \\coloneqq 0$",
+    "english": ""
+  },
+  "163": {
+    "german": "\\textbf{Theorem}\\\\\\nFür einen DAG $G = (V, E)$ berechnet \\function{topoSort} in\\n$\\Theta(n + m)$ eine topologische Sortierung.\\n",
+    "english": ""
+  },
+  "164": {
+    "german": "\\textbf{Was passiert, wenn der Graph kein DAG ist?}",
+    "english": ""
+  },
+  "165": {
+    "german": "\\textbf{DFS-Nummer}",
+    "english": ""
+  },
+  "166": {
+    "german": "\\textbf{FIN-Nummer}",
+    "english": ""
+  },
+  "167": {
+    "german": "klein $\\rightarrow$ groß",
+    "english": ""
+  },
+  "168": {
+    "german": "groß $\\rightarrow$ klein",
+    "english": ""
+  },
+  "169": {
+    "german": "groß $\\rightarrow$ klein",
+    "english": ""
+  },
+  "170": {
+    "german": "groß $\\rightarrow$ klein",
+    "english": ""
+  },
+  "171": {
+    "german": "klein $\\rightarrow$ groß",
+    "english": ""
+  },
+  "172": {
+    "german": "groß $\\rightarrow$ klein",
+    "english": ""
+  },
+  "173": {
+    "german": "\\textbf{Baumkante}",
+    "english": ""
+  },
+  "174": {
+    "german": "klein $\\rightarrow$ groß",
+    "english": ""
+  },
+  "175": {
+    "german": "groß $\\rightarrow$ klein",
+    "english": ""
+  },
+  "176": {
+    "german": "es werden trotzdem in $\\Theta(n + m)$ die korrekten FIN-Nummern\\nberechnet\\n",
+    "english": ""
+  },
+  "177": {
+    "german": "resultierende Ordnung: Rückkanten gehen in die falsche Richtung",
+    "english": ""
+  },
+  "178": {
+    "german": "\\textbf{Folgerung}",
+    "english": ""
+  },
+  "179": {
+    "german": "wir können \\function{topoSort} also auch nutzen um zu testen, ob $G$\\nein DAG ist\\n",
+    "english": ""
+  },
+  "180": {
+    "german": "einfach \\function{topoSort} laufen lassen und schauen, ob es\\nRückkanten gibt\\n",
+    "english": ""
+  },
+  "181": {
+    "german": "wenn zyklisch, dann findet man sogar einen Kreis: Rückkante + Pfad aus\\nBaumkanten\\n",
+    "english": ""
+  },
+  "182": {
+    "german": "\\textbf{DFS -- Tiefensuche}",
+    "english": "\\textbf{DFS -- depth-first search}"
+  },
+  "183": {
+    "german": "grundlegender Algorithmus: Basis vieler anderer Algorithmen",
+    "english": ""
+  },
+  "184": {
+    "german": "rekursive Implementierung",
+    "english": ""
+  },
+  "185": {
+    "german": "vier Kantentypen in gerichteten Graphen",
+    "english": ""
+  },
+  "186": {
+    "german": "\\textbf{Ein bisschen Graphentheorie}",
+    "english": "\\textbf{A bit of graph theory}"
+  },
+  "187": {
+    "german": "topologische Sortierung und DAGs",
+    "english": ""
+  },
+  "188": {
+    "german": "strukturelle Einsicht $\\rightarrow$ effizienter Algorithmus",
+    "english": "structural insight $\\rightarrow$ efficient algorithm"
+  }
+}

@@ -1,0 +1,1034 @@
+{
+  "1": {
+    "german": "Ablauf",
+    "english": ""
+  },
+  "2": {
+    "german": "Techniktest",
+    "english": ""
+  },
+  "3": {
+    "german": "Algorithmus? Kann man das essen?",
+    "english": ""
+  },
+  "4": {
+    "german": "Was lernen wir hier?",
+    "english": ""
+  },
+  "5": {
+    "german": "Abstraktionsebene? Mentale Shortcuts?",
+    "english": ""
+  },
+  "6": {
+    "german": "Zum warm werden: schriftliche Multiplikation",
+    "english": ""
+  },
+  "7": {
+    "german": "Je genauer desto besser?",
+    "english": ""
+  },
+  "8": {
+    "german": "Welcher Algorithmus ist schneller?",
+    "english": ""
+  },
+  "9": {
+    "german": "Landau-Notation: Vergleich von Laufzeiten",
+    "english": ""
+  },
+  "10": {
+    "german": "Landau-Notation: Ordnung auf Funktionen",
+    "english": ""
+  },
+  "11": {
+    "german": "Landau-Notation: Warum so kompliziert?",
+    "english": ""
+  },
+  "12": {
+    "german": "Landau-Notation: Klickern",
+    "english": ""
+  },
+  "13": {
+    "german": "Landau-Notation: alternative Definition",
+    "english": ""
+  },
+  "14": {
+    "german": "Asymptotik und tatsächliche Laufzeiten",
+    "english": ""
+  },
+  "15": {
+    "german": "Zurück zur schriftlichen Multiplikation",
+    "english": ""
+  },
+  "16": {
+    "german": "Landau-Notation: zusätzliche Anmerkungen",
+    "english": ""
+  },
+  "17": {
+    "german": "Zusammenfassung",
+    "english": "Summary"
+  },
+  "18": {
+    "german": "Thomas Bläsius~--~Algorithmen 1",
+    "english": "Thomas Bläsius~--~Algorithms 1"
+  },
+  "19": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "20": {
+    "german": "\\textbf{Einführung}",
+    "english": ""
+  },
+  "21": {
+    "german": "\\textbf{Schriftliche Multiplikation und Landau-Notation}",
+    "english": ""
+  },
+  "22": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "23": {
+    "german": "\\textbf{Übung}",
+    "english": ""
+  },
+  "24": {
+    "german": "\\textbf{Grundsätzlich gilt:} mehr Details auch nochmal auf der\\nHomepage\\n",
+    "english": ""
+  },
+  "25": {
+    "german": "machen Max und Marcus",
+    "english": ""
+  },
+  "26": {
+    "german": "\\textbf{Übungsblätter \\& Tutorien}",
+    "english": ""
+  },
+  "27": {
+    "german": "sehr wichtig für den Lernerfolg",
+    "english": ""
+  },
+  "28": {
+    "german": "Klausurbonus",
+    "english": ""
+  },
+  "29": {
+    "german": "Einteilung bis \\emph{Donnerstag 18:00 Uhr}",
+    "english": ""
+  },
+  "30": {
+    "german": "\\textbf{Fragen} $\\rightarrow$ Discord (Link im Ilias)\\n",
+    "english": ""
+  },
+  "31": {
+    "german": "vertieft den Stoff der Vorlesung",
+    "english": ""
+  },
+  "32": {
+    "german": "mehr dazu nächsten Montag",
+    "english": ""
+  },
+  "33": {
+    "german": "\\textbf{Rhythmus}\\n",
+    "english": ""
+  },
+  "34": {
+    "german": "Übung alle zwei Wochen (meist mittwochs)\\n",
+    "english": ""
+  },
+  "35": {
+    "german": "zwei Termine pro Woche\\n",
+    "english": ""
+  },
+  "36": {
+    "german": "außerdem: wöchentliche Tutorien",
+    "english": ""
+  },
+  "37": {
+    "german": "Übungsblätter immer mittwochs",
+    "english": ""
+  },
+  "38": {
+    "german": "\\textbf{Materialien}\\n",
+    "english": ""
+  },
+  "39": {
+    "german": "auf der Homepage",
+    "english": ""
+  },
+  "40": {
+    "german": "Vorlesungsaufzeichnung im Ilias",
+    "english": ""
+  },
+  "41": {
+    "german": "\\textbf{Wie formell soll es sein?}",
+    "english": ""
+  },
+  "42": {
+    "german": "\\textbf{al-Chwarizmi}",
+    "english": ""
+  },
+  "43": {
+    "german": "persischer Rechenmeister und Astronom",
+    "english": ""
+  },
+  "44": {
+    "german": "lebte ca.\\ 780--840 in Bagdad",
+    "english": ""
+  },
+  "45": {
+    "german": "Herkunft des Begriffs \"`Algorithmus\"'",
+    "english": ""
+  },
+  "46": {
+    "german": "latinisierter Name: Algorismi",
+    "english": ""
+  },
+  "47": {
+    "german": "\\textbf{Moderne Definition (Wikipedia)}",
+    "english": ""
+  },
+  "48": {
+    "german": "Ein Algorithmus ist eine eindeutige Handlungsvorschrift zur Lösung\\neines Problems oder einer Klasse von Problemen.\\n",
+    "english": ""
+  },
+  "49": {
+    "german": "Algorithmen bestehen aus endlich vielen, wohldefinierten\\nEinzelschritten.\\n",
+    "english": ""
+  },
+  "50": {
+    "german": "Damit können sie zur Ausführung in ein Computerprogramm implementiert,\\naber auch in menschlicher Sprache formuliert werden.\\n",
+    "english": ""
+  },
+  "51": {
+    "german": "Bei der Problemlösung wird eine bestimmte Eingabe in eine bestimmte\\nAusgabe überführt.\\n",
+    "english": ""
+  },
+  "52": {
+    "german": "\\textbf{Wissen, verstehen, anwenden}",
+    "english": ""
+  },
+  "53": {
+    "german": "Vokabular an Fachbegriffen",
+    "english": ""
+  },
+  "54": {
+    "german": "algorithmische Bausteine",
+    "english": ""
+  },
+  "55": {
+    "german": "algorithmische Techniken",
+    "english": ""
+  },
+  "56": {
+    "german": "Was ist eine amortisierte Analyse?",
+    "english": ""
+  },
+  "57": {
+    "german": "Was ist ein dynamisches Programm?",
+    "english": ""
+  },
+  "58": {
+    "german": "Was macht Teile und Herrsche?",
+    "english": ""
+  },
+  "59": {
+    "german": "Was ist eine Rekurrenz und wie löst man das?",
+    "english": ""
+  },
+  "60": {
+    "german": "Was ist ein Heap? Was ist ein Suchbaum? Was kann ich damit machen?",
+    "english": ""
+  },
+  "61": {
+    "german": "Was ist ein greedy Algorithmus?",
+    "english": ""
+  },
+  "62": {
+    "german": "\\textbf{Analysieren, evaluieren, erschaffen}",
+    "english": ""
+  },
+  "63": {
+    "german": "Wechsel zwischen Abstraktionsebenen\\n",
+    "english": ""
+  },
+  "64": {
+    "german": "Aufbau mentaler Shortcuts",
+    "english": ""
+  },
+  "65": {
+    "german": "Laufzeitanalyse",
+    "english": ""
+  },
+  "66": {
+    "german": "Entwicklung eigener Algorithmen",
+    "english": ""
+  },
+  "67": {
+    "german": "Auswahl geeigneter Techniken und Bausteine",
+    "english": ""
+  },
+  "68": {
+    "german": "Ist der Algorithmus schnell genug?",
+    "english": ""
+  },
+  "69": {
+    "german": "Wie kann ich ein gegebenes Problem effizient lösen?",
+    "english": ""
+  },
+  "70": {
+    "german": "Welche Datenstruktur sollte ich verwenden?",
+    "english": ""
+  },
+  "71": {
+    "german": "Welche algorithmische Idee könnte funktionieren?",
+    "english": ""
+  },
+  "72": {
+    "german": "Ist meine Idee wirklich umsetzbar?",
+    "english": ""
+  },
+  "73": {
+    "german": "Ist mein Algorithmus korrekt?",
+    "english": ""
+  },
+  "74": {
+    "german": "Transistoren",
+    "english": ""
+  },
+  "75": {
+    "german": "logische Gatter",
+    "english": ""
+  },
+  "76": {
+    "german": "Maschinencode",
+    "english": ""
+  },
+  "77": {
+    "german": "Assemblercode",
+    "english": ""
+  },
+  "78": {
+    "german": "Programmiersprache",
+    "english": ""
+  },
+  "79": {
+    "german": "hoch",
+    "english": ""
+  },
+  "80": {
+    "german": "tief",
+    "english": ""
+  },
+  "81": {
+    "german": "\\textbf{Wahl der richtigen Abstraktionsebene}",
+    "english": ""
+  },
+  "82": {
+    "german": "beim Programmieren will man nicht über Transistoren nachdenken müssen",
+    "english": ""
+  },
+  "83": {
+    "german": "die Programmiersprache abstrahiert von der Hardware",
+    "english": ""
+  },
+  "84": {
+    "german": "\\textbf{Algorithmenentwurf}",
+    "english": ""
+  },
+  "85": {
+    "german": "beim Ausdenken des Algorithmus will man zunächst nicht über das\\nProgrammieren nachdenken\\n",
+    "english": ""
+  },
+  "86": {
+    "german": "wir brauchen zusätzliche Abstraktionsebenen\\n",
+    "english": ""
+  },
+  "87": {
+    "german": "Programmiersprache",
+    "english": ""
+  },
+  "88": {
+    "german": "Pseudocode",
+    "english": ""
+  },
+  "89": {
+    "german": "nat.\\ Sprache / Bilder",
+    "english": ""
+  },
+  "90": {
+    "german": "high-level Idee",
+    "english": ""
+  },
+  "91": {
+    "german": "formaler",
+    "english": ""
+  },
+  "92": {
+    "german": "Beweis",
+    "english": ""
+  },
+  "93": {
+    "german": "intuitive Argumente",
+    "english": ""
+  },
+  "94": {
+    "german": "\\textbf{Problem \\& Lösung}",
+    "english": ""
+  },
+  "95": {
+    "german": "viele high-level Ideen gehen beim konkretisieren kaputt",
+    "english": ""
+  },
+  "96": {
+    "german": "mentale Shortcuts: Intuition was geht und was nicht",
+    "english": ""
+  },
+  "97": {
+    "german": "bekommt man nur mit viel Training",
+    "english": ""
+  },
+  "98": {
+    "german": "Konkretisierung oft gar nicht so einfach",
+    "english": ""
+  },
+  "99": {
+    "german": "\\textbf{Wie geht das nochmal?}",
+    "english": ""
+  },
+  "100": {
+    "german": "berechne $a \\cdot b_i$ für jede Ziffer $b_i$ von $b = (b_{n-1} \\dots b_0)$",
+    "english": ""
+  },
+  "101": {
+    "german": "verschiebe Ergebnis um $i$ Stellen nach links",
+    "english": ""
+  },
+  "102": {
+    "german": "addiere Ergebnisse",
+    "english": ""
+  },
+  "103": {
+    "german": "\\textbf{Wie viele Schritte braucht das, wenn $a$ und $b$ jeweils $n$\\n  Ziffern haben?}",
+    "english": ""
+  },
+  "104": {
+    "german": "\\textbf{Wie viele Schritte braucht das, wenn $a$ und $b$ jeweils $n$\\n  Ziffern haben?}",
+    "english": ""
+  },
+  "105": {
+    "german": "Berechnung von $a \\cdot b_i$ für ein $i$",
+    "english": ""
+  },
+  "106": {
+    "german": "$n$ Multiplikationen",
+    "english": ""
+  },
+  "107": {
+    "german": "zusätzlich: Übertrag $\\rightarrow$ $n - 1$ Additionen (oder $2n - 2$?)",
+    "english": ""
+  },
+  "108": {
+    "german": "$\\rightarrow 2n - 1$ Operationen",
+    "english": ""
+  },
+  "109": {
+    "german": "insgesamt (alle $i$): $2n^2 - n$\\n",
+    "english": ""
+  },
+  "110": {
+    "german": "schriftliche Addition am Ende",
+    "english": ""
+  },
+  "111": {
+    "german": "pro Schritt: addiere eine Zeile auf bisheriges Ergebnis drauf\\n$\\rightarrow$ $n + 1$ Additionen",
+    "english": ""
+  },
+  "112": {
+    "german": "zusätzlich: Übertrag $\\rightarrow$ $n$ Additionen",
+    "english": ""
+  },
+  "113": {
+    "german": "beachte: bisheriges Ergebnis hat nicht zu viele Stellen",
+    "english": ""
+  },
+  "114": {
+    "german": "$n - 1$ Schritte $\\rightarrow (n - 1)(2n + 1)$\\n",
+    "english": ""
+  },
+  "115": {
+    "german": "\\textbf{Warum ist das so kompliziert?}",
+    "english": ""
+  },
+  "116": {
+    "german": "\\textbf{Und wen interessiert das überhaupt so genau?}",
+    "english": ""
+  },
+  "117": {
+    "german": "Grumpy cat line art",
+    "english": "Grumpy cat line art"
+  },
+  "118": {
+    "german": "XXspiritwolf2000XX",
+    "english": "XXspiritwolf2000XX"
+  },
+  "119": {
+    "german": "Creative Commons",
+    "english": "Creative Commons"
+  },
+  "120": {
+    "german": "Bild:",
+    "english": "Image:"
+  },
+  "121": {
+    "german": "\\textbf{Eine zu genaue Betrachtungsweise\\dots}",
+    "english": ""
+  },
+  "122": {
+    "german": "erschwert die Analyse",
+    "english": ""
+  },
+  "123": {
+    "german": "bringt wenig relevante Einsicht",
+    "english": ""
+  },
+  "124": {
+    "german": "versperrt den Blick auf das Wesentliche bei der Suche nach einem\\nbesseren Algorithmus",
+    "english": ""
+  },
+  "125": {
+    "german": "\\textbf{Wie ungenau darf's denn sein?}",
+    "english": ""
+  },
+  "126": {
+    "german": "hängt zum Teil von der Situation ab",
+    "english": ""
+  },
+  "127": {
+    "german": "fast immer gilt:",
+    "english": ""
+  },
+  "128": {
+    "german": "Terme  niedriger Ordnung interessieren nicht",
+    "english": ""
+  },
+  "129": {
+    "german": "konstante Faktoren interessieren nicht",
+    "english": ""
+  },
+  "130": {
+    "german": "formales Werkzeug: Landau-Symbole (O-Notation)",
+    "english": ""
+  },
+  "131": {
+    "german": "\\textbf{Alice und Bob haben einen Algorithmus entwickelt}",
+    "english": ""
+  },
+  "132": {
+    "german": "ihre Laufzeit hängt von der Problemgröße $n$ ab",
+    "english": ""
+  },
+  "133": {
+    "german": "Bobs Algorithmus benötigt $f(n) = n^2 + 2$ Schritte",
+    "english": ""
+  },
+  "134": {
+    "german": "Alice Algorithmus benötigt $g(n) = 4n + 1$ Schritte",
+    "english": ""
+  },
+  "135": {
+    "german": "Und wenn Bobs Rechner schneller ist?",
+    "english": ""
+  },
+  "136": {
+    "german": "Noch schneller?",
+    "english": ""
+  },
+  "137": {
+    "german": "\\textbf{Egal wie schnell Bobs Rechner ist \\dots}",
+    "english": ""
+  },
+  "138": {
+    "german": "für ausreichend großes $n$ ist Alice Algorithmus schneller",
+    "english": ""
+  },
+  "139": {
+    "german": "denn: $g(n) \\le \\frac{f(n)}{c}$ für $n > 5c$",
+    "english": ""
+  },
+  "140": {
+    "german": "(Faktor $c$ schneller)",
+    "english": ""
+  },
+  "141": {
+    "german": "\\textbf{Nebenrechnung}",
+    "english": ""
+  },
+  "142": {
+    "german": "\\textbf{Formal:}\\n$\\forall c\\, \\exists n_0\\, \\forall n > n_0\\; f(n) > c\\cdot g(n)$\\n",
+    "english": ""
+  },
+  "143": {
+    "german": "wir sagen: $f(n)$ wächst \\textbf{asymptotisch schneller} als $g(n)$",
+    "english": ""
+  },
+  "144": {
+    "german": "und schreiben: $f(n) \\in \\omega(g(n))$",
+    "english": ""
+  },
+  "145": {
+    "german": "\\textbf{Notation}",
+    "english": "\\textbf{Notation}"
+  },
+  "146": {
+    "german": "\\textbf{Asymptotischer Vergleich}",
+    "english": ""
+  },
+  "147": {
+    "german": "\\textbf{Formale Definition}",
+    "english": ""
+  },
+  "148": {
+    "german": "$f(n)$ wächst schneller als $g(n)$",
+    "english": ""
+  },
+  "149": {
+    "german": "(egal wie viel schneller der Rechner für $f(n)$, für genügend großes\\n$n$ ist $f(n)$ größer als $g(n)$)",
+    "english": ""
+  },
+  "150": {
+    "german": "$f(n)$ wächst min.\\ so schnell wie $g(n)$",
+    "english": ""
+  },
+  "151": {
+    "german": "(wenn der Rechner für $f(n)$ langsam genug und $n$ groß genug ist,\\ndann ist $f(n)$ größer als $g(n)$)",
+    "english": ""
+  },
+  "152": {
+    "german": "$f(n)$ und $g(n)$ wachsen gleich schnell",
+    "english": ""
+  },
+  "153": {
+    "german": "(es hängt vom Rechner ab, welche Laufzeit für großes $n$ schneller\\nwächst)",
+    "english": ""
+  },
+  "154": {
+    "german": "$f(n)$ wächst max.\\ so schnell wie $g(n)$\\n",
+    "english": ""
+  },
+  "155": {
+    "german": "(wenn der Rechner für $f(n)$ schnell genug und $n$ groß genug ist,\\ndann ist $f(n)$ kleiner als $g(n)$)",
+    "english": ""
+  },
+  "156": {
+    "german": "$f(n)$ wächst langsamer als $g(n)$\\n",
+    "english": ""
+  },
+  "157": {
+    "german": "(egal wieviel langsamer der Rechner für $f(n)$, für genügend großes\\n$n$ ist $f(n)$ kleiner als $g(n)$)",
+    "english": ""
+  },
+  "158": {
+    "german": "\\textbf{Anmerkung}",
+    "english": "\\textbf{Note}"
+  },
+  "159": {
+    "german": "$\\Theta(g(n))$ ist die Äquivalenzklasse\\n",
+    "english": ""
+  },
+  "160": {
+    "german": "asymptotisch gleich schnell zu wachsen ist eine Äquivalenzrelation\\n",
+    "english": ""
+  },
+  "161": {
+    "german": "kleine Funkionen",
+    "english": ""
+  },
+  "162": {
+    "german": "große Funkionen",
+    "english": ""
+  },
+  "163": {
+    "german": "langsam wachsend",
+    "english": ""
+  },
+  "164": {
+    "german": "schnelle Laufzeit",
+    "english": ""
+  },
+  "165": {
+    "german": "schnell wachsend",
+    "english": ""
+  },
+  "166": {
+    "german": "langsame Laufzeit",
+    "english": ""
+  },
+  "167": {
+    "german": "\\textbf{Warum ist das so kompliziert?}",
+    "english": ""
+  },
+  "168": {
+    "german": "\\textbf{Wollten wir uns das Leben nicht einfacher machen?}",
+    "english": ""
+  },
+  "169": {
+    "german": "Grumpy cat line art",
+    "english": "Grumpy cat line art"
+  },
+  "170": {
+    "german": "XXspiritwolf2000XX",
+    "english": "XXspiritwolf2000XX"
+  },
+  "171": {
+    "german": "Creative Commons",
+    "english": "Creative Commons"
+  },
+  "172": {
+    "german": "Bild:",
+    "english": "Image:"
+  },
+  "173": {
+    "german": "\\textbf{Anmerkung}",
+    "english": "\\textbf{Note}"
+  },
+  "174": {
+    "german": "mit der formalen Definition zu arbeiten ist mühsam",
+    "english": ""
+  },
+  "175": {
+    "german": "was wir brauchen sind einfache Rechenregeln\\n",
+    "english": ""
+  },
+  "176": {
+    "german": "und etwas Übung\\n",
+    "english": ""
+  },
+  "177": {
+    "german": "(sehr ähnliche Regeln gelten auch für die anderen Symbole)",
+    "english": ""
+  },
+  "178": {
+    "german": "\\textbf{Konstante Faktoren}\\\\\\n$a\\cdot f(n) \\in \\Theta(f(n))$\\n",
+    "english": ""
+  },
+  "179": {
+    "german": "\\textbf{Monome}\\n",
+    "english": ""
+  },
+  "180": {
+    "german": "\\textbf{Transitivität}\\\\\\n$f_1(n) \\in O(f_2(n)) \\, \\wedge \\, f_2(n) \\in O(f_3(n)) \\,\\Rightarrow\\,\\nf_1(n) \\in O(f_3(n))$",
+    "english": ""
+  },
+  "181": {
+    "german": "\\textbf{Summen}\\\\\\n$f_1(n) \\in O(f_3(n)) \\, \\wedge \\, f_2(n) \\in O(f_3(n)) \\,\\Rightarrow\\,\\nf_1(n) + f_2(n) \\in O(f_3(n))$",
+    "english": ""
+  },
+  "182": {
+    "german": "\\textbf{Produkte}\\\\\\n$f_1(n) \\in O(g_1(n)) \\, \\wedge \\, f_2(n) \\in O(g_2(n)) \\,\\Rightarrow\\,\\nf_1(n) \\cdot f_2(n) \\in O(g_1(n) \\cdot g_2(n))$",
+    "english": ""
+  },
+  "183": {
+    "german": "klein",
+    "english": ""
+  },
+  "184": {
+    "german": "groß",
+    "english": ""
+  },
+  "185": {
+    "german": "\\textbf{Konstante Faktoren}\\\\\\n$a\\cdot f(n) \\in \\Theta(f(n))$\\n",
+    "english": ""
+  },
+  "186": {
+    "german": "\\textbf{Monome}\\n",
+    "english": ""
+  },
+  "187": {
+    "german": "\\textbf{Transitivität}\\\\\\n$f_1(n) \\in O(f_2(n)) \\, \\wedge \\, f_2(n) \\in O(f_3(n)) \\,\\Rightarrow\\,\\nf_1(n) \\in O(f_3(n))$",
+    "english": ""
+  },
+  "188": {
+    "german": "\\textbf{Summen}\\\\\\n$f_1(n) \\in O(f_3(n)) \\, \\wedge \\, f_2(n) \\in O(f_3(n)) \\,\\Rightarrow\\,\\nf_1(n) + f_2(n) \\in O(f_3(n))$",
+    "english": ""
+  },
+  "189": {
+    "german": "\\textbf{Produkte}\\\\\\n$f_1(n) \\in O(g_1(n)) \\, \\wedge \\, f_2(n) \\in O(g_2(n)) \\,\\Rightarrow\\,\\nf_1(n) \\cdot f_2(n) \\in O(g_1(n) \\cdot g_2(n))$",
+    "english": ""
+  },
+  "190": {
+    "german": "\\textbf{Welche der Aussagen ist korrekt?}",
+    "english": ""
+  },
+  "191": {
+    "german": "\\textbf{Betrachte Grenzwert $\\ell = \\lim\\limits_{n \\to \\infty} \\frac{f(n)}{g(n)}$}",
+    "english": ""
+  },
+  "192": {
+    "german": "(Annahmen: Grenzwert existiert, $f(n)$ und $g(n)$ positiv)",
+    "english": ""
+  },
+  "193": {
+    "german": "\\textbf{Welche Sichtweise soll ich denn jetzt verwenden?}",
+    "english": ""
+  },
+  "194": {
+    "german": "immer die, die gerade am angenehmsten ist",
+    "english": ""
+  },
+  "195": {
+    "german": "die Rechenregeln von vorhin reichen dann aus",
+    "english": ""
+  },
+  "196": {
+    "german": "wenn der mentale Shortcut fehlt: Grenzwertbetrachtung",
+    "english": ""
+  },
+  "197": {
+    "german": "mentaler Shortcut: mit der Zeit kennt man $\\Theta$-Klassen wichtiger\\nelementarer Funktionen\\n",
+    "english": ""
+  },
+  "198": {
+    "german": "\\textbf{Ein paar elementare Funktionen}",
+    "english": ""
+  },
+  "199": {
+    "german": "konstant",
+    "english": ""
+  },
+  "200": {
+    "german": "iterierter Logarithmus",
+    "english": ""
+  },
+  "201": {
+    "german": "polylogarithmisch",
+    "english": ""
+  },
+  "202": {
+    "german": "polynomiell",
+    "english": ""
+  },
+  "203": {
+    "german": "linear",
+    "english": ""
+  },
+  "204": {
+    "german": "sub-linear",
+    "english": ""
+  },
+  "205": {
+    "german": "super-linear",
+    "english": ""
+  },
+  "206": {
+    "german": "quasi-polynomiell",
+    "english": ""
+  },
+  "207": {
+    "german": "super-polynomiell, sub-exponentiell",
+    "english": ""
+  },
+  "208": {
+    "german": "exponentiell",
+    "english": ""
+  },
+  "209": {
+    "german": "super-exponentiell",
+    "english": ""
+  },
+  "210": {
+    "german": "\\textbf{Welche der Aussagen ist korrekt?}",
+    "english": ""
+  },
+  "211": {
+    "german": "\\textbf{Gedankenexperiment}",
+    "english": ""
+  },
+  "212": {
+    "german": "Algorithmus braucht $f(n)$ Schritte",
+    "english": ""
+  },
+  "213": {
+    "german": "Annahme: ca.~\\SI{10}{M} Schritte pro Sekunde",
+    "english": ""
+  },
+  "214": {
+    "german": "Wie groß darf die Eingabe sein, damit der Algorithmus nach \\SI{1}{ms}\\nfertig ist?\\n",
+    "english": ""
+  },
+  "215": {
+    "german": "Wie groß darf die Eingabe sein, damit der Algorithmus nach \\SI{1}{s}\\nfertig ist?\\n",
+    "english": ""
+  },
+  "216": {
+    "german": "Wie groß darf die Eingabe sein, damit der Algorithmus nach \\SI{10}{ms}\\nfertig ist?\\n",
+    "english": ""
+  },
+  "217": {
+    "german": "Wie groß darf die Eingabe sein, damit der Algorithmus nach \\SI{100}{ms}\\nfertig ist?\\n",
+    "english": ""
+  },
+  "218": {
+    "german": "Wie groß darf die Eingabe sein, damit der Algorithmus nach \\SI{10}{s}\\nfertig ist?\\n",
+    "english": ""
+  },
+  "219": {
+    "german": "\\textbf{Wie geht das nochmal?}",
+    "english": ""
+  },
+  "220": {
+    "german": "berechne $a \\cdot b_i$ für jede Ziffer $b_i$ von $b = b_n \\dots b_1$",
+    "english": ""
+  },
+  "221": {
+    "german": "verschiebe Ergebnis um $i - 1$ Stellen nach links",
+    "english": ""
+  },
+  "222": {
+    "german": "addiere Ergebnisse",
+    "english": ""
+  },
+  "223": {
+    "german": "\\textbf{Wie viele Schritte braucht das, wenn $a$ und $b$ jeweils $n$\\n  Ziffern haben?}",
+    "english": ""
+  },
+  "224": {
+    "german": "Berechnung von $a \\cdot b_i$ für ein $i$ $\\rightarrow$ $\\Theta(n)$ Operationen",
+    "english": ""
+  },
+  "225": {
+    "german": "insgesamt (alle $i$): $\\Theta(n^2)$",
+    "english": ""
+  },
+  "226": {
+    "german": "schriftliche Addition am Ende",
+    "english": ""
+  },
+  "227": {
+    "german": "addiere in jedem Schritt zwei Zahlen mit $\\Theta(n)$ Ziffern",
+    "english": ""
+  },
+  "228": {
+    "german": "nach $\\Theta(n)$ Schritten hat man das Ergebnis",
+    "english": ""
+  },
+  "229": {
+    "german": "insgesamt: $\\Theta(n^2)$",
+    "english": ""
+  },
+  "230": {
+    "german": "\\textbf{Schreibweise mit $=$}",
+    "english": ""
+  },
+  "231": {
+    "german": "$O(g(n))$ ist eine Menge von Funktionen",
+    "english": ""
+  },
+  "232": {
+    "german": "daher schreiben wir:\\n$\\left(4n^{0.98} - \\sqrt{n}\\right) \\in O\\left(n^{0.98}\\right) \\subseteq O(n)$\\n",
+    "english": ""
+  },
+  "233": {
+    "german": "oft sieht man auch: \\hspace{1ex}$\\left(4n^{0.98} - \\sqrt{n}\\right) =\\nO\\left(n^{0.98}\\right) = O(n)$\\n",
+    "english": ""
+  },
+  "234": {
+    "german": "\\textbf{$O$ in der Formel}",
+    "english": ""
+  },
+  "235": {
+    "german": "manchmal sieht man z.B.: $2^{\\Theta(n)}$\\n",
+    "english": ""
+  },
+  "236": {
+    "german": "damit ist die Menge der Funktionen der Form $2^{f(n)}$ für\\n$f(n) \\in \\Theta(n)$ gemeint\\n",
+    "english": ""
+  },
+  "237": {
+    "german": "also: Menge der Exponentialfunktionen\\n",
+    "english": ""
+  },
+  "238": {
+    "german": "($f(n) \\in 2^{\\Theta(n)}$ wenn\\n$c_1^n < f(n) < c_2^n$ für Konstanten $c_1$, $c_2$)",
+    "english": ""
+  },
+  "239": {
+    "german": "damit kann man Laufzeiten noch gröber abschätzen",
+    "english": ""
+  },
+  "240": {
+    "german": "($\\Theta(2^n) \\not= \\Theta(3^n)$ aber $2^{\\Theta(n)} = 3^{\\Theta(n)}$)\\n",
+    "english": ""
+  },
+  "241": {
+    "german": "\\textbf{Schrumpfende Funktionen}",
+    "english": ""
+  },
+  "242": {
+    "german": "manchmal betrachtet man auch in $n$ schrumpfende Funktionen",
+    "english": ""
+  },
+  "243": {
+    "german": "z.B.: Wahrscheinlichkeit $1 - O\\left(\\frac{1}{n}\\right)$ geht gegen 1\\nfür $n \\to \\infty$\\n",
+    "english": ""
+  },
+  "244": {
+    "german": "das $O\\left(\\frac{1}{n}\\right)$ gibt die Konvergenzgeschwindigkeit an\\n",
+    "english": ""
+  },
+  "245": {
+    "german": "\\textbf{Asymptotische Betrachtungsweise von Laufzeiten}",
+    "english": ""
+  },
+  "246": {
+    "german": "vereinfacht die Laufzeitanalyse durch Weglassen unwichtiger Informationen",
+    "english": ""
+  },
+  "247": {
+    "german": "verhindert Ablenkung vom Wesentlichen beim Entwurf von Algorithmen",
+    "english": ""
+  },
+  "248": {
+    "german": "\\textbf{Werkzeug für diese Betrachtungsweise: Landau-Notation}",
+    "english": ""
+  },
+  "249": {
+    "german": "formale Definition(en) für Fälle in denen die Shortcuts nicht ausreichen",
+    "english": ""
+  },
+  "250": {
+    "german": "mentale Shortcuts: einfache Rechenregeln + Eingruppierung elementarer\\nFunktionen",
+    "english": ""
+  },
+  "251": {
+    "german": "\\textbf{Schriftliche Multiplikation}",
+    "english": ""
+  },
+  "252": {
+    "german": "asymptotische Laufzeit $\\Theta(n^2)$",
+    "english": ""
+  },
+  "253": {
+    "german": "nächste Vorlesung: schnellerer Algorithmus",
+    "english": ""
+  },
+  "254": {
+    "german": "liefert meist sehr gute Vorhersage für die Praxis",
+    "english": ""
+  },
+  "255": {
+    "german": "($\\Theta(n)$ ist (fast) immer besser als $\\Theta(n^2)$)",
+    "english": ""
+  },
+  "256": {
+    "german": "tolles Werkzeug für faule Programmierer:",
+    "english": ""
+  },
+  "257": {
+    "german": "schließe asymptotisch langsamere Algorithmen direkt aus",
+    "english": ""
+  },
+  "258": {
+    "german": "weniger Arbeit beim Implementieren und Testen",
+    "english": ""
+  }
+}

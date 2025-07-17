@@ -1,0 +1,982 @@
+{
+  "1": {
+    "german": "Fibonacci-Zahlen",
+    "english": ""
+  },
+  "2": {
+    "german": "Was ist hier passiert?",
+    "english": ""
+  },
+  "3": {
+    "german": "Problemstellung: Splittability",
+    "english": ""
+  },
+  "4": {
+    "german": "Teilprobleme und rekursive Definition",
+    "english": ""
+  },
+  "5": {
+    "german": "Korrektheit",
+    "english": ""
+  },
+  "6": {
+    "german": "Iterative Implementierung",
+    "english": ""
+  },
+  "7": {
+    "german": "In drei Schritten zum dynamischen Programm",
+    "english": ""
+  },
+  "8": {
+    "german": "Longest Common Subsequence",
+    "english": ""
+  },
+  "9": {
+    "german": "Longest Common Subsequence: Schritt 3",
+    "english": ""
+  },
+  "10": {
+    "german": "Subset Sum",
+    "english": ""
+  },
+  "11": {
+    "german": "Subset Sum: Teilprobleme und Rekurrenz",
+    "english": ""
+  },
+  "12": {
+    "german": "Subset Sum: Schritt 3",
+    "english": ""
+  },
+  "13": {
+    "german": "Alternativer Sichtweise für Schritt 3: Pfadfindung",
+    "english": ""
+  },
+  "14": {
+    "german": "In drei Schritten zum dynamischen Programm",
+    "english": ""
+  },
+  "15": {
+    "german": "Zusammenfassung",
+    "english": "Summary"
+  },
+  "16": {
+    "german": "Bonus: Längster Pfad im Baum",
+    "english": ""
+  },
+  "17": {
+    "german": "Bonus: Längster Pfad im Baum: Korrektheit",
+    "english": ""
+  },
+  "18": {
+    "german": "Bonus: Längster Pfad im Baum: Schritt 3",
+    "english": ""
+  },
+  "19": {
+    "german": "Thomas Bläsius~--~Algorithmen 1",
+    "english": "Thomas Bläsius~--~Algorithms 1"
+  },
+  "20": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "21": {
+    "german": "\\textbf{Dynamische Programmierung}",
+    "english": ""
+  },
+  "22": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "23": {
+    "german": "\\textbf{Definition:} $F(1) = F(2) = 1, \\; F(n) = F(n - 1) + F(n - 2)$ für $n \\ge 3$",
+    "english": ""
+  },
+  "24": {
+    "german": "$F \\coloneqq$ \\type{Array} of size $n + 1$\\n",
+    "english": ""
+  },
+  "25": {
+    "german": "\\textbf{Laufzeit}",
+    "english": ""
+  },
+  "26": {
+    "german": "iterativ: $\\Theta(n)$",
+    "english": ""
+  },
+  "27": {
+    "german": "rekursiv: $\\Theta(\\varphi^n)$ mit $\\varphi = \\frac{1 + \\sqrt{5}}{2} \\approx \\num{1.6181}$",
+    "english": ""
+  },
+  "28": {
+    "german": "(Rekurrenz lösen (nicht hier): $T(n) = T(n - 1) + T(n - 2) + \\Theta(1)$)",
+    "english": ""
+  },
+  "29": {
+    "german": "\\textbf{Welche Implementierung ist schöner?}",
+    "english": ""
+  },
+  "30": {
+    "german": "\\textbf{Rekursionsbaum:}",
+    "english": ""
+  },
+  "31": {
+    "german": "\\textbf{Rekursiv definiertes Problem}",
+    "english": ""
+  },
+  "32": {
+    "german": "reduziert Gesamtproblem auf kleinere Teilprobleme",
+    "english": ""
+  },
+  "33": {
+    "german": "Teilprobleme überlappen sich",
+    "english": ""
+  },
+  "34": {
+    "german": "rekursive Lösung: betrachtet selbes Teilproblem mehrfach",
+    "english": ""
+  },
+  "35": {
+    "german": "\\textbf{Iterative Lösung}",
+    "english": ""
+  },
+  "36": {
+    "german": "baue schrittweise größere Teillösungen auf",
+    "english": ""
+  },
+  "37": {
+    "german": "Teillösungen speichern $\\rightarrow$ keine mehrfache\\nBerechnung\\n",
+    "english": ""
+  },
+  "38": {
+    "german": "Gesamtproblem: berechne $F(n)$; Teilprobleme: berechne $F(n - 1)$ und $F(n - 2)$",
+    "english": ""
+  },
+  "39": {
+    "german": "für $F(n - 1)$ muss man nochmal $F(n - 2)$ berechnen\\n",
+    "english": ""
+  },
+  "40": {
+    "german": "\\textbf{Und wenn das Problem gar nicht rekursiv definiert ist?}",
+    "english": ""
+  },
+  "41": {
+    "german": "finde eine äquivalente rekursive Definition",
+    "english": ""
+  },
+  "42": {
+    "german": "das ist der schwierige Teil",
+    "english": ""
+  },
+  "43": {
+    "german": "meist recht einfach",
+    "english": ""
+  },
+  "44": {
+    "german": "\\textbf{Problem: \\emph{Splittability}}\\\\\\nGegeben ein String $S$, gibt es Trennstellen\\n$0 = s_0 < \\dots < s_k = n$, sodass $S[s_{i - 1}, s_{i})$ für alle\\n$i \\in [1, k]$ ein gültiges Wort ist?  Wir sagen dann, dass $S$\\n\\emph{splittable} ist.\\n",
+    "english": ""
+  },
+  "45": {
+    "german": "\\textbf{Definition}\\\\\\nEin \\emph{String} $S$ der Länge $n$ ist eine Folge von Buchstaben\\n$\\langle S[0], \\dots, S[n - 1]\\rangle$.  Die Teilfolge\\n$\\langle S[a], \\dots, S[b]\\rangle$ bezeichnen wir auch mit $S[a, b] =\\nS[a, b + 1) = S(a - 1, b] = S(a - 1, b + 1)$.\\n",
+    "english": ""
+  },
+  "46": {
+    "german": "\\textbf{Teilprobleme}",
+    "english": ""
+  },
+  "47": {
+    "german": "beachte: Gesamtproblem fragt ob $S[0, n)$ splittable ist",
+    "english": ""
+  },
+  "48": {
+    "german": "\\textbf{Problem: \\emph{Splittability}}\\\\\\nGegeben ein String $S$, gibt es Trennstellen\\n$0 = s_0 < \\dots < s_k = n$, sodass $S[s_{i - 1}, s_{i})$ für alle\\n$i \\in [1, k]$ ein gültiges Wort ist?  Wir sagen dann, dass $S$\\n\\emph{splittable} ist.\\n",
+    "english": ""
+  },
+  "49": {
+    "german": "\\textbf{Rekursive Definition auf Basis der Teilprobleme}",
+    "english": ""
+  },
+  "50": {
+    "german": "\\textbf{Beispiel:} $S[0, 9)$ ist splittable",
+    "english": ""
+  },
+  "51": {
+    "german": "\\textbf{Beispiel:}",
+    "english": ""
+  },
+  "52": {
+    "german": "für $i \\in [0, n]$: Ist $S[0, i)$ splittable?",
+    "english": ""
+  },
+  "53": {
+    "german": "\\textbf{Wie geht die rekursive Definition weiter?}",
+    "english": ""
+  },
+  "54": {
+    "german": "\\textbf{Theorem}\\\\\\nDer Teilstring $S[0, i)$ ist genau dann splittable, wenn $\\function{splitable}(i) = \\mathtt{true}$.\\n",
+    "english": ""
+  },
+  "55": {
+    "german": "\\textbf{Erinnerung: Rekursive Definition von \\function{splittable}}",
+    "english": ""
+  },
+  "56": {
+    "german": "\\textbf{Beweis:} Induktion über $i$",
+    "english": ""
+  },
+  "57": {
+    "german": "Induktionsanfang: der leere String ist splittable und $\\function{splitable}(0) = \\mathtt{true}$",
+    "english": ""
+  },
+  "58": {
+    "german": "Hinrichtung: $S[0, i)$ splittable $\\Rightarrow$\\n$\\function{splittable}(i) = \\mathtt{true}$",
+    "english": ""
+  },
+  "59": {
+    "german": "Rückrichtung: $S[0, i)$ splittable $\\Leftarrow$\\n$\\function{splittable}(i) = \\mathtt{true}$",
+    "english": ""
+  },
+  "60": {
+    "german": "betrachte Lösung $0 = s_0 < \\dots < s_k = i$",
+    "english": ""
+  },
+  "61": {
+    "german": "dann ist $S[0, s_{k - 1})$ splittable und $S[s_{k - 1}, i)$ ein Wort\\n",
+    "english": ""
+  },
+  "62": {
+    "german": "nach I.V.\\ gilt dann $\\function{splittable}(s_{k - 1}) =\\n\\mathtt{true}$ (und es gilt $\\function{isWord}(s_{k - 1}, i) = \\mathtt{true}$)\\n",
+    "english": ""
+  },
+  "63": {
+    "german": "gültiges Wort",
+    "english": ""
+  },
+  "64": {
+    "german": "splittable",
+    "english": ""
+  },
+  "65": {
+    "german": "es gibt $j$, sodass $\\function{splittable}(j)$ und\\n$\\function{isWord}(S[j, i)$",
+    "english": ""
+  },
+  "66": {
+    "german": "$\\Rightarrow$ gültiges Wort",
+    "english": ""
+  },
+  "67": {
+    "german": "$\\Rightarrow$ splittable",
+    "english": ""
+  },
+  "68": {
+    "german": "nach I.V.: $S[0, j)$ ist splittable (außerdem ist $S[j, i)$ ein Wort)",
+    "english": ""
+  },
+  "69": {
+    "german": "damit ist auch $S[0, i)$ splittable",
+    "english": ""
+  },
+  "70": {
+    "german": "\\textbf{Erinnerung: Rekursive Definition von \\function{splittable}}",
+    "english": ""
+  },
+  "71": {
+    "german": "$s \\coloneqq$ \\type{Array} of size $n + 1$\\n",
+    "english": ""
+  },
+  "72": {
+    "german": "\\textbf{Laufzeit}",
+    "english": ""
+  },
+  "73": {
+    "german": "$\\Theta(n^2)$ Aufrufe von \\function{isWord} (also: polynomiell)",
+    "english": ""
+  },
+  "74": {
+    "german": "\\textbf{Bekommen wir auch eine Lösung?}",
+    "english": ""
+  },
+  "75": {
+    "german": "speichere für jedes $i$ wegen welchem $j$ wir\\n$s[i] \\coloneqq \\mathtt{true}$ gesetzt haben\\n",
+    "english": ""
+  },
+  "76": {
+    "german": "verfolge diese Pointer rückwärts von $n$ aus\\n",
+    "english": ""
+  },
+  "77": {
+    "german": "\\textbf{Schritt 1: Spezifikation der Teilprobleme}\\n",
+    "english": ""
+  },
+  "78": {
+    "german": "\\textbf{Schritt 2: Aufstellung der Rekurrenz für Teillösungen}\\n",
+    "english": ""
+  },
+  "79": {
+    "german": "\\textbf{Schritt 3: Iterative Berechnung der Teillösungen}",
+    "english": ""
+  },
+  "80": {
+    "german": "Beispiel: Ist $S[0, i)$ splittable?",
+    "english": ""
+  },
+  "81": {
+    "german": "Welche Zwischenergebnisse wollen wir berechnen?",
+    "english": ""
+  },
+  "82": {
+    "german": "Worüber geht die Induktion?",
+    "english": ""
+  },
+  "83": {
+    "german": "Wie berechnen wir neue aus alten Zwischenergebnissen?\\n",
+    "english": ""
+  },
+  "84": {
+    "german": "Korrektheit: Induktion",
+    "english": ""
+  },
+  "85": {
+    "german": "Beispiel: Lösung für $i$ dank Lösungen für $0, \\dots, i - 1$\\n",
+    "english": ""
+  },
+  "86": {
+    "german": "Wie verwalten wir die Zwischenergebnisse?",
+    "english": ""
+  },
+  "87": {
+    "german": "Wie hängen die Zwischenergebnisse voneinander ab?",
+    "english": ""
+  },
+  "88": {
+    "german": "In welcher Reihenfolge berechnen wir Zwischenergebnisse?\\n",
+    "english": ""
+  },
+  "89": {
+    "german": "Wie bekommen wir die tatsächliche Lösung?\\n",
+    "english": ""
+  },
+  "90": {
+    "german": "nicht superschwer",
+    "english": ""
+  },
+  "91": {
+    "german": "leicht",
+    "english": ""
+  },
+  "92": {
+    "german": "schwer",
+    "english": ""
+  },
+  "93": {
+    "german": "erfordert Kreativität",
+    "english": ""
+  },
+  "94": {
+    "german": "ggf.\\ richtige Idee nötig",
+    "english": ""
+  },
+  "95": {
+    "german": "interagiert mit Schritt 2",
+    "english": ""
+  },
+  "96": {
+    "german": "(mit etwas Übung)",
+    "english": ""
+  },
+  "97": {
+    "german": "\\textbf{Problem: \\emph{LCS}}\\\\\\nGegeben Folgen $\\langle a_1, \\dots, a_n\\rangle$ und\\n$\\langle b_1, \\dots, b_m\\rangle$, was ist die längste gemeinsame\\nTeilfolge?\\n",
+    "english": ""
+  },
+  "98": {
+    "german": "\\textbf{Schritt 1: Spezifikation der Teilprobleme}",
+    "english": ""
+  },
+  "99": {
+    "german": "Wie lang ist die LCS von $\\langle a_1, \\dots, a_i \\rangle$ und\\n$\\langle b_1, \\dots, b_j \\rangle$?\\n",
+    "english": ""
+  },
+  "100": {
+    "german": "$i = n$ und $j = m$ liefert Gesamtlösung",
+    "english": ""
+  },
+  "101": {
+    "german": "vereinfachte Sichtweise: nur Größe der Lösung\\n",
+    "english": ""
+  },
+  "102": {
+    "german": "(Berechnung der Lösung selbst heben wir uns für Schritt 3 auf)",
+    "english": ""
+  },
+  "103": {
+    "german": "\\textbf{Schritt 2: Aufstellung der Rekurrenz}",
+    "english": ""
+  },
+  "104": {
+    "german": "Ziel: $\\function{LCS}(i, j)$ bezeichnet Länge der LCS von\\n$\\langle a_1, \\dots, a_i \\rangle$ und\\n$\\langle b_1, \\dots, b_j \\rangle$\\n",
+    "english": ""
+  },
+  "105": {
+    "german": "$\\function{LCS}(i, j) =\\n\\begin{cases}\\n  \\function{LCS}(i - 1, j - 1) + 1 & \\text{wenn } a_i = b_j\\\\\\n  \\max\\left\\{\\function{LCS}(i, j - 1), \\function{LCS}(i - 1, j)\\right\\}\\n  & \\text{wenn } a_i \\neq b_j\\n\\end{cases}\\n$\\n",
+    "english": ""
+  },
+  "106": {
+    "german": "Korrektheit: folgt induktiv\\n",
+    "english": ""
+  },
+  "107": {
+    "german": "\\textbf{Schritt 3: Iterative Berechnung der Teillösungen}",
+    "english": ""
+  },
+  "108": {
+    "german": "Wie verwalten wir die Zwischenergebnisse?",
+    "english": ""
+  },
+  "109": {
+    "german": "Wie hängen die Zwischenergebnisse voneinander ab?",
+    "english": ""
+  },
+  "110": {
+    "german": "In welcher Reihenfolge berechnen wir Zwischenergebnisse?\\n",
+    "english": ""
+  },
+  "111": {
+    "german": "Wie bekommen wir die tatsächliche Lösung?\\n",
+    "english": ""
+  },
+  "112": {
+    "german": "$\\function{LCS}(i, j) =\\n\\begin{cases}\\n  \\function{LCS}(i - 1, j - 1) + 1 & \\text{wenn } a_i = b_i\\\\\\n  \\max\\left\\{\\function{LCS}(i, j - 1), \\function{LCS}(i - 1, j)\\right\\}\\n  & \\text{wenn } a_i \\neq b_i\\n\\end{cases}\\n$\\n",
+    "english": ""
+  },
+  "113": {
+    "german": "\\textbf{Rekurrenz}\\n",
+    "english": ""
+  },
+  "114": {
+    "german": "\\textbf{Antworten auf die Fragen von Schritt 3}",
+    "english": ""
+  },
+  "115": {
+    "german": "speichere für jedes $(i, j) \\in [0, n] \\times [0, m]$ eine Zahl\\n",
+    "english": ""
+  },
+  "116": {
+    "german": "$\\rightarrow$ Array von Arrays",
+    "english": ""
+  },
+  "117": {
+    "german": "Eintrag bei $(i, j)$ hängt ab von Einträgen bei:\\\\\\n$(i - 1, j - 1)$, $(i, j - 1)$ und $(i - 1, j)$\\n",
+    "english": ""
+  },
+  "118": {
+    "german": "von oben links nach unten rechts ausfüllen (Zeilenweise)",
+    "english": ""
+  },
+  "119": {
+    "german": "zur Rekonstruktion der Lösung:",
+    "english": ""
+  },
+  "120": {
+    "german": "merke für jeden Eintrag, von wo er kommt",
+    "english": ""
+  },
+  "121": {
+    "german": "Rückverfolgung dieser Pointer $\\rightarrow$ Lösung",
+    "english": ""
+  },
+  "122": {
+    "german": "(jeder diagonale Schritt ist gemeinsames Zeichen)",
+    "english": ""
+  },
+  "123": {
+    "german": "\\textbf{Situation}",
+    "english": "\\textbf{Situation}"
+  },
+  "124": {
+    "german": "ihr braucht kœri + Pommes (\\num{3.70}€)",
+    "english": ""
+  },
+  "125": {
+    "german": "ihr wollt gerne passend bezahlen",
+    "english": ""
+  },
+  "126": {
+    "german": "\\textbf{Problem:} \\emph{Subset Sum}\\\\\\nGegeben eine Multimenge $A = \\{a_1, \\dots, a_n\\}$ von natürlichen\\nZahlen und eine natürliche Zahl $S$.  Gibt es eine Teilmenge\\n$A' \\subseteq A$, sodass $\\sum_{a \\in A'} a = S$?\\n",
+    "english": ""
+  },
+  "127": {
+    "german": "\\textbf{Anmerkungen}",
+    "english": "\\textbf{Notes}"
+  },
+  "128": {
+    "german": "das ist in gewissem Sinne ein schweres Problem",
+    "english": ""
+  },
+  "129": {
+    "german": "aber: $S$ nicht zu groß $\\rightarrow$ effiziente Lösung mit DP\\n",
+    "english": ""
+  },
+  "130": {
+    "german": "mehr dazu in TGI nächstes Semester",
+    "english": ""
+  },
+  "131": {
+    "german": "\\textbf{Problem:} \\emph{Subset Sum Problem}\\\\\\nGegeben eine Multimenge $A = \\{a_1, \\dots, a_n\\}$ von natürlichen\\nZahlen und eine natürliche Zahl $S$.  Gibt es eine Teilmenge\\n$A' \\subseteq A$, sodass $\\sum_{a \\in A'} a = S$?\\n",
+    "english": ""
+  },
+  "132": {
+    "german": "\\textbf{Schritt 1: Spezifikation der Teilprobleme}",
+    "english": ""
+  },
+  "133": {
+    "german": "\\textbf{Schritt 2: Aufstellung der Rekurrenz}",
+    "english": ""
+  },
+  "134": {
+    "german": "betrachte ein Paar $(i, s)$ mit $i \\le n$ und $s \\le S$\\n",
+    "english": ""
+  },
+  "135": {
+    "german": "Gibt es Teilmenge $A' \\subseteq \\{a_1, \\dots, a_i\\}$, sodass $\\sum_{a \\in A'} a = s$?",
+    "english": ""
+  },
+  "136": {
+    "german": "$i = n$ und $s = S$ liefert Gesamtlösung",
+    "english": ""
+  },
+  "137": {
+    "german": "Ziel: $\\function{SSP}(i, s) = \\mathtt{true}$ genau dann wenn es für\\ndas Paar $(i, s)$ eine Lösung gibt",
+    "english": ""
+  },
+  "138": {
+    "german": "$\\function{SSP}(0, s) = \\mathtt{true} \\Leftrightarrow s = 0$\\n($\\mathtt{false}$ sonst) und $\\function{SSP}(i, s) = \\mathtt{false}$\\nfür $s < 0$\\n",
+    "english": ""
+  },
+  "139": {
+    "german": "$a_i$ gewählt",
+    "english": ""
+  },
+  "140": {
+    "german": "$a_i$ nicht gewählt",
+    "english": ""
+  },
+  "141": {
+    "german": "(Korrektheit folgt induktiv)",
+    "english": ""
+  },
+  "142": {
+    "german": "\\textbf{Welche Teilprobleme würdet ihr betrachten?}",
+    "english": ""
+  },
+  "143": {
+    "german": "\\textbf{Schritt 3: Iterative Berechnung der Teillösungen}",
+    "english": ""
+  },
+  "144": {
+    "german": "Wie verwalten wir die Zwischenergebnisse?",
+    "english": ""
+  },
+  "145": {
+    "german": "Wie hängen die Zwischenergebnisse voneinander ab?",
+    "english": ""
+  },
+  "146": {
+    "german": "In welcher Reihenfolge berechnen wir Zwischenergebnisse?\\n",
+    "english": ""
+  },
+  "147": {
+    "german": "Wie bekommen wir die tatsächliche Lösung?\\n",
+    "english": ""
+  },
+  "148": {
+    "german": "$\\function{SSP}(i, s) = \\mathtt{false}$ für $s < 0$\\n",
+    "english": ""
+  },
+  "149": {
+    "german": "\\textbf{Rekurrenz}\\n",
+    "english": ""
+  },
+  "150": {
+    "german": "\\textbf{Antworten auf die Fragen von Schritt 3}",
+    "english": ""
+  },
+  "151": {
+    "german": "für jedes $(i, s) \\in [0, n] \\times [0, S]$ ein boolescher Wert\\n$\\rightarrow$ Array von Arrays\\n",
+    "english": ""
+  },
+  "152": {
+    "german": "$\\function{SSP}(i, s) = \\mathtt{false}$ für $s < 0$ brauchen wir nicht\\nexplizit speichern",
+    "english": ""
+  },
+  "153": {
+    "german": "Einträge in Zeile $i$ hängen von Einträgen in Zeile $i - 1$ ab",
+    "english": ""
+  },
+  "154": {
+    "german": "Reihenfolge: Tabelle zeilenweise ausfüllen",
+    "english": ""
+  },
+  "155": {
+    "german": "zur Rekonstruktion der Lösung:",
+    "english": ""
+  },
+  "156": {
+    "german": "merke für jeden Eintrag, von wo er kommt",
+    "english": ""
+  },
+  "157": {
+    "german": "Rückverfolgung dieser Pointer $\\rightarrow$ Lösung",
+    "english": ""
+  },
+  "158": {
+    "german": "(jeder diagonale Schritt entspricht ausgewähltem Element)",
+    "english": ""
+  },
+  "159": {
+    "german": "\\textbf{Bisher:} Welche Einträge muss ich anschauen, um $(i, s)$ auszufüllen?",
+    "english": ""
+  },
+  "160": {
+    "german": "$\\function{SSP}(i, s) = \\mathtt{false}$ für $s < 0$\\n",
+    "english": ""
+  },
+  "161": {
+    "german": "\\textbf{Rekurrenz}\\n",
+    "english": ""
+  },
+  "162": {
+    "german": "\\textbf{Jetzt:} Welche Einträge kann ich auf $\\mathtt{true}$ setzen,\\nwenn ich weiß, dass $\\function{SSP}(i, s) = \\mathtt{true}$?\\n",
+    "english": ""
+  },
+  "163": {
+    "german": "\\textbf{Pfadfindung in einem Graphen}",
+    "english": ""
+  },
+  "164": {
+    "german": "fasse jedes Paar $(i, s)$ als Knoten auf",
+    "english": ""
+  },
+  "165": {
+    "german": "Kanten: $(i, s) \\rightarrow (i + 1, s)$ und $(i, s)\\n\\rightarrow (i + 1, s + a_{i + 1})$",
+    "english": ""
+  },
+  "166": {
+    "german": "Ja-Instanz $\\Leftrightarrow$ es gibt einen Pfad von $(0, 0)$ zu\\n$(n, S)$\\n",
+    "english": ""
+  },
+  "167": {
+    "german": "beachte: Graph nur implizit repräsentiert",
+    "english": ""
+  },
+  "168": {
+    "german": "Vorteil: wir besuchen in der Tabelle nur Zellen, die $\\mathtt{true}$\\nsind",
+    "english": ""
+  },
+  "169": {
+    "german": "(ggf. deutlich weniger als alle Zellen)",
+    "english": ""
+  },
+  "170": {
+    "german": "\\textbf{Schritt 1: Spezifikation der Teilprobleme}\\n",
+    "english": ""
+  },
+  "171": {
+    "german": "\\textbf{Schritt 2: Aufstellung der Rekurrenz für Teillösungen}\\n",
+    "english": ""
+  },
+  "172": {
+    "german": "\\textbf{Schritt 3: Iterative Berechnung der Teillösungen}",
+    "english": ""
+  },
+  "173": {
+    "german": "Induktion über Parameter oder eine Baumstruktur\\n",
+    "english": ""
+  },
+  "174": {
+    "german": "Welche Zwischenergebnisse wollen wir berechnen?",
+    "english": ""
+  },
+  "175": {
+    "german": "Worüber geht die Induktion?",
+    "english": ""
+  },
+  "176": {
+    "german": "Wie berechnen wir neue aus alten Zwischenergebnissen?\\n",
+    "english": ""
+  },
+  "177": {
+    "german": "Korrektheit: vollständige oder strukturelle Induktion",
+    "english": ""
+  },
+  "178": {
+    "german": "Wie verwalten wir die Zwischenergebnisse?",
+    "english": ""
+  },
+  "179": {
+    "german": "Wie hängen die Zwischenergebnisse voneinander ab?",
+    "english": ""
+  },
+  "180": {
+    "german": "In welcher Reihenfolge berechnen wir Zwischenergebnisse?\\n",
+    "english": ""
+  },
+  "181": {
+    "german": "Wie bekommen wir die tatsächliche Lösung?\\n",
+    "english": ""
+  },
+  "182": {
+    "german": "schwer",
+    "english": ""
+  },
+  "183": {
+    "german": "erfordert Kreativität",
+    "english": ""
+  },
+  "184": {
+    "german": "ggf.\\ richtige Idee nötig",
+    "english": ""
+  },
+  "185": {
+    "german": "interagiert mit Schritt 2",
+    "english": ""
+  },
+  "186": {
+    "german": "nicht superschwer",
+    "english": ""
+  },
+  "187": {
+    "german": "(vorausgesetzt ihr habt eine gute Spezifikation der Teilergebnisse)\\n",
+    "english": ""
+  },
+  "188": {
+    "german": "leicht",
+    "english": ""
+  },
+  "189": {
+    "german": "(mit etwas Übung)",
+    "english": ""
+  },
+  "190": {
+    "german": "\\textbf{Lernziel}",
+    "english": "\\textbf{Learning goal}"
+  },
+  "191": {
+    "german": "ihr habt verstanden, wie DPs funktionieren $\\rightarrow$ schnelleres\\nVerständnis unbekannter DPs",
+    "english": ""
+  },
+  "192": {
+    "german": "\\textbf{DPs haben wir schon häufiger gesehen (ohne es zu wissen)}",
+    "english": ""
+  },
+  "193": {
+    "german": "DP über die Anzahl Kanten aus denen die Pfade bestehen",
+    "english": ""
+  },
+  "194": {
+    "german": "Bellman--Ford",
+    "english": ""
+  },
+  "195": {
+    "german": "Iteration $i$: berechne kürzeste Pfade unter allen Pfaden, die aus\\n$\\le i$ Kanten bestehen\\n",
+    "english": ""
+  },
+  "196": {
+    "german": "Blatt 10, Aufgabe 3 -- Freibad (absolut spaßigster Talweg)",
+    "english": ""
+  },
+  "197": {
+    "german": "berechne längsten Pfad in einem DAG",
+    "english": ""
+  },
+  "198": {
+    "german": "DP über topologische Sortierung der Knoten",
+    "english": ""
+  },
+  "199": {
+    "german": "ihr könnt zumindest einfache DPs selber bauen",
+    "english": ""
+  },
+  "200": {
+    "german": "(insbesondere, wenn die Teillösungen gegeben sind)",
+    "english": ""
+  },
+  "201": {
+    "german": "\\textbf{Problem:} \\emph{Longest Path}\\\\\\nGegeben einen (gewurzelten) Baum $T$.  Wie lang ist der längste Pfad\\nin $T$?\\n",
+    "english": ""
+  },
+  "202": {
+    "german": "\\textbf{Schritt 1: Spezifikation der Teilprobleme}",
+    "english": ""
+  },
+  "203": {
+    "german": "\\textbf{Schritt 2: Aufstellung der Rekurrenz}",
+    "english": ""
+  },
+  "204": {
+    "german": "\\textbf{Erinnerung: 1.\\ Spezifikation der Teilprobleme}\\n",
+    "english": ""
+  },
+  "205": {
+    "german": "Welche Zwischenergebnisse wollen wir berechnen?",
+    "english": ""
+  },
+  "206": {
+    "german": "Worüber geht die Induktion?",
+    "english": ""
+  },
+  "207": {
+    "german": "strukturelle Induktion über Baumstruktur",
+    "english": ""
+  },
+  "208": {
+    "german": "erhalte Lösung für $v$ aus Lösung für Kinder $u_1, \\dots, u_k$",
+    "english": ""
+  },
+  "209": {
+    "german": "Teillösung für $v$: längster Pfad in Teilbaum $T_v$ unter $v$",
+    "english": ""
+  },
+  "210": {
+    "german": "Teillösungen für $u_i$",
+    "english": ""
+  },
+  "211": {
+    "german": "Teillösung (Typ 2) für $v$: längster Pfad in $T_v$, der in $v$ endet",
+    "english": ""
+  },
+  "212": {
+    "german": "Ziel: ${\\textbf{LP$_t$}}(v)$ repräsentiert Teillösung von Typ $t$ für $v$",
+    "english": ""
+  },
+  "213": {
+    "german": "Falls $v$ ein Blatt: $\\function{LP$_1$}(v) = {\\color{red1}\\textbf{LP$_2$}}(v) = 0$",
+    "english": ""
+  },
+  "214": {
+    "german": "\\textbf{Problem:} längste Pfade der $T_{u_i}$ ggf.\\ nicht kombinierbar\\n",
+    "english": ""
+  },
+  "215": {
+    "german": "Teillösung (Typ 1) für $v$: längster Pfad in $T_v$, der nicht in $v$\\nendet",
+    "english": ""
+  },
+  "216": {
+    "german": "Teillösungen (Typ 1) für $u_i$",
+    "english": ""
+  },
+  "217": {
+    "german": "Teillösungen (Typ 2) für $u_i$",
+    "english": ""
+  },
+  "218": {
+    "german": "\\textbf{Rekurrenz}\\n",
+    "english": ""
+  },
+  "219": {
+    "german": "Falls $v$ ein Blatt: $\\function{LP$_1$}(v) = {\\color{red1}\\textbf{LP$_2$}}(v) = 0$",
+    "english": ""
+  },
+  "220": {
+    "german": "\\textbf{Korrektheit mittels struktureller Induktion}",
+    "english": ""
+  },
+  "221": {
+    "german": "korrekt für die Blätter",
+    "english": ""
+  },
+  "222": {
+    "german": "Typ 2: längster Pfad in $T_v$, der in $v$ endet",
+    "english": ""
+  },
+  "223": {
+    "german": "Ziel: ${\\textbf{LP$_i$}}(v)$ repräsentiert Teillösung von Typ $i$ für $v$",
+    "english": ""
+  },
+  "224": {
+    "german": "Typ 1: längster Pfad in Teilbaum $T_v$ unter $v$",
+    "english": ""
+  },
+  "225": {
+    "german": "\\textbf{Was wollen wir zeigen?}",
+    "english": ""
+  },
+  "226": {
+    "german": "korrekt für $v$ falls korrekt für die Kinder $u_1, \\dots, u_k$\\n",
+    "english": ""
+  },
+  "227": {
+    "german": "\\textbf{\\color{red1} Typ 2:} Pfad führt über ein Kind $u_i$ ($+ 1$\\nwegen $\\{v, u_i\\}$)\\n",
+    "english": ""
+  },
+  "228": {
+    "german": "\\textbf{{\\color{blue1} Typ 1, Fall 1:}} längster Pfad in $T_v$ enthält\\n$v$ nicht\\n",
+    "english": ""
+  },
+  "229": {
+    "german": "\\textbf{{\\color{blue1} Typ 1, Fall 2:}} längster Pfad in $T_v$ enthält\\n$v$\\n",
+    "english": ""
+  },
+  "230": {
+    "german": "\\textbf{oder}",
+    "english": ""
+  },
+  "231": {
+    "german": "\\textbf{Schritt 3: Iterative Berechnung der Teillösungen}",
+    "english": ""
+  },
+  "232": {
+    "german": "Wie verwalten wir die Zwischenergebnisse?",
+    "english": ""
+  },
+  "233": {
+    "german": "Wie hängen die Zwischenergebnisse voneinander ab?",
+    "english": ""
+  },
+  "234": {
+    "german": "In welcher Reihenfolge berechnen wir Zwischenergebnisse?\\n",
+    "english": ""
+  },
+  "235": {
+    "german": "Wie bekommen wir die tatsächliche Lösung?\\n",
+    "english": ""
+  },
+  "236": {
+    "german": "\\textbf{Rekurrenz}\\n",
+    "english": ""
+  },
+  "237": {
+    "german": "Falls $v$ ein Blatt: $\\function{LP$_1$}(v) = {\\color{red1}\\textbf{LP$_2$}}(v) = 0$",
+    "english": ""
+  },
+  "238": {
+    "german": "\\textbf{Antworten auf die Fragen von Schritt 3}",
+    "english": ""
+  },
+  "239": {
+    "german": "speichere zwei Werte an jedem Knoten $v$: $\\function{LP$_1$}(v)$ und ${\\color{red1}\\textbf{LP$_2$}}(v)$",
+    "english": ""
+  },
+  "240": {
+    "german": "Eltern hängen von Kindern ab $\\rightarrow$ Reihenfolge: bottom-up\\n",
+    "english": ""
+  },
+  "241": {
+    "german": "(z.B. entsprechend der Lagen im BFS-Baum)",
+    "english": ""
+  },
+  "242": {
+    "german": "tatsächliche Lösung berechnen: wie bei vorherigen DPs",
+    "english": ""
+  },
+  "243": {
+    "german": "\\textbf{Anmerkung}",
+    "english": "\\textbf{Note}"
+  },
+  "244": {
+    "german": "Teillösungen überlappen nicht: Teillösung jedes Kinds $u_i$ nur für\\nden einen Elter $v$ relevant\\n",
+    "english": ""
+  },
+  "245": {
+    "german": "rekursive Implementierung in dem Fall also auch ok (entspricht im\\nPrinzip einer DFS)\\n",
+    "english": ""
+  }
+}

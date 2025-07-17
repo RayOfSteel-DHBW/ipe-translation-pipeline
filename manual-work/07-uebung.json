@@ -1,0 +1,462 @@
+{
+  "1": {
+    "german": "Dynamische Programmierung",
+    "english": ""
+  },
+  "2": {
+    "german": "Paletten-Hopping",
+    "english": ""
+  },
+  "3": {
+    "german": "Paletten-Hopping -- Teilprobleme",
+    "english": ""
+  },
+  "4": {
+    "german": "Iterative Implementierung",
+    "english": ""
+  },
+  "5": {
+    "german": "Rekonstruktion der Lösung",
+    "english": ""
+  },
+  "6": {
+    "german": "Amortisierte Analyse",
+    "english": ""
+  },
+  "7": {
+    "german": "Amortisierte Analyse",
+    "english": ""
+  },
+  "8": {
+    "german": "Bonusblatt",
+    "english": ""
+  },
+  "9": {
+    "german": "Maximilian Katzmann \\& Marcus Wilhelm  \\& Wendy Yi~--~Algorithmen 1 - Übung",
+    "english": ""
+  },
+  "10": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "11": {
+    "german": "\\textbf{Übung 7}",
+    "english": ""
+  },
+  "12": {
+    "german": "\\textbf{Dynamische Programmierung und Amortisierte Analyse}",
+    "english": ""
+  },
+  "13": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "14": {
+    "german": "Methode zum Lösen von Optimierungsproblemen",
+    "english": ""
+  },
+  "15": {
+    "german": "$\\leftarrow$ optimale Teillösung",
+    "english": ""
+  },
+  "16": {
+    "german": "+ optimale Teillösung",
+    "english": ""
+  },
+  "17": {
+    "german": "optimale Lösung",
+    "english": ""
+  },
+  "18": {
+    "german": "verwende optimale Teillösungen wieder",
+    "english": ""
+  },
+  "19": {
+    "german": "\\textbf{Beispiele}",
+    "english": ""
+  },
+  "20": {
+    "german": "längster Pfad in einem DAG",
+    "english": ""
+  },
+  "21": {
+    "german": "Floyd-Warshall",
+    "english": ""
+  },
+  "22": {
+    "german": "bestimme Rekurrenz",
+    "english": ""
+  },
+  "23": {
+    "german": "\\textbf{Problemstellung}",
+    "english": ""
+  },
+  "24": {
+    "german": "Biber hüpfen gerne auf Palettentürmen",
+    "english": ""
+  },
+  "25": {
+    "german": "Palettentürme haben eine unterschiedliche Höhe",
+    "english": ""
+  },
+  "26": {
+    "german": "Biber-Hopping:\\\\ Höhendifferenz zwischen Hops $\\leq 1$",
+    "english": ""
+  },
+  "27": {
+    "german": "Hopping: nach $\\rightarrow$ zu benachbarter Palette",
+    "english": ""
+  },
+  "28": {
+    "german": "Maximales Biber-Hopping?",
+    "english": ""
+  },
+  "29": {
+    "german": "\\textbf{Formal (2D):}",
+    "english": ""
+  },
+  "30": {
+    "german": "$n$ Zeilen, $n$ Spalten",
+    "english": ""
+  },
+  "31": {
+    "german": "Höhe $h(i, j) \\in \\mathbb{N}$",
+    "english": ""
+  },
+  "32": {
+    "german": "Hops $(i,j) \\rightarrow (i  + 1, j)$ und $(i,j) \\rightarrow (i, j + 1)$",
+    "english": ""
+  },
+  "33": {
+    "german": "maximiere Länge Biber-Hopping\\\\ $ (b_1, \\ldots, b_\\ell)$: $|h(b_k) - h(b_{k+1})| \\leq 1$",
+    "english": ""
+  },
+  "34": {
+    "german": " Bild:",
+    "english": "Image:"
+  },
+  "35": {
+    "german": " Funny Beaver Set",
+    "english": ""
+  },
+  "36": {
+    "german": "von pch.vector, Freepik",
+    "english": ""
+  },
+  "37": {
+    "german": "\\textbf{Formal (2D):}",
+    "english": ""
+  },
+  "38": {
+    "german": "$n$ Zeilen, $n$ Spalten",
+    "english": ""
+  },
+  "39": {
+    "german": "Höhe $h(i, j) \\in \\mathbb{N}$",
+    "english": ""
+  },
+  "40": {
+    "german": "Hops $(i,j) \\rightarrow (i  + 1, j)$ und $(i,j) \\rightarrow (i, j + 1)$",
+    "english": ""
+  },
+  "41": {
+    "german": "maximiere Länge Biber-Hopping\\\\ $ (b_1, \\ldots, b_\\ell)$: $|h(b_k) - h(b_{k+1})| \\leq 1$",
+    "english": ""
+  },
+  "42": {
+    "german": "\\textbf{Wie viele Biber-Hoppings gibt es?}",
+    "english": ""
+  },
+  "43": {
+    "german": "sehr sehr viele",
+    "english": ""
+  },
+  "44": {
+    "german": "können wir nicht alle aufzählen",
+    "english": ""
+  },
+  "45": {
+    "german": "\\textbf{Teilprobleme}",
+    "english": ""
+  },
+  "46": {
+    "german": "$B(i, j) \\coloneqq$ max. Länge Biber-Hopping mit Ende $(i, j)$",
+    "english": ""
+  },
+  "47": {
+    "german": "drei Möglichkeiten:",
+    "english": ""
+  },
+  "48": {
+    "german": "von oben erweiterbar",
+    "english": ""
+  },
+  "49": {
+    "german": "von links erweiterbar",
+    "english": ""
+  },
+  "50": {
+    "german": "\\textbf{Rekurrenz}",
+    "english": ""
+  },
+  "51": {
+    "german": "$B(i - 1, j) + 1$, falls $|h(i - 1, j) - h(i, j)| \\leq 1$",
+    "english": ""
+  },
+  "52": {
+    "german": "$B(i, j- 1) + 1$, falls $|h(i, j) - h(i, j - 1)| \\leq 1$",
+    "english": ""
+  },
+  "53": {
+    "german": "$B(i, 0) \\coloneqq 0$ und $B(0, j) \\coloneqq 0$",
+    "english": ""
+  },
+  "54": {
+    "german": "nicht erweiterbar",
+    "english": ""
+  },
+  "55": {
+    "german": "Laufzeit von $B(i, j)$ bei rekursiver Implementierung?",
+    "english": ""
+  },
+  "56": {
+    "german": "Werte zwischenspeichern",
+    "english": ""
+  },
+  "57": {
+    "german": "Welche Infos sind nötig, um $B(i, j)$ zu bestimmen?",
+    "english": ""
+  },
+  "58": {
+    "german": "\\textbf{Rekurrenz}",
+    "english": ""
+  },
+  "59": {
+    "german": "$B(i - 1, j) + 1$, falls $|h(i - 1, j) - h(i, j)| \\leq 1$",
+    "english": ""
+  },
+  "60": {
+    "german": "$B(i, j- 1) + 1$, falls $|h(i, j) - h(i, j - 1)| \\leq 1$",
+    "english": ""
+  },
+  "61": {
+    "german": "$B(i, 0) \\coloneqq 0$ und $B(0, j) \\coloneqq 0$",
+    "english": ""
+  },
+  "62": {
+    "german": "\\textbf{Iterativ}",
+    "english": ""
+  },
+  "63": {
+    "german": "Laufzeit von $B(i, j)$ bei iterativer Implementierung?",
+    "english": ""
+  },
+  "64": {
+    "german": "Was ist die maximale Länge eines  Biber-Hoppings?",
+    "english": ""
+  },
+  "65": {
+    "german": "Wie rekonstruiert man eine Lösung?",
+    "english": ""
+  },
+  "66": {
+    "german": "$B\\textcolor{red1}{[}i - 1\\textcolor{red1}{]}\\textcolor{red1}{[} j\\textcolor{red1}{]} + 1$, falls $|h(i - 1, j) - h(i, j)| \\leq 1$",
+    "english": ""
+  },
+  "67": {
+    "german": "$B\\textcolor{red1}{[}i\\textcolor{red1}{]}\\textcolor{red1}{[} j- 1\\textcolor{red1}{]} + 1$, falls $|h(i, j) - h(i, j - 1)| \\leq 1$",
+    "english": ""
+  },
+  "68": {
+    "german": "$B\\textcolor{red1}{[}i\\textcolor{red1}{]}\\textcolor{red1}{[}0\\textcolor{red1}{]} \\coloneqq 0$ und $B\\textcolor{red1}{[}0\\textcolor{red1}{]}\\textcolor{red1}{[} j\\textcolor{red1}{]} \\coloneqq 0$",
+    "english": ""
+  },
+  "69": {
+    "german": "$B[i-1][j] + 1$, falls $|h(i - 1, j) - h(i, j)| \\leq 1$",
+    "english": ""
+  },
+  "70": {
+    "german": "$B[i][j-1]+ 1$, falls $|h(i, j) - h(i, j - 1)| \\leq 1$",
+    "english": ""
+  },
+  "71": {
+    "german": "$B[i][0] \\coloneqq 0$ und $B[0][j] \\coloneqq 0$",
+    "english": ""
+  },
+  "72": {
+    "german": "speichere den passenden Vorgänger",
+    "english": ""
+  },
+  "73": {
+    "german": "verfolge Zeiger zurück",
+    "english": ""
+  },
+  "74": {
+    "german": "Laufzeit für Lösung rekonstruieren (optimales Ende bekannt)?",
+    "english": ""
+  },
+  "75": {
+    "german": "\\textbf{Aggregatmethode}",
+    "english": ""
+  },
+  "76": {
+    "german": "berechne Gesamtkosten",
+    "english": ""
+  },
+  "77": {
+    "german": "teile durch Anzahl von Operationen",
+    "english": ""
+  },
+  "78": {
+    "german": "\\textbf{Charging}",
+    "english": ""
+  },
+  "79": {
+    "german": "verteile Kosten-Tokens von teuren zu günstigen Ops",
+    "english": ""
+  },
+  "80": {
+    "german": "\\textbf{Kontomethode}",
+    "english": ""
+  },
+  "81": {
+    "german": "günstige Op zahlt mehr ins Konto ein, teure Op hebt ab",
+    "english": ""
+  },
+  "82": {
+    "german": "Achtung: Kontostand $\\geq 0$",
+    "english": ""
+  },
+  "83": {
+    "german": "\\textbf{Potentialmethode}",
+    "english": ""
+  },
+  "84": {
+    "german": "Potential $\\Phi(A) \\geq 0$ abhängig vom Zustand von $A$",
+    "english": ""
+  },
+  "85": {
+    "german": "amortisierte Kosten = tatsächliche Kosten + $\\Phi(A_{\\text{nach}}) - \\Phi(A_{\\text{vor}})$",
+    "english": ""
+  },
+  "86": {
+    "german": "\\textbf{Aggregatmethode}",
+    "english": ""
+  },
+  "87": {
+    "german": "Gesamtkosten / Anzahl Ops",
+    "english": ""
+  },
+  "88": {
+    "german": "\\textbf{Charging}",
+    "english": ""
+  },
+  "89": {
+    "german": "Kostentoken: teuere Op $\\rightarrow$ günstige Op",
+    "english": ""
+  },
+  "90": {
+    "german": "\\textbf{Kontomethode}",
+    "english": ""
+  },
+  "91": {
+    "german": "günstige Op $\\rightarrow $ Konto, Konto $\\rightarrow$ teure Op",
+    "english": ""
+  },
+  "92": {
+    "german": "\\textbf{Potentialmethode}",
+    "english": ""
+  },
+  "93": {
+    "german": "Potential $\\Phi(A) \\geq 0$ abhängig vom Zustand von $A$",
+    "english": ""
+  },
+  "94": {
+    "german": "amort. Kosten = tats. Kosten + $\\Phi(A_{\\text{nach}}) - \\Phi(A_{\\text{vor}})$",
+    "english": ""
+  },
+  "95": {
+    "german": "\\textbf{Aggregatmethode}",
+    "english": ""
+  },
+  "96": {
+    "german": "Gesamtkosten / Anzahl Ops",
+    "english": ""
+  },
+  "97": {
+    "german": "\\textbf{Charging}",
+    "english": ""
+  },
+  "98": {
+    "german": "Kostentoken: teuere Op $\\rightarrow$ günstige Op",
+    "english": ""
+  },
+  "99": {
+    "german": "\\textbf{Kontomethode}",
+    "english": ""
+  },
+  "100": {
+    "german": "günstige Op $\\rightarrow $ Konto, Konto $\\rightarrow$ teure Op",
+    "english": ""
+  },
+  "101": {
+    "german": "\\textbf{Potentialmethode}",
+    "english": ""
+  },
+  "102": {
+    "german": "Potential $\\Phi(A) \\geq 0$ abhängig vom Zustand von $A$",
+    "english": ""
+  },
+  "103": {
+    "german": "amort. Kosten = tats. Kosten + $\\Phi(A_{\\text{nach}}) - \\Phi(A_{\\text{vor}})$",
+    "english": ""
+  },
+  "104": {
+    "german": "\\textbf{Aufgabe}",
+    "english": ""
+  },
+  "105": {
+    "german": "Kugeln (drei Farben) in einer Reihe",
+    "english": ""
+  },
+  "106": {
+    "german": "Operationen",
+    "english": ""
+  },
+  "107": {
+    "german": "\\texttt{insert}$(\\mathrm{pos}, \\mathrm{color})$ in $\\Theta(1)$",
+    "english": ""
+  },
+  "108": {
+    "german": "\\texttt{removeMost}(): Lösche eine Farbe mit den meisten Kugeln in $\\Theta(n)$",
+    "english": ""
+  },
+  "109": {
+    "german": "Einsicht: immer $\\geq \\frac{n}{3}$ gelöscht",
+    "english": ""
+  },
+  "110": {
+    "german": "ab 14 Uhr auf der Webseite",
+    "english": ""
+  },
+  "111": {
+    "german": "Aufgaben zu vielen verschiedenen Themen",
+    "english": ""
+  },
+  "112": {
+    "german": "nur garantierte Korrektur zwischen 110 und 130 Punkten",
+    "english": ""
+  },
+  "113": {
+    "german": "Abgabe normal im ILIAS",
+    "english": ""
+  },
+  "114": {
+    "german": "trotzdem gute Übung für die Klausur!",
+    "english": ""
+  },
+  "115": {
+    "german": "besteht nur aus Bonuspunkten",
+    "english": ""
+  }
+}

@@ -31,7 +31,7 @@ public class AutomatedTranslationService implements TranslationService {
     }
 
     @Override
-    public void translate(String inputFilePath, String outputFilePath) throws Exception {
+    public boolean translate(String inputFilePath, String outputFilePath) throws Exception {
         logger.info("Starting automated translation from " + inputFilePath + " to " + outputFilePath);
         
         List<String> lines = readLinesFromFile(inputFilePath);
@@ -68,7 +68,9 @@ public class AutomatedTranslationService implements TranslationService {
         }
         
         writeLinesToFile(translatedLines, outputFilePath);
+
         logger.info("Translation completed successfully");
+        return true;
     }
     
     private List<TextResult> translateBatchWithDeepL(List<String> texts) throws Exception {

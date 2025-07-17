@@ -1,0 +1,938 @@
+{
+  "1": {
+    "german": "Kürzeste Pfade mit negativen Kantenlängen",
+    "english": "Shortest paths with negative edges"
+  },
+  "2": {
+    "german": "Erinnerung: Dijkstras Algorithmus",
+    "english": "Recall: Dijkstra's algorithm"
+  },
+  "3": {
+    "german": "Algorithmus von Bellman und Ford",
+    "english": "Bellman-Ford algorithm"
+  },
+  "4": {
+    "german": "Wie viele Iterationen sind nötig?",
+    "english": "How many iterations needed?"
+  },
+  "5": {
+    "german": "Beweis: $n - 1$ Iterationen genügen",
+    "english": "Proof: $n - 1$ iterations suffice"
+  },
+  "6": {
+    "german": "Erkennung von negativen Kreisen",
+    "english": "Detecting negative cycles"
+  },
+  "7": {
+    "german": "Pseudocode und Laufzeit",
+    "english": "Pseudocode and runtime"
+  },
+  "8": {
+    "german": "All Pair Shortest Path",
+    "english": "All-pairs shortest path"
+  },
+  "9": {
+    "german": "Eingeschränkte Menge an Zwischenknoten",
+    "english": "Restricted set of intermediates"
+  },
+  "10": {
+    "german": "Umsetzung als Algorithmus",
+    "english": "Implementation as algo"
+  },
+  "11": {
+    "german": "Anmerkungen und Pseudocode",
+    "english": "Remarks and pseudocode"
+  },
+  "12": {
+    "german": "Dynamische Programmierung (DP)",
+    "english": "Dynamic programming (DP)"
+  },
+  "13": {
+    "german": "Dynamische Programmierung (DP) -- Hinweise",
+    "english": "Dynamic programming (DP) -- hints"
+  },
+  "14": {
+    "german": "Zusammenfassung",
+    "english": "Summary"
+  },
+  "15": {
+    "german": "Bonus: APSP -- Geht es besser als $\\Theta(n^3)$?",
+    "english": "Bonus: APSP -- better than $\\Theta(n^3)$?"
+  },
+  "16": {
+    "german": "Thomas Bläsius~--~Algorithmen 1",
+    "english": "Thomas Bläsius~--~Algorithms 1"
+  },
+  "17": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "18": {
+    "german": "\\textbf{Kürzeste Wege: negative Kanten und APSP}",
+    "english": "\\textbf{Shortest Paths: negative edges and APSP}"
+  },
+  "19": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "20": {
+    "german": "\\textbf{Problem: Single-Source Shortest Path (SSSP)}\\\\\\nGegen einen gerichteten Graphen $G = (V, E)$, Kantenlängen\\n$\\len \\colon E \\to \\mathbb Z$ und $s \\in V$, berechne $\\dist(s, t)$\\nfür alle $t \\in V$.\\n",
+    "english": "\\textbf{Problem: Single-Source Shortest Path (SSSP)}\\\\\\nGiven a directed graph $G = (V, E)$, edge lengths\\n$\\len \\colon E \\to \\mathbb Z$ and $s \\in V$, compute $\\dist(s, t)$\\nfor all $t \\in V$.\\n"
+  },
+  "21": {
+    "german": "\\textbf{Negative Kreise}",
+    "english": "\\textbf{Negative cycles}"
+  },
+  "22": {
+    "german": "Pfad kann mehrfach im Kreis läuft",
+    "english": "Path may loop repeatedly"
+  },
+  "23": {
+    "german": "\\textbf{Möglichkeit 2}",
+    "english": "\\textbf{Option 2}"
+  },
+  "24": {
+    "german": "erkenne negative Kreise\\n",
+    "english": "detect negative cycles\\n"
+  },
+  "25": {
+    "german": "Abbruch, wenn negativer Kreis gefunden",
+    "english": "stop if negative cycle found"
+  },
+  "26": {
+    "german": "\\textbf{Möglichkeit 1}",
+    "english": "\\textbf{Option 1}"
+  },
+  "27": {
+    "german": "erlaube nur \\emph{einfache Pfade}, die keine Knoten mehrfach besuchen",
+    "english": "allow only \\emph{simple paths} visiting no node twice"
+  },
+  "28": {
+    "german": "Problem Hamilton-Pfad als Spezialfall\\n",
+    "english": "Problem Hamilton path as special case\\n"
+  },
+  "29": {
+    "german": "beliebig kleine Länge möglich (Distanzen $-\\infty$?)",
+    "english": "arbitrarily small length possible (distances $-\\infty$?)"
+  },
+  "30": {
+    "german": "(vermutlich kein polynomieller Algorithmus möglich, siehe TGI nächstes\\nSemester)",
+    "english": "(likely no polynomial algorithm possible, see TGI next\\nsemester)"
+  },
+  "31": {
+    "german": "diese Variante betrachten wir im Folgenden",
+    "english": "we consider this variant in the following"
+  },
+  "32": {
+    "german": "(daher auch gerichtete Graphen)",
+    "english": "(hence directed graphs too)"
+  },
+  "33": {
+    "german": "\\textbf{Grundsätzliches Vorgehen}",
+    "english": ""
+  },
+  "34": {
+    "german": "speichere $d[v]$ für jeden Knoten $v$: Länge des kürzesten bekannten $sv$-Pfades",
+    "english": "store $d[v]$ for each node $v$: length of shortest known $sv$ path"
+  },
+  "35": {
+    "german": "\\emph{Relaxierung} der Kante $(u, v)$: wenn\\n$d[v] > d[u] + \\len(u, v)$, setze $d[v] = d[u] + \\len(u, v)$\\n",
+    "english": "\\emph{Relaxation} of edge $(u, v)$: if\\n$d[v] > d[u] + \\len(u, v)$, set $d[v] = d[u] + \\len(u, v)$\\n"
+  },
+  "36": {
+    "german": "\\textbf{Reihenfolge der Relaxierungen bei Dijkstra}",
+    "english": ""
+  },
+  "37": {
+    "german": "exploriere Knoten aufsteigend nach $d[u]$",
+    "english": "explore nodes ascending by $d[u]$"
+  },
+  "38": {
+    "german": "Exploriere Knoten $u$: relaxiere alle ausgehenden Kanten von $u$\\n",
+    "english": "Explore node $u$: relax all outgoing edges of $u$\\n"
+  },
+  "39": {
+    "german": "Korrektheit: beim Explorieren gilt $d[u] = \\dist(s, u)$",
+    "english": "Correctness: when exploring $d[u]=\\dist(s,u)$"
+  },
+  "40": {
+    "german": "\\textbf{Mit negativen Kantenlängen}",
+    "english": ""
+  },
+  "41": {
+    "german": "Problem: $d[u]$ könnte später wegen negativem Pfad noch kleiner werden\\n",
+    "english": "Issue: $d[u]$ may drop later due to negative path\\n"
+  },
+  "42": {
+    "german": "Hoffnung: einfach weiter relaxieren bis sich nichts mehr ändert führt\\nzum Ziel\\n",
+    "english": "Hope: simply keep relaxing until nothing changes leads\\nto the goal\\n"
+  },
+  "43": {
+    "german": "\\textbf{Grober Plan}",
+    "english": ""
+  },
+  "44": {
+    "german": "relaxiere jede Kante einmal",
+    "english": "relax each edge once"
+  },
+  "45": {
+    "german": "iteriere, bis sich keines der $d[v]$ mehr ändert\\n",
+    "english": "iterate until none of the $d[v]$ changes\\n"
+  },
+  "46": {
+    "german": "wenn $d[v] > d[u] + \\len(u, v)$\\\\\\nsetze $d[v] = d[u] + \\len(u, v)$\\n",
+    "english": "if $d[v] > d[u] + \\len(u, v)$\\\\\\nset $d[v] = d[u] + \\len(u, v)$\\n"
+  },
+  "47": {
+    "german": "\\textbf{Relaxierung der Kante $(u, v)$}",
+    "english": ""
+  },
+  "48": {
+    "german": "\\textbf{Welche dieser Aussagen sind wahr?}",
+    "english": ""
+  },
+  "49": {
+    "german": "\\textbf{Problemfall negative Kreise}",
+    "english": ""
+  },
+  "50": {
+    "german": "Pfade werden immer kürzer, je länger man im Kreis läuft",
+    "english": "Paths get shorter the longer you loop"
+  },
+  "51": {
+    "german": "terminiert nicht",
+    "english": "does not terminate"
+  },
+  "52": {
+    "german": "\\textbf{Ohne negative Kreise}",
+    "english": ""
+  },
+  "53": {
+    "german": "in jeder Iteration wird die Gesamtsumme der $d[v]$ um mindestens $1$\\nkleiner",
+    "english": "in each iteration, the total sum of $d[v]$ decreases by at least $1$"
+  },
+  "54": {
+    "german": "die Gesamtsumme der finalen Lösung ist von unten beschränkt\\n($\\not= -\\infty$)\\n",
+    "english": "the total sum of the final solution is bounded from below\\n($\\not= -\\infty$)\\n"
+  },
+  "55": {
+    "german": "also: Terminierung nach endlich vielen Iterationen",
+    "english": "thus: termination after finitely many iterations"
+  },
+  "56": {
+    "german": "\\textbf{Ziel im Folgenden}",
+    "english": ""
+  },
+  "57": {
+    "german": "beweise obere Schranke für die Anzahl Iterationen",
+    "english": "prove upper bound for the number of iterations"
+  },
+  "58": {
+    "german": "Erkennung negativer Kreise",
+    "english": "Detecting negative cycles"
+  },
+  "59": {
+    "german": "wenn $d[v] > d[u] + \\len(u, v)$\\\\\\nsetze $d[v] = d[u] + \\len(u, v)$\\n",
+    "english": "if $d[v] > d[u] + \\len(u, v)$\\\\\\nset $d[v] = d[u] + \\len(u, v)$\\n"
+  },
+  "60": {
+    "german": "\\textbf{Relaxierung der Kante $(u, v)$}",
+    "english": ""
+  },
+  "61": {
+    "german": "\\textbf{Algorithmus}",
+    "english": "\\textbf{Algorithm}"
+  },
+  "62": {
+    "german": "relaxiere jede Kante einmal",
+    "english": "relax each edge once"
+  },
+  "63": {
+    "german": "iteriere, bis sich kein $d[v]$ ändert\\n",
+    "english": "iterate until no $d[v]$ changes\\n"
+  },
+  "64": {
+    "german": "\\textbf{Betrachte einen kürzesten $st$-Pfad}",
+    "english": ""
+  },
+  "65": {
+    "german": "\\emph{Best-Case:} wir relaxieren von vorne nach hinten",
+    "english": "\\emph{Best case:} relax front to back"
+  },
+  "66": {
+    "german": "sind nach einer Iteration schon fertig",
+    "english": "done after one iteration"
+  },
+  "67": {
+    "german": "\\emph{Worst-Case:} wir relaxieren von hinten nach vorne\\n",
+    "english": "\\emph{Worst case:} relax back to front\\n"
+  },
+  "68": {
+    "german": "nach $i$ Iterationen: korrekte Distanz bis $v_i$",
+    "english": "after $i$ iters: correct distance to $v_i$"
+  },
+  "69": {
+    "german": "kürzester $st$-Pfad besteht aus $k$ Kanten $\\Rightarrow$ höchstens $k$\\nIterationen\\n",
+    "english": "shortest $st$ path has $k$ edges $\\Rightarrow$ at most $k$\\niterations\\n"
+  },
+  "70": {
+    "german": "Problem: wir wissen vorher nicht, welche Reihenfolge gut ist",
+    "english": "Problem: we don't know good order in advance"
+  },
+  "71": {
+    "german": "\\textbf{$\\Rightarrow$ $n - 1$ Iterationen sollten ausreichen}\\n",
+    "english": ""
+  },
+  "72": {
+    "german": "(werden wir im Folgenden noch formal beweisen)\\n",
+    "english": "(we will prove formally later)\\n"
+  },
+  "73": {
+    "german": "\\textbf{Beobachtung}\\\\\\nTeilpfade kürzester Pfade sind kürzeste Pfade.",
+    "english": "\\textbf{Observation}\\\\\\nSubpaths of shortest paths are shortest paths."
+  },
+  "74": {
+    "german": "kürzester $sv$-Pfad",
+    "english": "shortest $sv$ path"
+  },
+  "75": {
+    "german": "kürzester $su$-Pfad",
+    "english": "shortest $su$ path"
+  },
+  "76": {
+    "german": "kürzester $uv$-Pfad",
+    "english": "shortest $uv$ path"
+  },
+  "77": {
+    "german": "\\textbf{Begründung}",
+    "english": ""
+  },
+  "78": {
+    "german": "wenn es einen kürzeren $su$-Pfad gäbe",
+    "english": "if there were shorter $su$ path"
+  },
+  "79": {
+    "german": "dann wäre dieser zusammen mit dem $uv$-Pfad auch ein kürzerer $sv$-Pfad",
+    "english": "it plus $uv$ would be shorter $sv$ path"
+  },
+  "80": {
+    "german": "\\textbf{Achtung: Umkehrung gilt nicht}",
+    "english": ""
+  },
+  "81": {
+    "german": "kürzeste $su$- und $uv$-Pfade bilden zusammen \\textbf{nicht}\\nzwangsweise einen kürzesten $sv$-Pfad\\n",
+    "english": "shortest $su$ and $uv$ paths together do \\textbf{not}\\nnecessarily form a shortest $sv$ path\\n"
+  },
+  "82": {
+    "german": "das gilt nur, wenn $u$ auch auf dem kürzesten $sv$-Pfad liegt\\n",
+    "english": "only if $u$ lies on shortest $sv$ path\\n"
+  },
+  "83": {
+    "german": "\\textbf{Lemma}\\\\\\nWenn es einen kürzesten $sv$-Pfad gibt, der aus $k$ Kanten besteht,\\ndann gilt $d[v] = \\dist(s, v)$ nach $k$ Iterationen.\\n",
+    "english": "\\textbf{Lemma}\\\\\\nIf there exists a shortest $sv$ path with $k$ edges,\\nthen $d[v] = \\dist(s, v)$ after $k$ iterations.\\n"
+  },
+  "84": {
+    "german": "wenn $d[v] > d[u] + \\len(u, v)$\\\\\\nsetze $d[v] = d[u] + \\len(u, v)$\\n",
+    "english": "if $d[v] > d[u] + \\len(u, v)$\\\\\\nset $d[v] = d[u] + \\len(u, v)$\\n"
+  },
+  "85": {
+    "german": "\\textbf{Relaxierung der Kante $(u, v)$}",
+    "english": ""
+  },
+  "86": {
+    "german": "\\textbf{Algorithmus}",
+    "english": "\\textbf{Algorithm}"
+  },
+  "87": {
+    "german": "relaxiere jede Kante einmal",
+    "english": "relax each edge once"
+  },
+  "88": {
+    "german": "iteriere, bis sich kein $d[v]$ ändert\\n",
+    "english": "iterate until no $d[v]$ changes\\n"
+  },
+  "89": {
+    "german": "\\textbf{Beweis:} Induktion über $k$",
+    "english": "\\textbf{Proof:} induction over $k$"
+  },
+  "90": {
+    "german": "$k = 1$: Kante $(s, v)$ ist kürzester Pfad $\\Rightarrow$ eine Iteration\\ngenügt\\n",
+    "english": "$k = 1$: edge $(s, v)$ is shortest path $\\Rightarrow$ one iteration\\nsuffices\\n"
+  },
+  "91": {
+    "german": "$k > 1$: betrachte Vorgänger $u$ von $v$ auf kürzestem $sv$-Pfad\\n",
+    "english": "$k>1$: take predecessor $u$ of $v$ on shortest $sv$ path\\n"
+  },
+  "92": {
+    "german": "es gibt kürzesten $su$-Pfad mit $k - 1$ Kanten",
+    "english": "there is shortest $su$ path with $k-1$ edges"
+  },
+  "93": {
+    "german": "I.V.\\ $\\Rightarrow$ $d[u] = \\dist(s, u)$ nach $k - 1$ Iterationen\\n",
+    "english": "I.H.\\ $\\Rightarrow$ $d[u]=\\dist(s,u)$ after $k-1$ iters\\n"
+  },
+  "94": {
+    "german": "Relaxierung von $(u, v)$ in $k$ter Iteration setzt\\n$d[v] = \\dist(s, v)$\\n",
+    "english": "Relaxing $(u, v)$ in the $k$th iter sets\\n$d[v] = \\dist(s, v)$\\n"
+  },
+  "95": {
+    "german": "\\textbf{Theorem}\\\\\\nWenn der Graph keine negativen Kreise hat, so gilt nach $n - 1$\\nIterationen für alle Knoten $v$, dass $d[v] = \\dist(s, v)$.\\n",
+    "english": "\\textbf{Theorem}\\\\\\nIf the graph has no negative cycles, then after $n - 1$\\niterations we have $d[v] = \\dist(s, v)$ for all $v$.\\n"
+  },
+  "96": {
+    "german": "\\textbf{Beachte}",
+    "english": "\\textbf{Note}"
+  },
+  "97": {
+    "german": "kürzester Pfad hat höchstens $n$ Knoten und $n - 1$ Kanten\\n",
+    "english": "shortest path has at most $n$ nodes and $n-1$ edges\\n"
+  },
+  "98": {
+    "german": "(vorausgesetzt, wir haben keine negativen Kreise)\\n",
+    "english": "(assuming no negative cycles)\\n"
+  },
+  "99": {
+    "german": "\\textbf{Theorem}\\\\\\nWenn der Graph keine negativen Kreise hat, so gilt nach $n - 1$\\nIterationen für alle Knoten $v$, dass $d[v] = \\dist(s, v)$.\\n",
+    "english": "\\textbf{Theorem}\\\\\\nIf the graph has no negative cycles, then after $n - 1$\\niterations we have $d[v] = \\dist(s, v)$ for all $v$.\\n"
+  },
+  "100": {
+    "german": "\\textbf{Wenn es keinen negativen Kreis gibt}",
+    "english": ""
+  },
+  "101": {
+    "german": "wenn $d[v] > d[u] + \\len(u, v)$\\\\\\nsetze $d[v] = d[u] + \\len(u, v)$\\n",
+    "english": "if $d[v] > d[u] + \\len(u, v)$\\\\\\nset $d[v] = d[u] + \\len(u, v)$\\n"
+  },
+  "102": {
+    "german": "\\textbf{Relaxierung der Kante $(u, v)$}",
+    "english": ""
+  },
+  "103": {
+    "german": "\\textbf{Algorithmus}",
+    "english": "\\textbf{Algorithm}"
+  },
+  "104": {
+    "german": "relaxiere jede Kante einmal",
+    "english": "relax each edge once"
+  },
+  "105": {
+    "german": "iteriere, bis sich kein $d[v]$ ändert\\n",
+    "english": "iterate until no $d[v]$ changes\\n"
+  },
+  "106": {
+    "german": "weitere Relaxierungen ändern nichts mehr",
+    "english": "further relaxations change nothing"
+  },
+  "107": {
+    "german": "\\textbf{Situation:} nach $n - 1$ Iterationen",
+    "english": "\\textbf{Situation:} after $n-1$ iterations"
+  },
+  "108": {
+    "german": "für jede Kante $(u, v) \\in E$ gilt: $d[v] \\le d[u] + \\len(u, v)$",
+    "english": "for each edge $(u,v)\\in E$: $d[v]\\le d[u]+\\len(u,v)$"
+  },
+  "109": {
+    "german": "\\textbf{Wenn es negativen Kreis gibt}",
+    "english": ""
+  },
+  "110": {
+    "german": "man kann immer kürzere Pfade finden",
+    "english": "one can still find shorter paths"
+  },
+  "111": {
+    "german": "Relaxierungen haben weiterhin Effekt",
+    "english": "relaxations still have effect"
+  },
+  "112": {
+    "german": "es gibt $(u, v) \\in E$ mit: $d[v] > d[u] + \\len(u, v)$\\n",
+    "english": "there is $(u,v)\\in E$ with $d[v]>d[u]+\\len(u,v)$\\n"
+  },
+  "113": {
+    "german": "\\textbf{Test auf negativen Kreis:} überprüfe ob\\n$d[v] \\le d[u] + \\len(u, v)$ für alle $(u, v) \\in E$\\n\\n",
+    "english": "\\textbf{Negative cycle test:} check if\\n$d[v] \\le d[u] + \\len(u, v)$ for all $(u, v) \\in E$\\n\\n"
+  },
+  "114": {
+    "german": "\\textbf{Der Graph enthält einen negativen Kreis genau dann wenn\\dots}\\n",
+    "english": ""
+  },
+  "115": {
+    "german": "$d \\coloneqq$ \\type{Array} of size $n$ initialized with $\\infty$\\n",
+    "english": "$d \\coloneqq$ \\type{Array} of size $n$ initialized with $\\infty$\\n"
+  },
+  "116": {
+    "german": "\\keyword{for} $n - 1$ iterations \\keyword{do}",
+    "english": "\\keyword{for} $n-1$ iterations \\keyword{do}"
+  },
+  "117": {
+    "german": "wenn $d[v] > d[u] + \\len(u, v)$\\\\\\nsetze $d[v] = d[u] + \\len(u, v)$\\n",
+    "english": "if $d[v] > d[u] + \\len(u, v)$\\\\\\nset $d[v] = d[u] + \\len(u, v)$\\n"
+  },
+  "118": {
+    "german": "\\textbf{Relaxierung der Kante $(u, v)$}",
+    "english": ""
+  },
+  "119": {
+    "german": "\\keyword{return} negative cycle",
+    "english": "\\keyword{return} negative cycle"
+  },
+  "120": {
+    "german": "\\textbf{Laufzeit}",
+    "english": ""
+  },
+  "121": {
+    "german": "$n$ mal über alle Kanten iterieren",
+    "english": "iterate over all edges $n$ times"
+  },
+  "122": {
+    "german": "damit: $\\Theta(n \\cdot m)$",
+    "english": "thus: $\\Theta(n m)$"
+  },
+  "123": {
+    "german": "\\textbf{Abbrechen, wenn alle $d[v]$ gleich bleiben}\\n",
+    "english": ""
+  },
+  "124": {
+    "german": "in der Praxis sinnvoll",
+    "english": "practical in practice"
+  },
+  "125": {
+    "german": "hilft im Worst-Case nicht asymptotisch\\n",
+    "english": "no asymptotic help in worst case\\n"
+  },
+  "126": {
+    "german": "\\textbf{Geschickte Wahl der Kantenreihenfolge}\\n",
+    "english": ""
+  },
+  "127": {
+    "german": "kann konstante Faktoren sparen",
+    "english": "saves constant factors"
+  },
+  "128": {
+    "german": "hilft im Worst-Case nicht asymptotisch",
+    "english": "no asymptotic help in worst case"
+  },
+  "129": {
+    "german": "\\textbf{Weitere Anmerkungen zu Laufzeit}\\n",
+    "english": ""
+  },
+  "130": {
+    "german": "kein asymptotisch besserer Algo bekannt",
+    "english": "no asymptotically better algo known"
+  },
+  "131": {
+    "german": "sehr langsam verglichen mit $\\Theta(n \\log n + m)$\\n",
+    "english": "very slow vs. $\\Theta(n \\log n + m)$\\n"
+  },
+  "132": {
+    "german": "(Dijkstras Algo für nicht-negative Kantenlängen)",
+    "english": "(Dijkstra for non-negative edges)"
+  },
+  "133": {
+    "german": "\\textbf{Problem: All-Pair Shortest Path (APSP)}\\\\\\nGegen einen gerichteten Graphen $G = (V, E)$ mit Kantenlängen\\n$\\len \\colon E \\to \\mathbb Z$.  Berechne $\\dist(s, t)$ für alle\\nKnotenpaare $s, t \\in V$.\\n",
+    "english": "\\textbf{Problem: All-Pairs Shortest Path (APSP)}\\\\\\nGiven a directed graph $G = (V, E)$ with edge lengths\\n$\\len \\colon E \\to \\mathbb Z$. Compute $\\dist(s, t)$ for all\\nnode pairs $s, t \\in V$.\\n"
+  },
+  "134": {
+    "german": "\\textbf{Anmerkungen}",
+    "english": "\\textbf{Notes}"
+  },
+  "135": {
+    "german": "Distanzmatrix als Ausgabe",
+    "english": "distance matrix as output"
+  },
+  "136": {
+    "german": "Ausgabe ist bereits quadratisch groß",
+    "english": "output already quadratic size"
+  },
+  "137": {
+    "german": "\\textbf{Zwischenknoten}",
+    "english": ""
+  },
+  "138": {
+    "german": "Pfad $\\langle v_1, v_2, \\dots, v_k \\rangle$\\n",
+    "english": "Path $\\langle v_1, v_2, \\dots, v_k \\rangle$\\n"
+  },
+  "139": {
+    "german": "$v_1$ ist \\emph{Startknoten}, $v_k$ \\emph{Endknoten}\\n",
+    "english": "$v_1$ is \\emph{start}, $v_k$ \\emph{target}\\n"
+  },
+  "140": {
+    "german": "alle anderen sind \\emph{Zwischenknoten}",
+    "english": "all others are \\emph{intermediate}"
+  },
+  "141": {
+    "german": "wir nehmen erstmal an, dass es keine negativen Kreise gibt",
+    "english": "assume for now no negative cycles"
+  },
+  "142": {
+    "german": "Startknoten",
+    "english": "start node"
+  },
+  "143": {
+    "german": "Endknoten",
+    "english": "target node"
+  },
+  "144": {
+    "german": "Zwischenknoten",
+    "english": "intermediate"
+  },
+  "145": {
+    "german": "ohne Zwischenknoten",
+    "english": "no intermediates"
+  },
+  "146": {
+    "german": "Zwischenknoten: $\\{\\text{A}\\}$",
+    "english": "Intermediates: $\\{\\text{A}\\}$"
+  },
+  "147": {
+    "german": "Zwischenknoten: $\\{\\text{A, B}\\}$",
+    "english": "Intermediates: $\\{\\text{A, B}\\}$"
+  },
+  "148": {
+    "german": "Zwischenknoten: $\\{\\text{A, B, C}\\}$",
+    "english": "Intermediates: $\\{\\text{A, B, C}\\}$"
+  },
+  "149": {
+    "german": "Zwischenknoten: $\\{\\text{A, B, C, D}\\}$",
+    "english": "Intermediates: $\\{\\text{A, B, C, D}\\}$"
+  },
+  "150": {
+    "german": "Zwischenknoten: $\\{\\text{A, B, C, D, E}\\}$",
+    "english": "Intermediates: $\\{\\text{A, B, C, D, E}\\}$"
+  },
+  "151": {
+    "german": "alle Zwischenknoten",
+    "english": "all intermediates"
+  },
+  "152": {
+    "german": "\\textbf{Teillösungen für die Distanzen}",
+    "english": ""
+  },
+  "153": {
+    "german": "ordne Knotenmenge $V = \\{v_1, \\dots, v_n\\}$",
+    "english": "order vertex set $V = \\{v_1, \\dots, v_n\\}$"
+  },
+  "154": {
+    "german": "$D_i$: Distanzmatrix bezüglich Zwischenknoten aus\\n$V_i = \\{v_1, \\dots, v_i\\}$ $\\rightarrow$ Endergebnis $D_n$\\n",
+    "english": "$D_i$: distance matrix wrt intermediates from\\n$V_i = \\{v_1, \\dots, v_i\\}$ $\\rightarrow$ final $D_n$\\n"
+  },
+  "155": {
+    "german": "$D_i[u][v]$: Länge eines kürzesten $uv$-Pfads der nur Zwischenknoten\\naus $V_i$ verwendet\\n",
+    "english": "$D_i[u][v]$: length of a shortest $uv$ path that uses only\\nintermediates from $V_i$\\n"
+  },
+  "156": {
+    "german": "\\textbf{Algorithmus von Floyd und Warshall}",
+    "english": ""
+  },
+  "157": {
+    "german": "$D_0$ ist leicht zu berechnen: quasi die Adjazenzmatrix",
+    "english": "$D_0$ easy: basically adjacency matrix"
+  },
+  "158": {
+    "german": "berechne iterativ $D_i$ aus $D_{i - 1}$",
+    "english": "compute $D_i$ iteratively from $D_{i-1}$"
+  },
+  "159": {
+    "german": "$v_i$ ist neuer erlaubter Zwischenknoten",
+    "english": "$v_i$ is new allowed intermediate"
+  },
+  "160": {
+    "german": "Fall 1: kürzester $uv$-Pfad enthält $v_i$ \\\\\\n$\\Rightarrow$ $D_i[u][v] = D_{i - 1}[u][v_i] + D_{i - 1}[v_i][v]$\\n",
+    "english": "Case 1: shortest $uv$ path contains $v_i$ \\\\\\n$\\Rightarrow$ $D_i[u][v] = D_{i-1}[u][v_i] + D_{i-1}[v_i][v]$\\n"
+  },
+  "161": {
+    "german": "Fall 2: kürzester $uv$-Pfad enthält $v_i$ nicht\\\\\\n$\\Rightarrow$ $D_i[u][v] = D_{i - 1}[u][v]$\\n",
+    "english": "Case 2: shortest $uv$ path omits $v_i$\\\\\\n$\\Rightarrow$ $D_i[u][v] = D_{i-1}[u][v]$\\n"
+  },
+  "162": {
+    "german": "Entscheidung für den richtigen Fall: teste ob $D_{i - 1}[u][v_i] +\\nD_{i - 1}[v_i][v] < D_{i - 1}[u][v]$\\n",
+    "english": "Choose the right case: test if $D_{i-1}[u][v_i] +\\nD_{i-1}[v_i][v] < D_{i-1}[u][v]$\\n"
+  },
+  "163": {
+    "german": "\\textbf{Wie können wir $D_i$ aus $D_{i - 1}$ berechnen?}",
+    "english": "\\textbf{How to compute $D_i$ from $D_{i-1}$?}"
+  },
+  "164": {
+    "german": "\\textbf{Beachte}",
+    "english": "\\textbf{Note}"
+  },
+  "165": {
+    "german": "Korrektheit folgt direkt induktiv",
+    "english": "Correctness follows directly by induction"
+  },
+  "166": {
+    "german": "(mit der Fallunterscheidung der vorherigen Folie)",
+    "english": "(using the case split from previous slide)"
+  },
+  "167": {
+    "german": "$D \\coloneqq$ $n \\times n$ \\type{Matrix} initialized with $\\infty$\\n",
+    "english": "$D \\coloneqq$ $n\\times n$ matrix init with $\\infty$\\n"
+  },
+  "168": {
+    "german": "\\keyword{for} all pairs of nodes $(u, v) \\in V \\times V$ \\keyword{do}",
+    "english": "\\keyword{for} all pairs $(u,v)\\in V\\times V$ \\keyword{do}"
+  },
+  "169": {
+    "german": "Änderungen in Iteration $i$ machen für diese Iteration nichts kaputt\\\\\\n$\\rightarrow$ eine Matrix für alle $D_i$ genügt\\n",
+    "english": "Changes in iter $i$ don't break this iter\\\\\\n$\\rightarrow$ one matrix for all $D_i$ suffices\\n"
+  },
+  "170": {
+    "german": "Betrachtung aller Paare: für $u = v$,\\n$u = v_i$ oder $v_i = v$ passiert nichts\\n",
+    "english": "Considering all pairs: for $u = v$,\\n$u = v_i$ or $v_i = v$ nothing happens\\n"
+  },
+  "171": {
+    "german": "(Ausnahme: es gibt negativen Kreis $\\rightarrow$ stellt man so fest)",
+    "english": "(exception: negative cycle detected this way)"
+  },
+  "172": {
+    "german": "\\textbf{Laufzeit}",
+    "english": ""
+  },
+  "173": {
+    "german": "$n$ Iterationen",
+    "english": "$n$ iterations"
+  },
+  "174": {
+    "german": "$n^2$ Knotenpaare pro Iteration",
+    "english": "$n^2$ pairs per iteration"
+  },
+  "175": {
+    "german": "\\textbf{Algorithmische Technik}",
+    "english": ""
+  },
+  "176": {
+    "german": "definiere Teillösungen",
+    "english": "define sub-solutions"
+  },
+  "177": {
+    "german": "Berechnung größerer aus kleinen Teillösungen\\n",
+    "english": "compute bigger from small sub-solutions\\n"
+  },
+  "178": {
+    "german": "Wiederverwendung berechneter Teillösungen\\n",
+    "english": "reuse computed sub-solutions\\n"
+  },
+  "179": {
+    "german": "\\textbf{Hauptschwierigkeit: Definition geeigneter Teillösungen}",
+    "english": ""
+  },
+  "180": {
+    "german": "jetzt muss ich aber auch $Y_i$ berechnen (aus $X_{i - 1}$ und\\n$Y_{i - 1}$)\\n",
+    "english": "but now I must also compute $Y_i$ (from $X_{i-1}$ and\\n$Y_{i-1}$)\\n"
+  },
+  "181": {
+    "german": "Welche Infos sind essentiell für eine Teillösung?",
+    "english": "Which info essential for a sub-solution?"
+  },
+  "182": {
+    "german": "$X_i$ aus $X_{i-1}$ berechnen ist schwierig, aber es geht, wenn ich\\nzusätzlich $Y_{i - 1}$ kenne\\n",
+    "english": "computing $X_i$ from $X_{i-1}$ is hard, but possible if I\\nalso know $Y_{i-1}$\\n"
+  },
+  "183": {
+    "german": "\\textbf{Anmerkung}",
+    "english": "\\textbf{Note}"
+  },
+  "184": {
+    "german": "Berechnung ist meist eine Rekurrenz\\n",
+    "english": "computation usually a recurrence\\n"
+  },
+  "185": {
+    "german": "Korrektheit folgt meist induktiv",
+    "english": "correctness usually inductive"
+  },
+  "186": {
+    "german": "rekursive Umsetzung: sehr teuer (meist exponentiell), da keine\\nWiederverwendung von Teillösungen\\n",
+    "english": "recursive version: very costly (often exp.), since no\\nreuse of sub-solutions\\n"
+  },
+  "187": {
+    "german": "\\textbf{Beispiel: Floyd-Warshall}",
+    "english": ""
+  },
+  "188": {
+    "german": "$D_i[u][v]$: Distanz bzgl.\\ Zwischenknoten aus\\n$V_i = \\{v_1, \\dots, v_i\\}$\\n",
+    "english": "$D_i[u][v]$: distance wrt intermediates from\\n$V_i = \\{v_1, \\dots, v_i\\}$\\n"
+  },
+  "189": {
+    "german": "\\textbf{Vergleich mit Teile und Herrsche}",
+    "english": ""
+  },
+  "190": {
+    "german": "ähnlich: auch hier werden Teillösungen kombiniert",
+    "english": "similarly: sub-solutions combined here too"
+  },
+  "191": {
+    "german": "Besonderheit beim DP: Wiederverwendung von Teilergebnissen\\n",
+    "english": "peculiarity in DP: reuse of partial results\\n"
+  },
+  "192": {
+    "german": "(Teilprobleme nicht disjunkt)",
+    "english": "(subproblems not disjoint)"
+  },
+  "193": {
+    "german": "\\textbf{Häufiger Fehler: Fokus auf Rekurrenz statt Definition von\\n  Teillösungen}\\n",
+    "english": ""
+  },
+  "194": {
+    "german": "Knackpunkt: geeignete Definition der Teillösungen",
+    "english": "crucial: suitable definition of sub-solutions"
+  },
+  "195": {
+    "german": "Aufschrieb eines DP: sollte immer mit Definition der Teillösungen\\nbeginnen\\n",
+    "english": "A DP write-up should always start with defining the sub-solutions\\n"
+  },
+  "196": {
+    "german": "Rekurrenz ist dann oft mehr oder weniger offensichtlich",
+    "english": "recurrence then often obvious"
+  },
+  "197": {
+    "german": "\\textbf{Teillösungen iterativ aufbauen}\\n",
+    "english": ""
+  },
+  "198": {
+    "german": "meist wird irgendetwas Schritt für Schritt vergrößert",
+    "english": "typically something is enlarged step by step"
+  },
+  "199": {
+    "german": "Floyd-Warshall: Menge der Zwischenknoten $V_i$",
+    "english": "Floyd-Warshall: set of intermediates $V_i$"
+  },
+  "200": {
+    "german": "Sprechweise: \\emph{DP über Menge der Zwischenknoten}\\n",
+    "english": "Wording: \\emph{DP over set of intermediates}\\n"
+  },
+  "201": {
+    "german": "(so, wie man von einer \\emph{Induktion über $i$} spricht)\\n",
+    "english": "(analog to an \\emph{induction over $i$})\\n"
+  },
+  "202": {
+    "german": "\\textbf{Mentaler Shortcut:} Wenn man mit DPs vertraut ist, dann kommt\\ndas einer vollständigen Beschreibung des Floyd-Warshall Algos gleich.",
+    "english": "\\textbf{Mental shortcut:} If you know DPs, this already\\nfully describes Floyd–Warshall."
+  },
+  "203": {
+    "german": "(typischerweise disjunkte Teilprobleme)\\n",
+    "english": "(typically disjoint subproblems)\\n"
+  },
+  "204": {
+    "german": "\\textbf{SSSP mit negativen Kanten}",
+    "english": ""
+  },
+  "205": {
+    "german": "Bellman--Ford: $\\Theta(n m)$",
+    "english": "Bellman--Ford: $\\Theta(n m)$"
+  },
+  "206": {
+    "german": "Erkennung negativer Kreise",
+    "english": "Detecting negative cycles"
+  },
+  "207": {
+    "german": "ist im Prinzip ein DP über die Anzahl Kanten auf dem kürzesten Weg",
+    "english": "is basically DP over number of edges on shortest path"
+  },
+  "208": {
+    "german": "\\textbf{APSP}",
+    "english": ""
+  },
+  "209": {
+    "german": "Floyd--Warshall: $\\Theta(n^3)$",
+    "english": "Floyd--Warshall: $\\Theta(n^3)$"
+  },
+  "210": {
+    "german": "DP über die Menge der Zwischenknoten $V_i = \\{v_1, \\dots, v_i\\}$\\n",
+    "english": "DP over intermediates $V_i = \\{v_1, \\dots, v_i\\}$\\n"
+  },
+  "211": {
+    "german": "\\textbf{Dynamsiche Programmierung (DP)}",
+    "english": ""
+  },
+  "212": {
+    "german": "wichtige algorithmische Technik",
+    "english": "important algorithmic technique"
+  },
+  "213": {
+    "german": "wir werden später noch weitere DPs kennenlernen",
+    "english": "we will see more DPs later"
+  },
+  "214": {
+    "german": "\\textbf{(Möglicherweise) bessere Algorithmen}",
+    "english": ""
+  },
+  "215": {
+    "german": "Johnson: Bellman--Ford + Längenanpassung + $n$ Mal Dijkstra\\n$\\rightarrow$ $\\Theta(n^2 \\log n + nm)$\\n",
+    "english": "Johnson: Bellman–Ford + reweighting + $n$×Dijkstra\\n$\\rightarrow$ $\\Theta(n^2 \\log n + nm)$\\n"
+  },
+  "216": {
+    "german": "Thorup: $\\Theta(nm)$",
+    "english": "Thorup: $\\Theta(nm)$"
+  },
+  "217": {
+    "german": "Pettie, Ramachandran: $\\Theta(nm \\log \\alpha(m,n))$\\n",
+    "english": "Pettie, Ramachandran: $\\Theta(nm \\log \\alpha(m,n))$\\n"
+  },
+  "218": {
+    "german": "($\\alpha(m, n)$: sehr langsam wachsende inverse Ackermannfunktion)",
+    "english": "($\\alpha(m,n)$: very slow inverse Ackermann function)"
+  },
+  "219": {
+    "german": "$n$ mal Dijkstra $\\rightarrow$ $\\Theta(n^2 \\log n + nm)$\\n",
+    "english": "$n$×Dijkstra $\\rightarrow$ $\\Theta(n^2 \\log n + nm)$\\n"
+  },
+  "220": {
+    "german": "substantiell besser als $n^3$ bzw.\\ $nm$ geht vermutlich nicht",
+    "english": "substantially better than $n^3$ or $nm$ likely impossible"
+  },
+  "221": {
+    "german": "(Stichwort: Fine-Grained Complexity)",
+    "english": "(keyword: fine-grained complexity)"
+  },
+  "222": {
+    "german": "Williams: $n^3 / 2^{\\Omega(\\sqrt{\\log n})}$",
+    "english": "Williams: $n^3 / 2^{\\Omega(\\sqrt{\\log n})}$"
+  },
+  "223": {
+    "german": "\\textbf{Beachte}",
+    "english": "\\textbf{Note}"
+  },
+  "224": {
+    "german": "dünne Graphen: $m \\ll n^2$",
+    "english": "sparse graphs: $m \\ll n^2$"
+  },
+  "225": {
+    "german": "natürliche Kantenlängen",
+    "english": "natural edge lengths"
+  },
+  "226": {
+    "german": "nicht-negative Kantenlängen",
+    "english": "non-negative edges"
+  },
+  "227": {
+    "german": "Grumpy cat line art",
+    "english": "Grumpy cat line art"
+  },
+  "228": {
+    "german": "XXspiritwolf2000XX",
+    "english": "XXspiritwolf2000XX"
+  },
+  "229": {
+    "german": "Creative Commons",
+    "english": "Creative Commons"
+  },
+  "230": {
+    "german": "Bild:",
+    "english": "Image:"
+  },
+  "231": {
+    "german": "\\textbf{Warum lernen wir hier nur den langsamen Floyd-Warshall kennen?}",
+    "english": ""
+  },
+  "232": {
+    "german": "schön einfach",
+    "english": "nice and simple"
+  },
+  "233": {
+    "german": "Algorithmus der Wahl für dichte Graphen",
+    "english": "algorithm of choice for dense graphs"
+  },
+  "234": {
+    "german": "algorithmische Technik: dynamische Programmierung",
+    "english": "algorithmic technique: dynamic programming"
+  }
+}

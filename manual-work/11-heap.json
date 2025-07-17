@@ -1,0 +1,802 @@
+{
+  "1": {
+    "german": "Erinnerung: Priority-Queue für Dijkstra",
+    "english": "Reminder: priority queue for Dijkstra"
+  },
+  "2": {
+    "german": "Erinnerung und Anmerkung: Verzeigerte Strukturen",
+    "english": "Reminder and note: pointer structures"
+  },
+  "3": {
+    "german": "Wo liegt die Schwierigkeit?",
+    "english": "Where's the challenge?"
+  },
+  "4": {
+    "german": "Binärer Min-Heap",
+    "english": "Binary min-heap"
+  },
+  "5": {
+    "german": "Binärer Min-Heap: Überblick",
+    "english": "Binary min-heap: overview"
+  },
+  "6": {
+    "german": "Umsetzung als Array",
+    "english": "Array implementation"
+  },
+  "7": {
+    "german": "Algorithmus $\\rightarrow$ Pseudocode (Grundoperationen)",
+    "english": "Algorithm $\\rightarrow$ pseudocode (basic ops)"
+  },
+  "8": {
+    "german": "Algorithmus $\\rightarrow$ Pseudocode",
+    "english": "Algorithm $\\rightarrow$ pseudocode"
+  },
+  "9": {
+    "german": "Anmerkungen",
+    "english": "Notes"
+  },
+  "10": {
+    "german": "Initialer Aufbau",
+    "english": "Initial build-up"
+  },
+  "11": {
+    "german": "Initialer Aufbau: Umsetzung im Detail",
+    "english": "Initial build-up: details"
+  },
+  "12": {
+    "german": "Initialer Aufbau: Laufzeit",
+    "english": "Initial build-up: runtime"
+  },
+  "13": {
+    "german": "Priority-Queues in der Wildnis",
+    "english": "Priority queues in the wild"
+  },
+  "14": {
+    "german": "\\function{decPrio} mittels Lazy Evaluation",
+    "english": "\\function{decPrio} via lazy evaluation"
+  },
+  "15": {
+    "german": "Lazy Evaluation für Dijkstra",
+    "english": "Lazy evaluation for Dijkstra"
+  },
+  "16": {
+    "german": "Zusammenfassung",
+    "english": "Summary"
+  },
+  "17": {
+    "german": "Thomas Bläsius~--~Algorithmen 1",
+    "english": "Thomas Bläsius~--~Algorithms 1"
+  },
+  "18": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "19": {
+    "german": "\\textbf{Prioritätswarteschlange: binärer Heap}",
+    "english": "\\textbf{Priority--Queue: binary heap}"
+  },
+  "20": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "21": {
+    "german": "\\textbf{Dijkstras Algorithmus (Berechnung kürzester Wege)}",
+    "english": "\\textbf{Dijkstra's algorithm (shortest paths calculation)}"
+  },
+  "22": {
+    "german": "pro Schritt: finde unexplorierten Knoten mit kleinster aktuell\\nbekannter Distanz\\n",
+    "english": "per step: find unexplored node with smallest currently\\nknown distance\\n"
+  },
+  "23": {
+    "german": "gewünschte Datenstruktur: Priority-Queue",
+    "english": "Desired data structure: priority queue"
+  },
+  "24": {
+    "german": "$\\function{push}(v, 7)$: füge $v$ mit Priorität $7$ ein",
+    "english": "$\\function{push}(v,7)$: insert $v$ with priority $7$"
+  },
+  "25": {
+    "german": "$\\function{popMin}()$: extrahiere Element mit kleinster Priorität\\n",
+    "english": "$\\function{popMin}()$: extract element with lowest priority\\n"
+  },
+  "26": {
+    "german": "$\\function{decPrio}(v, 4)$: verkleinere Priorität von $v$ auf $4$",
+    "english": "$\\function{decPrio}(v, 4)$: decrease priority of $v$ to $4$"
+  },
+  "27": {
+    "german": "\\textbf{Ziel für heute}",
+    "english": "\\textbf{Today's goal}"
+  },
+  "28": {
+    "german": " Datenstruktur entwickeln, die diese Operationen unterstützt\\n",
+    "english": "Develop a data structure supporting these operations\\n"
+  },
+  "29": {
+    "german": "jede Operation sollte schnell sein ($O(\\log n)$)",
+    "english": "Each operation should be fast ($O(\\log n)$)"
+  },
+  "30": {
+    "german": "zunächst: nur $\\function{push}$ und $\\function{popMin}$\\n",
+    "english": "For now: only $\\function{push}$ and $\\function{popMin}$\\n"
+  },
+  "31": {
+    "german": "\\textbf{Anmerkung}",
+    "english": "\\textbf{Note}"
+  },
+  "32": {
+    "german": "Priorität wird oft auch \\emph{Schlüssel (key)} genannt\\n",
+    "english": "Priority is often called \\emph{key}\\n"
+  },
+  "33": {
+    "german": "weitere gängige Namen für die Operationen: \\function{insert},\\n\\function{extractMin}, \\function{decreaseKey}\\n",
+    "english": "other common names for operations: \\function{insert},\\n\\function{extractMin}, \\function{decreaseKey}\\n"
+  },
+  "34": {
+    "german": "\\textbf{Verzeigerte Strukturen}",
+    "english": "\\textbf{Pointer structures}"
+  },
+  "35": {
+    "german": "viele kleine Stückchen Speicher (Knoten)",
+    "english": "Lots of small memory cells (nodes)"
+  },
+  "36": {
+    "german": "ein Knoten speichert:",
+    "english": "A node stores:"
+  },
+  "37": {
+    "german": "Daten, die uns tatsächlich interessieren",
+    "english": "Actual payload data"
+  },
+  "38": {
+    "german": "Speicheradressen anderer Knoten (Zeiger)",
+    "english": "Pointers to other nodes"
+  },
+  "39": {
+    "german": "Zugriff durch Navigation entlang Zeiger\\n",
+    "english": "Access by navigating pointers\\n"
+  },
+  "40": {
+    "german": "\\textbf{Heute: Binärer Baum}",
+    "english": "\\textbf{Today: Binary Tree}"
+  },
+  "41": {
+    "german": "jeder Knoten speichert:",
+    "english": "Each node stores:"
+  },
+  "42": {
+    "german": "Priorität",
+    "english": "Priority"
+  },
+  "43": {
+    "german": "andere Daten\\n",
+    "english": "other data\\n"
+  },
+  "44": {
+    "german": "linkes und rechtes Kind",
+    "english": "left and right child"
+  },
+  "45": {
+    "german": "Elternknoten",
+    "english": "parent"
+  },
+  "46": {
+    "german": "vereinfachte Darstellung: zeige nur Prioritäten; alles andere ist\\nimplizit",
+    "english": "simplified display: show only priorities; everything else\\nimplicit"
+  },
+  "47": {
+    "german": "\\textbf{vereinfachte Darstellung}",
+    "english": "\\textbf{Simplified representation}"
+  },
+  "48": {
+    "german": "(z.B.\\ Knoten eines Graphen)",
+    "english": "(e.g. graph node)"
+  },
+  "49": {
+    "german": "speichere Elemente als sortierte Folge (nach Priorität)\\n",
+    "english": "Store elements as sorted sequence (by priority)\\n"
+  },
+  "50": {
+    "german": "\\textbf{Lösung 1: extreme Ordnung}",
+    "english": "\\textbf{Solution 1: extreme order}"
+  },
+  "51": {
+    "german": "super: $\\function{popMin}$ geht in $O(1)$",
+    "english": "great: $\\function{popMin}$ in $O(1)$"
+  },
+  "52": {
+    "german": "Problem: $\\function{push}$ ist schwierig $\\rightarrow$ $\\Theta(n)$\\n",
+    "english": "Problem: $\\function{push}$ is difficult $\\rightarrow$ $\\Theta(n)$\\n"
+  },
+  "53": {
+    "german": "\\textbf{Lösung 2: extreme Unordnung}",
+    "english": "\\textbf{Solution 2: extreme disorder}"
+  },
+  "54": {
+    "german": "speichere Elemente als (unsortierte) Folge\\n",
+    "english": "Store elements as unsorted sequence\\n"
+  },
+  "55": {
+    "german": "super: $\\function{push}$ geht in $O(1)$",
+    "english": "Good: $\\function{push}$ in $O(1)$"
+  },
+  "56": {
+    "german": "Problem: $\\function{popMin}$ ist schwierig $\\rightarrow$ $\\Theta(n)$\\n",
+    "english": "Problem: $\\function{popMin}$ is difficult $\\rightarrow$ $\\Theta(n)$\\n"
+  },
+  "57": {
+    "german": "(das leidige Problem: in Listen ist Suche langsam, in Arrays ist\\nEinfügen langsam)",
+    "english": "(the eternal problem: search is slow in lists, insertion\\nis slow in arrays)"
+  },
+  "58": {
+    "german": "\\textbf{Gute Lösung: Binärbaum mit ein bisschen Ordnung}\\n",
+    "english": "\\textbf{Good solution: binary tree with some order}\\n"
+  },
+  "59": {
+    "german": "sortiere jeden Pfad von der Wurzel zu einem Blatt\\n",
+    "english": "Sort each root--leaf path\\n"
+  },
+  "60": {
+    "german": "genug Ordnung um das Minimum schnell zu finden\\n",
+    "english": "Enough order to find the minimum\\n"
+  },
+  "61": {
+    "german": "kurze sortierte Pfade $\\rightarrow$ Sortierung aufrechterhalten billig\\n",
+    "english": "Short paths $\\Rightarrow$ cheap maintenance\\n"
+  },
+  "62": {
+    "german": "\\textbf{Erinnerung:}",
+    "english": "\\textbf{Reminder:}"
+  },
+  "63": {
+    "german": "$\\function{push}(x)$: Element mit Priorität $x$ einfügen",
+    "english": "$\\function{push}(x)$: Insert element with priority $x$"
+  },
+  "64": {
+    "german": "$\\function{popMin}()$: Element mit kleinster Priorität extrahieren\\n",
+    "english": "$\\function{popMin}()$: Extract element with lowest priority\\n"
+  },
+  "65": {
+    "german": "\\textbf{Min-Heap Eigenschaft}",
+    "english": "\\textbf{Min-Heap Property}"
+  },
+  "66": {
+    "german": "Priorität eines Knotens $\\le$ Prioritäten der Kinder\\n",
+    "english": "Priority of parent $\\le$ priorities of children\\n"
+  },
+  "67": {
+    "german": "damit gilt: alle Wurzel--Blatt Pfade sind sortiert\\n",
+    "english": "$\\Rightarrow$ each root--leaf path sorted\\n"
+  },
+  "68": {
+    "german": "\\textbf{Form des Baumes: vollständiger Binärbaum}",
+    "english": "\\textbf{Tree shape: complete binary tree}"
+  },
+  "69": {
+    "german": "letztes Layer: von links nach rechts gefüllt",
+    "english": "Last layer filled L$\\to$R"
+  },
+  "70": {
+    "german": "außer letztes Layer: alle voll besetzt ($2^i$ Knoten auf Layer $i$)\\n",
+    "english": "Other layers full ($2^i$ nodes)\\n"
+  },
+  "71": {
+    "german": "beachte: $\\Theta(\\log n)$ viele Layer\\n",
+    "english": "$\\Theta(\\log n)$ layers\\n"
+  },
+  "72": {
+    "german": "\\textbf{Todo: Aufrechterhalten dieser beiden Eigenschaften}",
+    "english": "\\textbf{Todo: maintain these two properties}"
+  },
+  "73": {
+    "german": "$\\function{push}(x)$: $x$ erstmal als neues Blatt unten anhängen\\n",
+    "english": "$\\function{push}(x)$: append $x$ as new leaf\\n"
+  },
+  "74": {
+    "german": "dann: $x$ auf dem Pfad zur Wurzel nach oben tauschen (bubble-up)\\n",
+    "english": "then: bubble-up $x$ toward root\\n"
+  },
+  "75": {
+    "german": "$\\function{popMin}()$: Wurzel entfernen und durch letztes Blatt ersetzten\\n",
+    "english": "popMin: replace root with last leaf\\n"
+  },
+  "76": {
+    "german": "dann: Wurzel zum kleineren Kind nach unten tauschen (sink-down)\\n",
+    "english": "then: sink root down to smaller child\\n"
+  },
+  "77": {
+    "german": "\\textbf{Erinnerung:}",
+    "english": "\\textbf{Reminder:}"
+  },
+  "78": {
+    "german": "$\\function{push}(x)$: Element mit Priorität $x$ einfügen",
+    "english": "$\\function{push}(x)$: Insert element with priority $x$"
+  },
+  "79": {
+    "german": "$\\function{popMin}()$: Element mit kleinster Priorität extrahieren\\n",
+    "english": "$\\function{popMin}()$: Extract element with lowest priority\\n"
+  },
+  "80": {
+    "german": "und: Minimum in der Wurzel",
+    "english": "and: Minimum at the root"
+  },
+  "81": {
+    "german": "\\textbf{Laufzeit:} $\\Theta(\\log n)$",
+    "english": "\\textbf{Runtime:} $\\Theta(\\log n)$"
+  },
+  "82": {
+    "german": "\\textbf{Laufzeit?}",
+    "english": "\\textbf{Runtime?}"
+  },
+  "83": {
+    "german": "\\textbf{Invariante}",
+    "english": "\\textbf{Invariant}"
+  },
+  "84": {
+    "german": "Heap-Eigenschaft: Elter $\\le$ Kind",
+    "english": "Heap property: parent $\\le$ child"
+  },
+  "85": {
+    "german": "Form: vollständiger Binärbaum",
+    "english": "Shape: complete binary tree"
+  },
+  "86": {
+    "german": "\\textbf{Operation $\\function{push}(x)$}",
+    "english": "\\textbf{Operation $\\function{push}(x)$}"
+  },
+  "87": {
+    "german": "füge $x$ als neues Blatt ein",
+    "english": "add $x$ as new leaf"
+  },
+  "88": {
+    "german": "tausche $x$ hoch solange nötig",
+    "english": "swap $x$ up while needed"
+  },
+  "89": {
+    "german": "\\textbf{Operation $\\function{popMin}()$}",
+    "english": "\\textbf{Operation $\\function{popMin}()$}"
+  },
+  "90": {
+    "german": "ersetze Wurzel durch letztes Blatt $x$",
+    "english": "replace root by last leaf"
+  },
+  "91": {
+    "german": "tausche $x$ runter solange nötig\\n",
+    "english": "swap $x$ down while needed\\n"
+  },
+  "92": {
+    "german": "\\textbf{Beachte}",
+    "english": "\\textbf{Note}"
+  },
+  "93": {
+    "german": "erster Schritt der Operationen verletzt Heap-Eigenschaft nur an einer\\nStelle",
+    "english": "First step of the operations violates heap property only in one place\\n"
+  },
+  "94": {
+    "german": "Fix: tausche den entsprechenden Knoten iterativ nach oben/unten\\n",
+    "english": "Fix: iteratively swap node up/down\\n"
+  },
+  "95": {
+    "german": "nur $\\Theta(\\log n)$ Tauschoperationen, da Baum Höhe $\\Theta(\\log n)$ hat\\n",
+    "english": "$\\Theta(\\log n)$ swaps (tree height)\\n"
+  },
+  "96": {
+    "german": "\\textbf{Weitere Operationen: Priorität ändern, Eintrag löschen}",
+    "english": "\\textbf{Further operations: change priority, delete entry}"
+  },
+  "97": {
+    "german": "können ähnlich implementiert werden",
+    "english": "Similar implementations possible"
+  },
+  "98": {
+    "german": "in vielen Implementierungen nicht verfügbar",
+    "english": "Often not available in libraries"
+  },
+  "99": {
+    "german": "Trick: Lazy Evaluation (später)",
+    "english": "Trick: lazy evaluation (later)"
+  },
+  "100": {
+    "german": "\\textbf{In der Praxis effiziente Repräsentation}",
+    "english": "\\textbf{Efficient representation in practice}"
+  },
+  "101": {
+    "german": "Arrays oft effizienter als verzeigerte Struktur",
+    "english": "Arrays are often more efficient than pointer structures"
+  },
+  "102": {
+    "german": "Struktur eigentlich klar: vollständiger Binärbaum",
+    "english": "Structure is clear: complete binary tree"
+  },
+  "103": {
+    "german": "speichere Knoten hintereinander in einem Array\\n",
+    "english": "Store nodes sequentially in an array\\n"
+  },
+  "104": {
+    "german": "\\textbf{Repräsentation eines Knotens}",
+    "english": "\\textbf{Representation of a node}"
+  },
+  "105": {
+    "german": "sei $v \\in [0, n)$ eine ganze Zahl",
+    "english": "Let $v\\in[0,n)$"
+  },
+  "106": {
+    "german": "$v$ repräsentiert den Knoten an Stelle $v$ im Array\\n",
+    "english": "$v$ = node index $v$\\n"
+  },
+  "107": {
+    "german": "\\textbf{Kind- und Elternknoten von $v$}",
+    "english": "\\textbf{Children and parent of $v$}"
+  },
+  "108": {
+    "german": "linkes Kind: $2v + 1$",
+    "english": "left child: $2v + 1$"
+  },
+  "109": {
+    "german": "rechtes Kind: $2v + 2$",
+    "english": "right child: $2v + 2$"
+  },
+  "110": {
+    "german": "Elternknoten: $\\left\\lfloor \\frac{v - 1}{2} \\right\\rfloor$",
+    "english": "parent: $\\lfloor\\frac{v - 1}{2}\\rfloor$"
+  },
+  "111": {
+    "german": "\\textbf{Wo finde ich das linke Kind von $v$?}",
+    "english": "\\textbf{Where is the left child of $v$?}"
+  },
+  "112": {
+    "german": "\\textbf{Wo finde ich das rechte Kind von $v$?}",
+    "english": "\\textbf{Where is the right child of $v$?}"
+  },
+  "113": {
+    "german": "\\textbf{Wo finde ich den Elternknoten von $v$?}",
+    "english": "\\textbf{Where is the parent of $v$?}"
+  },
+  "114": {
+    "german": "\\textbf{Beweisskizze}",
+    "english": "\\textbf{Proof sketch}"
+  },
+  "115": {
+    "german": "Knoten auf Lage $i - 1$:\\hfill $[2^{i - 1} - 1, 2^{i} - 2]$",
+    "english": "Level $i-1$: $[2^{i-1}-1,2^{i}-2]$"
+  },
+  "116": {
+    "german": "Knoten auf Lage $i$:\\hfill $[2^{i} - 1, 2^{i + 1} - 2]$",
+    "english": "Level $i$: $[2^{i}-1,2^{i+1}-2]$"
+  },
+  "117": {
+    "german": "$\\mathrm{res} \\coloneqq A[0]$",
+    "english": "$\\mathrm{res} \\coloneqq A[0]$"
+  },
+  "118": {
+    "german": "\\keyword{return} $\\mathrm{res}$",
+    "english": "\\keyword{return} $\\mathrm{res}$"
+  },
+  "119": {
+    "german": "$\\mathrm{res}$:",
+    "english": "$\\mathrm{res}$:"
+  },
+  "120": {
+    "german": "\\textbf{Heapsort}",
+    "english": "\\textbf{Heapsort}"
+  },
+  "121": {
+    "german": "\\textbf{Prioritäten müssen keine Zahlen sein}",
+    "english": "\\textbf{Priorities need not be numbers}"
+  },
+  "122": {
+    "german": "das einzige, was wir mit den Prioritäten machen: vergleichen",
+    "english": "The only operation on priorities is comparison"
+  },
+  "123": {
+    "german": "Prioritäten können Elemente einer beliebigen geordneten Menge sein;\\nz.B. Strings",
+    "english": "Priorities can be any ordered set;\\n e.g. strings"
+  },
+  "124": {
+    "german": "Laufzeit: $\\Theta(\\log n)$ Vergleiche pro Operation",
+    "english": "$\\Theta(\\log n)$ comparisons per operation"
+  },
+  "125": {
+    "german": "Schritt 1: alle $n$ Elemente mit $\\function{push}$ einfügen \\hfill\\n$\\Theta(n \\log n)$",
+    "english": "Step 1: insert all $n$ elements via push \\hfill\\n$\\Theta(n \\log n)$"
+  },
+  "126": {
+    "german": "Schritt 2: $n$ mal das minimale Element mit $\\function{popMin}$ entfernen \\hfill\\n$\\Theta(n \\log n)$",
+    "english": "Step 2: remove min $n$ times with popMin \\hfill\\n$\\Theta(n \\log n)$"
+  },
+  "127": {
+    "german": "damit: Elemente werden aufsteigend sortiert entnommen",
+    "english": "$\\Rightarrow$ elements are removed in ascending order"
+  },
+  "128": {
+    "german": "\\textbf{Untere Schranke}",
+    "english": "\\textbf{Lower bound}"
+  },
+  "129": {
+    "german": "vergleichsbasiertes Sortieren braucht $\\Omega(n \\log n)$ $\\rightarrow$\\n\\function{push} oder \\function{popMin} braucht $\\Omega(\\log n)$\\n",
+    "english": "Comparison sort needs $\\Omega(n \\log n)$ $\\Rightarrow$ push or popMin needs $\\Omega(\\log n)$\\n"
+  },
+  "130": {
+    "german": "schlagbar, wenn Prioritäten kleine ganze Zahlen sind:\\\\\\nbenutze Buckets, wie bei Bucketsort mit den Prioritäten als Indizes\\neines Arrays\\n",
+    "english": "Beatable if priorities are small ints:\\\\\\nuse buckets like bucketsort with priorities as array indices\\n"
+  },
+  "131": {
+    "german": "\\textbf{Situation}",
+    "english": "\\textbf{Situation}"
+  },
+  "132": {
+    "german": "gegeben: Folge von Prioritäten (unsortiert)",
+    "english": "Input: unsorted prios"
+  },
+  "133": {
+    "german": "Ziel: mache daraus einen Heap",
+    "english": "Goal: build heap"
+  },
+  "134": {
+    "german": "einfache Lösung: rufe $n$ mal \\function{push} auf $\\rightarrow$\\nLaufzeit $\\Theta(n \\log n)$",
+    "english": "Simple: call push $n$ times $\\rightarrow$ time $\\Theta(n \\log n)$"
+  },
+  "135": {
+    "german": "\\textbf{Beobachtung}",
+    "english": "\\textbf{Observation}"
+  },
+  "136": {
+    "german": "Geht es besser?",
+    "english": "Can we improve?"
+  },
+  "137": {
+    "german": "Annahme: Teilbaum unter $u_\\ell$ und $u_r$ ist bereits Heap",
+    "english": "Assume subtrees already heap"
+  },
+  "138": {
+    "german": "dann: $\\function{sinkDown}(v)$ macht Teilbaum unter $v$ zum Heap",
+    "english": "sinkDown($v$) fixes subtree"
+  },
+  "139": {
+    "german": "\\textbf{Vorüberlegung zur Laufzeit}",
+    "english": "\\textbf{Runtime estimate}"
+  },
+  "140": {
+    "german": "Kosten für die Wurzel: $\\Theta(\\log n)$",
+    "english": "Root cost $\\Theta(\\log n)$"
+  },
+  "141": {
+    "german": "aber: Knoten weiter unten im Baum können auch nicht so weit sinken",
+    "english": "but: lower nodes can't sink as far"
+  },
+  "142": {
+    "german": "und: die meisten Knoten liegen weiter unten im Baum",
+    "english": "and: most nodes are lower in tree"
+  },
+  "143": {
+    "german": "Algo: rufe bottom-up für jeden Knoten einmal $\\function{sinkDown}$ auf\\n",
+    "english": "Algo: call $\\function{sinkDown}$ bottom-up for each node\\n"
+  },
+  "144": {
+    "german": "$\\function{buildHeap}(\\type{Array } \\mathrm{priorities})$",
+    "english": "$\\function{buildHeap}(\\type{Array } \\mathrm{priorities})$"
+  },
+  "145": {
+    "german": "$A \\coloneqq \\mathrm{priorities}$",
+    "english": "$A \\coloneqq \\mathrm{priorities}$"
+  },
+  "146": {
+    "german": "\\textbf{Erinnerung: Array-Repräsentation des Baums}",
+    "english": "\\textbf{Reminder: array representation of the tree}"
+  },
+  "147": {
+    "german": "\\textbf{Anmerkung: Korrektheit}",
+    "english": "\\textbf{Note: correctness}"
+  },
+  "148": {
+    "german": "\\function{sinkDown} wird bottom-up angewendet: tieferes Layer fertig\\nbevor höheres beginnt",
+    "english": "sinkDown applied bottom-up: deeper layer done before higher starts\\n"
+  },
+  "149": {
+    "german": "induktiv: beim Aufruf $\\function{sinkDown}(v)$ sind Teilbäume unter\\nden Kindern von $v$ schon Heaps\\n",
+    "english": "Inductive: when sinkDown($v$) starts, child subtrees already heaps\\n"
+  },
+  "150": {
+    "german": "nach $\\function{sinkDown}(v)$ ist Teilbaum unter $v$ ein Heap\\n",
+    "english": "afterwards subtree is heap\\n"
+  },
+  "151": {
+    "german": "\\textbf{Kosten für den Aufruf $\\function{sinkDown}(v)$}",
+    "english": "\\textbf{Cost of calling $\\function{sinkDown}(v)$}"
+  },
+  "152": {
+    "german": "sei $i$ die Distanz von $v$ zu einem Blatt",
+    "english": "$i$ = dist to leaf"
+  },
+  "153": {
+    "german": "$v$ wandert höchstens $i$ Schritte nach unten",
+    "english": "move $\\le i$ steps down"
+  },
+  "154": {
+    "german": "Laufzeit: $\\Theta(i + 1)$",
+    "english": "Time $\\Theta(i+1)$"
+  },
+  "155": {
+    "german": "\\textbf{Anzahl Knoten für festes $i$:}\\n$\\Theta\\left(\\frac{n}{2^i}\\right)$\\n",
+    "english": "\\textbf{Number of nodes for fixed $i$:}\\n$\\Theta\\left(\\frac{n}{2^i}\\right)$\\n"
+  },
+  "156": {
+    "german": "\\textbf{Gesamtkosten:} $\\Theta\\left(\\sum \\frac{n \\cdot i}{2^i}\\right)\\n= \\Theta(n)$\\n",
+    "english": "\\textbf{Total cost:} $\\Theta\\left(\\sum \\frac{n \\cdot i}{2^i}\\right)\\n= \\Theta(n)$\\n"
+  },
+  "157": {
+    "german": "\\textbf{Nebenrechnung:}\\n",
+    "english": "\\textbf{Side calculation:}\\n"
+  },
+  "158": {
+    "german": "\\textbf{Wie viele Knoten haben wir für ein gegebenes $i$?}\\n",
+    "english": "\\textbf{How many nodes for a given $i$?}\\n"
+  },
+  "159": {
+    "german": "unterstützt keine weiteren Operationen wie \\function{decPrio} (für\\nDijkstra nötig)\\n",
+    "english": "Doesn't support extra ops like decPrio (needed for Dijkstra)\\n"
+  },
+  "160": {
+    "german": "nutze dafür Lazy Evaluation Trick (gleich)",
+    "english": "Use lazy eval soon"
+  },
+  "161": {
+    "german": "\\textbf{Java}",
+    "english": "\\textbf{Java}"
+  },
+  "162": {
+    "german": "\\textbf{Beachte}",
+    "english": "\\textbf{Note}"
+  },
+  "163": {
+    "german": "\\textbf{Grundsätzliche Idee}",
+    "english": "\\textbf{Basic idea}"
+  },
+  "164": {
+    "german": "markiere zu ändernden Knoten als veraltet",
+    "english": "mark changing node as stale"
+  },
+  "165": {
+    "german": "füge Änderung als neuen Konten ein",
+    "english": "Insert change as new node"
+  },
+  "166": {
+    "german": "überspringe veraltete Knoten bei \\function{popMin}",
+    "english": "Skip stale in popMin"
+  },
+  "167": {
+    "german": "\\textbf{Tatsächliche Laufzeit}",
+    "english": "\\textbf{Actual runtime}"
+  },
+  "168": {
+    "german": "\\function{popMin} ist aber manchmal teuer: viele veraltete Knoten\\nmüssen übersprungen werden\\n",
+    "english": "popMin can be costly: must skip many stale nodes\\n"
+  },
+  "169": {
+    "german": "\\function{decPrio} hat dann die selbe Laufzeit wie \\function{push}\\n",
+    "english": "\\function{decPrio} has same runtime as \\function{push}\\n"
+  },
+  "170": {
+    "german": "charge zusätzliche Kosten bei \\function{popMin} auf verantwortlichen\\n\\function{decPrio}-Aufruf",
+    "english": "Charge extra popMin cost to responsible decPrio call"
+  },
+  "171": {
+    "german": "\\function{decPrio} ist also faul und hinterlässt zusätzliche Arbeit\\nfür \\function{popMin}\\n",
+    "english": "decPrio is lazy and leaves extra work for popMin\\n"
+  },
+  "172": {
+    "german": "\\textbf{Amortisierte Laufzeit}",
+    "english": "\\textbf{Amortized runtime}"
+  },
+  "173": {
+    "german": "\\function{popMin} wird so alle Kosten los außer für ein\\nnicht-veraltetes Element $\\rightarrow$ $\\Theta(\\log n)$",
+    "english": "popMin sheds all costs except one fresh element $\\rightarrow$ $\\Theta(\\log n)$"
+  },
+  "174": {
+    "german": "jedem \\function{decPrio}-Aufruf wird nur einmal Kosten zugewiesen\\n$\\rightarrow$ $\\Theta(\\log n)$\\n",
+    "english": "Each decPrio call charged once $\\rightarrow$ $\\Theta(\\log n)$\\n"
+  },
+  "175": {
+    "german": "$d \\coloneqq$ \\type{Array} of size $n$ initialized with $\\infty$\\n",
+    "english": "$d \\coloneqq$ \\type{Array} of size $n$ initialized with $\\infty$\\n"
+  },
+  "176": {
+    "german": "\\type{PriorityQueue} $Q \\coloneqq$ empty priority queue",
+    "english": "\\type{PriorityQueue} $Q \\coloneqq$ empty priority queue"
+  },
+  "177": {
+    "german": "$d \\coloneqq$ \\type{Array} of size $n$ initialized with $\\infty$\\n",
+    "english": "$d \\coloneqq$ \\type{Array} of size $n$ initialized with $\\infty$\\n"
+  },
+  "178": {
+    "german": "\\type{PriorityQueue} $Q \\coloneqq$ PQ containing only $s$",
+    "english": "PQ $Q$ contains only $s$"
+  },
+  "179": {
+    "german": "$\\mathrm{done} \\coloneqq$ \\type{Array} of size $n$ init with\\n\\textsc{false}\\n",
+    "english": "$\\mathrm{done}$ array $n$ false\\n"
+  },
+  "180": {
+    "german": "\\keyword{if} $\\mathrm{done}[u]$ \\keyword{then} \\keyword{continue}",
+    "english": "\\keyword{if} $\\mathrm{done}[u]$ \\keyword{then} \\keyword{continue}"
+  },
+  "181": {
+    "german": "$\\mathrm{done}[u] = \\textsc{true}$",
+    "english": "$\\mathrm{done}[u] = \\textsc{true}$"
+  },
+  "182": {
+    "german": "bereits exploriert",
+    "english": "already explored"
+  },
+  "183": {
+    "german": "noch nicht exploriert",
+    "english": "not yet explored"
+  },
+  "184": {
+    "german": "aktueller Wert für $d[\\cdot]$",
+    "english": "current value of $d[\\cdot]$"
+  },
+  "185": {
+    "german": "\\textbf{Erinnerung: Explorieren von $u$}\\n",
+    "english": "\\textbf{Reminder: exploring $u$}\\n"
+  },
+  "186": {
+    "german": "betrachte alle Nachbarn $v$ von $u$",
+    "english": "consider all neighbors $v$ of $u$"
+  },
+  "187": {
+    "german": "falls $d[v] > d[u] + \\len(u, v)$,\\\\\\nsetze $d[v] = d[u] + \\len(u, v)$\\n",
+    "english": "if $d[v] > d[u] + \\len(u, v)$,\\\\\\nset $d[v] = d[u] + \\len(u, v)$\\n"
+  },
+  "188": {
+    "german": "\\textbf{Priority-Queue}",
+    "english": "\\textbf{Priority queue}"
+  },
+  "189": {
+    "german": "$\\function{push}(x)$ Element mit Priorität $x$ einfügen",
+    "english": "push($x$) insert prio $x$"
+  },
+  "190": {
+    "german": "$\\function{popMin}()$ Element mit minimaler Priorität extrahieren",
+    "english": "$\\function{popMin}()$ extract min priority element"
+  },
+  "191": {
+    "german": "Trick für weitere Operationen (z.B. \\function{decPrio}): Lazy Evaluation",
+    "english": "Trick: lazy eval for more ops"
+  },
+  "192": {
+    "german": "markiere zu ändernden Knoten als veraltet $\\rightarrow$ merken wir bei\\n\\function{popMin}\\n",
+    "english": "mark stale $\\rightarrow$ handle in popMin\\n"
+  },
+  "193": {
+    "german": "\\textbf{Binärer Heap}",
+    "english": "\\textbf{Binary heap}"
+  },
+  "194": {
+    "german": "Operationen in $\\Theta(\\log n)$ und sehr schnell in der Praxis\\n",
+    "english": "Ops $\\Theta(\\log n)$, fast IRL\\n"
+  },
+  "195": {
+    "german": "ausreichend viel Ordnung, um Minimum schnell zu finden\\n",
+    "english": "Enough order to find min\\n"
+  },
+  "196": {
+    "german": "ausreichend wenig Ordnung, um diese nach einer Änderung wieder\\nherzustellen\\n",
+    "english": "Little enough order to restore it after a change\\n"
+  },
+  "197": {
+    "german": "\\textbf{Geht es besser?}",
+    "english": "\\textbf{Can we do better?}"
+  },
+  "198": {
+    "german": "Binomial-Heap: verbessert \\function{push} auf amortisiert $\\Theta(1)$",
+    "english": "Binomial heap: push amort. 1"
+  },
+  "199": {
+    "german": "etwas mehr Unordnung $\\rightarrow$ aufräumen wenn nötig",
+    "english": "More mess $\\Rightarrow$ clean on demand"
+  },
+  "200": {
+    "german": "Fibonacci-Heap: verbessert zusätzlich \\function{decPrio} auf amortisiert $\\Theta(1)$",
+    "english": "Fibonacci heap: improves \\function{decPrio} to amortized $\\Theta(1)$"
+  }
+}

@@ -1,0 +1,946 @@
+{
+  "1": {
+    "german": "Problemstellung",
+    "english": "Problem"
+  },
+  "2": {
+    "german": "Erinnerung: BFS",
+    "english": "Recall: BFS"
+  },
+  "3": {
+    "german": "Kernproblem beim Umgang mit Kantenlängen",
+    "english": "Key issue in handling edge lengths"
+  },
+  "4": {
+    "german": "Explorierungsreihenfolge $\\rightarrow$ Dijkstras Algorithmus",
+    "english": "Exploration order $\\rightarrow$ Dijkstra's algorithm"
+  },
+  "5": {
+    "german": "Dijkstras Algorithmus",
+    "english": "Dijkstra's algorithm"
+  },
+  "6": {
+    "german": "Ausblick: Priority-Queue",
+    "english": "Outlook: priority queue"
+  },
+  "7": {
+    "german": "Dijkstras Algorithmus mit Priority-Queue",
+    "english": "Dijkstra with priority queue"
+  },
+  "8": {
+    "german": "Korrektheit: Überblick",
+    "english": "Correctness: overview"
+  },
+  "9": {
+    "german": "Korrektheit: Algo kennt nur existiernede Pfade",
+    "english": "Correctness: algo knows only existing paths"
+  },
+  "10": {
+    "german": "Korrektheit: Algo findet kürzesten Pfad",
+    "english": "Correctness: algo finds shortest path"
+  },
+  "11": {
+    "german": "Dijkstras Algo: Zusammenfassung und Anmerkungen",
+    "english": "Dijkstra's algo: summary and remarks"
+  },
+  "12": {
+    "german": "Ausblick: Routenplanung in der Praxis",
+    "english": "Outlook: routing in practice"
+  },
+  "13": {
+    "german": "Ausblick: Routenplanung in der Praxis (Beispiele)",
+    "english": "Outlook: routing in practice (examples)"
+  },
+  "14": {
+    "german": "Zusammenfassung",
+    "english": "Summary"
+  },
+  "15": {
+    "german": "Thomas Bläsius~--~Algorithmen 1",
+    "english": "Thomas Bläsius~--~Algorithms 1"
+  },
+  "16": {
+    "german": "\\textbf{Algorithmen 1}",
+    "english": "\\textbf{Algorithms 1}"
+  },
+  "17": {
+    "german": "\\textbf{Kürzeste Wege in gewichteten Graphen -- Dijkstras Algorithmus}",
+    "english": "\\textbf{Shortest Paths in Weighted Graphs -- Dijkstra's Algorithm}"
+  },
+  "18": {
+    "german": "\\textbf{www.kit.edu}",
+    "english": "\\textbf{www.kit.edu}"
+  },
+  "19": {
+    "german": "\\textbf{Gegeben}",
+    "english": "\\textbf{Given}"
+  },
+  "20": {
+    "german": "ein Graph $G = (V, E)$ (ungerichtet oder gerichtet)",
+    "english": "a graph $G = (V,E)$ (undirected or directed)"
+  },
+  "21": {
+    "german": "Gewichtsfunktion $\\len\\colon E \\to \\mathbb Z$, die jeder Kante\\n$e \\in E$ eine \\emph{Länge} $\\len(e)$ zuordnet\\n",
+    "english": "Weight function $\\len\\colon E \\to \\mathbb Z$ assigning each edge\\n$e \\in E$ a \\emph{length} $\\len(e)$\\n"
+  },
+  "22": {
+    "german": "\\textbf{Pfadlängen und Distanzen}",
+    "english": "\\textbf{Path lengths and distances}"
+  },
+  "23": {
+    "german": "\\emph{Länge eines Pfades} $\\langle v_0, \\dots, v_k \\rangle$:\\n$\\sum\\limits_{i = 1}^k \\len\\left(v_{i - 1}, v_i\\right)$\\n",
+    "english": "\\emph{Length of a path} $\\langle v_0, \\dots, v_k \\rangle$:\\n$\\sum\\limits_{i = 1}^k \\len\\left(v_{i - 1}, v_i\\right)$\\n"
+  },
+  "24": {
+    "german": "\\emph{Distanz} $\\dist(s, t)$: Länge des kürzesten $st$-Pfades\\n",
+    "english": "\\emph{Distance} $\\dist(s, t)$: length of the shortest $st$ path\\n"
+  },
+  "25": {
+    "german": "\\textbf{Problem: Single-Source Shortest Path (SSSP)}\\\\\\nGegeben einen gewichtete Graphen $G = (V, E)$ und einen Knoten\\n$s \\in V$, berechne $\\dist(s, t)$ für alle $t \\in V$.\\n",
+    "english": "\\textbf{Problem: Single-Source Shortest Path (SSSP)}\\\\\\nGiven a weighted graph $G = (V, E)$ and a node\\n$s \\in V$, compute $\\dist(s, t)$ for all $t \\in V$.\\n"
+  },
+  "26": {
+    "german": "Startknoten $s$",
+    "english": "Start node $s$"
+  },
+  "27": {
+    "german": "Pfad der Länge $12$",
+    "english": "Path of length $12$"
+  },
+  "28": {
+    "german": "(Kurzform für $\\len(\\{v_{i - 1}, v_i\\})$)",
+    "english": "(short for $\\len(\\{v_{i-1}, v_i\\})$)"
+  },
+  "29": {
+    "german": "\\textbf{Vorgehen}",
+    "english": "\\textbf{Approach}"
+  },
+  "30": {
+    "german": "arbeite die Knoten layerweise ab",
+    "english": "process nodes layer-wise"
+  },
+  "31": {
+    "german": "\\emph{Explorieren} eines Knotens $u$ aus Layer $i - 1$:",
+    "english": "Exploring a node $u$ from layer $i-1$:"
+  },
+  "32": {
+    "german": "betrachte alle Nachbarn $v$ von $u$",
+    "english": "consider all neighbors $v$ of $u$"
+  },
+  "33": {
+    "german": "$v$ ungefärbt $\\Rightarrow$ $v$ gehört zu Layer $i$\\n",
+    "english": "$v$ uncolored $\\Rightarrow$ $v$ in layer $i$\\n"
+  },
+  "34": {
+    "german": "\\textbf{Kürzeste Pfade: $v$ in Layer\\n  $i \\Rightarrow \\dist(s, v) = i$ }\\n",
+    "english": "\\textbf{Shortest paths: $v$ in layer\\n  $i \\Rightarrow \\dist(s, v) = i$ }\\n"
+  },
+  "35": {
+    "german": "$sv$-Pfad der Länge $i$ ($\\dist(s, v) \\le i$)",
+    "english": "$sv$ path of length $i$ ($\\dist(s,v)\\le i$)"
+  },
+  "36": {
+    "german": "kein kürzerer Pfad möglich ($\\dist(s, v) \\ge i$):",
+    "english": "no shorter path possible ($\\dist(s,v)\\ge i$):"
+  },
+  "37": {
+    "german": "induktiv: es gibt einen Pfad der Länge $i - 1$ zu $u$",
+    "english": "inductive: a path length $i-1$ to $u$ exists"
+  },
+  "38": {
+    "german": "zusammen mit $\\{u, v\\}$ $\\Rightarrow$ $sv$-Pfad der Länge $i$",
+    "english": "with $\\{u,v\\}$ $\\Rightarrow$ $sv$ path length $i$"
+  },
+  "39": {
+    "german": "gäbe es einen kürzeren $sv$-Pfad, dann hätte $v$ einen Nachbarn in\\neinem vorherigen Layer\\n",
+    "english": "if shorter $sv$ path existed, $v$ would have neighbor in\\nprevious layer\\n"
+  },
+  "40": {
+    "german": "layerweise Abarbeitung $\\Rightarrow$ $v$ wäre schon gefärbt\\n",
+    "english": "layer order $\\Rightarrow$ $v$ would be colored\\n"
+  },
+  "41": {
+    "german": "\\textbf{Mit Kantenlängen?}",
+    "english": "\\textbf{With edge lengths?}"
+  },
+  "42": {
+    "german": "speichere $\\dist(s, v)$ statt Layer",
+    "english": "store $\\dist(s,v)$ instead of layer"
+  },
+  "43": {
+    "german": "ggf.\\ findet man später einen kürzeren Pfad zu $v$\\n",
+    "english": "maybe later a shorter path to $v$\\n"
+  },
+  "44": {
+    "german": "oder sogar zu $u$",
+    "english": "or even to $u$"
+  },
+  "45": {
+    "german": "\\textbf{Plan für das generelle Vorgehen}",
+    "english": "\\textbf{Plan for the general approach}"
+  },
+  "46": {
+    "german": "speichere $d[v]$ für jeden Knoten $v$: Länge des kürzesten bekannten\\n$sv$-Pfades (Invariante: $\\dist(s, v) \\le d[v]$)\\n",
+    "english": "store $d[v]$ for each node $v$: length of shortest known\\n$sv$ path (invariant: $\\dist(s, v) \\le d[v]$)\\n"
+  },
+  "47": {
+    "german": "\\emph{Explorieren} eines Knotens $u$:\\n",
+    "english": "Exploring a node $u$:\\n"
+  },
+  "48": {
+    "german": "betrachte alle Nachbarn $v$ von $u$",
+    "english": "consider all neighbors $v$ of $u$"
+  },
+  "49": {
+    "german": "falls $d[v] > d[u] + \\len(u, v)$, setze $d[v] = d[u] + \\len(u, v)$\\n",
+    "english": "if $d[v]>d[u]+\\len(u,v)$ set $d[v]=d[u]+\\len(u,v)$\\n"
+  },
+  "50": {
+    "german": "\\textbf{Anders als bei BFS}",
+    "english": "\\textbf{Different from BFS}"
+  },
+  "51": {
+    "german": "$v$ gefunden $\\not\\Rightarrow$ kürzester $sv$-Pfad gefunden\\n",
+    "english": "$v$ reached $\\not\\Rightarrow$ shortest $sv$ path\\n"
+  },
+  "52": {
+    "german": "$d[v]$ wird ggf. mehrfach aktualisiert\\n",
+    "english": "$d[v]$ may update many times\\n"
+  },
+  "53": {
+    "german": "$v$ schon exploriert, wenn $d[v]$ sich ändert $\\rightarrow$ $v$ muss\\nerneut exploriert werden\\n",
+    "english": "$v$ already explored when $d[v]$ changes $\\rightarrow$ $v$ must be\\nre-explored\\n"
+  },
+  "54": {
+    "german": "\\textbf{Ziel im Folgenden}\\n",
+    "english": "\\textbf{Goal in the following}\\n"
+  },
+  "55": {
+    "german": "$v$ exploriert $\\Rightarrow$ kürzester $sv$-Pfad gefunden\\n",
+    "english": "$v$ explored $\\Rightarrow$ shortest $sv$ path\\n"
+  },
+  "56": {
+    "german": "\\textbf{nicht schlimm:} keine Zusatzkosten verglichen mit dem Testen\\nob $v$ schon gefärbt ist\\n",
+    "english": "\\textbf{not bad:} no extra cost vs testing\\nif $v$ already colored\\n"
+  },
+  "57": {
+    "german": "\\textbf{problematisch:} könnte öfters passieren und ggf.\\ kaskadieren\\n",
+    "english": "\\textbf{problem:} may recur and cascade\\n"
+  },
+  "58": {
+    "german": "\\textbf{super:} jeden Knoten einmal explorieren kostet insgesamt\\n$\\Theta(m)$ (wie bei BFS)\\n",
+    "english": "\\textbf{great:} exploring each node once costs total\\n$\\Theta(m)$ (as with BFS)\\n"
+  },
+  "59": {
+    "german": "\\textbf{Ziel:} $v$ exploriert $\\Rightarrow$ kürzester $sv$-Pfad gefunden\\n",
+    "english": "\\textbf{Goal:} $v$ explored $\\Rightarrow$ shortest $sv$ path\\n"
+  },
+  "60": {
+    "german": "bereits exploriert",
+    "english": "already explored"
+  },
+  "61": {
+    "german": "noch nicht exploriert",
+    "english": "not yet explored"
+  },
+  "62": {
+    "german": "aktueller Wert für $d[\\cdot]$",
+    "english": "current value of $d[\\cdot]$"
+  },
+  "63": {
+    "german": "\\textbf{Welchen Knoten sollten wir als nächstes explorieren?}",
+    "english": "\\textbf{Which node should we explore next?}"
+  },
+  "64": {
+    "german": "\\textbf{Strategie:} exploriere Knoten $u$ mit minimalem $d[u]$\\n",
+    "english": "\\textbf{Strategy:} explore node $u$ with minimal $d[u]$\\n"
+  },
+  "65": {
+    "german": "(unter allen noch nicht explorierten Knoten)",
+    "english": "(among all unexplored nodes)"
+  },
+  "66": {
+    "german": "\\textbf{Zielführende Strategie}\\n",
+    "english": "\\textbf{Goal-oriented strategy}\\n"
+  },
+  "67": {
+    "german": "Annahme: für alle vorher explorierten Knoten $v$ gilt\\n$d[v] = \\dist(s, v)$\\n",
+    "english": "Assumption: for all previously explored nodes $v$ holds\\n$d[v] = \\dist(s, v)$\\n"
+  },
+  "68": {
+    "german": "zeige: für $u$ gilt ebenfalls $d[u] = \\dist(s, u)$\\n",
+    "english": "show: $d[u]=\\dist(s,u)$ holds\\n"
+  },
+  "69": {
+    "german": "Intuition:",
+    "english": "Intuition:"
+  },
+  "70": {
+    "german": "$su$-Pfad über $v$ mit $d[v] < d[u]$ schon gefunden ($v$ exploriert)\\n",
+    "english": "$su$ path via $v$ with $d[v]<d[u]$ already found ($v$ explored)\\n"
+  },
+  "71": {
+    "german": "Knoten $w$ mit $d[w] > d[u]$ explorieren kann $d[u]$ nicht senken\\n",
+    "english": "exploring $w$ with $d[w]>d[u]$ cannot lower $d[u]$\\n"
+  },
+  "72": {
+    "german": "\\textbf{Achtung:} wir nehmen hier nicht-negative Kantenlängen an\\n",
+    "english": "\\textbf{Note:} we assume non-negative edge lengths\\n"
+  },
+  "73": {
+    "german": "\\textbf{Gleich}\\n",
+    "english": "\\textbf{Soon}\\n"
+  },
+  "74": {
+    "german": "Wrap-Up: Algo-Beschreibung, Umsetzung in Pseudocode, Beispiel\\n",
+    "english": "Wrap-up: algorithm description, pseudocode, example\\n"
+  },
+  "75": {
+    "german": "formaler Korrektheitsbeweis",
+    "english": "formal proof of correctness"
+  },
+  "76": {
+    "german": "\\textbf{Erinnerung: Explorieren von $u$}\\n",
+    "english": "\\textbf{Reminder: exploring $u$}\\n"
+  },
+  "77": {
+    "german": "betrachte alle Nachbarn $v$ von $u$",
+    "english": "consider all neighbors $v$ of $u$"
+  },
+  "78": {
+    "german": "falls $d[v] > d[u] + \\len(u, v)$,\\\\\\nsetze $d[v] = d[u] + \\len(u, v)$\\n",
+    "english": "if $d[v] > d[u] + \\len(u, v)$,\\\\\\nset $d[v] = d[u] + \\len(u, v)$\\n"
+  },
+  "79": {
+    "german": "\\textbf{Erinnerung: Explorieren von $u$}\\n",
+    "english": "\\textbf{Reminder: exploring $u$}\\n"
+  },
+  "80": {
+    "german": "betrachte alle Nachbarn $v$ von $u$",
+    "english": "consider all neighbors $v$ of $u$"
+  },
+  "81": {
+    "german": "falls $d[v] > d[u] + \\len(u, v)$,\\\\\\nsetze $d[v] = d[u] + \\len(u, v)$\\n",
+    "english": "if $d[v] > d[u] + \\len(u, v)$,\\\\\\nset $d[v] = d[u] + \\len(u, v)$\\n"
+  },
+  "82": {
+    "german": "\\textbf{Algorithmus}",
+    "english": "\\textbf{Algorithm}"
+  },
+  "83": {
+    "german": "wiederhole bis alle Knoten exploriert:\\n",
+    "english": "repeat until all nodes explored:\\n"
+  },
+  "84": {
+    "german": "wähle unexplorierten Knoten $u$ mit minimalem $d[u]$\\n",
+    "english": "choose unexplored $u$ with minimal $d[u]$\\n"
+  },
+  "85": {
+    "german": "exploriere $u$\\n",
+    "english": "explore $u$\\n"
+  },
+  "86": {
+    "german": "Initialisierung: $d[v] = \\infty$ für $v \\in V$ und $d[s] = 0$",
+    "english": "Initialization: $d[v]=\\infty$ for $v\\in V$, $d[s]=0$"
+  },
+  "87": {
+    "german": "$d \\coloneqq$ \\type{Array} of size $n$ initialized with $\\infty$\\n",
+    "english": "$d \\coloneqq$ \\type{Array} of size $n$ initialized with $\\infty$\\n"
+  },
+  "88": {
+    "german": "\\keyword{while} there is an unexplored node \\keyword{do}",
+    "english": "\\keyword{while} there is an unexplored node \\keyword{do}"
+  },
+  "89": {
+    "german": "\\type{Node} $u \\coloneqq$ unexp.\\ node with min.\\ $d[u]$",
+    "english": "\\type{Node} $u \\coloneqq$ unexp.\\ node with min.\\ $d[u]$"
+  },
+  "90": {
+    "german": "schon exploriert",
+    "english": "already explored"
+  },
+  "91": {
+    "german": "am explorieren ($u$)",
+    "english": "exploring ($u$)"
+  },
+  "92": {
+    "german": "unexploriert",
+    "english": "unexplored"
+  },
+  "93": {
+    "german": "\\textbf{Konstruktion der kürzesten Pfade}",
+    "english": "\\textbf{Construction of shortest paths}"
+  },
+  "94": {
+    "german": "(wie bei BFS)",
+    "english": "(as in BFS)"
+  },
+  "95": {
+    "german": "jeder Knoten merkt sich seinen Vorgänger",
+    "english": "each node remembers its predecessor"
+  },
+  "96": {
+    "german": "\\textbf{Wie finden wir den unexplorierten Knoten $u$ mit minimalem $d[u]$?}",
+    "english": "\\textbf{How do we find the unexplored node $u$ with minimal $d[u]$?}"
+  },
+  "97": {
+    "german": "naiv: einmal alle Knoten anschauen $\\rightarrow$ $\\Theta(n)$ pro\\nIteration $\\rightarrow$ $\\Theta(n^2)$ insgesamt",
+    "english": "naive: scan all nodes once $\\rightarrow$ $\\Theta(n)$ per\\niteration $\\rightarrow$ $\\Theta(n^2)$ total"
+  },
+  "98": {
+    "german": "Datenstruktur: Priority-Queue (Prioritätswarteschlange)",
+    "english": "Data structure: priority queue"
+  },
+  "99": {
+    "german": "$\\function{push}(v, 7)$: füge $v$ mit Priorität $7$ ein",
+    "english": "$\\function{push}(v,7)$: insert $v$ with priority $7$"
+  },
+  "100": {
+    "german": "$\\function{popMin}()$: extrahiere Element mit kleinster Priorität\\n",
+    "english": "$\\function{popMin}()$: extract element with lowest priority\\n"
+  },
+  "101": {
+    "german": "$\\function{decPrio}(v, 4)$: verkleinere Priorität von $v$ auf $4$",
+    "english": "$\\function{decPrio}(v, 4)$: decrease priority of $v$ to $4$"
+  },
+  "102": {
+    "german": "\\textbf{Wie schnell gehen die Operationen?}",
+    "english": "\\textbf{How fast are the operations?}"
+  },
+  "103": {
+    "german": "unterschiedliche Varianten mit unterschiedlichen Laufzeiten",
+    "english": "different variants with different runtimes"
+  },
+  "104": {
+    "german": "viele schnelle Varianten: $O(\\log n)$ pro Operation",
+    "english": "many fast variants: $O(\\log n)$ per operation"
+  },
+  "105": {
+    "german": "Fibonacci-Heap: $\\Theta(\\log n)$ für $\\function{popMin}$, $\\Theta(1)$\\nfür $\\function{push}$ und $\\function{decPrio}$",
+    "english": "Fibonacci heap: $\\Theta(\\log n)$ for $\\function{popMin}$, $\\Theta(1)$\\nfor $\\function{push}$ and $\\function{decPrio}$"
+  },
+  "106": {
+    "german": "\\textbf{Wie geht das?}",
+    "english": "\\textbf{How does that work?}"
+  },
+  "107": {
+    "german": "werden wir bald genauer kennen lernen",
+    "english": "we will learn in detail soon"
+  },
+  "108": {
+    "german": "clevere Verwaltung der Elemente in einer Baumstruktur",
+    "english": "clever management of elements in a tree structure"
+  },
+  "109": {
+    "german": "$d \\coloneqq$ \\type{Array} of size $n$ initialized with $\\infty$\\n",
+    "english": "$d \\coloneqq$ \\type{Array} of size $n$ initialized with $\\infty$\\n"
+  },
+  "110": {
+    "german": "\\type{PriorityQueue} $Q \\coloneqq$ empty priority queue",
+    "english": "\\type{PriorityQueue} $Q \\coloneqq$ empty priority queue"
+  },
+  "111": {
+    "german": "\\textbf{Anmerkung}",
+    "english": "\\textbf{Note}"
+  },
+  "112": {
+    "german": "man könnte die Knoten auch beim ersten Entdecken erst in die Queue\\neinfügen",
+    "english": "could also insert nodes into queue only when first discovered"
+  },
+  "113": {
+    "german": "dann muss man sich merken, welche schon eingefügt sind (ähnlich zu\\nBFS)\\n",
+    "english": "then must remember which are already inserted (similar to\\nBFS)\\n"
+  },
+  "114": {
+    "german": "\\textbf{Laufzeitanalyse}",
+    "english": "\\textbf{Runtime analysis}"
+  },
+  "115": {
+    "german": "\\textbf{\\color{green1}neu:} Initialisierung der Queue",
+    "english": "\\textbf{\\color{green1}new:} initialization of the queue"
+  },
+  "116": {
+    "german": "\\textbf{\\color{green1}neu:} Update der Priorität in der Queue",
+    "english": "\\textbf{\\color{green1}new:} update of priority in the queue"
+  },
+  "117": {
+    "german": "\\textbf{\\color{orange1}konkreter:} Test auf unexplorierte Knoten\\n",
+    "english": "\\textbf{\\color{orange1}more concrete:} test for unexplored nodes\\n"
+  },
+  "118": {
+    "german": "\\textbf{\\color{orange1}konkreter:} finde Knoten mit minimalem $d[u]$",
+    "english": "\\textbf{\\color{orange1}more concrete:} find node with minimal $d[u]$"
+  },
+  "119": {
+    "german": "\\textbf{Änderungen im Vergleich zu vorher:}",
+    "english": "\\textbf{Changes compared to before:}"
+  },
+  "120": {
+    "german": "$n$ Mal $\\function{push}$",
+    "english": "$n$ times $\\function{push}$"
+  },
+  "121": {
+    "german": "jeder Knoten wird nur einmal aus der Queue entfernt $\\Rightarrow$ $n$ Mal $\\function{popMin}$\\n",
+    "english": "each node is removed from the queue only once $\\Rightarrow$ $n$ times $\\function{popMin}$\\n"
+  },
+  "122": {
+    "german": "jede Kante nur zweimal betrachtet (einmal von jeder Seite)\\n$\\Rightarrow$ $m$ Mal $\\function{decPrio}$\\n",
+    "english": "each edge considered only twice (once from each side)\\n$\\Rightarrow$ $m$ times $\\function{decPrio}$\\n"
+  },
+  "123": {
+    "german": "$\\Theta(n \\log n + m)$, wenn \\function{decPrio} in $\\Theta(1)$",
+    "english": "$\\Theta(n \\log n + m)$, if \\function{decPrio} in $\\Theta(1)$"
+  },
+  "124": {
+    "german": "$\\Theta((n + m) \\log n)$, wenn \\function{decPrio} in $\\Theta(\\log n)$",
+    "english": "$\\Theta((n + m) \\log n)$, if \\function{decPrio} in $\\Theta(\\log n)$"
+  },
+  "125": {
+    "german": "\\textbf{Lemma}\\\\\\nWenn $d[v] < \\infty$, dann gibt es einen $sv$-Pfad der Länge $d[v]$.\\nDas heißt $d[v] \\ge \\dist(s, v)$ gilt zu jedem Zeitpunkt.\\n",
+    "english": "\\textbf{Lemma}\\\\\\nIf $d[v] < \\infty$, then there exists a $sv$ path of length $d[v]$.\\nThis means, $d[v] \\ge \\dist(s, v)$ holds at all times.\\n"
+  },
+  "126": {
+    "german": "\\textbf{Lemma}\\\\\\nIn dem Moment, in dem $u$ aus der Queue entfernt und exploriert wird\\ngilt $d[u] = \\dist(s, u)$.\\n",
+    "english": "\\textbf{Lemma}\\\\\\nAt the moment when $u$ is removed from the queue and explored,\\nwe have $d[u] = \\dist(s, u)$.\\n"
+  },
+  "127": {
+    "german": "\\textbf{Theorem}\\\\\\nGegeben einen Graphen $G = (V, E)$, Kantenlängen\\n$\\len \\colon E \\to \\mathbb N$ und $s \\in V$, dann berechnet Dijkstras\\nAlgorithmus in $\\Theta(n \\log n + m)$ Zeit die Distanzen $\\dist(s, v)$\\nfür alle $v \\in V$.\\n",
+    "english": "\\textbf{Theorem}\\\\\\nGiven a graph $G = (V, E)$, edge lengths\\n$\\len \\colon E \\to \\mathbb N$ and $s \\in V$, Dijkstra's\\nalgorithm computes distances $\\dist(s, v)$\\nfor all $v \\in V$ in $\\Theta(n \\log n + m)$ time.\\n"
+  },
+  "128": {
+    "german": "\\textbf{Beweis}",
+    "english": "\\textbf{Proof}"
+  },
+  "129": {
+    "german": "Laufzeit: gerade gesehen",
+    "english": "runtime: just seen"
+  },
+  "130": {
+    "german": "Korrektheit: zeige die folgenden zwei Lemmas",
+    "english": "correctness: prove the following two lemmas"
+  },
+  "131": {
+    "german": "(der Algo behauptet nicht Pfade zu kennen, die es gar nicht gibt)",
+    "english": "(the algo does not claim to know paths that do not exist)"
+  },
+  "132": {
+    "german": "(der Algo findet tatsächlich den kürzesten Pfad)",
+    "english": "(the algo actually finds the shortest path)"
+  },
+  "133": {
+    "german": "\\textbf{Anmerkung:} die Kantenlängen sind hier nicht-negativ",
+    "english": "\\textbf{Note:} the edge lengths are non-negative here"
+  },
+  "134": {
+    "german": "\\textbf{Erinnerung: Explorieren von $u$}\\n",
+    "english": "\\textbf{Reminder: exploring $u$}\\n"
+  },
+  "135": {
+    "german": "betrachte alle Nachbarn $v$ von $u$",
+    "english": "consider all neighbors $v$ of $u$"
+  },
+  "136": {
+    "german": "falls $d[v] > d[u] + \\len(u, v)$,\\\\\\nsetze $d[v] = d[u] + \\len(u, v)$\\n",
+    "english": "if $d[v] > d[u] + \\len(u, v)$,\\\\\\nset $d[v] = d[u] + \\len(u, v)$\\n"
+  },
+  "137": {
+    "german": "\\textbf{Lemma}\\\\\\nWenn $d[v] < \\infty$, dann gibt es einen $sv$-Pfad der Länge $d[v]$.\\nDas heißt $d[v] \\ge \\dist(s, v)$ gilt zu jedem Zeitpunkt.\\n",
+    "english": "\\textbf{Lemma}\\\\\\nIf $d[v] < \\infty$, then there exists a $sv$ path of length $d[v]$.\\nThis means, $d[v] \\ge \\dist(s, v)$ holds at all times.\\n"
+  },
+  "138": {
+    "german": "(der Algo behauptet nicht Pfade zu kennen, die es gar nicht gibt)",
+    "english": "(the algo does not claim to know paths that do not exist)"
+  },
+  "139": {
+    "german": "\\textbf{Beweis im Detail}",
+    "english": "\\textbf{Proof in detail}"
+  },
+  "140": {
+    "german": "Invariante gilt nach der Initialisierung: $d[s] = 0$ und $d[v] =\\n\\infty$ für alle $v \\in V \\setminus \\{s\\}$",
+    "english": "Invariant holds after initialization: $d[s] = 0$ and $d[v] =\\n\\infty$ for all $v \\in V \\setminus \\{s\\}$"
+  },
+  "141": {
+    "german": "$d[v]$ kann nur durch das Explorieren eines Nachbarn $u$ geändert\\nwerden\\n",
+    "english": "$d[v]$ can only be changed by exploring a neighbor $u$\\n"
+  },
+  "142": {
+    "german": "da Invariante vorher galt: es gibt $su$-Pfad der Länge $d[u]$\\n",
+    "english": "since the invariant held before: there is a $su$ path of length $d[u]$\\n"
+  },
+  "143": {
+    "german": "Invariante bleibt erhalten: es gibt $sv$-Pfad der Länge\\n$d[u] + \\len(u, v)$\\n",
+    "english": "Invariant preserved: there exists $sv$ path of length\\n$d[u] + \\len(u, v)$\\n"
+  },
+  "144": {
+    "german": "\\textbf{Mehr oder weniger offensichtlich}",
+    "english": "\\textbf{More or less obvious}"
+  },
+  "145": {
+    "german": "Invariante gilt am Anfang",
+    "english": "invariant holds at the beginning"
+  },
+  "146": {
+    "german": "bleibt beim Explorieren eines Knotens erhalten\\n",
+    "english": "remains during the exploration of a node\\n"
+  },
+  "147": {
+    "german": "\\textbf{Lemma}\\\\\\nIn dem Moment, in dem $u$ aus der Queue entfernt und exploriert wird\\ngilt $d[u] = \\dist(s, u)$.\\n",
+    "english": "\\textbf{Lemma}\\\\\\nAt the moment when $u$ is removed from the queue and explored,\\nwe have $d[u] = \\dist(s, u)$.\\n"
+  },
+  "148": {
+    "german": "(der Algo findet tatsächlich den kürzesten Pfad)",
+    "english": "(the algo actually finds the shortest path)"
+  },
+  "149": {
+    "german": "\\textbf{Intuition}",
+    "english": "\\textbf{Intuition}"
+  },
+  "150": {
+    "german": "bereits exploriert",
+    "english": "already explored"
+  },
+  "151": {
+    "german": "noch nicht exploriert",
+    "english": "not yet explored"
+  },
+  "152": {
+    "german": "aktueller Wert für $d[\\cdot]$",
+    "english": "current value of $d[\\cdot]$"
+  },
+  "153": {
+    "german": "$su$-Pfad über $v$ mit $d[v] < d[u]$ schon gefunden ($v$ exploriert)\\n",
+    "english": "$su$ path via $v$ with $d[v]<d[u]$ already found ($v$ explored)\\n"
+  },
+  "154": {
+    "german": "Knoten $w$ mit $d[w] > d[u]$ explorieren kann $d[u]$ nicht senken\\n",
+    "english": "exploring $w$ with $d[w]>d[u]$ cannot lower $d[u]$\\n"
+  },
+  "155": {
+    "german": "Erinnerung: wir explorieren immer den unexplorierten Knoten $u$ mit\\nminimalem $d[u]$",
+    "english": "Recall: we always explore the unexplored node $u$ with\\nminimal $d[u]$"
+  },
+  "156": {
+    "german": "\\textbf{Problem: das ist noch kein Beweis}",
+    "english": "\\textbf{Problem: this isn't a proof yet}"
+  },
+  "157": {
+    "german": "nur weil wir später keinen kürzeren Pfad mehr finden können heißt das\\nnicht, dass wir jetzt den kürzesten Pfad haben\\n",
+    "english": "just because we can't find a shorter path later doesn't mean\\nwe have the shortest path now\\n"
+  },
+  "158": {
+    "german": "\\textbf{Nützliche Beobachtung}",
+    "english": "\\textbf{Useful observation}"
+  },
+  "159": {
+    "german": "Knoten werden in nicht-absteigender Reihenfolge exploriert\\n",
+    "english": "nodes are explored in non-descending order\\n"
+  },
+  "160": {
+    "german": "also: wenn $d[v] < d[u]$ beim Explorieren, dann wird $v$ vor $u$\\nexploriert",
+    "english": "thus: if $d[v] < d[u]$ during exploration, then $v$ is explored before $u$\\n"
+  },
+  "161": {
+    "german": "\\textbf{Beweis:} angenommen es stimmt nicht",
+    "english": "\\textbf{Proof:} assume it is not true"
+  },
+  "162": {
+    "german": "wähle Gegenbeispiel $u$ mit $d[u] > \\dist(s, u)$, sodass $u$ der erste\\nsolche Knoten auf einem kürzesten $su$-Pfad ist\\n",
+    "english": "choose counterexample $u$ with $d[u] > \\dist(s, u)$ such that $u$ is the first\\nsuch node on a shortest $su$ path\\n"
+  },
+  "163": {
+    "german": "sei $v$ der Vorgänger von $u$ auf diesem Pfad\\n",
+    "english": "let $v$ be the predecessor of $u$ on this path\\n"
+  },
+  "164": {
+    "german": "es gilt: $d[v] = \\dist(s, v) \\le \\dist(s, u) < d[u]$",
+    "english": "it holds: $d[v] = \\dist(s, v) \\le \\dist(s, u) < d[u]$"
+  },
+  "165": {
+    "german": "damit wird $v$ vor $u$ exploriert",
+    "english": "thus $v$ is explored before $u$"
+  },
+  "166": {
+    "german": "dabei wird $d[u]$ auf\\n$d[v] + \\len(v, u) = \\dist(s, v) + \\len(v, u) = \\dist(s, u)$ gesetzt\\n",
+    "english": "thereby $d[u]$ becomes\\n$d[v] + \\len(v, u) = \\dist(s, v) + \\len(v, u) = \\dist(s, u)$\\n"
+  },
+  "167": {
+    "german": "\\textbf{Notation}",
+    "english": "\\textbf{Notation}"
+  },
+  "168": {
+    "german": "$d[v]$: Länge des kürzesten bekanntesten Pfades von $s$ nach $v$ \\textbf{beim\\nExplorieren}\\n",
+    "english": "$d[v]$: length of the shortest known path from $s$ to $v$ \\textbf{during\\nExploration}\\n"
+  },
+  "169": {
+    "german": "$\\dist(s, v)$: tatsächliche Distanz von $s$ nach $v$",
+    "english": "$\\dist(s, v)$: actual distance from $s$ to $v$"
+  },
+  "170": {
+    "german": "$\\len(v, u)$: Länge der Kante $\\{v, u\\}$",
+    "english": "$\\len(v, u)$: length of the edge $\\{v, u\\}$"
+  },
+  "171": {
+    "german": "\\textbf{Nützliche Beobachtung}",
+    "english": "\\textbf{Useful observation}"
+  },
+  "172": {
+    "german": "Knoten werden in nicht-absteigender Reihenfolge exploriert\\n",
+    "english": "nodes are explored in non-descending order\\n"
+  },
+  "173": {
+    "german": "also: wenn $d[v] < d[u]$ beim Explorieren, dann wird $v$ vor $u$\\nexploriert",
+    "english": "thus: if $d[v] < d[u]$ during exploration, then $v$ is explored before $u$\\n"
+  },
+  "174": {
+    "german": "\\textbf{Einschub: Beweistechnik}",
+    "english": ""
+  },
+  "175": {
+    "german": "naheliegendes Argument: $u$ ist Gegenbeispiel $\\Rightarrow$ ein\\nNachbar von $u$ ist Gegenbeispiel\\n",
+    "english": "obvious argument: $u$ is counterexample $\\Rightarrow$ a\\nneighbor of $u$ is counterexample\\n"
+  },
+  "176": {
+    "german": "damit hangeln wir uns von Gegenbeispiel zu Gegenbeispiel\\n",
+    "english": "thus we move from counterexample to counterexample\\n"
+  },
+  "177": {
+    "german": "und müssen zeigen: irgendwann endet das in einem Widerspruch\\n",
+    "english": "and we must show: eventually this ends in a contradiction\\n"
+  },
+  "178": {
+    "german": "schöner: starte mit einem \\emph{minimalen Gegenbeispiel}\\n",
+    "english": "more nicely: start with a \\emph{minimal counterexample}\\n"
+  },
+  "179": {
+    "german": "($v$ ist also kein Gegenbeispiel)",
+    "english": "($v$ is no counterexample)"
+  },
+  "180": {
+    "german": "\\textbf{Welche dieser Gleichungen und Ungleichungen gelten?}",
+    "english": ""
+  },
+  "181": {
+    "german": "\\textbf{Theorem}\\\\\\nGegeben einen Graphen $G = (V, E)$, Kantenlängen\\n$\\len \\colon E \\to \\mathbb N$ und $s \\in V$, dann berechnet Dijkstras\\nAlgorithmus in $\\Theta(n \\log n + m)$ Zeit die Distanzen $\\dist(s, v)$\\nfür alle $v \\in V$.\\n",
+    "english": "\\textbf{Theorem}\\\\\\nGiven a graph $G = (V, E)$, edge lengths\\n$\\len \\colon E \\to \\mathbb N$ and $s \\in V$, Dijkstra's\\nalgorithm computes distances $\\dist(s, v)$\\nfor all $v \\in V$ in $\\Theta(n \\log n + m)$ time.\\n"
+  },
+  "182": {
+    "german": "\\textbf{Anmerkungen}",
+    "english": "\\textbf{Notes}"
+  },
+  "183": {
+    "german": "funktioniert für gerichtete und ungerichtete Graphen",
+    "english": "works for directed and undirected graphs"
+  },
+  "184": {
+    "german": "wir brauchen nicht-negativen Kantenlängen",
+    "english": "we need non-negative edge lengths"
+  },
+  "185": {
+    "german": "das Betrachten der Kante $e = \\{u, v\\}$ beim Explorieren von $u$ heißt\\nauch \\emph{relaxieren} von $e$\\n",
+    "english": "examining edge $e = \\{u, v\\}$ when exploring $u$ is also called\\n\\emph{relaxing} $e$\\n"
+  },
+  "186": {
+    "german": "\\textbf{Nächstes Mal}",
+    "english": "\\textbf{Next time}"
+  },
+  "187": {
+    "german": "Umgang mit negativen Kantenlängen: Bellman--Ford",
+    "english": "handling negative edge lengths: Bellman--Ford"
+  },
+  "188": {
+    "german": "Berechnung der Distanzen zwischen allen Paaren: Floyd--Warshall",
+    "english": "calculation of distances between all pairs: Floyd--Warshall"
+  },
+  "189": {
+    "german": "\\textbf{Später}",
+    "english": ""
+  },
+  "190": {
+    "german": "effiziente Priority-Queues\\n",
+    "english": "efficient priority queues\\n"
+  },
+  "191": {
+    "german": "\\textbf{Kürzeste Wege auf Straßengraphen}",
+    "english": ""
+  },
+  "192": {
+    "german": "Europa hat ca.\\ \\SI{18}{M} Knoten und \\SI{42}{M} Kanten",
+    "english": "Europe has about \\SI{18}{M} nodes and \\SI{42}{M} edges"
+  },
+  "193": {
+    "german": "Dijkstra braucht mehrere Sekunden",
+    "english": "Dijkstra takes several seconds"
+  },
+  "194": {
+    "german": "ungeeignet für viele Anwendungen",
+    "english": "unsuitable for many applications"
+  },
+  "195": {
+    "german": "\\textbf{Problem:} viel besser als $O(n \\log n + m)$ kann es nicht werden",
+    "english": "\\textbf{Problem:} it cannot get much better than $O(n \\log n + m)$"
+  },
+  "196": {
+    "german": "\\textbf{Beobachtung:} der Eingabegraph ist immer der gleiche",
+    "english": "\\textbf{Observation:} the input graph is always the same"
+  },
+  "197": {
+    "german": "\\textbf{Idee}",
+    "english": ""
+  },
+  "198": {
+    "german": "zwei Phasen:",
+    "english": "two phases:"
+  },
+  "199": {
+    "german": "1.\\, generiere Zusatzinformationen über $G$",
+    "english": "1.\\, generate additional information about $G$"
+  },
+  "200": {
+    "german": "2.\\, \\emph{beschleunigte Anfrage} dank dieser Information\\n",
+    "english": "2.\\, \\emph{accelerated query} thanks to this information\\n"
+  },
+  "201": {
+    "german": "drei Kriterien: Beschleunigung, Vorberechnungszeit, Speicherplatz",
+    "english": "three criteria: acceleration, preprocessing time, memory space"
+  },
+  "202": {
+    "german": "\\textbf{Zielgerichtetes Routing (Arc-Flags)}",
+    "english": ""
+  },
+  "203": {
+    "german": "manche Straßen in Karlsruhe sind nicht relevant, wenn man nach Berlin\\nmöchte\\n",
+    "english": "some streets in Karlsruhe are not relevant when going to Berlin\\n"
+  },
+  "204": {
+    "german": "Anfrage: Zielknoten liegt in Berlin $\\rightarrow$ Dijkstra, aber\\nignoriere irrelevanten Kanten\\n",
+    "english": "Query: target node in Berlin $\\rightarrow$ Dijkstra, but\\nignore irrelevant edges\\n"
+  },
+  "205": {
+    "german": "Vorberechnung: berechne für jede Kante, ob sie für ein Ziel in Berlin relevant ist\\n",
+    "english": "precomputation: calculate for each edge if it is relevant for a destination in Berlin\\n"
+  },
+  "206": {
+    "german": "\\textbf{Suchraum Dijkstra}",
+    "english": ""
+  },
+  "207": {
+    "german": "\\textbf{Suchraum Arc-Flags}",
+    "english": ""
+  },
+  "208": {
+    "german": "\\textbf{Ausnutzung von Transitknoten}",
+    "english": ""
+  },
+  "209": {
+    "german": "Situation: wir wollen von Karlsruhe weit weg fahren\\n",
+    "english": "situation: we want to drive far away from Karlsruhe\\n"
+  },
+  "210": {
+    "german": "kürzester Weg führt dann immer erstmal auf die Autobahn",
+    "english": "shortest way always leads to the highway first"
+  },
+  "211": {
+    "german": "es gibt nicht so viele Autobahnauffahrten $\\rightarrow$ wenige\\nTransitknoten",
+    "english": "not many highway on-ramps $\\rightarrow$ few\\ntransit nodes"
+  },
+  "212": {
+    "german": "Karlsruhe $\\rightarrow$ Kopenhagen",
+    "english": "Karlsruhe $\\rightarrow$ Copenhagen"
+  },
+  "213": {
+    "german": "Karlsruhe $\\rightarrow$ Berlin",
+    "english": "Karlsruhe $\\rightarrow$ Berlin"
+  },
+  "214": {
+    "german": "Karlsruhe $\\rightarrow$ Wien",
+    "english": "Karlsruhe $\\rightarrow$ Vienna"
+  },
+  "215": {
+    "german": "Karlsruhe $\\rightarrow$ München",
+    "english": "Karlsruhe $\\rightarrow$ Munich"
+  },
+  "216": {
+    "german": "Karlsruhe $\\rightarrow$ Rom",
+    "english": "Karlsruhe $\\rightarrow$ Rome"
+  },
+  "217": {
+    "german": "Karlsruhe $\\rightarrow$ Paris",
+    "english": "Karlsruhe $\\rightarrow$ Paris"
+  },
+  "218": {
+    "german": "Karlsruhe $\\rightarrow$ London",
+    "english": "Karlsruhe $\\rightarrow$ London"
+  },
+  "219": {
+    "german": "Karlsruhe $\\rightarrow$ Brüssel",
+    "english": "Karlsruhe $\\rightarrow$ Brussels"
+  },
+  "220": {
+    "german": "berechne Distanzen zwischen allen Paaren von Transitkonten vor\\n",
+    "english": "compute distances between all pairs of transit accounts in advance\\n"
+  },
+  "221": {
+    "german": "\\textbf{Anmerkungen}",
+    "english": "\\textbf{Notes}"
+  },
+  "222": {
+    "german": "es lohnt sich: bis zu \\num{1000000} mal schneller als Dijkstra\\n",
+    "english": "it pays off: up to \\num{1000000} times faster than Dijkstra\\n"
+  },
+  "223": {
+    "german": "viele der Algorithmen wurden hier in Karlsruhe entwickelt",
+    "english": "many of the algorithms were developed here in Karlsruhe"
+  },
+  "224": {
+    "german": "mehr davon? $\\rightarrow$ Vorlesung Algorithmen für Routenplanung\\n(Master)\\n",
+    "english": "more of this? $\\rightarrow$ lecture Algorithms for Route Planning\\n(Master)\\n"
+  },
+  "225": {
+    "german": "\\textbf{Dijkstras Algorithmus}",
+    "english": ""
+  },
+  "226": {
+    "german": "vermutlich der bekannteste Graphalgorithmus (vielleicht nach BFS und DFS)",
+    "english": "probably the most famous graph algorithm (maybe after BFS and DFS)"
+  },
+  "227": {
+    "german": "effiziente Berechnung kürzester Wege",
+    "english": "efficient computation of shortest paths"
+  },
+  "228": {
+    "german": "\\textbf{Beweistechniken}",
+    "english": ""
+  },
+  "229": {
+    "german": "Invariante",
+    "english": "Invariant"
+  },
+  "230": {
+    "german": "Widerspruch mit minimalem Gegenbeispiel",
+    "english": "Contradiction with minimal counterexample"
+  },
+  "231": {
+    "german": "(Algo kennt nur Pfade, die es wirklich gibt)",
+    "english": "(Algo knows only paths that really exist)"
+  },
+  "232": {
+    "german": "(Algo findet den kürzesten Pfad)",
+    "english": "(Algo finds the shortest path)"
+  },
+  "233": {
+    "german": "\\textbf{Ausblick Routenplanung}",
+    "english": ""
+  },
+  "234": {
+    "german": "Algorithmische Technik: Vorberechnung, wenn bei vielen Anfragen auf\\nden selben Daten\\n",
+    "english": "Algorithmic technique: preprocessing, when many queries on\\nthe same data\\n"
+  },
+  "235": {
+    "german": "Wunschzettel: eine schnelle Priority-Queue",
+    "english": "Wish list: a fast priority queue"
+  },
+  "236": {
+    "german": "kann Anfragen sehr beschleunigen\\n",
+    "english": "can speed up queries a lot\\n"
+  }
+}
